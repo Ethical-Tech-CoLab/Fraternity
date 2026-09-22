@@ -16,6 +16,16 @@ differences between Kenya's Refugee Affairs Secretariat statistics package,
 UNHCR data portal snapshots, and NGO compilations, not an error in this
 research.
 
+**Refreshed 2026-09-22** after a Tavily API-key fix (a prior key had gone
+stale in one local config file); re-ran research across all four pathways
+to confirm sourcing still resolves and to catch anything changed since the
+original September 2026 compile. Updates from this pass are flagged inline
+as "Update, Sept 2026." Nothing in the original file was found to be
+wrong; the most material additions are a fuller 2025–2026 WFP ration
+timeline (including a partial recovery in 2026 not visible in the
+original pass) and Shirika Plan implementation detail that partially, not
+fully, closes this file's largest previously-flagged gap.
+
 ---
 
 ## 1. Baseline profile
@@ -41,6 +51,17 @@ purpose-built decongestion — the "system" (Kakuma+Kalobeyei) ratio is less
 extreme than Kakuma-alone, and no single source in this research reports
 the combined figure directly; it is derived here and should be checked
 against a primary UNHCR planning document before being used comparatively.
+
+**Update, Sept 2026 refresh (research re-run after a Tavily API-key fix):**
+UNHCR's own Kenya Statistics Packages show continued growth through 2026 —
+314,888 (30 Apr 2026: 229,004 Kakuma Camp + 83,462 Kalobeyei + 2,422
+Eldoret) rising to 316,460 (31 May 2026: 230,220 + 83,780 + 2,460) — the
+most current figures found, confirming the population has not plateaued
+despite the funding shocks documented in Pathway B. [Kenya Statistics
+Package, 30 Apr
+2026](https://data.unhcr.org/es/documents/download/122448); [Kenya
+Statistics Package, 31 May
+2026](https://data.unhcr.org/en/documents/download/122786)
 
 ---
 
@@ -74,6 +95,35 @@ movement or right-to-work looks like in practice at Kakuma** post-2021 —
 i.e., whether the Act's rights are actually exercised on the ground, or
 remain a paper reform awaiting Shirika implementation. This is the single
 largest Pathway A gap and should be the first target of a follow-up search.
+
+**Update, Sept 2026 — this gap is now partially closing.** A year-plus of
+Shirika implementation data exists that was not surfaced in the original
+pass: the Plan is costed at **~US$943 million** across three phases
+(transition 2024–2027, stabilisation 2028–2031, resilience 2032–2035;
+Kenya government + World Bank + donors + private-sector financiers), and
+two donor-funded projects are explicitly **Kakuma/Turkana-site-specific**
+— Germany's joint GIZ–UNHCR–Department of Refugee Services project
+(launched to support Shirika implementation directly in Turkana) and
+Denmark's Inclusive Refugee Response Programme (IRRP, funded via the
+Danish MFA + Grundfos/Novo Nordisk/LEGO foundations), both explicitly
+named as working "in Turkana County and the Kakuma refugee camp." A
+USCRI one-year-on statement (27 Mar 2026) still frames the Plan as a
+"promise" rather than delivered outcomes. Concretely, on-the-ground
+implementation looks mixed rather than absent: refugees can, in theory,
+register for mobile money using refugee ID cards since mid-2025, but "not
+all branches of telecom companies... accept the cards, despite the
+government's ruling" (The New Humanitarian, Jul 2025) — a small, dated,
+site-level data point of exactly the kind flagged as missing. The same
+source documents local host-community opposition and warns refugee
+integration risks becoming "a political football" ahead of Kenya's 2027
+elections. [USCRI, "One Year On," 27 Mar
+2026](https://refugees.org/statement-one-year-on-advancing-the-promise-of-kenyas-shirika-plan);
+[UNHCR Kenya, Germany–GIZ Shirika
+project](https://www.unhcr.org/ke/news/press-releases/germany-kenya-and-unhcr-launch-joint-project-support-implementation-shirika-1);
+[Denmark IRRP,
+LinkedIn](https://www.linkedin.com/pulse/world-refugee-day-2026-kenyas-shirika-plan-rethinking-sqqef);
+[The New Humanitarian, Jul
+2025](https://www.thenewhumanitarian.org/analysis/2025/07/21/kenyas-flagship-refugee-integration-plan-runs-local-opposition)
 
 ---
 
@@ -111,6 +161,36 @@ and reported increases in protection caseloads per caseworker. [ReliefWeb —
 "Kenya refugee response under strain," Aug
 2025](https://reliefweb.int/report/kenya/kenya-refugee-response-under-strain-funding-cuts-differentiated-assistance-and-rising-social-cohesion-crisis-august-2025)
 
+**Update, Sept 2026 — the fuller ration timeline, and a partial 2026
+recovery not visible in the original pass:** the ration collapse was
+worse, and more volatile, than the single Aug 2025 suspension figure
+suggested: WFP served ~720,000 refugees across Dadaab, Kakuma and
+Kalobeyei as of May 2025; cut rations to 40% (Feb 2025), then a record
+low of **28% of the minimum food basket** by June 2025 with cash assistance
+halted entirely (WFP appealed for $44M to restore full rations through
+August 2025); by August 2025, the Differentiated Assistance model reached
+only 69% of the population (Category 1/2 households) at 40%/20% of the
+food basket. Kalobeyei saw a violent protest on **28 July 2025** tied to
+this collapse. A dated, direct population effect: **9,300+ South Sudanese
+refugees left Kakuma/Kalobeyei to walk back to South Sudan between June
+and 11 Sept 2025**, nearly two-thirds of them children — many sent ahead
+alone by parents who could not afford transport for the whole family, a
+distinct family-separation mechanism this file had not captured.
+**Partial recovery in 2026:** WFP's Feb 2026 Kenya Country Brief confirms
+rations were raised again for the Feb–Sept 2026 window, to **80%** for
+Category 1 and **60%** for Category 2 households — better than the Aug
+2025 low, though still below full rations, and this file's Pathway D
+protection findings (crime, social tension) were generated under the
+worse 2025 conditions, not yet re-tested against the 2026 partial
+recovery. [WFP, "Refugees in Kenya at risk of worsening hunger," May
+2025](https://www.wfp.org/news/refugees-kenya-risk-worsening-hunger-wfp-faces-critical-funding-shortfall);
+[WFP Kenya Country Brief, Aug
+2025](https://reliefweb.int/report/kenya/wfp-kenya-country-brief-august-2025);
+[WFP Kenya Country Brief, Feb
+2026](https://docs.wfp.org/api/documents/WFP-0000172572/download);
+[Global Health Justice, citing UNHCR 11 Sept 2025
+update](https://depts.washington.edu/globalhealthjustice/aid-funding-cuts-and-malnutrition-force-kakuma-refugees-back-to-south-sudan)
+
 ---
 
 ## 4. Pathway C — Disaster / evacuation risk
@@ -143,6 +223,26 @@ evacuation/referral-capacity question remains as much a gap as at Dzaleka.
   Kenya-specific evidence gap. Worth testing explicitly once a third case
   is added.
 
+**Update, Sept 2026:** a peer-reviewed systems-failure analysis (STAMP-CAST
+methodology, Aug 2026) of cholera endemicity specifically at Kakuma and
+Dadaab is now published — the first academic evidence in this file's
+research that formally frames the institutional-interface gap as a
+*systems* failure rather than a resourcing gap, corroborating the pattern
+flagged above. Separately, the drought-to-flood whiplash documented in the
+Apr 2025 ODI piece is not a one-off: Kenya declared a fresh flood
+emergency in **March 2026** (CARE, 27 Mar 2026) layered on continuing
+drought in the arid/semi-arid counties, with 3.7 million people projected
+into IPC Phase 3+ acute food insecurity Apr–Jun 2026, and a further strong
+El Niño forecast for the 2026/2027 season (also flagged in the Dzaleka
+case file's Pathway B, §3, as a cross-regional risk). Camp-level flash
+flooding in Kakuma's seasonal river (laga) continued to be reported
+informally through 2026, consistent with the historical pattern (river
+merger/erosion threat first documented as far back as 2003). [Pan African
+Medical Journal / STAMP-CAST, Aug
+2026](https://link.springer.com/article/10.1186/s12889-026-28948-z);
+[CARE, "Kenya now faces both flood emergency and drought crisis," 27 Mar
+2026](https://reliefweb.int/report/kenya/kenya-now-faces-both-flood-emergency-and-drought-crisis-country-braces-cholera-risk)
+
 ---
 
 ## 5. Pathway D — Protection & vulnerable groups
@@ -168,6 +268,28 @@ this pass; protection findings here are qualitative/programmatic rather
 than incident-count-based. A Kenya Police/RAS security-incident dataset
 should be the target of a follow-up search, to make this pathway
 comparable in kind to the Dzaleka file's Pathway D table.
+
+**Update, Sept 2026:** still no incident-count dataset, but new
+qualitative/programmatic evidence fills in around it. OCHA's Financial
+Tracking Service shows the Danish Refugee Council holds a dated, costed
+2026 protection commitment — **US$231,528** — explicitly scoped to
+"life-saving protection to at risk refugees in Nairobi, Dadaab, Kakuma and
+Kalobeyei," the first funding-side protection figure specific to this
+camp found in this research. Two new documented harms, neither in the
+original pass: a peer-reviewed/practitioner analysis (CSNS, Jan 2026) on
+aid-cut-driven "implications for fatherhood" — men's loss of provider role
+and associated psychosocial strain, a gender-and-protection angle distinct
+from the GBV/child-protection findings above; and USCRI's "Recovering
+Childhood" report addendum (2026), which documents child mental-health
+harm including **suicide and suicide attempts by children** in Dadaab,
+Kakuma and Kalobeyei, attributed to hopelessness and unmet basic needs —
+a materially more severe finding than the original file's "prominent
+issues" framing, though again not incident-counted. [OCHA FTS Kenya
+2026](https://fts.unocha.org/countries/116/flows/2026); [CSNS, "Aid Cuts,
+Differentiated Assistance, and Implications for Fatherhood," Jan
+2026](https://csns.uk/2026/01/20/aid-cuts-differentiated-assistance-and-implications-for-fatherhood-in-kakuma-refugee-camp-kenya);
+[USCRI, "Recovering Childhood"
+addendum](https://refugees.org/recovering-childhood-report-an-update-on-children-in-kenyas-refugee-camps)
 
 ---
 
