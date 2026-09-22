@@ -16,6 +16,18 @@ ran a contested biometric re-registration in Bidibidi in mid-2018, and no
 source in this pass disentangles the two mechanisms for the 2025–2026
 decline. Flagged as an evidence gap below, not resolved here.
 
+**Refreshed 2026-09-22** after a Tavily API-key fix; re-ran research across
+all four pathways. The population-decline mechanism (this file's single
+most consequential open question) is still not resolved, but this pass
+found a direct signal that UNHCR itself treats it as needing explanation,
+not as a routine data update — see §1 update below. The most concrete new
+finding is that Yumbe/Bidibidi-specific quarterly sector dashboards (Child
+Protection, GBV, Health & Nutrition, WASH, Shelter, Environment & Energy,
+Cash/Voucher Assistance) now exist for Q1–Q2 2026, which could close
+several of this file's "no Bidibidi-specific data" gaps in a follow-up
+pass — their contents were not extracted in this pass, only their
+existence confirmed. Updates flagged inline as "Update, Sept 2026."
+
 ---
 
 ## 1. Baseline profile
@@ -38,6 +50,18 @@ decline. Flagged as an evidence gap below, not resolved here.
 Population trajectory: opened Aug 2016 with ~6,000 arrivals/day → 285,000
 (peak, Dec 2016/2017) → >270,000 (Jun 2025) → 209,783 (28 Feb 2026).
 [National Geographic](https://www.nationalgeographic.com/magazine/article/how-bidibidi-uganda-refugee-camp-became-city); [RefugePoint](https://refugepoint.org/blog/the-8-largest-refugee-camps-and-settlements-in-the-world-2026-update)
+
+**Update, Sept 2026:** UNHCR Uganda's own social-media channel frames the
+2025 drop explicitly as needing context, not as a simple headline number —
+"Refugee numbers declined in 2025, but the story behind the figures
+matters" — which reads as UNHCR itself signalling the decline is not a
+straightforward repatriation success story. This pass could not retrieve
+the substance of that explanation, so the underlying mechanism question
+(genuine movement vs. biometric correction) remains open, but UNHCR's own
+framing is itself evidence the two are not being treated as equivalent
+internally — worth a direct follow-up query against UNHCR Uganda
+communications. [UNHCR Uganda, Facebook
+video](https://www.facebook.com/UNHCRuganda/videos/bidibidi-is-the-worlds-largest-refugee-settlement/10156451798108438)
 
 ---
 
@@ -72,6 +96,13 @@ already rights-based — the gap is **implementation catching up with a
 10x scale increase**, specifically the fixed land-allocation formula. This
 reframes what "Pathway A" leverage looks like relative to Dzaleka/Kakuma.
 
+**Update, Sept 2026:** the elected-governance structure (RWC1/2/3) is
+actively functioning, not just formally documented — refugees in Bidibidi
+voted for internal Refugee Welfare Council leadership on **18 August
+2026**, a concrete, dated instance of the governance model in current
+operation. [The Borderlines, via
+Facebook](https://www.facebook.com/theborderlines001/posts/refugees-in-ugandas-bidibidi-settlement-are-voting-for-their-internal-leadership/122202731480873065)
+
 ---
 
 ## 3. Pathway B — Funding sustainability
@@ -100,6 +131,18 @@ inferred):** funding cut → WFP ration cuts/vulnerability-based
 categorization → malnutrition spike (tripled GAM in Bidibidi) → mental
 health harm and social breakdown (see Pathway D). [allAfrica, Jul
 2026](https://allafrica.com/stories/202607160665.html)
+
+**Update, Sept 2026 — the "2026 stopgap" row above, made concrete:** a
+Sept 2026-dated release confirms WFP Uganda still requires **~US$7 million
+every month** for life-saving food assistance to refugees nationally, plus
+an additional **US$20 million to restore full rations for the rest of the
+year** — despite "the generous support of donors," the gap persists. This
+is broadly consistent with (not a replacement for) the $47M-through-2026
+and $75M-for-2026 figures found elsewhere in WFP's own reporting, which
+likely reflect different scopes/dates within the same funding picture
+rather than a contradiction; kept side by side, not reconciled. [WFP USA,
+Sept
+2026](https://wfpusa.org/news/government-of-uganda-unhcr-and-wfp-forced-to-revise-food-rations-for-refugees-amid-funding-crisis)
 
 ---
 
@@ -140,6 +183,7 @@ pass (see Evidence gaps).
 |---|---|---|
 | Adolescent pregnancy | ~1,400 girls impregnated annually in Bidibidi (IRC + health implementing partners statement) | [The Independent Uganda](https://www.independent.co.ug/tag/bidibidi-refugee-settlement) |
 | Mental health / suicide | Food-ration cuts and vulnerability-categorization linked to a **rise in suicides among men**, 2024–2026, per local NGO (We Care Foundation) and OPM protection/health focal person on-site | [allAfrica, Jul 2026](https://allafrica.com/stories/202607160665.html) |
+| **Update, Sept 2026 — a formal tracking mechanism now exists** | UNHCR's Uganda Operational Data Portal now publishes a recurring **national Suicide Tracking Dashboard** (monthly editions confirmed for Jan, Feb, Mar, Jun, and Jul 2026) — this upgrades the qualitative "rise in suicides" finding to something with a dated, ongoing, quantifiable data source, though this pass did not extract Bidibidi-specific figures from it | [UNHCR Uganda ODP](https://data.unhcr.org/en/country/uga) |
 | Downstream effects of ration cuts (qualitative) | Increased school dropout (especially girls), child neglect, rising number of widows needing support | Same |
 | Child risk profile (UNESCO study) | Environmental risks, road accidents, severe corporal punishment, neglect, sexual violence, witnessing domestic violence, child labour, harmful traditional practices — documented as common | [Tearfund, Jun 2025](https://www.tearfund.org/stories/2025/06/refuge-and-mangoes-in-bidi-bidi-uganda) |
 | GBV — firewood-collection nexus | Refugee women (primary firewood collectors) face heightened GBV risk from host-community (Aringa) men during unregulated, undefined-access firewood gathering; language/cultural barriers compound the conflict; no cooking-fuel alternative provided | [ACCORD](https://www.accord.org.za/conflict-trends/conflict-dynamics-in-the-bidibidi-refugee-settlement-in-uganda); [Springer/Comparative Migration Studies, 2025](https://link.springer.com/article/10.1186/s40878-025-00508-1) |
@@ -212,6 +256,18 @@ fixes everything" narrative.
   national/cross-settlement research (Betts et al., Refugee Studies
   Centre) documents the self-reliance model's effects in aggregate, but
   no Bidibidi-only income/employment figures were found.
+- **Update, Sept 2026 — several of the above may be resolvable, not
+  genuinely absent:** this pass located a series of **Yumbe Sub-Office
+  quarterly UCRRP Settlement Performance Snapshots** (Q1 and Q2 2026
+  confirmed) plus Q2 2026 national sector dashboards covering Child
+  Protection, GBV, Health & Nutrition, WASH, Shelter/Settlement/NFI, and
+  Environment & Energy — all on UNHCR's Uganda Operational Data Portal.
+  These are exactly the kind of site-level, dated, sector-specific sources
+  that would close the crime/security, disease-surveillance, and
+  labour-market gaps above. This pass confirmed they exist but did not
+  extract their contents — the highest-value, most concrete next step for
+  this file, more actionable than "no data exists." [UNHCR Uganda
+  ODP](https://data.unhcr.org/en/country/uga)
 
 ---
 
