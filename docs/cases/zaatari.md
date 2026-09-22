@@ -23,6 +23,13 @@ governance restructuring and over a decade of donor capital investment.
 This case file tries to capture that nuance rather than flattening Zaatari
 into a generic emergency-camp profile.
 
+**Refreshed 2026-09-22** after a Tavily API-key fix; re-ran research across
+all four pathways. Two of this file's flagged gaps are resolved this pass
+(the 2026 Jordan financial requirement, and the undated WFP cash-cut
+figure), and one key assumption is complicated: the return wave looks to
+be decelerating in 2026 relative to 2025's peak, not continuing at pace.
+Updates are flagged inline as "Update, Sept 2026."
+
 ---
 
 ## 1. Baseline profile
@@ -145,13 +152,18 @@ Response](https://humanitarianaction.info/document/global-humanitarian-overview-
 | UNHCR Jordan 2026 operational requirement | $280 million | as of end-Mar 2026 report | [Jordan Times](https://www.facebook.com/thejordantimes/posts/funding-for-the-operations-of-the-united-nations-high-commissioner-for-refugees-/1373685381472985) |
 | UNHCR Jordan 2026 funded | $65 million (23.2%) — gap $215 million (76.8%) | end-Mar 2026 | Same source |
 | Jordan Response Plan (JRP) total requirement, 2024 | $2.28 billion | 2024 | [EU ECHO HIP Syria 2026](https://ec.europa.eu/echo/files/funding/hip2026/echo_syr_bud_2026_91000_v2.pdf) |
-| Jordan Response Plan (JRP) total requirement, 2025 | $1.6 billion (a ~30% drop from 2024) | 2025 | Same source — **2025 funded-% not publicly available per ECHO as of this writing; 2026 JRP total not located in this research pass, flagged as a gap** |
+| Jordan Response Plan (JRP) total requirement, 2025 | $1.6 billion (a ~30% drop from 2024) | 2025 | Same source — **2025 funded-% not publicly available per ECHO as of this writing** |
+| **Jordan 2026 requirement, now located (Sept 2026 refresh)** | **$650,509,969** — sector breakdown: Food Security & Basic Needs $241.5M, Protection $145M, Education $67.3M, Economic Empowerment $47.5M, WaSH $47M, Health $49.8M, Shelter $27.5M, Return Preparedness $24.9M (a separate sector specific to Jordan) | 2026 | [3RP Regional Strategic Overview 2026](https://www.3rpsyriacrisis.org/wp-content/uploads/2026/03/3RP_Regional_Strategic_Overview_2026-ENDORSED.pdf) — this resolves the "2026 JRP total not located" gap flagged in the original pass, though it is unclear whether this figure is identical in scope to the JRP totals above or the 3RP's Jordan-specific chapter; not fully reconciled against the JRP 2024/2025 figures |
 | 3RP (regional: Jordan, Lebanon, Türkiye) 2026 requirement | $2.8 billion | 2026 | [Global Humanitarian Overview 2026](https://humanitarianaction.info/document/global-humanitarian-overview-2026/article/syria-regional-response) |
 | 3RP funding reported against Jordan, per OCHA FTS | $65.1M reported / $2,800.7M requirement (2.3%) | 2026, snapshot | [OCHA FTS, Jordan 2026](https://fts.unocha.org/countries/114/summary/2026) — note this FTS figure appears to record the *regional* 3RP requirement against Jordan's country page; treat the percentage as indicative, not a clean Jordan-only ratio |
 | Syrian refugee returns from Jordan (cumulative) | ~188,500 (8 Dec 2024 – 31 Mar 2026) rising to ~190,000 by mid-Apr 2026 | 2024-2026 | [Jordan Times](https://www.facebook.com/thejordantimes/posts/funding-for-the-operations-of-the-united-nations-high-commissioner-for-refugees-/1373685381472985) |
+| **Update, Sept 2026 — the return rate is decelerating, not accelerating** | Jordan-wide UNHCR-registered returns: over 175,000 in 2025 (up sharply from ~50,000 cumulative over 2018–2024) — but the **3RP's own 2026 projection is only ~75,000**, explicitly described as "a decrease linked to intentions spread over five years, limited access to basic services, and security volatility in parts of Syria." Jordan's own country factsheet confirms 74,000+ received return support so far in 2026 (as of Jun 2026) — tracking toward, not exceeding, that lower 2026 estimate. This is a materially different trajectory than "does the return wave continue at pace" (this file's key assumption to stress-test) implied — 2025 looks like it may have been the peak, not a floor. | 2025-2026 | [3RP Regional Strategic Overview 2026](https://www.3rpsyriacrisis.org/wp-content/uploads/2026/03/3RP_Regional_Strategic_Overview_2026-ENDORSED.pdf); [Jordan Country Factsheet, Jun 2026](https://reliefweb.int/report/jordan/jordan-country-factsheet-june-2026) |
 | WFP Jordan general food assistance caseload decline | 465,000 → 410,000 beneficiaries (retargeting) by Sep 2023; a further 100,000 in host communities suspended, Jul 2024 | 2023-2024 | [WFP "Cost of Inaction," Q3 2025 special edition](https://reliefweb.int/report/jordan/cost-inaction-impact-wfp-assistance-cuts-refugees-jordan-food-security-outcome-monitoring-fsom-special-edition-quarter-3-2025) |
 | Food-insecure refugees in Jordan, unassisted at current budget | ~320,000 people | Sep 2025 | Same source |
-| WFP cash cut, Zaatari + Azraq combined caseload | Reduced from $32 (JOD 23)/person/month to $21 (JOD 15)/person/month — a one-third cut, affecting 119,000 refugees across both camps | announced for "starting in August" — **year not stated in the source text retrieved; flagged as needing date verification before further citation** | [WFP news release](https://www.wfp.org/news/tight-funding-forces-wfp-reduce-food-assistance-syrian-refugees-jordan-including-camps) |
+| WFP cash cut, Zaatari + Azraq combined caseload | Reduced from $32 (JOD 23)/person/month to $21 (JOD 15)/person/month — a one-third cut, affecting 119,000 refugees across both camps | **Now date-verified, Sept 2026: this is a 2023 event** (starting Aug 2023), not 2025/26 as this file previously left ambiguous — cross-referenced against a dated (14 Jul 2023) trade-press report of the same cut | [WFP news release](https://www.wfp.org/news/tight-funding-forces-wfp-reduce-food-assistance-syrian-refugees-jordan-including-camps); [GlobalSecurity.org, 14 Jul 2023](https://www.globalsecurity.org/military/library/news/2023/07/mil-230714-wfp01.htm) |
+| WFP camp cash assistance, current | $21 (JOD 15)/person/month unchanged since the 2023 cut — no restoration found; ~83,000 Syrian refugees served across Zaatari + Azraq in Jun 2026; $1.8M transferred that month; WFP needs $24M to sustain operations Jul–Dec 2026 | Jun–Jul 2026 | [Jordan News, 26 Jul 2026](https://www.jordannews.jo/Section-109/News/WFP-83-000-Syrian-Refugees-in-Jordan-Receiving-Reduced-Food-Assistance-53487) |
+| **WFP host-community food assistance — halted entirely** | Suspended since **April 2026** for Syrian refugees living outside camps in Jordan, "a severe funding shortage" — camp-based assistance continues (reduced) but out-of-camp assistance does not, a sharper two-tier outcome than this file's original "same shape as Dzaleka" framing suggested | Apr 2026– (ongoing as of this refresh) | Same source |
+| Winter cash-assistance programme | UNHCR Jordan warned a lack of sufficient funds would halt the 2026 winter cash-assistance programme for refugees | 2026 | [Jordan Times, via Facebook](https://www.facebook.com/thejordantimes/posts/the-united-nations-high-commissioner-for-refugees-unhcr-in-jordan-said-on-monday/1285533816954809) |
 | Camp residents for whom cash assistance is sole income source | 57% | undated, same WFP release | Same source |
 | Camp adult employment rate | ~30% working, mostly temporary/seasonal | undated, same WFP release | Same source |
 
@@ -297,15 +309,19 @@ with.
 - No camp-level, current flood/drainage capacity map found for this
   research pass (REACH's flood-risk and storm-water maps are dated Oct/Nov
   2015; no more recent equivalent located).
-- 2026 Jordan Response Plan (JRP) total requirement figure not located
-  (2024 and 2025 figures found; 2026 not found in this pass).
+- ~~2026 Jordan Response Plan (JRP) total requirement figure not located~~
+  — **resolved, Sept 2026 refresh:** the 3RP's 2026 Jordan chapter gives
+  $650.5M with a full sector breakdown (Pathway B, §3), though it is not
+  fully reconciled against the JRP-labeled 2024/2025 figures already in
+  this file — the JRP and 3RP figures may not be perfectly like-for-like.
 - The OCHA FTS "3RP funding against Jordan" figure ($65.1M / $2,800.7M,
   2.3%) is ambiguous — it is unclear whether this represents Jordan-specific
   funding against the regional requirement or a data-attribution artifact;
   needs direct verification against UNHCR/OCHA Jordan-specific tracking.
-- WFP's one-third cash-assistance cut for Zaatari + Azraq ($32→$21/person/
-  month) is undated in the source retrieved — needs a publication-date
-  check before further citation.
+- ~~WFP's one-third cash-assistance cut for Zaatari + Azraq ($32→$21/person/
+  month) is undated~~ — **resolved, Sept 2026 refresh:** confirmed as a
+  2023 event (Pathway B, §3); the current (2026) camp rate remains $21,
+  unchanged since.
 - Zaatari-specific child-marriage statistics (2-in-5 girls, 12% surge since
   2019, 321 underage marriages "this year") trace to a single source
   (Wilson Center); the better-corroborated figure is the Jordan-wide
@@ -372,7 +388,15 @@ proportionate to the shrinking headline camp population.
 - That the return wave continues at pace (UNHCR itself projects a wide
   range: 1-1.6 million Syria-wide returns in 2026) — a reversal or stall
   (e.g., due to conditions inside Syria) would change every pathway's
-  urgency calculus.
+  urgency calculus. **Update, Sept 2026: this now looks like the wrong
+  assumption to stress-test — the data suggests the opposite risk.**
+  Jordan-specific returns are already decelerating (175,000 in 2025 vs. a
+  3RP 2026 projection of only ~75,000, on pace as of Jun 2026's 74,000+
+  YTD), attributed to intentions "spread over five years" plus limited
+  services and security volatility inside Syria. The live risk is not a
+  sudden reversal but a **long plateau of residual population** — exactly
+  the scenario this file's problem statement already anticipates — at a
+  slower, more predictable pace than the framing here assumed a month ago.
 - That Zaatari's unique infrastructure maturity (solar grid feeding the
   national grid, formalized market) gives it *more* leverage than a typical
   camp to negotiate a managed transition — this is plausible but not
