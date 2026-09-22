@@ -23,6 +23,16 @@ different counting scopes (Rohingya-only vs. district-wide, point-in-time vs.
 cumulative). Always check the date and scope attached to a figure before
 using it.
 
+**Refreshed 2026-09-22** after a Tavily API-key fix; re-ran research across
+all four pathways. The most material findings this pass: the Jan 2026 Camp
+16 fire's own impact figures (flagged as an unextracted gap in the original
+file) are now filled in; a major international-justice development — the
+ICJ genocide case (The Gambia v. Myanmar) completed oral hearings in Jan
+2026 with judgment expected before end of 2026 — was missing from the
+original Pathway A entirely; and a newer, larger Q1 2026 protection-incident
+count supersedes the Q4 2025 figure already in this file. Updates are
+flagged inline as "Update, Sept 2026."
+
 ---
 
 ## 1. Baseline profile
@@ -48,6 +58,13 @@ using it.
 | Bhasan Char island population | 33,514 individuals / 7,480 families (31 Aug 2026, RRRC); vs. 34,500+ (Dec 2025, Fortify Rights); vs. 29,116 (undated, Lacuna); vs. ~19,000 (undated, U.S. tearline.mil satellite nighttime-lights analysis) — **figures diverge by reporting date and methodology** (official registration counts vs. independent satellite estimates); flagged, not reconciled | [RRRC "At a Glance", Aug 2026](https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-rrrc/2026/8/9a85a093-e0f6-4a0f-8293-b7a042ccc7bc.pdf); [Fortify Rights, Jan 2026](https://www.fortifyrights.org/bgd-inv-2026-01-21); [tearline.mil](https://www.tearline.mil/public_page/nighttime-lights-refugees) |
 | Host community | ~640,000 Bangladeshis in Ukhiya and Teknaf (JRP 2026 planning figure); poverty incidence higher than the 24% national average post-influx; local day-labor wages reportedly depressed ~50% by cheap refugee labor competition; camps occupy an estimated 60% of hosts' cultivable land and 40% of hills/forest reserve | [Rohingya Response — 2026 JRP](https://rohingyaresponse.org/project/2026-jrp); [Frontiers, 2023](https://www.frontierspartnerships.org/journals/european-journal-of-cultural-management-and-policy/articles/10.3389/ejcmp.2023.11559/full) |
 | Shelter stock | 228,102 temporary shelters, made of bamboo and tarpaulin | [RRRC "At a Glance", Aug 2026](https://objectstorage.ap-dcc-gazipur-1.oraclecloud15.com/n/axvjbnqprylg/b/V2Ministry/o/office-rrrc/2026/8/9a85a093-e0f6-4a0f-8293-b7a042ccc7bc.pdf) |
+
+**Update, Sept 2026:** an intermediate snapshot confirms the growth
+trend held steady between the Feb and Jun 2026 points above — 1,194,123
+as of April 2026 (UNHCR dashboard) — and UNHCR's own spokesperson framed
+the pace directly: "Bangladesh has welcomed 150,000 Rohingya refugees in
+the last 18 months." [UNHCR Rohingya population dashboard, Apr
+2026](https://data.unhcr.org/en/documents/download/122416)
 
 ---
 
@@ -106,6 +123,23 @@ demonstrated non-viability. [Crisis Group, "A Sustainable Policy for
 Rohingya Refugees in
 Bangladesh"](https://www.crisisgroup.org/rpt/asia-pacific/bangladesh/303-sustainable-policy-rohingya-refugees-bangladesh)
 
+**Update, Sept 2026 — a major international-justice development missing
+from the original pass:** the ICJ genocide case *The Gambia v. Myanmar*
+(instituted Nov 2019 on behalf of the OIC's member states, under the
+Genocide Convention) completed oral hearings in **January 2026**, with a
+judgment expected **before the end of 2026** — a materially higher-stakes
+legal development than anything previously captured in this file's Pathway
+A, since a judgment against Myanmar would bear directly on any future
+repatriation/return framework. Separately, a high-level UN side event
+("The Rohingya Crisis: A Renewed Call for a Durable Solution... with
+Justice and Accountability," co-hosted by Bangladesh and The Gambia, EU
+co-sponsored) is scheduled for **23 September 2026** at UNGA's 81st
+session — one day after this research refresh, so its outcome is not yet
+knowable, but its existence confirms sustained diplomatic momentum on the
+accountability track distinct from the repatriation-pledge track above.
+[EEAS, Rohingya Crisis high-level side event,
+2026](https://www.eeas.europa.eu/delegations/un-new-york/rohingya-crisis-renewed-call-durable-solution-protracted-displacement-justice-and-accountability_en)
+
 ---
 
 ## 3. Pathway B — Funding sustainability
@@ -158,6 +192,18 @@ receive less than before the change. Both framings are kept here, not
 reconciled. [NPR, Apr
 2026](https://www.npr.org/2026/04/01/nx-s1-5769798/food-assistance-slashed-rohingya-refugees-bangladesh-camps)
 
+**Update, Sept 2026:** the JRP 2026 funding figure already in the table
+above ($355.9M / $710.5M, 50.1%) is independently reconfirmed by a second
+source dated exactly to this research-refresh date (20 Sep 2026), giving
+high confidence it is current, not stale. Downstream effect, newly
+quantified: Save the Children reports more than **one in three Rohingya
+refugees** are expected to face "crisis"-level hunger in 2026, with
+children's malnutrition risk specifically worsening as the response
+enters its ninth year. [Rohingya JRP snapshot, Humanitarian
+Action](https://humanitarianaction.info/plan/1524); [Save the Children,
+24 Aug
+2026](https://www.savethechildren.net/news/rohingya-camps-one-three-refugees-face-crisis-hunger-conditions-children-worsen)
+
 ---
 
 ## 4. Pathway C — Disaster / risk exposure
@@ -181,14 +227,31 @@ different sitreps (early vs. later counts); 560–563 injured; ~400 missing;
 9,500–17,000 shelters destroyed/damaged (one source cites up to 40,000);
 ~45,000–61,000 people affected; destroyed 6 health facilities, 141 learning
 centers, 2 nutrition centers, 2 child protection centers, 1,600 latrines,
-630 bathing spaces. A further major fire struck **Camp 16 in January 2026**
-(documented in a dedicated response/impact report; details not extracted in
-this pass — flagged for follow-up). [Wikipedia — March 2021 Rohingya
+630 bathing spaces. [Wikipedia — March 2021 Rohingya
 refugee-camp
 fire](https://en.wikipedia.org/wiki/March_2021_Rohingya_refugee-camp_fire);
 [ReliefWeb Sitrep #1, 26 Mar
 2021](https://reliefweb.int/report/bangladesh/rohingya-camp-fire-situation-report-1-march-26-2021);
 [Fire Technology journal, 2023](https://link.springer.com/article/10.1007/s10694-023-01406-7)
+
+**Update, Sept 2026 — the flagged Camp 16 fire gap, now filled:** a fire
+broke out ~3:00am on **20 January 2026** in Camp 16, Blocks D2–D4. Two
+NGO tallies of the same event diverge, kept side by side per this file's
+sourcing discipline: NRC reports 335 shelters fully destroyed + 72
+damaged, ~2,000+ people affected, plus 86 latrines, 68 bathing cubicles,
+11 water points, 40 solar streetlights, 10 learning centres, and 2
+mosques/madrasas damaged; CARE Bangladesh reports 369 shelters destroyed +
+112 damaged, 2,185 people directly affected. No casualties reported in
+either account. NRC explicitly linked the fire to the funding crisis,
+noting construction of 50,000 approved semi-permanent shelters had
+stalled for lack of funds. A further, smaller fire was reported in Camp
+13 (Thaingkhali, Block E-1) on **15 September 2026** — one week before
+this research refresh — with no casualties reported in the initial
+account, underscoring that fire risk remains active and recurring, not a
+2021/2026-only pattern. [NRC, 21 Jan
+2026](https://www.nrc.no/news/2026/bangladesh-rohingya-families-lose-everything-in-devastating-fire-amid-funding-crisis);
+[CARE Bangladesh, Jan
+2026](https://www.care.org/media-and-press/care-bangladesh-responds-to-fire-at-rohingya-camp)
 
 **July 2026 monsoon episode — casualty figures kept side by side, not
 reconciled** (divergence driven by reporting date, geographic scope, and
@@ -285,6 +348,37 @@ organization, and its founder's 2021 assassination by an armed group is
 itself evidence of how contested that space is. **Flagged as an area
 requiring dedicated follow-up**, not concluded to be absent.
 
+**Update, Sept 2026 — a newer, larger incident count supersedes the Q4
+2025 figure above:** Protection Sector data for **Q1 2026 (Jan–Mar)**
+records **455 serious security incidents affecting 832 refugees** — up
+from 324/510 in Q4 2025, a continued upward trend rather than the
+stabilization the Q4 2025 "down 19%" framing might have suggested. Armed-
+group activity looks, if anything, more entrenched a year on: Bangladesh's
+Home Minister publicly stated (7 Sep 2026) that "armed groups in Rohingya
+camps pose serious internal security threat"; an armed-group clash killed
+a child and injured seven others (28 Aug 2026); and a new peer-reviewed
+study specifically models what drove armed-group recruitment in Cox's
+Bazar/Bhasan Char camps over 2023–2026 (SSRN, 2026) — the first academic,
+mechanism-level analysis of this dynamic found in this file's research.
+Maritime crossings also continued escalating past the 2025 record: boat
+departures had **nearly doubled by April 2026** versus the same period in
+2025 (Concern Worldwide). On the civic-participation question specifically:
+this pass did surface one clear instance of collective refugee voice —
+"tens of thousands" rallied at Cox's Bazar on 25 Aug 2026 (the "Ninth
+Anniversary of Rohingya Genocide Day") demanding safe, dignified return to
+Myanmar — but this is an episodic protest/commemoration, not a standing
+self-advocacy structure comparable to Dzaleka's Children's Parliament, so
+the original gap finding stands. [Protection Sector data via Facebook
+repost, citing Q1 2026
+figures](https://www.facebook.com/lucky.karim.519716/posts/according-to-the-protection-sector-data-between-january-and-march-2026-a-total-o/1097812189651137);
+[Daily Sun, 7 Sep
+2026](https://www.daily-sun.com/20/896356); [SSRN, armed group
+recruitment 2023–2026](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7472762);
+[Concern Worldwide, "The Rohingya crisis in 2026,
+explained"](https://www.concern.net/news/rohingya-crisis-explained); [AP
+via Seattle PI, 25 Aug
+2026](https://www.seattlepi.com/news/world/rohingya-refugees-rally-in-bangladesh-camps-to-a22402603)
+
 ---
 
 ## 6. Cross-pathway causal skeleton
@@ -343,9 +437,11 @@ form.
   Mitigation Measures Strategy & Action Plan" — these documents exist and
   are named in source lists, but their specific activation thresholds and
   RRRC↔CPP↔camp-level command relationships were not read in this pass.
-- The January 2026 Camp 16 fire has a dedicated published impact/response
-  report that was identified but not extracted — casualty and shelter-loss
-  figures for that specific, more recent incident are missing here.
+- ~~The January 2026 Camp 16 fire has a dedicated published impact/response
+  report that was identified but not extracted~~ — **resolved, Sept 2026
+  refresh:** NRC and CARE figures are now in Pathway C above (335–369
+  shelters destroyed depending on source, 2,000–2,185 people affected, no
+  casualties).
 - No current, comprehensive count or trend line for Rohingya-led
   civil-society/self-advocacy structures comparable to Dzaleka's Children's
   Parliament; Mohib Ullah's organization (ARSPH) was the most visible
