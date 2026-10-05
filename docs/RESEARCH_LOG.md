@@ -275,3 +275,74 @@ still holds, with three shifts: A moves up (time-bound bill window), D
 becomes more urgent, and Dzaleka's case for focus is stronger. Still not
 narrowing to a single lever before the 9 Oct bill and the October
 targeted distribution.
+
+## 2026-10-05 — Funding table rewritten for clarity; 90% cut removed
+
+**Focus:** The §3 funding table mixed a global figure (UNHCR worldwide
+spend) with a Malawi figure (requirement), and needs with spending.
+
+**Changes:**
+- Split into a one-line global context and a Malawi year-by-year table
+  (budget / money available / % covered / spent) for 2024–2026, from the
+  UNHCR Annual Results Reports 2024 and 2025.
+- **Correction:** the "$8M → $1M (−90%)" UNHCR Malawi cut had no linked
+  source and could not be verified, so it was removed everywhere (§3,
+  §10, §13, awareness angle 1).
+- Replaced with verified figures: funds available $8.4M (2024) → $6.0M
+  (2025); 2026 budget halved to $12.6M; a 40% spending-authority
+  reduction in 2025 per the UN Resident Coordinator (via FairPlanet,
+  secondary).
+
+## 2026-10-05 — Source audit of the Dzaleka document
+
+**Focus:** Apply the same check that caught the funding table problem
+(mixed scope, unsourced numbers, arithmetic) to the whole Dzaleka
+document, then the comparison.
+
+**Corrected:**
+- GHO $23B mislabelled as "the UN's" ask.
+- IDA refugee window: 21 eligible countries (Dec 2025), not 14.
+- UPR votes: 228 + 65 + 1 split = 294.
+- Election: held 16 Sept, declared 24 Sept 2025, 56.8% vs 33.0%.
+- Unsourced "117 children" removed (505 detained, per SALC; 902 by
+  26 May, per HRW).
+- Burundi share of the non-DRC population: ~63%, not 91%.
+- "UNHCR has not declared Burundi safe" was wrong: returns have been
+  deemed safe since 2017 and are promoted since late 2025, amid
+  coercion concerns.
+- 109 Burundians repatriated from Dzaleka in Oct 2023, not 2025–26.
+- The "government is pursuing a 2026 back-to-camp policy" overstatement
+  (only the 2023 directive remains in force).
+- Parametric insurance: ~$408k, $33/household/month for 3 months.
+- Tumaini 11th edition was 2025.
+- Mental-health study: peer-reviewed screening, two of five authors
+  affiliated with FSF.
+
+**Added:**
+- Homeland Security Minister Mukhito (Nation, 26 Jul 2026): the
+  government is considering citizenship for some long-staying refugees.
+  This was propagated to §8.4, §8.5, §9 levers, cluster A, the "No way
+  out" angle and the watch list.
+- WFP $12/person = 60% of a $20 ration (Jul 2026).
+- Links for crime, INSPIRE-O, Plan exit and Ockenden.
+
+**Not re-verified:** listed explicitly in §9 ("Audit of 5 Oct 2026").
+
+**Comparison:** Kayilizi cost figure fixed; note added that the
+baseline funding row is not like-for-like.
+
+**Not yet audited:** the four other case files (Kakuma, Bidibidi,
+Za'atari, Cox's Bazar).
+
+## 2026-10-05 — Pathway B restructured with explicit units
+
+Every figure in §3 now states its unit, and the section was split
+accordingly:
+- 3.1 Global (per year)
+- 3.2 UNHCR Malawi (per year, whole operation)
+- 3.3 WFP rations (per person, per month, by date)
+- 3.4 Funding gaps (total for a stated period)
+- 3.5 Context
+
+Derived scale figures were added and labelled as derived: ~$100 per
+refugee per year from UNHCR in 2025; ~$1.26M/month for full rations.

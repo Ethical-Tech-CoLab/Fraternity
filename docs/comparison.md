@@ -34,11 +34,13 @@ candidates and lists what must be verified before narrowing.
 
 ---
 
+**Note on the funding row (audit 5 Oct 2026):** the "latest funding signal" cells are not like-for-like. They mix a UNHCR country operation (Malawi, Kenya, Jordan), an inter-agency plan (Uganda's UCRRP, the Rohingya JRP) and WFP ration status, from different dates. For comparable figures use §7.2: Table B is UNHCR-only for 2025, by outcome area, for all five countries.
+
 ## 2. Pivot nodes (from each case's causal skeleton)
 
 | Case | Pivot node(s) | What's distinctive |
 |---|---|---|
-| Dzaleka | **Funding collapse** (single clean pivot) | Funding also stalls the one structural fix (Kayilizi decongestion, US$90M gap) |
+| Dzaleka | **Funding collapse** (single clean pivot) | Funding also stalls the one structural fix (Kayilizi decongestion; UNHCR estimates US$85.2M, local press cites a "$90M gap") |
 | Kakuma | **Funding collapse** | Self-reinforcing loop: ration cuts → unrest (≥5 deaths) → further suspension |
 | Bidibidi | **Funding collapse** + **land-allocation scaling failure** | Law is *not* the constraint; implementation is |
 | Za'atari | **Exogenous political shock** (Assad's fall) driving both returns *and* donor reprioritization | Risk is a residual, more vulnerable population left as services shrink faster than people |
