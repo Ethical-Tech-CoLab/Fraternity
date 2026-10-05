@@ -177,8 +177,8 @@ due 9 Oct; UNHCR Malawi 22.8% funded in 2025, no 2026 funding update;
 Chitipa relocation stalled (145 vs. 439 ha discrepancy); serious
 security allegations, all unverified.
 
-**Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (§13 update,
-§14 watch list), `docs/RESEARCH_LOG.md`.
+**Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (updates merged into §1–12,
+§13 watch list), `docs/RESEARCH_LOG.md`.
 
-**Open questions / next steps:** work through the §14 watch list,
+**Open questions / next steps:** work through the §13 watch list,
 starting with the Refugee Bill on 9 Oct.
