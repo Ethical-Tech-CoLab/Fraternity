@@ -243,3 +243,35 @@ Malawi.
 series by destination from UNHCR Malawi or the Regional Bureau for
 Southern Africa (rsarbdima@unhcr.org is the dashboard contact); the
 exact 2023 departure figure is still missing.
+
+## 2026-10-05 — Full refresh of the Dzaleka document and cluster re-scoring
+
+**Focus:** Bring `docs/DZALEKA_SITUATION_RESEARCH.md` fully up to date,
+then check whether the cluster recommendations (§13, formerly §12) still
+hold.
+
+**Changes:**
+- Fixed stale statements:
+  - over-capacity now ~525% at ~63,000 (derived);
+  - the $8M→$1M "spending authority" cut is now distinguished from the
+    $12.64M 2026 budget;
+  - the government is now on record via the Commissioner for Refugees;
+  - the "UNHCR stopped registering" claim is partly explained
+    (registration moved to the Department of Refugees);
+  - evidence gaps expanded.
+- §9 theory of change: problem statement and levers revised to include
+  durable-solutions closure, the end of blanket rations, and the
+  cross-case nuance (funding visibility, not funding in general, is what
+  is neglected in Malawi).
+- §13 re-scored. A → leverage Very high, tractability Low–moderate
+  (time-bound); B and D → neglect Very high; C → tractability higher
+  (Cox's Bazar template); E broadened to a "data blackout". New awareness
+  angle "No way out".
+- `docs/comparison.md` Dzaleka baseline row updated; pointer note added
+  to `docs/cases/dzaleka.md`.
+
+**Conclusion:** the Sept 2026 recommendation (B, C, E, G score best)
+still holds, with three shifts: A moves up (time-bound bill window), D
+becomes more urgent, and Dzaleka's case for focus is stronger. Still not
+narrowing to a single lever before the 9 Oct bill and the October
+targeted distribution.

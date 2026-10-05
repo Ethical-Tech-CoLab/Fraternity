@@ -15,6 +15,11 @@ Dzaleka.com compilations, and media accounts are dated months apart), not an
 error in this research. Always check the date attached to a figure before
 using it.
 
+> **Note (5 Oct 2026):** this is the September 2026 base file, kept for the
+> cross-case comparison. The current, updated Dzaleka analysis is
+> `docs/DZALEKA_SITUATION_RESEARCH.md` (end of blanket food assistance,
+> 2025 funding figures, durable solutions history, re-scored clusters).
+
 ---
 
 ## 1. Baseline profile

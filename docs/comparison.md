@@ -25,12 +25,12 @@ candidates and lists what must be verified before narrowing.
 | | Dzaleka (Malawi) | Kakuma–Kalobeyei (Kenya) | Bidibidi (Uganda) | Za'atari (Jordan) | Cox's Bazar (Bangladesh) |
 |---|---|---|---|---|---|
 | Established | 1994 | 1992 (Kalobeyei later) | 2016 | 2012 | 2017 (expansion site) |
-| Latest population | 62,000+ (May 2026) | 316,460 (31 May 2026) | 209,783 (28 Feb 2026) | >47,000 (Jul 2026) | 1,202,034 Bangladesh-wide (31 Jul 2026) |
+| Latest population | \~63,000 (Sept 2026) | 316,460 (31 May 2026) | 209,783 (28 Feb 2026) | >47,000 (Jul 2026) | 1,202,034 Bangladesh-wide (31 Jul 2026) |
 | Trend | Growing (~300 arrivals/month) | Growing | Falling — mechanism unconfirmed | Falling fast (returns to Syria) | Growing (new Rakhine arrivals) |
 | Design capacity | 10,000–12,000 | 90,000 Kakuma; ~130,000 with Kalobeyei | 180,000 | 78,700 (≈60,000 operational ceiling cited) | No formal figure |
 | Over-capacity | ~478–500% | ~239% system / ~344% Kakuma alone (derived) | ~117–158% (derived) | Below capacity now (derived) | Not computable; density ~40x Bangladesh average |
 | Legal status regime | Encampment; Art. 26 + other reservations; Refugees Act 1989 | Refugee Act 2021 + Shirika Plan (integration on paper) | Refugees Act 2006: movement + work rights | No 1951 accession; 1998 MoU | Non-signatory; "FDMN", not refugees |
-| Latest funding signal | UNHCR Malawi 23% funded (Oct 2025); WFP rations to zero reported mid-2026 | UNHCR Kenya ~52% (2024); WFP fully suspended Aug 2025 | UCRRP 18% funded (Aug 2025); 67% of refugees at 0% ration | UNHCR Jordan 23.2% funded (Mar 2026); cash $21/month since 2023 | JRP 50.1% funded (Sep 2026); protection 24% (2025) |
+| Latest funding signal | UNHCR Malawi 22.8% funded (2025 final); WFP blanket rations ended Sept 2026 (updated 5 Oct 2026) | UNHCR Kenya ~52% (2024); WFP fully suspended Aug 2025 | UCRRP 18% funded (Aug 2025); 67% of refugees at 0% ration | UNHCR Jordan 23.2% funded (Mar 2026); cash $21/month since 2023 | JRP 50.1% funded (Sep 2026); protection 24% (2025) |
 
 ---
 
