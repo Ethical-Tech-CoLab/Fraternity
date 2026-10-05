@@ -126,6 +126,37 @@ Kakuma — confirmed here as a cross-case, not site-specific, shock.**
 | 2026 Uganda GHO appeal | US$828.7M targeted at launch; US$423M "urgently prioritized" for 1.8M people | Dec 2025 launch | [Humanitarian Action](https://humanitarianaction.info/document/global-humanitarian-overview-2026/article/uganda-country-refugee-response-plan) |
 | WFP 2026 stopgap | Restoring assistance toward pre-2025-cut levels ahead of Mar–Jul 2026 lean season | 2026 | [WFP](https://www.wfp.org/stories/funding-shortfalls-push-ugandas-refugees-deeper-hunger) |
 
+**Sector funding, UCRRP 2026, Q1 (Oct 2026 pass).** National figures
+(Uganda-wide, not Bidibidi-specific). Of $850M required, $101.0M was
+available (12%): $85M received in 2026 plus $16M carried over from 2025.
+Only 38 of 78 partners reported.
+
+| Sector | Received | Required | % (derived) |
+|---|---|---|---|
+| **Protection (incl. GBV & CP)** | $41.2M | $202M | **~20%** |
+| ↳ General protection | $30.2M | $143M | ~21% |
+| ↳ GBV | $5.6M | $31M | ~18% |
+| ↳ Child protection | $5.4M | $28M | ~19% |
+| Livelihood & Resilience | $21.5M | $153M | ~14% |
+| Education | $13.7M | $107M | ~13% |
+| Shelter, Settlement & NFI | $11.1M | $77M | ~14% |
+| Health & Nutrition | $6M | $131M | ~5% |
+| Food Security | $5.2M | $110M | ~5% |
+| Environment & Energy | $1.1M | $24M | ~5% |
+| WASH | $0.9M | $46M | ~2% |
+
+[UNHCR Uganda, RRP Funding Dashboard Q1 2026, published 12 Jun
+2026](https://data.unhcr.org/en/documents/details/122835). **Reading:**
+in Uganda, protection is the **best-funded sector in proportional terms**
+in Q1 2026. That is the opposite of Cox's Bazar, where it is the
+worst-funded (24%, 2025). The figure is early in the year and
+partner-reported. Food Security's low share likely reflects WFP funding
+being reported outside this partner set, so cross-sector comparison is
+indicative only. Separately, the 2026 prioritization exercise put 14% of
+Tier-1 money into protection, and protection's prioritized budget is
+$62.6M of a $201.5M sector requirement. [UCRRP 2026
+Prioritization](https://data.unhcr.org/es/documents/download/120312)
+
 **Documented downstream link (explicitly named in reporting, not just
 inferred):** funding cut → WFP ration cuts/vulnerability-based
 categorization → malnutrition spike (tripled GAM in Bidibidi) → mental

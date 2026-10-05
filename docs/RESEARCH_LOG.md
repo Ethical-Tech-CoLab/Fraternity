@@ -76,3 +76,87 @@ reading the API key from config was not permitted).
 **Open questions / next steps:**
 - Run the Tavily pass on gaps G1–G4 in `docs/comparison.md` §6 first
   (they decide between L1 and L2).
+
+## 2026-10-05 — Comparison pass 2: Tavily on gaps G1–G4
+
+**Focus:** Close the gaps that decide between L1 and L2
+(`docs/comparison.md` §6). Tavily MCP was available this session.
+
+**Sources consulted:**
+- Multi-Hazard Emergency (Lifesaving) Relocation Protocol — Rohingya
+  Response/ISCG, uploaded Aug 2026 —
+  https://rohingyaresponse.org/wp-content/uploads/2026/08/MULTI-HAZARD-EMERGENCY-LIFESAVING-RELOCATION-PROTOCOL-OF-ROHINGYA-CAMPS-IN-BANGLADESH_FINAL.pdf
+  — full triggers, phases, roles, EVI annex (as of Oct 2024).
+- Mongabay via PreventionWeb, Sep 2026 — July 2026 landslides; DRM
+  programme 40% funded.
+- Daily Star, 6 Jul 2026 — UNHCR landslide death tally 2021–2026.
+- UNHCR Uganda RRP Funding Dashboard Q1 2026 (PDF, published 12 Jun 2026)
+  — sector and protection sub-sector funding.
+- UCRRP 2026 Prioritization — tier budgets.
+- JRP 2025 funding update (31 Dec 2025) — confirms Cox's protection 24%.
+- 3RP RSO 2026; FTS Jordan/Malawi/Uganda 2026 — Jordan sector funding
+  **not** obtainable (FTS 3RP Jordan coverage 2.3%, clearly incomplete);
+  FTS Kenya 2026 URL returned 404.
+- Africa Brief summary of Malawi NMHCP 2025–26 — plan exists; refugee
+  coverage not stated `[secondary]`.
+- Draft Turkana County DRM Policy (2017) — names Kakuma fire risk; no
+  camp activation SOP.
+
+**Findings:**
+- G1 closed: Cox's Bazar protocol extracted. It is a usable benchmark, but
+  deaths continued in Jul 2026 because physical mitigation was
+  underfunded, so L1's leverage was downgraded to M.
+- G4 partial: Uganda protection ~20% funded in Q1 2026, the best-funded
+  sector in proportional terms. That contradicts the "worst-funded
+  everywhere" premise of L2, so L2's neglectedness was downgraded.
+  Kenya/Malawi have no sector-level visibility at all, so a new lever L2b
+  was added.
+- Emerging case signal: Dzaleka looks most neglected across both L1 and
+  L2/L2b. Not a narrowing decision.
+
+**Files touched:** `docs/cases/coxs-bazar.md`, `docs/cases/bidibidi.md`,
+`docs/cases/dzaleka.md`, `docs/comparison.md` (§7 added),
+`docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:**
+- Read the Malawi NMHCP 2025–26 PDF itself; search for "Dzaleka" and
+  "refugee" (G3).
+- Za'atari JCD/SRAD emergency plan (G2); Jordan 3RP 2026 protection
+  funding from a 3RP Jordan dashboard (G4).
+- Cox's "Landslide Risk Prevention… Strategy & Action Plan" (G1 residual).
+- Check whether "Dzaleka as most neglected case" survives G2/G3.
+
+## 2026-10-05 — Pass 3: fill protection-funding gaps (official sources only)
+
+**Focus:** Fill the "?" cells in `docs/comparison.md` §7.2 (Jordan, Kenya,
+Malawi), using only official sources (OCHA FTS, UNHCR).
+
+**Sources consulted:**
+- OCHA FTS API — `/v1/public/plan/year/2026` (plan list) and
+  `/v1/public/fts/flow?planId=…&groupby=cluster` for plans 1524 (JRP),
+  1526 (Uganda RRP), 1528 (3RP). JRP has cluster data; 3RP and Uganda
+  RRP are entirely "not specified" by sector. No Kenya or Malawi plan
+  exists for 2026.
+- UNHCR Annual Results Reports 2025 (Malawi, Kenya, Uganda, Jordan,
+  Bangladesh), §3.1 Financial Data — budget vs. funds available by
+  outcome area.
+- UNHCR Funding Updates 2026 as of 30 Sep 2026: Kenya (52%), Jordan
+  (29%), South Africa MCO (18%; confirmed it does **not** cover Malawi).
+- UNHCR Malawi country page — 2026 budget $12.64M; no 2026 funding
+  update listed.
+- Dead ends: ReliefWeb pages/API blocked from curl; unhcr.org blocked
+  from curl (403), so Tavily extract was used instead. Guessed PDF URLs
+  for a Malawi 2026 update returned 404.
+
+**Findings:** see the new Tables A–C in `docs/comparison.md` §7.2. Key
+points:
+- Kenya: UNHCR GBV and CP lines were well funded in 2025.
+- Jordan has the lowest GBV coverage of the five.
+- Malawi has no separate CP outcome area and no 2026 funding update.
+- Cox's Bazar protection is 45.4% funded in 2026, against a smaller
+  requirement.
+
+**Open questions / next steps:**
+- The §7.3 lever scoring has not been re-scored against Tables A–C yet.
+- Uganda's 2026 sector figures are still Q1 only; look for the Q2
+  dashboard.

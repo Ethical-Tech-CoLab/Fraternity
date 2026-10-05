@@ -309,6 +309,44 @@ though this research did not extract their detailed activation thresholds.
 [Rohingya Response — Emergency Preparedness and Response document
 list](https://rohingyaresponse.org/cross-cutting/emergency-preparedness-and-response)
 
+**Relocation protocol, extracted (Oct 2026 pass).** The protocol PDF is
+dated to an Aug 2026 upload; its EVI annex uses figures "as of October
+2024". Key mechanics:
+
+| Element | Content |
+|---|---|
+| Who activates | Camp-level **Disaster Management Committees (DMC)**, chaired by the Camp-in-Charge (CiC); RRRC + ISCG responsible for the protocol being functional camp-wide |
+| Phases | Two, framed as Anticipatory Action: **Pre-activation** (readiness: re-check ECRC map, risk map, minimum readiness checklist, ECRC team on standby) → **Activation** (open ECRCs, mobilize DMU/SMS volunteers, start food/NFI) |
+| Cyclone triggers | Pre-activation: BMD Local Cautionary **Signal 4** at Cox's Bazar Port. Activation: Danger **Signal 5–7**. Deactivation: signal lowered to 3 + shelters judged safe. Triggers follow the national Standing Orders on Disaster (SOD) 2019 |
+| Monsoon triggers | Pre-activation: BMD **INSTANT portal / landslide EWS** forecasts heavy rain likely to cause flash floods or landslides. Activation: BMD **Heavy Rainfall Warning for Chattogram Division** |
+| Fire triggers | Pre-activation: fire confirmed by Site Management Sector. Activation: **≥50 shelters** estimated impacted |
+| Space standard | 0.28 m²/person (Government cyclone-shelter standard), valid only for very short stays; decongestion after 24 h |
+| Prioritization | All high-risk-location residents, with extra support for 9 EVI categories, plus child-headed households and large/complex households; EVI counts per camp in Annex 1 (967,765 people; e.g. 195,095 under-fives) |
+| Sector roles | Site Development certifies return safety; Shelter = NFIs; Food Security = 72-h food plan; WASH; Health = first-aid stations + referral; Protection (incl. GBV/CP) monitors inside ECRCs via PERU volunteers |
+| Data | SMS tracks relocated people inside SCCCM information systems, explicitly to avoid parallel registration |
+
+[Multi-Hazard Emergency (Lifesaving) Relocation Protocol, Rohingya
+Response, uploaded Aug
+2026](https://rohingyaresponse.org/wp-content/uploads/2026/08/MULTI-HAZARD-EMERGENCY-LIFESAVING-RELOCATION-PROTOCOL-OF-ROHINGYA-CAMPS-IN-BANGLADESH_FINAL.pdf)
+
+**How it held up in the July 2026 monsoon:** between 4 and 19 July 2026,
+more than 200 landslides hit the camps, killing at least 15 people
+(including five adolescent girls) and displacing more than 13,000. From
+2018 to 2025 there were more than 3,100 landslide incidents affecting
+more than 73,000 people. The access, safety and DRM programme was **40%
+funded** by July 2026 ($23.2M gap against $38.8M), and SCCCM was 42% funded
+with $73.9M still needed for slope stabilization and drainage. [Mongabay
+via PreventionWeb, Sep
+2026](https://www.preventionweb.net/news/bangladeshs-rohingya-refugee-camps-become-increasingly-vulnerable-landslides).
+UNHCR's tally, given separately, is 28 landslide deaths in 2021 to 29 June
+2026 ([Daily Star, 6 Jul
+2026](https://www.thedailystar.net/news/accidents-fires/news/landslides-kill-9-including-8-rohingya-camps-heavy-rain-batters-coxs-bazar-4217036)).
+The two sets of figures cover different periods and are kept side by side.
+**Reading:** a documented protocol with clear triggers sits alongside
+continuing deaths. Here the binding constraint is physical: slope
+stabilization is underfunded, and new arrivals keep cutting into hill
+slopes. Protocol design is not the bottleneck.
+
 ---
 
 ## 5. Pathway D — Protection & vulnerable groups
@@ -432,11 +470,12 @@ form.
   reports issued in different years and for different camp subsets (IOM-wide
   vs. IOM-managed-camps-only); no single current, response-wide count was
   found.
-- No detailed extraction of the published "Multi-Hazard Emergency
-  Lifesaving Relocation Protocol" or "Landslide Risk Prevention and
-  Mitigation Measures Strategy & Action Plan" — these documents exist and
-  are named in source lists, but their specific activation thresholds and
-  RRRC↔CPP↔camp-level command relationships were not read in this pass.
+- ~~No detailed extraction of the published "Multi-Hazard Emergency
+  Lifesaving Relocation Protocol"~~: **resolved in the Oct 2026 pass.**
+  Triggers and roles are now in Pathway C. Still open: the "Landslide Risk
+  Prevention and Mitigation Measures Strategy & Action Plan" (not read),
+  and CPP's exact role (the protocol names DMCs, CiCs, DMU/SMS volunteers,
+  but not CPP explicitly).
 - ~~The January 2026 Camp 16 fire has a dedicated published impact/response
   report that was identified but not extracted~~ — **resolved, Sept 2026
   refresh:** NRC and CARE figures are now in Pathway C above (335–369

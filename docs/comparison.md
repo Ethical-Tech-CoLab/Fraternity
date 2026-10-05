@@ -8,6 +8,11 @@ from a case file, which holds the original source, date, and reporting
 period. Where a cell says "derived", the number is computed here, not
 sourced.
 
+**Update, pass 2 (2026-10-05, Tavily):** gaps G1 and G4 were worked, and
+G2 and G3 partly. The new findings went into the case files first and are
+summarized in §7. The scoring in §4 is revised to match. Sections 1–3 are
+unchanged, except for the P1/P2 notes added in §7.
+
 Purpose (per `CONCEPT.md`): find a lever that is simultaneously
 **high-leverage**, **tractable**, and **neglected** *relative to the
 other cases*. This file does not pick an intervention; it ranks
@@ -128,3 +133,144 @@ What the comparison adds to Dzaleka specifically:
 When a gap is closed, update the case file (with source/date), then
 update the relevant row here, and log the session in
 `docs/RESEARCH_LOG.md`.
+
+**Status after pass 2:** G1 ✔ closed (the landslide action plan is still
+unread) · G4 ◐ Uganda done, Cox's Bazar confirmed, Jordan/Kenya/Malawi
+open · G2 ◐ Kakuma: only a 2017 draft Turkana DRM policy, which names
+Kakuma camp fire risk; no camp SOP found · G3 ◐ Malawi NMHCP 2025–26
+exists, refugee coverage unknown · G5–G8 not started.
+
+---
+
+## 7. Pass 2 findings: what changed and why
+
+### 7.1 G1: the Cox's Bazar protocol shows what "good" looks like, and that it isn't enough on its own
+
+The protocol is now extracted (full table in `cases/coxs-bazar.md`,
+Pathway C). As a **benchmark for L1**, it has five parts:
+
+1. **A named activating body at camp level**: the Camp DMC, chaired by
+   the CiC.
+2. **Hazard-specific, externally observable triggers** taken from the
+   national system: BMD port signals 4 → 5–7, BMD heavy-rainfall warning,
+   and a ≥50-shelter threshold for fire.
+3. **Two phases** (pre-activation readiness, then activation), which is
+   the anticipatory-action logic.
+4. **Pre-mapped relocation sites (ECRCs)** with a readiness checklist and
+   a space standard.
+5. **Per-camp vulnerability counts** for prioritization, and a sector
+   role table.
+
+This gives a concrete template to check Dzaleka, Kakuma, Za'atari and
+Bidibidi against: *does each have (1)–(5), in public or not?*
+
+**But the outcome evidence weakens L1's leverage claim.** Even with this
+protocol in place, the July 2026 monsoon brought >200 landslides, ≥15
+deaths and >13,000 displaced. The DRM programme was 40% funded and slope
+stabilization had a $73.9M gap. At Cox's Bazar the binding constraint is
+**physical risk reduction (slopes, drainage, space)**, not the activation
+interface. So "formalize the interface" is necessary but clearly not
+sufficient. Its value is highest where *no* interface exists, and that is
+exactly the claim still unverified for the other four cases.
+
+### 7.2 G4: protection is *not* uniformly the worst-funded sector
+
+**Updated 2026-10-05 (pass 3, official sources only).** The single mixed
+table was split into three tables, because the sources measure different
+things.
+
+**Table A: inter-agency plan, protection sector (all agencies)**
+
+| Case | Protection funded | Rank vs. other sectors | Source |
+|---|---|---|---|
+| Cox's Bazar, 2025 | 24% ($42.0M / $176.8M), as of 31 Dec 2025 | **Lowest** of the major sectors | ISCG JRP 2025 funding update (FTS data) |
+| Cox's Bazar, 2026 | **45.4%** ($33.5M / $73.8M), FTS live data pulled 2026-10-05 | Mid-range (Food 58%, Health 40%, Shelter-CCCM 38%, WASH 34%, Livelihoods 30%, Education 18%, Nutrition 14%) | FTS API, plan 1524 (JRP 2026), grouped by cluster; $31.9M not assigned to any sector |
+| Bidibidi (Uganda-wide), 2026 Q1 | ~20% ($41.2M / $202M; GBV ~18%, CP ~19%) | **Highest** in proportional terms | UNHCR Uganda RRP Funding Dashboard Q1 2026. FTS has no sector breakdown for plan 1526 (all "not specified") |
+| Za'atari (Jordan), 2026 | **Not available.** The 2026 3RP Jordan protection requirement is $145M (of $650.5M), but FTS has no sector breakdown for plan 1528 (all "not specified") | n/a | 3RP RSO 2026; FTS API |
+| Kakuma (Kenya), 2026 | **No inter-agency refugee plan exists** in FTS's 2026 plan list | n/a | FTS API, `/v1/public/plan/year/2026` |
+| Dzaleka (Malawi), 2026 | **No inter-agency refugee plan exists** in FTS's 2026 plan list | n/a | Same |
+
+**Table B: UNHCR only, 2025 final. Funds available as % of budget, by
+outcome area.** This is the only official per-sector measure that exists
+for all five countries.
+
+| Country (case) | UNHCR total | OA4: GBV | OA5: Child protection | Lowest-funded outcome areas |
+|---|---|---|---|---|
+| Malawi (Dzaleka) | 22.8% ($6.0M / $26.3M) | 21.0% ($0.34M / $1.63M) | **No separate OA5 line.** Malawi's outcome statement combines "reduced cases of GBV and improved child protection" under OA4 | Wellbeing 5.5%, Access/Doc 5.5%, Housing 8.2% |
+| Kenya (Kakuma) | 43.4% ($68.6M / $157.9M) | **89.4%** | **70.3%** | Housing 21.5%, WASH 25.9%, Livelihood 28.0% |
+| Uganda (Bidibidi) | 37.1% ($133.9M / $361.0M) | 18.8% | 21.1% | Status 5.1%, Policy/Law 14.1%, Livelihood 16.4% |
+| Jordan (Za'atari) | 32.4% ($120.9M / $372.8M) | **16.9%** | 23.2% | Return 6.4%, Education 11.5%, Livelihood 13.7% |
+| Bangladesh (Cox's Bazar) | 42.7% ($109.1M / $255.5M) | 35.0% | 36.5% | Status and Livelihood above 70%; WASH 30.4%, Health 31.4% |
+
+Source: UNHCR Annual Results Report 2025, §3.1 Financial Data, one per
+country (all dated 8 May 2026). Malawi:
+https://www.unhcr.org/sites/default/files/2026-06/unhcr-annual-results-report-2025-malawi.pdf
+— same URL pattern for `-kenya`, `-uganda`, `-jordan`, `-bangladesh`.
+
+**Table C: UNHCR only, 2026 year to date (whole operation, no sector
+split)**
+
+| Country | Requirement 2026 | Funded | As of | Source |
+|---|---|---|---|---|
+| Kenya | $116.1M | 52% ($60.6M) | 30 Sep 2026 | UNHCR Kenya Funding Update 2026 (PDF `kenya-funding-30-09-2026.pdf`) |
+| Jordan | $280.0M | 29% ($80.2M) | 30 Sep 2026 | UNHCR Jordan Funding Update 2026 (PDF `jordan-funding-30-09-2026.pdf`) |
+| Malawi | $12.64M (2026 budget, per the UNHCR Malawi country page) | **No 2026 funding update published.** The latest on the country page is "Malawi Funding Update – 2025" (posted 29 Jan 2026) | — | unhcr.org/where-we-work/countries/malawi |
+
+**What the official data changes:**
+- **Kenya is not a protection-neglect case at the UNHCR level.** GBV was
+  89% funded and CP 70% in 2025, the best in the set. This weakens the
+  P2 tick for Kakuma: harms are documented, but UNHCR's protection
+  budget lines were relatively well covered.
+- **Jordan has the lowest GBV coverage** (16.9%), below Malawi's 21.0%.
+- **Malawi is distinct in two ways that are structural, not just about
+  percentages:**
+  1. It has no separate child-protection outcome area.
+  2. It has no 2026 funding update, while all the other operations do.
+
+  Its whole-operation funding (22.8%) is also the lowest of the five.
+- Cox's Bazar's protection funding roughly doubled from 2025 to 2026
+  (24% to 45%), but the 2026 plan is smaller ($73.8M protection
+  requirement vs. $176.8M in 2025). The two years are not like-for-like.
+
+Global context: GBV funding has hovered around ~1% of humanitarian
+funding (TNH, 2021). Programmes to prevent GBV were 38% funded in 2024
+across six RRPs (UNHCR). An Alliance CPHA survey found ~46% of
+respondents lost >40% of child-protection funding after Jan 2025, with
+cuts hitting national and local NGOs hardest.
+
+**What this does to L2:**
+- The premise "protection is worst-funded everywhere" is **false as
+  stated**. Uganda is a clear counter-example, although it is Q1 data
+  reported by 38 of 78 partners.
+- But the *harm* evidence in P2 stands everywhere. Uganda's protection
+  share is relatively high, yet GBV cases rose 32% and CP cases 37%
+  (Sep 2025 vs. 2024), and there was a protection staff loss (GHO 2026).
+  So the problem is **absolute scale of the cut**, not sector ranking.
+- Where there is **no inter-agency plan** (Kenya, Malawi), there is no
+  sector-level funding visibility at all. That opacity is itself a
+  finding. It means nobody can show whether protection in Dzaleka is
+  collapsing faster than other services, beyond anecdotes such as "no CP
+  officer on site".
+
+### 7.3 Revised lever scoring (supersedes §4 where different)
+
+| Lever | High-leverage | Tractable | Neglected | Confidence | Change from §4 |
+|---|---|---|---|---|---|
+| **L1** DRM ↔ camp activation interface | **M** (↓ from M–H): Cox's shows a protocol doesn't prevent deaths when physical mitigation is underfunded | **H**: Cox's protocol is a ready template, so the "transfer" cost is low | **H?** still unverified for 4 cases; Malawi NMHCP exists, refugee coverage unknown | Med (↑) | Benchmark found; leverage claim narrowed to "places with no interface at all" |
+| **L2** Ring-fenced protection capacity | **H** (unchanged): harms rise even where protection is relatively funded | **M** | **M** (↓ from H): not the worst-funded sector everywhere | Med | Reframed: L2 should target **floor-level continuity in contexts without a sector plan (Malawi, Kenya)**, not a "worst-funded sector" argument |
+| **L2b (new)** Sector-level funding visibility where no inter-agency plan exists | **M**: enabler for L2 and for any donor advocacy | **H**: data/reporting work; fits a DPI framing | **H**: Kenya/Malawi have no RRP-style sector dashboard | Low–Med | New, split out of the G4 finding |
+| **L3–L6** | unchanged | | | | |
+
+**Provisional reading after pass 2:** the L1 vs. L2 choice is no longer
+the right frame. The comparison now points at **Dzaleka specifically**
+as the case where both L1 and L2/L2b look most neglected:
+- no published activation interface;
+- no inter-agency sector plan, so no protection-funding visibility;
+- no CP officer on site;
+- the smallest donor attention of the five (FTS Malawi 2026 flows are
+  tiny).
+
+That is a *case* signal, not yet a *lever* signal. **Still do not
+narrow.** Next, close G2/G3 for Dzaleka (read the NMHCP for refugee
+coverage) and for Za'atari (JCD/SRAD). Then decide whether "Dzaleka as
+the most neglected case" holds up.

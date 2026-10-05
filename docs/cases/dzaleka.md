@@ -164,6 +164,16 @@ in.)*
   published activation thresholds, command relationships, evacuation-route
   maps, or road/drainage condition assessments were found. This is flagged
   as **the single largest evidence gap for evacuation-risk modeling**.
+- **Oct 2026 pass, partial:** Malawi's **National Multi-Hazard Contingency
+  Plan (NMHCP) 2025–2026** exists. DoDMA coordinates it, and it has 11
+  clusters, including Shelter/Camp Coordination & Camp Management (S-CCCM)
+  and Protection & Social Support. Its priority hazards are stormy
+  rains/winds, floods, disease outbreaks and dry spells, and it has an ~$82M
+  funding gap. The secondary summary found does **not** say whether
+  Dzaleka or refugees are named in it, and the plan itself was not read.
+  [Africa Brief summary of NMHCP
+  2025–26](https://africabrief.substack.com/p/malawi-prepares-multi-hazard-contingency).
+  Next step: get the NMHCP PDF and search it for "Dzaleka" and "refugee".
 
 **One concrete risk-financing precedent:** 4,000 households shared an
 innovative insurance payout ($33/household/month) after El Niño-driven crop
