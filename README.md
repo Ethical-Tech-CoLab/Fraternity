@@ -27,6 +27,8 @@ down and go deep on that one.
   framework, sourcing discipline, output shape).
 - `docs/cases/` — one file per crisis/camp, each following the same
   structure so they stay comparable.
+- `docs/RESEARCH_LOG.md` — running log of research sessions (sources,
+  decisions, dead ends, next steps).
 - `docs/comparison.md` (once ≥3 cases exist) — cross-case comparison and
   candidate opportunity list.
 

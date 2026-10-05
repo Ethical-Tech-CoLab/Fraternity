@@ -18,6 +18,8 @@ tractable, neglected — that will eventually justify narrowing down).
 - `docs/cases/` — five comparative case files (Dzaleka, Kakuma, Cox's
   Bazar, Za'atari, Bidibidi), each following the same four-pathway
   structure so they stay comparable.
+- `docs/RESEARCH_LOG.md` — running log of research sessions; append an
+  entry each time the research is deepened.
 - `../dzaleka-cost-model/docs/` — 22 deep-dive research documents specific
   to Dzaleka Refugee Camp, Malawi (legal/policy, funding, disaster risk,
   protection, actor landscape, family/vulnerable groups, health, and
