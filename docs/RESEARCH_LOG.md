@@ -374,3 +374,23 @@ anyone, with FSF as its first user.
 baseline. Plan B: cluster C.
 
 **Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (§13).
+
+## 2026-10-05 — Dzaleka document restructured into ToC format
+
+Reorganised `docs/DZALEKA_SITUATION_RESEARCH.md` to follow the case-file
+format in `CONCEPT.md`, then clusters, then the rest.
+
+- **Part I:**
+  - Baseline.
+  - Pathways A–D. Political context, length of stay/durable solutions
+    and origins moved under A; family and health moved under D.
+  - New cross-pathway causal skeleton (mermaid diagram).
+  - Evidence gaps/audit.
+  - Draft ToC skeleton, now complete: problem statement, long-term
+    outcome, one intermediate outcome per pathway, assumptions, levers.
+- **Part II:** actors, clusters, proposed focus, awareness angles.
+- **Part III:** watch list and sources.
+
+All cross-references were renumbered and acronym first-use was
+re-checked. No content was added beyond the skeleton, outcomes and
+assumptions.
