@@ -49,3 +49,30 @@ four comparative case files: Kakuma, Cox's Bazar, Za'atari, Bidibidi).
 
 **Open questions / next steps:**
 - Decide which case(s) / pathway(s) to deepen first.
+
+## 2026-10-05 — First cross-case comparison
+
+**Focus:** Build `docs/comparison.md` (called for in `CONCEPT.md` once
+≥3 cases exist; it didn't exist yet) to see where to deepen.
+
+**Sources consulted:** the five case files only (as refreshed
+2026-09-22). No new external research — the Tavily pass was blocked in
+this session (the Tavily MCP server isn't configured for this project, and
+reading the API key from config was not permitted).
+
+**Findings:**
+- Funding collapse is a pivot node in 5/5 cases → high leverage but not
+  neglected; treated as context, not a narrowing candidate.
+- Undocumented national-DRM ↔ camp-management emergency interface in 4/5
+  cases; Cox's Bazar has a named protocol (not yet extracted) → candidate
+  lever L1.
+- Protection/child protection is first to collapse in most cases;
+  protection is the worst-funded sector where measured (Cox's Bazar 24%)
+  → candidate lever L2.
+- Law ≠ practice gap recurs (Kakuma, Bidibidi, Dzaleka) → L3.
+
+**Files touched:** `docs/comparison.md` (new), `docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:**
+- Run the Tavily pass on gaps G1–G4 in `docs/comparison.md` §6 first
+  (they decide between L1 and L2).
