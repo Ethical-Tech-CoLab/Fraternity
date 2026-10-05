@@ -423,6 +423,24 @@ Seven clusters emerge across the 31 source documents. Each is scored against Fra
 - **Shift 2 — D becomes more urgent but no more tractable.** Neglect rises to "very high" (no child-protection budget line), and the security signals worsen. It still needs sustained programme capacity, so it remains a strong *awareness* angle more than a near-term intervention.
 - **Shift 3 — Dzaleka's case for focus is stronger.** The cross-case comparison confirms that Malawi has the lowest UNHCR funding of the five camps, no inter-agency plan, no 2026 funding update, and no child-protection budget line. That supports keeping Dzaleka as the focus case. **Still do not narrow to a single lever yet**; the bill (9 Oct) and the targeted-distribution outcome (Oct) are two results worth waiting for.
 
+**Proposed focus (5 Oct 2026, for discussion with the professor): cluster G, with C as plan B.**
+
+- **Who acts:** the intended intervention is an open tool, free for anyone, with Fraternidade Sem Fronteiras (FSF) as its first user. FSF already operates the Ubuntu Nation project next to the camp, which makes G the only cluster where the team is already an actor.
+- **Research level (cluster G):** how to keep essential services running when they come to depend on local, volunteer-based actors (churches, refugee-led organisations, small NGOs) after the agencies withdraw. The pattern is not FSF-specific:
+  - UNHCR-supported clinics ran out of medicine in Jun 2025;
+  - refugees still reported medicine shortages in Sept 2026;
+  - Inua Advocacy closed its Lilongwe office for lack of funds.
+- **Case level (FSF clinic, illustration and possible pilot, not the research object):**
+  - the clinic does asynchronous telemedicine: patient photos are reviewed by doctors in Brazil, and the patient likely returns another day for the diagnosis;
+  - medicines arrive only as donations carried by volunteer caravans, roughly every 3 months, with 8–30 volunteers and up to 3 kg each — **24–90 kg per caravan at most**, so supply can vary ~4x independent of demand;
+  - stock is tracked in a spreadsheet;
+  - local purchase is not an option: no stock in the region, per a team member's site visit.
+
+  Source: the team's own knowledge of FSF operations, not yet documented publicly.
+- **Design principle:** start from how a refugee asks for help (trusted local focal points, in person or WhatsApp/SMS), let the refugee choose where a case goes, and let only aggregate data leave the tool.
+- **First step:** a short, ethical field mapping of how refugees seek help today and of the clinic's baseline (volume, time to diagnosis, return rate, stock-out days).
+- **Plan B:** cluster C (emergency coordination), more general and not dependent on FSF, with a pilot before the mid-Dec rains.
+
 **Awareness-specific angles, drawn from the verified material above:**
 
 1. **"The invisible camp"** — Dzaleka has no UN-coordinated response plan, is excluded from World Bank financing, invisible to impact investors, unclaimed by any think tank. A structural-neglect story with a hard financial number attached ($2–2.4B facility, ~$85M Kayilizi financing gap, UNHCR Malawi funds down from $8.4M to $6.0M in a year). Updated 5 Oct 2026: UNHCR Malawi was 22.8% funded in 2025, the lowest of five camps compared, with no 2026 funding update published.

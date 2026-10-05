@@ -346,3 +346,31 @@ accordingly:
 
 Derived scale figures were added and labelled as derived: ~$100 per
 refugee per year from UNHCR in 2025; ~$1.26M/month for full rations.
+
+## 2026-10-05 — Focus proposal: cluster G (plan B: C)
+
+**Decision (for discussion with the professor):** focus on cluster G
+(local/faith-based response). The intervention is an open tool, free for
+anyone, with FSF as its first user.
+
+**Two levels:**
+- Research level: continuity of essential services when they come to
+  depend on local, volunteer-based actors.
+- Case level: the FSF clinic (asynchronous telemedicine, caravan-borne
+  donated medicines, spreadsheet stock), as illustration and possible
+  pilot.
+
+**Facts from the team (not public):**
+- caravans roughly every 3 months, 8–30 volunteers, up to 3 kg each, so
+  24–90 kg per caravan at most;
+- no local stock to buy (site visit).
+
+**Corrections during the discussion:**
+- Initial tool ideas (case referral, clinic records) sat in D/E, not G.
+- G must start from the refugee's entry point.
+- Local purchase was dropped.
+
+**Next:** ethical field mapping of how refugees seek help; clinic
+baseline. Plan B: cluster C.
+
+**Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (§13).
