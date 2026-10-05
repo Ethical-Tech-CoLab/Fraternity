@@ -160,3 +160,25 @@ points:
 - The §7.3 lever scoring has not been re-scored against Tables A–C yet.
 - Uganda's 2026 sector figures are still Q1 only; look for the Q2
   dashboard.
+
+## 2026-10-05 — Dzaleka update since 22 Sept + watch list
+
+**Focus:** Refresh `docs/DZALEKA_SITUATION_RESEARCH.md` ahead of
+presenting the preliminary research to the professor.
+
+**Sources consulted:** Nation Online and MBC (mid-Sept 2026, quoting
+UNHCR Malawi and the Commissioner for Refugees); The New Humanitarian
+(30 Sept); SOS Médias Burundi (18 Sept); Malawi24 (5 Oct, HRDC); Inua
+Advocacy / Dzaleka Online (Refugee Bill date); UNHCR ARR 2025 Malawi;
+UNHCR Malawi country page; OCHA FTS API.
+
+**Findings:** WFP blanket rations ended Sept 2026; draft Refugee Bill
+due 9 Oct; UNHCR Malawi 22.8% funded in 2025, no 2026 funding update;
+Chitipa relocation stalled (145 vs. 439 ha discrepancy); serious
+security allegations, all unverified.
+
+**Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (§13 update,
+§14 watch list), `docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:** work through the §14 watch list,
+starting with the Refugee Bill on 9 Oct.

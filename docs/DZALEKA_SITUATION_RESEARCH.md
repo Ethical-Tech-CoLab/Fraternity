@@ -1,6 +1,6 @@
 # Dzaleka Refugee Camp — Situation Research
 
-As of 2026-09-22.
+As of 2026-10-05 (base compiled 2026-09-22; see §13 for the 5 Oct update).
 
 Broad-to-narrow evidence base compiled via Tavily research across the 31 source documents in `dzaleka-cost-model/docs/`, ahead of a public-awareness effort — not the final story yet, but the sourced, dated foundation for one. Also published as a live-editable [Claude Doc](https://claude.ai/code/artifact/cf8a4a89-d5ca-43ee-b9bd-69986b1d04b2). Refreshed 2026-09-22 after a Tavily API-key fix; material updates from this pass are flagged inline as "Update, Sept 2026."
 
@@ -213,3 +213,48 @@ Seven clusters emerge across the 31 source documents. Each is scored against Fra
 4. **"Who's actually there"** — a positive-framing counter-narrative: local/faith-based/refugee-led actors (churches, INUA Advocacy, Tumaini Festival, Ubuntu Nation) sustaining the camp while formal institutions withdraw — useful for a hope-forward awareness angle rather than crisis-only framing.
 
 **Sources:** every figure above is drawn from the 31 dated, linked source documents in `dzaleka-cost-model/docs/` plus this Sept 2026 Tavily research refresh — see §1–11 and that repository for full citation detail on each claim.
+
+## 13. Update, 5 Oct 2026 — what changed since 22 Sept
+
+New information found in a targeted pass (Tavily, sources dated 15 Sept – 5 Oct 2026). Official sources are marked **[official]**; claims from civil society or media that have not been independently verified are marked `[unverified]`.
+
+| Topic | What's new | Date | Source |
+| --- | --- | --- | --- |
+| **Food assistance: blanket rations end** | UNHCR Malawi representative Precious Nkoka said September 2026 marks **the end of WFP's blanket food assistance** to refugees. After that, support is *targeted* at the most vulnerable (families with children, people with disabilities). Commissioner for Refugees Ignacio Maulana: "this is the last month" of WFP support; "the situation is bad. And it's going to get worse." | Mid-Sept 2026 | [Nation Online](https://mwnation.com/japan-invests-in-dzaleka-refugees-resilience); [MBC](https://mbc.mw/japan-funds-biofertiliser-production-for-300-refugee-women-at-dzaleka) (both quote officials) |
+| Value of the last payment | ~**$8 per person** for all of September, vs. ~**$28** needed for a 2,100-kcal basket. First-person account from inside the camp | 30 Sept 2026 | [The New Humanitarian](https://www.thenewhumanitarian.org/first-person/2026/09/30/ration-cuts-bite-malawis-refugees-lose-vital-lifelines) |
+| WFP's own figures (context) | 2026 Malawi portfolio 22% funded ($18.65M of $86.75M). $6.8M needed to sustain *reduced* rations to Jan 2027; $11.4M to restore full rations for 63,000+ refugees | Jul 2026 brief | WFP Malawi Country Brief, Jul 2026 **[official]** |
+| **UNHCR funding, final 2025** | Funds available **$6.0M of $26.3M budget (22.8%)**, the lowest of the five comparison countries. GBV outcome area 21.0% funded. **No separate child-protection outcome area**: the outcome statement combines "reduced cases of GBV and improved child protection" | 2025 final, published 8 May 2026 | [UNHCR Annual Results Report 2025 – Malawi](https://www.unhcr.org/sites/default/files/2026-06/unhcr-annual-results-report-2025-malawi.pdf) **[official]** |
+| UNHCR funding, 2026 | 2026 budget **$12.64M** (about half of 2025's). **No 2026 funding update has been published.** The latest listed on the country page is the 2025 update (posted 29 Jan 2026). Kenya and Jordan both have 30 Sept 2026 updates | as of 5 Oct 2026 | [UNHCR Malawi country page](https://www.unhcr.org/where-we-work/countries/malawi) **[official]** |
+| No inter-agency plan | FTS lists no inter-agency refugee response plan for Malawi in 2026, so there is no sector-level funding visibility | 5 Oct 2026 | OCHA FTS API **[official]** |
+| **Refugee Bill** | The Malawi Law Commission will reportedly **make the draft Refugee Bill public on 9 October 2026**. The EU has urged Parliament to consider it; Inua Advocacy has published a 7-point checklist for assessing it | Announced late Sept 2026 | Inua Advocacy director's public posts; [Dzaleka Online](https://www.dzaleka.com/2026/09/inua-advocacy-calls-for-work-business.html) `[secondary — confirm on 9 Oct]` |
+| **Chitipa settlement (Kayilizi)** | Government has identified "**about 145 hectares** in Chitipa" for the proposed settlement. **Relocation has not begun**; compensation to landholders is incomplete (confirmed by UNHCR). Earlier UNHCR strategy figure: **439 ha** (see §2). The figures diverge and are kept side by side, not reconciled | Mid-Sept 2026 | [Nation Online](https://mwnation.com/japan-invests-in-dzaleka-refugees-resilience) |
+| Population | "About **63,000** refugees and asylum-seekers" in Dzaleka (journalist figure, consistent with WFP's 63,000+). UNHCR's 2025 annual report puts Malawi's total refugee/asylum-seeker population at ~60,500 | Sept 2026 | Nation Online; [Times](https://times.mw/dzalekas-struggle-for-a-meal) citing UNHCR |
+| New donor activity | Japan: **$246,666**, of which $140,000 is WASH for ~30,000 people (camp + host) and $106,666 is a bio-fertiliser unit run by refugee women's organization SOFERES (300 women, until Feb 2027, with UN Women) | Opened ~17 Sept 2026 | Nation Online; MBC |
+| **Security & protection** | At a meeting with UNHCR (~13 Sept), refugees reported: **more than a dozen bodies found in or around the camp in under three months**; alleged **enforced disappearances** of community leaders; some families without food aid for 6+ months; shortages of water and medicine; rising tension with the host community. The outlet itself says the allegations are not independently verified | 18 Sept 2026 | [SOS Médias Burundi](https://www.sosmediasburundi.org/en/2026/09/18/dzaleka-malawi-refugees-denounce-hunger-insecurity-and-alleged-enforced-disappearances) `[unverified]` |
+| Smuggling allegations | Malawi's Human Rights Defenders Coalition (HRDC) cited allegations that **police and immigration officials are linked to an Ethiopian smuggling syndicate operating from Dzaleka** | 5 Oct 2026 | [Malawi24](https://malawi24.com/2026/10/05/hrdc-trashes-mutharika) `[unverified allegation]` |
+| Resettlement | Inua Advocacy refers to an "announcement of the suspension of resettlement opportunities" | Sept 2026 | Inua Advocacy social post `[unverified — find official source]` |
+
+**What this changes in the analysis:**
+- **Pathway B (funding)** has moved from "rations at risk" to **"blanket rations ended"**, per officials on record. That is the threshold event the earlier research was watching for. The Kakuma comparison (ration cuts → unrest → further suspension) becomes directly relevant now.
+- **Pathway A (legal)** has a concrete near-term milestone: the **9 Oct draft bill**. The presentation can say "the bill is due this week". After 9 Oct, the question becomes what it contains (movement, work rights, encampment).
+- **Pathway D (protection)** signals are getting more severe (bodies, disappearances, smuggling allegations), but all are still unverified. Present them as reported allegations, not findings.
+- **Decongestion (Chitipa)** is stalled on compensation, and the hectare figures conflict (145 vs. 439 ha). This is a good open question to raise with the professor.
+
+## 14. Watch list — dates and milestones to follow
+
+Built from §13 and earlier sections. Each item gives what to check and
+where. Dates are the ones stated by the source; "no date" means none
+has been announced. Update this table as items resolve.
+
+| When | What to watch | Why it matters | Where to check | Status |
+| --- | --- | --- | --- | --- |
+| **9 Oct 2026** | Malawi Law Commission makes the **draft Refugee Bill** public | The only structural fix on the legal pathway (A). Check: freedom of movement, right to work, encampment, the Art. 26 reservations, durable solutions (use Inua Advocacy's 7-point checklist) | Malawi Law Commission; Inua Advocacy; Dzaleka Online; Nation / Times | Announced (secondary source) — confirm on the day |
+| **Oct 2026 (first distribution after 30 Sept)** | First **targeted** WFP distribution after blanket rations ended | Who is excluded, and how many? Watch for protests or unrest (the Kakuma precedent: cuts → unrest → suspension) | WFP Malawi Country Brief (monthly); UNHCR; Dzaleka Online; Inua Advocacy | Blanket assistance ended Sept 2026 (officials on record) |
+| **Oct–Nov 2026** | Publication of a **UNHCR Malawi 2026 Funding Update** | None published yet. Kenya, Jordan and other operations got 30 Sept updates on 2 Oct. A continued absence is itself a signal | unhcr.org/where-we-work/countries/malawi | Not published as of 5 Oct |
+| **Mid-Dec 2026 → rainy season** | Onset of the 2026/27 rains (expected delayed to mid-Dec); WFP flags an **80%+ chance of a strong El Niño** | Disaster pathway (C): floods and storms, the evacuation interface (DoDMA ↔ UNHCR), crop losses for camp gardens. Check whether the National Multi-Hazard Contingency Plan 2025–26 covers Dzaleka | DoDMA; NMHCP 2025–26; DCCMS seasonal forecast; WFP briefs | Plan exists; refugee coverage unread |
+| **Jan 2027** | End of WFP's funding horizon: $6.8M sustains *reduced* rations only through Jan 2027 | After this there is no assistance commitment on record at all | WFP Malawi Country Brief | Funding gap open |
+| **Feb 2027** | End of the Japan / UN Women bio-fertiliser project (SOFERES, 300 women) | One of the few new livelihood investments. Is it renewed or extended? | UN Women Malawi; Embassy of Japan | Running |
+| No date | **Chitipa settlement (Kayilizi)**: compensation to landholders, then relocation | The only decongestion route. Also resolve the 145 ha (government, via Nation) vs. 439 ha (UNHCR) discrepancy | Ministry of Homeland Security / Dept. of Refugees; UNHCR Malawi | Stalled — compensation incomplete |
+| No date | **Security allegations**: bodies found, enforced disappearances, police–smuggling links | Pathway D. Look for any official police, UNHCR or Human Rights Commission statement or investigation | Malawi Police; Malawi Human Rights Commission; HRDC; SOS Médias Burundi | `[unverified]` allegations only |
+| No date | **Resettlement suspension** reported by Inua Advocacy | If confirmed, one of the few exits from the camp closes | UNHCR Malawi; Inua Advocacy | `[unverified]` |
+| No date | Government policy of **moving refugees living outside the camp back to Dzaleka** (opposed by UNHCR) | Adds people to a camp already at ~500% capacity | TNH (30 Sept); UNHCR statements | Reported |
