@@ -141,7 +141,113 @@ Monthly new arrivals remain dominated by DRC (62%) and Burundi (19%), suggesting
 
 **Update — Burundi track:** Tanzania's Nduta and Nyarugusu camps (holding \~142,000 Burundian refugees) were agreed for closure by mid-2026 under the accelerated tripartite repatriation push; returnees receive a one-off **US$150** reintegration payment with no guaranteed housing or income support. Analysts (Institute for Security Studies, ISS, Jun 2026) explicitly flag the return process as at risk of reproducing displacement cycles ahead of Burundi's 2027 elections — sharpening, not resolving, the "UNHCR has not declared conditions safe" finding already in this file.
 
-## 8. Verification, evidence gaps, and draft theory of change (ToC) skeleton
+## 8. Length of stay and the three durable solutions (added 5 Oct 2026)
+
+UNHCR frames three "durable solutions" for refugees: **voluntary repatriation** (returning home), **resettlement** (moving to a third country), and **local integration** (becoming part of the host country). This section looks at how long people stay in Dzaleka, and at where each of the three solutions stands for Malawi.
+
+### 8.1 How long do people stay?
+
+**No official figure for average length of stay in Dzaleka was found.** Neither UNHCR's public data nor any survey checked reports years-in-camp for current residents. The best available indicators all point to long, often multigenerational stays:
+
+| Indicator | Value | Date | Source |
+| --- | --- | --- | --- |
+| Age of the camp | Open since 1994, so **32 years** | 2026 | UNHCR (§1) |
+| Longest-staying residents | "Some camp residents have been refugees for as long as 28 years" | 2024 | [Journal of Folklore and Education — Dzaleka Art Project](https://jfepublications.org/article/the-dzaleka-art-project) ⚠️ secondary |
+| Children born in the camp | Born into refugee status, with no Malawian citizenship and the same restrictions; many are at risk of statelessness | 2024 | Same |
+| People still waiting for a refugee status decision | **22,447 asylum-seekers vs. 34,995 recognised refugees** (about 39% of the total still pending refugee status determination, RSD) | 8 Apr 2025 | [UNHCR submission to the UPR, 50th session (Refworld)](https://www.refworld.org/sites/default/files/2025-08/unhcr_submission_for_the_universal_periodic_review_-_malawi_-_upr_50th_session_2025.pdf) ✅ |
+| RSD capacity (historical) | Backlog of 20,000+ asylum-seekers. The government had **4 eligibility officers** (8 needed), per the Commissioner for Refugees' office | May 2017 | [Maravi Post, quoting UNHCR and the government](https://www.maravipost.com/malawi-unchr-worried-20000-asylum-seekers-back-log) ⚠️ secondary, dated |
+| RSD delays still reported | Inua Advocacy's World Refugee Day 2026 statement lists "delays in refugee status determination" among current protection gaps | Jun 2026 | [Inua Advocacy](https://inuaadvocacy.org/2026/06/world-refugee-day-2026-addressing-protection-gaps-corruption-risks-and-rights-violations-in-dzaleka-refugee-camp) ⚠️ |
+| Exits per year, all solutions combined | 135 repatriated + 634 resettled + 6 complementary pathways = **775 people in 2025**, about **1.2%** of ~63,000 (derived). At ~300 arrivals per month (~3,600/yr), the camp grows far faster than people leave | 2025 | Derived from the UNHCR Annual Results Report 2025 (below) and §1 |
+
+**Reading:** the arithmetic (775 exits vs. ~3,600 arrivals a year) means that for most residents Dzaleka is not a stopover. The real "length of stay" question is whether anyone leaves at all. A data point worth requesting from UNHCR or the Department of Refugees is the distribution of residents by year of arrival, which the registration database holds but does not publish.
+
+### 8.2 Voluntary repatriation
+
+| Indicator | Value | Date | Source |
+| --- | --- | --- | --- |
+| People who voluntarily repatriated | **135** (mainly Burundi, Rwanda, Somalia) | 2025 | [UNHCR Annual Results Report 2025 – Malawi](https://www.unhcr.org/sites/default/files/2026-06/unhcr-annual-results-report-2025-malawi.pdf) ✅ |
+| People counselled on voluntary repatriation | 435 | 2025 | Same |
+| Burundians repatriated directly from Dzaleka by air | 109 | 2025–26 | UNHCR Southern Africa (§7) |
+
+**Status: possible for a few, closed for the majority.** About 65% of residents are from the DRC, where the conflict with M23 continues and 6 of 8 peace protocols are unimplemented (§7). Burundi returns are growing, but UNHCR has not declared conditions safe and there are reports of coercion in Tanzania (§7). UNHCR describes the 2025 increase as reflecting "improved access to reliable information". At 135 people, it is 0.2% of the population.
+
+### 8.3 Resettlement and complementary pathways
+
+| Indicator | Baseline | Target 2025 | Actual 2025 | Source |
+| --- | --- | --- | --- | --- |
+| Refugees submitted by UNHCR for resettlement | 2,430 | 3,000 | **499** (−79% vs. baseline) | [UNHCR Annual Results Report 2025 – Malawi](https://www.unhcr.org/sites/default/files/2026-06/unhcr-annual-results-report-2025-malawi.pdf) ✅ |
+| Refugees who departed for resettlement | — | — | **634** (submitted in earlier years) | Same |
+| People admitted through complementary pathways (e.g. education, labour) | 43 | 100 | **6** (all education pathways) | Same |
+
+**Status: shrinking fast.** Historically, refugees from Malawi have been resettled to the United States, Australia, Canada, New Zealand, Norway, Sweden, Finland and the Netherlands (§8.6). The 2025 submissions are a fifth of the baseline, so departures in coming years are likely to fall too; the 634 departures in 2025 reflect earlier submissions. The main drivers are external:
+- the **United States**, historically the largest resettlement country, suspended its refugee admissions program by executive order in January 2025 ([Congressional Research Service](https://www.congress.gov/crs-product/IF12813) ✅). Dzaleka residents describe the news spreading through the camp ([The New Humanitarian, Oct 2025](https://www.thenewhumanitarian.org/opinion/first-person/2025/10/20/remember-we-exist-refugees-malawi-aid-slashed));
+- Canada's Economic Mobility Pathways Pilot (EMPP) is "indefinitely paused" ([Border Monitor, 3 Oct 2026](https://bordermonitor.org/general/aid-cuts-deepen-hardship-for-refugees-in-malawi) ⚠️);
+- globally, about 37,000 refugees departed through UNHCR-assisted resettlement in 2025, down from more than 116,000 in 2024 (TRT Afrika, citing UNHCR ⚠️ — confirm against UNHCR's Projected Global Resettlement Needs 2027).
+
+### 8.4 Local integration
+
+**Status: legally blocked.**
+- **Naturalisation:** Malawi holds a reservation to **Article 34** of the 1951 Convention, so it grants refugees no easier naturalisation than other foreigners. Applications by refugees "are invariably refused, often on the grounds that they are in a position to return to their countries of origin" ([Malawi Refugee Law Reader, AfricanLII](https://africanlii.org/compare?uri-a=%2Fakn%2Fmw%2Fdoc%2Fbook%2F2023-11-01%2Fmalawi-refugee-law-reader%2Feng%402025-01-01&uri-b=%2Fakn%2Fna%2Fdoc%2Fbook%2F2024-01-16%2Fnamibia-refugee-law-reader%2Feng%402025-01-01&portion-a=h1_7&portion-b=h1_7)). Isolated cases have been granted, and some refugees obtained citizenship through marriage ([Refugee Studies Centre, 2010](https://www.rsc.ox.ac.uk/files/files-1/dp-rsd-malawi-2010.pdf)).
+- **Encampment** (reservation to Art. 26, the 1989 Refugees Act) bars living and working outside the camp. In March 2023 the government ordered refugees living outside Dzaleka to return, and in 2026 the policy of moving people back into the camp continues (§2, §6).
+- **The government declined** the UPR recommendations to lift reservations and end encampment (Mar 2026, §2).
+- **The only opening is the draft Refugee Bill (due 9 Oct 2026, §2)**. UNHCR's own 2023–2026 strategy lists local integration as a goal alongside the "progressive transformation of camps into settlements" ([UNHCR Malawi](https://www.unhcr.org/where-we-work/countries/malawi) ✅).
+- **Partial economic inclusion despite the legal block:** 94.6% of refugees and asylum-seekers have a bank or mobile-money account (2025, up from 51.2%; [UNHCR Annual Results Report 2025 – Malawi](https://www.unhcr.org/sites/default/files/2026-06/unhcr-annual-results-report-2025-malawi.pdf) ✅). Financial inclusion is advancing even though the right to work is not.
+
+### 8.5 Summary
+
+| Solution | Status | Scale in 2025 | Main barrier |
+| --- | --- | --- | --- |
+| Voluntary repatriation | Open for a few nationalities | 135 people | Ongoing conflict in the DRC (65% of residents); unsafe conditions in Burundi |
+| Resettlement | Shrinking fast | 634 departures; submissions down 79% | US suspension; global quota collapse; Canada's EMPP paused |
+| Local integration | Legally blocked | ~0 | Reservations to Arts. 26 and 34; encampment; refused naturalisation |
+
+**Reading:** all three durable solutions are narrowing at the same time as assistance is ending (§3). Most of the ~63,000 residents have no realistic exit. That makes the **Refugee Bill**, the only lever that could open local integration, more central than it looked when it was treated as one legal-pathway item among others.
+
+### 8.6 History since 1994 (added 5 Oct 2026)
+
+**Data caveat:** a full year-by-year series of resettlement departures *from Malawi*, by destination country, is not public. UNHCR's resettlement data portal is restricted to its own focal points, and the global resettlement reports do not break Malawi out. The Malawi Refugee Law Reader notes "a lack of official and accurate data with regards to repatriation and resettlement of refugees in Malawi" ([AfricanLII](https://africanlii.org/akn/mw/doc/book/2023-11-01/malawi-refugee-law-reader/eng@2025-01-01)). The tables below use every official data point found; gaps are left blank, not estimated.
+
+**Population context: refugees and asylum-seekers in Malawi** ([UNHCR Refugee Data Finder API](https://api.unhcr.org/population/v1/population/?coa=MLW&coo_all=true&yearFrom=1994&yearTo=2025)) ✅
+
+| Year | Refugees | Asylum-seekers | Note |
+| --- | --- | --- | --- |
+| 1994 | 90,242 | — | 88,939 of them Mozambicans, at the end of the 1986–94 Mozambican refugee crisis (1992 peace accord); Dzaleka opens for Great Lakes refugees |
+| 2000 | 3,900 | — | |
+| 2005 | 4,241 | 5,325 | |
+| 2010 | 5,738 | 9,356 | |
+| 2015 | 9,018 | 14,467 | |
+| 2020 | 14,892 | 33,129 | Asylum-seekers outnumber refugees 2:1 (status-determination backlog) |
+| 2025 | 35,241 | 25,251 | |
+
+**Voluntary repatriation from Malawi, by origin** ([UNHCR Refugee Data Finder API](https://api.unhcr.org/population/v1/solutions/?coa=MLW&coo_all=true&yearFrom=1994&yearTo=2025)) ✅
+
+| Origin | 1994–1999 | 2000–2009 | 2010–2019 | 2020–2025 | Total |
+| --- | --- | --- | --- | --- | --- |
+| Burundi | — | 249 | 231 | 484 | **964** |
+| Rwanda | — | 165 | 104 | 14 | **283** |
+| DRC | 101 | 57 | 101 | — | **259** |
+| Somalia, Uganda | — | 9 | 5 | — | 14 |
+| **All Dzaleka-profile nationalities** | **101** | **480** | **441** | **498** | **1,520 in 31 years** |
+| *Mozambique (not Dzaleka)* | *624,467 (1994)* | — | *11,986 (2016–17)* | — | *the 1994 figure is the end of Malawi's 1986–94 Mozambican refugee crisis* |
+
+Note: for 2025 the API shows 176 returns (169 Burundi, 7 Rwanda), while the UNHCR Annual Results Report says 135. The figures are kept side by side.
+
+**Resettlement departures from Malawi — official data points**
+
+| Year | Submitted | Departed | Destinations named | Source |
+| --- | --- | --- | --- | --- |
+| 2009 | — | **227** | Australia, Canada, United States, Sweden, Finland, Norway, Netherlands | [ICMC / Xinhua, May 2010, citing UNHCR](https://archive.icmc.net/article/more-refugees-leave-malawi-resettlement-united-states) ⚠️ |
+| 2010 | — | 112 to the US in May 2010 alone (target for the year: 300) | United States | Same ⚠️ |
+| 2022 | — | **915** ("UN provided aid for the resettlement of 915 refugees") | not named | [UN Malawi Country Results Report 2022](https://malawi.un.org/sites/default/files/2023-08/02_UN_COUNTRY_RESULTS_REPORT.pdf) ✅ |
+| 2023 | — | about half of 2024 (UNHCR: departures "doubled" in 2024; exact figure not published) | — | [UNHCR Annual Results Report 2024 – Malawi](https://www.unhcr.org/sites/default/files/2025-06/Malawi%20ARR%202024.pdf) ✅ |
+| 2024 | **2,431** (US accepted 2,137; New Zealand 16) | **1,770** + 71 via complementary pathways | Australia, Canada, United States, Norway. Nearly 90% of the submission quota was allocated to the US | [UNHCR Annual Results Report 2024 – Malawi](https://www.unhcr.org/sites/default/files/2025-06/Malawi%20ARR%202024.pdf) ✅ |
+| 2025 | **499** | **634** + 6 via complementary pathways | Q1 2025, Southern Africa region (Malawi = 51% of the region's departures): **US 70%, Canada 17%, New Zealand 9%, Australia 5%**. Q1 2025 submissions from Malawi went mainly to Canada and New Zealand | [UNHCR Annual Results Report 2025 – Malawi](https://www.unhcr.org/sites/default/files/2026-06/unhcr-annual-results-report-2025-malawi.pdf); [UNHCR Regional Bureau for Southern Africa, Resettlement Statistics Overview, Mar 2025](https://data.unhcr.org/fr/documents/download/116572) ✅ |
+
+**Reading:** resettlement was the only solution that ever moved meaningful numbers out of Dzaleka, and it peaked very recently (1,770 in 2024) on the back of the US program. With the US suspension in January 2025, submissions fell 79% in one year. Australia, Canada, New Zealand and the Nordic countries have been consistent but small destinations. Their quotas are now the main remaining channel, which is why Q1 2025 submissions shifted toward Canada and New Zealand.
+
+**Local integration since 1994:** UNHCR statistics record **no naturalisations of refugees in Malawi in any year** ([UNHCR Refugee Data Finder API](https://api.unhcr.org/population/v1/solutions/?coa=MLW&coo_all=true&yearFrom=1994&yearTo=2025) — the naturalisation field is empty for every year from 1994 to 2025). Isolated individual cases are reported outside the statistics (§8.4).
+
+## 9. Verification, evidence gaps, and draft theory of change (ToC) skeleton
 
 **Claims checked this pass:**
 
@@ -151,7 +257,7 @@ Monthly new arrivals remain dominated by DRC (62%) and Burundi (19%), suggesting
 | Cyclone Freddy (Mar 2023) hit Dzaleka | Refuted — contemporaneous source states no impact |
 | Jeremy Lewin personally ordered WFP grant cuts | Confirmed as a real mechanism (14 countries), but Malawi is not on the named list |
 | Burundi repatriation reaches Malawi | Confirmed — 109 repatriated directly from Dzaleka |
-| "Resettlement opportunities suspended" (Inua Advocacy, Sept 2026) | Partly clarified (5 Oct 2026): Canada's Economic Mobility Pathways Pilot (EMPP) is "indefinitely paused" due to budget cuts ([Border Monitor, 3 Oct 2026](https://bordermonitor.org/general/aid-cuts-deepen-hardship-for-refugees-in-malawi)). A broader UNHCR resettlement suspension is not confirmed |
+| "Resettlement opportunities suspended" (Inua Advocacy, Sept 2026) | Partly clarified (5 Oct 2026): Canada's EMPP is "indefinitely paused" due to budget cuts ([Border Monitor, 3 Oct 2026](https://bordermonitor.org/general/aid-cuts-deepen-hardship-for-refugees-in-malawi)). A broader UNHCR resettlement suspension is not confirmed |
 | WFP blanket rations ended Sept 2026 | Confirmed on record by UNHCR's representative and the Commissioner for Refugees (5 Oct 2026, see §3) |
 
 **Remaining evidence gaps:** no reconciled population registry by date; no public floodplain/drainage/evacuation-route map; no camp-wide GBV prevalence survey; no 2025/26 malnutrition (MUAC/GAM) data; no confirmed record of Malawi applying to and being rejected from the World Bank's IDA host-refugee financing window; no Mutharika-administration statement specifically on refugee policy.
@@ -166,7 +272,7 @@ Monthly new arrivals remain dominated by DRC (62%) and Burundi (19%), suggesting
 
 Compiled from 31 sourced research documents (Sept 2026) in the `dzaleka-cost-model` and `Fraternity` repositories: the base theory-of-change situation analysis, and deep dives on gender-based violence, Malawi political context, the UN80 reform initiative/USAID funding shock, human rights, WFP operations, origin countries, operational/institutional capacity, donor funding, domestic political economy, claim verification, civil-society actors, disability/PCD, chronic disease, family structures, GBV data contradictions, orphans/unaccompanied children, philanthropy/think tanks, private-sector engagement, religious/spiritual leaders, mental health, UNHCR/World Bank data access, and women-headed households. Every figure in this document is drawn from a dated, linked source in those documents or in this Sept 2026 Tavily refresh — see the source repos for full citation detail.
 
-## 9. Actor landscape — who is already working here
+## 10. Actor landscape — who is already working here
 
 **No comprehensive, dated NGO partner list exists.** UNHCR's own framing (Jul 2025) describes a shift to a "lighter operational footprint" and "localisation" post-funding-collapse — the standing partner roster (Jesuit Refugee Service (JRS), Churches Action in Relief and Development (CARD), Welthungerhilfe, Baptist Development Service) is UNHCR's general description, not a verified current snapshot. Most under-covered sectors: **child protection** (zero dedicated officers, NGOs "forced to improvise" systems that collapse with each funding cut), then **GBV** (explicitly "scaled back" after UNHCR's 90% budget cut).
 
@@ -178,7 +284,7 @@ Compiled from 31 sourced research documents (Sept 2026) in the `dzaleka-cost-mod
 
 **Correction and update, Sept 2026:** the festival is proceeding in 2026 (11th edition, theme "Rising with Resilience," fundraising via on-site donation rather than confirmed corporate sponsorship — the "crossroads" framing from the festival's own channels reflects financial strain, not outright cancellation). More significantly: **Tumaini Letu won the 2026 Ockenden International Prize**, a global recognition for refugee-led solutions selected from 167 entries across 43 countries and territories — the most significant positive external validation found anywhere in this research pass, and a concrete counterpoint to Cluster F's "structurally neglected" finding for at least this one initiative. Separately, Inua Advocacy's civil-society activity looks more sustained through 2026 than "shoestring survival" alone suggests: it signed a memorandum of understanding (MoU) with the Media Institute of Southern Africa (MISA) Malawi to amplify refugee voices (9 Oct 2025), formalised a security partnership with Dowa Police (13 Jul 2025) that appears to be the operational channel behind the Mar 2026 anti-trafficking raid (§5), and joined a coalition of NGOs formally challenging the government on rights failures (5 Nov 2025).
 
-## 10. Family & vulnerable groups
+## 11. Family & vulnerable groups
 
 **Family structure is being actively reshaped by policy, not just economics.** Camp administration is forcibly consolidating extended families — traditionally spread across multiple houses on one plot — into one house per family card. Households average 5.1 members vs. 4.2 nationally; the double-orphan rate is \~3x the national rate (\~6% vs \~2%) — both figures predate the 2025 cuts, likely understating current pressure.
 
@@ -188,7 +294,7 @@ Compiled from 31 sourced research documents (Sept 2026) in the `dzaleka-cost-mod
 
 **Women-headed households:** an employment gap of 48% (married women working in the past year) vs. 84% (married men) — pre-cuts data, likely wider now. Faith-based networks (IAFR, HOPE International) are the primary institutional channel explicitly naming single mothers/widows as a served group. **No source anywhere gives a prevalence figure for female-headed households at Dzaleka** — a real, unfilled data gap, not just an under-reported one.
 
-## 11. Health
+## 12. Health
 
 Across chronic disease, disability, and mental health, the same pattern repeats: **the problem isn't only service gaps — it's data gaps.** No population-level prevalence figure exists for any of the three, for a population of 62,000+.
 
@@ -200,7 +306,7 @@ Across chronic disease, disability, and mental health, the same pattern repeats:
 
 **Mental health:** the one independently-published prevalence study (Damiano et al., *Psychiatry Research*, 2022, n=102) found **78% probable depression, 25.5% with suicidal plans, 15% with a suicide attempt in the prior 12 months** — alarming, and that's the *baseline*, predating the 2025–26 funding collapse; current severity is unknown. A more dramatic 82% post-traumatic stress disorder (PTSD) figure traces to a single self-reported mental health and psychosocial support (MHPSS) provider program pitch — flagged as non-independent, not treated as fact.
 
-## 12. Clustered synthesis and candidate awareness angles
+## 13. Clustered synthesis and candidate awareness angles
 
 Seven clusters emerge across the 31 source documents. Each is scored against Fraternity's own narrowing criteria (see `CONCEPT.md`): **high-leverage** (sits upstream of multiple bad outcomes), **tractable** (a concrete, fundable, actionable ask exists), **neglected** (not already well-resourced/covered).
 
@@ -225,9 +331,9 @@ Seven clusters emerge across the 31 source documents. Each is scored against Fra
 3. **"Families being reshaped by policy"** — the forced housing-consolidation finding, a concrete, human, verifiable rights angle distinct from the more abstract funding-collapse narrative.
 4. **"Who's actually there"** — a positive-framing counter-narrative: local/faith-based/refugee-led actors (churches, INUA Advocacy, Tumaini Festival, Ubuntu Nation) sustaining the camp while formal institutions withdraw — useful for a hope-forward awareness angle rather than crisis-only framing.
 
-**Sources:** every figure above is drawn from the 31 dated, linked source documents in `dzaleka-cost-model/docs/` plus this Sept 2026 Tavily research refresh — see §1–11 and that repository for full citation detail on each claim.
+**Sources:** every figure above is drawn from the 31 dated, linked source documents in `dzaleka-cost-model/docs/` plus this Sept 2026 Tavily research refresh — see §1–12 and that repository for full citation detail on each claim.
 
-## 13. Watch list — dates and milestones to follow
+## 14. Watch list — dates and milestones to follow
 
 Built from the sections above. Dates are the ones stated by the
 source; "no date" means none has been announced. Update this table as

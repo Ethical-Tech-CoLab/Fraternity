@@ -178,7 +178,68 @@ Chitipa relocation stalled (145 vs. 439 ha discrepancy); serious
 security allegations, all unverified.
 
 **Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (updates merged into §1–12,
-§13 watch list), `docs/RESEARCH_LOG.md`.
+§14 watch list), `docs/RESEARCH_LOG.md`.
 
-**Open questions / next steps:** work through the §13 watch list,
+**Open questions / next steps:** work through the §14 watch list,
 starting with the Refugee Bill on 9 Oct.
+
+## 2026-10-05 — Length of stay and the three durable solutions
+
+**Focus:** How long people stay in Dzaleka, and the current status of
+UNHCR's three durable solutions (voluntary repatriation, resettlement,
+local integration) for Malawi.
+
+**Sources consulted:** UNHCR Annual Results Report 2025 – Malawi
+(Outcome Areas 13, 14, 15); UNHCR submission to the UPR, 50th session
+(Apr 2025); Congressional Research Service IF12813 (US admissions
+suspension); Malawi Refugee Law Reader (AfricanLII); Refugee Studies
+Centre (2010); Journal of Folklore and Education (2024); Maravi Post
+(2017); Inua Advocacy (Jun 2026); Border Monitor (Oct 2026).
+
+**Findings:**
+- No official average-length-of-stay figure exists. Proxies: camp is 32
+  years old; residents have been refugees up to 28 years; 39% of the
+  registered population is still awaiting refugee status determination.
+- 2025 exits from all solutions combined: 775 people (~1.2%) vs. ~3,600
+  arrivals.
+- Repatriation: 135. Resettlement: 634 departures, but submissions fell
+  79% (2,430 → 499); complementary pathways fell from 43 to 6.
+- Local integration is legally blocked (Art. 34 reservation;
+  naturalisation applications refused).
+
+**Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (new §8;
+sections renumbered — the watch list is now §14).
+
+**Open questions / next steps:** request the distribution of residents
+by year of arrival from UNHCR or the Department of Refugees; confirm the
+global 2025 resettlement figure against UNHCR's own publication.
+
+## 2026-10-05 — Durable solutions history since 1994
+
+**Focus:** Historical series (1994–2025) for voluntary repatriation,
+resettlement (including destinations such as Australia) and local
+integration from Malawi.
+
+**Sources consulted:** UNHCR Refugee Data Finder API (`/solutions` and
+`/population`, coa=MLW — note that UNHCR uses MLW, not MWI); UNHCR
+Annual Results Reports 2024 and 2025 – Malawi; UNHCR Regional Bureau
+for Southern Africa resettlement dashboard (Mar 2025); UN Malawi
+Country Results Report 2022; ICMC/Xinhua (2010); Malawi Refugee Law
+Reader. Dead ends: the UNHCR Resettlement Data Portal is restricted;
+global resettlement statistical reports (2008, 2011) don't break out
+Malawi.
+
+**Findings:**
+- Repatriation of Dzaleka-profile nationalities totals 1,520 in
+  1994–2025.
+- Resettlement data points: 227 (2009), 915 (2022), 1,770 (2024), 634
+  (2025). Destinations include the US, Australia, Canada, New Zealand,
+  Norway, Sweden, Finland and the Netherlands.
+- No naturalisations recorded in any year.
+
+**Files touched:** `docs/DZALEKA_SITUATION_RESEARCH.md` (§8.6).
+
+**Open questions / next steps (deferred — not contacting UNHCR for now):** request the year-by-year resettlement
+series by destination from UNHCR Malawi or the Regional Bureau for
+Southern Africa (rsarbdima@unhcr.org is the dashboard contact); the
+exact 2023 departure figure is still missing.
