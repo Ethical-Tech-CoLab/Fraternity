@@ -132,10 +132,6 @@ as **unverified/single-source** pending a UNHCR or ReliefWeb corroboration.
 
 ## 4. Pathway C — Disaster / evacuation risk
 
-*(Most directly relevant to the ERCF/RICS evacuation-risk parameter work —
-see `rics/PARAMETER_REGISTRY.md` and `rics/DESIGN.md` for where these feed
-in.)*
-
 | Hazard | Likelihood / impact assessment | Key evidence | Source |
 |---|---|---|---|
 | Flood | Credible, elevated — seasonal (Nov–Apr) heavy rains; DTM/orthomosaic and flood modeling already exist for the camp footprint | No public floodplain delineation or river-proximity dataset found — **genuine data gap** | [MDPI 2021 terrain study](https://www.mdpi.com/2072-4292/13/9/1739); [CIMA Foundation Malawi Atlas Risk Profile](https://www.cimafoundation.org/wp-content/uploads/2025/12/MALAWI-ATLAS-RISK-PROFILE.pdf) |
@@ -301,5 +297,4 @@ protection/emergency-response capacity are no longer structurally mismatched.
 
 **Suggested next research pass:** pick one pathway to move from "situation
 analysis" to "intervention-ready" — e.g., a dedicated search for DoDMA↔UNHCR
-camp evacuation SOPs (closes the largest gap in Pathway C, and is the
-gap most directly actionable for the RICS/ERCF work).
+camp evacuation SOPs (closes the largest gap in Pathway C).
