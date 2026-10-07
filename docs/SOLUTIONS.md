@@ -1,185 +1,182 @@
-# Solutions — a technology line for Dzaleka
+# Solutions — what we can realistically build for Dzaleka
 
-Started 7 Oct 2026, revised the same day. **Status: draft, for discussion with the professor.**
+Started 7 Oct 2026; **rewritten the same day with a reality filter, then re-researched with Tavily.** Status: draft, for discussion with the professor. Earlier versions are in the git history.
 
-**Why this document exists.** The professor's feedback on the Theory of Change (Oct 2026) was that the research should start from *what we can do that actually changes something in the camp*. Everything written so far (`DZALEKA_SITUATION_RESEARCH.md`, `docs/cases/`, `comparison.md`) describes the problem. It is unchanged and used here as context. This document adds solutions.
-
-**Constraints (set 7 Oct 2026):**
-- **Who:** the professor and I, working for Fraternidade Sem Fronteiras (FSF).
-- **No funding.** What we build is **free and open source**.
-- **Small impact is fine.** The goal is to start a **line of technology development** that grows with the research, not to fix the camp.
-- **Dzaleka first**, but each tool should work in other camps.
-
-Same sourcing rules as the rest of the project. Numbers marked *derived* are computed here, not sourced.
+**Why this document exists.** The professor's feedback on the Theory of Change (Oct 2026) was that the research should start from *what we can do that actually changes something in the camp*. The situation research (`DZALEKA_SITUATION_RESEARCH.md`, `docs/cases/`, `comparison.md`) is unchanged and used here as context.
 
 ---
 
-## 1. What counts as a good first tool
+## 1. The reality filter
 
-| Criterion | Question |
+| Who / what | Reality |
 | --- | --- |
-| **Real user** | Is there a named person or organisation who will actually use it? |
-| **Small, visible change** | What concretely gets better, and can we measure it? |
-| **Zero budget** | Can two people build it with public data, free tools and no field team? |
-| **Data safety** | Does it avoid holding personal data about refugees? (Context: allegations of police complicity, §5.1.) |
-| **Not duplicated** | Does something already do this at Dzaleka? |
-| **Research value** | Does it produce findings, ideally linked to the PhD on evacuation risk? |
-| **Replicable** | Would it work in Kakuma, Bidibidi or Cox's Bazar? |
+| **Builders** | Me (with Claude writing much of the code), with the professor supporting |
+| **FSF** | Context only. It is not a guaranteed user, operator or distributor |
+| **Money** | None. Hosting, data and tools must be free |
+| **Field presence** | None. We cannot run a team, a helpline or a pilot inside the camp |
+| **Goal** | Something small that changes something real inside Dzaleka, open source, and the start of a technology line |
 
-## 2. Candidate tools, cluster by cluster
+**What the filter rules out:** anything needing a budget (cash, devices, a WhatsApp Business account), anything that needs us on the ground to run or update it, and anything whose only user would be FSF.
 
-Clusters as defined in `DZALEKA_SITUATION_RESEARCH.md` §10.
+**What it requires:** someone *in* the camp who distributes the tool and keeps it alive after we stop working on it.
 
-### A. Legal & durable solutions
+## 2. What the research found
 
-**A1 — Refugee law comparator.**
-- **What it is:** an open web page that compares, clause by clause, the 1989 Refugees Act, the new draft bill once released, and the laws of Uganda, Ethiopia and Kenya (already researched in `docs/cases/`). It would cover work, movement, business licences and ID.
-- **Users:** Inua Advocacy (lobbying for the amendment), people making submissions to the Law Commission, journalists.
-- **Small change:** better-informed submissions while the Refugees Act is under review ([Malawi Voice, 1 Jul 2026](https://www.malawivoice.com/2026/07/01/wfp-engages-malawi-speaker-on-refugee-legislation-review/)).
-- **Existing:** AfricanLII's *Malawi Refugee Law Reader* collects the texts ([AfricanLII](https://africanlii.org/en/akn/mw/doc/book/2023-11-01/malawi-refugee-law-reader/eng@2025-01-01)) but does not compare them.
-- **Limits:** depends on the draft being public, and the timing is uncertain. A comparison is not legal advice.
+### 2.1 Lesson from other camps: don't build a new standalone app
 
-### B. Funding
+- Of **169 apps and tech projects for refugees launched in 2015–16, most were defunct by 2018**. The Migration Policy Institute calls this "digital litter" ([MPI](https://www.migrationpolicy.org/article/digital-litter-downside-using-technology-help-refugees)).
+- Refugees reported that the apps didn't fit their needs, weren't in their language, or that they had never heard of them. They rely on **WhatsApp, Facebook and general tools**. Projects died when short-term funding and enthusiasm ran out (same source; [UNHCR Innovation](https://www.unhcr.org/innovation/app-best-way-help-refugees-improving-collaboration-humanitarian-actors-tech-industry/)).
+- **What works instead:** IRC's *Signpost* reaches people through channels they already use, in their own languages ([IRC, 2024](https://www.rescue.org/uk/press-release/irc-signpost-project-eu-prize-humanitarian-innovation)). In Cox's Bazar, rainfall alerts work because **3,400 refugee volunteers** pass them on by megaphone, flags and mosque loudspeakers ([UNDP Bangladesh](https://www.undp.org/bangladesh/stories/until-everyone-safe-early-warning-systems-strengthening-safety-and-resilience-coxs-bazar)). Radio is described as "a wide-reach and high-impact tool in humanitarian settings" (Uganda response analysis, [Population Council Knowledge Commons](https://knowledgecommons.popcouncil.org/cgi/viewcontent.cgi?article=1006&context=hubs_humanitarian)).
 
-**B1 — Open funding-gap tracker for Dzaleka.**
-- **What it is:** one public page, updated on a schedule, that brings together scattered public numbers. These include UNHCR Malawi funding by outcome area, WFP transfer value per person against the $28 food basket, OCHA's financial tracking service (FTS), and new donors.
-- **Users:** journalists, Inua Advocacy, FSF, donors.
-- **Small change:** the gap becomes visible in one place. Malawi has no inter-agency plan, so FTS on its own shows almost nothing (§3).
-- **Existing:** none found for Malawi.
-- **Limits:** it doesn't change anyone's day directly, and many sources are PDFs that need manual updating.
+With no money, no field team and two people, we fit exactly the profile that produces digital litter. **The way around it is to build *into* what refugees at Dzaleka already run.**
 
-### C. Disaster & institutional capacity
+### 2.2 What already exists at Dzaleka
 
-**C1 — Open risk and evacuation map of Dzaleka.**
-- **What it is:** build on the OpenStreetMap data MapMalawi produced in 2021 with a HOT grant, which covered services, water, health and buildings ([OSM wiki](https://wiki.openstreetmap.org/wiki/Humanitarian_OSM_Team/HOT_Microgrants/Community_Impact_Microgrants_2021/Proposal/Dzaleka_Mapping)). Add flood-prone zones (terrain plus rainfall), fire-risk density and assembly points. Output printable maps per block, plus a one-page activation checklist adapted from the Cox's Bazar protocol (`docs/cases/coxs-bazar.md`).
-- **Users:** block leaders and refugee-led organisations, DoDMA, UNHCR.
-- **Small change:** before the rains start in mid-December, people know where the water goes and where to go.
-- **Research fit:** the strongest of all the candidates. It is the PhD topic (evacuation risk), and ERCF's engine already exists.
-- **Limits:** needs local validation (walking the routes) and partners on the ground. The user is not guaranteed, and it is time-sensitive.
+Dzaleka has its own **refugee-led technology ecosystem**, and it is more developed than we thought.
 
-### D. Protection & F. Actor landscape
+**Dzaleka Online Services (DOS)**, at [services.dzaleka.com](https://services.dzaleka.com), is part of Dzaleka Digital Heritage and is built mainly by **Bakari Mustafa** ([GitHub: Dzaleka-Connect](https://github.com/Dzaleka-Connect); [bakarimustafa.com](https://bakarimustafa.com/dzaleka-online-services-good-news-roundup)). Checked on 7 Oct 2026:
+- **Active:** the main repository (`dos`) was last updated on 5 Oct 2026.
+- **Content:**
+  - a services directory (**149 services** in the public API), jobs, events, a marketplace and courses;
+  - a **"Get help now"** page with free hotlines (GBV 5600, child protection 116; contacts checked 18 Apr 2026), a Rights Navigator and incident reporting;
+  - a Wellbeing Hub, a Help Desk, and weather from **Met Malawi** with alerts;
+  - an interactive map, an encyclopaedia, an **open data platform** and a public API.
+- **Languages:** most pages are in English, but newcomer guides exist in **English, French, Swahili and Chichewa**, there is an **Easy Read** section, and a languages page points people to Yetu Radio ([DOS languages page](https://services.dzaleka.com/languages)). **There is no Kirundi or Kinyarwanda version.**
+- **Population by origin** (DOS, checked 18 Apr 2026): DR Congo 65%, Burundi 22%, Rwanda 13%, others 1%. **Swahili is the camp's common language.**
+- **Risk:** one main developer (about 310 commits). The `dos` repository has **no licence file**, while other repositories in the organisation use MIT. A contributing guide exists ([DOS docs](https://dos.dzaleka.com/introduction)).
 
-**D1 — "Where to get help" directory.**
-- **What it is:** a list of who does what and where in and around Dzaleka (GBV, child protection, health, legal aid, food), with contacts and opening hours. It would be multilingual (French, Swahili, Kinyarwanda/Kirundi, English) and come as a printable sheet and a WhatsApp-shareable page. **It stores no case data.**
-- **Users:** refugees and community focal points.
-- **Small change:** fewer dead ends when someone seeks help. NGO exits make the old referral lists wrong (§9).
-- **Existing:** UNHCR runs WhatsApp lines elsewhere, and directories like Kompasi exist in the UK ([civictech.guide](https://civictech.guide/projects/unhcr-chatbots)). None was found for Dzaleka.
-- **Limits:** it is only useful if kept up to date, which means someone local must own the updates. It also fits the earlier principle that the G tool "must start from the refugee's entry point" (`RESEARCH_LOG.md`, 5 Oct).
+**Yetu Community Radio**, Dzaleka's community station:
+- **On air since 7 Aug 2018** and still active in 2026 (Facebook posts in March and September 2026).
+- **Languages:** the station's own site lists five languages (English, Chichewa, Swahili, French, Kinyarwanda), while UNHCR's 2024 story lists six, adding Kirundi. The two disagree; this is to be checked.
+- **Frequency:** the station's site lists 107.6 MHz; another listing says 99.1 MHz.
+- It also streams online.
 
-### E. Data blackout
+Sources: [DOS Yetu page](https://services.dzaleka.com/yetu-radio); [UNHCR](https://www.unhcr.ca/news/community-radio-fosters-refugee-inclusion-in-malawi/).
 
-**E1 — Dzaleka open dataset.**
-- **What it is:** publish the figures we have already sourced as open data (CSV/JSON plus a simple page). Each figure carries its source, date and reporting period, and conflicting figures are kept side by side. That is our sourcing discipline turned into a public good.
-- **Users:** researchers, journalists, refugee-led organisations.
-- **Small change:** the next person doesn't start from zero. The most-used source in this research was a refugee-run archive (§9). This would complement it.
-- **Limits:** it is an advocacy and research tool, not a field tool. Effort is very low because the work is done. It is also the data base under B1, C1 and A1.
+**TakenoLAB** is a refugee-led tech school founded in 2015. It is still running, under local leadership after its founder was resettled ([takenoLAB](https://takenolab.org/)). It reports 3,000+ trained and 200+ online jobs, and its students helped map the camp ([HOT/MapMalawi](https://www.hotosm.org/en/news/mapmalawis-dzaleka-mapping-project-osm-mapping-for-people-living-in-protracted-crisis/)).
 
-### G. Local & faith-based response
+### 2.3 The real gap: reach inside the camp
 
-**G1 — Caravan and stock planner for volunteer-supplied clinics.**
-- **What it is:** a small open-source tool for the FSF clinic, with three parts:
-  1. **Stock:** replaces the spreadsheet; records what came in, what was used and expiry dates.
-  2. **Caravan planner:** each caravan carries only **24–90 kg** (8–30 volunteers × 3 kg, about every 3 months). The planner suggests *what to pack*, based on consumption, expiry and the weight limit, so the scarce kilograms go to what will run out first.
-  3. **Aggregate report:** stock-out days and the share of carried weight used before expiry. No patient data.
-- **User:** **FSF, a guaranteed user.** It is the only candidate with one.
-- **Small change:** fewer stock-outs at the clinic and less wasted luggage. It is measurable from caravan to caravan.
-- **Existing:** OpenLMIS (used in Malawi's national supply chain) and mSupply manage stock at scale ([GHSC-PSM, 2019](https://www.ghsupplychain.org/sites/default/files/2019-05/Malawi%20OpenLMIS%20TechBrief%20FINAL%205-8-19.pdf)). They are built for national systems with procurement. **Neither plans weight-limited donated supply.** That niche is ours.
-- **Replicable:** any clinic supplied by volunteers or donations, which is the pattern after agency withdrawal (clinics ran out of medicine in Jun 2025, §11).
-- **Earlier correction to respect:** on 5 Oct, clinic records were judged to sit in D/E rather than G. G1 is framed here as **continuity of a local actor's service** (the G research level), not as clinic records. To confirm with the professor.
+DOS's own **2025 Annual Digital Performance Report** ([DOS, 24 Apr 2026](https://services.dzaleka.com/news/2025-digital-performance-report/)) shows:
+- 17,952 active users in the year, but **only 1,697 returning users**;
+- **3,705 active users in Malawi**, fewer than in the US (4,000) or China (3,728). Some of the foreign traffic may be automated; that is our reading, not the report's;
+- Facebook (mobile) as the top referring site.
 
-**G2 — Help-seeking entry point.** This is the idea from 5 Oct: start from how a refugee asks for help, through trusted focal points, and let the refugee choose where the case goes. It **needs the ethical field mapping first**, so it is a later step. D1 is its simplest first version.
+Dzaleka has ~63,000 residents. **At most a few thousand people in Malawi used the site in a year**, and not all of them live in the camp. The platform has rich, checked, practical content (hotlines, rights, services, jobs, alerts), but **most residents probably never see it**. The likely reasons:
+- **Phones:** only 22% of refugee households in rural areas worldwide have an internet-capable phone ([UNHCR Connectivity](https://www.unhcr.org/innovation/internet-mobile-connectivity-refugees-leaving-no-one-behind/)). No Dzaleka figure was found.
+- **Language:** the site is mostly English; there is nothing in Kirundi or Kinyarwanda (35% of residents by origin). Kirundi is a "low-resource" language for machine translation, so it needs human translators ([CLEAR Global / TWB](https://clearglobal.org/translators-without-borders)).
+- **Channel:** people get information from radio, WhatsApp, Facebook, churches and word of mouth, not by browsing a website.
 
-### Livelihoods (cross-cutting)
+**So the most useful thing to build is not new content, and not a new app. It is the bridge between the content that already exists and the channels people actually use.**
 
-The morning draft of this document proposed remote-work and cash pilots. They need funding, so they are out of scope now. What we learned stays useful as context:
-- a UNHCR pilot at Dzaleka where 54 refugees earned $21,137 online in 6 months ([JRS](https://ear.jrs.net/en/story/bridging-the-digital-divide-for-refugee-youth-in-dzaleka-malawi/));
-- refugees cannot get work permits or business licences ([RLRH, Jan 2026](https://refugeeledresearch.org/wp-content/uploads/2026/01/MALAWI.pdf));
-- cash to refugees produced $1.51–$1.95 per dollar in Rwanda's local economy ([IFPRI](https://www.ifpri.org/news-release/study-refugees-can-boost-host-economies/)).
+### 2.4 Flooding: the hazard is documented
 
-These figures can feed A1. Technology is not the bottleneck there; legal status and paying clients are.
+The earlier draft said we had no evidence of what floods at Dzaleka. **That was wrong.**
+- A 2021 Virginia Tech master's thesis (Friedman) modelled flooding in Dzaleka using **3.5 cm drone imagery**. It found that **water-caused erosion patterns predict where houses collapsed**, with misclassification below 17%, far better than standard hydrological models (54–67%) ([Friedman, 2021](https://vtechworks.lib.vt.edu/items/fabeecfe-edd2-4db0-8d9d-235f327d3c2c)).
+- More recently, Plan International reported leaking roofs and few sound classrooms during heavy rain ([Plan International, Jun 2025](https://plan-international.org/malawi/news/2025/06/24/world-refugee-day-2025-dzaleka-on-shaky-ground)). A 2026 social-media post describes walls and roofs collapsing (single, unverified source ⚠️).
 
-## 3. Outside the box
+**The risk at Dzaleka is house collapse from runoff and erosion in heavy rain, and it has been mapped once (2021).**
 
-Section 2 sticks to one tool per cluster. This section starts from **daily life in the camp** instead: what a refugee would actually open on a phone, what moves money or information, and what makes people outside care. Each idea is grounded in a finding from Part I.
+## 3. Options that pass the filter
 
-### 3.1 Apps for refugees
+### Option 1 — "Last-mile kit" for Dzaleka Online Services (recommended)
 
-| # | Idea | Why (finding) | What already exists |
-| --- | --- | --- | --- |
-| X1 | **"Is this offer real?"** A WhatsApp bot and printable checklist for resettlement, job and travel offers. It answers in the refugee's language, explains that UNHCR never charges for resettlement, flags known scam patterns, and lets people report a scam anonymously (aggregate counts only). | UNHCR describes Dzaleka as a trafficking hotspot (§5.1). A syndicate was reported to be monetising resettlement, and 52 people were stopped from travelling to the US ([Nation Online](https://mwnation.com/un-seeks-probe-on-refugees-syndicate-reports/)). With resettlement collapsing and Canada's EMPP paused, desperation makes people easy prey. | UNHCR posts general warnings ("resettlement is free"). No Dzaleka-specific, multilingual tool was found. |
-| X2 | **"My papers" safe.** An offline app that keeps encrypted photos of a family's documents (refugee ID, asylum papers, birth certificates, school and course certificates) **only on the person's own phone**, with an optional backup that only they can open. | Fire and flood risk (§4); children are born into refugee status, and every route out (resettlement, the new law, platforms, banks) depends on papers. | General-purpose encrypted vaults exist, but none are designed and translated for refugees. |
-| X3 | **Skills passport.** A portable, verifiable record of skills and courses (JRS, JWL, There Is Hope, the digital-skills pilot) that a refugee can show to an online client or a resettlement programme. | 54 refugees earned $21,137 online in 6 months ([JRS](https://ear.jrs.net/en/story/bridging-the-digital-divide-for-refugee-youth-in-dzaleka-malawi/)), and pathways like Canada's EMPP select on skills. Training exists, but there is no proof that travels with the person (RLRH, Jan 2026). | Open verifiable-credential standards exist (W3C). No refugee-run issuer was found at Dzaleka. |
-| X4 | **Clinic translation layer for FSF.** A WhatsApp intake for the FSF clinic: the patient describes symptoms in French or Swahili with photos, and the Brazilian doctors read it in Portuguese. The diagnosis goes back in the patient's language. | FSF runs asynchronous telemedicine with doctors in Brazil, and patients come back another day for the diagnosis (§11). The language gap between French/Swahili and Portuguese is built into that model. | Generic translation exists. Nothing fits this specific clinic workflow. |
-| X5 | **Offline mental-health support.** The WHO's *Self-Help Plus* stress-management course (audio plus an illustrated book), delivered offline through phones or a speaker in group sessions led by trained lay facilitators. | 78% probable depression in the one study at Dzaleka (§5.3), and no mental-health services found. A randomised trial with South Sudanese refugee women in Uganda showed meaningful reductions in distress at 3 months ([Tol et al., *Lancet Global Health*, Feb 2020](https://news.liverpool.ac.uk/2020/01/23/study-highlights-effectiveness-of-behavioural-interventions-in-conflict-affected-regions/)). | WHO materials exist. Translations into Kinyarwanda/Kirundi and the licence to adapt them must be checked ⚠️. |
-| X6 | **Offline school in a box.** A Kolibri server (open source, works offline) with lessons in French, Swahili and English, installed at the FSF site or a school in the camp. | Low connectivity; children out of school as families cope with cuts (allAfrica, 30 Sept 2026). | Kolibri is already used in Kakuma and northern Uganda ([Learning Equality / Solve](https://solve.mit.edu/solutions/52786)). Our work would be installing and curating it for Dzaleka, not building it. Needs a cheap device (~$100–200, not zero). |
+**What it is:** a small open-source tool that reads the DOS public API and, every week, automatically produces **ready-to-use versions of what changed** for the channels people actually use:
+1. **Radio script:** a 3–5 minute bulletin (new jobs and deadlines, events, notices, weather alerts, one hotline reminder) for Yetu Radio presenters to read.
+2. **WhatsApp/Facebook text and image cards:** short, forwardable messages in Swahili and French. No WhatsApp Business account is needed, because people forward them.
+3. **Printable noticeboard sheet (A4 PDF):** for churches, schools, community centres and block leaders.
+4. **Languages:** Swahili and French first, generated as drafts and **reviewed by a person in the camp** before release. Kinyarwanda and Kirundi only with human translators.
 
-### 3.2 Moving money without funding
+**Why it passes the filter:**
+- **Zero cost:** a script run on a free schedule (GitHub Actions) that writes files; nothing to host.
+- **No field team needed:** DOS already maintains the content. Yetu Radio, DOS's Facebook page and community groups distribute it.
+- **Respectful:** it strengthens a refugee-led platform instead of competing with it.
 
-| # | Idea | Why (finding) | What already exists |
-| --- | --- | --- | --- |
-| X7 | **Reverse caravan.** FSF caravans fly *in* with medicines. On the way *back*, the same luggage could carry crafts made in the camp (baskets from Umoja Women Craft, Tumaini artisans) to sell in Brazil through FSF's network. Our part is the open tool: a small catalogue, an order list per caravan, and a ledger that shows each artisan what was sold and what they were paid. | Money from outside is the only thing that grows the camp economy (Taylor et al.: $1.51–$1.95 per dollar in Rwanda). Refugees *may* run businesses inside the camp (RLRH, Jan 2026). FSF already has the logistics. | Fair-trade platforms exist, but none is linked to this route. Export rules and payment to refugees must be checked ⚠️. |
-| X8 | **Collective buying.** A WhatsApp tool that lets groups pool their $8 to buy maize and beans in bulk directly from Malawian farmers around the camp, at a lower price per kg. | Maize prices doubled, and the transfer is ~$8 against a $28 food basket (allAfrica, 30 Sept 2026). The host community is ~50,000 subsistence farmers who need buyers (IAFR). | Group-buying cooperatives exist in many places; no tool was found at Dzaleka. |
-| X9 | **Community currency or time bank.** People trade services (tailoring, tutoring, haircuts, repairs) using credits instead of cash, recorded by phone. | There is almost no cash in the camp, but plenty of skills. In a randomised trial in Kenya, Sarafu community-currency transfers of $30 raised food and water spending by $28 ([Frontiers in Blockchain, 2021](https://www.frontiersin.org/journals/blockchain/articles/10.3389/fbloc.2021.739751/pdf)). | Sarafu is open source (Grassroots Economics). **Legal risk:** the organisation's earlier Kenyan currency (Bangla-Pesa) led to arrests in 2013 before charges were dropped (from memory, not re-sourced ⚠️), so this would need careful checking with Malawian law ⚠️. |
+**The small, real change:** practical information that already exists (a job deadline, the GBV hotline, a weather alert, a new service) reaches people **without a smartphone, without English, and without browsing a website**.
 
-### 3.3 Awareness
+**How we would know:**
+- DOS analytics (visits from Malawi, Facebook referrals) before and after;
+- mentions in radio phone-ins;
+- a question on DOS's "Have your say" form.
 
-| # | Idea | Why (finding) | What already exists |
-| --- | --- | --- | --- |
-| X10 | **"Live on $8."** A web game: try to feed a family for one month in Dzaleka with real prices and the real transfer. Every choice shows what a family there gives up (a meal, school, soap). It ends with the facts and how to help FSF. In Portuguese, English and French. | The most concrete number in the whole research: ~$8 received against $28 needed (allAfrica, 30 Sept 2026). "The invisible camp" is the awareness angle in §12. | Games like this have been made for other crises (e.g. *Spent*, on US poverty). None was found for Dzaleka. |
-| X11 | **"No way out" interactive story.** A scrolling page built on the open dataset (E1): 32 years, three exits all closing, 775 people out vs ~3,600 in during 2025. | Awareness angle 5 (§12), already fully sourced. | Nothing similar found for Dzaleka. |
-| X12 | **Camp voices on a map.** The OpenStreetMap base (C1) with short stories, photos and audio recorded by refugees themselves, with consent and no faces or names unless people choose otherwise. | The most-used source in this research was a refugee-run archive (§9). Refugee-made content is more credible than ours. | Dzaleka.com has the archive; a map-based storytelling layer was not found. |
+**Research angle:** how a refugee-run information platform reaches, or misses, its own camp, and whether low-tech channels close the gap. This is a small version of an information ecosystem assessment, the method Internews uses in camps.
 
-### 3.4 Favourites
+**Replicable:** any camp with an information source (a website, UNHCR notices) and a radio, WhatsApp groups or noticeboards.
 
-Of everything above, three stand out. Each is cheap, small, useful and unlike anything already at Dzaleka:
+### Option 2 — Heavy-rain warnings by zone (research track, PhD-linked)
 
-1. **X10 "Live on $8": the fastest win.** It needs only data we already have and real market prices. It carries no risk to anyone in the camp, and it gives FSF something to share in Brazil. It works for any camp by changing the inputs.
-2. **X1 "Is this offer real?": the most protective.** It reaches straight into a documented harm (scams and trafficking), holds no personal data, and could be a printed sheet before it is ever a bot.
-3. **X7 "Reverse caravan": the most original.** It turns FSF's existing logistics into income for artisans with no new funding, and our tool is small (catalogue + ledger). It depends on FSF agreeing and on export and payment rules.
+**What it is:** combine three things that already exist:
+- the 2021 Dzaleka flood and erosion model (Friedman);
+- the camp's OpenStreetMap base (MapMalawi, 2021);
+- the live Met Malawi weather already in DOS.
 
-G1 (caravan and stock planner) from Section 2 still stands as the tool with a guaranteed user. Together, G1 and X7 make one "caravan" theme: medicines in, crafts out.
+When forecast rainfall crosses a threshold, the tool flags **which zones of the camp face collapse risk**. It then produces a short alert that feeds into Option 1's radio, WhatsApp and print outputs. The threshold logic is borrowed from Cox's Bazar's landslide early-warning system ([UNDP Bangladesh](https://www.undp.org/bangladesh/stories/until-everyone-safe-early-warning-systems-strengthening-safety-and-resilience-coxs-bazar)).
 
-## 4. Side-by-side (cluster tools)
+**Why it fits:**
+- It is the closest to the PhD (evacuation risk).
+- The rains start in mid-December.
+- The hazard is documented (§2.4).
+- Option 1 gives it a delivery channel.
 
-| Tool | Real user | Small change | Zero budget | Data safety | Not duplicated | Research value | Replicable |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| A1 Law comparator | Possible (Inua) | Better submissions | Yes | Safe | Partly (texts exist) | Medium | High |
-| B1 Funding tracker | Possible | Gap made visible | Yes | Safe | Yes | Medium | High |
-| C1 Risk & evacuation map | Not yet | Readiness before the rains | Mostly (needs local validation) | Safe (no names) | Partly (base map exists) | **High (PhD)** | High |
-| D1 Help directory | Refugees, if kept current | Fewer dead ends | Yes, needs a local owner | Safe if no case data | Yes | Low–medium | High |
-| E1 Open dataset | Researchers | Saves others work | Yes, almost done | Safe | Yes | Medium | High (the method) |
-| **G1 Caravan & stock planner** | **FSF, guaranteed** | **Fewer stock-outs, less waste** | **Yes** | **Safe (no patient data)** | **Yes (niche)** | Medium | **High** |
+**Limits:** the 2021 model predates the camp's growth (from ~43,000 to ~63,000 people), so it needs updating with newer imagery or OSM data. Thresholds must be validated with past rain events, and alerts must not create false alarms. **Research first, then a prototype.**
+
+### Option 3 — Our sourced figures on DOS's open data platform (by-product)
+
+DOS already has an **open data platform and data catalogue**. Rather than publishing our dataset separately, we could offer it to DOS: each figure with its source, date and conflicting values kept side by side. It is cheap and certain, but it changes little inside the camp.
+
+### Later: a free phone information line
+
+Viamo's **3-2-1 service** in Malawi, run with Airtel, gives **free** voice-menu information to any phone, including basic phones ([UNDP Digital X](https://digitalx.undp.org/viamo-3-2-1-platform_1.html)). If Option 1 works, its weekly content could later be offered to 3-2-1 through a partner. This needs an organisational agreement we cannot make on our own, so it is noted for later.
+
+## 4. Earlier ideas, through the filter
+
+| Earlier idea | Verdict | Why |
+| --- | --- | --- |
+| Funded pilots (remote work, cash, farming) | Out | Need money |
+| G1 caravan and stock planner (FSF) | On hold | FSF is context only |
+| D1 "where to get help" directory | **Already exists** | DOS "Get help now", Rights Navigator and 149 services |
+| C1 risk and evacuation map | Becomes Option 2 | The 2021 model gives it a base |
+| A1 law comparator, B1 funding tracker | Possible later | Advocacy tools; little change inside the camp |
+| X1 "Is this offer real?" scam checker | Possible as Option 1 content | A recurring radio/WhatsApp item instead of a separate app |
+| X2–X9 (papers safe, skills passport, clinic translation, mental health, Kolibri, reverse caravan, collective buying, community currency) | Out for now | Each needs devices, an operator in the camp, FSF as operator, or carries legal risk |
+| X10 "Live on $8", X11 "No way out" (awareness) | Side project | Buildable by us, but they change things outside the camp, not inside |
+| Translating the whole DOS site (previous draft) | Narrowed | Essentials already exist in FR/SW; translate what changes weekly, via Option 1 |
 
 ## 5. Recommendation
 
-**Pick one awareness piece and one practical tool, and start both small.**
+**Start with Option 1 (the last-mile kit) and run Option 2 (heavy-rain warnings by zone) as the PhD-linked research track.**
 
-- **Awareness: X10 "Live on $8".** It can be built in weeks from data we already hold, and it creates an audience in Brazil for everything that follows.
-- **Practical: choose with the professor between G1 + X7 (the caravan theme, with FSF as the user) and X1 (the scam checker, with refugees as the user).** The caravan theme is safer to start because FSF is a known user. X1 reaches refugees directly, but it needs a partner in the camp (for example a refugee-led organisation) to spread it and keep it accurate.
-- **Research track: C1**, the risk and evacuation map, closest to the PhD. **E1** stays as a by-product.
-
-All tools share one rule: **no personal data about refugees leaves the tool, only aggregates or what the person chooses to share.**
+- **Option 1** is the only option where people in the camp already produce and distribute the content. What is missing is the bridge, and that is exactly what two people with code can build for free.
+- **Option 2** gives the research depth and a natural deadline, and its alerts travel through Option 1.
+- The "app" you had in mind becomes **a tool for the camp's own information providers** (DOS, the radio, community leaders), not a new app that residents would have to discover and install.
 
 ## 6. Next steps
 
-1. **Discuss with the professor:** the three favourites plus G1, and which practical tool comes first.
-2. **FSF:** ask (a) for the structure of the stock spreadsheet and the next caravan date (G1); (b) whether returning caravans could carry crafts, and whether FSF would sell them in Brazil (X7).
-3. **X10:** collect current food prices around Dzaleka/Dowa (maize, beans, oil, soap, school items), with sources and dates.
-4. **X1:** gather the scam patterns already reported (UNHCR warnings, the resettlement syndicate case), and ask Inua Advocacy or another refugee-led organisation whether they would co-own it.
-5. **C1:** download MapMalawi's OSM data for Dzaleka and check its date and coverage.
+1. **Discuss with the professor:** Option 1 + Option 2.
+2. **Contact Bakari Mustafa / Dzaleka Connect** (dzalekaconnect@gmail.com) **before writing code.** Ask:
+   - Would a weekly radio/WhatsApp/print kit from the DOS API help?
+   - Who could review Swahili and French drafts?
+   - What licence applies to `dos`?
+   - Does DOS already work with Yetu Radio?
+   - Is there anything else they would rather have help with?
+3. **Ask FSF (context):** do they know DOS, Yetu Radio or TakenoLAB, and can they introduce us?
+4. **Option 2 groundwork:**
+   - read Friedman (2021) in full;
+   - find the drone imagery (OpenAerialMap / MapMalawi);
+   - compare the 2021 extent with today's OSM data;
+   - collect past heavy-rain events and house collapses at Dzaleka.
+5. **Prototype only after DOS agrees:** a script that turns one week of the DOS API into a Swahili radio script, as a demo for that conversation.
 
 ## 7. Open questions
 
-- **Phones:** how many people in Dzaleka have a smartphone, WhatsApp and data? This decides whether X1–X5 are apps, bots or paper. Phone access is not confirmed (§8 assumptions).
-- **Languages:** which languages matter most (French, Swahili, Kinyarwanda, Kirundi, Somali, English)?
-- **G1:** who at FSF would use it day to day, on a laptop or a phone, and is there connectivity at the clinic?
-- **X7:** what are Malawi's export rules for crafts, and how can artisans without bank access be paid (mobile money)?
-- Is MapMalawi's 2021 data still current, given the camp has grown from ~43,000 to ~63,000?
-- **Licence:** MIT for code and CC BY for data is a common pair.
-- **Where the code lives:** a new repository, or under the Ethical Tech CoLab organisation where ERCF already lives?
+- What share of residents have a smartphone, WhatsApp or a radio? (No Dzaleka figure found.)
+- Does Yetu Radio broadcast in Kirundi? Sources disagree.
+- Who reviews translations so they are correct and not just machine output?
+- Is the 2021 drone imagery openly available, and under what licence?
+- Would DOS want outside contributors? One developer carries most of the work, so help may be welcome, but this has to be asked.
 
 ---
 
 ## Sources
 
-All linked inline. New sources consulted on 7 Oct 2026: Malawi Voice (1 Jul 2026), AfricanLII, OpenStreetMap wiki (MapMalawi/HOT 2021), GHSC-PSM (OpenLMIS Malawi, 2019), civictech.guide (UNHCR chatbots), JRS (Dzaleka digital pilot), Refugee-Led Research Hub (Jan 2026), IFPRI (Taylor et al., 2016), allAfrica (30 Sept 2026), Nation Online (resettlement syndicate), University of Liverpool / *Lancet Global Health* (Self-Help Plus, 2020), Learning Equality / MIT Solve (Kolibri), Frontiers in Blockchain (Sarafu RCT, 2021). FSF caravan figures come from the team (`RESEARCH_LOG.md`, 5 Oct 2026), not from a public source. All other figures come from `DZALEKA_SITUATION_RESEARCH.md` (section numbers given inline).
+All linked inline. Consulted 7 Oct 2026 through Tavily and web search: Migration Policy Institute ("Digital litter"), UNHCR Innovation, IRC (Signpost), UNDP Bangladesh (Cox's Bazar early warning), Population Council Knowledge Commons (radio in Uganda's response), Dzaleka Online Services (site pages, public API, GitHub, 2025 Annual Digital Performance Report), bakarimustafa.com (Jul 2026), UNHCR (Yetu Radio), takenoLAB, HOT/MapMalawi, UNHCR Connectivity, CLEAR Global / Translators without Borders, Friedman (2021, Virginia Tech thesis), Plan International (Jun 2025), UNDP Digital X (Viamo 3-2-1). Situation figures come from `DZALEKA_SITUATION_RESEARCH.md`.

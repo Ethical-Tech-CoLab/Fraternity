@@ -430,3 +430,57 @@ funding, and awareness. Favourites: X10 "Live on $8" (awareness game), X1
 awareness piece (X10) plus one practical tool (G1 + X7, or X1), with C1
 as the research track. RICS removed from the document at the user's
 request.
+
+**Rewrite with a reality filter (same day).** Builders are the user (with
+Claude) and the professor; FSF gives context only; no funding; no field
+presence. `SOLUTIONS.md` was rewritten. Key findings:
+- Most refugee apps die ("digital litter": most of 169 apps from 2015–16
+  were defunct by 2018), so build into something already used.
+- Dzaleka already has a refugee-led platform, Dzaleka Online Services
+  (Dzaleka Connect; public API; 149 services; alerts; Met Malawi weather;
+  last commit 5 Oct 2026). It is English-only and web-only, mostly built
+  by one developer, and the `dos` repository has no licence file.
+- Radio Yetu broadcasts in six languages (2026 status unconfirmed).
+  TakenoLAB is a refugee-led tech school.
+
+Recommendation: Option 1, contribute languages, a low-data version and a
+weekly radio bulletin to DOS; Option 2, rain/heat alert thresholds as the
+PhD-linked research track (the flood hazard at Dzaleka is not evidenced
+yet). Next: contact Dzaleka Connect before writing code.
+
+**Re-researched with Tavily (same day).** Fixed the Tavily key: the
+project-level config held an old key that overrode the valid global one.
+Corrections and new findings in `SOLUTIONS.md`:
+- DOS is richer than first stated: "Get help now" hotlines, Rights
+  Navigator, essentials in EN/FR/SW/Chichewa, Easy Read, open data
+  platform. There is no Kirundi or Kinyarwanda version.
+- DOS 2025 report: 17,952 users but only 3,705 in Malawi and 1,697
+  returning. The gap is reach inside the camp, not features.
+- Population by origin (DOS): DRC 65%, Burundi 22%, Rwanda 13%.
+- Yetu Radio is active in 2026; sources disagree on its languages (5 vs 6)
+  and frequency (107.6 vs 99.1 MHz).
+- Flooding is documented: Friedman (2021, Virginia Tech) modelled Dzaleka
+  from 3.5 cm drone imagery; erosion patterns predict collapsed houses.
+- Recommendation now: Option 1 "last-mile kit" (DOS API → weekly radio
+  script, WhatsApp cards and a printable sheet in Swahili/French); Option
+  2 rain warnings by zone (PhD track) building on Friedman 2021.
+
+
+## 2026-10-07 — Online microwork and paid surveys for refugees
+
+Question from the user: could Dzaleka refugees earn from online
+microtask or survey sites, and actually receive the money? New file:
+`docs/ONLINE_MICROWORK.md` (Tavily).
+
+- PayPal does not work in Malawi, which blocks PayPal-only platforms
+  (e.g. Prolific).
+- Payoneer works in Malawi (Toloka, Clickworker and Upwork pay through
+  it), but its ID check does not list refugee documents.
+- Centenary Bank has an agency in Dzaleka (17,420 accounts).
+- The biggest catch is the official rate (~MWK 1,750/$) against the
+  parallel market (3,500–4,500), so money earned online loses about half
+  its real value.
+- Realistic pay is ~$1.40–5.50 an hour, and the work is irregular.
+- Proposal: a verified "online work that really pays" guide (Option 1
+  content), built from residents' real payout experience. Ask TakenoLAB
+  and Dzaleka Connect first.
