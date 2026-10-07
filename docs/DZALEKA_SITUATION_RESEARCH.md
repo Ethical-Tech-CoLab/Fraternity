@@ -6,7 +6,7 @@ Evidence base for a sector-level Theory of Change (ToC) for Dzaleka Refugee Camp
 
 **How this document is organised**
 - **Part I — Situation analysis (ToC evidence base):** baseline (§1), the four pathways A–D (§2–§5), the cross-pathway causal skeleton (§6), evidence gaps (§7), and the draft ToC skeleton (§8).
-- **Part II — Clusters and proposed focus:** actor landscape (§9), clusters scored (§10), proposed focus (§11), awareness angles (§12).
+- **Part II — Clusters and focus options:** actor landscape (§9), clusters scored (§10), focus options for discussion (§11), awareness angles (§12).
 - **Part III — Monitoring:** watch list (§13) and sources.
 
 ---
@@ -365,7 +365,7 @@ flowchart TD
 **Reading:**
 - **Pathway B (funding) is the pivot node.** It degrades protection (D) directly, weakens disaster preparedness (C), and stalls the one decongestion fix.
 - **Pathway A (encampment and closed durable solutions) is the root cause.** It locks people into one site and, by inference, keeps Malawi out of concessional refugee financing.
-- **What fills the gap:** when B and D fail, the load shifts to local and faith-based actors (cluster G, §10–§11). That is why the proposed focus sits downstream of the pivot rather than on it.
+- **What fills the gap:** when B and D fail, the load shifts to local and faith-based actors (cluster G, §10–§11). Any intervention there sits downstream of the pivot rather than on it.
 
 Updated on 5 Oct 2026 from the Sept 2026 skeleton in `docs/cases/dzaleka.md`. Changes: durable-solutions closure, the end of blanket rations, and the local-actor endpoint.
 
@@ -454,7 +454,7 @@ Treat these as plausible but unconfirmed until re-sourced.
 
 ---
 
-**PART II — CLUSTERS AND PROPOSED FOCUS**
+**PART II — CLUSTERS AND FOCUS OPTIONS**
 
 ## 9. Actor landscape — who is already working here
 
@@ -474,19 +474,21 @@ Seven clusters emerge across the 31 source documents. Each is scored against Fra
 
 **Re-scored 5 Oct 2026** after the funding, durable-solutions and cross-case findings. "→" marks a change from the Sept 2026 rating.
 
-| Cluster | Core finding (updated) | Leverage | Tractability | Neglect | Recommendation |
-| --- | --- | --- | --- | --- | --- |
-| A. Legal/political **& durable solutions** | Malawi declined UN-level reform (Mar 2026) but continues a domestic track; the **draft Refugee Bill is due 9 Oct 2026**, and the Homeland Security Minister said (26 Jul 2026) that citizenship for some long-staying refugees is being considered. New: all three durable solutions are closing at once (1,520 repatriations in 1994–2025, resettlement submissions −79% in 2025, zero recorded naturalisations, §2.3), so local integration (via the bill and/or the minister's citizenship signal) is now the only route out of "permanent temporary" status | High → **Very high** — root cause of encampment lock-in, and now the only lever on durable solutions | Low → **Low–moderate, time-bound** — outsiders cannot pass the law, but analysis of the draft, comparative evidence (Kenya: law ≠ practice) and implementation monitoring are feasible | Moderate (unchanged) — Inua Advocacy, the EU, HRW and UNHCR are already engaged | — |
-| B. Financing exclusion **& visibility** | Excluded from the World Bank's IDA refugee window and from refugee-lens impact investing; UNHCR's money available in Malawi fell from $8.4M (2024) to $6.0M (2025), and the 2026 budget was halved. New: UNHCR Malawi **22.8% funded in 2025, the lowest of the five camps compared**; no inter-agency plan (FTS); no 2026 funding update; **WFP blanket rations ended Sept 2026**. Japan's $247k is the only new bilateral donor found | Very high (unchanged) — the pivot node | Moderate (unchanged); the **visibility** sub-lever (sector-level funding tracking where no plan exists) is high | High → **Very high** — confirmed against four other camps: the lowest UNHCR funding of the five, no inter-agency plan (shared only with Kenya), and no 2026 UNHCR funding update (Kenya and Jordan have 30 Sept 2026 updates; the others were not checked) | Later, as a public layer of the G tool |
-| **C. Disaster/institutional capacity** | DoDMA↔UNHCR evacuation-command gap is a real capability gap. New: the NMHCP 2025–26 exists (refugee coverage unchecked); the rains start ~mid-Dec with a forecast El Niño | High (unchanged), **with a caveat** — Cox's Bazar shows a protocol alone doesn't prevent deaths when physical mitigation is unfunded | High → **Higher** — a ready template exists (Cox's Bazar relocation protocol) | High (unchanged, pending the NMHCP check) | **Plan B** |
-| D. Protection & family | Forced family consolidation; GBV is a recurring mechanism; zero dedicated child-protection officers. New: UNHCR's GBV line **21% funded** and **no separate child-protection outcome area**; reported deaths, disappearances and smuggling links (unverified) | Very high (unchanged) | Low–moderate (unchanged) | High → **Very high** — no budget line for child protection at all; in contrast, Kenya's GBV and child-protection lines were 89% and 70% funded | — |
-| E. Data blackout (health **+ solutions**) | No prevalence data for chronic disease, disability or mental health. New: the blackout extends to **length of stay** (no year-of-arrival data), the **resettlement series**, and **who is excluded from targeted food aid** | Moderate (unchanged) — doesn't fix care, but makes the case for it | High (unchanged) | Very high (unchanged) | Follows from G (data as a by-product) |
-| F. Actor landscape | Structurally neglected: no UN-coordinated response plan (re-confirmed in FTS 2026). New: Japan/UN Women is the only new external actor found; Inua Advocacy closed its Lilongwe office (Jun 2026) | High (unchanged) — explains *why* B, D and E are neglected | Low (unchanged) | Confirmed (unchanged) | — |
-| **G. Local/faith-based response** | Community and faith structures absorb the vacuum: a 42-church union, Inua Advocacy, Tumaini Festival, FSF's Ubuntu Nation project. New: the Japan/UN Women project channels money through a refugee women-led organisation (SOFERES), a model of external funding reaching local structures | High (unchanged) | High (unchanged) | Moderate-low (unchanged since Sept: Tumaini Letu's 2026 Ockenden Prize) | **Focus (recommended)** |
+| Cluster | Core finding (updated) | Leverage | Tractability | Neglect |
+| --- | --- | --- | --- | --- |
+| A. Legal/political **& durable solutions** | Malawi declined UN-level reform (Mar 2026) but continues a domestic track; the **draft Refugee Bill is due 9 Oct 2026**, and the Homeland Security Minister said (26 Jul 2026) that citizenship for some long-staying refugees is being considered. New: all three durable solutions are closing at once (1,520 repatriations in 1994–2025, resettlement submissions −79% in 2025, zero recorded naturalisations, §2.3), so local integration (via the bill and/or the minister's citizenship signal) is now the only route out of "permanent temporary" status | High → **Very high** — root cause of encampment lock-in, and now the only lever on durable solutions | Low → **Low–moderate, time-bound** — outsiders cannot pass the law, but analysis of the draft, comparative evidence (Kenya: law ≠ practice) and implementation monitoring are feasible | Moderate (unchanged) — Inua Advocacy, the EU, HRW and UNHCR are already engaged |
+| B. Financing exclusion **& visibility** | Excluded from the World Bank's IDA refugee window and from refugee-lens impact investing; UNHCR's money available in Malawi fell from $8.4M (2024) to $6.0M (2025), and the 2026 budget was halved. New: UNHCR Malawi **22.8% funded in 2025, the lowest of the five camps compared**; no inter-agency plan (FTS); no 2026 funding update; **WFP blanket rations ended Sept 2026**. Japan's $247k is the only new bilateral donor found | Very high (unchanged) — the pivot node | Moderate (unchanged); the **visibility** sub-lever (sector-level funding tracking where no plan exists) is high | High → **Very high** — confirmed against four other camps: the lowest UNHCR funding of the five, no inter-agency plan (shared only with Kenya), and no 2026 UNHCR funding update (Kenya and Jordan have 30 Sept 2026 updates; the others were not checked) |
+| C. Disaster/institutional capacity | DoDMA↔UNHCR evacuation-command gap is a real capability gap. New: the NMHCP 2025–26 exists (refugee coverage unchecked); the rains start ~mid-Dec with a forecast El Niño | High (unchanged), **with a caveat** — Cox's Bazar shows a protocol alone doesn't prevent deaths when physical mitigation is unfunded | High → **Higher** — a ready template exists (Cox's Bazar relocation protocol) | High (unchanged, pending the NMHCP check) |
+| D. Protection & family | Forced family consolidation; GBV is a recurring mechanism; zero dedicated child-protection officers. New: UNHCR's GBV line **21% funded** and **no separate child-protection outcome area**; reported deaths, disappearances and smuggling links (unverified) | Very high (unchanged) | Low–moderate (unchanged) | High → **Very high** — no budget line for child protection at all; in contrast, Kenya's GBV and child-protection lines were 89% and 70% funded |
+| E. Data blackout (health **+ solutions**) | No prevalence data for chronic disease, disability or mental health. New: the blackout extends to **length of stay** (no year-of-arrival data), the **resettlement series**, and **who is excluded from targeted food aid** | Moderate (unchanged) — doesn't fix care, but makes the case for it | High (unchanged) | Very high (unchanged) |
+| F. Actor landscape | Structurally neglected: no UN-coordinated response plan (re-confirmed in FTS 2026). New: Japan/UN Women is the only new external actor found; Inua Advocacy closed its Lilongwe office (Jun 2026) | High (unchanged) — explains *why* B, D and E are neglected | Low (unchanged) | Confirmed (unchanged) |
+| G. Local/faith-based response | Community and faith structures absorb the vacuum: a 42-church union, Inua Advocacy, Tumaini Festival, FSF's Ubuntu Nation project. New: the Japan/UN Women project channels money through a refugee women-led organisation (SOFERES), a model of external funding reaching local structures | High (unchanged) | High (unchanged) | Moderate-low (unchanged since Sept: Tumaini Letu's 2026 Ockenden Prize) |
 
-**Reading — do the Sept 2026 recommendations still hold? Mostly yes, with three shifts.**
+**Note on bias (5 Oct 2026):** tractability is scored for our team, not in the abstract. G scores high mainly because our partner FSF already operates next to the camp; for another actor it could score lower. The scores are meant as a neutral comparison. Focus options are discussed separately in §11; none is an output of this table.
 
-- **B, C, E and G still score best** on all three criteria together, so the core recommendation stands.
+**Reading — does the Sept 2026 shortlist still hold? Mostly yes, with three shifts.**
+
+- **B, C, E and G still score best** on all three criteria together, so the shortlist stands.
   - **B** is now even more clearly neglected. Its most tractable form is *funding visibility* rather than fundraising in general.
   - **C** has become more tractable thanks to the Cox's Bazar template. Its leverage should be read with the caveat above, and the mid-December rains make it time-sensitive.
   - **E** widens from health to "data blackout": length of stay, solutions and food-aid exclusion are all unmeasured.
@@ -495,10 +497,13 @@ Seven clusters emerge across the 31 source documents. Each is scored against Fra
 - **Shift 2 — D becomes more urgent but no more tractable.** Neglect rises to "very high" (no child-protection budget line), and the security signals worsen. It still needs sustained programme capacity, so it remains a strong *awareness* angle more than a near-term intervention.
 - **Shift 3 — Dzaleka's case for focus is stronger.** The cross-case comparison confirms that Malawi has the lowest UNHCR funding of the five camps, no inter-agency plan, no 2026 funding update, and no child-protection budget line. That supports keeping Dzaleka as the focus case. **Still do not narrow to a single lever yet**; the bill (9 Oct) and the targeted-distribution outcome (Oct) are two results worth waiting for.
 
-## 11. Proposed focus
+## 11. Focus options for discussion
 
-**Proposed focus (5 Oct 2026, for discussion with the professor): cluster G, with C as plan B.**
+The scores in §10 do not pick a single winner. Two options are developed below because they are the most concrete so far; neither is a conclusion of the analysis, and B, E or A remain open. The choice is for discussion with the professor.
 
+### Option 1 — Cluster G (local/faith-based response)
+
+- **Trade-off:** the team already has access through FSF, which makes it the most tractable option *for us*; the same fact is a source of bias, and evidence beyond FSF's own operation is thin.
 - **Who acts:** the intended intervention is an open tool, free for anyone, with FSF as its first user. FSF already operates the Ubuntu Nation project next to the camp, which makes G the only cluster where the team is already an actor.
 - **Research level (cluster G):** how to keep essential services running when they come to depend on local, volunteer-based actors (churches, refugee-led organisations, small NGOs) after the agencies withdraw. The pattern is not FSF-specific:
   - UNHCR-supported clinics ran out of medicine in Jun 2025;
@@ -513,7 +518,11 @@ Seven clusters emerge across the 31 source documents. Each is scored against Fra
   Source: the team's own knowledge of FSF operations, not yet documented publicly.
 - **Design principle:** start from how a refugee asks for help (trusted local focal points, in person or WhatsApp/SMS), let the refugee choose where a case goes, and let only aggregate data leave the tool.
 - **First step:** a short, ethical field mapping of how refugees seek help today and of the clinic's baseline (volume, time to diagnosis, return rate, stock-out days).
-- **Plan B:** cluster C (emergency coordination), more general and not dependent on FSF, with a pilot before the mid-Dec rains.
+
+### Option 2 — Cluster C (disaster/institutional capacity)
+
+- **What it would be:** emergency coordination between DoDMA and UNHCR, adapting the Cox's Bazar protocol template, with a pilot before the mid-Dec rains.
+- **Trade-off:** more general and not dependent on FSF, with a proven template elsewhere; but the team has no current operational role, and it is time-sensitive.
 
 ## 12. Awareness angles
 
