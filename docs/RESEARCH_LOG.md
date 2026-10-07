@@ -484,3 +484,35 @@ microtask or survey sites, and actually receive the money? New file:
 - Proposal: a verified "online work that really pays" guide (Option 1
   content), built from residents' real payout experience. Ask TakenoLAB
   and Dzaleka Connect first.
+
+## 2026-10-07 — SOLUTIONS.md restructured as "Dzaleka Info Bridge"
+
+The user found SOLUTIONS.md confusing and asked to learn from examples like
+refugeeconnectivity.org. Reviewed with Tavily: Connectivity for Refugees
+(UNHCR/ITU/GSMA; 11 countries, not Malawi), GSMA "Digital Lives of
+Refugees" (2026: only ~1/3 in Kiziba and Bidi Bidi have used mobile
+internet), GSMA "Digital Worlds" (58% fear phone scams), ConnectRefugee
+(Nakivale: verified NGO announcements in 5 languages, built by
+refugees), Internews rumour tracking, Hello Hubs (Rhino Camp: community
+governance).
+
+SOLUTIONS.md now frames one product with a core (weekly digest: DOS →
+radio script, WhatsApp cards, A4 sheet, in Swahili/French) and three parts:
+A, a questions and rumours loop; B, heavy-rain warnings by zone (shadow mode
+in the 2026–27 season); C, a verified online-work guide. Added a lessons
+table, risks and a roadmap.
+
+**Critical review and revision (same day).** The user asked whether the
+proposal is real. Verdict: buildable, but the need is an untested
+hypothesis (no resident consulted; DOS's Facebook, WhatsApp groups or the
+radio may already carry the information; weekly content may be thin; it
+would add unpaid weekly work for reviewers). SOLUTIONS.md revised:
+- Step 0 is now validation: three questions to DOS, Yetu Radio and
+  TakenoLAB, plus university ethics approval.
+- Step 1 is now fixed essentials (urgent help, hotlines, scam warnings)
+  translated once into Kirundi/Kinyarwanda, as radio spots, A4 sheets and
+  WhatsApp cards. This is the only documented gap.
+- The weekly digest becomes Step 2, conditional and monthly by default.
+- The rumour loop is removed (needs paid staff).
+- The rain warnings are described honestly (area forecast plus a fixed
+  risk map) and need ground truth; shadow mode Dec 2026 – Apr 2027.
