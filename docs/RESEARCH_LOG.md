@@ -394,3 +394,39 @@ format in `CONCEPT.md`, then clusters, then the rest.
 All cross-references were renumbered and acronym first-use was
 re-checked. No content was added beyond the skeleton, outcomes and
 assumptions.
+
+## 2026-10-07 — Shift from diagnosis to solutions
+
+The professor's feedback on the ToC: the research must start from what we
+can do that actually changes something in the camp. The situation research
+is kept unchanged as context.
+
+**Constraints clarified the same day:** no funding; output is free and open
+source; small impact is fine; the aim is to start a line of technology
+development. A first draft built on funded pilots (remote work, cash) was
+replaced accordingly. Its livelihood evidence is kept as context.
+
+- **New:** `docs/SOLUTIONS.md`. One or more open-source tools per cluster
+  (A1 law comparator, B1 funding tracker, C1 risk/evacuation map,
+  D1 help directory, E1 open dataset, G1 caravan and stock planner, G2
+  help-seeking entry point), scored on real user, small change, zero
+  budget, data safety, duplication, research value and replicability.
+- **Recommendation:** G1 first (FSF is a guaranteed user), C1 as the
+  research track (PhD link, mid-Dec rains), E1 as a by-product.
+- **Open point:** whether G1 counts as cluster G, given the 5 Oct
+  correction that clinic records sat in D/E.
+- **Tooling:** the Tavily API key failed (unauthorised); the built-in web
+  search was used instead.
+
+**Next:** discuss with the professor; ask FSF for the stock spreadsheet
+structure and next caravan date; check MapMalawi's OSM data for Dzaleka.
+
+**Later the same day:** asked to think outside the box (apps for refugees,
+awareness, practical ideas). Added §3 to `SOLUTIONS.md` with 12 ideas
+(X1–X12) in three groups: apps for refugees, moving money without
+funding, and awareness. Favourites: X10 "Live on $8" (awareness game), X1
+"Is this offer real?" (scam/trafficking checker), X7 "Reverse caravan"
+(crafts out on returning FSF caravans). Revised recommendation: one
+awareness piece (X10) plus one practical tool (G1 + X7, or X1), with C1
+as the research track. RICS removed from the document at the user's
+request.

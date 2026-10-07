@@ -19,7 +19,10 @@ comparison across cases surfaces a genuine opportunity — a lever that is
 high-leverage, tractable, and neglected relative to the others — we narrow
 down and go deep on that one.
 
-**Current phase: gathering information. Do not narrow yet.**
+**Current phase (from 7 Oct 2026): solutions.** Following the professor's
+feedback, the situation research stays as context and the work now asks
+what we can do that actually changes something in the camp, starting with
+Dzaleka. See `docs/SOLUTIONS.md`.
 
 ## Structure
 
@@ -31,6 +34,8 @@ down and go deep on that one.
   decisions, dead ends, next steps).
 - `docs/comparison.md` (once ≥3 cases exist) — cross-case comparison and
   candidate opportunity list.
+- `docs/SOLUTIONS.md` — candidate open-source tools per cluster, and the
+  recommended first line of technology development.
 
 ## Sourcing discipline
 
