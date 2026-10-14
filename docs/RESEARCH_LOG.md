@@ -516,3 +516,27 @@ would add unpaid weekly work for reviewers). SOLUTIONS.md revised:
 - The rumour loop is removed (needs paid staff).
 - The rain warnings are described honestly (area forecast plus a fixed
   risk map) and need ground truth; shadow mode Dec 2026 – Apr 2027.
+
+## 2026-10-14 — Seven options documented for discussion (SOLUTIONS.md §9)
+
+For the 15 Oct meeting with Professor Yorke Rhodes, added section 9 to
+SOLUTIONS.md: seven candidate interventions (community reporting,
+multilingual information, weather alerts, open map data, climate risk,
+needs assessment, existing systems), a comparison table, a synthetic-data
+MVP for the reporting option and questions for local partners. No option
+selected; reporting is the user's current preference. Sections 1–8 left
+unchanged.
+
+Checked 14 Oct 2026:
+- Met Malawi (DCCMS) publishes a public CAP RSS feed; latest item 12 Oct
+  2026; alerts are district or national, not camp zones.
+- Sahana Eden (MIT), Ushahidi platform (AGPL) and FixMyStreet (AGPL) are
+  all actively maintained on GitHub.
+- HOT Tasking Manager API: no project matching "Dzaleka".
+- HDX: five Dzaleka datasets, all UNHCR surveys (nutrition 2012/2016,
+  socio-economic 2017, cash PDM 2020, RMS 2023); no map layers.
+- OSM has the site, hospital, health centre and market as features.
+  Building and path completeness not measured: Overpass returned
+  504/406 errors. Still open.
+- Defesa Civil Alerta: operator-run cell broadcast (MIDR + Anatel, since
+  Dec 2024); ITU technical contribution is restricted access.

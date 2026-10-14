@@ -2,6 +2,8 @@
 
 Draft, 7 Oct 2026, for discussion with the professor. **Revised after a critical review the same day:** the proposal is still a hypothesis, so it now starts with validation. Earlier versions are in the git history. Supporting research: `ONLINE_MICROWORK.md`; situation context: `DZALEKA_SITUATION_RESEARCH.md`.
 
+**Update, 14 Oct 2026:** section 9 sets out seven options for discussion with Professor Yorke Rhodes on 15 Oct. No option has been selected; a community reporting platform is the current preference.
+
 ## In one paragraph
 
 Dzaleka already has good, verified, practical information (hotlines, services, rights, weather) on a platform built by refugees, **Dzaleka Online Services (DOS)**. The evidence suggests it reaches few people in the camp: 3,705 users in all of Malawi in 2025, against ~63,000 residents, and nothing in Kirundi or Kinyarwanda. **Our hypothesis is that a free, open-source "bridge" can carry this information to the channels people actually use (community radio, WhatsApp and printed notices) in the languages they speak.** We start with the clearest documented gap: the essential, rarely-changing information (urgent help, hotlines, scam warnings) translated once into Kirundi and Kinyarwanda and turned into radio spots and printed sheets. In parallel, the PhD-linked research track tests heavy-rain warnings for the camp in "shadow mode". **Nothing is built until people in the camp confirm the need.**
@@ -161,6 +163,110 @@ A tool that reads DOS's public API and produces a short radio script, WhatsApp t
 
 ---
 
+## 9. Options for discussion (14 Oct 2026)
+
+Prepared for the meeting with Professor Yorke Rhodes on 15 Oct 2026. **No option has been selected.** The community reporting platform (9.1) is the current preference, but all seven options stay open for comparison. Sections 1–8 above remain the earlier analysis; options 9.2 and 9.5 overlap with the Info Bridge and the research track.
+
+Labels used below: **Verified** (checked against a source, with date), **Hypothesis** (plausible but untested), **To check** (unknown; needs research or a partner's answer).
+
+### 9.1 Community reporting and problem mapping (current preference)
+
+A simple, mobile-friendly form where residents report non-sensitive community problems (blocked drainage, damaged paths, broken water points, unlit public spaces, flooding), choosing a category, a short description and, optionally, an approximate zone. Moderated reports appear on a map or dashboard that shows recurring problems.
+
+- **Aim (hypothesis):** a channel for residents to make local needs visible and help organisations prioritise.
+- **Protection boundary:** reports of violence, including sexual violence, are **out of scope**. Even with blurred locations, timing and context can identify survivors. Such incidents need confidential, survivor-centred referral through specialised services ([WHO, 2007](https://www.who.int/publications/i/item/9789241595681)). The prototype would show referral information (e.g. the GBV 5600 and child-protection 116 hotlines listed by DOS) instead of accepting these reports.
+- **Safeguards:** nothing is published automatically; moderation before display; zones rather than GPS points; minimal data; no accounts required; protection against retaliation and false reports.
+- **Existing systems (verified 14 Oct 2026):** [Ushahidi](https://github.com/ushahidi/platform) (AGPL, active) maps citizen reports from SMS, web and apps. UNHCR's early-warning platform in the Central African Republic was built on it, with reports verified and cleaned of confidential information before display ([UNHCR](https://data.unhcr.org/ar/news/10189)). [FixMyStreet](https://github.com/mysociety/fixmystreet) (AGPL, active) routes each report to the body responsible for fixing it.
+- **Main uncertainty:** the reporting platforms that work have **someone who receives and acts on reports**. We have no presence in the camp, and no responder has been identified. Without one, reports go nowhere and could damage trust. This conflicts with the constraints in section 1, unless a local partner takes on that role.
+
+### 9.2 Multilingual news and community information
+
+AI-assisted translation of announcements that already exist (mainly from DOS), with human review of sensitive content and distribution through WhatsApp, radio and print, plus optional personalisation by language and topic. This is close to the Info Bridge in section 3.
+
+- **Verified:** DOS guides exist in English, French, Swahili and Chichewa, but not in Kirundi or Kinyarwanda (section 2). Kirundi is poorly served by machine translation (section 3, Step 1).
+- **Earlier variant:** voluntary family profiles (demographics, health). This variant is **set aside for the prototype** because of privacy concerns, and kept as a possible later research question (see 9.6).
+- **Key question:** do residents need a new application, or better access to information that already exists through existing channels? Section 5 records why a new app is risky.
+
+### 9.3 Community emergency and weather alerts
+
+Localised alerts for heavy rain, flooding and heat, inspired by Brazil's Defesa Civil Alerta, run in **simulation or shadow mode only**.
+
+- **Verified (14 Oct 2026):** Malawi's Department of Climate Change and Meteorological Services publishes a public CAP alert feed ([RSS](https://www.metmalawi.gov.mw/api/cap/rss.xml), marked "public domain", latest item 12 Oct 2026). It is listed in the [WMO Register of Alerting Authorities](https://alertingauthority.wmo.int/authorities.php?recId=93). The alerts are written for districts or the whole country, not for zones of the camp.
+- **Verified:** Defesa Civil Alerta uses cell broadcast. Alerts reach every 4G/5G phone in an area through the mobile operators, with no sign-up, coordinated by the Ministry of Integration and Regional Development (MIDR) and Anatel; it began in December 2024 ([Metrópoles](https://www.metropoles.com/brasil/alerta-defesa-civil-entenda-como-funciona-o-sistema-cell-broadcast); [Teletime](https://teletime.com.br/29/01/2025/rio-emite-alerta-extremo-pela-primeira-vez-via-cell-broadcast/)). This depends on government and operator infrastructure that we cannot replicate. The **design** (CAP format, area targeting, short standard messages) is what transfers.
+- **To check:** whether Malawi has any cell-broadcast capability, and which channels camp residents would receive alerts on.
+
+### 9.4 Open geographic data and community mapping
+
+Review and improve open map data for Dzaleka (roads, drainage, services) on OpenStreetMap, and use it for analysis such as access to services. The aim is to produce or analyse data that supports planning, not to duplicate consumer maps.
+
+- **Verified (14 Oct 2026):** OSM already has the Dzaleka refugee site, hospital, health centre and market ([Nominatim](https://nominatim.openstreetmap.org/search?q=Dzaleka)). A search of the HOT Tasking Manager for "Dzaleka" returned no projects. On HDX, the five Dzaleka datasets are all UNHCR surveys; none is a map layer ([HDX](https://data.humdata.org/search?q=Dzaleka)).
+- **To check:** how complete the building and path layers are (not measured; the query service was unavailable), and whether UNHCR or local mappers hold unpublished site maps.
+- **Safeguard:** no layers that could identify vulnerable groups or sensitive sites.
+
+### 9.5 Climate risk and exposure analysis
+
+Use satellite imagery, rainfall data, OSM and earlier research to identify zones exposed to flooding, erosion or house collapse, and compare model estimates with past events where validation data exist. This is the research track in section 3.
+
+- **Builds on:** Friedman (2021), which used drone imagery of Dzaleka ([thesis](https://vtechworks.lib.vt.edu/items/fabeecfe-edd2-4db0-8d9d-235f327d3c2c)). The methodology and the availability of its imagery still have to be confirmed.
+- **Limit:** a research output, not public warnings, until validated.
+
+### 9.6 Voluntary community needs assessment
+
+An optional, privacy-protected survey of participating households (composition, disability, access to services) producing aggregated insights for advocacy.
+
+- **Concerns:** consent, sensitive data, re-identification in small groups, and a non-representative sample.
+- **Verified:** UNHCR already runs household surveys in Dzaleka, e.g. the 2023 Results Monitoring Survey and the 2017 socio-economic assessment ([HDX](https://data.humdata.org/search?q=Dzaleka)). A new instrument could duplicate them; analysing the existing data may be a lower-risk first step (**hypothesis**).
+- **Status:** a longer-term possibility only. Synthetic data only until ethics approval, local consultation and data governance are in place.
+
+### 9.7 Building on existing systems
+
+| System | What it offers | Status (checked 14 Oct 2026) |
+| --- | --- | --- |
+| DOS | Services, hotlines, news, public API | Live; see section 2 |
+| OpenStreetMap / HOT Tasking Manager | Open map data; coordination of remote mapping | No Dzaleka project found |
+| [Sahana Eden](https://github.com/sahana/eden) | Open-source emergency management (registries, requests, mapping) | MIT licence, actively maintained |
+| [Ushahidi](https://github.com/ushahidi/platform) | Crowdsourced reports on a map | AGPL, actively maintained |
+| [FixMyStreet](https://github.com/mysociety/fixmystreet) | Problem reports routed to a responsible body | AGPL, actively maintained |
+| Met Malawi CAP feed | Official alerts, machine-readable | Public, active |
+| Defesa Civil Alerta | Cell-broadcast alerts in Brazil | Operator-based; detailed technical documentation is restricted to ITU-D TIES users ([ITU](https://www.itu.int/md/D26-SG01-C-0088/en)) |
+
+Suitability for Dzaleka (language, low bandwidth, hosting at no cost) has **not** been tested for any of these.
+
+### 9.8 Comparison
+
+| Option | Problem addressed | Potential benefit to residents | Feasibility for the Independent Study | Depends on partners / missing data | Privacy and protection risk | Prototype by Dec 2026? |
+| --- | --- | --- | --- | --- | --- | --- |
+| 9.1 Reporting | Local problems not visible to decision-makers | High, **if** someone responds | High (could build on Ushahidi) | **High:** a responder and moderators are needed | Medium; high if protection cases leak in | Yes, with synthetic reports |
+| 9.2 Multilingual information | Information not reaching non-English speakers | Medium; depends on channels | High | Medium: translators, DOS, radio | Low (without profiles) | Yes |
+| 9.3 Weather alerts | Warnings not localised to the camp | Potentially high, but a false alarm is costly | Medium | Medium: channels and ground truth | Low data risk, high safety risk if live | Yes, simulation only |
+| 9.4 Open map data | Incomplete or outdated maps | Indirect | High (remote) | Low to start; local validation later | Low, with layer restrictions | Yes |
+| 9.5 Climate risk | Unknown exposure to floods and erosion | Indirect, research | Medium; technically demanding | Medium: imagery and validation data | Low | Partial |
+| 9.6 Needs assessment | Unmet needs not visible | Uncertain | Medium | High: ethics and governance | **High** | Synthetic demo only |
+| 9.7 Existing systems | Avoids building from scratch | Supports the others | High | Varies | Varies | Not a standalone output |
+
+### 9.9 Current preference: a minimum viable prototype for 9.1
+
+A **demonstration only**, with no live service and no real personal data:
+
+1. **Synthetic data:** a set of fictional reports (category, short text, zone, date) written to resemble plausible infrastructure and service problems.
+2. **Report form:** a mobile-friendly, low-bandwidth form. Fixed categories, a zone chosen from a coarse grid instead of GPS, and no account or name.
+3. **Moderation queue:** every report starts as "submitted" and is published only after review. Text that suggests violence or a personal emergency is never published, and the form shows referral contacts instead.
+4. **Public view:** counts by zone and category on a map, with a minimum-count threshold, rather than individual reports.
+5. **Partner export:** a summary that a hypothetical responsible body could receive.
+6. **Evaluation:** first decide whether to configure Ushahidi or build a minimal custom tool, and document what each requires.
+
+### 9.10 Questions for local partners before implementing 9.1
+
+1. Who would receive reports, and who can actually fix the problems (UNHCR, camp administration, block leaders, DOS, or others)?
+2. Does a reporting or feedback channel already exist, such as UNHCR feedback mechanisms, hotlines or community leaders? If so, would a new one help or fragment it?
+3. Who would moderate reports, in which languages, and would that be paid or unpaid work?
+4. How do residents prefer to report: phone, SMS, WhatsApp, radio call-in, or in person?
+5. Could public mapping of problems create tension with authorities or between communities, or expose reporters to retaliation?
+6. How should protection-related reports be referred if they arrive anyway?
+7. What ethics approval and data-protection rules apply (NYU, and Malawi's data-protection law; **to check**)?
+
+---
+
 ## Sources
 
-All linked inline. Consulted 7 Oct 2026 through Tavily and web search. Earlier context and figures: `DZALEKA_SITUATION_RESEARCH.md`, `ONLINE_MICROWORK.md`, `RESEARCH_LOG.md`.
+All linked inline. Consulted 7 Oct 2026 through Tavily and web search; section 9 sources checked 14 Oct 2026 (web search, GitHub, HDX and HOT Tasking Manager APIs, Met Malawi CAP feed). Earlier context and figures: `DZALEKA_SITUATION_RESEARCH.md`, `ONLINE_MICROWORK.md`, `RESEARCH_LOG.md`.
