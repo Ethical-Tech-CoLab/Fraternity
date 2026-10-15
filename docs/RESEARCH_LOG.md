@@ -638,3 +638,25 @@ now has two paths: (1) the Refugee Bill (ideas 1A–1D) and (2) small, real
 and research (2A–2E). Without anyone in the camp, the information tools
 (2C–2E) stay research prototypes. Advertising and the ethics and partner
 items were removed with Path 1.
+
+## 2026-10-15 — Family tracing: REFUNITE review and idea 2F
+
+The user proposed a "Tinder-style" mutual-match platform to find missing
+relatives. Tavily plus direct fetches:
+- REFUNITE (Refugees United) already does this: anonymous profiles,
+  search by name and markers, private messages. It claims 1M+
+  registrations and 75k+ families reconnected, and lists Malawi, the
+  DRC, Burundi and Rwanda. m.refunite.org is live with 12 languages,
+  none of them Kirundi, Kinyarwanda, Lingala or Chichewa. The public
+  profile is visible except contact details; all usage data is logged.
+  Signs that the platform is idle: the site shows "© 2024", the news is
+  old and the figures are unchanged; the organisation has moved to
+  Relay, RelayID (2025) and Relay Funder (Dec 2025). The EUAA 2025 guide
+  still recommends it.
+- The Red Cross RFL works inside Dzaleka (Malawi Red Cross and ICRC).
+  ICRC Trace the Face has a southern Africa version.
+- Decision: no new platform (splits users; persecution risk; no
+  verification). Added idea 2F to SOLUTIONS.md: an open-source module
+  for matching Great Lakes names (spelling, order, Christian-name and
+  place-name variants), evaluated on synthetic data only. Added to the
+  proposed focus at the user's request.

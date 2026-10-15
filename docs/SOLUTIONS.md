@@ -17,12 +17,13 @@ These are some ideas for what we could do, grouped by path. None has been select
 | 2C | Essentials translated into Kirundi / Kinyarwanda | **2. Small, real, research** | High to build; prototype only | Direct but marginal: help reaches those excluded by language | Human translation; no one to distribute it |
 | 2D | Guided keyword chatbot | **2. Small, real, research** | High to build; prototype only | Direct but marginal: answers in the user's language, 24/7 | Content maintenance; no one to run it locally |
 | 2E | Live map: service status, then environmental hazards | **2. Small, real, research** | Medium; prototype only | Direct: "is it working today?"; hazard reports feed 2A | Critical mass of users |
+| 2F | Great Lakes name matching for family tracing | **2. Small, real, research** | **High** (remote, technical, measurable) | Indirect but real: more true matches on platforms that already serve millions (REFUNITE: 1M+ registrations) | Adoption by a tracing platform; dual use |
 
 **The two paths**
 1. **The structural lever.** The draft Refugee Bill is the only thing in sight that would change life for most residents.
 2. **Small and real.** These help at the margins, and each is also a research output.
 
-**Proposed focus:** 1A as the main line, with 1B and 2A in parallel.
+**Proposed focus:** 1A as the main line, with 1B, 2A and 2F in parallel.
 
 ---
 
@@ -112,6 +113,60 @@ On 9 Oct 2026 the Special Law Commission presented a draft Refugees (Protection 
 - **Safeguards:** zones, not GPS points; delayed publication.
 - **Main risk:** too few users means an empty map.
 
+### 2F. Great Lakes name matching for family tracing
+
+**In one sentence:** an open-source module that looks at two records written differently and says "these are probably the same person", for names from Rwanda, Burundi and the DRC. Family-tracing platforms could use it to find matches they now miss.
+
+**Why it is needed.** Family tracing for Dzaleka already exists, so a new platform is not the answer (see "Set aside"):
+- **REFUNITE** (refunite.org): anonymous profiles searched by name, birthplace, tribe or clan, mother's name and other markers; private messages when a match is found. It claims 1M+ registrations and 75,000+ families reconnected. It lists Malawi, the DRC, Burundi and Rwanda among its countries. The search site m.refunite.org was live on 15 Oct 2026, and the [EUAA 2025 family-tracing guide](https://www.euaa.europa.eu/sites/default/files/publications/2025-11/practical-guide-family-tracing-part-i-principles-practices.pdf) recommends it.
+- **Red Cross Restoring Family Links:** works inside Dzaleka (calls, Wi-Fi, tracing, unaccompanied children) ([Dzaleka Online, Mar 2025](https://www.dzaleka.com/2025/03/red-cross-program-reunites-refugees.html)).
+- **ICRC Trace the Face:** a photo gallery with a southern Africa version ([ICRC](https://www.icrc.org/en/document/southern-africa-website-launched-help-families-find-missing-relatives)).
+
+These searches rely on names, and Great Lakes names defeat ordinary matching. Examples below are illustrative:
+
+| Problem | Example |
+| --- | --- |
+| No family surname: in Rwanda and Burundi each child gets a personal name, often a phrase ("Habimana": "it is God who gives"); siblings share no name | Searching for a sister by "surname" fails |
+| Name order varies; DRC names follow nom + postnom + prénom (from the 1970s *authenticité* policy), which Western forms misplace | "Habimana Jean" vs "Jean Habimana"; "Kasongo Ilunga Jean" |
+| One name, several spellings | Kinyarwanda "Cyiza", Kirundi "Ciza", English-style "Chiza"; "Ndayishimiye" vs "Ndayishimye" |
+| Christian names change with language | Jean / John / Yohana; Marie / Mary / Maria |
+| Place names change | Burundi's 2025 province reform (Muyinga now in Buhumuza province, [SOS Médias Burundi](https://www.sosmediasburundi.org/en/2026/10/09/dzaleka-suspicious-death-of-a-burundian-refugee-after-a-collision-with-police-more-than-2-million-kwacha-missing)); Rwanda's 2006 reform |
+
+REFUNITE has adapted its fields for other regions ("clan" for Somalis, "mother's name" for Iraqis; [Refunite](https://refunite.org/whats-name-four-names)). No equivalent for the Great Lakes region was found. Its interface has 12 languages, none of them Kirundi, Kinyarwanda, Lingala or Chichewa (m.refunite.org, checked 15 Oct 2026).
+
+**What the module does (five layers)**
+1. **Normalise:** remove accents and hyphens; split names into parts.
+2. **Ignore order:** treat a name as a set of parts, not "first + last".
+3. **Regional spelling rules:** equivalences such as c / cy / ch, doubled vowels and "-iye" / "-ye" endings, plus a phonetic key designed for these languages (Soundex and similar keys are built for English).
+4. **Equivalence dictionaries:** Christian names across French, English and Swahili; places with old and new names.
+5. **Score and explain:** combine name similarity with age range, birthplace and mother's name; return ranked **possible** matches with the reason (e.g. "same name, different spelling; same province under its new name; compatible age").
+
+**How it is tested, without real data**
+- **Synthetic test set:** invented people with typical regional names, then deliberately corrupted with realistic errors (swapped order, variant spelling, translated Christian name, renamed province).
+- **Comparison of three methods:** exact search; generic fuzzy search (roughly what platforms do now); the module.
+- **Measures:** true matches found (recall) and false matches shown (precision).
+- **No real refugee data is ever used.**
+
+**Risks and safeguards**
+
+| Risk | Safeguard |
+| --- | --- |
+| **Dual use:** better person-finding also helps persecutors | Published with no data; recommended only for consent-based platforms with mutual matching; no search over public data |
+| False positives (false hope, contact with a stranger) | The module only suggests; the user confirms, e.g. with questions only family can answer |
+| Synthetic results may not hold on real records | State this limit clearly; ideally, a native-speaker linguist or translator reviews the rules |
+| Adoption needs a platform (REFUNITE, Red Cross) to use it | Without adoption, the output is open-source code and a research report: potential, not proven, impact |
+
+**Steps (about 2–3 months, no cost)**
+
+| Step | What | Time |
+| --- | --- | --- |
+| 1. Linguistic research | Naming conventions in Rwanda, Burundi and the DRC; orthography; province reforms (literature only) | 2–3 weeks |
+| 2. Synthetic data | Generator of people and realistic errors | 1–2 weeks |
+| 3. Build | Python module, open source | 3–4 weeks |
+| 4. Evaluate and write up | Comparison with the two baselines; report | 2 weeks |
+
+**Why it stands out:** it is the only idea here where our technical work improves something that already serves over a million people, instead of creating a new tool that may never find users. It fits the constraints: remote, technical, measurable, and needs no contact with residents.
+
 ---
 
 ## 4. Set aside
@@ -122,6 +177,7 @@ On 9 Oct 2026 the Special Law Commission presented a draft Refugees (Protection 
 | Household needs assessment | High privacy and ethics risk; duplicates UNHCR surveys |
 | Live-map alerts about people or "dangerous places" | Exposes the people at the marked places; open to manipulation |
 | A new standalone app; weekly digest; rumour loop | Digital litter; thin content; needs paid staff |
+| A new family-tracing platform with mutual matching | REFUNITE and the Red Cross already do this; a new platform would split users (a match needs both people on the same platform); a database of names and relatives of DRC, Burundian and Rwandan refugees is a target for persecutors; no human verification. 2F improves the existing platforms instead |
 | Paid pilots, devices, offline servers | Need money or an operator in the camp |
 
 ## 5. Cross-cutting risks
