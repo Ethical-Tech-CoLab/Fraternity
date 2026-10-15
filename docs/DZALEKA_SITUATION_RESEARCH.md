@@ -348,6 +348,52 @@ One risk-financing precedent: UNHCR Malawi used the African Risk Capacity (ARC) 
 
 **Orphans/unaccompanied children:** no formal foster system exists in practice; funding cuts are now driving families to **refuse** to foster unaccompanied children outright, not just under-resourcing existing placements. The Dec 2025 registered count (67) has not been revised as of the latest reporting found, and no functioning Best Interest Determination process is confirmed.
 
+**Family separation in displacement (added 15 Oct 2026).** **No source counts how many families separate when people flee a country.** The figures below are proxies: people *registered* as missing with the Red Cross, and children registered as unaccompanied or separated. Both organisations stress that their counts are a fraction of the real total, because many families never report.
+
+*Global — people registered as missing with the Red Cross Family Links Network*
+
+| Year | Figure | Source |
+| --- | --- | --- |
+| End 2019 | ~169,000 (derived: the end-2024 figure is described as +68% on 2019) | [InfoMigrants, 1 Sept 2025, reporting ICRC figures of 29 Aug 2025](https://www.infomigrants.net/en/post/66689/icrc-global-surge-in-missing-people-as-conflicts-spread) |
+| 2022 | More than 195,000 | [RFL Strategy extension, Council of Delegates background doc](https://rcrcconference.org/app/uploads/2026/03/CoD24_9-Background-Doc-RFL-EN.pdf) |
+| End 2024 | **284,400**, +68% since 2019. In 2024, 16,000+ missing people were located, ~7,000 of them reunited with family | [InfoMigrants, reporting ICRC](https://www.infomigrants.net/en/post/66689/icrc-global-surge-in-missing-people-as-conflicts-spread) |
+| End 2025 | "More than 227,000" registered as missing | [ICRC, Nigeria, Jul 2026](https://www.icrc.org/en/article/number-missing-persons-searched-nigeria-17000) ✅ |
+| End 2025 | **409,855 open cases**, 42,596 of them people who went missing as children. In 2025: **178,329 new tracing requests**, 28,693 fates clarified, 1.46 million calls between separated relatives | [ICRC, "The human cost of not knowing"](https://www.icrc.org/en/article/human-cost-not-knowing-families-search-missing-loved-ones-support-icrc) ✅ |
+
+**Divergence kept, not reconciled:** the two end-2025 ICRC figures measure different things. One counts *people registered as missing*; the other counts *open cases*, which can include tracing requests that are not missing-person cases. Caseload reviews also cut counts: Nigeria went from ~24,000 to ~17,000 active cases in Jul 2026. The drop from 284,400 (end 2024) to 227,000+ (end 2025) is therefore likely a counting change, not fewer missing people (**to check**).
+
+*Africa*
+
+| Year | Figure | Source |
+| --- | --- | --- |
+| End 2019 | 40,708 registered missing | [ICRC news release, 2024](https://www.icrc.org/en/news-release/africa-cases-missing-persons-registered-rise-75-percent-in-five-years) ✅ |
+| Jun 2024 | **71,000+** (+75% in five years). Africa has the highest missing caseload, the most unaccompanied children and the most reunifications registered by the ICRC | Same ✅ |
+
+*Children — unaccompanied and separated children (UASC)*
+
+| Year | Figure | Source |
+| --- | --- | --- |
+| 2019 | 25,000 UASC sought asylum; 153,300 UASC refugees reported | [UNHCR, High Commissioner's report, 2020](https://www.unhcr.org/us/sites/en-us/files/legacy-pdf/5f69c6ca4.pdf) ✅ |
+| 2022 | 51,700 UASC lodged new asylum applications (+89% on 2021) | [UNHCR Global Trends 2022](https://www.unhcr.org/sites/default/files/2023-06/GlobalTrends_2023_v16.pdf) ✅ |
+| 2024 | **218,000 UASC registered**: 52,000+ in South Sudan, 20,000+ each in Ethiopia and Uganda, ~10,000 in Cameroon. 117,000+ placed in alternative care. "Family separation is a major consequence of refugee crises" | [UNHCR Global Report 2024](https://www.unhcr.org/sites/default/files/2025-07/global-report-2024.pdf) ✅ |
+| Sudan situation (date to check) | 58,000+ UASC recorded across countries hosting Sudanese refugees | [UNHCR Operational Data Portal](https://data.unhcr.org/en/documents/download/122001) ✅ |
+
+The 2019 and 2022 asylum-application figures and the 2024 "registered" figure measure different things; they are not a single series.
+
+*Great Lakes and Dzaleka*
+
+| When | Figure | Source |
+| --- | --- | --- |
+| Oct 2017 | Of ~5,000 Congolese refugees at Zambia's Kenani transit centre, **60% were unaccompanied or separated children** | [ACERWC, *Mapping Children on the Move within Africa*, 2025, citing UNHCR](https://www.acerwc.africa/sites/default/files/2025-08/CHILDREN%20ON%20THE%20MOVE%20ENGLSIH.pdf) |
+| 2025 | Fighting in North and South Kivu displaced Congolese into Burundi, Rwanda and Uganda "in precarious and unorganised conditions, leading to the separation of many families", including many UASC | [ICRC, Uganda/Rwanda/Burundi facts and figures 2025](https://www.icrc.org/en/article/uganda-rwanda-and-burundi-january-december-2025-facts-figures) ✅ |
+| 2025 | Burundi: 500+ children arrived separated from their families, 300 of them unaccompanied (Save the Children, Jun 2025); the ICRC facilitated ~10,400 calls between refugees and separated relatives | [USCRI](https://refugees.org/displacement-and-humanitarian-needs-in-burundi); [ICRC newsroom](https://www.icrcnewsroom.org/story/en/1160/drc-tens-of-thousands-flee-fighting-to-overcrowded-refugee-camp-in-burundi) ✅ |
+| Dec 2025 | Dzaleka: **67 registered UASC**. Tracing relies on cross-referencing other camps' lists; "reunification is near impossible if a child's parents did not reach a refugee" camp | [USCRI](https://refugees.org/finding-care-without-support-in-dzaleka-refugee-camp) |
+| Ongoing | The Malawi Red Cross and ICRC run Restoring Family Links in Dzaleka (calls, Wi-Fi, tracing) | [Dzaleka Online, Mar 2025](https://www.dzaleka.com/2025/03/red-cross-program-reunites-refugees.html) |
+
+**Share of refugees separated from family:** no figure was found for the Great Lakes or Dzaleka (**evidence gap**). The closest comparator: an estimated **36.5% of registered Syrian refugees in Jordan** are separated from a family member ([Columbia Global Centers, *Impact of separation on refugee families*](https://globalcenters.columbia.edu/sites/default/files/content/IMPACT%20OF%20SEPARATION%20ON%20REFUGEE%20FAMILIES-%2019%20April%20(HQ)[4].pdf); year to check).
+
+**Reading:** every available indicator is rising. People registered as missing rose ~68% worldwide and 75% in Africa over five years, and UNHCR registered 218,000 separated children in 2024 alone. The 2025 Kivu fighting is producing new separations in exactly the populations that reach Dzaleka. This is the problem behind idea 2F in `SOLUTIONS.md`.
+
 **Religious leadership:** thinly documented — only \~3.4% of the camp's services directory is faith-based; the Jesuit Refugee Service (JRS) is the one confirmed faith-based operational partner. No source describes religious leaders' role in governance, dispute resolution, GBV referral, or early marriage — a genuine gap, not confirmed absence. What is documented: care for orphans, widows, and single mothers is functionally outsourced to religious networks (a 42-church union) rather than formal child-protection systems.
 
 **Women-headed households:** an employment gap of 48% (married women working in the past year) vs. 84% (married men) — pre-cuts data, likely wider now. Faith-based networks (IAFR, HOPE International) are the primary institutional channel explicitly naming single mothers/widows as a served group. **No source anywhere gives a prevalence figure for female-headed households at Dzaleka** — a real, unfilled data gap, not just an under-reported one.

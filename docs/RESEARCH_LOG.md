@@ -660,3 +660,34 @@ relatives. Tavily plus direct fetches:
   for matching Great Lakes names (spelling, order, Christian-name and
   place-name variants), evaluated on synthetic data only. Added to the
   proposed focus at the user's request.
+
+**Later the same day — 2F expanded as "Open Great Lakes Names".** At the
+user's request: the open dictionary becomes the core (usable without
+anyone adopting the module), plus an intake guide for tracing services
+(all names in any order, parents' names, colline, the province name at
+the time; never ethnicity or clan), language packs in phases (Kirundi,
+Kinyarwanda and Congolese Swahili first; non-Latin scripts out for now),
+and the evaluation. Sending the guide to the Red Cross would be a one-off
+contact with an organisation; that decision is left to the user.
+
+**Later the same day — delivery deferred.** Offering 2F to REFUNITE, the
+Red Cross or UNHCR is now the final phase, decided after the evaluation.
+Steps 1–4 do not depend on anyone agreeing, because the open outputs
+stand on their own.
+
+**Later the same day — family-separation data.** At the user's request
+(to show why 2F matters), Tavily search for how many families separate in
+displacement. No direct count exists; proxies were added to
+`DZALEKA_SITUATION_RESEARCH.md` §5.2:
+- ICRC missing persons: ~169k (2019, derived), 195k+ (2022), 284,400
+  (end 2024, +68%), "227,000+" (end 2025) vs 409,855 open cases (end
+  2025). The divergence is kept: likely different measures and caseload
+  reviews.
+- ICRC Africa: 40,708 → 71,000+ (2019 → Jun 2024, +75%).
+- UNHCR unaccompanied and separated children: 25k asylum applications
+  (2019), 51.7k (2022), 218k registered (2024); these are not one series.
+- Great Lakes: Kenani 2017 (60% unaccompanied or separated), Kivu 2025
+  separations, Burundi 2025; Dzaleka 67 (Dec 2025).
+- No share of separated refugees for the Great Lakes (gap); Syrians in
+  Jordan 36.5% as a comparator.
+Summary added to SOLUTIONS.md 2F ("Why it matters").
