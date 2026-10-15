@@ -4,6 +4,8 @@ Draft, 7 Oct 2026, for discussion with the professor. **Revised after a critical
 
 **Update, 14 Oct 2026:** section 9 sets out seven options for discussion with Professor Yorke Rhodes on 15 Oct. No option has been selected; a community reporting platform is the current preference.
 
+**Update, 15 Oct 2026 — the Refugee Bill.** On 9 Oct the Special Law Commission presented a draft Refugees (Protection and Management) Bill. Refugees could apply to live outside the camp, work, and run small businesses (details and sources: `DZALEKA_SITUATION_RESEARCH.md` §2.1). It is **not law yet**: it still needs Cabinet and Parliament. For this document it creates a concrete, time-bound information need: residents will need to know what the bill says, what has *not* changed yet, and how to apply once it passes, in their own languages. That fits option 9.2 and Step 1 (**hypothesis**; to confirm with DOS, Yetu Radio and Inua Advocacy). It also makes the "Online work that really pays" content more relevant if the right to work passes. **Proposal built on this: section 10.**
+
 ## In one paragraph
 
 Dzaleka already has good, verified, practical information (hotlines, services, rights, weather) on a platform built by refugees, **Dzaleka Online Services (DOS)**. The evidence suggests it reaches few people in the camp: 3,705 users in all of Malawi in 2025, against ~63,000 residents, and nothing in Kirundi or Kinyarwanda. **Our hypothesis is that a free, open-source "bridge" can carry this information to the channels people actually use (community radio, WhatsApp and printed notices) in the languages they speak.** We start with the clearest documented gap: the essential, rarely-changing information (urgent help, hotlines, scam warnings) translated once into Kirundi and Kinyarwanda and turned into radio spots and printed sheets. In parallel, the PhD-linked research track tests heavy-rain warnings for the camp in "shadow mode". **Nothing is built until people in the camp confirm the need.**
@@ -264,6 +266,158 @@ A **demonstration only**, with no live service and no real personal data:
 5. Could public mapping of problems create tension with authorities or between communities, or expose reporters to retaliation?
 6. How should protection-related reports be referred if they arrive anyway?
 7. What ethics approval and data-protection rules apply (NYU, and Malawi's data-protection law; **to check**)?
+
+---
+
+## 10. Proposal (15 Oct 2026): "Know your status" — legal information that survives the bill
+
+**Status: proposal for discussion, not selected.** It extends option 9.2 and Step 1. Facts on the bill and its legislative path: `DZALEKA_SITUATION_RESEARCH.md` §2.1.
+
+### The idea
+
+Residents of Dzaleka will need clear, accurate information on the draft Refugees (Protection and Management) Bill, in their own languages: what it proposes, what has **not** changed, where it stands, and later, who is eligible and how to apply. The legislative process is slow (Cabinet has no deadline; the earliest realistic window is 2027), and that gives us time to build carefully.
+
+**The main risk is that the bill is never passed**, or passes in a narrower form. Malawi has law-reform bills that have waited at the Ministry of Justice for years. The project is therefore designed so that **most of the work is useful whatever happens to the bill**, and only a thin final layer depends on it.
+
+### Design principle: three layers
+
+| Layer | What | Depends on the bill? | Useful if the bill dies? |
+| --- | --- | --- | --- |
+| **1. Base** | "Your rules today": what the 1989 Act and the 2023 directive mean in practice, which legal permissions already exist (to check), where to get legal help, scam warnings ("nobody can sell you a place on a list"). A glossary of legal terms in Kirundi, Kinyarwanda, Swahili and French. The content tool (one source → radio script, A4 sheet, WhatsApp card) | No | **Yes**. This is the core value |
+| **2. Tracker and explainer** | Where the bill stands (Cabinet, Gazette, readings, assent, commencement), with a source for every step. A plain-language explainer: "proposed, not law" | Yes, but cheap to maintain | Partly. It prevents false hope and rumours |
+| **3. Eligibility guide** | Who can apply to live outside the camp or to work, how, where, and with which documents | **Fully**. Built only after commencement and regulations | No. Kept as a template until then |
+
+### Phases and decision gates
+
+| Phase | When (realistic) | What | Gate to the next phase |
+| --- | --- | --- | --- |
+| **0. Discovery** | Oct 2026 – Jan 2027 | Collect the knowledge listed below; talk to a legal partner, DOS and Yetu Radio; ethics approval | A legal partner agrees to review content, and no one is already doing the same |
+| **1. Base layer** | Jan – Mar 2027 | "Your rules today" content, glossary, content tool; radio and print pilot | Partner sign-off on every legal sentence |
+| **2. Tracker and explainer** | As soon as the full bill text is public | Explainer of the text as published; tracker updated at each step | Text confirmed against an official copy |
+| **3. Eligibility guide** | Only after assent, Gazette publication **and** regulations | Fill the template; "who / how / where" | Reviewed by the legal partner; the Eligibility Committee exists and accepts applications |
+
+**Stop or pivot rules (to agree with the professor):**
+- If the bill has not reached Cabinet by a set date (e.g. end of the 2027 budget meeting), freeze layer 3 and keep layers 1–2 alive at minimal effort.
+- If the bill is rejected, or replaced by a harsher policy (e.g. relocation to the Chitipa site), layer 2 explains the change and layer 1 carries on.
+- If Inua Advocacy, DOS or UNHCR already produce this content, we contribute translations and formats to theirs instead of building a parallel product.
+
+### Knowledge we need to collect
+
+**A. Law and procedure**
+1. The full text of the Special Law Commission report and draft bill (Law Commission, Inua Advocacy, MHRC).
+2. The law in force: the 1989 Act, the March 2023 directive, and whether court rulings on the 2023 relocations changed anything.
+3. Whether **any legal route out of the camp, or to work, already exists** today (permissions from the Commissioner for Refugees, Immigration Act permits, business licences). This feeds layer 1 whatever happens to the bill.
+4. How "valid reasons" and "designated areas" would be defined (in the bill, or left to regulations?), and who writes the regulations.
+5. Where to follow each step: Cabinet communiqués, the Malawi Gazette, Parliament order papers and Hansard. Who can access the Gazette regularly?
+6. Whether the bill's commencement date and transitional provisions cover people already living outside the camp.
+
+**B. Politics and timing**
+1. The positions of the Ministry of Homeland Security and the Ministry of Justice, and whether the bill enters the government's 2027 legislative programme.
+2. Pressure points: MHRC, the EU, UNHCR, the Malawi Law Society, and the IMF/donor context.
+3. Signals that the bill is stalling (no Cabinet item after the Law Commission formally submits it) or changing (a relocation to Chitipa moving forward instead).
+
+**C. The people the information is for**
+1. **How many residents are recognised refugees and how many are asylum seekers.** Only recognised refugees could apply to live outside the camp, so the RSD backlog decides who could ever benefit (UNHCR data; Malawi reported 939 decisions in 2026).
+2. Languages, literacy, and access to radio, phone and WhatsApp (no Dzaleka figure yet; see section 8).
+3. What residents already believe about the bill. Are there rumours, or scams built on it?
+4. Which groups would be most affected or most at risk (women-headed households, unaccompanied children, people already living informally outside the camp).
+
+**D. The information ecosystem**
+1. Does DOS's Rights Navigator already cover this, and could the content live there?
+2. Do Inua Advocacy, UNHCR or Yetu Radio plan their own explainers?
+3. Who are the trusted messengers (block leaders, churches, Yetu presenters)?
+
+**E. Translation**
+1. Legal terminology in Kirundi and Kinyarwanda. Do glossaries exist, from UNHCR or the courts in Rwanda and Burundi?
+2. Translators, with review by a native speaker **and** a lawyer, plus back-translation for the key sentences.
+
+**F. Safety, ethics and liability**
+1. **Misinformation can cause arrests.** A resident who reads "you can live outside the camp" before the law is in force risks detention (over 900 people were detained in 2023). Every item must show its legal status ("proposed" / "in force") and the date it was checked.
+2. Rules on giving legal information without being a lawyer in Malawi (Legal Education and Legal Practitioners Act). Where is the line between information and advice?
+3. Political sensitivity: will the government read this as advocacy? Is it safer under a Malawian partner's name?
+4. Data protection: no personal data in layers 1–2; Malawi's Data Protection Act 2024 (to check); university ethics approval.
+5. False hope: messaging is tested with residents so that "proposed" is not heard as "approved".
+
+**G. Technical**
+1. A content model with a **legal status and a "last checked" date** on every item, so that an update to the law changes every format at once.
+2. Formats: radio script, A4 sheet, WhatsApp card, an optional page on DOS; low bandwidth, offline.
+3. Hosting at no cost and an open licence, so that other camps can reuse it (the Kenya Refugees Act 2021 is a comparable case).
+
+### Does something like this already exist? (checked 15 Oct 2026)
+
+The user is considering a chatbot: residents say what they need, and the bot points them to the right information or service.
+
+**In Dzaleka / Malawi**
+
+| What | What it covers | Gap |
+| --- | --- | --- |
+| **DOS Rights Navigator** ([services.dzaleka.com/rights-navigator](https://services.dzaleka.com/rights-navigator), checked 15 Oct) | "Know your rights": the 1989 Act, the 1990 Regulations and travel documents, the Constitution, the Convention reservations; status cards (freedom of movement "requires gate pass"; right to work "restricted"); legal aid directory, protection hotlines, an incident tracker, link to Inua Advocacy | **Already covers most of our layer 1**, in English, on the web. No mention of the 2026 bill was seen. No chatbot. Kirundi/Kinyarwanda not offered (section 2) |
+| DOS Help Desk | One entry point for technical, business and follow-up help | Human, web-based |
+| Inua Advocacy, "Refugees in Malawi: All you need to know" ([Dec 2024 PDF](https://inuaadvocacy.org/wp-content/uploads/2024/12/MALAWI-REFUGEE-GUIDE-DEC-2024-sm.pdf)) | History, legal framework, myths, "who does what in Dzaleka" | Written for the public, officials and advocates, not as a practical guide for residents |
+| UNHCR HELP site for Malawi | UNHCR runs country HELP sites (e.g. [South Africa](https://help.unhcr.org/southafrica), with work, legal aid and documentation pages) | **To check:** help.unhcr.org/malawi returned 403 to automated requests. Open it by hand |
+
+**No chatbot for Dzaleka or Malawi refugees was found.** This is an absence of evidence from web search, not proof: DOS, Inua Advocacy or TakenoLAB must be asked directly.
+
+**Elsewhere (models to learn from)**
+
+| Project | Lesson |
+| --- | --- |
+| **Signpost** (IRC, Mercy Corps; ~20 countries; [signpost.ngo](https://www.signpost.ngo)). The AI assistant was piloted in Kenya, Greece, Italy, El Salvador, Mexico and Libya ([data.org](https://data.org/our-work/challenges/artificial-intelligence-to-accelerate-inclusion-challenge/awardees/irc)). Not in Malawi; the IRC does not operate there | The pilot found the AI assistant **"not safe without a human in the loop"**, and found that "a robust context-specific knowledge base is the most critical component" ([Signpost AI](https://www.signpostai.org/insights/executive-summary-signpost-ai-information-assistant-pilot-program)) |
+| **ALMA** (IRC, US, WhatsApp; Dari, English, Spanish, Swahili; Nov 2025) ([IRC](https://www.rescue.org/press-release/alma)) | Gives no legal advice; redirects to trusted services; tells users not to share their immigration status |
+| **Mona** (IRAP and Marhub, 2019; Messenger and Telegram) ([IRAP](https://refugeerights.org/news-resources/irap-and-marhub-launch-chatbot-to-provide-legal-information-to-refugees-seeking-assistance)) | Legal information plus screening for referral to human lawyers |
+| **La Chama** (UNHCR, Latin America) ([UNHCR](https://www.unhcr.org/digitalstrategy/case-studies/one-message-at-a-time-la-chama-chatbot-combats-falsehoods)) | Chatbot against misinformation, with a route to ask UNHCR directly |
+| **Rafiki AI**, Kakuma (Kenya) ([Facebook post](https://www.facebook.com/Kayodealabiinitiative/posts/have-you-heard-about-rafiki-airafiki-is-a-swahili-term-meaning-friend-so-rafiki-/1246113417528991) ⚠️ single source) | A refugee-camp chatbot by a local initiative; status and scope unknown |
+| Access Now mapping ([Feb 2024](https://www.accessnow.org/wp-content/uploads/2024/02/Mapping-humanitarian-tech-February-2024.pdf)) | "Hardly any" humanitarian chatbots use machine learning. Most are menus or keyword routing, with staff overseeing the content |
+
+**What this means for the design**
+
+1. **Do not rewrite the rights content.** Build on the Rights Navigator with DOS. Our contribution is the **channel** (conversation, radio, print), the **languages** (Kirundi, Kinyarwanda, Swahili, French) and the **bill layer** (2–3).
+2. **A guided bot, not an open AI chat.** Menus and keyword routing over verified content, with free text only to pick a topic. The reasons:
+   - legal risk (a wrong answer can lead to an arrest);
+   - weak machine-translation support for Kirundi (section 3);
+   - Signpost's finding that AI needs a human in the loop;
+   - since 15 Jan 2026, WhatsApp Business no longer allows general-purpose AI chatbots; task-specific bots are still allowed ([summary](https://simplyboost.io/blogs/whatsapp-business-automation-guide); check the terms themselves).
+3. **Someone must answer what the bot cannot.** Hand-off to the DOS Help Desk or Inua Advocacy needs their agreement. This is a smaller version of the 9.1 responder problem.
+4. **The bot complements radio and print; it does not replace them.** Only about a third of refugees in comparable camps have used mobile internet (section 2).
+5. **Who owns the WhatsApp number** (DOS? Inua?) is a Phase 0 question.
+
+### Risks of a keyword-search bot (15 Oct 2026)
+
+The bot is a keyword search over verified sources, not legal assistance. That removes the main risk of an AI chat, which is invented answers. A disclaimer alone does not protect users, though: few people read it, especially in translation or with low literacy. The remaining risk lies in the **content and how it is read**:
+
+| Risk | Example | Mitigation |
+| --- | --- | --- |
+| **"Proposed" read as "in force"** (most serious) | A search for "work" returns the bill's proposed right to work | Never mix the two. Every answer opens with a label, **IN FORCE** or **PROPOSED – NOT LAW**, and the date it was last checked |
+| Outdated content | The law changes and the bot keeps the old answer | Each item has an expiry date; expired items are hidden until reviewed; a full review at each legislative step |
+| Keyword returns the wrong passage | "Leave" could mean repatriation, a gate pass or the bill | Show 2–3 options for the user to choose from, not a single answer |
+| Disclaimer not read | A long notice at the start | A short notice **in every answer**, in the user's language, plus a fixed referral line (e.g. Inua Advocacy's number) |
+| Privacy of searches | "How to leave the camp without a pass" reveals intent, linked to a phone number | Do not store query text with phone numbers; keep only aggregated topic counts |
+| Scammers imitating the bot | A fake "official bot" charges for "a place on the list" | One official number, announced through trusted channels; the bot repeats that the service never charges |
+| Political risk | The government reads the bot as advocacy | Neutral content, official sources only, no campaign language |
+
+The bot shows "what source X says, with the link" and who to contact. It does not answer about anyone's individual case. This is legal *information*, not advice, as with a library or the Rights Navigator. The line under Malawian law on legal practice is still **to check**.
+
+### Decision (15 Oct 2026): a local partner is a launch condition, not a start condition
+
+The project has **no Malawian partner**. Publishing under a Malawian partner's name is therefore dropped as a mitigation. Instead, the work would appear under the academic project's name, with neutral, official-source content, approved by the professor and the university ethics committee.
+
+Without a partner, the project also lacks an owner for legal review of content, for hand-off of questions the bot cannot answer, for the WhatsApp number, and for announcing the official number. A partner does not have to be a formal Malawian organisation. DOS is refugee-led and works inside the camp, and it is the first contact planned in Phase 0. We have no partner today because none has been approached yet.
+
+| Can be done without a partner | Requires a partner (launch condition) |
+| --- | --- |
+| Content in four languages, with IN FORCE / PROPOSED labels and dates | Legal review of every item |
+| The legislative tracker (public sources) | Referral for questions the bot cannot answer |
+| A bot prototype running on test content | Ownership and announcement of the official number |
+| Documentation and open-source code | Any use by real residents |
+
+**Rule:** if neither DOS nor Inua Advocacy agrees by the end of Phase 0 to review content or receive referrals, the bot stays a **research prototype** and is not offered to residents. That result is recorded as a finding (what an outside, partnerless project can and cannot responsibly do).
+
+### Why this fits our constraints
+
+- **No presence in the camp:** layers 1–2 need a legal partner and channels, not a responder in the camp (unlike option 9.1).
+- **No unpaid weekly work:** the base content changes rarely, and the tracker changes only at legislative steps.
+- **No funding:** only free tools; printing is optional.
+- **Research value:** it documents how a law-reform process reaches (or does not reach) the people it is for, and the Kenya case shows that law and practice can diverge.
 
 ---
 

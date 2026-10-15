@@ -540,3 +540,94 @@ Checked 14 Oct 2026:
   504/406 errors. Still open.
 - Defesa Civil Alerta: operator-run cell broadcast (MIDR + Anatel, since
   Dec 2024); ITU technical contribution is restricted access.
+
+## 2026-10-15 — Refugee Bill presented (diagnosis update)
+
+Tavily search on the draft Refugee Bill announced for 9 Oct, plus Dzaleka
+news since 5 Oct.
+
+- **Held as announced.** On 9 Oct the Special Law Commission (chair
+  Justice Prof. Redson Kapindu) presented its report and a draft
+  Refugees (Protection and Management) Bill. Confirmed by MBC, the
+  public broadcaster.
+- Key proposals: asylum seekers stay in camps; recognised refugees "with
+  valid reasons" may **apply** to live outside; right to work and to run
+  small and medium businesses in "designated areas"; equal access to
+  education; Eligibility Committee, Appeals Board and appeal to the
+  courts; Department of Refugee Services; stateless persons; a separate
+  Disaster Risk Management Amendment Bill.
+- **Not law yet:** next steps are the Minister of Justice → Cabinet →
+  Parliament. No Cabinet date has been found. MHRC urged fast-tracking (13 Oct).
+- Conflict kept: Streamline (a Kenyan aggregator) says the bill
+  "dismantles" encampment. MBC describes only a permission-based exception.
+- Full bill text not found online. Citizenship provisions not reported.
+- Malawi at UNHCR ExCom (Oct 2026): 939 RSD decisions in 2026; Chitipa
+  settlement site reaffirmed.
+- Dead end: "relocate refugee centres to the border in December" is a
+  South African story, not Malawi.
+- Also seen, not added to the case file: SOS Médias Burundi (single
+  source) reports a Burundian trader's death after a collision with a
+  police vehicle near Dzaleka (6 Oct); the Tumaini Festival cancelled its
+  2026 edition (Dzaleka Online).
+
+**Files touched:** `DZALEKA_SITUATION_RESEARCH.md` (§2.1 table and
+update, durable-solutions openings, watch list), `SOLUTIONS.md` (15 Oct
+note).
+
+**Next:** get the full report/bill text (Law Commission, Inua Advocacy);
+score it against Inua's 7-point checklist; watch for Cabinet adoption.
+
+**Later the same day — legislative path.** Tavily: Constitution ss. 73–74
+(21-day assent, veto override, entry into force by Gazette), Law
+Commission Act (report → Minister → Parliament), Standing Order 114 (two
+Gazette notices ≥21 days apart before the first reading; from a 2018
+guideline, current text not checked), Ministry of Justice stages. Next
+sitting: 9 Nov – 11 Dec 2026 (mid-year budget review); the bill is not
+listed and the timing makes it very unlikely. Earliest realistic window:
+2027. Precedent: law-reform bills stuck for years at the Ministry of
+Justice (Nyasa Times, Jan 2026). Added to `DZALEKA_SITUATION_RESEARCH.md`
+§2.1. The user proposed a project to consolidate eligibility information
+for refugees; it was discussed, not yet added to `SOLUTIONS.md`.
+
+**Later the same day — section 10 added to SOLUTIONS.md.** At the user's
+request, the eligibility-information idea was developed as a proposal,
+"Know your status": three layers (rules today / tracker and explainer /
+eligibility guide), so most of the work stays useful if the bill is never
+passed; phases with decision gates and stop/pivot rules; and a list of
+knowledge to collect (law, politics, audience, ecosystem, translation,
+safety and liability, technical). Not selected; for discussion with the
+professor.
+
+**Later the same day — existing work check (chatbot idea).** Tavily plus
+direct fetches. No chatbot for Dzaleka/Malawi refugees found (absence of
+evidence; ask DOS, Inua and TakenoLAB). The DOS Rights Navigator already
+covers most of the planned "rules today" layer (English, web; 1989 Act,
+1990 Regulations, gate pass, legal aid directory, incident tracker). The
+Inua Advocacy guide (Dec 2024) targets the public and advocates. UNHCR
+HELP Malawi returned 403, so it is still to check by hand. Elsewhere:
+Signpost (AI pilot needs a human in the loop; not in Malawi), IRC ALMA,
+IRAP Mona, UNHCR La Chama, Rafiki AI in Kakuma (single source). WhatsApp
+Business has banned general-purpose AI bots since 15 Jan 2026. Design
+consequence recorded in SOLUTIONS.md §10: build on the Rights Navigator,
+as a guided (menu) bot.
+
+**Later the same day — risk table and partner decision.** Added to
+SOLUTIONS.md §10: the risks of a keyword-search bot (main one: "proposed"
+read as "in force"; mitigations: status label and date on every answer,
+expiry dates, multiple-choice results, per-answer disclaimer and referral,
+no stored queries, one official number). The user has no Malawian
+partner, so publishing under a partner's name was dropped. Decision: a
+local partner (DOS or Inua) is a launch condition, not a start condition.
+Without one, the bot stays a research prototype.
+
+**Later the same day — SOLUTIONS.md reorganised.** At the user's request,
+rewritten around three paths: (1) change a constraint (partners and
+residents first; funding; no advertising); (2) the structural lever:
+evidence for the Refugee Bill (proposed focus), tracker, later
+monitoring and eligibility guide; (3) small, real and research (rain
+shadow mode, OSM, translated essentials, guided chatbot, live map). One
+overview table gives feasibility and how each option changes reality.
+Set aside: reporting to organisations, needs assessment, live-map alerts
+about people, advertising, standalone app, digest, rumour loop. The
+pre-reorganisation version (with the 15 Oct sections 10–11 detail) was
+backed up outside the repo; it is not in git.
