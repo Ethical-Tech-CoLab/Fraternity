@@ -631,3 +631,10 @@ Set aside: reporting to organisations, needs assessment, live-map alerts
 about people, advertising, standalone app, digest, rumour loop. The
 pre-reorganisation version (with the 15 Oct sections 10–11 detail) was
 backed up outside the repo; it is not in git.
+
+**Later the same day — Path 1 removed.** The user does not want funding,
+partner contact or conversations with residents in the plan. SOLUTIONS.md
+now has two paths: (1) the Refugee Bill (ideas 1A–1D) and (2) small, real
+and research (2A–2E). Without anyone in the camp, the information tools
+(2C–2E) stay research prototypes. Advertising and the ethics and partner
+items were removed with Path 1.
