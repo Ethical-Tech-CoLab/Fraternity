@@ -412,7 +412,7 @@ replaced accordingly. Its livelihood evidence is kept as context.
   help-seeking entry point), scored on real user, small change, zero
   budget, data safety, duplication, research value and replicability.
 - **Recommendation:** G1 first (FSF is a guaranteed user), C1 as the
-  research track (PhD link, mid-Dec rains), E1 as a by-product.
+  research track (mid-Dec rains), E1 as a by-product.
 - **Open point:** whether G1 counts as cluster G, given the 5 Oct
   correction that clinic records sat in D/E.
 - **Tooling:** the Tavily API key failed (unauthorised); the built-in web
@@ -445,7 +445,7 @@ presence. `SOLUTIONS.md` was rewritten. Key findings:
 
 Recommendation: Option 1, contribute languages, a low-data version and a
 weekly radio bulletin to DOS; Option 2, rain/heat alert thresholds as the
-PhD-linked research track (the flood hazard at Dzaleka is not evidenced
+research track (the flood hazard at Dzaleka is not evidenced
 yet). Next: contact Dzaleka Connect before writing code.
 
 **Re-researched with Tavily (same day).** Fixed the Tavily key: the
@@ -463,7 +463,7 @@ Corrections and new findings in `SOLUTIONS.md`:
   from 3.5 cm drone imagery; erosion patterns predict collapsed houses.
 - Recommendation now: Option 1 "last-mile kit" (DOS API → weekly radio
   script, WhatsApp cards and a printable sheet in Swahili/French); Option
-  2 rain warnings by zone (PhD track) building on Friedman 2021.
+  2 rain warnings by zone (research track) building on Friedman 2021.
 
 
 ## 2026-10-07 — Online microwork and paid surveys for refugees

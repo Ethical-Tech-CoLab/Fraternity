@@ -14,7 +14,7 @@ These are some ideas for what we could do, grouped by path. None has been select
 | 2B | Legislative tracker + "proposed vs in force" explainer | **2. Structural lever: the law** | **Very high** | Prevents false hope, rumours and scams around the bill | Full bill text |
 | 2C | Implementation monitoring | **2. Structural lever: the law** | High, once the law passes | Checks that the law is applied in practice | The law must pass first |
 | 2D | Eligibility guide | **2. Structural lever: the law** | Low for now | Helps people use new rights | Law, commencement and regulations (2027 or later) |
-| 3A | Rain warnings in shadow mode (PhD) | **3. Small, real, research** | High | Research now; possibly safer evacuation later | Ground truth; rains from mid-Dec |
+| 3A | Rain warnings in shadow mode | **3. Small, real, research** | High | Research now; possibly safer evacuation later | Ground truth; rains from mid-Dec |
 | 3B | Open map data (OSM) | **3. Small, real, research** | **Very high** | Indirect: a base for planning, 3A and 3E | None to start |
 | 3C | Essentials translated into Kirundi / Kinyarwanda | **3. Small, real, research** | High to build, medium to launch | Direct but marginal: help reaches those excluded by language | Translators; a partner |
 | 3D | Guided keyword chatbot | **3. Small, real, research** | High to prototype, medium to launch | Direct but marginal: answers in the user's language, 24/7 | A partner; content maintenance |
@@ -87,12 +87,12 @@ On 9 Oct 2026 the Special Law Commission presented a draft Refugees (Protection 
 
 ## 4. Path 3 — Small, real, and research
 
-### 3A. Rain warnings in shadow mode (PhD track)
+### 3A. Rain warnings in shadow mode
 
 - **What:** "heavy rain forecast" (Met Malawi's public CAP feed, district-level) combined with a fixed map of the zones most exposed to house collapse, from Friedman (2021, Virginia Tech; drone model, misclassification below 17%; [thesis](https://vtechworks.lib.vt.edu/items/fabeecfe-edd2-4db0-8d9d-235f327d3c2c)).
 - **Shadow mode, Dec 2026 – Apr 2027:** warnings are computed but not published, then compared with what happened.
 - **Needs:** ground truth (where houses collapsed), which 3E could later provide. The 2021 model predates the camp's growth from ~43,000 to ~63,000 people.
-- **How it changes reality:** not yet. It tests whether a low-cost model plus a public forecast could support evacuation decisions in a data-poor camp, which is the PhD question. Nothing goes live without a full season of testing.
+- **How it changes reality:** not yet. It tests whether a low-cost model plus a public forecast could support evacuation decisions in a data-poor camp. Nothing goes live without a full season of testing.
 
 ### 3B. Open map data (OSM)
 
