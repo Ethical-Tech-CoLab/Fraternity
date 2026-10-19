@@ -110,3 +110,4 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 | Jan 2027 on | Open research questions (§13), especially 1, 3, 4 and 7 | None |
 | When ready | Phase 3: shadow pilot beside an authorised tracing workflow | Needs a partner (e.g. REFUNITE, the Red Cross, UNHCR) and real data under their rules |
 | After phase 3 | Phase 4: controlled deployment; federation only if needed | Phase 3 exit criteria met |
+| Final phase | Offer NameBridge free of charge to the tracing organisations **and to Fraternidade Sem Fronteiras (FSF)**: it could help FSF's work with children in care (foster children, the Órfãos do Congo project) to trace relatives. Cases involving minors follow the protected-person rules (§8, control 7) | Tested result in hand. NameBridge is not sold |

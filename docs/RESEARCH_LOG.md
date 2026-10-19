@@ -722,3 +722,11 @@ pilot corridor (Kinyarwanda, Kirundi, Congolese Swahili) and synthetic data
 only; phases 3–4 after the semester and only with a tracing partner. The
 "What 2F takes from NameBridge" subsection was replaced by a short pointer;
 README, `SOLUTIONS.md` header and `CONCEPT-IDEA.md` §14 updated to match.
+
+**Later the same day — FSF in the final phase; no sale.** The user decided
+NameBridge will not be sold. The final phase in `TIMETABLE.md` now offers it
+free of charge to the tracing organisations and to Fraternidade Sem
+Fronteiras, whose work with children in care (foster children, the Órfãos
+do Congo project) could use it to trace relatives; minors follow the
+protected-person rules (§8, control 7). The user plans to present the
+project to FSF and hear their view.
