@@ -691,3 +691,24 @@ displacement. No direct count exists; proxies were added to
 - No share of separated refugees for the Great Lakes (gap); Syrians in
   Jordan 36.5% as a comparator.
 Summary added to SOLUTIONS.md 2F ("Why it matters").
+
+## 2026-10-19 — NameBridge concept, timetable, 2F scope
+
+- Added `docs/CONCEPT-IDEA.md` ("NameBridge", supplied by the user): option
+  analysis for a cross-border name-intelligence system for missing-person
+  search. Its §14 wrongly said `SOLUTIONS.md` returned a 404 (the repo is
+  public and the file was on `main`); corrected.
+- Added `docs/TIMETABLE.md`: weekly scope from 19 Oct to 18 Dec 2026, with
+  2F as the main track, 1A second, 1B and 2A as small fixed tasks.
+- Week 1, first task: `SOLUTIONS.md` 2F now has "What 2F takes from
+  NameBridge". Adopted: sourced, typed dictionary entries with confidence
+  and review status; generated entries stay `proposed`; negative ("not the
+  same name") entries; etymology as low-weight expansion only; original
+  names never overwritten; the §11 language-pack format; Burundi sibling
+  naming kept as an evidence gap; recall@10, precision and false-match
+  rate per language; Splink as an optional comparison. Not adopted: the
+  protected case graph, human review interface, shadow pilot, deployment,
+  real-data benchmark, federation and biometrics (they need partners or
+  real records).
+- Next: Kinyarwanda literature; 1B tracker page; search for the full bill
+  text.

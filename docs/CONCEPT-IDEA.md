@@ -657,9 +657,9 @@ The pack must distinguish cultural practice, legal-document practice and databas
 
 ## 14. Repository note
 
-The supplied URL `https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/docs/SOLUTIONS.md` returned a 404 during this research, and the repository’s current `docs/` listing did not show `SOLUTIONS.md`. The current project documents do state a broad-to-narrow, source-disciplined research methodology and say that the Fraternity work is still in a research phase with no public-facing tool built.[^fraternity-concept][^fraternity-background]
+*Corrected 19 Oct 2026.* An earlier version of this section said that `docs/SOLUTIONS.md` returned a 404. That was wrong: the file is in the public repository at [`docs/SOLUTIONS.md`](https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/docs/SOLUTIONS.md) (checked 19 Oct 2026). The Fraternity methodology is in `CONCEPT.md` and `RESEARCH_BACKGROUND_DOCUMENT.md`.[^fraternity-concept][^fraternity-background]
 
-Accordingly, this concept uses the user-provided examples but does not claim to reproduce inaccessible content from that file. If the file is restored or supplied, its specific graph examples should be mapped into the typed edge model and evaluated against the safeguards above.
+Its idea **2F, Open Great Lakes Names**, is the Fraternity version of this concept: a small, open subset for names from Burundi, Rwanda and the DRC (open dictionary, matching module, intake guide, evaluation on synthetic data only). Which parts of this document 2F adopts, and which it leaves out, is set out in `SOLUTIONS.md` 2F, "What 2F takes from NameBridge".
 
 ---
 

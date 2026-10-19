@@ -193,7 +193,8 @@ A supplement to existing tracing forms (e.g. the Red Cross's), in the spirit of 
 
 - **Synthetic test set:** invented people with typical regional names, then deliberately corrupted with realistic errors (swapped order, variant spelling, translated Christian name, renamed province).
 - **Comparison of three methods:** exact search; generic fuzzy search (roughly what platforms do now); the dictionary plus module.
-- **Measures:** true matches found (recall) and false matches shown (precision).
+- **Measures:** true matches found (recall, and recall in the top 10 results); false matches shown (precision); false-match rate at the suggestion threshold. Reported per language, never only as a global average, and name-only search measured separately from search with age, place and parents' names.
+- **Test set rules:** include hard negatives (different people with common names); keep all records of one invented person or family on the same side of any split.
 - **No real refugee data is ever used.**
 
 #### Languages: one "pack" per language
@@ -208,6 +209,31 @@ Each language becomes a pack of rules, dictionary entries and a synthetic test s
 | **Not for now** | Arabic, Amharic, Tigrinya | Transliteration from other scripts is a different, harder problem, with existing work on Arabic names |
 
 Each language takes a few weeks of literature research. Ideally, a native-speaker linguist or translator reviews each pack.
+
+#### What 2F takes from NameBridge
+
+`CONCEPT-IDEA.md` ("NameBridge", 19 Oct 2026) analyses a full cross-border missing-person system. 2F is a small, open subset of it. Decided 19 Oct 2026:
+
+| Adopted | How it applies to 2F |
+| --- | --- |
+| **Every dictionary entry is sourced and typed** (§5.1A) | Each entry records: relation type (spelling variant, Christian-name equivalent, orthographic rule, renamed place, historical cognate), language, region, period, source, confidence, how the confidence was set (attested / expert / generated / disputed) and review status (proposed / reviewed) |
+| **Generated entries never become authoritative on their own** | Anything suggested by an AI or a rule enters as `proposed` until a source is found |
+| **"Not the same name" entries** | Pairs that look alike but are different names are recorded too, to cut false matches |
+| **Etymology is not an alias** (§2.1) | Historical cognates get a low weight and only widen a search; they never count as a match |
+| **Never overwrite the original name** (§5.3) | The module keeps the name exactly as written and adds variants alongside it, logging how each was produced, so every suggested match shows its reason |
+| **Language-pack format** (§11) | Each pack (Kirundi, Kinyarwanda, Congolese Swahili …) follows that format, including what a shared or different name says about kinship, and allows "unknown" or "disputed" instead of forcing a rule |
+| **Burundi as an open question** (§2.3) | Whether Burundian siblings share a name is not assumed from the Rwandan case; it stays an evidence gap until a source settles it |
+| **Metrics** (§9.2–9.3) | See "Evaluation" above |
+| **Splink** (§5.6) | Optional third comparison in the evaluation |
+| **Candidate sources to review** (§7) | Onomaverse (CC BY 4.0) and Wikidata aliases, used only after checking their provenance, coverage and licence |
+
+| Not adopted | Why |
+| --- | --- |
+| Protected graph of people, cases and relatives (§5.1B) | 2F holds no records of people |
+| Human review interface, shadow pilot with an organisation, live deployment (§10 phases 3–4) | Needs a partner and real cases; outside the current constraints |
+| Benchmark on real error patterns (§9.1) | Synthetic data only; the report states this limit |
+| Federated or privacy-preserving linkage between organisations; biometrics | Only relevant to a live system |
+| Advisory group and review panel (§10 phase 0) | Needs outside people; native-speaker review stays "ideally", as above |
 
 #### Risks and safeguards
 

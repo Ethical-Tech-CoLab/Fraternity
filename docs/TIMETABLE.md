@@ -37,7 +37,7 @@ Draft, 19 Oct 2026. A plan for the rest of the fall semester, week by week. Adju
 
 ### Week 1 — 19–23 Oct: scope
 
-- **2F:** decide which NameBridge parts 2F adopts: the edge metadata (source, relation type, region, confidence, review status), the language-pack format (§11) and the metrics (§9.2). Write this into `SOLUTIONS.md` 2F. Fix `CONCEPT-IDEA.md` §14 (it says `SOLUTIONS.md` is missing).
+- **2F:** ✔ done 19 Oct. Decide which NameBridge parts 2F adopts: the edge metadata (source, relation type, region, confidence, review status), the language-pack format (§11) and the metrics (§9.2). Write this into `SOLUTIONS.md` 2F. Fix `CONCEPT-IDEA.md` §14 (it says `SOLUTIONS.md` is missing).
 - **2F:** start the Kinyarwanda literature: how names are formed, the orthography, and why siblings share no name (HRW 1999 and the onomastic sources NameBridge cites).
 - **1B:** create the tracker page: the legislative steps (Cabinet → Gazette → readings → assent → commencement), each with a status, a date and a source. Plus a short "proposed vs in force" explainer.
 - **1A:** look for the full bill text and the Law Commission report (open question in `SOLUTIONS.md` §7).
