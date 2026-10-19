@@ -36,6 +36,8 @@ Dzaleka. See `docs/SOLUTIONS.md`.
   candidate opportunity list.
 - `docs/SOLUTIONS.md` — candidate open-source tools per cluster, and the
   recommended first line of technology development.
+- `docs/CONCEPT-IDEA.md` — "NameBridge" concept and option analysis:
+  cross-border name intelligence for missing-person search (relates to 2F).
 
 ## Sourcing discipline
 
