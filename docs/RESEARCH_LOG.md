@@ -742,3 +742,12 @@ Latin-script corridor, ~2,000 relationships, phases 3–4 conditional) and
 deferred should-haves. `CONCEPT-IDEA.md` §10 gains "Final phase — free
 offer": not sold; FSF uses an intake guide derived from the packs and
 refers cases to an authorised tracing service, without running the system.
+
+**Later the same day — §8 controls added.** A second check found §8
+controls missing from the timetable. Added on synthetic data: consent and
+lawful basis (4) and protected-person flags (7) in week 7; progressive
+disclosure (8) and challenge and correction (9) in week 9. Controls 10 and
+11, the non-corridor naming systems of §3 and most §13 questions are listed
+under "Differences" as later work. What 18 Dec delivers: NameBridge phases
+0–2 for the Great Lakes corridor, with the safeguards that can be tested
+offline.

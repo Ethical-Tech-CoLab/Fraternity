@@ -23,6 +23,9 @@ Deliberate, because of the project's limits:
 | Two or three languages/scripts, with cross-script search central | Three Latin-script languages | The Great Lakes corridor; cross-script work is barely tested in this pilot |
 | 2,000–10,000 curated relationships (phase 1) | About 2,000 | Time |
 | Phases 3–4 | After the semester, only with a partner | They need real cases |
+| §8 controls 10 (production security: encryption, tenant isolation, regional hosting, key separation, breach response, abuse testing) and 11 (per-region model governance, drift review) | Phases 3–4 | Only meaningful for a system running on real data |
+| Naming systems in §3 outside the corridor (Arabic, Chinese, Slavic …) | Future language packs | One bounded corridor first (§10 phase 0) |
+| Most research questions in §13 | Still open after the semester | Several need partners or real data |
 
 Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confidence ingestion, active-learning queue, privacy-preserving federation proof of concept.
 
@@ -104,7 +107,9 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - **Blocking:** the strategies in §5.5, aiming for high recall.
 - **Baseline:** deterministic rules and phonetic matching (option 5).
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
-- **Done when:** the baseline runs on the benchmark and gives results, and the access log records every read of case data.
+- **Consent and lawful basis** (§8 control 4): every case record stores why it may be used and with whom it may be shared.
+- **Protected-person flags** (§8 control 7): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
+- **Done when:** the baseline runs on the benchmark and gives results; the access log records every read of case data; a flagged synthetic case never appears in an ordinary search.
 
 ### Week 8 — 7–11 Dec: model and evaluation (phase 2)
 
@@ -118,10 +123,12 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 ### Week 9 — 14–18 Dec: explain and publish (phase 2)
 
 - **Explanation view** (§5.7): a simple local view that shows two records side by side, the path that produced the candidate, and the weight of each field. The actions are same, different, possible and insufficient evidence.
+- **Progressive disclosure** (§8 control 8): the reviewer first sees the minimum evidence; sensitive fields open only on request, and each opening is logged.
+- **Challenge and correction** (§8 control 9): a match decision can be challenged and reversed, and corrections reach the graph edges and decisions that depended on it (§13 question 10).
 - **Evaluation report:** results, limits (synthetic data only), and how the scores compare with the design judgments in §6.
 - **Release v0.1:** graph, packs, code, benchmark generator, report.
 - **Semester summary** for the professor.
-- **Done when:** the phase 2 exit is met: offline results, and no live case decisions.
+- **Done when:** the phase 2 exit is met: offline results, and no live case decisions; controls 4, 7, 8 and 9 pass their tests on synthetic data.
 
 ## After the semester
 
