@@ -11,6 +11,21 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 - **Data:** synthetic only during the semester. No real case data until there is a lawful basis and a partner (§8, §9.1).
 - **Not used:** the other ideas in `SOLUTIONS.md` (kept for reference).
 
+## Differences from `CONCEPT-IDEA.md`
+
+Deliberate, because of the project's limits:
+
+| `CONCEPT-IDEA.md` | This timetable | Why |
+| --- | --- | --- |
+| Phases 0–2 take 12–22 weeks (§10) | 9 weeks | The semester ends 18 Dec |
+| The decisive benchmark needs real error patterns (§9.1) | Synthetic data only | No partner, no lawful basis for real data yet; results are labelled preliminary |
+| Phase 0 sets up an advisory group, a linguistic review panel and named data stewards | Recorded as a gap | No outside people yet |
+| Two or three languages/scripts, with cross-script search central | Three Latin-script languages | The Great Lakes corridor; cross-script work is barely tested in this pilot |
+| 2,000–10,000 curated relationships (phase 1) | About 2,000 | Time |
+| Phases 3–4 | After the semester, only with a partner | They need real cases |
+
+Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confidence ingestion, active-learning queue, privacy-preserving federation proof of concept.
+
 ## Every week
 
 - **Log:** one entry in `RESEARCH_LOG.md` (what was done, sources, decisions, next steps).
@@ -45,15 +60,17 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 
 - **Threat model:** who could misuse the system (§8: stalkers, traffickers, hostile governments, armed groups) and which controls block each risk.
 - **Data-protection assessment (desk version):** what data the system would hold, why, for how long, and who could see it, using the ICRC handbook.
-- **Benchmark protocol (§9):** what the test set must contain, the metrics, the splits, and the cost of a false positive vs a false negative.
+- **Data rules (§10 phase 0):** data sharing, retention and deletion, disclosure, and incident response.
+- **Benchmark protocol (§9):** what the test set must contain; the metrics, including the fairness slices (§9.2); the splits by person and family and a temporal holdout (§9.3); name-only search measured separately from full-evidence resolution; and the cost of a false positive vs a false negative.
 - **Start the research:** Kinyarwanda naming (HRW 1999, the onomastic sources in §2.2).
-- **Done when:** the phase 0 exit criteria are written: purpose, benchmark protocol, data rules. Data stewards and an advisory group can't be named yet, so record that as a gap.
+- **Done when:** the phase 0 exit criteria are written: purpose, benchmark protocol, data rules, threat model. Data stewards and an advisory group can't be named yet, so record that as a gap.
 
 ### Week 3 — 2–6 Nov: schema (phase 1)
 
 - **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator.
 - **Case graph** (§5.1B): schema only, kept empty and separate.
 - **Language-pack template** (§11).
+- **Regression suite:** set up the test suite that every later change must pass (§12).
 - **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3).
 - **Done when:** the schema and validator are in the repo, with tests.
 
@@ -70,12 +87,14 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 - **Negative constraints** (`not_equivalent_to`) and ambiguous paths.
 - **Review workflow:** `proposed` → `reviewed` → `deprecated`; a source and licence register.
 - **Candidate sources:** review Onomaverse and Wikidata aliases (§7) for provenance, coverage and licence before using them.
-- **Done when:** graph v0.1 is versioned and every edge is sourced and has a confidence level (phase 1 exit).
+- **Graph API** (§12): given a name, return the typed paths to its variants, with confidence and source.
+- **Intake guide** derived from the packs (§2.2; final phase in §10): which names and relationship evidence to record; never ethnicity or clan.
+- **Done when:** graph v0.1 is versioned, every edge is sourced and has a confidence level (phase 1 exit), and the graph API answers queries.
 
 ### Week 6 — 23–27 Nov: benchmark (phase 2, light week)
 
 - **Synthetic gold set** (§9.1): invented people and families, with the corridor's error types (order, spelling, Christian names, renamed places, typos, incomplete dates, OCR errors), hard negatives with common names, and adversarially similar records.
-- **Splits:** by person and family, so the same identity can't appear in both training and test.
+- **Splits:** by person and family, so the same identity can't appear in both training and test; plus a temporal holdout (later invented records with newer patterns, e.g. renamed provinces).
 - **Done when:** the gold set has reviewed matches, non-matches and family relationships.
 
 ### Week 7 — 30 Nov–4 Dec: pipeline (phase 2)
@@ -84,14 +103,16 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 - **Transliteration and variants** as hypotheses, with the path that produced each one (§5.4).
 - **Blocking:** the strategies in §5.5, aiming for high recall.
 - **Baseline:** deterministic rules and phonetic matching (option 5).
-- **Done when:** the baseline runs on the benchmark and gives results.
+- **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
+- **Done when:** the baseline runs on the benchmark and gives results, and the access log records every read of case data.
 
 ### Week 8 — 7–11 Dec: model and evaluation (phase 2)
 
 - **Splink** with name, age or date, place and family evidence; term-frequency adjustments (§5.6).
 - **Graph features:** add graph-derived comparisons, and make sure one graph path isn't counted twice.
 - **Calibration and thresholds:** separate thresholds for retrieval, review priority and confirmation.
-- **Evaluation:** deterministic, Splink only, graph expansion only, and hybrid; metrics from §9.2, reported per language.
+- **Evaluation:** deterministic, Splink only, graph expansion only, and hybrid; metrics from §9.2 reported per language and per fairness slice; name-only search reported separately from full-evidence resolution; results on the temporal holdout.
+- **Commercial option** (option 4): run it on the same benchmark only if a free evaluation licence exists and no data leaves our machine; otherwise record it as not tested.
 - **Done when:** there are results for every option tested.
 
 ### Week 9 — 14–18 Dec: explain and publish (phase 2)
@@ -110,4 +131,4 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 | Jan 2027 on | Open research questions (§13), especially 1, 3, 4 and 7 | None |
 | When ready | Phase 3: shadow pilot beside an authorised tracing workflow | Needs a partner (e.g. REFUNITE, the Red Cross, UNHCR) and real data under their rules |
 | After phase 3 | Phase 4: controlled deployment; federation only if needed | Phase 3 exit criteria met |
-| Final phase | Offer NameBridge free of charge to the tracing organisations **and to Fraternidade Sem Fronteiras (FSF)**: it could help FSF's work with children in care (foster children, the Órfãos do Congo project) to trace relatives. Cases involving minors follow the protected-person rules (§8, control 7) | Tested result in hand. NameBridge is not sold |
+| Final phase | Offer NameBridge free of charge to the tracing organisations **and to Fraternidade Sem Fronteiras (FSF)**, for its work with children in care (foster children, the Órfãos do Congo project). FSF does not run the system: it uses the intake guide and refers cases to an authorised tracing service such as the Red Cross. Cases involving minors follow the protected-person rules (§8, control 7). Details: `CONCEPT-IDEA.md` §10, "Final phase" | Tested result in hand. NameBridge is not sold |

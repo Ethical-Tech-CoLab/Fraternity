@@ -730,3 +730,15 @@ Fronteiras, whose work with children in care (foster children, the Órfãos
 do Congo project) could use it to trace relatives; minors follow the
 protected-person rules (§8, control 7). The user plans to present the
 project to FSF and hear their view.
+
+**Later the same day — timetable aligned with CONCEPT-IDEA.** Audit found
+gaps; fixed: phase 0 data rules (sharing, retention, disclosure, incident
+response); §9.3 temporal holdout, name-only vs full-evidence results and
+fairness slices; §12 must-haves (regression suite, graph API, role-based
+access, access log, retention/deletion); option 4 (commercial) tested only
+with a free licence and no data leaving our machine. New table of
+deliberate differences (9 weeks, synthetic data, no advisory group,
+Latin-script corridor, ~2,000 relationships, phases 3–4 conditional) and
+deferred should-haves. `CONCEPT-IDEA.md` §10 gains "Final phase — free
+offer": not sold; FSF uses an intake guide derived from the packs and
+refers cases to an authorised tracing service, without running the system.

@@ -566,6 +566,20 @@ Probabilistic record linkage provides explicit tools for match weights, threshol
 - Introduce federated/PPRL matching only where agreements prohibit central pooling.
 - Continuously monitor drift, abuse, appeal and correction.
 
+### Final phase — free offer (added 19 Oct 2026)
+
+NameBridge is **not sold**. With a tested result in hand, the graph, packs, code and evaluation are offered free of charge to:
+
+- **authorised tracing services** (e.g. ICRC Restoring Family Links, REFUNITE, UNHCR), which may run the matching system under the controls in §8; and
+- **Fraternidade Sem Fronteiras (FSF)**, whose work with children in care (foster children, the Órfãos do Congo project) involves tracing relatives.
+
+FSF is not an authorised tracing service, so its role is different:
+
+- FSF **does not run the matching system** or hold a case graph (§8 controls 1, 2 and 5).
+- FSF uses a short **intake guide** derived from the language packs: which names and relationship evidence to record when a child or family is looking for relatives (all names in any order, parents' or caregivers' names, village/colline, school, faith community, the place name as it was at the time; §2.2). It never records ethnicity or clan (§8 control 12).
+- FSF **refers cases** to an authorised tracing service, such as the Red Cross, which does the matching.
+- Every case involving a minor is a protected-person case (§8 control 7).
+
 The timeline is an engineering estimate for planning, not a delivery commitment.
 
 ---
