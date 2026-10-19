@@ -712,3 +712,13 @@ Summary added to SOLUTIONS.md 2F ("Why it matters").
   real records).
 - Next: Kinyarwanda literature; 1B tracker page; search for the full bill
   text.
+
+**Later the same day — direction changed to NameBridge.** The user
+clarified that the project's work is NameBridge itself (`CONCEPT-IDEA.md`),
+not 2F with parts of NameBridge. The rest of `SOLUTIONS.md` is kept but not
+used. `TIMETABLE.md` rewritten around NameBridge §10 phases 0–2 compressed
+into 9 weeks (19 Oct–18 Dec 2026), with a proposed Great Lakes → Malawi
+pilot corridor (Kinyarwanda, Kirundi, Congolese Swahili) and synthetic data
+only; phases 3–4 after the semester and only with a tracing partner. The
+"What 2F takes from NameBridge" subsection was replaced by a short pointer;
+README, `SOLUTIONS.md` header and `CONCEPT-IDEA.md` §14 updated to match.

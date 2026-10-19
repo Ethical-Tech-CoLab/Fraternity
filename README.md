@@ -19,10 +19,10 @@ comparison across cases surfaces a genuine opportunity — a lever that is
 high-leverage, tractable, and neglected relative to the others — we narrow
 down and go deep on that one.
 
-**Current phase (from 7 Oct 2026): solutions.** Following the professor's
-feedback, the situation research stays as context and the work now asks
-what we can do that actually changes something in the camp, starting with
-Dzaleka. See `docs/SOLUTIONS.md`.
+**Current work (from 19 Oct 2026): NameBridge.** Cross-border name
+intelligence for missing-person search; see `docs/CONCEPT-IDEA.md` and the
+weekly plan in `docs/TIMETABLE.md`. The situation research and
+`docs/SOLUTIONS.md` are kept for reference only.
 
 ## Structure
 
@@ -38,8 +38,8 @@ Dzaleka. See `docs/SOLUTIONS.md`.
   recommended first line of technology development.
 - `docs/CONCEPT-IDEA.md` — "NameBridge" concept and option analysis:
   cross-border name intelligence for missing-person search (relates to 2F).
-- `docs/TIMETABLE.md` — weekly scope of work to the end of the fall
-  semester (Dec 2026), then a lighter plan to April 2027.
+- `docs/TIMETABLE.md` — NameBridge weekly scope of work to the end of the
+  fall semester (Dec 2026).
 
 ## Sourcing discipline
 
