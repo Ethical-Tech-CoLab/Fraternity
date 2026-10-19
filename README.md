@@ -38,6 +38,8 @@ Dzaleka. See `docs/SOLUTIONS.md`.
   recommended first line of technology development.
 - `docs/CONCEPT-IDEA.md` — "NameBridge" concept and option analysis:
   cross-border name intelligence for missing-person search (relates to 2F).
+- `docs/TIMETABLE.md` — weekly scope of work to the end of the fall
+  semester (Dec 2026), then a lighter plan to April 2027.
 
 ## Sourcing discipline
 
