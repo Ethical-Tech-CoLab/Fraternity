@@ -848,3 +848,40 @@ offline.
 - Read Primero's LICENSE and matching code.
 - Run the RD4C 22 questions on NameBridge.
 - Try the cross-border case management guidance again.
+
+## 2026-10-26 — How Primero / CPIMS+ matches (code read)
+
+**Focus:** the user considers CPIMS+ relevant to NameBridge and decided this without consulting the professor. This entry records what it actually does, from its source code.
+
+**Sources consulted:** [primeroIMS/primero](https://github.com/primeroIMS/primero), `main` branch, last push 19 Oct 2026, 76 stars: `LICENSE`, `app/services/matching_service.rb`, `app/services/language_service.rb`, `app/models/concerns/phonetic_searchable.rb`, `solr/configsets/primero/conf/schema.xml`; [CPIMS+ review (2024)](https://socialserviceworkforce.org/wp-content/uploads/2024/03/CPIMS_Review_Report.pdf); Primero [Admin](https://support.primero.org/pdfs/primeroIMS/PrimeroAdminGuide/master/book.pdf) and [User](https://support.primero.org/pdfs/primeroIMS/PrimeroCPIMSUserGuide/master/book.pdf) guides.
+
+**Findings:**
+- **Licence:** AGPL-3.0-or-later. The CPIMS+ and GBVIMS+ configurations (JSON bundles) are available on request from UNICEF. NameBridge stays Apache-2.0 as a *separate service* called over Primero's API. If code were merged into Primero, that code would have to be AGPL.
+- **Matching (`MatchingService`):**
+  - A Solr full-text "any of" query over boosted fields: names, other names and nicknames ×15; sex and age ×10; relatives' names ×10; date of birth ×5; relationship ×5; nationality, language and religion ×3; **ethnicity and sub-ethnicity** with no boost but still used as match fields.
+  - Only children with `consent_for_tracing = true` are searched.
+  - Top 20 results.
+  - Scores are **divided by the best score in the same result list**. The top hit is always 1.0, however weak, so scores are **relative, not calibrated**.
+  - "Likely" if there is only one result, or if score − mean > 0.7; otherwise "Possible".
+  - There is **no "not found" or "insufficient evidence" outcome**; the weakest results are cut below 0.1 of the best.
+- **Name handling (`LanguageService`, Solr schema):**
+  - Names are split on spaces and stripped of diacritics.
+  - Latin tokens are encoded with **Double Metaphone**, a phonetic algorithm designed for English and European names. Plus edge n-grams for prefix search.
+  - No knowledge of name variants (Jean / John / Yohana), no handling of name structure (nom / postnom / prénom; Kinyarwanda surname-first), no transliteration paths, and no explanation of *why* names matched beyond which fields matched.
+  - Name order is ignored (bag of tokens). That helps with reordering, but loses structure.
+- **The CPIMS+ review (2024)** says data protection is one of the tool's strengths. Configurable FTR matching on chosen fields was added in v1.6.
+
+**What this means for NameBridge:**
+1. **The gap is confirmed.** The most widely used inter-agency tracing tool matches names with an English-oriented phonetic code and relative scores. NameBridge's sourced variant graph, calibrated scores and abstention address exactly that.
+2. **Integration path:**
+   - NameBridge as a separate service (Apache-2.0).
+   - It reads a tracing request and candidate cases through Primero's API (`/api/v2/traces/:id/potential_matches`, cases, tracing requests).
+   - It returns ranked candidates with explanations to the caseworker.
+   - It writes nothing back automatically.
+   - Lighter option: export graph variants as **Solr synonym lists** that a Primero deployment can load.
+3. **Benchmark:** add a **"CPIMS+-style baseline"** (Double Metaphone + boosted field match + score/max normalisation) to `BENCHMARK_PROTOCOL.md`, so the comparison is against what caseworkers actually use.
+4. **Ethnicity:** CPIMS+ uses ethnicity and sub-ethnicity as match fields; NameBridge does not (C12). Any integration must not read those fields. Document this, without judging the CPIMS+ design: in its setting, with consent and case management, it may be justified.
+
+**Files touched:** `docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:** confirm the integration direction with the user; if confirmed, update `SCOPE.md` (users and deliverables), `BENCHMARK_PROTOCOL.md` (new baseline), and the week 3 schema (a record shape compatible with Primero's case and trace fields).
