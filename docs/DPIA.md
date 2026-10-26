@@ -74,7 +74,7 @@ Each measure is listed against the threat it addresses (`THREAT_MODEL.md` §3).
 
 - **C1–C12 from §8.** Controls 4, 7, 8 and 9 are built and tested on synthetic data this semester. Controls 10 and 11 are deferred.
 - **No location in results**, and the located person decides whether their contact details are shared [D7].
-- **Human review before any consequential step.** This also respects the right not to be subject to decisions based solely on automated processing (ss. 19–26) [D4].
+- **Human review before any consequential step.** This also respects the right not to be subject to decisions based solely on automated processing (s. 25) [D1].
 - **Retention and deletion** (DR-3).
 - **Breach response within 72 hours** (DR-5).
 - **No cross-border transfer** of case data without an adequacy basis under ss. 38–39 [D8], *and* the RFL Code of Conduct's rules [D3].
@@ -82,7 +82,7 @@ Each measure is listed against the threat it addresses (`THREAT_MODEL.md` §3).
 
 ## (g) Other matters
 
-- **Registration and officer.** The controller (the partner) registers with MACRA and may need a data protection officer (s. 33) [D4].
+- **Registration and officer.** A controller processing the data of more than 10,000 people resident in Malawi is a "controller of significant importance" and must register with the authority **before** processing (s. 41) [D1]. A data protection officer is required where core activities process sensitive data on a large scale (s. 33) [D1]. A tracing partner in Dzaleka would likely meet both tests.
 - **AI-specific risks.** The ICRC handbook's ch. 17 on artificial intelligence applies to the matching model [D2]. The ICRC's 2024 AI policy is relevant for a Red Cross partner [D9].
 - **International organisations.** UNHCR and the ICRC apply their own data rules rather than national law, so the binding framework depends on which partner is the controller. This is an open question for phase 3.
 - **Gap:** this pre-assessment has not been reviewed by a data-protection officer or a lawyer in Malawi.
@@ -98,7 +98,7 @@ The **future phase must not start** until the partner, as controller, does the s
 - [D1] Malawi, [Data Protection Act 2024](https://www.mca.ac.mw/mca-siteup/uploads/Data%20Protection%20Act%202024.pdf), ss. 17, 30(3).
 - [D2] ICRC, [*Handbook on Data Protection in Humanitarian Action*, 3rd ed.](https://www.icrc.org/en/data-protection-humanitarian-action-handbook), 2024; [ch. 17, Artificial Intelligence](https://www.cambridge.org/core/books/handbook-on-data-protection-in-humanitarian-action/artificial-intelligence/84780BB35FAFF04F403AB7A7AA5C0934).
 - [D3] ICRC, [RFL Code of Conduct on Data Protection](https://www.icrc.org/en/download/file/18229/rfl-code-of-conduct.pdf) (vital interest; deletion; transfers).
-- [D4] Summaries of the Act's ss. 8, 16, 17, 19–26, 29–30, 33: [ITLawCo](https://itlawco.com/focus-areas/data-protection-and-privacy/malawis-data-protection-act-2024-an-overview); [Tech Hive Advisory](https://www.techhiveadvisory.africa/insights/malawis-data-protection-act-aligning-to-the-new-regulatory-framework). Section numbers should be checked against the Act's text.
+- [D4] Summaries of the Act by [ITLawCo](https://itlawco.com/focus-areas/data-protection-and-privacy/malawis-data-protection-act-2024-an-overview) and [Tech Hive Advisory](https://www.techhiveadvisory.africa/insights/malawis-data-protection-act-aligning-to-the-new-regulatory-framework). Section numbers were **checked against the Act's text** on 26 Oct 2026: s. 17 (children), ss. 19–24 (rights), s. 25 (automated decision-making), s. 26 (derogations), s. 29 (records), s. 30 (DPIA), s. 33 (DPO), s. 41 (registration; more than 10,000 data subjects).
 - [D5] IFRC PrepareCenter, [Restoring Family Links](https://preparecenter.org/toolkit/humanitarian-service-points-toolkit/implementation-programmes-and-activities/restoring-family-links).
 - [D6] Splink, [documentation](https://moj-analytical-services.github.io/splink/index.html).
 - [D7] ICRC, [*Restoring Family Links: a guide for National Societies*](https://icrcndresourcecentre.org/wp-content/uploads/2019/06/RESTORINGFAMILY-LINKS-A-GUIDE.pdf), §7.3.2.

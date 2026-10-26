@@ -33,8 +33,8 @@ Every result is labelled **preliminary (synthetic only)**. A decisive benchmark 
 
 | Origin | Generation rule | Source |
 | --- | --- | --- |
-| **Rwanda** | Kinyarwanda surname chosen per child, plus a given name (often Christian). A child may share one element with a parent, but never all of them. Written surname-first, often in capitals, in local records | Law 71/2024 arts 38–39 [B1]; HRW 1999 [B2]; [B3] |
-| **Burundi** | Kirundi name plus prénom(s), freely chosen. With probability *p*, a son receives his father's name (patronymic practice). *p* is a **varied parameter**, because the evidence is disputed | Code des personnes et de la famille, art. 13 [B4]; Univ. of Burundi / Bigangara [B5] |
+| **Rwanda** | Kinyarwanda surname chosen per child, plus a given name (often Christian). A child may share one element with a parent, but never all of them; sharing a father's element happens with probability *q*, a **varied parameter** because accounts conflict. Gender-marked prefixes are kept consistent with the generated sex (e.g. `Nyira-`, `Muka-` feminine; `Nya-`, `Munya-`, `Rwa-` masculine) [B17]. They are used only for generation, never to infer anyone's sex (C12). Written surname-first, often in capitals, in local records | Law 71/2024 arts 38–39 [B1]; HRW 1999 [B2]; [B3] |
+| **Burundi** | Kirundi name given first, with a French Christian prénom added later; the Kirundi name then works as the surname [B18]. Both are freely chosen. With probability *p*, a son receives his father's name (patronymic practice). *p* is a **varied parameter**, because the evidence is disputed | Code des personnes et de la famille, art. 13 [B4]; Univ. of Burundi / Bigangara [B5] |
 | **DRC** | Prénom + nom + postnom; order and spelling fixed in civil records. If a parent passes their nom on, at least one different element is added. Same-family members with the same nom carry different complementary elements. A married woman keeps her name and may add her husband's | Family Code arts 56–62 [B6] |
 | **Name elements** | Drawn from the **naming profiles** (§2.4): common elements in proportion to their real frequency; rare elements replaced by **invented** ones built from the profile's patterns | §2.5 |
 
@@ -63,6 +63,7 @@ Errors are injected **GeCo-style** [B8], with documented rates per source:
 | Incomplete or rounded ages; age heaping | "about 10" |
 | Places renamed over time | Burundi provinces 2025; DRC provinces 2015 |
 | **Child's report:** young children give only first names or nicknames, or confuse relationships ("brother" for "father") [B10] | A tracing request recording only "Papa Jean" |
+| **Adopted name in exile:** a person recorded under a new, unrelated name (e.g. a Swahili name adopted to stay invisible) [B18] | The right answer is **not** a name link. The system must abstain or rely on non-name evidence, and route the case as protected (`THREAT_MODEL.md` T14) |
 | **Hard negatives** | Different people with common names, same age band, same area |
 | **Adversarial pairs** | Different families built to look alike |
 
@@ -198,3 +199,5 @@ The cost of each kind of error depends on the step (decided 26 Oct 2026; to conf
 - [B14] ["Record linkage for routinely collected health data in an African health information exchange"](https://pmc.ncbi.nlm.nih.gov/articles/PMC10448229), *IJPDS*, 2023.
 - [B15] ["Patient Deduplication in Uganda's Electronic Medical Records System"](https://www.preprints.org/manuscript/202511.1450), preprint, 2025.
 - [B16] ["Generating synthetic identifiers to support development and evaluation of data linkage methods"](https://ijpds.org/index.php/ijpds/article/view/2389), *IJPDS*.
+- [B17] Kimenyi, A. (1978), ["Aspects of Naming in Kinyarwanda"](https://www.jstor.org/stable/30027411), *Anthropological Linguistics* 20(6): 258–271.
+- [B18] Duchaj & Ntihirageza (2009), York University; Daley (2018), Oxford (see `SCOPE.md` [S18]).

@@ -930,3 +930,35 @@ offline.
 **Files touched:** `docs/BENCHMARK_PROTOCOL.md` (§2.1, §2.2, new §2.4, §8, §9, sources B11–B16), `docs/DATA_RULES.md` (DR-1), `docs/TIMETABLE.md` (weeks 4–6, progress, questions for the professor), `namebridge/src/namebridge/benchmark/`, `namebridge/tests/test_sample_size.py`.
 
 **Open:** a Burundi name source; fidelity limits are to be set before the comparison in week 6.
+
+## 2026-10-26 — Week 2 completion: verification and Kinyarwanda groundwork
+
+**Focus:** close the items week 2 left unverified, and finish the Kinyarwanda groundwork (Tavily).
+
+**Sources consulted:**
+- Malawi, Data Protection Act 2024, primary text (MACA PDF).
+- HRW, *Leave None to Tell the Story*: [Geno1-3-10](https://www.hrw.org/reports/1999/rwanda/Geno1-3-10.htm) and [Geno1-3-09](https://www.hrw.org/reports/1999/rwanda/Geno1-3-09.htm).
+- Duchaj & Ntihirageza (2009), York University; Daley (2018), Oxford.
+- Kimenyi (1978), "Aspects of Naming in Kinyarwanda", *Anthropological Linguistics* 20(6).
+- Blog and press accounts of Rwandan naming (low confidence).
+- UNHCR 2015 data protection policy §6.3.2, full conditions.
+- Offensive X guide and the Act's definitions (registration threshold).
+
+**Findings:**
+- **Malawi Act, checked against its text:**
+  - s. 17 (children); ss. 19–24 (rights); **s. 25 (automated decision-making)**; s. 26 (derogations); s. 29 (records); s. 30 (DPIA); s. 33 (DPO: public authority, large-scale monitoring, or large-scale sensitive data).
+  - **s. 41: registration before processing for "controllers of significant importance"** (more than 10,000 data subjects resident in Malawi). A Dzaleka tracing partner likely qualifies.
+  - `DPIA.md` and `THREAT_MODEL.md` corrected.
+- **HRW 1999:** "Tutsi attempting to pass the barriers were usually identified by their identity cards and then slain" (Geno1-3-10). Now cited precisely for M9 / T8.
+- **Burundi names (Duchaj & Ntihirageza 2009):** the Kirundi name is given first, and a French Christian name is added later, when "the original name becomes the surname". **Burundian refugees in Tanzanian towns changed to Swahili names** as a strategy of invisibility, and some kept pseudonyms after naturalisation (Daley 2018). Consequences:
+  - new error type, "adopted name in exile" (`BENCHMARK_PROTOCOL.md` §2.3);
+  - new threat **T14**: matching across a deliberate name change, routed as a protected-person case;
+  - `SCOPE.md` §1 updated.
+- **Kinyarwanda (Kimenyi 1978):** gender-marked prefixes — `nyira-`, `mukaa-`, `kaa-` feminine; `nya-`, `munya-`, `see-`, `nyiri-`, `rwaa-`, `ki-` masculine. Used only to keep generated names consistent with generated sex; never to infer sex (C12).
+- **Rwanda fathers'-surname conflict:** accounts describe an optional third name from the father's side, and sibling names sharing a root as a "familial theme" (blogs, 2011; New Times, 2026), against HRW / Wikipedia, which say surnames are not inherited. Modelled as a varied parameter *q*, like Burundi's *p*. Low confidence until a statistical source exists (the NESA lists may show it in week 4).
+- **UNHCR 2015 policy §6.3.2:** law-enforcement transfers only for a serious criminal offence, to a competent authority, if the transfer substantially assists and the data cannot otherwise be obtained, if it is proportionate, and **with consent for victims and witnesses**.
+- **Still open:** the text of the 2022 GDPP on this point could not be fetched (Refworld blocked the extract).
+
+**Files touched:** `docs/DPIA.md`, `docs/THREAT_MODEL.md` (T14, sources), `docs/SCOPE.md` (§1, S18), `docs/BENCHMARK_PROTOCOL.md` (§2.2, §2.3, B17–B18), `docs/TIMETABLE.md`.
+
+**Week 2 status:** complete, except the GDPP 2022 text and the professor's review.

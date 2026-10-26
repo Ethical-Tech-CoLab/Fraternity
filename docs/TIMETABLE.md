@@ -22,7 +22,8 @@ Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** 
 | Benchmark protocol, including the cost of errors | ✔ done | `BENCHMARK_PROTOCOL.md` | `e608432` |
 | Benchmark size derived from the targets (26,000), and the realism plan (naming profiles) | ✔ done (extra) | `BENCHMARK_PROTOCOL.md` §2; `sample_size.py` | 26 Oct (see log) |
 | Phase 0 exit check | ✔ done | `SCOPE.md` §8 | `e608432` |
-| Kinyarwanda research | ◐ started | `RESEARCH_LOG.md` | `e608432` |
+| Kinyarwanda research (week 2 groundwork) | ✔ done; packs in week 4 | `RESEARCH_LOG.md` | 26 Oct |
+| Verification of open items (Malawi Act sections, HRW chapter, Burundi paper, Rwanda conflict) | ✔ done, except UNHCR's 2022 policy text | `RESEARCH_LOG.md` | 26 Oct |
 | UNICEF sources (child tracing, data, AI) | ✔ done (extra) | `RESEARCH_LOG.md` | `d27f327` |
 | CPIMS+ analysis and decision: integration target and baseline | ✔ done (extra) | `RESEARCH_LOG.md`; `SCOPE.md`; this file | `59c8130`, `8fb9343` |
 | Professor review of the phase 0 documents | ⏳ pending | — | — |
@@ -97,7 +98,8 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - ✔ done 26 Oct: **data rules** in `DATA_RULES.md`: sharing, retention, disclosure, and incidents (72 hours).
 - ✔ done 26 Oct: **benchmark protocol** in `BENCHMARK_PROTOCOL.md`. The error costs were decided by the user: at the search step a missed candidate is worse; at the confirmation step a false match is worse (100 : 1 for minors).
 - ✔ done 26 Oct: **exit check** in `SCOPE.md` §8. Phase 0 is complete except for the gaps.
-- ◐ started 26 Oct: **Kinyarwanda research** (`RESEARCH_LOG.md`). A source conflict about fathers' surnames is still open, for week 4.
+- ✔ done 26 Oct: **Kinyarwanda research** groundwork: Kimenyi (1978) on gender-marked prefixes; the 2014 spelling reform; the fathers'-surname conflict, now modelled as a varied parameter (`RESEARCH_LOG.md`).
+- ✔ done 26 Oct: **open items verified** against primary texts: Malawi Act sections, the HRW chapter, Duchaj & Ntihirageza. Still open: the text of UNHCR's 2022 policy on law-enforcement transfers, which could not be fetched.
 - ✔ extra, 26 Oct: **UNICEF sources** and the **CPIMS+ code** were read. CPIMS+ was adopted as the integration target and baseline (`RESEARCH_LOG.md`).
 
 Plan:
