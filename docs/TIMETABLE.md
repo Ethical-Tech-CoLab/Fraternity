@@ -2,6 +2,33 @@
 
 Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a week-by-week plan for the rest of the fall semester. Earlier versions are in the git history.
 
+## ⛔ Gates: decisions that block work
+
+**Rule:** a task listed under "Blocks" must **not start** while its gate is open. Before any work session, check this table. Claude checks it too (`CLAUDE.md`), and stops and warns if a request would start blocked work.
+
+- **⛔ hard gate:** do not proceed. The decision changes what we build, or whether we may do it at all.
+- **⚠ soft gate:** you may proceed on the stated default, but the work may have to be redone.
+
+If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.md` (who, why, what may need redoing).
+
+| Gate | Decision needed | Who | Blocks | Must be resolved by | Status |
+| --- | --- | --- | --- | --- | --- |
+| **G1** ⛔ | Approve the phase 0 scope (`SCOPE.md`): purpose, users, prohibited uses. This is week 1's "done when" | Professor | **All of phase 1** (week 3 onward) | Mon 2 Nov | Open (asked 26 Oct) |
+| **G2** ⛔ | Governments and law enforcement are not users (`SCOPE.md` §2) | Professor | Week 3 role model in the case schema; week 7 access controls | Mon 2 Nov | Open |
+| **G3** ⛔ | Does NYU's IRB need to confirm the aggregate use of public name lists (CongoNames, NESA)? If yes, the confirmation itself | Professor → IRB | Week 4: **downloading or processing any real name list**, and the naming profiles | Mon 9 Nov | Open |
+| **G4** ⚠ | Error costs and targets (`BENCHMARK_PROTOCOL.md` §7). Default: the ratios decided by the user on 26 Oct | Professor | Week 6: benchmark size (26,000 is derived from them) and generation; week 8 thresholds | Mon 23 Nov | Open; default in use |
+| **G5** ⚠ | `NAME_CHANGE.md` rule 5: no support for searches for people who changed names, including alleged perpetrators. Default: the rule as written | Professor | Week 7 protected-person routing; final wording of `SCOPE.md` §4 | Mon 30 Nov | Open; default in use |
+| **G6** ⚠ | A source for Burundian names (data dependency, not an approval) | Us | Week 4 `bi-kirundi` pack and Burundi profile | Mon 9 Nov | Open |
+
+**Not gates for the semester** (they block phase 3, not phases 0–2):
+
+- named data stewards and an advisory group;
+- a tracing partner;
+- the text of UNHCR's 2022 policy;
+- a study of name change in Malawi.
+
+**Today (26 Oct):** nothing is blocked yet, because week 3 starts on 2 Nov. **If G1 and G2 are still open on 2 Nov, week 3 does not start.**
+
 ## Progress (as of 26 Oct 2026)
 
 **Phase 0 (weeks 1–2) is done**, a week ahead of the original week-2 end (30 Oct). Everything that doesn't need outside people is written: 7 phase 0 documents, the code skeleton, and a tested sample-size module.
@@ -14,7 +41,9 @@ Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** 
 - no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
 - no Burundi name source yet (needed in week 4).
 
-**Next:** week 3, schema and validator (2–6 Nov).
+**Next:** week 3, schema and validator (2–6 Nov), **once gates G1 and G2 are resolved** (see above).
+
+**Done ahead of schedule** (◐ marks in weeks 3–7): CPIMS+ field list; the Burundi sibling question; naming-profile sources and method; CongoNames source review; real-pattern sources; intake-guide rules; CPIMS+ baseline algorithm.
 
 | What | Status | Where | Commit |
 | --- | --- | --- | --- |
@@ -122,21 +151,27 @@ Plan (all items done 26 Oct):
 
 ### Week 3 — 2–6 Nov: schema (phase 1)
 
+⛔ **Gated by G1 and G2.** Do not start until both are resolved.
+
+
 - **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator.
 - **Case graph** (§5.1B): schema only, kept empty and separate.
-- **CPIMS+ mapping:** map the case schema to Primero's case and tracing-request fields (`name`, `name_other`, `name_nickname`, relatives' names). Names arrive as one typed string, so the parser must not rely on separate fields. An ingestion allowlist refuses ethnicity, sub-ethnicity and religion (`THREAT_MODEL.md` T13).
+- ◐ **CPIMS+ mapping** (field names already known from Primero's code, 26 Oct: `name`, `name_other`, `name_nickname`, `relation_name`, `relation_nickname`, `relation_other_family`, `relation`, `relation_age`, `date_of_birth`, `sex`, `age`, plus the ethnicity, sub-ethnicity and religion fields to refuse; `RESEARCH_LOG.md`): map the case schema to Primero's case and tracing-request fields (`name`, `name_other`, `name_nickname`, relatives' names). Names arrive as one typed string, so the parser must not rely on separate fields. An ingestion allowlist refuses ethnicity, sub-ethnicity and religion (`THREAT_MODEL.md` T13).
 - **Name-change rules in the schema** (`NAME_CHANGE.md`): the validator rejects edges between unrelated names; case records carry `other_names_used` and a `possible_name_change` route to protected handling.
 - **Language-pack template** (§11).
 - **Regression suite:** set up the test suite that every later change must pass (§12).
-- **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3).
+- ◐ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Partly done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. **Remaining:** Kirundi spelling rules.
 - **Done when:** the schema and validator are in the repo, with tests.
 
 ### Week 4 — 9–13 Nov: first packs (phase 1)
 
+⛔ **Gated by G3** (real name lists) · ⚠ **G6** (Burundi source).
+
+
 - **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili).
 - **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries).
 - **ICU / CLDR:** set up normalisation, transforms and transform-path logging (§5.4).
-- **Naming profiles (DRC, Rwanda):** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Find a Burundi source.
+- ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Find a Burundi source.
 - **Done when:** the first packs load into the graph and pass the validator.
 
 ### Week 5 — 16–20 Nov: pilot corpus (phase 1)
@@ -144,13 +179,16 @@ Plan (all items done 26 Oct):
 - **Corpus:** aim for about 2,000 sourced relationships for the corridor (§10 says 2,000–10,000).
 - **Negative constraints** (`not_equivalent_to`) and ambiguous paths.
 - **Review workflow:** `proposed` → `reviewed` → `deprecated`; a source and licence register.
-- **Candidate sources:** review Onomaverse, Wikidata aliases (§7) and CongoNames (`SCOPE.md` §6; real names, so aggregate statistics only) for provenance, coverage and licence before using them.
+- ◐ **Candidate sources** (CongoNames reviewed 26 Oct: provenance = DRC state-exam lists 2008–2023; licence CC BY 4.0; real names, so aggregates only. **Remaining:** Onomaverse and Wikidata): review Onomaverse, Wikidata aliases (§7) and CongoNames (`SCOPE.md` §6; real names, so aggregate statistics only) for provenance, coverage and licence before using them.
 - **Graph API** (§12): given a name, return the typed paths to its variants, with confidence and source.
-- **Real-pattern variants:** collect the sanctions-list aliases and the 2014 Kinyarwanda spelling forms (`BENCHMARK_PROTOCOL.md` §2.4). Variant pairs from the profiles enter the graph as `proposed` edges.
-- **Intake guide** derived from the packs (§2.2; final phase in §10): which names and relationship evidence to record; never ethnicity or clan.
+- ◐ **Real-pattern variants** (sources found 26 Oct: UN 1533 list, e.g. `KAKOLELE`/`KAKORERE`; 2014 spelling reform. **Remaining:** collect them): collect the sanctions-list aliases and the 2014 Kinyarwanda spelling forms (`BENCHMARK_PROTOCOL.md` §2.4). Variant pairs from the profiles enter the graph as `proposed` edges.
+- ◐ **Intake guide** derived from the packs (§2.2; final phase in §10): which names and relationship evidence to record; never ethnicity or clan. *Rules already written 26 Oct:* the fields to record in `DPIA.md` (d), and the names a person chooses to give in `NAME_CHANGE.md` rule 6 and `DATA_RULES.md` DR-1.7. **Remaining:** the guide itself.
 - **Done when:** graph v0.1 is versioned, every edge is sourced and has a confidence level (phase 1 exit), and the graph API answers queries.
 
 ### Week 6 — 23–27 Nov: benchmark (phase 2, light week)
+
+⚠ **G4:** the size and targets use the 26 Oct default until the professor confirms.
+
 
 - **Synthetic gold set** (§9.1): about **26,000 invented people** (size derived in `BENCHMARK_PROTOCOL.md` §2.1), generated by recombination from the naming profiles. Invented people and families, with the corridor's error types (order, spelling, Christian names, renamed places, typos, incomplete dates, OCR errors), hard negatives with common names, and adversarially similar records.
 - **Splits:** by person and family, so the same identity can't appear in both training and test; plus a temporal holdout (later invented records with newer patterns, e.g. renamed provinces).
@@ -160,11 +198,14 @@ Plan (all items done 26 Oct):
 
 ### Week 7 — 30 Nov–4 Dec: pipeline (phase 2)
 
+⚠ **G2** (roles) · ⚠ **G5** (routing for possible name change).
+
+
 - **Ingestion:** keep the original name exactly as written, and add parallel normalised forms (§5.3).
 - **Transliteration and variants** as hypotheses, with the path that produced each one (§5.4).
 - **Blocking:** the strategies in §5.5, aiming for high recall.
 - **Baseline:** deterministic rules and phonetic matching (option 5).
-- **CPIMS+-style baseline:** Double Metaphone, boosted field match and score/max normalisation, reimplemented from Primero's source.
+- ◐ **CPIMS+-style baseline** (algorithm documented from Primero's source on 26 Oct: field boosts, Double Metaphone, score/max, likely/possible; `RESEARCH_LOG.md`. **Remaining:** implement it): Double Metaphone, boosted field match and score/max normalisation, reimplemented from Primero's source.
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
 - **Consent and lawful basis** (§8 control 4): every case record stores why it may be used and with whom it may be shared.
 - **Protected-person flags** (§8 control 7), including **"possible name change"** candidates (`NAME_CHANGE.md` rule 2): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
