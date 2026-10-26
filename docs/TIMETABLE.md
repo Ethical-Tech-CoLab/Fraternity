@@ -62,7 +62,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 ### Week 2 — 26–30 Oct: risks and test rules (phase 0)
 
 - **Threat model:** who could misuse the system (§8: stalkers, traffickers, hostile governments, armed groups) and which controls block each risk.
-- **Data-protection assessment (desk version):** what data the system would hold, why, for how long, and who could see it, using the ICRC handbook.
+- **Data-protection assessment (desk version):** what data the system would hold, why, for how long, and who could see it, using the ICRC handbook, Malawi's Data Protection Act 2024 and the RFL Code of Conduct (`SCOPE.md` §5).
 - **Data rules (§10 phase 0):** data sharing, retention and deletion, disclosure, and incident response.
 - **Benchmark protocol (§9):** what the test set must contain; the metrics, including the fairness slices (§9.2); the splits by person and family and a temporal holdout (§9.3); name-only search measured separately from full-evidence resolution; and the cost of a false positive vs a false negative.
 - **Start the research:** Kinyarwanda naming (HRW 1999, the onomastic sources in §2.2).
@@ -89,7 +89,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - **Corpus:** aim for about 2,000 sourced relationships for the corridor (§10 says 2,000–10,000).
 - **Negative constraints** (`not_equivalent_to`) and ambiguous paths.
 - **Review workflow:** `proposed` → `reviewed` → `deprecated`; a source and licence register.
-- **Candidate sources:** review Onomaverse and Wikidata aliases (§7) for provenance, coverage and licence before using them.
+- **Candidate sources:** review Onomaverse, Wikidata aliases (§7) and CongoNames (`SCOPE.md` §6; real names, so aggregate statistics only) for provenance, coverage and licence before using them.
 - **Graph API** (§12): given a name, return the typed paths to its variants, with confidence and source.
 - **Intake guide** derived from the packs (§2.2; final phase in §10): which names and relationship evidence to record; never ethnicity or clan.
 - **Done when:** graph v0.1 is versioned, every edge is sourced and has a confidence level (phase 1 exit), and the graph API answers queries.

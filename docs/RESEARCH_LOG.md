@@ -772,3 +772,19 @@ offline.
 **Open questions / next steps:**
 - Professor to see `SCOPE.md` (week 1 "done when").
 - Week 2: threat model, desk data-protection assessment, data rules, benchmark protocol; start Kinyarwanda naming research.
+
+## 2026-10-26 — Evidence check of the week 1 scope (Tavily)
+
+**Focus:** the user felt phase 0 went too fast; second desk-research pass to test every claim in `SCOPE.md`.
+
+**Sources consulted:** listed as [S1]–[S16] in `SCOPE.md`. Main ones: UNHCR figures via FairPlanet (Oct 2024); USCRI on Dzaleka UASC (2026); Rwanda Law 71/2024; Burundi Code des personnes et de la famille 1993; Université du Burundi onomastics paper (Bigangara 1982); DRC Family Code via FamilySearch and an ICC annex; Malawi Data Protection Act 2024; HRW on Rohingya data (2021); RFL Code of Conduct; CongoNames corpus (*Data*, Jul 2026).
+
+**Findings:**
+- Confirmed: corridor shares (UNHCR 36,469 / 12,291 / 7,019 at 31 Oct 2024; DOS 65 / 22 / 12% Mar 2025). Need: the Red Cross in Dzaleka "can only cross-reference lists of other refugee camps" (USCRI) — the NameBridge task. Rwanda: law forbids a child bearing only all of a parent's or sibling's names (Law 71/2024 arts 38–39).
+- Changed: Burundi is `disputed / context-dependent`, not `unknown` — free choice of name in law, no family names before Christianity, missionary patronymics, sons sometimes named after fathers. DRC packs organised by naming system; Swahili is the camp lingua franca, Lingala also spoken. Malawi Red Cross Society (with ICRC) named as the tracing actor. Governments: users vs data sources separated; repatriation screening added to prohibited uses (Rohingya precedent). Malawi DPA 2024 and RFL Code of Conduct added. UNHCR's 2015 policy allows law-enforcement transfers; our rule is stricter.
+- New candidate source: CongoNames, 8.05 M real names, CC BY 4.0 — aggregate statistics only, after week 5 review.
+- `[unverified]`: no 2026 nationality breakdown for Dzaleka found; UNHCR 2022 policy not checked on law-enforcement transfers; Duchaj & Ntihirageza full text not fetched; DRC Family Code read only through secondary sources.
+
+**Files touched:** `docs/SCOPE.md`, `docs/TIMETABLE.md` (weeks 2 and 5), `docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:** professor review of `SCOPE.md`; the unverified items above go into week 2.
