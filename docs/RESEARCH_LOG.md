@@ -990,3 +990,24 @@ offline.
 - `TIMETABLE.md`: weeks 3 and 7.
 
 **Open:** no study of name change among refugees in Malawi; rates of step 1 and step 2 unknown.
+
+## 2026-10-26 — NYU IRB and public name lists (gate G3)
+
+**Focus:** the user asked for research on whether NYU's IRB must review the aggregate use of public name lists.
+
+**Sources consulted:**
+- 45 CFR 46.102(e) and 46.104(d)(4) (Cornell LII, eCFR).
+- NYU HRPP: How to Apply, Forms & Guidance, the Human Subjects Research Decision Tree (PDF), and the NHSR checklist.
+- UAB on exempt category 4.
+- NIH IRBO on NHSR (for comparison).
+
+**Findings:**
+- A human subject requires interaction **or identifiable *private* information**. Information is private only if a person can reasonably expect it will not be made public. Published exam results and the UN list are public.
+- NYU's decision tree: publicly available existing data → "Not human subjects research. No application to the IRB office is needed."
+- NYU HRPP: investigators need no formal determination **if sure**; if unsure, contact the HRPP. Formal NHSR is an abridged Cayuse application, usually for an external party (funder, data provider, journal).
+- **Likely result: NHSR.** Reasons to still ask: the names are identifiable, some of minors; the topic is sensitive; publication is possible.
+- **Not covered:** contact with people (native-speaker review in 2027) and phase 3 case data **will** be human subjects research.
+
+**Output:** `docs/IRB_DETERMINATION.md` with three options (A self-determine; B email the HRPP, recommended; C formal NHSR via Cayuse) and a draft email. G3 updated in `TIMETABLE.md`; future IRB need noted under "not gates for the semester".
+
+**Gate status:** G3 stays **open (hard)**. The professor chooses A, B or C; it closes when a written answer is recorded.

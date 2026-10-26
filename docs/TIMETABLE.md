@@ -15,7 +15,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | --- | --- | --- | --- | --- | --- |
 | **G1** ⛔ | Approve the phase 0 scope (`SCOPE.md`): purpose, users, prohibited uses. This is week 1's "done when" | Professor | **All of phase 1** (week 3 onward) | Mon 2 Nov | Open (asked 26 Oct) |
 | **G2** ⛔ | Governments and law enforcement are not users (`SCOPE.md` §2) | Professor | Week 3 role model in the case schema; week 7 access controls | Mon 2 Nov | Open |
-| **G3** ⛔ | Does NYU's IRB need to confirm the aggregate use of public name lists (CongoNames, NESA)? If yes, the confirmation itself | Professor → IRB | Week 4: **downloading or processing any real name list**, and the naming profiles | Mon 9 Nov | Open |
+| **G3** ⛔ | Does NYU's IRB need to confirm the aggregate use of public name lists (CongoNames, NESA, the UN list)? Analysis in `IRB_DETERMINATION.md`: **likely Not Human Subjects Research** (public, not private, no interaction). The professor chooses **A** (self-determine, recorded in the log), **B** (email the HRPP; recommended) or **C** (formal NHSR via Cayuse) | Professor (→ HRPP if B or C) | Week 4: **downloading or processing any real name list**, and the naming profiles | Mon 9 Nov (B needs a few days; C about 1–2 weeks) | Open; analysis and draft email ready (26 Oct) |
 | **G4** ⚠ | Error costs and targets (`BENCHMARK_PROTOCOL.md` §7). Default: the ratios decided by the user on 26 Oct | Professor | Week 6: benchmark size (26,000 is derived from them) and generation; week 8 thresholds | Mon 23 Nov | Open; default in use |
 | **G5** ⚠ | `NAME_CHANGE.md` rule 5: no support for searches for people who changed names, including alleged perpetrators. Default: the rule as written | Professor | Week 7 protected-person routing; final wording of `SCOPE.md` §4 | Mon 30 Nov | Open; default in use |
 | **G6** ⚠ | A source for Burundian names (data dependency, not an approval) | Us | Week 4 `bi-kirundi` pack and Burundi profile | Mon 9 Nov | Open |
@@ -25,7 +25,8 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - named data stewards and an advisory group;
 - a tracing partner;
 - the text of UNHCR's 2022 policy;
-- a study of name change in Malawi.
+- a study of name change in Malawi;
+- **IRB review for anything involving contact with people** (native-speaker review in Jan–Mar 2027; phase 3 case data). This becomes a gate when that work is planned (`IRB_DETERMINATION.md`).
 
 **Today (26 Oct):** nothing is blocked yet, because week 3 starts on 2 Nov. **If G1 and G2 are still open on 2 Nov, week 3 does not start.**
 

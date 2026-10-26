@@ -45,6 +45,8 @@ weekly plan in `docs/TIMETABLE.md`. The situation research and
 - `docs/THREAT_MODEL.md`, `docs/DPIA.md`, `docs/DATA_RULES.md`,
   `docs/BENCHMARK_PROTOCOL.md` — NameBridge phase 0: misuse threats,
   data-protection pre-assessment, data rules, and the evaluation protocol.
+- `docs/IRB_DETERMINATION.md` — analysis for gate G3 (is the use of public
+  name lists human subjects research?), with options and a draft HRPP email.
 - `docs/NAME_CHANGE.md` — cross-cutting rules for deliberate name change in
   exile (applies to the graph, matching, benchmark, intake and integrations).
 - `namebridge/` — NameBridge code (Apache-2.0) and public name data
