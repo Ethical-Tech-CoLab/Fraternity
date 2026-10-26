@@ -4,10 +4,15 @@ Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** 
 
 ## Progress (as of 26 Oct 2026)
 
-**Phase 0 (weeks 1–2) is done.** Everything that doesn't need outside people is written. What remains open:
+**Phase 0 (weeks 1–2) is done**, a week ahead of the original week-2 end (30 Oct). Everything that doesn't need outside people is written: 7 phase 0 documents, the code skeleton, and a tested sample-size module.
 
-- the professor's review;
-- the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9).
+**Still open:**
+
+- the professor's review (questions below);
+- the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9);
+- UNHCR's 2022 policy text on law-enforcement transfers (could not be fetched);
+- no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
+- no Burundi name source yet (needed in week 4).
 
 **Next:** week 3, schema and validator (2–6 Nov).
 
@@ -20,20 +25,23 @@ Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** 
 | Data-protection assessment (desk version) | ✔ done | `DPIA.md` | `e608432` |
 | Data rules | ✔ done | `DATA_RULES.md` | `e608432` |
 | Benchmark protocol, including the cost of errors | ✔ done | `BENCHMARK_PROTOCOL.md` | `e608432` |
-| Benchmark size derived from the targets (26,000), and the realism plan (naming profiles) | ✔ done (extra) | `BENCHMARK_PROTOCOL.md` §2; `sample_size.py` | 26 Oct (see log) |
+| Benchmark size derived from the targets (26,000), and the realism plan (naming profiles) | ✔ done (extra) | `BENCHMARK_PROTOCOL.md` §2; `sample_size.py` | `070c525` |
 | Phase 0 exit check | ✔ done | `SCOPE.md` §8 | `e608432` |
-| Kinyarwanda research (week 2 groundwork) | ✔ done; packs in week 4 | `RESEARCH_LOG.md` | 26 Oct |
-| Verification of open items (Malawi Act sections, HRW chapter, Burundi paper, Rwanda conflict) | ✔ done, except UNHCR's 2022 policy text | `RESEARCH_LOG.md` | 26 Oct |
+| Kinyarwanda research (week 2 groundwork) | ✔ done; packs in week 4 | `RESEARCH_LOG.md` | `cbcf4fe` |
+| Verification of open items (Malawi Act sections, HRW chapter, Burundi paper, Rwanda conflict) | ✔ done, except UNHCR's 2022 policy text | `RESEARCH_LOG.md` | `cbcf4fe` |
 | UNICEF sources (child tracing, data, AI) | ✔ done (extra) | `RESEARCH_LOG.md` | `d27f327` |
 | CPIMS+ analysis and decision: integration target and baseline | ✔ done (extra) | `RESEARCH_LOG.md`; `SCOPE.md`; this file | `59c8130`, `8fb9343` |
-| Deliberate name change in exile: patterns and cross-cutting rules | ✔ done (extra) | `NAME_CHANGE.md` | 26 Oct |
+| Deliberate name change in exile: patterns and cross-cutting rules | ✔ done (extra) | `NAME_CHANGE.md` | `f02521d` |
 | Professor review of the phase 0 documents | ⏳ pending | — | — |
 
 **Waiting on the professor:**
 
 - the not-a-user rule for governments and law enforcement (`SCOPE.md` §2);
 - the error costs and targets (`BENCHMARK_PROTOCOL.md` §7);
-- whether NYU's IRB needs to confirm that the aggregate use of public name lists (CongoNames, NESA) is not human-subjects research.
+- whether NYU's IRB needs to confirm that the aggregate use of public name lists (CongoNames, NESA) is not human-subjects research;
+- `NAME_CHANGE.md` rule 5: no support for searches for people who changed their names, including alleged perpetrators.
+
+**Phase 0 documents:** `SCOPE.md`, `THREAT_MODEL.md`, `DPIA.md`, `DATA_RULES.md`, `BENCHMARK_PROTOCOL.md`, `NAME_CHANGE.md`, and `RESEARCH_LOG.md` (the evidence trail).
 
 ## Assumptions
 
