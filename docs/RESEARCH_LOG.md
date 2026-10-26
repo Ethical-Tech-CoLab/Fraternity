@@ -936,7 +936,7 @@ offline.
 **Focus:** close the items week 2 left unverified, and finish the Kinyarwanda groundwork (Tavily).
 
 **Sources consulted:**
-- Malawi, Data Protection Act 2024, primary text (MACA PDF).
+- Malawi, Data Protection Act 2024, primary text (PDF at mca.ac.mw).
 - HRW, *Leave None to Tell the Story*: [Geno1-3-10](https://www.hrw.org/reports/1999/rwanda/Geno1-3-10.htm) and [Geno1-3-09](https://www.hrw.org/reports/1999/rwanda/Geno1-3-09.htm).
 - Duchaj & Ntihirageza (2009), York University; Daley (2018), Oxford.
 - Kimenyi (1978), "Aspects of Naming in Kinyarwanda", *Anthropological Linguistics* 20(6).
