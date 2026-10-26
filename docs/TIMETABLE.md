@@ -1,6 +1,35 @@
 # Timetable — NameBridge, weekly scope of work
 
-Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a week-by-week plan for the rest of the fall semester. Earlier versions are in the git history.
+Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a week-by-week plan for the rest of the fall semester. Earlier versions are in the git history.
+
+## Progress (as of 26 Oct 2026)
+
+**Phase 0 (weeks 1–2) is done.** Everything that doesn't need outside people is written. What remains open:
+
+- the professor's review;
+- the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9).
+
+**Next:** week 3, schema and validator (2–6 Nov).
+
+| What | Status | Where | Commit |
+| --- | --- | --- | --- |
+| Scope: corridor, users, purposes, prohibited uses | ✔ done | `SCOPE.md` | `b160a33` |
+| Code skeleton and licences | ✔ done | `namebridge/` | `b160a33` |
+| Evidence check of the scope (16 sources) | ✔ done (extra) | `SCOPE.md` §7 | `a272130` |
+| Threat model | ✔ done | `THREAT_MODEL.md` | `e608432` |
+| Data-protection assessment (desk version) | ✔ done | `DPIA.md` | `e608432` |
+| Data rules | ✔ done | `DATA_RULES.md` | `e608432` |
+| Benchmark protocol, including the cost of errors | ✔ done | `BENCHMARK_PROTOCOL.md` | `e608432` |
+| Phase 0 exit check | ✔ done | `SCOPE.md` §8 | `e608432` |
+| Kinyarwanda research | ◐ started | `RESEARCH_LOG.md` | `e608432` |
+| UNICEF sources (child tracing, data, AI) | ✔ done (extra) | `RESEARCH_LOG.md` | `d27f327` |
+| CPIMS+ analysis and decision: integration target and baseline | ✔ done (extra) | `RESEARCH_LOG.md`; `SCOPE.md`; this file | `59c8130`, `8fb9343` |
+| Professor review of the phase 0 documents | ⏳ pending | — | — |
+
+**Waiting on the professor:**
+
+- the not-a-user rule for governments and law enforcement (`SCOPE.md` §2);
+- the error costs and targets (`BENCHMARK_PROTOCOL.md` §7).
 
 ## Assumptions
 
@@ -37,17 +66,17 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 ## At a glance
 
-| Week | Dates | §10 phase | Main work | Done when |
-| --- | --- | --- | --- | --- |
-| 1 | 19–23 Oct | 0. Governance | Corridor, users, purposes, prohibited uses; repo skeleton | Scope document approved by the professor |
-| 2 | 26–30 Oct | 0. Governance | Threat model, data-protection assessment (desk), benchmark protocol | Phase 0 exit criteria written |
-| 3 | 2–6 Nov | 1. Name corpus | Two-graph schema; language-pack template; Kinyarwanda and Kirundi research | Schema and validator in the repo |
-| 4 | 9–13 Nov | 1. Name corpus | Curate the Kinyarwanda, Kirundi and DRC packs; ICU / CLDR set-up | First packs load into the graph |
-| 5 | 16–20 Nov | 1. Name corpus | Reach the pilot corpus; negative constraints; review workflow | Graph v0.1, every edge sourced |
-| 6 | 23–27 Nov | 2. Linkage MVP | Synthetic benchmark (light week: Thanksgiving) | Gold set of matches, non-matches and families |
-| 7 | 30 Nov–4 Dec | 2. Linkage MVP | Preserve-first ingestion; transliteration; blocking; deterministic baseline | Baseline results on the benchmark |
-| 8 | 7–11 Dec | 2. Linkage MVP | Splink model plus graph features; calibration; evaluation | Results for every option tested |
-| 9 | 14–18 Dec | 2. Linkage MVP | Explanation view; evaluation report; release v0.1 | Phase 2 exit: offline results, no live decisions |
+| Week | Dates | §10 phase | Main work | Done when | Status |
+| --- | --- | --- | --- | --- | --- |
+| 1 | 19–23 Oct | 0. Governance | Corridor, users, purposes, prohibited uses; repo skeleton | Scope document approved by the professor | ✔ done 26 Oct (review pending) |
+| 2 | 26–30 Oct | 0. Governance | Threat model, data-protection assessment (desk), benchmark protocol | Phase 0 exit criteria written | ✔ done 26 Oct |
+| 3 | 2–6 Nov | 1. Name corpus | Two-graph schema; language-pack template; CPIMS+ field mapping; Kinyarwanda and Kirundi research | Schema and validator in the repo | next |
+| 4 | 9–13 Nov | 1. Name corpus | Curate the Kinyarwanda, Kirundi and DRC packs; ICU / CLDR set-up | First packs load into the graph | — |
+| 5 | 16–20 Nov | 1. Name corpus | Reach the pilot corpus; negative constraints; review workflow | Graph v0.1, every edge sourced | — |
+| 6 | 23–27 Nov | 2. Linkage MVP | Synthetic benchmark (light week: Thanksgiving) | Gold set of matches, non-matches and families | — |
+| 7 | 30 Nov–4 Dec | 2. Linkage MVP | Preserve-first ingestion; transliteration; blocking; deterministic and CPIMS+-style baselines | Baseline results on the benchmark | — |
+| 8 | 7–11 Dec | 2. Linkage MVP | Splink model plus graph features; calibration; evaluation | Results for every option tested | — |
+| 9 | 14–18 Dec | 2. Linkage MVP | Explanation view; evaluation report; release v0.1; CPIMS+ synonym export | Phase 2 exit: offline results, no live decisions | — |
 
 ## Week by week
 
@@ -61,8 +90,15 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 ### Week 2 — 26–30 Oct: risks and test rules (phase 0)
 
-✔ done 26 Oct: `THREAT_MODEL.md`, `DPIA.md`, `DATA_RULES.md`, `BENCHMARK_PROTOCOL.md`; exit check in `SCOPE.md` §8; Kinyarwanda research started (`RESEARCH_LOG.md`).
+- ✔ done 26 Oct: **threat model** in `THREAT_MODEL.md`: 10 misuse actors and 13 threats, each with its controls.
+- ✔ done 26 Oct: **data-protection assessment** in `DPIA.md`, following Malawi's Data Protection Act 2024, s. 30(3).
+- ✔ done 26 Oct: **data rules** in `DATA_RULES.md`: sharing, retention, disclosure, and incidents (72 hours).
+- ✔ done 26 Oct: **benchmark protocol** in `BENCHMARK_PROTOCOL.md`. The error costs were decided by the user: at the search step a missed candidate is worse; at the confirmation step a false match is worse (100 : 1 for minors).
+- ✔ done 26 Oct: **exit check** in `SCOPE.md` §8. Phase 0 is complete except for the gaps.
+- ◐ started 26 Oct: **Kinyarwanda research** (`RESEARCH_LOG.md`). A source conflict about fathers' surnames is still open, for week 4.
+- ✔ extra, 26 Oct: **UNICEF sources** and the **CPIMS+ code** were read. CPIMS+ was adopted as the integration target and baseline (`RESEARCH_LOG.md`).
 
+Plan:
 
 - **Threat model:** who could misuse the system (§8: stalkers, traffickers, hostile governments, armed groups) and which controls block each risk.
 - **Data-protection assessment (desk version):** what data the system would hold, why, for how long, and who could see it, using the ICRC handbook, Malawi's Data Protection Act 2024 and the RFL Code of Conduct (`SCOPE.md` §5).
