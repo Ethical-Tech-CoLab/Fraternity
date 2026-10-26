@@ -111,14 +111,14 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - ✔ done 26 Oct: **open items verified** against primary texts: Malawi Act sections, the HRW chapter, Duchaj & Ntihirageza. Still open: the text of UNHCR's 2022 policy on law-enforcement transfers, which could not be fetched.
 - ✔ extra, 26 Oct: **UNICEF sources** and the **CPIMS+ code** were read. CPIMS+ was adopted as the integration target and baseline (`RESEARCH_LOG.md`).
 
-Plan:
+Plan (all items done 26 Oct):
 
-- **Threat model:** who could misuse the system (§8: stalkers, traffickers, hostile governments, armed groups) and which controls block each risk.
-- **Data-protection assessment (desk version):** what data the system would hold, why, for how long, and who could see it, using the ICRC handbook, Malawi's Data Protection Act 2024 and the RFL Code of Conduct (`SCOPE.md` §5).
-- **Data rules (§10 phase 0):** data sharing, retention and deletion, disclosure, and incident response.
-- **Benchmark protocol (§9):** what the test set must contain; the metrics, including the fairness slices (§9.2); the splits by person and family and a temporal holdout (§9.3); name-only search measured separately from full-evidence resolution; and the cost of a false positive vs a false negative.
-- **Start the research:** Kinyarwanda naming (HRW 1999, the onomastic sources in §2.2).
-- **Done when:** the phase 0 exit criteria are written: purpose, benchmark protocol, data rules, threat model. Data stewards and an advisory group can't be named yet, so record that as a gap.
+- ✔ **Threat model** (`THREAT_MODEL.md`): who could misuse the system (§8: stalkers, traffickers, hostile governments, armed groups) and which controls block each risk.
+- ✔ **Data-protection assessment (desk version)** (`DPIA.md`): what data the system would hold, why, for how long, and who could see it, using the ICRC handbook, Malawi's Data Protection Act 2024 and the RFL Code of Conduct (`SCOPE.md` §5).
+- ✔ **Data rules (§10 phase 0)** (`DATA_RULES.md`): data sharing, retention and deletion, disclosure, and incident response.
+- ✔ **Benchmark protocol (§9)** (`BENCHMARK_PROTOCOL.md`): what the test set must contain; the metrics, including the fairness slices (§9.2); the splits by person and family and a temporal holdout (§9.3); name-only search measured separately from full-evidence resolution; and the cost of a false positive vs a false negative.
+- ✔ **Start the research** (`RESEARCH_LOG.md`): Kinyarwanda naming (HRW 1999, the onomastic sources in §2.2).
+- ✔ **Done when:** the phase 0 exit criteria are written (`SCOPE.md` §8): purpose, benchmark protocol, data rules, threat model. Data stewards and an advisory group can't be named yet, so record that as a gap.
 
 ### Week 3 — 2–6 Nov: schema (phase 1)
 
