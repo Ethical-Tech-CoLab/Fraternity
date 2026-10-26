@@ -7,7 +7,7 @@ Draft, 19 Oct 2026. The project is **NameBridge** (`CONCEPT-IDEA.md`). This is a
 - **Period:** Mon 19 Oct to Fri 18 Dec 2026 (9 weeks, assumed end of the NYU fall semester).
 - **Who:** me, with Claude writing much of the code; the professor reviewing.
 - **Scope this semester:** NameBridge §10 **phases 0–2**, compressed into 9 weeks. Phases 3–4 need an authorised tracing organisation and real cases, so they come after the semester and only if a partner is found.
-- **Pilot corridor (proposed):** the Great Lakes → Malawi (Dzaleka): Kinyarwanda, Kirundi and Congolese Swahili, with French and English as the languages of the records. This reuses the situation research. To confirm in week 1.
+- **Pilot corridor:** the Great Lakes → Malawi (Dzaleka): Kinyarwanda, Kirundi and Congolese Swahili, with French and English as the languages of the records. This reuses the situation research. Confirmed 26 Oct in `SCOPE.md` §1.
 - **Data:** synthetic only during the semester. No real case data until there is a lawful basis and a partner (§8, §9.1).
 - **Not used:** the other ideas in `SOLUTIONS.md` (kept for reference).
 
@@ -54,10 +54,10 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 ### Week 1 — 19–23 Oct: scope (phase 0)
 
 - ✔ done 19 Oct: `CONCEPT-IDEA.md` added to the repo, and §14 corrected.
-- **Corridor:** confirm the pilot corridor and its languages and scripts (proposal above). Note that §2.3 (Burundi) is an open question.
-- **Users and purposes:** who would use NameBridge (tracing caseworkers, family-tracing platforms), for what (§8 control 1), and the prohibited uses (§12 "should not have").
-- **Repo:** a skeleton for the code (`namebridge/`): package, tests, data folder for the graph, and the licence (code open source; graph CC BY 4.0).
-- **Done when:** a one-page scope is written and the professor has seen it.
+- ✔ done 26 Oct: **corridor** confirmed in `SCOPE.md` §1 (DRC 65%, Burundi 22%, Rwanda 12% of Dzaleka, Mar 2025); §2.3 (Burundi) kept as an open question.
+- ✔ done 26 Oct: **users, purposes and prohibited uses** in `SCOPE.md` §2–4. Proposed: law enforcement and governments are not users in the pilot (to confirm with the professor).
+- ✔ done 26 Oct: **repo** skeleton `namebridge/`: Python package, pytest suite, `data/graph` and `data/packs`, licences (code Apache-2.0; graph and packs CC BY 4.0).
+- **Done when:** a one-page scope is written (✔ `SCOPE.md`) and the professor has seen it (pending).
 
 ### Week 2 — 26–30 Oct: risks and test rules (phase 0)
 

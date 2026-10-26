@@ -40,6 +40,10 @@ weekly plan in `docs/TIMETABLE.md`. The situation research and
   cross-border name intelligence for missing-person search (relates to 2F).
 - `docs/TIMETABLE.md` — NameBridge weekly scope of work to the end of the
   fall semester (Dec 2026).
+- `docs/SCOPE.md` — NameBridge phase 0 scope: pilot corridor, users,
+  purposes and prohibited uses.
+- `namebridge/` — NameBridge code (Apache-2.0) and public name data
+  (CC BY 4.0).
 
 ## Sourcing discipline
 

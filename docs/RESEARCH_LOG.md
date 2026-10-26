@@ -751,3 +751,24 @@ disclosure (8) and challenge and correction (9) in week 9. Controls 10 and
 under "Differences" as later work. What 18 Dec delivers: NameBridge phases
 0–2 for the Great Lakes corridor, with the safeguards that can be tested
 offline.
+
+## 2026-10-26 — NameBridge week 1 (phase 0): scope and repo skeleton
+
+**Focus:** `TIMETABLE.md` week 1, done a week late (planned 19–23 Oct).
+
+**Sources consulted:**
+- `DZALEKA_SITUATION_RESEARCH.md` §1, §2.4 — population by origin (services.dzaleka.com/data, Mar 2025) and new-arrival mix (UNHCR).
+- `CONCEPT-IDEA.md` §2.3, §8, §10 phase 0, §12.
+
+**Findings / decisions:**
+- Pilot corridor confirmed: Great Lakes → Malawi. DRC 37,245 (65%), Burundi 12,604 (22%), Rwanda 7,135 (12%) of 57,438 in Dzaleka, Mar 2025; together about 99%.
+- Users: tracing caseworkers in authorised services (phase 3 onward, with a partner); linguists and community experts for the public graph; FSF only through the intake guide; the researchers this semester. Not users: the public, families searching directly, law enforcement and governments (proposed; to confirm with the professor).
+- Allowed purposes and prohibited uses written from §8 control 1 and the §12 "should not have" list, plus no locating people for enforcement or surveillance.
+- Licences: code Apache-2.0 (patent grant); graph and packs CC BY 4.0.
+- Burundi sibling-surname question (§2.3): the Kirundi pack will record surname agreement as `unknown` until sourced.
+
+**Files touched:** `docs/SCOPE.md` (new), `namebridge/` (new skeleton), `docs/TIMETABLE.md`, `README.md`, `docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:**
+- Professor to see `SCOPE.md` (week 1 "done when").
+- Week 2: threat model, desk data-protection assessment, data rules, benchmark protocol; start Kinyarwanda naming research.
