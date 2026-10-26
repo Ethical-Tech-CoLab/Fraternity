@@ -39,6 +39,7 @@ New arrivals show the same mix: 62% DRC, 19% Burundi, 7% Rwanda (UNHCR). The thr
 | User | Role | When |
 | --- | --- | --- |
 | Tracing caseworkers in authorised services: the ICRC and national Red Cross societies (in Dzaleka, the Malawi Red Cross Society), REFUNITE, UNHCR protection staff | Run the matching and review candidates. They make every identity decision (§5.7) | Phase 3 onward, only with a partner |
+| Child-protection caseworkers using **CPIMS+** (UNICEF, UNHCR, Save the Children and other agencies) [S17] | Load NameBridge's exported synonym lists into CPIMS+ search; later, receive explained candidates from a companion service | Synonym export from v0.1; companion service after the semester, only with an agency running CPIMS+ |
 | Linguists and community experts | Propose and review edges in the public name graph | From phase 1 (a gap this semester: no outside reviewers yet) |
 | FSF | Uses the intake guide only, and refers cases to an authorised tracing service. Does not run the system (§10 final phase) | Final phase |
 | The researchers (student and professor) | Build and evaluate on synthetic data | This semester |
@@ -75,6 +76,7 @@ These come from §8 and the §12 "should not have" list. The code and the docume
 - Disclosing a location or contact details because of a high score (control 6).
 - Ingesting scraped social-media data, or any real case data, this semester.
 - Storing raw biometrics.
+- Reading or storing ethnicity, sub-ethnicity, clan or religion fields from a connected system, even when that system holds them. CPIMS+ records include ethnicity fields [S17].
 - Adding LLM-generated name equivalences without a source. They enter as `proposed` only.
 - Using one global threshold.
 
@@ -99,6 +101,8 @@ These come from §8 and the §12 "should not have" list. The code and the docume
 | Benchmark | Synthetic |
 | Evaluation report | Covers every option tested |
 | Release | v0.1, 18 Dec |
+| CPIMS+ synonym export | Week 9. **Reviewed, high-confidence attested variants only** (e.g. Jean / Yohana), never cognates or doubtful edges: a synonym list flattens type, confidence and context, so weak edges would cause false matches |
+| CPIMS+ companion service | A design note this semester; built after the semester with a partner. It is a separate service over the Primero API: it reads tracing requests and cases, returns explained candidates, and writes nothing back automatically. Staying separate keeps NameBridge under Apache-2.0 (Primero is AGPL-3.0) |
 | Licences | Code under Apache-2.0 (open source, with a patent grant). Name graph and packs under CC BY 4.0, compatible with CC BY sources such as CongoNames [S16] |
 
 **Candidate source for weeks 4–6: CongoNames** [S16]. It holds 8,053,983 names from DRC state-exam lists (2008–2023, 12 provinces) under CC BY 4.0. These are **real people's full names**, so they never enter `namebridge/data`. If the week 5 source review approves it, only aggregate statistics (token frequencies, structure by province) are used, for term-frequency weights and for realistic synthetic names.
@@ -162,3 +166,4 @@ These come from §8 and the §12 "should not have" list. The code and the docume
 - [S14] Malawi, [Data Protection Act 2024](https://www.mca.ac.mw/mca-siteup/uploads/Data%20Protection%20Act%202024.pdf), s. 2 and ss. 36–42; [Tech Hive Advisory summary](https://www.techhiveadvisory.africa/insights/malawis-data-protection-act-aligning-to-the-new-regulatory-framework).
 - [S15] PBS NewsHour, ["When refugees scatter, here's how family members can find each other"](https://www.pbs.org/newshour/world/refugees-find-each-other).
 - [S16] Tshabu Ngandu et al., ["CongoNames Corpus"](https://www.mdpi.com/2306-5729/11/7/169), *Data* 11(7):169, 8 Jul 2026; [code](https://github.com/bernard-ng/drc-names-corpus). Dataset licence: CC BY 4.0.
+- [S17] [Primero / CPIMS+](https://www.primero.org): source code at [primeroIMS/primero](https://github.com/primeroIMS/primero) (AGPL-3.0), `app/services/matching_service.rb` and `language_service.rb`, read 26 Oct 2026; [community forum on family tracing](https://support.primero.org/forum/t/family-tracing-and-reunification/318).

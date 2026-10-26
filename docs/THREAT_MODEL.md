@@ -54,6 +54,7 @@ Codes: **C1–C12** are the §8 controls. **DR-** rules are in `DATA_RULES.md`. 
 | T10 | M10 commits real names to the repo or publishes realistic records (A4; Disclosure, Non-compliance) | **Medium** | Medium | DR-1: no real person's data in the repo. CongoNames is used for aggregate statistics only. The generator recombines name tokens and never copies a full real name together with real attributes | Wk 6 (generator check) |
 | T11 | Tampering with code or model changes who is found (A6; integrity) | Low | Medium | Reviewed commits. Regression suite. Versioned, reproducible runs (C11) | Wk 3 on |
 | T12 | People whose names are in partner records do not know about the matching (A2; Unawareness) | n/a | Medium | The partner's privacy notices. Purpose limitation. Right of access and correction through the partner (C9) [T7][T8] | Phase 3 |
+| T13 | A connected system (e.g. CPIMS+) sends fields NameBridge must not hold: ethnicity, sub-ethnicity, religion, photos (A2; Non-compliance, Identifying) [T13] | n/a | **High** | Ingestion **allowlist**: only named fields are accepted; any other field is dropped before storage, and the drop is logged without its value. Contract test against Primero's field list | Wk 3 (allowlist), wk 7 |
 
 ## 4. What the threat model changes in the design
 
@@ -62,6 +63,7 @@ Codes: **C1–C12** are the §8 controls. **DR-** rules are in `DATA_RULES.md`. 
 3. **Minor equals protected.** In the synthetic case schema, any person under 18 at the record date is flagged by default (C7).
 4. **Rate and pattern checks on searches.** These go into the access-log design (week 7), so that bulk or list-based searching stands out.
 5. **No "find by name" endpoint for anyone outside the caseworker role.** This holds even in demos.
+6. **Field allowlist on ingestion.** Every adapter (CPIMS+ first) accepts only the fields NameBridge needs (`DPIA.md` (d)). It never receives a field and then ignores it (T13).
 
 ## 5. Residual risks and gaps
 
@@ -84,3 +86,4 @@ Codes: **C1–C12** are the §8 controls. **DR-** rules are in `DATA_RULES.md`. 
 - [T10] ICRC, [*Handbook on Data Protection in Humanitarian Action*, 3rd ed.](https://www.icrc.org/en/data-protection-humanitarian-action-handbook), 2024 (ch. 17, Artificial Intelligence).
 - [T11] UNHCR, [Policy on the Protection of Personal Data of Persons of Concern](https://www.ictworks.org/wp-content/uploads/2017/10/UNHCR-data-protection-policy.pdf), 2015, §6.3.2. Transfers to law enforcement are allowed only for a serious criminal offence, to a competent authority, among other conditions. NameBridge's rule is stricter.
 - [T12] Situation research: `DZALEKA_SITUATION_RESEARCH.md` §2.4 and §5.1.
+- [T13] [Primero / CPIMS+](https://www.primero.org): source code at [primeroIMS/primero](https://github.com/primeroIMS/primero) (AGPL-3.0), `app/services/matching_service.rb` and `language_service.rb`, read 26 Oct 2026; [community forum on family tracing](https://support.primero.org/forum/t/family-tracing-and-reunification/318).

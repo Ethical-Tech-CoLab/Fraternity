@@ -9,6 +9,7 @@ How well each option finds the right person or relative among records with diffe
 The options are:
 
 - **Option 5:** deterministic and phonetic rules.
+- **CPIMS+-style baseline:** what caseworkers actually use today. It is reimplemented from Primero's open source [B10]: name tokens encoded with Double Metaphone, a boosted full-text match over the same fields, scores divided by the best score in the list, and the labels "likely" and "possible". Ethnicity fields are left out, so the baseline runs without them (C12).
 - **Option 2:** Splink alone.
 - **Option 3:** graph expansion alone.
 - **Option 1:** the hybrid.
@@ -57,6 +58,7 @@ Errors are injected **GeCo-style** [B8], with documented rates per source:
 | Truncation and missing diacritics | MRZ and ASCII fields |
 | Incomplete or rounded ages; age heaping | "about 10" |
 | Places renamed over time | Burundi provinces 2025; DRC provinces 2015 |
+| **Child's report:** young children give only first names or nicknames, or confuse relationships ("brother" for "father") [B10] | A tracing request recording only "Papa Jean" |
 | **Hard negatives** | Different people with common names, same age band, same area |
 | **Adversarial pairs** | Different families built to look alike |
 
@@ -149,3 +151,4 @@ The cost of each kind of error depends on the step (decided 26 Oct 2026; to conf
 - [B7] ["CongoNames Corpus"](https://www.mdpi.com/2306-5729/11/7/169), *Data*, 2026: 8,053,983 records; 78.5% have three tokens.
 - [B8] Christen & Vatsalan, "Flexible and extensible generation and corruption of personal data", CIKM 2013 (GeCo); [NAACCR overview of GeCo error types](https://www.naaccr.org/wp-content/uploads/2018/07/Evaluating-Record-Linkage-Software-Using-Representative-Synthetic-Datasets-Liu.pdf).
 - [B9] Binette et al., ["How to Evaluate Entity Resolution Systems: An Entity-Centric Framework"](https://arxiv.org/abs/2404.05622), 2024; Linacre, ["Measuring the accuracy of record linkage"](https://www.robinlinacre.com/measuring_data_linking_accuracy) (labels and adversarial tests); Splink, [edge metrics](https://moj-analytical-services.github.io/splink/topic_guides/evaluation/edge_metrics.html).
+- [B10] [Primero / CPIMS+](https://www.primero.org): source code at [primeroIMS/primero](https://github.com/primeroIMS/primero) (AGPL-3.0), `app/services/matching_service.rb` and `language_service.rb`, read 26 Oct 2026; [community forum on family tracing](https://support.primero.org/forum/t/family-tracing-and-reunification/318).

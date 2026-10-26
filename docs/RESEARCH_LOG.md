@@ -885,3 +885,22 @@ offline.
 **Files touched:** `docs/RESEARCH_LOG.md`.
 
 **Open questions / next steps:** confirm the integration direction with the user; if confirmed, update `SCOPE.md` (users and deliverables), `BENCHMARK_PROTOCOL.md` (new baseline), and the week 3 schema (a record shape compatible with Primero's case and trace fields).
+
+## 2026-10-26 — Decision: CPIMS+ as integration target and baseline
+
+**Decision (user):** adopt Primero / CPIMS+ as NameBridge's main integration target and comparison baseline, **without making it a dependency**. The core stays generic, so it remains usable with the Red Cross, REFUNITE and FSF.
+
+**Changes:**
+- `SCOPE.md`: CPIMS+ caseworkers added as future users; synonym export (week 9) and companion service (after the semester) added as deliverables; ban on reading ethnicity, sub-ethnicity, clan or religion fields from connected systems.
+- `BENCHMARK_PROTOCOL.md`: CPIMS+-style baseline; new child-report error type.
+- `TIMETABLE.md`: weeks 3, 6, 7 and 9, and the post-semester table.
+- `THREAT_MODEL.md`: T13, unwanted fields via the API; design change 6, ingestion allowlist.
+
+**Why:** CPIMS+ has no name-variant knowledge, an English-oriented phonetic code and relative scores (previous entry). It is the most direct route for NameBridge's variants to reach caseworkers.
+
+**Limits accepted:**
+- Synonym export carries only high-confidence variants; the calibrated scores, abstention and explanations need the companion service.
+- CPIMS+ data is less structured than ours.
+- The focus shifts towards children, so the 0.999 confirmation rule applies.
+- AGPL means NameBridge stays a separate service.
+- No CPIMS+ deployment found in Malawi, so it is a route to scale in the region, not evidence for Dzaleka.

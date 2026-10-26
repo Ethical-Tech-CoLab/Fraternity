@@ -75,6 +75,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 - **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator.
 - **Case graph** (§5.1B): schema only, kept empty and separate.
+- **CPIMS+ mapping:** map the case schema to Primero's case and tracing-request fields (`name`, `name_other`, `name_nickname`, relatives' names). Names arrive as one typed string, so the parser must not rely on separate fields. An ingestion allowlist refuses ethnicity, sub-ethnicity and religion (`THREAT_MODEL.md` T13).
 - **Language-pack template** (§11).
 - **Regression suite:** set up the test suite that every later change must pass (§12).
 - **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3).
@@ -101,6 +102,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 - **Synthetic gold set** (§9.1): invented people and families, with the corridor's error types (order, spelling, Christian names, renamed places, typos, incomplete dates, OCR errors), hard negatives with common names, and adversarially similar records.
 - **Splits:** by person and family, so the same identity can't appear in both training and test; plus a temporal holdout (later invented records with newer patterns, e.g. renamed provinces).
+- **Child-report errors:** first names or nicknames only, and relationships confused, as in a young child's tracing request (`BENCHMARK_PROTOCOL.md` §2.3).
 - **Done when:** the gold set has reviewed matches, non-matches and family relationships.
 
 ### Week 7 — 30 Nov–4 Dec: pipeline (phase 2)
@@ -109,6 +111,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - **Transliteration and variants** as hypotheses, with the path that produced each one (§5.4).
 - **Blocking:** the strategies in §5.5, aiming for high recall.
 - **Baseline:** deterministic rules and phonetic matching (option 5).
+- **CPIMS+-style baseline:** Double Metaphone, boosted field match and score/max normalisation, reimplemented from Primero's source.
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
 - **Consent and lawful basis** (§8 control 4): every case record stores why it may be used and with whom it may be shared.
 - **Protected-person flags** (§8 control 7): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
@@ -130,6 +133,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - **Challenge and correction** (§8 control 9): a match decision can be challenged and reversed, and corrections reach the graph edges and decisions that depended on it (§13 question 10).
 - **Evaluation report:** results, limits (synthetic data only), and how the scores compare with the design judgments in §6.
 - **Release v0.1:** graph, packs, code, benchmark generator, report.
+- **CPIMS+ synonym export:** reviewed, high-confidence attested variants only, as search synonym lists. Plus a design note for the companion service over the Primero API.
 - **Semester summary** for the professor.
 - **Done when:** the phase 2 exit is met: offline results, and no live case decisions; controls 4, 7, 8 and 9 pass their tests on synthetic data.
 
@@ -139,6 +143,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 | --- | --- | --- |
 | Jan–Mar 2027 | More packs (Lingala, Mashi and other eastern DRC languages); native-speaker review of existing packs | None |
 | Jan 2027 on | Open research questions (§13), especially 1, 3, 4 and 7 | None |
+| Jan 2027 on | CPIMS+ companion service over the Primero API (separate service, Apache-2.0) | Needs an agency running CPIMS+ for testing beyond synthetic data |
 | When ready | Phase 3: shadow pilot beside an authorised tracing workflow | Needs a partner (e.g. REFUNITE, the Red Cross, UNHCR) and real data under their rules |
 | After phase 3 | Phase 4: controlled deployment; federation only if needed | Phase 3 exit criteria met |
 | Final phase | Offer NameBridge free of charge to the tracing organisations **and to Fraternidade Sem Fronteiras (FSF)**, for its work with children in care (foster children, the Órfãos do Congo project). FSF does not run the system: it uses the intake guide and refers cases to an authorised tracing service such as the Red Cross. Cases involving minors follow the protected-person rules (§8, control 7). Details: `CONCEPT-IDEA.md` §10, "Final phase" | Tested result in hand. NameBridge is not sold |
