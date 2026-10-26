@@ -42,7 +42,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
 - no Burundi name source yet (needed in week 4).
 
-**Next:** week 3, schema and validator (2–6 Nov), **once gates G1 and G2 are resolved** (see above).
+**Next:** week 3, schema and validator. The user decided on 26 Oct to keep G1 as a hard gate and to settle G1–G3 with the professor on **Wed 28 Oct**. If G1 and G2 are resolved then, week 3 starts that day (planned for 2 Nov); if not, it waits.
 
 **Done ahead of schedule** (◐ marks in weeks 3–7): CPIMS+ field list; the Burundi sibling question; naming-profile sources and method; CongoNames source review; real-pattern sources; intake-guide rules; CPIMS+ baseline algorithm.
 
