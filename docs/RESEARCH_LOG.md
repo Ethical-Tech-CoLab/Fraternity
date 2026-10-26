@@ -805,3 +805,46 @@ offline.
 **Files touched:** `docs/THREAT_MODEL.md`, `docs/DPIA.md`, `docs/DATA_RULES.md`, `docs/BENCHMARK_PROTOCOL.md` (new); `docs/SCOPE.md` (§8 exit check, Rwanda conflict, 2026 figure); `docs/TIMETABLE.md`; `README.md`.
 
 **Open questions / next steps:** professor review of the five phase 0 documents, especially the cost ratios and targets (`BENCHMARK_PROTOCOL.md` §7) and the not-a-user rule; week 3: schema and validator, including the ethnicity guard (`THREAT_MODEL.md` §4.2).
+
+## 2026-10-26 — UNICEF sources on child tracing, data protection and AI
+
+**Focus:** the user asked whether UNICEF has reports related to the laws and procedures in the phase 0 documents.
+
+**Sources consulted:**
+- Primero / CPIMS+ — [primero.org](https://www.primero.org), [cpims.org](https://www.cpims.org), [UNICEF Digital Impact](https://www.unicef.org/digitalimpact/primero-information-management-system), [Admin Guide](https://support.primero.org/pdfs/primeroIMS/PrimeroAdminGuide/master/book.pdf), [User Guide](https://support.primero.org/pdfs/primeroIMS/PrimeroCPIMSUserGuide/master/book.pdf), [API doc](https://github.com/primeroIMS/primero/blob/main/doc/api.md), [community forum](https://support.primero.org/forum/t/family-tracing-and-reunification/318), [CPIMS+ review 2024](https://socialserviceworkforce.org/wp-content/uploads/2024/03/CPIMS_Review_Report.pdf).
+- UNICEF, [Policy on Personal Data Protection](https://www.unicef.org/documents/policy-personal-data-protection) (effective 15 Jul 2020).
+- UNICEF Innocenti, [Guidance on AI and Children 3.0](https://www.unicef.org/innocenti/media/11991/file/UNICEF-Innocenti-Guidance-on-AI-and-Children-3-2025.pdf), Dec 2025.
+- UNICEF + The GovLab (NYU), [Responsible Data for Children (RD4C)](https://rd4c.org) and its [22-question audit tool](https://files.rd4c.org/22-Questions-to-Assess-RD4C-tool.pdf).
+- Government of Malawi / UNICEF Malawi, [Reference Manual for Child Protection Workers](https://www.unicef.org/malawi/media/6011/file/Government%20of%20Malawi%20-%20Reference%20Manual%20for%20Child%20Protection%20Workers.pdf).
+- Malawi, [Child Care, Protection and Justice Act 2010](https://justice.gov.mw/sites/default/files/2021-06/Child%20Care%2C%20Protection%20and%20Justice%20Act.pdf).
+- ICRC/IRC/SCUK/UNICEF/UNHCR/WVI, [Inter-Agency Guiding Principles on UASC](https://www.icrc.org/en/publication/1101-inter-agency-guiding-principles-unaccompanied-and-separated-children) (2004).
+- UNICEF, [Programmatic Guidance on Cross-Border Case Management](https://clearinghouse.unicef.org/download-ch-media/c2e55ade-f072-4e23-927e-dc7ebbbbe43c) — snippet only; full text could not be fetched.
+- UNICEF MENA, [Children on the Move in North Africa](https://www.unicef.org/mena/media/28791/file/pub2025-003-l-children-on-the-move-in-north-africa-and-along-key-routes%20(1).pdf.pdf), 2025.
+- UNICEF/DLA Piper, [Birth Registration – Phase Two](http://citizenshiprightsafrica.org/wp-content/uploads/2016/08/UNICEF-Comp-laws-Birth-Registration2_2016.pdf), 2016 (Malawi section).
+
+**Findings:**
+- **Primero / CPIMS+ is the closest existing system.** It is UNICEF-led inter-agency, open source, a certified digital public good, and has more than 10,000 users in more than 60 countries.
+  - Its family-tracing module matches caregivers' tracing requests against registered children. Matching is configured by choosing which *fields* to compare (Solr-based). Results are labelled only "Possible" or "Likely".
+  - It descends from RapidFTR, built for **Congolese refugees in Uganda** (2012–14).
+  - It has a tracing-consent field and proGres / ICRC reference fields, and an API with `potential_matches` endpoints.
+  - Interface locales listed (v1.7) are en, fr, ar, so, es, bd, id, ku: no Swahili, Kinyarwanda or Kirundi.
+  - No evidence found of culturally aware name-variant handling. That is the gap NameBridge addresses.
+  - Licence: "please carefully read our LICENSE" (not yet read). Malawi deployment: not found.
+  - **Implication:** NameBridge could be offered as a name-variant layer for CPIMS+, via its API or as search synonyms, rather than a separate system. This is a decision for the user and the professor.
+- **RD4C is UNICEF + The GovLab at NYU.** It has 7 principles and a 22-question audit tool; NameBridge can be checked against it. It is an NYU link for the professor.
+- **UNICEF Guidance on AI and Children 3.0** has 10 requirements: safety, data and privacy, non-discrimination and fairness, transparency and explainability, best interests, and others. It says data processing for children on the move or without identification "should not entail large-scale, indiscriminate and wide-ranging collection" — matches DR-1 and the DPIA's minimisation.
+- **UNICEF Policy on Personal Data Protection (2020)** has sections on automated decision-making, transfers, breach, and emergency contexts. It applies if UNICEF is a partner.
+- **Malawi child law:**
+  - The Child Care, Protection and Justice Act 2010 defines a child as under 16. The Constitution (amended 2017) says under 18 and prevails (UNICEF Malawi manual). NameBridge uses under 18 — consistent.
+  - A guardian must be resident in Malawi (s. 38). This matters for consent and representation of unaccompanied children (`DPIA.md` (c)).
+  - The manual's best-interest determination is a four-question test, citing the UNHCR BID guidelines (2008).
+- **Scale:** Dzaleka registered **756 unaccompanied minors in 2016** (academia.edu study, `[unverified]`), against 67 registered unaccompanied or separated children with the Red Cross in Dec 2025 (USCRI). This is not the same measure; keep both.
+- **Cross-border tracing:** UNICEF guidance recommends regional digital platforms, with tracing started within 72 hours of identifying a child (MENA 2025).
+
+**Files touched:** `docs/RESEARCH_LOG.md`.
+
+**Open questions / next steps:**
+- Decide whether NameBridge targets CPIMS+ integration (affects week 3 schema and the API).
+- Read Primero's LICENSE and matching code.
+- Run the RD4C 22 questions on NameBridge.
+- Try the cross-border case management guidance again.
