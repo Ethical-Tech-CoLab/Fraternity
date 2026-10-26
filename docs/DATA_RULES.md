@@ -24,7 +24,14 @@ Draft, 26 Oct 2026. These are the rules for data sharing, retention and deletion
    - province-level distributions.
 
    Never full names, rows, or exam IDs.
-3. **Synthetic records** combine tokens at random. A generated full name is never paired with real attributes (a real date of birth, a real school list, real relatives).
+
+   **Study, keep the profile, delete** (decided 26 Oct 2026):
+   1. Download the public list into `~/namebridge-ref/<source>/`. That is outside the repo and outside iCloud Drive (`~/Desktop` and `~/Documents` may be synced). The disk is encrypted with FileVault (checked 26 Oct 2026); optionally, use an encrypted disk image as well.
+   2. Build the **naming profile** locally (`BENCHMARK_PROTOCOL.md` §2.4): only elements seen 5 or more times; no pattern linking names to ethnicity, clan, tribe or religion.
+   3. Run the **copy test** in the same session (only the percentage is kept).
+   4. **Delete the raw list.** Keep the profile, the copy-test result, the script, and the source's URL and checksum, so anyone can reproduce the step from the public source.
+   5. Note the use in the evaluation report: what was used, what was kept, what was deleted, and why. Cite the authors, as their licence requires.
+3. **Synthetic records** recombine elements following the naming profiles, and invent elements for rare-name slots. A generated full name is never paired with real attributes (a real date of birth, a real school list, real relatives).
 4. **Examples in docs and tests** use invented names, or names already used as public examples in the sources (e.g. MUGISHA Jean [R3]). Never a living private person's name.
 5. **Graph edges** carry a source, licence, confidence and `review_status` (§5.1A). LLM suggestions enter only as `proposed`.
 6. **No ethnicity, clan, tribe or religion** attributes anywhere in the graph or the schema (`THREAT_MODEL.md` §4.2).

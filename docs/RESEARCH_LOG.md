@@ -904,3 +904,29 @@ offline.
 - The focus shifts towards children, so the 0.999 confirmation rule applies.
 - AGPL means NameBridge stays a separate service.
 - No CPIMS+ deployment found in Malawi, so it is a route to scale in the region, not evidence for Dzaleka.
+
+## 2026-10-26 — Benchmark size and realism: naming profiles
+
+**Focus:** the user questioned the 3,000-person benchmark, which Claude had chosen without a derivation, and asked how to bring reality into synthetic data without exposing real people.
+
+**Decisions (user):**
+- **Size from the targets.** `namebridge/src/namebridge/benchmark/sample_size.py` (with tests) derives the minimum from `BENCHMARK_PROTOCOL.md` §7: **25,300** people. Set to **26,000** (about 8,700 families, about 78,000 records), with equal thirds by origin (re-weighted to Dzaleka's real mix) and about half minors.
+  - The binding constraint is minors' precision ≥ 0.999: 4,742 pairs with one false match allowed, × a design effect of 1.6.
+  - The fairness slices need 1,471 pairs each.
+- **"Patterns with sources, never people."** Five layers of reality: names, structure, variation, error rates and demography. Each parameter is sourced.
+- **Naming profiles** (the user's idea): study the real list, keep only the findings, delete the raw data. Generate by recombining common elements and inventing rare ones (minimum 5 occurrences). No patterns of ethnicity, clan, tribe or religion.
+- **Realism checks:** fidelity test (Jensen–Shannon divergence, local, only numbers leave), copy test (percentage only), a real-pattern test set from public variants, and a sensitivity analysis over error rates.
+- **Security vs ethics:** FileVault is on and there is no Time Machine destination; iCloud Drive is active, so reference data lives in `~/namebridge-ref/`, outside synced folders. Encryption addresses leaks; minimisation (deleting the raw data) addresses the ethics.
+- **For the professor:** whether NYU's IRB must confirm the aggregate use of public name lists.
+
+**New sources:**
+- NESA Rwanda exam result lists (2024/25).
+- UN Security Council 1533 (DRC) sanctions-list aliases (`KAKOLELE`/`KAKORERE`, `MPAMO`/`MPANO`, `LUMISA`/`LUMINSA`/`LUMWINSA`).
+- Kinyarwanda spelling reform, 13 Oct 2014 (met pushback, so old and new forms coexist).
+- IJPDS 2023, South African health records: about 22% of name values differ between records of the same person; algorithms built on anglicised names fail on local names.
+- Uganda EMR deduplication preprint, 2025.
+- IJPDS: name errors are more frequent when the name is unfamiliar to whoever records it.
+
+**Files touched:** `docs/BENCHMARK_PROTOCOL.md` (§2.1, §2.2, new §2.4, §8, §9, sources B11–B16), `docs/DATA_RULES.md` (DR-1), `docs/TIMETABLE.md` (weeks 4–6, progress, questions for the professor), `namebridge/src/namebridge/benchmark/`, `namebridge/tests/test_sample_size.py`.
+
+**Open:** a Burundi name source; fidelity limits are to be set before the comparison in week 6.
