@@ -788,3 +788,20 @@ offline.
 **Files touched:** `docs/SCOPE.md`, `docs/TIMETABLE.md` (weeks 2 and 5), `docs/RESEARCH_LOG.md`.
 
 **Open questions / next steps:** professor review of `SCOPE.md`; the unverified items above go into week 2.
+
+## 2026-10-26 — NameBridge week 2 (phase 0): threats, DPIA, data rules, benchmark
+
+**Focus:** `TIMETABLE.md` week 2, researched with Tavily; four separate documents, as the user chose. The user approved the proposed cost-of-errors default (missed candidate worse at retrieval; false match worse at confirmation).
+
+**Sources consulted:** cited per document ([T*], [D*], [R*], [B*]). New since the scope check: ICRC 2022 RFL breach (515,000 people); RFL guide §7.3.2 (no contact details without the located person's consent) and §7.4.3 (closure); IFRC PrepareCenter ("sometimes traffickers are parents/relatives"; consent impossible for sought persons, so vital or public interest is used); Malawi DPA 2024 s. 17 (children), s. 30 (DPIA contents, submitted to MACRA before processing), ss. 19–26 (rights incl. against solely automated decisions); UNHCR 2015 policy §6.3.2 (law-enforcement transfers only for serious crime etc.); LINDDUN; IASC data-responsibility guidance 2023; GeCo (Christen); entity-centric ER evaluation (Binette 2024); Splink evaluation docs; DRC Family Code primary text (2017 consolidation, arts 56–64); UNHCR DRC situation (Malawi 41,071 DRC, 30 Apr 2026).
+
+**Findings:**
+- DRC Family Code (primary text): art. 56 order and spelling of name elements immutable; art. 57 same-family members with the same nom must add different complementary elements; art. 59 parents choose the name; art. 61 a parent who transmits a name must add at least one different element; art. 62 a married woman keeps her name and may add her husband's; art. 64 changes only by court. So DRC siblings can share a partial name — partial agreement is evidence.
+- **Kinyarwanda (start of research):** HRW 1999 — written only since the early 20th century; official orthography often not followed (e.g. *burugumestri* / *burugumesteri*); most Rwandans do not share a family name. Records write the surname first, often in capitals; the ID card has one field, *Amazina*. **Conflict:** The New Times, 6 May 2026, says children "traditionally take the father's surname" and that some urban families now reconsider it. Law 71/2024 art. 39 forbids only bearing *all* of a parent's names. Next: find onomastic or statistical evidence (week 4).
+- An unaccompanied child may have no parent or guardian to consent (s. 17), so the lawful basis must be vital interest with a best-interest assessment, not consent.
+- Phase 0 exit: complete except the stewards and advisory group (gaps); phase 1 can start.
+- `[unverified]`: Malawi DPA section numbers come from summaries (check against the Act); the HRW chapter on ID-card ethnicity still to cite precisely; Duchaj & Ntihirageza full text still not fetched.
+
+**Files touched:** `docs/THREAT_MODEL.md`, `docs/DPIA.md`, `docs/DATA_RULES.md`, `docs/BENCHMARK_PROTOCOL.md` (new); `docs/SCOPE.md` (§8 exit check, Rwanda conflict, 2026 figure); `docs/TIMETABLE.md`; `README.md`.
+
+**Open questions / next steps:** professor review of the five phase 0 documents, especially the cost ratios and targets (`BENCHMARK_PROTOCOL.md` §7) and the not-a-user rule; week 3: schema and validator, including the ethnicity guard (`THREAT_MODEL.md` §4.2).

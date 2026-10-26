@@ -42,6 +42,9 @@ weekly plan in `docs/TIMETABLE.md`. The situation research and
   fall semester (Dec 2026).
 - `docs/SCOPE.md` — NameBridge phase 0 scope: pilot corridor, users,
   purposes and prohibited uses.
+- `docs/THREAT_MODEL.md`, `docs/DPIA.md`, `docs/DATA_RULES.md`,
+  `docs/BENCHMARK_PROTOCOL.md` — NameBridge phase 0: misuse threats,
+  data-protection pre-assessment, data rules, and the evaluation protocol.
 - `namebridge/` — NameBridge code (Apache-2.0) and public name data
   (CC BY 4.0).
 

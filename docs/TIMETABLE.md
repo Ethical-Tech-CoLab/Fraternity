@@ -61,6 +61,9 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 ### Week 2 — 26–30 Oct: risks and test rules (phase 0)
 
+✔ done 26 Oct: `THREAT_MODEL.md`, `DPIA.md`, `DATA_RULES.md`, `BENCHMARK_PROTOCOL.md`; exit check in `SCOPE.md` §8; Kinyarwanda research started (`RESEARCH_LOG.md`).
+
+
 - **Threat model:** who could misuse the system (§8: stalkers, traffickers, hostile governments, armed groups) and which controls block each risk.
 - **Data-protection assessment (desk version):** what data the system would hold, why, for how long, and who could see it, using the ICRC handbook, Malawi's Data Protection Act 2024 and the RFL Code of Conduct (`SCOPE.md` §5).
 - **Data rules (§10 phase 0):** data sharing, retention and deletion, disclosure, and incident response.

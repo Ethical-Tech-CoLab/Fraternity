@@ -1,6 +1,6 @@
 # NameBridge — scope (phase 0, week 1)
 
-Draft, 26 Oct 2026, for the professor's review. Section numbers (§) refer to `CONCEPT-IDEA.md`; the plan is in `TIMETABLE.md`. Sources are listed at the end ([S1]–[S16]). On 26 Oct, a second desk-research pass checked every claim; the result is in §7.
+Draft, 26 Oct 2026, for the professor's review. Section numbers (§) refer to `CONCEPT-IDEA.md`; the plan is in `TIMETABLE.md`. Sources are listed at the end ([S1]–[S16]). On 26 Oct, a second desk-research pass checked every claim; the result is in §7. The phase 0 exit check is in §8.
 
 **What NameBridge is this semester:** a research prototype. It finds candidate matches between records of people whose names were written differently in different countries, languages or registries. It runs **offline, on synthetic data only**, and makes no decision about any real person (§10 phase 2 exit).
 
@@ -24,7 +24,7 @@ New arrivals show the same mix: 62% DRC, 19% Burundi, 7% Rwanda (UNHCR). The thr
 
 **Naming facts the packs must respect** (checked 26 Oct):
 
-- **Rwanda:** parents choose the child's name freely, and the law forbids a child from bearing only all of a parent's or a sibling's names (Law 71/2024, arts 38–39, which repealed Law 32/2016 with the same rule) [S6]. Sharing a surname is weak evidence of kinship, and a different surname is no evidence against it. This matches HRW (1999).
+- **Rwanda:** parents choose the child's name freely, and the law forbids a child from bearing only all of a parent's or a sibling's names (Law 71/2024, arts 38–39, which repealed Law 32/2016 with the same rule) [S6]. Sharing a surname is weak evidence of kinship, and a different surname is no evidence against it. This matches HRW (1999). *Conflicting evidence (found 26 Oct):* The New Times (Kigali), 6 May 2026, says children "traditionally take the father's surname". The law permits a child to share some elements with a parent, so the Kinyarwanda pack records partial agreement as possible, and the conflict is logged for week 4.
 - **Burundi:** the evidence is **disputed**, not missing. The name is "given by the person who declares the birth; the choice of name is free" (Code des personnes et de la famille 1993, art. 13) [S7]. Family names did not exist before Christianity except for kings, and missionaries brought in a patronymic system [S8]. More recently, sons have also been named after their father or grandfather [S8]. The Kirundi pack therefore records surname agreement as `context-dependent` and `disputed`, citing these sources. It does not copy the Rwandan rule.
 - **DRC:** names are prénom + nom + postnom. In several groups, siblings can have different noms [S5]. The law forbids permuting the components of a name in civil records [S9], but oral reports and other countries' forms don't follow that order. Order is therefore stored as observed (§5.3).
 - **Camp languages:** Swahili is Dzaleka's lingua franca, and Lingala, French, Kinyarwanda and Kirundi are also spoken [S10]. Packs are built by **naming system**, not by spoken language. The DRC pack covers names of Lingala and other origins as they appear in Congolese records. Lingala and eastern-DRC linguistic packs remain later work.
@@ -32,7 +32,7 @@ New arrivals show the same mix: 62% DRC, 19% Burundi, 7% Rwanda (UNHCR). The thr
 **Limits:**
 
 - **Script:** cross-script search (§5.4) is barely tested in this corridor.
-- **Data:** no 2026 count by nationality was found; the latest counts are from Oct 2024 and Mar 2025.
+- **Data:** no 2026 count by nationality for Dzaleka was found. The latest camp-level counts are from Oct 2024 and Mar 2025. UNHCR's DRC situation page gives **41,071** DRC refugees and asylum seekers in all of Malawi on 30 Apr 2026, consistent with the camp shares.
 
 ## 2. Users
 
@@ -121,7 +121,24 @@ These come from §8 and the §12 "should not have" list. The code and the docume
 - **Law:** Malawi's Data Protection Act and the Restoring Family Links Code of Conduct are added.
 - **New source:** CongoNames is a candidate source, with conditions.
 
-## 8. Gaps recorded in phase 0
+## 8. Phase 0 exit check (26 Oct 2026)
+
+`CONCEPT-IDEA.md` §10 sets the phase 0 exit: approved purpose, test data, benchmark protocol, named data stewards.
+
+| Exit item | Status | Where |
+| --- | --- | --- |
+| Corridor, users, purposes, prohibited uses | ✔ written; professor review pending | This file |
+| Threat model | ✔ written | `THREAT_MODEL.md` |
+| Data-protection impact assessment (desk version) | ✔ written: no personal data this semester; a statutory DPIA is required before the partner phase | `DPIA.md` |
+| Data rules: sharing, retention, disclosure, incidents | ✔ written | `DATA_RULES.md` |
+| Benchmark protocol and test-data plan | ✔ written, fixed before any data exists | `BENCHMARK_PROTOCOL.md` |
+| Named data stewards | ✗ **gap** (no partner yet) | §9 |
+| Community advisory group, linguistic review panel | ✗ **gap** | §9 |
+| Professor approval of the purpose | Pending | — |
+
+**Verdict:** phase 0 is complete *as far as it can be without outside people*. Phase 1 can start (week 3). The gaps block phase 3, not phases 1–2.
+
+## 9. Gaps recorded in phase 0
 
 - No community advisory group, linguistic review panel or named data stewards (§10 phase 0 exit). Native-speaker review is planned for Jan–Mar 2027.
 - No tracing partner, so there is no lawful basis for real data. All results are labelled **preliminary (synthetic only)**.
