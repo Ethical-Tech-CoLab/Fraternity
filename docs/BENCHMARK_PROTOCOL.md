@@ -63,7 +63,7 @@ Errors are injected **GeCo-style** [B8], with documented rates per source:
 | Incomplete or rounded ages; age heaping | "about 10" |
 | Places renamed over time | Burundi provinces 2025; DRC provinces 2015 |
 | **Child's report:** young children give only first names or nicknames, or confuse relationships ("brother" for "father") [B10] | A tracing request recording only "Papa Jean" |
-| **Adopted name in exile:** a person recorded under a new, unrelated name (e.g. a Swahili name adopted to stay invisible) [B18] | The right answer is **not** a name link. The system must abstain or rely on non-name evidence, and route the case as protected (`THREAT_MODEL.md` T14) |
+| **Adopted name in exile** (ordered, `NAME_CHANGE.md`): **step 1**, the Christian given name is replaced (often by a Muslim/Swahili name) and the surname kept, with probability *s1*; **step 2**, the surname is also replaced, with probability *s2* < *s1*. Both are varied parameters, and higher for records made outside the camp. A false claimed nationality is added at a low, varied rate [B18] | Step 1: the right outcome is a **"possible name change"** candidate, found through the surname plus non-name evidence and routed as protected. Step 2: abstain unless non-name evidence is strong; never confirm |
 | **Hard negatives** | Different people with common names, same age band, same area |
 | **Adversarial pairs** | Different families built to look alike |
 

@@ -26,6 +26,7 @@ Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** 
 | Verification of open items (Malawi Act sections, HRW chapter, Burundi paper, Rwanda conflict) | ✔ done, except UNHCR's 2022 policy text | `RESEARCH_LOG.md` | 26 Oct |
 | UNICEF sources (child tracing, data, AI) | ✔ done (extra) | `RESEARCH_LOG.md` | `d27f327` |
 | CPIMS+ analysis and decision: integration target and baseline | ✔ done (extra) | `RESEARCH_LOG.md`; `SCOPE.md`; this file | `59c8130`, `8fb9343` |
+| Deliberate name change in exile: patterns and cross-cutting rules | ✔ done (extra) | `NAME_CHANGE.md` | 26 Oct |
 | Professor review of the phase 0 documents | ⏳ pending | — | — |
 
 **Waiting on the professor:**
@@ -116,6 +117,7 @@ Plan:
 - **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator.
 - **Case graph** (§5.1B): schema only, kept empty and separate.
 - **CPIMS+ mapping:** map the case schema to Primero's case and tracing-request fields (`name`, `name_other`, `name_nickname`, relatives' names). Names arrive as one typed string, so the parser must not rely on separate fields. An ingestion allowlist refuses ethnicity, sub-ethnicity and religion (`THREAT_MODEL.md` T13).
+- **Name-change rules in the schema** (`NAME_CHANGE.md`): the validator rejects edges between unrelated names; case records carry `other_names_used` and a `possible_name_change` route to protected handling.
 - **Language-pack template** (§11).
 - **Regression suite:** set up the test suite that every later change must pass (§12).
 - **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3).
@@ -157,7 +159,7 @@ Plan:
 - **CPIMS+-style baseline:** Double Metaphone, boosted field match and score/max normalisation, reimplemented from Primero's source.
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
 - **Consent and lawful basis** (§8 control 4): every case record stores why it may be used and with whom it may be shared.
-- **Protected-person flags** (§8 control 7): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
+- **Protected-person flags** (§8 control 7), including **"possible name change"** candidates (`NAME_CHANGE.md` rule 2): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
 - **Done when:** the baseline runs on the benchmark and gives results; the access log records every read of case data; a flagged synthetic case never appears in an ordinary search.
 
 ### Week 8 — 7–11 Dec: model and evaluation (phase 2)

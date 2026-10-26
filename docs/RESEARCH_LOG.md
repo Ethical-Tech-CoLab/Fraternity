@@ -962,3 +962,31 @@ offline.
 **Files touched:** `docs/DPIA.md`, `docs/THREAT_MODEL.md` (T14, sources), `docs/SCOPE.md` (§1, S18), `docs/BENCHMARK_PROTOCOL.md` (§2.2, §2.3, B17–B18), `docs/TIMETABLE.md`.
 
 **Week 2 status:** complete, except the GDPP 2022 text and the professor's review.
+
+## 2026-10-26 — Deliberate name change in exile: patterns and rules
+
+**Focus:** the user asked for name change in exile to be "taken into account in every context", and asked whether there is a pattern.
+
+**Sources consulted:**
+- Duchaj & Ntihirageza (2009), abstract via YorkSpace (full text could not be fetched).
+- Malkki (1995) via *African Studies Quarterly*.
+- Daley (2018), *Migration and Society*.
+- IRRI, *A Dangerous Impasse* (2010).
+- *American Ethnologist*, "Names are Problems".
+- TRT Afrika and VOA (Jun 2023).
+
+**Findings:**
+- **The change is ordered (Burundians in Tanzania).** The Christian given name is replaced first, often by a Muslim name, and the Kirundi surname is kept. The surname is changed only if "too noticeable", to a Burundian name that passes as Tanzanian (Ha). It happens in towns and minority settings, not in settlements, and continues after naturalisation.
+- **Rwandans in Uganda** change names *and* claim another nationality (Congolese) or a local ethnicity (Banyankole).
+- **Congolese refugees** keep open names and close names by design, use interchangeable spellings (`Rashindi`/`Kashindi`) and use kinship terms loosely. UNHCR staff treated discrepancies with suspicion, which can harm protection cases.
+- **Malawi, 2023:** the government said 55 genocide suspects sought by Rwanda may be hiding under Malawian names, and began revoking citizenships and passports; critics warned it could ensnare legitimate refugees. In 2020, a former Minister of Homeland Security was jailed for selling citizenship to Burundians and Rwandans.
+
+**Decisions:**
+- New cross-cutting document `docs/NAME_CHANGE.md` with seven rules: no edges between unrelated names; "possible name change" routed as a protected-person case; nationality is weak evidence; names never used as credibility evidence; no support for verification or revocation campaigns; intake takes the names a person chooses; name-change rate depends on setting.
+- `SCOPE.md` §4: two new prohibited uses.
+- `THREAT_MODEL.md`: T14 refined; new **T15** (output used against a refugee's credibility).
+- `BENCHMARK_PROTOCOL.md`: ordered error type (*s1* > *s2*, both varied).
+- `DATA_RULES.md`: intake rule.
+- `TIMETABLE.md`: weeks 3 and 7.
+
+**Open:** no study of name change among refugees in Malawi; rates of step 1 and step 2 unknown.
