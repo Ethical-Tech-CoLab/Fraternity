@@ -38,6 +38,7 @@ Tracing missing persons and restoring family links for an authorised tracing ser
 - RFL practice relies on **vital interest** or **public interest** instead [D3][D5]. Malawi's Act lists both in s. 8 [D4].
 - **Children:** under s. 17, where *consent* is the basis, consent must come from a parent or guardian [D1]. For an unaccompanied or separated child there may be no parent or guardian. The basis is then vital interest, under a best-interest assessment by the authorised service, not consent.
 - **Sensitive data:** ethnic origin, religion and biometrics are sensitive data (s. 2) and need a specific condition (s. 16) [D4]. NameBridge **does not collect them at all** (data minimisation below).
+- **Name-change links can reveal religion (added 28 Oct 2026).** A "possible name change" from a Christian to a Muslim given name, or the proposed restricted name-change layer (`NAME_CHANGE.md`), can disclose a person's religion or a change of religion, which is sensitive data (s. 2) needing an s. 16 condition. Therefore: substitutions are stored only as name-to-name links with a source, never labelled by religion; the flag is visible only inside the protected-person route (C7); and the layer is not built until this is checked with the partner's data protection officer.
 - **Recording the basis:** each case record stores its basis and sharing limits (§8 control 4; built in week 7).
 
 ## (d) Necessity and proportionality: data minimisation
