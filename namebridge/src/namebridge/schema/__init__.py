@@ -11,9 +11,27 @@ Validators return a list of error strings; an empty list means valid.
 import re
 
 # Attribute and field names NameBridge never holds: ethnicity, clan, tribe,
-# religion and related (CONCEPT-IDEA.md §8 control 12; SCOPE.md §4; T8, T13).
-# "race" only as a whole word part, so "trace" and "tracing" pass.
-_FORBIDDEN = re.compile(r"ethnic|tribe|tribal|clan|religio|caste|(^|[_\W])rac(e|ial)([_\W]|$)", re.IGNORECASE)
+# religion and related (CONCEPT-IDEA.md §8 control 12; SCOPE.md §4; T8, T13),
+# in the corridor's record languages too: French (Burundi's CENI lists head the
+# column "Ethnie"), Kirundi/Kinyarwanda and Swahili (RESEARCH_LOG.md, 28 Oct).
+# Long stems match anywhere in a field name; short words only as whole words,
+# so "trace" and "ordinal" pass.
+_STEMS = re.compile(r"ethni|tribe|tribal|tribu|clan|religio|caste", re.IGNORECASE)
+_WORDS = {
+    "race", "racial",
+    "ubwoko", "ubwooko", "amoko",  # Kirundi/Kinyarwanda: race, tribe, clan, kind
+    "idini", "amadini", "madini",  # Kinyarwanda/Kirundi: religion
+    "kabila", "makabila", "ukabila",  # Swahili: tribe, clan
+    "dini",  # Swahili: religion
+}
+
+
+def _is_forbidden(key):
+    key = str(key)
+    if _STEMS.search(key):
+        return True
+    words = re.sub(r"([a-z])([A-Z])", r"\1 \2", key).lower()
+    return any(w in _WORDS for w in re.split(r"[^a-z]+", words))
 
 
 def forbidden_keys(mapping, path=""):
@@ -22,7 +40,7 @@ def forbidden_keys(mapping, path=""):
     if isinstance(mapping, dict):
         for key, value in mapping.items():
             here = f"{path}.{key}" if path else str(key)
-            if _FORBIDDEN.search(str(key)):
+            if _is_forbidden(key):
                 found.append(here)
             found.extend(forbidden_keys(value, here))
     elif isinstance(mapping, list):

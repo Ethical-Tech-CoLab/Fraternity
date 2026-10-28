@@ -1273,3 +1273,33 @@ No literacy figure for Dzaleka itself was found. The 2023 Dzaleka Education Asse
   - the 2017 data is old, and arrivals since then have changed the population.
 
 **Option, not taken (needs the user's decision):** register on the UNHCR Microdata Library, accept its terms, and compute the literacy share from the 2017 anonymised file. It is de-identified data about real refugees: not names, but outside what G3 covered (public name lists only). It would need its own short check under `DATA_RULES.md` and `IRB_DETERMINATION.md` before use. **Not needed for the semester:** the benchmark already treats the "written by ear" share as a varied parameter.
+
+## 2026-10-28 (night) — Full review: blind spots found and fixed
+
+**Why:** the user asked for a review of everything done, looking for anything that should be complete but is not.
+
+**Blind spots found and fixed:**
+1. **The ethnicity guard was English-only.** It missed "Ethnie", the CENI column name and exactly the source chosen for G6, as well as *tribu*, *ubwoko*, *idini*, *kabila* and *dini*. Meanings checked:
+   - *ubwoko* = "race, nation, tribe, kind" ([matana Kirundi dictionary](https://www.matana.de/index1.php?deep=&q=ubwoko)); Rwandan *ubwooko* = social group, clan ([Schoenbrun, Northwestern](https://history.northwestern.edu/documents/people/faculty/schoenbrun/schoenbrun-rwanda-dictionary.pdf));
+   - *idini* = religion (Kinyarwanda; Muzungu, *Idini gakondo y'Abanyarwanda*);
+   - Swahili *kabila* = tribe, clan and *dini* = religion ([Swahili-English dictionary](https://archive.org/download/swahilienglishdi00madauoft/swahilienglishdi00madauoft.pdf)).
+
+   The guard now matches stems anywhere and short words as whole words (`test_guard.py`); new threat **T18**; new rule **DATA_RULES DR-1.7** (drop on read). Lingala words are not covered yet.
+2. **"Who wrote the name" was designed, but not in the schema.** The benchmark slice existed, yet ObservedName had no field for it. Added `written_by` (self / other / unknown); a name written by someone else needs `recorded_by_convention`; an oral report can never be self-written; CPIMS+ names are marked `other`.
+3. **`CONCEPT-IDEA.md` §8 control 2** still described a law-enforcement access role, contradicting G2; annotated.
+4. **`BENCHMARK_PROTOCOL.md` §2.4** still said the Burundi source was a "gap"; updated with the G6 decision.
+5. **`CONCEPT-IDEA.md` §5.3 and §11** lacked the new fields (`written_by`, `recorded_by_convention`, the three sound-layer lists); added.
+6. **The threat model** had nothing for the decisions taken today: **T16** (restricted name-change layer leaks), **T17** (sound layer widens candidate lists), **T18** (multilingual ethnicity fields).
+7. **The restricted-layer conditions** (G5) were not tracked as a task; week 7 now says it is not built there, and lists its three preconditions.
+8. **`SCOPE.md`** named only CongoNames as a source; it now lists the decided profile sources.
+9. **`NAME_CHANGE.md` rule 1** did not say how it is enforced; it now points to the validator.
+10. `.DS_Store` is now in `.gitignore`.
+
+**Known open items (not blind spots; recorded elsewhere):**
+- G4: error costs, and whether "minor" means under 18 at the search or at separation. `subject_is_minor` stays a declared flag until then.
+- Lingala and eastern-DRC field names in the guard.
+- Mioni (1975) full text.
+- Children's pronunciation and Chichewa spelling sources.
+- Dzaleka literacy microdata (user's decision).
+
+**Tests:** 91, from 63.

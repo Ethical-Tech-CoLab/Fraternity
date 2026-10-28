@@ -75,7 +75,7 @@ The synthetic world must behave like reality, or the dictionary will learn the w
 
 | Layer | What it gives | Sources |
 | --- | --- | --- |
-| 1. Real names | Which name elements exist and how common they are | DRC: CongoNames [B7]. Rwanda: national exam result lists published by NESA [B11]. Burundi: **gap**, to find in week 4 |
+| 1. Real names | Which name elements exist and how common they are | DRC: CongoNames [B7]. Rwanda: national exam result lists published by NESA [B11]. Burundi: **NESA name elements weighted by CENI 2025 frequencies**, converted with the Kirundi spelling rules (Zorc & Nibagwire 2007); Forebears aggregates as a check only (gate G6, closed 28 Oct; `RESEARCH_LOG.md`) |
 | 2. Real structure | Element order, number of names, who may share what | Laws and onomastic studies [B1]–[B6] |
 | 3. Real variation | How the same name changes | UN Security Council 1533 (DRC) sanctions list aliases [B12], e.g. `KAKOLELE`/`KAKORERE` (l/r), `MPAMO`/`MPANO`, `LUMISA`/`LUMINSA`/`LUMWINSA`. The Kinyarwanda spelling reform of 13 Oct 2014, where old and new forms coexist [B13]. Phonology: prenasalised consonants, digraphs, vowel length [B13] |
 | 4. Real error rates | How often names come out wrong, and for whom | About 22% of name values differ between linked records of the same person, and 14% of dates of birth; algorithms "developed on anglicised names" fail on local names (South Africa) [B14]. `Semaganda`/`Ssemaganda`, 2 vs 3 names (Uganda) [B15]. Errors are more frequent when the name is unfamiliar to whoever records it [B16]: the generator raises the error rate when the recorder's language differs from the name's |

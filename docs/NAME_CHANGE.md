@@ -55,7 +55,7 @@ Under threat of forced return, refugees "hide their identities and change their 
 
 ## The rules (in every context)
 
-1. **No graph edge between unrelated names.** An adopted name (e.g. `Jean` → `Hamisi`) is not a variant. The graph never links them, not even as `proposed`. A cognate (`Jean` → `Yohana`) is a variant; an adopted name is not.
+1. **No graph edge between unrelated names.** An adopted name (e.g. `Jean` → `Hamisi`) is not a variant. The graph never links them, not even as `proposed`. A cognate (`Jean` → `Yohana`) is a variant; an adopted name is not. *Enforced in the validator (28 Oct 2026):* there is no link type for an adopted name, and a spelling or sound variant must reach a similarity of 0.8 unless it is reviewed, attested and justified (`SCHEMA.md`).
 2. **"Possible name change" is a protected-person case.** When a candidate agrees on the surname and on non-name evidence but differs completely on the given name, or agrees only on non-name evidence:
    - it goes to a senior caseworker only (C7);
    - its location and contact details are never shown (C6);

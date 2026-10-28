@@ -31,6 +31,10 @@ SENSITIVITY = {"low", "medium", "high"}
 # §5.3: preserve first, normalise into parallel fields.
 OBSERVED_NAME_REQUIRED = ("observed_full_name", "observed_script", "source_type", "source_field_label", "source_order")
 SOURCE_TYPES = {"oral_report", "form", "passport_viz", "passport_mrz", "registry", "flyer", "other"}
+# Who wrote the name down (§5.4A): the person, or someone else by ear (a clerk,
+# caseworker or interpreter). Needed for the "who wrote the name" slice
+# (BENCHMARK_PROTOCOL.md §6) and to read a name back into sounds.
+WRITERS = {"self", "other", "unknown"}
 
 # Malawi Data Protection Act 2024 s. 8 bases used in tracing (DPIA.md (c)).
 LAWFUL_BASES = {"vital_interest", "public_interest", "consent", "legal_obligation"}
@@ -61,8 +65,13 @@ def validate_observed_name(name):
     errors = [f"{label}: missing {f!r}" for f in OBSERVED_NAME_REQUIRED if f not in name]
     # A name heard and written down by someone else depends on how that person
     # spells sounds (§5.4A): record the writing convention they used.
-    if name.get("source_type") == "oral_report" and not name.get("recorded_by_convention"):
-        errors.append(f"{label}: an oral report needs 'recorded_by_convention' (e.g. fr, en, rn)")
+    written_by = name.get("written_by", "other" if name.get("source_type") == "oral_report" else "unknown")
+    if written_by not in WRITERS:
+        errors.append(f"{label}: written_by must be one of {sorted(WRITERS)}")
+    if name.get("source_type") == "oral_report" and written_by == "self":
+        errors.append(f"{label}: an oral report is written by someone else, not 'self'")
+    if written_by == "other" and not name.get("recorded_by_convention"):
+        errors.append(f"{label}: a name written by someone else needs 'recorded_by_convention' (e.g. fr, en, rn)")
     if name.get("source_type") not in SOURCE_TYPES | {None}:
         errors.append(f"{label}: unknown source_type {name['source_type']!r}")
     if name.get("source_order", "as_observed") != "as_observed":

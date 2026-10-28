@@ -33,7 +33,7 @@ Knowledge about names, **never about people**. Public, CC BY 4.0. Files: `namebr
 5. **Links join the right kinds of thing**: a morpheme link points to a morpheme; a transliteration joins two different scripts.
 6. **No duplicates and no contradictions**: two names cannot be both "variant" and "not equivalent".
 7. **Names are stored in one Unicode form (NFC)**, so the same accented name is never stored two invisible ways (W3C recommendation).
-8. **No ethnicity, clan, tribe, caste, race or religion attribute anywhere.**
+8. **No ethnicity, clan, tribe, caste, race or religion attribute anywhere**, also under its French, Kirundi/Kinyarwanda or Swahili name (*Ethnie*, *tribu*, *ubwoko*, *idini*, *kabila*, *dini*).
 
 ## 2. The protected case data (Case graph)
 
@@ -41,7 +41,7 @@ Records about people: **schema only this semester**, kept empty; tested with inv
 
 **Every case record must have:** a legal basis (vital interest, public interest, consent or legal obligation; Malawi Data Protection Act s. 8); with whom it may be shared; its protection flags and route; the other names the person uses; whether a name change is possible; and **when it was created and when it must be deleted**.
 
-**Every name as observed** keeps the exact text, the script, the source type (oral report, form, passport, registry, flyer…), the label of the field it came from, and the order as written; names are never reordered. **If the name was told aloud** (an oral report), the record also says which spelling habits the person who wrote it down used (French, English, Kirundi…), so the search can work back to the sounds (`CONCEPT-IDEA.md` §5.4A).
+**Every name as observed** keeps the exact text, the script, the source type (oral report, form, passport, registry, flyer…), the label of the field it came from, and the order as written; names are never reordered. **Who wrote the name down** is recorded: the person, someone else, or unknown. **If someone else wrote it** (always the case for an oral report), the record also says which spelling habits that writer used (French, English, Kirundi…), so the search can work back to the sounds (`CONCEPT-IDEA.md` §5.4A).
 
 **Every fact** says who asserted it, when, under what authority, how sensitive it is, how sure, and with whom it may be shared.
 

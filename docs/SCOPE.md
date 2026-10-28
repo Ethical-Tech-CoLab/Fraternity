@@ -108,6 +108,8 @@ These come from §8 and the §12 "should not have" list. The code and the docume
 | CPIMS+ companion service | A design note this semester; built after the semester with a partner. It is a separate service over the Primero API: it reads tracing requests and cases, returns explained candidates, and writes nothing back automatically. Staying separate keeps NameBridge under Apache-2.0 (Primero is AGPL-3.0) |
 | Licences | Code under Apache-2.0 (open source, with a patent grant). Name graph and packs under CC BY 4.0, compatible with CC BY sources such as CongoNames [S16] |
 
+**Naming-profile sources (decided 28 Oct, gates G3 and G6):** CongoNames (DRC), NESA exam lists (Rwanda), and NESA elements weighted by CENI 2025 frequencies (Burundi; the CENI ethnicity column is dropped on read, `DATA_RULES.md` DR-1.7). All are used under DR-1: study, keep aggregates, delete.
+
 **Candidate source for weeks 4–6: CongoNames** [S16]. It holds 8,053,983 names from DRC state-exam lists (2008–2023, 12 provinces) under CC BY 4.0. These are **real people's full names**, so they never enter `namebridge/data`. If the week 5 source review approves it, only aggregate statistics (token frequencies, structure by province) are used, for term-frequency weights and for realistic synthetic names.
 
 ## 7. What the 26 Oct evidence check changed

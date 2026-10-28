@@ -118,3 +118,23 @@ def test_oral_report_records_writer_convention():
     }
     assert any("recorded_by_convention" in e for e in cg.validate_node(name))
     assert cg.validate_node({**name, "recorded_by_convention": "fr"}) == []
+
+
+def test_name_written_by_someone_else_records_their_convention():
+    name = {
+        "id": "on-3", "type": "ObservedName", "observed_full_name": "Synthetic", "observed_script": "Latn",
+        "source_type": "form", "source_field_label": "Name", "source_order": "as_observed", "written_by": "other",
+    }
+    assert any("recorded_by_convention" in e for e in cg.validate_node(name))
+    assert cg.validate_node({**name, "recorded_by_convention": "en"}) == []
+    assert cg.validate_node({**name, "written_by": "self"}) == []
+    assert any("written_by must" in e for e in cg.validate_node({**name, "written_by": "clerk"}))
+
+
+def test_oral_report_is_never_self_written():
+    name = {
+        "id": "on-4", "type": "ObservedName", "observed_full_name": "Synthetic", "observed_script": "Latn",
+        "source_type": "oral_report", "source_field_label": "said", "source_order": "as_observed",
+        "written_by": "self", "recorded_by_convention": "rn",
+    }
+    assert any("not 'self'" in e for e in cg.validate_node(name))

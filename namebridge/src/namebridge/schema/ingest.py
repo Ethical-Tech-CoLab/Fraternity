@@ -111,6 +111,7 @@ def observed_names(mapped, record_id, recorded_by_convention):
             "source_type": "form",  # typed into CPIMS+ by a caseworker
             "source_field_label": label,
             "source_order": "as_observed",
+            "written_by": "other",
             "recorded_by_convention": recorded_by_convention,
         }
 

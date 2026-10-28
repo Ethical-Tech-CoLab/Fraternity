@@ -35,6 +35,7 @@ Draft, 26 Oct 2026. These are the rules for data sharing, retention and deletion
 4. **Examples in docs and tests** use invented names, or names already used as public examples in the sources (e.g. MUGISHA Jean [R3]). Never a living private person's name.
 5. **Graph edges** carry a source, licence, confidence and `review_status` (§5.1A). LLM suggestions enter only as `proposed`.
 6. **No ethnicity, clan, tribe or religion** attributes anywhere in the graph or the schema (`THREAT_MODEL.md` §4.2).
+7. **Raw sources that contain such a field** (e.g. Burundi's CENI 2025 candidate lists, column "Ethnie"): the parser **drops the field on read**. It is never written to disk, counted, joined or used to stratify, and no raw copy with the field is kept beyond the download itself. The field-name guard in `namebridge.schema` covers French, Kirundi/Kinyarwanda and Swahili words (added 28 Oct 2026; gate G6).
 7. **Names a person chooses to give.** Intake records the names given, in any order, plus "other names used". It never presses for a "real" or close name (`NAME_CHANGE.md` rule 6).
 
 ## DR-2. Sharing

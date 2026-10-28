@@ -266,6 +266,8 @@ source_type: oral_report | form | passport_viz | passport_mrz | registry | flyer
 source_date: optional
 source_field_label: exact label
 source_order: as_observed
+written_by: self | other | unknown          # added 28 Oct 2026 (§5.4A)
+recorded_by_convention: BCP-47              # required when written_by is other
 native_script_form: optional
 reported_pronunciation: optional
 preferred_form: optional
@@ -464,7 +466,7 @@ A system that helps families can also help stalkers, traffickers, abusive relati
 ### Non-negotiable controls
 
 1. **Purpose limitation:** missing-person tracing, family restoration or authorized identification only.
-2. **Role separation:** public search, family/advocate access, humanitarian caseworker access and law-enforcement access must expose different data.
+2. **Role separation:** public search, family/advocate access, humanitarian caseworker access and law-enforcement access must expose different data. *Decided 28 Oct 2026 (gate G2):* in NameBridge, law enforcement and governments have **no access role at all**; they are not users (`SCOPE.md` §2).
 3. **Data minimization:** collect the minimum attributes needed for the current match decision. NIST identity-resolution guidance similarly emphasizes the minimum set necessary to distinguish a person in a defined population and context.[^nist]
 4. **Consent and lawful basis:** record why each source may be used and with whom it may be shared.
 5. **No public person graph:** the cultural Name Knowledge Graph can be public; case-person identity and relationship graphs must be protected.
@@ -620,6 +622,9 @@ particles_and_morphemes: []
 transliteration_rules: []
 phonetic_rules: []
 common_administrative_forms: []
+phoneme_inventory: []          # sound layer, §5.4A (added 28 Oct 2026)
+spelling_conventions: []
+listener_confusions: []
 relationship_implications:
   surname_agreement: weak | neutral | strong | context-dependent
   surname_disagreement: weak | neutral | strong | context-dependent

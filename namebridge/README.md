@@ -12,7 +12,9 @@ Design: [`../docs/CONCEPT-IDEA.md`](../docs/CONCEPT-IDEA.md). Plan:
 
 - `src/namebridge/` — the package
   - `schema/` — schemas and validators: public name graph, protected case
-    graph, CPIMS+ ingestion allowlist, language-pack template (week 3)
+    graph, CPIMS+ ingestion allowlist, language-pack template (week 3);
+    plain-language version in `../docs/SCHEMA.md`
+  - `similarity.py` — Jaro-Winkler on folded forms
 - `tests/` — the regression suite: every change must pass it before it is
   committed
 - `data/` — the public name graph and language packs (CC BY 4.0)

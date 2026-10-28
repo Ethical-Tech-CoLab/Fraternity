@@ -67,6 +67,14 @@ Codes: **C1–C12** are the §8 controls. **DR-** rules are in `DATA_RULES.md`. 
 5. **No "find by name" endpoint for anyone outside the caseworker role.** This holds even in demos.
 6. **Field allowlist on ingestion.** Every adapter (CPIMS+ first) accepts only the fields NameBridge needs (`DPIA.md` (d)). It never receives a field and then ignores it (T13).
 
+**Added 28 Oct 2026:**
+
+| # | Threat (actor, asset; LINDDUN type) | Semester | Real phase | Controls | Tested |
+| --- | --- | --- | --- | --- | --- |
+| T16 | The **restricted name-change layer** (approved with conditions, G5) leaks or is exported, giving M3, M4 or M5 a guide to unmasking people who changed names (A1, A2; Linking, Identifying) | n/a (not built) | **High** | Built only after a sourced pattern set, the week 7 access controls and a legal check (religion is sensitive data; `DPIA.md` (c)). Never in the public repo, never in the CPIMS+ synonym export; used only inside the protected route; every use logged (C9) | When built (after week 7) |
+| T17 | The **sound layer** widens candidate lists: more strangers' records are shown to caseworkers, and sound-alike names of different people look stronger (A3; Disclosure, Linking) | Low | Medium | Sound is one comparison field, never sufficient alone; a name or sound alone never confirms (validator rule); progressive disclosure (C8); the benchmark reports false matches per slice of who wrote the name | Wk 7–8 |
+| T18 | A raw source with an **ethnicity column** (CENI "Ethnie") or a field named in another language (*ubwoko*, *kabila*, *idini*, *dini*) slips past an English-only guard (A1, A2; Identifying) | **Medium** | Medium | Multilingual field-name guard (`namebridge.schema`, tests in `test_guard.py`); drop on read (`DATA_RULES.md` DR-1.7) | ✔ Wk 3 (28 Oct) |
+
 ## 5. Residual risks and gaps
 
 - **No independent review yet.** Security, protection and linguistic experts have not reviewed this model (phase 0 gap).
