@@ -78,7 +78,7 @@ These come from §8 and the §12 "should not have" list. The code and the docume
 - Ingesting scraped social-media data, or any real case data, this semester.
 - Storing raw biometrics.
 - Using NameBridge output (scores, graph paths, "name differs" flags) as evidence about a person's **credibility** in refugee status determination, resettlement or citizenship decisions. Inconsistent names are normal among refugees (`NAME_CHANGE.md`).
-- Supporting identity-verification or citizenship-revocation campaigns, or searches for people who changed their names, whoever they are (`NAME_CHANGE.md` rule 5).
+- Supporting identity-verification or citizenship-revocation campaigns, or any search whose purpose is to expose or verify a person's identity against their will, including locating alleged perpetrators (`NAME_CHANGE.md` rule 5). Family tracing of people who changed their names is allowed, under the protected-person rules.
 - Reading or storing ethnicity, sub-ethnicity, clan or religion fields from a connected system, even when that system holds them. CPIMS+ records include ethnicity fields [S17].
 - Adding LLM-generated name equivalences without a source. They enter as `proposed` only.
 - Using one global threshold.

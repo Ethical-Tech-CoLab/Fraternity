@@ -1103,3 +1103,14 @@ offline.
 - The repo `Ethical-Tech-CoLab/Fraternity` is **public**: code already published under Apache-2.0 may be used and sold by anyone, irrevocably. Only future versions can change licence, and only if all copyright holders agree.
 
 **Changes:** `CONCEPT-IDEA.md` final phase; `TIMETABLE.md` final-phase row and new gate **G7** (ownership, licence, deal terms).
+
+## 2026-10-28 (later) — Rule 5 reworded: trace people who changed names, safely
+
+**User's point (28 Oct 2026):** a person may change name to protect themselves, or after trafficking, and still want to be found by relatives, safely. Rule 5 as written ("no support … for searches for people who changed their names") weakened the main purpose of NameBridge.
+
+**Decision (user):** rule 5 reworded. Tracing people who changed their names is **supported**; searches whose purpose is to expose or verify an identity against the person's will (campaigns, alleged perpetrators) are not. This only clarifies what case C1 already allowed. `SCOPE.md` §4 now uses the same wording; it is still under the professor's G1 review.
+
+**Added:**
+- `NAME_CHANGE.md`: "safety layers" table (9 layers, mapped to the existing controls and threats: C1–C2, C6–C9, M2, T1, T3, T4, T6, T8, T14). The public dictionary holds spelling variants only, so it reveals no name changes.
+- `GATE_EXAMPLES.md`: case C5 (trafficking survivor, found by her sister with checks); a second G5 question: a **restricted name-change layer** (substitution patterns, never published or exported, used only in protected cases).
+- `TIMETABLE.md` G5 row updated.

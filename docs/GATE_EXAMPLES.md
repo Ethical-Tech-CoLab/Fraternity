@@ -54,18 +54,21 @@ Two invented men, **NDAYISENGA Jean-Paul** (b. 1984, Muyinga) and **NDAYISENGA P
 
 ---
 
-## G5: rule 5 in four cases
+## G5: rule 5 in five cases
 
-Rule 5 as written: *no support for identity-verification or citizenship-revocation campaigns, or for searches for people who changed their names, including alleged perpetrators* (`NAME_CHANGE.md`).
+Rule 5 (reworded 28 Oct): *tracing people who changed their names is supported; exposing them is not.* Searches whose purpose is to expose or verify a person's identity against their will (verification or revocation campaigns, locating alleged perpetrators) are not supported (`NAME_CHANGE.md`, with the safety layers).
 
 | # | Case (invented) | Under rule 5 as written | Why |
 | --- | --- | --- | --- |
 | **C1** | A mother in Dzaleka searches for her son, **BIZIMANA Claude** (b. 2003). He left for Lilongwe in 2021 and may now use a Swahili Muslim name | **Allowed** as a tracing search. If a candidate agrees on surname, age and family but not on the given name, it is a **"possible name change"**: senior caseworker only, no location shown, and the son decides whether to be contacted (rules 2 and 6) | This is family tracing. The person found keeps control |
 | **C2** | A government department asks a tracing partner to run a list of 55 names through NameBridge to find people "now using Malawian names" | **Refused** | A verification or revocation campaign, and governments are not users (G2; `SCOPE.md` §2 and §4) |
 | **C3** | An association of genocide survivors asks a tracing partner to search for a man it believes is a perpetrator living under a new name | **Refused** | This is the contested case. Rule 5 says finding alleged perpetrators is for courts and police, with their own legal means |
+| **C5** | A young woman (invented) escaped a trafficking network in Lilongwe and now uses another name. Her sister in Dzaleka asks the Red Cross to find her | **Allowed**, with layer 7: the caseworker checks the request first (traffickers can be relatives). The woman is asked privately; only if she agrees is the sister told | She changed name to escape the traffickers, not her family. Being found safely is the point |
 | **C4** | An ordinary tracing request for a missing uncle who, unknown to anyone, is wanted abroad | **Normal tracing.** NameBridge cannot know and does not ask | The person found still decides on contact, and the output never goes to authorities (rule 4, prohibited uses) |
 
-### The choice for the professor (G5)
+### The choices for the professor (G5)
+
+**1. Alleged perpetrators (C3).**
 
 | Option | What it means | Risk |
 | --- | --- | --- |
@@ -74,6 +77,8 @@ Rule 5 as written: *no support for identity-verification or citizenship-revocati
 | **C. Allow C3 for accredited survivor groups** | No court; the group is vetted | The hardest to control: anyone can claim a person is a perpetrator, and in Malawi the accusation itself is dangerous (`NAME_CHANGE.md` §4) |
 
 **Recommendation:** **A**. B and C would each need the threat model and the scope redone, and both conflict with G2.
+
+**2. A restricted name-change layer** (`NAME_CHANGE.md`, "safety layers"): allow known substitution patterns (e.g. Christian → Swahili or Muslim given names) in a separate layer that is never published or exported and is used only in protected cases? It would find more people like C1 and C5; if it leaked, it would help unmask them. **Recommendation:** yes in principle, built only after a source exists and after the access controls in week 7.
 
 ### Related evidence (28 Oct 2026)
 

@@ -64,9 +64,27 @@ Under threat of forced return, refugees "hide their identities and change their 
    A family can still find a child who took a new name, but the person found keeps control.
 3. **Nationality and claimed origin are weak evidence.** They may raise or lower a score slightly; they never exclude a candidate.
 4. **Inconsistent names are normal, not suspicious.** NameBridge output, including scores, graph paths and "name differs" flags, must **never** be used as evidence about a person's credibility in refugee status determination, resettlement, or citizenship decisions. This is a new prohibited use (`SCOPE.md` §4).
-5. **No support for identity-verification or citizenship-revocation campaigns,** or for searches for people who changed their names. That includes alleged perpetrators: finding them is a matter for courts and police with their own legal means, not for a tracing tool (`SCOPE.md` §2).
+5. **Tracing people who changed their names is supported; exposing them is not.** *(Reworded 28 Oct 2026; the earlier text, "no support … for searches for people who changed their names", read as if such people could not be traced.)* A person may change name to escape a trafficker or a persecutor and still want to be found by their family, safely. NameBridge supports that search through the safety layers below. It does **not** support searches whose purpose is to expose or verify a person's identity against their will: identity-verification or citizenship-revocation campaigns, or locating alleged perpetrators. Those belong to courts and police, with their own legal means (`SCOPE.md` §2).
 6. **The intake guide records the names a person chooses to give**, in any order, plus "other names used". It never presses for a "real" or close name.
 7. **Setting matters in the benchmark.** Records made outside the camp (towns, work, school) carry a higher rate of name change than camp registration records (`BENCHMARK_PROTOCOL.md` §2.3).
+
+## Finding people who changed their names: the safety layers
+
+The goal is that a family **can** find a person who changed name, and that nobody else can use the same path to expose them. The layers below already exist as controls; this section puts them in one place.
+
+| # | Layer | What it stops | Where |
+| --- | --- | --- | --- |
+| 1 | **Only authorised tracing caseworkers search.** No public search, no governments or police (G2) | A persecutor or campaign running searches directly | C2; `SCOPE.md` §2; T3 |
+| 2 | **One case at a time, with a purpose and a named requester.** No bulk lists; rate limits | "Run these 55 names" campaigns | C1, C2; T4 |
+| 3 | **Every search and every opened field is logged and reviewed** | A caseworker searching for someone without a case | C8, C9; T6 |
+| 4 | **"Possible name change" is a protected-person case:** senior caseworker only | Ordinary staff seeing the link between old and new identity | Rule 2; C7; T14 |
+| 5 | **No location or contact details shown** because of a match | The requester learning where the person is | C6 |
+| 6 | **The person found decides.** They are asked, privately, whether they want contact. If they say no, the requester learns only that no result can be shared | The person being found against their will | RFL guide §7.3.2; rule 2 |
+| 7 | **The requester is checked before contact** when there are signs of trafficking or abuse; the requester may be the abuser, even a relative | A trafficker posing as family | M2, T1; trafficking cases handled with a specialised protection actor |
+| 8 | **Abuse signals:** one requester searching many unrelated people, or many "possible name change" results | Fishing for hidden people | C9 log review |
+| 9 | **The public dictionary holds spelling variants only** (rule 1). It contains no link between an old and an adopted name, so having it does not reveal who changed name to what | Someone with the dictionary unmasking people | Rule 1; T8 |
+
+**Proposed for G5 (pending the professor): a restricted name-change layer.** The matcher could find more people if it knew common substitutions (for example which Swahili or Muslim given names Burundian Christians tend to adopt). That would mean links between unrelated names, which rule 1 forbids in the public graph. The proposal: keep such patterns in a **separate, restricted layer** that is never published, never exported (e.g. not in the CPIMS+ synonym lists), and used only inside layers 4–6. Risk: if the layer leaks, it is a guide to unmasking people. Sources for such patterns are also thin today (Tanzania only).
 
 ## Open questions
 
