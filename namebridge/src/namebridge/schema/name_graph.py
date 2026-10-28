@@ -9,9 +9,11 @@ Run: python -m namebridge.schema.name_graph [graph_dir]
 import json
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 from namebridge.schema import forbidden_keys
+from namebridge.similarity import jaro_winkler
 
 NODE_TYPES = {"NameForm", "NameConcept", "Morpheme", "Script", "Language", "Locale", "Region", "Rule", "Source"}
 
@@ -34,6 +36,22 @@ EDGE_TYPES = {
     "commonly_confused_with",
     "not_equivalent_to",  # negative constraint
 }
+
+NAME_NODES = {"NameForm", "NameConcept"}
+# Endpoint types for each relation; anything else is a modelling error.
+ENDPOINTS = {rel: (NAME_NODES, NAME_NODES) for rel in EDGE_TYPES}
+ENDPOINTS["contains_morpheme"] = (NAME_NODES, {"Morpheme"})
+ENDPOINTS["married_or_previous_form_of"] = (NAME_NODES | {"Rule"}, NAME_NODES | {"Rule"})
+ENDPOINTS["transliteration_of"] = ({"NameForm"}, {"NameForm"})
+
+# Spelling-level variants must look alike. Jaro-Winkler 0.8 on folded forms:
+# the threshold with the highest linkage sensitivity in Grannis et al. 2004
+# (PMID 15360771). Below it, an edge needs a reviewed, attested or expert
+# source and a stated reason: this is how rule 1 of NAME_CHANGE.md (no edge
+# between unrelated names) is enforced for edges that use a variant type.
+SPELLING_VARIANTS = {"orthographic_variant_of", "phonetic_variant_of", "romanization_variant_of"}
+MIN_SPELLING_SIMILARITY = 0.8
+EQUIVALENCE_TYPES = EDGE_TYPES - {"not_equivalent_to", "commonly_confused_with", "contains_morpheme"}
 
 REQUIRED_EDGE_FIELDS = (
     "id", "from", "to", "relation_type",
@@ -62,6 +80,9 @@ def validate_node(node):
             errors.append(f"node {nid}: NameForm needs 'text'")
         if not _ISO15924.match(str(node.get("script", ""))):
             errors.append(f"node {nid}: NameForm needs an ISO 15924 'script' (e.g. Latn)")
+        text = str(node.get("text", ""))
+        if text != unicodedata.normalize("NFC", text):
+            errors.append(f"node {nid}: text must be Unicode NFC (W3C Character Model)")
     for key in forbidden_keys(node):
         errors.append(f"node {nid}: forbidden attribute {key!r} (no ethnicity, clan or religion; SCOPE.md §4)")
     return errors
@@ -120,6 +141,27 @@ def validate_edge(edge, nodes_by_id=None):
         for end in ("from", "to"):
             if edge[end] not in nodes_by_id:
                 errors.append(f"edge {eid}: {end} node {edge[end]!r} does not exist")
+        types = [nodes_by_id.get(edge[end], {}).get("type") for end in ("from", "to")]
+        allowed = ENDPOINTS.get(rel)
+        if allowed and None not in types and (types[0] not in allowed[0] or types[1] not in allowed[1]):
+            errors.append(f"edge {eid}: {rel} cannot join {types[0]} to {types[1]}")
+        if rel == "transliteration_of" and types == ["NameForm", "NameForm"]:
+            scripts = {nodes_by_id[edge[end]].get("script") for end in ("from", "to")}
+            if len(scripts) < 2:
+                errors.append(f"edge {eid}: transliteration_of must join two different scripts")
+        if rel in SPELLING_VARIANTS and types == ["NameForm", "NameForm"]:
+            score = jaro_winkler(nodes_by_id[edge["from"]]["text"], nodes_by_id[edge["to"]]["text"])
+            justified = (
+                edge.get("low_similarity_reason")
+                and status == "reviewed"
+                and edge["confidence_basis"] in {"attested", "expert"}
+            )
+            if score < MIN_SPELLING_SIMILARITY and not justified:
+                errors.append(
+                    f"edge {eid}: {rel} between names this different (similarity {score:.2f}) needs a "
+                    "reviewed, attested source and a low_similarity_reason; an adopted name is never a "
+                    "variant (NAME_CHANGE.md rule 1)"
+                )
         if rel == "married_or_previous_form_of" and not any(
             nodes_by_id.get(edge[end], {}).get("type") == "Rule" for end in ("from", "to")
         ):
@@ -137,12 +179,25 @@ def validate_graph(nodes, edges):
         if node.get("id") in nodes_by_id:
             errors.append(f"duplicate node id {node['id']!r}")
         nodes_by_id[node.get("id")] = node
-    seen = set()
+    seen, triples, equivalent, different = set(), set(), set(), set()
     for edge in edges:
         errors.extend(validate_edge(edge, nodes_by_id))
         if edge.get("id") in seen:
             errors.append(f"duplicate edge id {edge['id']!r}")
         seen.add(edge.get("id"))
+        triple = (edge.get("from"), edge.get("to"), edge.get("relation_type"))
+        if triple in triples:
+            errors.append(f"edge {edge.get('id')}: the same {triple[2]} edge already exists")
+        triples.add(triple)
+        pair = frozenset((edge.get("from"), edge.get("to")))
+        if edge.get("review_status") == "deprecated":
+            continue
+        if edge.get("relation_type") == "not_equivalent_to":
+            different.add(pair)
+        elif edge.get("relation_type") in EQUIVALENCE_TYPES:
+            equivalent.add(pair)
+    for pair in equivalent & different:
+        errors.append(f"contradiction: {sorted(pair)} are linked as variants and as not_equivalent_to")
     return errors
 
 

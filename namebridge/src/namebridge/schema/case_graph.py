@@ -4,6 +4,8 @@ This semester it stays empty: no real case data (SCOPE.md §4; DATA_RULES.md
 DR-0 class C). The validator is used on synthetic records and in tests.
 """
 
+from datetime import date
+
 from namebridge.schema import forbidden_keys
 
 NODE_TYPES = {
@@ -40,6 +42,11 @@ PROTECTED_FLAGS = {
 ROUTES = {"ordinary", "protected"}
 MATCH_DECISIONS = {"candidate", "confirmed", "rejected", "unresolved", "insufficient_evidence"}
 RAW_BIOMETRIC_KEYS = {"fingerprint", "iris", "template", "face_image", "biometric_data"}
+# Evidence kinds for a match. A confirmation needs at least one that is not a
+# name: a name-only score never reaches confirmation (BENCHMARK_PROTOCOL.md §7;
+# CONCEPT-IDEA.md §5.6).
+NAME_EVIDENCE = {"name", "other_name", "nickname", "name_sound"}
+OTHER_EVIDENCE = {"age", "date_of_birth", "sex", "family", "place", "event", "document", "photo_check", "question_only_family_knows"}
 
 
 def _fact_errors(item, label):
@@ -66,12 +73,21 @@ def validate_observed_name(name):
 def validate_case_record(record):
     label = f"CaseRecord {record.get('id', '?')}"
     errors = []
-    for f in ("id", "lawful_basis", "sharing", "protected_flags", "route", "other_names_used", "possible_name_change"):
+    for f in (
+        "id", "lawful_basis", "sharing", "protected_flags", "route", "other_names_used", "possible_name_change",
+        "created_at", "retain_until",
+    ):
         if f not in record:
             errors.append(f"{label}: missing {f!r}")
     if errors:
         return errors
 
+    # Retention and deletion (§8 control 9; DATA_RULES.md): every record says when it must go.
+    try:
+        if date.fromisoformat(record["retain_until"]) <= date.fromisoformat(record["created_at"]):
+            errors.append(f"{label}: retain_until must be after created_at")
+    except (TypeError, ValueError):
+        errors.append(f"{label}: created_at and retain_until must be ISO dates (YYYY-MM-DD)")
     if record["lawful_basis"] not in LAWFUL_BASES:
         errors.append(f"{label}: unknown lawful_basis {record['lawful_basis']!r}")
     flags = set(record["protected_flags"])
@@ -137,6 +153,11 @@ def validate_edge(edge):
         # No automatic identity confirmation (SCOPE.md §4; GDPP para. 41; Malawi DPA s. 25).
         if decision == "confirmed" and (not edge.get("decided_by") or edge.get("decided_by") == "automatic"):
             errors.append(f"{label}: only a human reviewer can confirm a match")
+        evidence = set(edge.get("evidence", []))
+        for kind in evidence - NAME_EVIDENCE - OTHER_EVIDENCE:
+            errors.append(f"{label}: unknown evidence kind {kind!r}")
+        if decision == "confirmed" and not evidence & OTHER_EVIDENCE:
+            errors.append(f"{label}: a name alone never confirms a match; add non-name evidence")
     for key in forbidden_keys(edge):
         errors.append(f"{label}: forbidden field {key!r}")
     return errors

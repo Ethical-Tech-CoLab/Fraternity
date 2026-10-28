@@ -29,6 +29,10 @@ REQUIRED = (
 )
 LIST_FIELDS = REQUIRED[4:13] + ("known_failure_modes", "protected_or_sensitive_forms", "benchmark_cases", "reviewers")
 SOUND_FIELDS = ("phoneme_inventory", "spelling_conventions", "listener_confusions")
+RULE_FIELDS = (
+    "name_structures", "order_rules", "particles_and_morphemes", "transliteration_rules",
+    "phonetic_rules", "common_administrative_forms",
+) + SOUND_FIELDS
 IMPLICATION_VALUES = {"weak", "neutral", "strong", "context-dependent", "unknown", "disputed"}
 PRACTICE_KINDS = {"cultural", "legal_document", "database"}
 CONFIDENCE_LEVELS = {"high", "medium", "low", "unknown", "disputed", "hypothesis"}
@@ -50,22 +54,21 @@ def validate_pack(pack):
         if not isinstance(pack[f], list):
             errors.append(f"pack {pid}: {f} must be a list")
 
-    for i, rule in enumerate(pack["name_structures"] + pack["order_rules"]):
-        where = f"pack {pid}: rule {rule.get('id', i)}"
-        if not rule.get("source"):
-            errors.append(f"{where}: every rule needs a source")
-        if rule.get("confidence") not in CONFIDENCE_LEVELS:
-            errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE_LEVELS)}")
-        if rule.get("practice") not in PRACTICE_KINDS:
-            errors.append(f"{where}: practice must be one of {sorted(PRACTICE_KINDS)}")
-
-    for f in SOUND_FIELDS:
-        for i, entry in enumerate(pack[f] if isinstance(pack[f], list) else []):
-            where = f"pack {pid}: {f}[{i}]"
-            if not entry.get("source"):
-                errors.append(f"{where}: needs a source")
-            if entry.get("confidence") not in CONFIDENCE_LEVELS:
+    # Every entry of every rule list needs a source and a confidence; structure
+    # and order rules also say which practice they describe.
+    for f in RULE_FIELDS:
+        for i, rule in enumerate(pack[f] if isinstance(pack[f], list) else []):
+            where = f"pack {pid}: {f}[{rule.get('id', i)}]"
+            if not isinstance(rule, dict):
+                errors.append(f"{where}: must be an object with a source")
+                continue
+            if not rule.get("source"):
+                errors.append(f"{where}: every rule needs a source")
+            if rule.get("confidence") not in CONFIDENCE_LEVELS:
                 errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE_LEVELS)}")
+            if f in ("name_structures", "order_rules") and rule.get("practice") not in PRACTICE_KINDS:
+                errors.append(f"{where}: practice must be one of {sorted(PRACTICE_KINDS)}")
+
     for i, conv in enumerate(pack["spelling_conventions"] if isinstance(pack["spelling_conventions"], list) else []):
         if not conv.get("writer_language") or not conv.get("sound") or not conv.get("spellings"):
             errors.append(f"pack {pid}: spelling_conventions[{i}] needs writer_language, sound and spellings")

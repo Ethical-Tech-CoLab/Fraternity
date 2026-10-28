@@ -1179,3 +1179,31 @@ offline.
 - No source yet on Chichewa spelling habits (Malawian caseworkers).
 - Listener confusions beyond r/l are hypotheses.
 - Checking these with native speakers is planned for Jan–Mar 2027 and needs IRB review if it involves people (`IRB_DETERMINATION.md`).
+
+## 2026-10-28 (night) — Week 3 review: diagnosis and fixes
+
+**Why:** the user asked for a diagnosis of week 3, which had been marked ✔ too early. Two bugs and seven half-enforced rules were found and fixed (63 tests, from 42).
+
+**Bugs fixed:**
+- **B1, relatives lost:** in a Primero *case*, relatives are nested in `family_details_section` (checked in Primero's `db/dev_fixtures/cases.rb`, 28 Oct 2026); only *traces* have a flat `relation_name` (`doc/api/traces/id/get.md`). Ingestion now reads the nested list with its own allowlist.
+- **B2, ethnicity inside an allowed field:** an allowed field holding a nested object is now dropped whole, and forbidden keys inside it are reported by name at any depth.
+
+**Rules completed:**
+- **R1** spelling, sound and romanisation variants must reach Jaro-Winkler ≥ 0.8 on folded forms (threshold from Grannis et al. 2004, PMID 15360771: highest linkage sensitivity at 0.8). Below that, the edge must be reviewed, attested or expert, and give a reason. Checked on real pairs: Kakolele/Kakorere 0.90, Habyarimana/Havyarimana 0.95, Ciza/Tchiza 0.89, Rwanda/Ruanda 0.90 pass; Jean/Hamisi 0.47 fails. This enforces `NAME_CHANGE.md` rule 1 even when a variant type is misused.
+- **R2** a confirmation needs at least one piece of non-name evidence.
+- **R3** a CPIMS+ case without `consent_for_tracing = true` is refused whole (Primero's matching only searches such cases).
+- **R4** case records need `created_at` and `retain_until`.
+- **R5** every entry in every pack rule list needs a source and a confidence.
+- **R6** link types join only the right node types; transliteration needs two scripts.
+- **R7** ingested names become ObservedName nodes that pass the case schema.
+- **M1** GitHub Actions runs the tests and validators on Python 3.9 and 3.12 (`.github/workflows/namebridge-tests.yml`).
+- **M2** `docs/SCHEMA.md`, the schema in plain language for reviewers.
+- **M3** duplicate links and contradictions (variant + not equivalent) are rejected.
+- **M4** name text must be Unicode NFC (W3C Character Model, "Content authors SHOULD use … NFC"); full ICU set-up stays in week 4.
+
+**Research (Tavily):**
+- **[K1] authors confirmed:** R. David Zorc and Louise Nibagwire, Dunwoody Press, 2007 ([Stanford SearchWorks](https://searchworks.stanford.edu/view/7513422); [WorldCat](https://search.worldcat.org/title/Kinyarwanda-and-Kirundi-comparative-grammar/oclc/182537195)).
+- **Kirundi spelling variation, second and third sources:**
+  - Mioni (1975), ["The standardization of the orthography in Rundi"](https://www.africabib.org/rec.php?RID=188045899): "in Burundi, it is more a question of orthographic habits than of an orthographic code".
+  - Nassenstein, ["Kinyarwanda and Kirundi: On Colonial Divisions…"](https://journals.uhk.cz/modernafrica/article/download/184/180/361), *Modern Africa*: missionary orthographies, and the *by*/*vy* divergence.
+  - So spelling habits varied, as the Omniglot snippet said. The specific Catholic vs Protestant differences are **still not documented**; Mioni's full text is the next place to look.

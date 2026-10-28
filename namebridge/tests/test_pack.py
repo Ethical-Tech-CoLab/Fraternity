@@ -53,3 +53,11 @@ def test_spelling_convention_names_the_writer():
     pack = template()
     del pack["spelling_conventions"][0]["writer_language"]
     assert any("writer_language" in e for e in validate_pack(pack))
+
+
+def test_transliteration_rules_need_a_source():
+    pack = template()
+    pack["transliteration_rules"] = [{"id": "cy-c", "from": "cy", "to": "c", "confidence": "high"}]
+    assert any("needs a source" in e for e in validate_pack(pack))
+    pack["transliteration_rules"][0]["source"] = "Zorc & Nibagwire 2007, Table 1"
+    assert validate_pack(pack) == []

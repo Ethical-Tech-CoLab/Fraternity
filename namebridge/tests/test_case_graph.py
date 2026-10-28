@@ -5,6 +5,7 @@ def case(**overrides):
     c = {
         "id": "case-1", "type": "CaseRecord", "lawful_basis": "vital_interest", "sharing": ["tracing_service"],
         "protected_flags": [], "route": "ordinary", "other_names_used": [], "possible_name_change": False,
+        "created_at": "2026-11-02", "retain_until": "2027-11-02",
     }
     c.update(overrides)
     return c
@@ -75,9 +76,30 @@ def fact(**overrides):
 
 
 def test_no_automatic_confirmation():
-    assert any("human reviewer" in e for e in cg.validate_edge(fact(decision="confirmed")))
-    assert any("human reviewer" in e for e in cg.validate_edge(fact(decision="confirmed", decided_by="automatic")))
-    assert cg.validate_edge(fact(decision="confirmed", decided_by="reviewer:senior-caseworker")) == []
+    evidence = ["name", "family"]
+    assert any("human reviewer" in e for e in cg.validate_edge(fact(decision="confirmed", evidence=evidence)))
+    automatic = fact(decision="confirmed", decided_by="automatic", evidence=evidence)
+    assert any("human reviewer" in e for e in cg.validate_edge(automatic))
+    human = fact(decision="confirmed", decided_by="reviewer:senior-caseworker", evidence=evidence)
+    assert cg.validate_edge(human) == []
+
+
+def test_name_alone_never_confirms():
+    edge = fact(decision="confirmed", decided_by="reviewer:1", evidence=["name", "nickname", "name_sound"])
+    assert any("name alone" in e for e in cg.validate_edge(edge))
+    assert cg.validate_edge(fact(evidence=["name"])) == []  # a candidate may rest on a name
+
+
+def test_unknown_evidence_kind():
+    assert any("unknown evidence" in e for e in cg.validate_edge(fact(evidence=["ethnic_match"])))
+
+
+def test_retention_dates_required_and_ordered():
+    record = case()
+    del record["retain_until"]
+    assert any("retain_until" in e for e in cg.validate_case_record(record))
+    assert any("after created_at" in e for e in cg.validate_case_record(case(retain_until="2026-01-01")))
+    assert any("ISO dates" in e for e in cg.validate_case_record(case(created_at="2 Nov")))
 
 
 def test_relationships_are_reported_not_inferred():

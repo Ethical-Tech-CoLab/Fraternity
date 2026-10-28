@@ -66,7 +66,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | Examples for G4 and G5 | ✔ done 28 Oct | `GATE_EXAMPLES.md` | `fb5bf35` |
 | UNHCR's 2022 policy (GDPP) read | ✔ done 28 Oct | `RESEARCH_LOG.md`; `SCOPE.md` [S12] | `f8a3184` |
 | Rule 5 reworded: trace people who changed names, with nine safety layers | ✔ done 28 Oct | `NAME_CHANGE.md`; `SCOPE.md` §4 | `9b4989a`, `9316717` |
-| Week 3: schemas, validators, CPIMS+ allowlist, pack template, regression suite | ✔ done 28 Oct | `namebridge/src/namebridge/schema/` | `7bee067` |
+| Week 3: schemas, validators, CPIMS+ allowlist, pack template, regression suite; review fixes | ✔ done 28 Oct | `namebridge/src/namebridge/schema/`; `SCHEMA.md` | `7bee067` + review fixes |
 | Kirundi spelling rules | ✔ done 28 Oct | `RESEARCH_LOG.md` | `a448e72` |
 | Sound layer (names told aloud): design and schema | ✔ done (extra) 28 Oct | `CONCEPT-IDEA.md` §5.4A; `namebridge.schema.pack` | `415917e` |
 
@@ -164,7 +164,8 @@ Plan (all items done 26 Oct):
 - ✔ **Language-pack template** (§11). *Done 28 Oct:* `data/packs/TEMPLATE.json` and `namebridge.schema.pack` (rules need a source, a practice kind and a confidence; `unknown` and `disputed` allowed).
 - ✔ **Regression suite:** set up the test suite that every later change must pass (§12). *Done 28 Oct:* 38 tests, including that the repo's own graph and packs validate.
 - ✔ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. ✔ *Kirundi spelling rules done 28 Oct:* four automatic Kinyarwanda → Kirundi rules (cy→c, jy→j, shy→sh, by→vy), one-way only; e.g. Habyarimana (Rw) / Havyarimana (Bi). Details in `RESEARCH_LOG.md`.
-- ✔ **Done when:** the schema and validator are in the repo, with tests (✔ 28 Oct: 42 tests pass).
+- ✔ **Review and fixes** (28 Oct, night): two bugs fixed (relatives nested in Primero cases; forbidden keys inside allowed fields), seven rules completed (variant similarity ≥ 0.8, non-name evidence for confirmation, consent for tracing, retention dates, sources on every pack rule, endpoint types, ingestion → case schema), GitHub Actions, `SCHEMA.md`, duplicate and contradiction checks, NFC. Details in `RESEARCH_LOG.md`.
+- ✔ **Done when:** the schema and validator are in the repo, with tests (✔ 28 Oct: 63 tests pass, also on GitHub Actions).
 
 ### Week 4 — 9–13 Nov: first packs (phase 1)
 

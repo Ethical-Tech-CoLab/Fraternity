@@ -1,0 +1,30 @@
+name: namebridge tests
+
+on:
+  push:
+    paths: ["namebridge/**", ".github/workflows/namebridge-tests.yml"]
+  pull_request:
+    paths: ["namebridge/**", ".github/workflows/namebridge-tests.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.12"]
+    defaults:
+      run:
+        working-directory: namebridge
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: python -m pip install --upgrade pip
+      - run: pip install -e '.[dev]'
+      - name: Regression suite
+        run: pytest -q
+      - name: Validate the repo's graph and packs
+        run: |
+          python -m namebridge.schema.name_graph data/graph
+          python -m namebridge.schema.pack data/packs/*.json
