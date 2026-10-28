@@ -2,6 +2,10 @@
 
 Draft, 26 Oct 2026. This is an analysis for the professor (faculty sponsor), **not an IRB determination**. Under NYU's process, only the professor and the student, or the HRPP, can make that call. Sources are listed at the end ([I1]–[I6]).
 
+## Decision (28 Oct 2026)
+
+**The professor chose option A:** NYU IRB review is not needed for the semester work. It is not human subjects research (public lists, aggregates only, no interaction). This record is the self-determination under option A. It covers only the uses described here; contact with people and phase 3 case data still need IRB review.
+
 ## The question
 
 To make the synthetic benchmark realistic, the plan (`BENCHMARK_PROTOCOL.md` §2.4) is to:

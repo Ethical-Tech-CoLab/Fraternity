@@ -1114,3 +1114,15 @@ offline.
 - `NAME_CHANGE.md`: "safety layers" table (9 layers, mapped to the existing controls and threats: C1–C2, C6–C9, M2, T1, T3, T4, T6, T8, T14). The public dictionary holds spelling variants only, so it reveals no name changes.
 - `GATE_EXAMPLES.md`: case C5 (trafficking survivor, found by her sister with checks); a second G5 question: a **restricted name-change layer** (substitution patterns, never published or exported, used only in protected cases).
 - `TIMETABLE.md` G5 row updated.
+
+## 2026-10-28 (evening) — Professor meeting: G1, G2, G3, G7 closed; G5 partly
+
+**Decisions (professor, reported by the user):**
+- **G1:** `SCOPE.md` approved.
+- **G2:** governments and law enforcement are not users.
+- **G3:** option **A**: NYU IRB review is not needed (recorded in `IRB_DETERMINATION.md`, Decision).
+- **G5:** alleged perpetrators, option **A** (never searched for). The restricted name-change layer was not discussed; default: not built.
+- **G7:** NameBridge stays open source; no intention to sell, because the work is humanitarian; licences may be offered where useful. Ownership not discussed. This replaces the afternoon note "commercial use reopened".
+- **G4:** not discussed; the 26 Oct defaults stay in use.
+
+**Consequences:** week 3 (schema and validator) may start. In week 4, the public lists (CongoNames, NESA, CENI, the UN list) may be downloaded and processed under `DATA_RULES.md` DR-1 (study, keep aggregates, delete). Agenda with answers: `MEETING_2026-10-28.md`.

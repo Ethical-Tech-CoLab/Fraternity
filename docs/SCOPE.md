@@ -1,6 +1,6 @@
 # NameBridge — scope (phase 0, week 1)
 
-Draft, 26 Oct 2026, for the professor's review. Section numbers (§) refer to `CONCEPT-IDEA.md`; the plan is in `TIMETABLE.md`. Sources are listed at the end ([S1]–[S16]). On 26 Oct, a second desk-research pass checked every claim; the result is in §7. The phase 0 exit check is in §8.
+**Approved by the professor on 28 Oct 2026 (gate G1).** Drafted 26 Oct 2026. Section numbers (§) refer to `CONCEPT-IDEA.md`; the plan is in `TIMETABLE.md`. Sources are listed at the end ([S1]–[S16]). On 26 Oct, a second desk-research pass checked every claim; the result is in §7. The phase 0 exit check is in §8.
 
 **What NameBridge is this semester:** a research prototype. It finds candidate matches between records of people whose names were written differently in different countries, languages or registries. It runs **offline, on synthetic data only**, and makes no decision about any real person (§10 phase 2 exit).
 
@@ -48,7 +48,7 @@ New arrivals show the same mix: 62% DRC, 19% Burundi, 7% Rwanda (UNHCR). The thr
 
 - **The public:** no public person search (§12).
 - **Families searching directly:** they go through a tracing service.
-- **Law enforcement and government agencies:** they are not users of the matching. *Proposed; to confirm with the professor.* The reasons:
+- **Law enforcement and government agencies:** they are not users of the matching. *Confirmed by the professor on 28 Oct 2026 (gate G2).* The reasons:
   - In this corridor, governments and armed groups are among the actors people flee (situation research §2.4).
   - There is a precedent for this harm. Refugee registration data, including biometrics, was passed from Bangladesh to Myanmar, the country the Rohingya fled, for repatriation checks without informed consent, and some refugees went into hiding [S11].
   - This rule is stricter than UNHCR's own policy, which allows transfers to law enforcement "in appropriate circumstances" [S12]. It follows the Red Cross Movement's Restoring Family Links Code of Conduct on Data Protection [S13].

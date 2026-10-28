@@ -56,6 +56,8 @@ Two invented men, **NDAYISENGA Jean-Paul** (b. 1984, Muyinga) and **NDAYISENGA P
 
 ## G5: rule 5 in five cases
 
+**Decided 28 Oct 2026 (professor):** question 1, option **A**. Question 2 (restricted layer) is still open.
+
 Rule 5 (reworded 28 Oct): *tracing people who changed their names is supported; exposing them is not.* Searches whose purpose is to expose or verify a person's identity against their will (verification or revocation campaigns, locating alleged perpetrators) are not supported (`NAME_CHANGE.md`, with the safety layers).
 
 | # | Case (invented) | Under rule 5 as written | Why |

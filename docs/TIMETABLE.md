@@ -13,13 +13,13 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 
 | Gate | Decision needed | Who | Blocks | Must be resolved by | Status |
 | --- | --- | --- | --- | --- | --- |
-| **G1** ⛔ | Approve the phase 0 scope (`SCOPE.md`): purpose, users, prohibited uses. This is week 1's "done when" | Professor | **All of phase 1** (week 3 onward) | Mon 2 Nov | Open: to discuss with the professor on **Wed 28 Oct** |
-| **G2** ⛔ | Governments and law enforcement are not users (`SCOPE.md` §2) | Professor | Week 3 role model in the case schema; week 7 access controls | Mon 2 Nov | Open: to discuss on **Wed 28 Oct** |
-| **G3** ⛔ | Does NYU's IRB need to confirm the aggregate use of public name lists (CongoNames, NESA, the UN list)? Analysis in `IRB_DETERMINATION.md`: **likely Not Human Subjects Research** (public, not private, no interaction). The professor chooses **A** (self-determine, recorded in the log), **B** (email the HRPP; recommended) or **C** (formal NHSR via Cayuse) | Professor (→ HRPP if B or C) | Week 4: **downloading or processing any real name list**, and the naming profiles | Mon 9 Nov (B needs a few days; C about 1–2 weeks) | Open; analysis and draft email ready (26 Oct); to discuss on **Wed 28 Oct** |
+| **G1** ⛔ | Approve the phase 0 scope (`SCOPE.md`): purpose, users, prohibited uses. This is week 1's "done when" | Professor | **All of phase 1** (week 3 onward) | Mon 2 Nov | **Closed 28 Oct (professor): approved.** `SCOPE.md` approved as of 28 Oct, including the reworded §4 |
+| **G2** ⛔ | Governments and law enforcement are not users (`SCOPE.md` §2) | Professor | Week 3 role model in the case schema; week 7 access controls | Mon 2 Nov | **Closed 28 Oct (professor): agreed.** Governments and law enforcement are not users |
+| **G3** ⛔ | Does NYU's IRB need to confirm the aggregate use of public name lists (CongoNames, NESA, the UN list)? Analysis in `IRB_DETERMINATION.md`: **likely Not Human Subjects Research** (public, not private, no interaction). The professor chooses **A** (self-determine, recorded in the log), **B** (email the HRPP; recommended) or **C** (formal NHSR via Cayuse) | Professor (→ HRPP if B or C) | Week 4: **downloading or processing any real name list**, and the naming profiles | Mon 9 Nov (B needs a few days; C about 1–2 weeks) | **Closed 28 Oct (professor): option A.** NYU IRB review is not needed; the work is not human subjects research (`IRB_DETERMINATION.md`, Decision). Week 4 may download and process the public lists under `DATA_RULES.md` DR-1 |
 | **G4** ⚠ | Error costs and targets (`BENCHMARK_PROTOCOL.md` §7). Default: the ratios decided by the user on 26 Oct | Professor | Week 6: benchmark size (26,000 is derived from them) and generation; week 8 thresholds | Mon 23 Nov | Deferred by the user on 26 Oct, to decide after seeing example records; default in use. **Examples ready 28 Oct:** `GATE_EXAMPLES.md` |
-| **G5** ⚠ | `NAME_CHANGE.md` rule 5 (reworded 28 Oct): tracing people who changed names is supported with safety layers; searches to expose them, including alleged perpetrators, are not. Also: a restricted name-change layer, yes or no. Default: the rule as reworded, no restricted layer | Professor | Week 7 protected-person routing; final wording of `SCOPE.md` §4 | Mon 30 Nov | Deferred by the user on 26 Oct, to decide after seeing examples; default in use. **Examples ready 28 Oct:** `GATE_EXAMPLES.md` (recommended: option A) |
+| **G5** ⚠ | `NAME_CHANGE.md` rule 5 (reworded 28 Oct): tracing people who changed names is supported with safety layers; searches to expose them, including alleged perpetrators, are not. Also: a restricted name-change layer, yes or no. Default: the rule as reworded, no restricted layer | Professor | Week 7 protected-person routing; final wording of `SCOPE.md` §4 | Mon 30 Nov | **Partly closed 28 Oct (professor):** alleged perpetrators, **option A** (never searched for). **Still open:** the restricted name-change layer; default: not built |
 | **G6** ⚠ | A source for Burundian names (data dependency, not an approval) | Us | Week 4 `bi-kirundi` pack and Burundi profile | Mon 9 Nov | **Closed 28 Oct (user):** NESA name elements weighted by CENI 2025 frequencies (ethnicity column dropped on read), plus sourced Kirundi spelling rules; Forebears aggregates as a cross-check only; social-media data refused (`RESEARCH_LOG.md`). Downloads still wait for G3 |
-| **G7** ⚠ | **Commercial use** (opened by the user 28 Oct): (a) who owns NameBridge: student, professor, NYU? NYU IP policy §4.7: students generally own coursework, unless the work is an NYU research project or program; (b) the licence for future releases: Apache-2.0 and CC BY 4.0 already allow anyone to use and sell the published versions, and that cannot be withdrawn; (c) terms of any deal | Professor (a, c); NYU Technology Opportunities & Ventures if NYU may own it (a); user (b) | Any sale or licence deal; any change of licence; outside contributions (they would need a contributor agreement to keep relicensing possible) | Before the first public graph release (week 5, 16–20 Nov) | Open; default: current licences, free offer, no deals |
+| **G7** ⚠ | **Commercial use** (opened by the user 28 Oct): (a) who owns NameBridge: student, professor, NYU? NYU IP policy §4.7: students generally own coursework, unless the work is an NYU research project or program; (b) the licence for future releases: Apache-2.0 and CC BY 4.0 already allow anyone to use and sell the published versions, and that cannot be withdrawn; (c) terms of any deal | Professor (a, c); NYU Technology Opportunities & Ventures if NYU may own it (a); user (b) | Any sale or licence deal; any change of licence; outside contributions (they would need a contributor agreement to keep relicensing possible) | Before the first public graph release (week 5, 16–20 Nov) | **Closed 28 Oct (professor and user):** NameBridge stays **open source** (Apache-2.0 code, CC BY 4.0 data); no intention to sell, because the work is humanitarian. Licences may be offered to organisations where useful. Ownership (a) was not discussed; it matters little while there is no sale |
 
 **Not gates for the semester** (they block phase 3, not phases 0–2):
 
@@ -28,7 +28,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - a study of name change in Malawi;
 - **IRB review for anything involving contact with people** (native-speaker review in Jan–Mar 2027; phase 3 case data). This becomes a gate when that work is planned (`IRB_DETERMINATION.md`).
 
-**Today (26 Oct):** nothing is blocked yet, because week 3 starts on 2 Nov. **Meeting with the professor: Wed 28 Oct** (G1, G2, G3). **If G1 and G2 are still open on 2 Nov, week 3 does not start.**
+**Today (28 Oct):** the professor closed G1, G2, G3 and G7 and decided G5's first question. **Week 3 can start.** Still open: G4 (default in use) and the restricted name-change layer (G5, default: not built).
 
 ## Progress (as of 26 Oct 2026)
 
@@ -151,7 +151,7 @@ Plan (all items done 26 Oct):
 
 ### Week 3 — 2–6 Nov: schema (phase 1)
 
-⛔ **Gated by G1 and G2.** Do not start until both are resolved.
+✔ **G1 and G2 closed 28 Oct.** Week 3 may start.
 
 
 - **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator.
@@ -165,7 +165,7 @@ Plan (all items done 26 Oct):
 
 ### Week 4 — 9–13 Nov: first packs (phase 1)
 
-⛔ **Gated by G3** (real name lists) · ⚠ **G6** (Burundi source).
+✔ **G3 closed 28 Oct (option A)** and **G6 closed 28 Oct**: the public lists may be downloaded and processed under `DATA_RULES.md` DR-1.
 
 
 - **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili).
@@ -240,4 +240,4 @@ Plan (all items done 26 Oct):
 | Jan 2027 on | CPIMS+ companion service over the Primero API (separate service, Apache-2.0) | Needs an agency running CPIMS+ for testing beyond synthetic data |
 | When ready | Phase 3: shadow pilot beside an authorised tracing workflow | Needs a partner (e.g. REFUNITE, the Red Cross, UNHCR) and real data under their rules |
 | After phase 3 | Phase 4: controlled deployment; federation only if needed | Phase 3 exit criteria met |
-| Final phase | Offer NameBridge free of charge to the tracing organisations **and to Fraternidade Sem Fronteiras (FSF)**, for its work with children in care (foster children, the Órfãos do Congo project). FSF does not run the system: it uses the intake guide and refers cases to an authorised tracing service such as the Red Cross. Cases involving minors follow the protected-person rules (§8, control 7). Details: `CONCEPT-IDEA.md` §10, "Final phase" | Tested result in hand. Selling or licensing is allowed since 28 Oct (gate G7); the free offer to tracing services and FSF stays |
+| Final phase | Offer NameBridge free of charge to the tracing organisations **and to Fraternidade Sem Fronteiras (FSF)**, for its work with children in care (foster children, the Órfãos do Congo project). FSF does not run the system: it uses the intake guide and refers cases to an authorised tracing service such as the Red Cross. Cases involving minors follow the protected-person rules (§8, control 7). Details: `CONCEPT-IDEA.md` §10, "Final phase" | Tested result in hand. Open source; no sale (humanitarian work); licences may be offered where useful (G7, 28 Oct) |

@@ -568,7 +568,7 @@ Probabilistic record linkage provides explicit tools for match weights, threshol
 
 ### Final phase — free offer (added 19 Oct 2026; commercial use reopened 28 Oct 2026)
 
-*Changed 28 Oct 2026 (user):* the 19 Oct rule "NameBridge is not sold" is **withdrawn**. Selling or licensing later is an open option, subject to gate G7 (`TIMETABLE.md`).
+*Confirmed 28 Oct 2026 (professor and user, gate G7):* NameBridge stays **open source**. There is no intention to sell it, because the work is humanitarian. Where it is useful and makes sense, a licence may be offered to an organisation.
 
 The free offer below remains the plan. With a tested result in hand, the graph, packs, code and evaluation are offered free of charge to:
 
