@@ -1137,3 +1137,23 @@ offline.
 
 **Decision (Claude, user may change):** storage is JSON / JSON Lines, so the package needs only the standard library (no YAML dependency).
 **Remaining in week 3:** Kirundi spelling rules (research).
+
+## 2026-10-28 (evening) — Kirundi spelling rules (week 3 research)
+
+**Sources:**
+- [K1] *Kinyarwanda and Kirundi Comparative Grammar*, Dunwoody Press, 2007, ISBN 978-1-931546-32-4 (ISBN as given on the [dokumen.pub record](https://dokumen.pub/kinyarwanda-and-kirundi-comparative-grammar-9781931546324.html); [PDF extract](https://www.matana.de/kirundi_kinyarwanda.pdf), §1.1.1, Table 1). Authors are not shown in the extract; *to confirm* (believed to be Zorc & Nibagwire).
+- [K2] Wikipedia, [Rwanda-Rundi](https://en.wikipedia.org/wiki/Rwanda-Rundi), "Spelling" table (same four rules; consistent with [K1]).
+- [K3] Forebears, [Burundi surnames](https://forebears.io/burundi/surnames) (accessed 28 Oct 2026): *Havyarimana* is ranked 25th in Burundi.
+- [K4] Omniglot snippet: a standardised Kirundi spelling since the 1940s, with "slightly different" Catholic and Protestant mission spellings. *Single source; page not fetched.*
+
+**Findings:**
+- **Four spelling differences are automatic** [K1][K2]: Kinyarwanda «cy» → Kirundi «c», «jy» → «j», «shy» → «sh», «by» → «vy». Examples: *cyane* / *cane*, *-jya* / *-ja*, *nshya* / *nsha*, *umubyeyi* / *umuvyeyi*.
+- **They work one way only.** Kinyarwanda → Kirundi is deterministic. Kirundi → Kinyarwanda is not, because both languages also have plain «sh» (*ishami*, *igishanga*) [K1]. So the matcher must generate *both* options when going from Kirundi: sh → {sh, shy}, c → {c, cy}, j → {j, jy}, vy → {vy, by}.
+- **The rule shows up in names:** *Habyarimana* (Rwandan spelling) and *Havyarimana* (Burundian spelling, [K3]) are the same name.
+- **Other differences are sporadic** (e.g. Rundi «-anka» / Rwanda «-anga»), so they need sourced word-by-word edges, not rules [K1].
+- **Tone and length marks** (circumflex, macron, caron) appear in linguistic writing [K2]. Registries and lists normally use plain letters, so search forms fold them; the original form is still kept (§5.3).
+
+**Consequences:**
+- **G6 profile:** the Kinyarwanda → Kirundi direction is deterministic, so NESA name elements can be converted to Burundian spelling before the CENI weighting.
+- **Week 4 `bi-kirundi` pack:** the four rules go in as `transliteration_rules` (practice: cultural/orthographic, confidence: high, source [K1]). The graph gets a Rule node plus sourced `orthographic_variant_of` edges.
+- **Open:** the Catholic vs Protestant mission spellings [K4]; to check in week 4.

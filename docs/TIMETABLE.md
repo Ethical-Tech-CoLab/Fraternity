@@ -160,7 +160,7 @@ Plan (all items done 26 Oct):
 - ✔ **Name-change rules in the schema** (*done 28 Oct:* no edge type for adopted names; `layer` must be public; `possible_name_change` forces the protected route) (`NAME_CHANGE.md`): the validator rejects edges between unrelated names; case records carry `other_names_used` and a `possible_name_change` route to protected handling.
 - ✔ **Language-pack template** (§11). *Done 28 Oct:* `data/packs/TEMPLATE.json` and `namebridge.schema.pack` (rules need a source, a practice kind and a confidence; `unknown` and `disputed` allowed).
 - ✔ **Regression suite:** set up the test suite that every later change must pass (§12). *Done 28 Oct:* 38 tests, including that the repo's own graph and packs validate.
-- ◐ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Partly done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. **Remaining:** Kirundi spelling rules.
+- ◐ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Partly done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. ✔ *Kirundi spelling rules done 28 Oct:* four automatic Kinyarwanda → Kirundi rules (cy→c, jy→j, shy→sh, by→vy), one-way only; e.g. Habyarimana (Rw) / Havyarimana (Bi). Details in `RESEARCH_LOG.md`.
 - **Done when:** the schema and validator are in the repo, with tests.
 
 ### Week 4 — 9–13 Nov: first packs (phase 1)
