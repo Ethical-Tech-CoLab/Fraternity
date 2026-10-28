@@ -154,12 +154,12 @@ Plan (all items done 26 Oct):
 ✔ **G1 and G2 closed 28 Oct.** Week 3 may start.
 
 
-- **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator.
-- **Case graph** (§5.1B): schema only, kept empty and separate.
-- ◐ **CPIMS+ mapping** (field names already known from Primero's code, 26 Oct: `name`, `name_other`, `name_nickname`, `relation_name`, `relation_nickname`, `relation_other_family`, `relation`, `relation_age`, `date_of_birth`, `sex`, `age`, plus the ethnicity, sub-ethnicity and religion fields to refuse; `RESEARCH_LOG.md`): map the case schema to Primero's case and tracing-request fields (`name`, `name_other`, `name_nickname`, relatives' names). Names arrive as one typed string, so the parser must not rely on separate fields. An ingestion allowlist refuses ethnicity, sub-ethnicity and religion (`THREAT_MODEL.md` T13).
-- **Name-change rules in the schema** (`NAME_CHANGE.md`): the validator rejects edges between unrelated names; case records carry `other_names_used` and a `possible_name_change` route to protected handling.
-- **Language-pack template** (§11).
-- **Regression suite:** set up the test suite that every later change must pass (§12).
+- ✔ **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator. *Done 28 Oct:* `namebridge.schema.name_graph`; JSON Lines in `data/graph/`.
+- ✔ **Case graph** (§5.1B): schema only, kept empty and separate. *Done 28 Oct:* `namebridge.schema.case_graph` (fact metadata, lawful basis, protected flags and route, human-only confirmation, biometrics as pointers only).
+- ✔ **CPIMS+ mapping** (*done 28 Oct:* `namebridge.schema.ingest`, allowlist; refused fields reported by name, values never copied) (field names already known from Primero's code, 26 Oct: `name`, `name_other`, `name_nickname`, `relation_name`, `relation_nickname`, `relation_other_family`, `relation`, `relation_age`, `date_of_birth`, `sex`, `age`, plus the ethnicity, sub-ethnicity and religion fields to refuse; `RESEARCH_LOG.md`): map the case schema to Primero's case and tracing-request fields (`name`, `name_other`, `name_nickname`, relatives' names). Names arrive as one typed string, so the parser must not rely on separate fields. An ingestion allowlist refuses ethnicity, sub-ethnicity and religion (`THREAT_MODEL.md` T13).
+- ✔ **Name-change rules in the schema** (*done 28 Oct:* no edge type for adopted names; `layer` must be public; `possible_name_change` forces the protected route) (`NAME_CHANGE.md`): the validator rejects edges between unrelated names; case records carry `other_names_used` and a `possible_name_change` route to protected handling.
+- ✔ **Language-pack template** (§11). *Done 28 Oct:* `data/packs/TEMPLATE.json` and `namebridge.schema.pack` (rules need a source, a practice kind and a confidence; `unknown` and `disputed` allowed).
+- ✔ **Regression suite:** set up the test suite that every later change must pass (§12). *Done 28 Oct:* 38 tests, including that the repo's own graph and packs validate.
 - ◐ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Partly done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. **Remaining:** Kirundi spelling rules.
 - **Done when:** the schema and validator are in the repo, with tests.
 

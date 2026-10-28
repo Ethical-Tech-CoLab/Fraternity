@@ -1,0 +1,37 @@
+{
+  "pack_id": "xx-template-2026.1",
+  "languages": ["xx"],
+  "scripts": ["Latn"],
+  "regions": ["XX"],
+  "name_structures": [
+    {
+      "id": "structure-1",
+      "description": "How a full name is built, e.g. given name + Kirundi name",
+      "practice": "cultural",
+      "source": "Author, title, year, page or URL",
+      "confidence": "unknown"
+    }
+  ],
+  "order_rules": [
+    {
+      "id": "order-1",
+      "description": "Order as written on a given document type",
+      "practice": "legal_document",
+      "source": "Author, title, year, page or URL",
+      "confidence": "unknown"
+    }
+  ],
+  "particles_and_morphemes": [],
+  "transliteration_rules": [],
+  "phonetic_rules": [],
+  "common_administrative_forms": [],
+  "relationship_implications": {
+    "surname_agreement": "unknown",
+    "surname_disagreement": "unknown"
+  },
+  "known_failure_modes": [],
+  "protected_or_sensitive_forms": [],
+  "benchmark_cases": [],
+  "reviewers": [],
+  "version": "0.1.0"
+}

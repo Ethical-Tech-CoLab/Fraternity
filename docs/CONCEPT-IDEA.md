@@ -566,7 +566,7 @@ Probabilistic record linkage provides explicit tools for match weights, threshol
 - Introduce federated/PPRL matching only where agreements prohibit central pooling.
 - Continuously monitor drift, abuse, appeal and correction.
 
-### Final phase — free offer (added 19 Oct 2026; commercial use reopened 28 Oct 2026)
+### Final phase — free offer (added 19 Oct 2026; open source confirmed 28 Oct 2026)
 
 *Confirmed 28 Oct 2026 (professor and user, gate G7):* NameBridge stays **open source**. There is no intention to sell it, because the work is humanitarian. Where it is useful and makes sense, a licence may be offered to an organisation.
 

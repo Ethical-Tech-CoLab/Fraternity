@@ -1126,3 +1126,14 @@ offline.
 - **G4:** not discussed; the 26 Oct defaults stay in use.
 
 **Consequences:** week 3 (schema and validator) may start. In week 4, the public lists (CongoNames, NESA, CENI, the UN list) may be downloaded and processed under `DATA_RULES.md` DR-1 (study, keep aggregates, delete). Agenda with answers: `MEETING_2026-10-28.md`.
+
+## 2026-10-28 (evening) — Week 3 started: schema and validators
+
+**Built** (`namebridge/src/namebridge/schema/`, 38 tests passing):
+- `name_graph`: the public Name Knowledge Graph (§5.1A). It rejects unknown relation types, with a pointer to `NAME_CHANGE.md` rule 1, so adopted names cannot enter. It also rejects any `layer` other than public (the restricted layer is separate; G5), generated edges that are not `proposed`, reviewed edges without a reviewer or source, edges without any source, `married_or_previous_form_of` unless attached to a Rule, and ethnicity, clan or religion attributes anywhere.
+- `case_graph`: the protected case graph, schema only (§5.1B). Fact metadata; lawful basis (Malawi DPA s. 8); a minor or a `possible_name_change` forces a flag and the protected route; guardian consent for minors (s. 17); only a human can confirm a match (GDPP para. 41; s. 25); relationships reported, never inferred; biometrics only as pointers; contact and location always high sensitivity.
+- `ingest`: CPIMS+/Primero allowlist. Names are kept whole; unknown fields are dropped; ethnicity, sub-ethnicity and religion fields are refused by name, and their values are never copied (T13).
+- `pack`: the language-pack template (§11) and validator; `data/packs/TEMPLATE.json`.
+
+**Decision (Claude, user may change):** storage is JSON / JSON Lines, so the package needs only the standard library (no YAML dependency).
+**Remaining in week 3:** Kirundi spelling rules (research).

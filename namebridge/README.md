@@ -11,7 +11,10 @@ Design: [`../docs/CONCEPT-IDEA.md`](../docs/CONCEPT-IDEA.md). Plan:
 ## Layout
 
 - `src/namebridge/` — the package
-- `tests/` — the test suite (becomes the regression suite, week 3)
+  - `schema/` — schemas and validators: public name graph, protected case
+    graph, CPIMS+ ingestion allowlist, language-pack template (week 3)
+- `tests/` — the regression suite: every change must pass it before it is
+  committed
 - `data/` — the public name graph and language packs (CC BY 4.0)
 
 ## Set-up
@@ -22,6 +25,13 @@ python3 -m venv .venv
 .venv/bin/python -m pip install --upgrade pip   # Python 3.9's bundled pip can't do editable installs
 .venv/bin/pip install -e '.[dev]'
 .venv/bin/pytest
+```
+
+Validate the data in the repo:
+
+```sh
+.venv/bin/python -m namebridge.schema.name_graph data/graph
+.venv/bin/python -m namebridge.schema.pack data/packs/*.json
 ```
 
 ## Licences
