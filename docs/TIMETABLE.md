@@ -212,7 +212,7 @@ Plan (all items done 26 Oct):
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
 - ◐ **Consent and lawful basis** (§8 control 4; *schema done 28 Oct:* every case record must carry `lawful_basis` and `sharing`): every case record stores why it may be used and with whom it may be shared.
 - ◐ **Protected-person flags** (§8 control 7; *schema done 28 Oct:* flags force the protected route, minors and possible name changes must be flagged), including **"possible name change"** candidates (`NAME_CHANGE.md` rule 2): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
-- **Sound comparison** (§5.4A): read each name into its pack's sound sequence and compare with confusion-weighted costs, as one more field next to spelling; report it against the Double Metaphone baseline.
+- **Sound comparison** (§5.4A; a **core field** since 28 Oct, because many names are written by someone else: children, adults who cannot read, and clerks writing in another language): read each name into its pack's sound sequence and compare with confusion-weighted costs, next to spelling; report it against the Double Metaphone baseline, per slice of who wrote the name.
 - **Done when:** the baseline runs on the benchmark and gives results; the access log records every read of case data; a flagged synthetic case never appears in an ordinary search.
 
 ### Week 8 — 7–11 Dec: model and evaluation (phase 2)

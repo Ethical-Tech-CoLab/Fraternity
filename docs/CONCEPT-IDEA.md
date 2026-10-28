@@ -299,7 +299,13 @@ Do **not** collapse these into one canonical Latin string. A lossy transliterati
 
 ### 5.4A Sound layer: names told aloud (added 28 Oct 2026)
 
-*Proposed by the user.* A child who cannot read may know their parents' names only as sounds. The caseworker who writes them down hears them through their own language and accent, and spells them with their own writing habits. So the same name can arrive spelled in ways no spelling rule predicts. NameBridge therefore also compares names **by sound**, in three steps, each taken from the language pack:
+*Proposed by the user (28 Oct 2026); widened the same day.* Many names in this corridor are **written down by someone other than their owner**:
+
+- **children** who cannot yet read;
+- **adults who cannot read or write.** Roughly one adult in four to one in three in the corridor countries (UNESCO, 2022: Burundi 75.5% literate, Malawi 68.1%, DRC 80.5% or 68.5% depending on the series). Women and older people, the parents and grandparents who search, are much less literate (Burundi women 69.4%; Burundi adults in 1990, 37%) (`RESEARCH_LOG.md`, 28 Oct);
+- **literate people** whose names are typed by a registration clerk, caseworker or interpreter who speaks another language. This is the normal case at registration, whatever the person's literacy.
+
+The writer hears the name through their own language and accent and spells it with their own habits, so the same name can arrive spelled in ways no spelling rule predicts. Sound is therefore a **core comparison**, not an extra: NameBridge compares names **by sound** in three steps, each taken from the language pack:
 
 1. **Sound inventory.** The language's sounds, with digraphs that are a single sound kept as one unit: prenasalised *mb, nd, ng, nj, nk, mp, nt, nz*; palatal *cy, ry*; labialised *bw, rw, sw*; *sh, pf, ts* (*Kinyarwanda and Kirundi Comparative Grammar*, 2007, ch. 2; `RESEARCH_LOG.md` [P1]). A name is read into this sound sequence, not split letter by letter.
 2. **Writing conventions.** How each sound is spelled by someone writing in Kirundi, Kinyarwanda, French, English, Swahili or Chichewa: e.g. /w/ as *w* or French *ou*; /ʃ/ as *sh* or French *ch*; /tʃ/ as Kirundi *c*, English *ch* or French *tch*; /dʒ/ as *j* or French *dj* (French orthography). The case record stores the convention of the person who wrote the name (`recorded_by_convention`), so the matcher can work back from their spelling to the possible sounds.

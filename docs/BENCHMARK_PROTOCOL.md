@@ -44,6 +44,7 @@ Each person is observed through simulated **sources**. Each source has its own f
 
 - registration form (written, French or English labels);
 - oral tracing request (via an interpreter);
+- **name written by ear** by someone else (registration clerk, caseworker, interpreter), with that writer's spelling convention (French, English, Swahili, Chichewa, Kirundi/Kinyarwanda; `CONCEPT-IDEA.md` §5.4A). The share of names written by ear is a **varied parameter**, set higher for older adults and women, following the literacy gaps (`RESEARCH_LOG.md`, 28 Oct);
 - camp distribution list;
 - school list;
 - passport MRZ (rare).
@@ -58,6 +59,7 @@ Errors are injected **GeCo-style** [B8], with documented rates per source:
 | Postnom dropped, or nom and postnom swapped | `Mutombo Kalala Pierre` → `Pierre Mutombo` |
 | Married name added | (DRC art. 62) |
 | Phonetic errors from oral reports and interpreters | `l`/`r` confusion in Kinyarwanda and Kirundi |
+| **Written by ear** (§5.4A): the writer's convention for each sound, listener confusions, and clusters spelled as heard | `Ciza` → `Tchiza` (French writer); «rw» → `rgw`, «sw» → `skw` |
 | Typos and OCR errors | `rn`→`m`, `1`→`l` |
 | Truncation and missing diacritics | MRZ and ASCII fields |
 | Incomplete or rounded ages; age heaping | "about 10" |
@@ -142,6 +144,7 @@ Every metric is reported for each of these slices, never only as a global averag
 
 - **origin / pack:** RW, BI, CD;
 - **source type;**
+- **who wrote the name:** the person themselves, or someone else by ear (and that writer's convention);
 - **record completeness:** number of non-empty fields;
 - **age group:** child or adult;
 - **sex:** synthetic, so lawful to measure;

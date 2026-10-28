@@ -1224,3 +1224,31 @@ offline.
 - **Useful for the sound layer (two consistent sources):** written clusters are pronounced quite differently from their letters. «sw» often sounds like [skw]; «mw» like [my] or [mg]; «rw» like [rgw]; «vy» may contain a [z] sound; «tw» like [tkw] [O4][O5]. A listener who does not know Kirundi spelling may write what they hear, e.g. *rgw*, *skw* or *tkw* for «rw», «sw», «tw». These pairs go into the Kirundi and Kinyarwanda `listener_confusions` in week 4, with confidence `medium` (sourced pronunciation, but not a study of how listeners write it).
 
 **Next:** the full text of Mioni (1975) or (1970) would need library access (NYU Libraries / interlibrary loan). Not blocking; week 4 records the mission question as `disputed` / `hypothesis`.
+
+## 2026-10-28 (night) — Literacy in the corridor: the sound layer is core
+
+**User's point (28 Oct 2026):** it is not only children; illiteracy is high in the region, so the phonetic part is very important.
+
+**Data** (adult literacy, ages 15+, "read and write a short, simple statement"; UNESCO UIS series via [countryeconomy](https://countryeconomy.com/demography/literacy-rate/burundi), [FRED/World Bank](https://fred.stlouisfed.org/series/SEADTLITRZSMWI) and [TheGlobalEconomy](https://www.theglobaleconomy.com/Democratic-Republic-of-the-Congo/Literacy_rate); accessed 28 Oct 2026):
+
+| Country | Adults | Women | Men | Youth 15–24 | Notes |
+| --- | --- | --- | --- | --- | --- |
+| Burundi | 75.5% (2022) | 69.4% | 81.8% | 93.6% | 37% in 1990, so older adults are far less literate. *Conflict:* RegionWeek (secondary) reports 85.6% for 2021 |
+| DRC | 80.5% (2022) | 71.7% | 89.6% | 88.1% | *Conflict:* another UNESCO-sourced series gives 68.5% (2023) |
+| Malawi | 68.1% (2022) | 65.1% | 71.4% | 76.8% | *Conflict:* the MIP-1 plan quotes men 83%, women 68.8% |
+| Rwanda | ~70–73% | 68% | 73% | — | Secondary sources only (RegionWeek; versus.com); to confirm |
+| Refugees (global) | ~60% | — | — | — | Attributed to UNESCO by RefuSHE (Facebook post); **unverified, single source** |
+
+No literacy figure for Dzaleka itself was found. The 2023 Dzaleka Education Assessment ([DOS](https://services.dzaleka.com/resources/dzaleka-education-assessment-2023)) points to microdata in UNHCR's Microdata Library; not yet checked.
+
+**Reading:**
+- About one adult in four to one in three cannot read or write in the corridor countries.
+- Women and older adults, the parents and grandparents who search for children, are the least literate.
+- Literacy does not settle the problem anyway: at registration a clerk or caseworker usually types the name, often in another language.
+
+**Decisions:**
+- `CONCEPT-IDEA.md` §5.4A: the sound layer covers children, adults who cannot read, and names typed by others; sound becomes a **core comparison**.
+- `BENCHMARK_PROTOCOL.md`: a new source, "name written by ear", with the writer's convention. Its share is a varied parameter, higher for older adults and women. A new error type, "written by ear", and a new fairness slice, "who wrote the name".
+- `TIMETABLE.md` week 7: sound comparison is a core field, reported per slice.
+
+**Next:** check the Dzaleka 2023 education microdata for adult literacy (UNHCR Microdata Library).
