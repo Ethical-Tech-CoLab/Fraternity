@@ -1,8 +1,14 @@
 {
   "pack_id": "xx-template-2026.1",
-  "languages": ["xx"],
-  "scripts": ["Latn"],
-  "regions": ["XX"],
+  "languages": [
+    "xx"
+  ],
+  "scripts": [
+    "Latn"
+  ],
+  "regions": [
+    "XX"
+  ],
   "name_structures": [
     {
       "id": "structure-1",
@@ -25,6 +31,41 @@
   "transliteration_rules": [],
   "phonetic_rules": [],
   "common_administrative_forms": [],
+  "phoneme_inventory": [
+    {
+      "symbol": "/ⁿd/",
+      "written": [
+        "nd"
+      ],
+      "note": "one sound, written with two letters",
+      "source": "Author, title, year, page or URL",
+      "confidence": "unknown"
+    }
+  ],
+  "spelling_conventions": [
+    {
+      "sound": "/w/",
+      "writer_language": "fr",
+      "spellings": [
+        "ou",
+        "w"
+      ],
+      "source": "Author, title, year, page or URL",
+      "confidence": "unknown"
+    }
+  ],
+  "listener_confusions": [
+    {
+      "sounds": [
+        "/r/",
+        "/l/"
+      ],
+      "listener": "any",
+      "note": "heard or written either way",
+      "source": "Author, title, year, page or URL",
+      "confidence": "hypothesis"
+    }
+  ],
   "relationship_implications": {
     "surname_agreement": "unknown",
     "surname_disagreement": "unknown"

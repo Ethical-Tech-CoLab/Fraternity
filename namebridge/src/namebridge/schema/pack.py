@@ -2,6 +2,13 @@
 
 A pack separates cultural practice, legal-document practice and database
 convention, and allows "unknown" and "disputed" instead of forcing a rule.
+
+The sound layer (§5.4A) adds three lists: the language's sounds, including
+digraphs that are one sound (mb, nd, cy, rw); how each sound is written by
+someone who writes in another language (French "ou" for /w/); and the sounds
+a listener tends to confuse (Rwanda-Rundi r/l). They let a name told aloud,
+for example by a child who cannot write, be matched by sound.
+
 Template: data/packs/TEMPLATE.json.
 
 Run: python -m namebridge.schema.pack data/packs/<pack>.json
@@ -16,13 +23,15 @@ from namebridge.schema import forbidden_keys
 REQUIRED = (
     "pack_id", "languages", "scripts", "regions", "name_structures", "order_rules",
     "particles_and_morphemes", "transliteration_rules", "phonetic_rules",
-    "common_administrative_forms", "relationship_implications", "known_failure_modes",
+    "common_administrative_forms", "phoneme_inventory", "spelling_conventions", "listener_confusions",
+    "relationship_implications", "known_failure_modes",
     "protected_or_sensitive_forms", "benchmark_cases", "reviewers", "version",
 )
-LIST_FIELDS = REQUIRED[4:10] + ("known_failure_modes", "protected_or_sensitive_forms", "benchmark_cases", "reviewers")
+LIST_FIELDS = REQUIRED[4:13] + ("known_failure_modes", "protected_or_sensitive_forms", "benchmark_cases", "reviewers")
+SOUND_FIELDS = ("phoneme_inventory", "spelling_conventions", "listener_confusions")
 IMPLICATION_VALUES = {"weak", "neutral", "strong", "context-dependent", "unknown", "disputed"}
 PRACTICE_KINDS = {"cultural", "legal_document", "database"}
-CONFIDENCE_LEVELS = {"high", "medium", "low", "unknown", "disputed"}
+CONFIDENCE_LEVELS = {"high", "medium", "low", "unknown", "disputed", "hypothesis"}
 
 _SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
 _PACK_ID = re.compile(r"^[a-z]{2}(-[a-z0-9]+)+-\d{4}\.\d+$")
@@ -49,6 +58,20 @@ def validate_pack(pack):
             errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE_LEVELS)}")
         if rule.get("practice") not in PRACTICE_KINDS:
             errors.append(f"{where}: practice must be one of {sorted(PRACTICE_KINDS)}")
+
+    for f in SOUND_FIELDS:
+        for i, entry in enumerate(pack[f] if isinstance(pack[f], list) else []):
+            where = f"pack {pid}: {f}[{i}]"
+            if not entry.get("source"):
+                errors.append(f"{where}: needs a source")
+            if entry.get("confidence") not in CONFIDENCE_LEVELS:
+                errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE_LEVELS)}")
+    for i, conv in enumerate(pack["spelling_conventions"] if isinstance(pack["spelling_conventions"], list) else []):
+        if not conv.get("writer_language") or not conv.get("sound") or not conv.get("spellings"):
+            errors.append(f"pack {pid}: spelling_conventions[{i}] needs writer_language, sound and spellings")
+    for i, conf in enumerate(pack["listener_confusions"] if isinstance(pack["listener_confusions"], list) else []):
+        if len(conf.get("sounds", [])) < 2:
+            errors.append(f"pack {pid}: listener_confusions[{i}] needs at least two sounds")
 
     impl = pack["relationship_implications"]
     for f in ("surname_agreement", "surname_disagreement"):

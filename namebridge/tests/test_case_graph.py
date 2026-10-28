@@ -87,3 +87,12 @@ def test_relationships_are_reported_not_inferred():
 
 def test_facts_need_metadata():
     assert any("asserted_by" in e for e in cg.validate_edge({"id": "x", "relation_type": "seen_at"}))
+
+
+def test_oral_report_records_writer_convention():
+    name = {
+        "id": "on-2", "type": "ObservedName", "observed_full_name": "Synthetic", "observed_script": "Latn",
+        "source_type": "oral_report", "source_field_label": "said by child", "source_order": "as_observed",
+    }
+    assert any("recorded_by_convention" in e for e in cg.validate_node(name))
+    assert cg.validate_node({**name, "recorded_by_convention": "fr"}) == []

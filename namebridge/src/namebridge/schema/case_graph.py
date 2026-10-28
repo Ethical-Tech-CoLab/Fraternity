@@ -52,6 +52,10 @@ def _fact_errors(item, label):
 def validate_observed_name(name):
     label = f"ObservedName {name.get('id', '?')}"
     errors = [f"{label}: missing {f!r}" for f in OBSERVED_NAME_REQUIRED if f not in name]
+    # A name heard and written down by someone else depends on how that person
+    # spells sounds (§5.4A): record the writing convention they used.
+    if name.get("source_type") == "oral_report" and not name.get("recorded_by_convention"):
+        errors.append(f"{label}: an oral report needs 'recorded_by_convention' (e.g. fr, en, rn)")
     if name.get("source_type") not in SOURCE_TYPES | {None}:
         errors.append(f"{label}: unknown source_type {name['source_type']!r}")
     if name.get("source_order", "as_observed") != "as_observed":

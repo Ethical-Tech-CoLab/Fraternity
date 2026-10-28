@@ -35,3 +35,21 @@ def test_pack_cannot_encode_ethnicity():
     pack = template()
     pack["name_structures"][0]["ethnic_group"] = "any"
     assert any("forbidden attribute" in e for e in validate_pack(pack))
+
+
+def test_sound_entries_need_source():
+    pack = template()
+    pack["listener_confusions"][0]["source"] = ""
+    assert any("needs a source" in e for e in validate_pack(pack))
+
+
+def test_confusion_needs_two_sounds():
+    pack = template()
+    pack["listener_confusions"][0]["sounds"] = ["/r/"]
+    assert any("two sounds" in e for e in validate_pack(pack))
+
+
+def test_spelling_convention_names_the_writer():
+    pack = template()
+    del pack["spelling_conventions"][0]["writer_language"]
+    assert any("writer_language" in e for e in validate_pack(pack))

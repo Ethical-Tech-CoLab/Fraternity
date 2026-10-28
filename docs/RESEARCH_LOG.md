@@ -1157,3 +1157,25 @@ offline.
 - **G6 profile:** the Kinyarwanda → Kirundi direction is deterministic, so NESA name elements can be converted to Burundian spelling before the CENI weighting.
 - **Week 4 `bi-kirundi` pack:** the four rules go in as `transliteration_rules` (practice: cultural/orthographic, confidence: high, source [K1]). The graph gets a Rule node plus sourced `orthographic_variant_of` edges.
 - **Open:** the Catholic vs Protestant mission spellings [K4]; to check in week 4.
+
+## 2026-10-28 (evening) — Sound layer: names told aloud
+
+**User's idea (28 Oct 2026):** a child who cannot read knows names only as sounds. The person who writes them down may mishear because of accent, and spells them with their own habits. The model must cover sounds, digraphs that are one sound, and the possible spellings.
+
+**Sources:**
+- [P1] *Kinyarwanda and Kirundi Comparative Grammar* (Dunwoody Press, 2007; [extract](https://www.matana.de/kirundi_kinyarwanda.pdf)), ch. 2, Tables 25–27: the consonant inventory (prenasalised stops, *cy*, *jy*, *shy*, *pf*, *ts*), and the linguists' disagreement over which consonants exist (Kirundi 19–26 consonants, also per [Wikipedia](https://en.wikipedia.org/wiki/Kirundi)).
+- [P2] "Phonological Aspects of Loanword Adaptation in Kinyarwanda", *IJLRHSS* 3(3) ([PDF](http://www.ijlrhss.com/paper/volume-3-issue-3/3-HSS-598.pdf)): [r] and [l] are allophones of one phoneme. Ministry of Education spelling rules keep «l» only in proper nouns that already used it and in unintegrated loanwords (e.g. *Kamali*, *Kigali*). Note: the same name can be heard and written with r or l.
+- [P3] Wikipedia, [French orthography](https://en.wikipedia.org/wiki/French_orthography): /w/ usually written «ou»; «ch» = /ʃ/; «dj» = /dʒ/; «tch» = /tʃ/. English «ch» = /tʃ/ ([Collins](https://grammar.collinsdictionary.com/us/pronunciation-guide-fr/different-sounds-of-letters)).
+- [P4] UNESCO, [*The Standardization of the spelling of African names*](https://unesdoc.unesco.org/ark:/48223/pf0000059805): French and English writers spelled the same African names differently ("Ouoloffes" vs "Jolof").
+- [P5] Mani, Yeh & Condon, ["Learning to Match Names Across Languages"](https://aclanthology.org/W08-1402.pdf), MITRE, Coling 2008 workshop: matching by pronunciation, using per-language grapheme-to-phoneme rules or cross-language rules.
+- [P6] Apache Solr guide, [Phonetic matching](https://solr.apache.org/guide/solr/latest/indexing-guide/phonetic-matching.html): Beider-Morse applies language-specific rules; Soundex and Metaphone families are English-centred.
+
+**Design:** `CONCEPT-IDEA.md` §5.4A. Three pack lists (sound inventory; writing conventions by writer language; listener confusions), plus `recorded_by_convention` on oral-report names. Sound is one more comparison field, never sufficient on its own.
+
+**Code (42 tests):** the pack schema and template gain `phoneme_inventory`, `spelling_conventions` and `listener_confusions` (each entry needs a source; confidence may be `hypothesis`); an `oral_report` ObservedName must record `recorded_by_convention`.
+
+**Gaps:**
+- No source yet on how children mispronounce or simplify Kirundi or Kinyarwanda names.
+- No source yet on Chichewa spelling habits (Malawian caseworkers).
+- Listener confusions beyond r/l are hypotheses.
+- Checking these with native speakers is planned for Jan–Mar 2027 and needs IRB review if it involves people (`IRB_DETERMINATION.md`).

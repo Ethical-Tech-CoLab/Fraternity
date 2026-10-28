@@ -297,6 +297,16 @@ For each observed name, generate:
 
 Do **not** collapse these into one canonical Latin string. A lossy transliteration can cause both false positives and false negatives.
 
+### 5.4A Sound layer: names told aloud (added 28 Oct 2026)
+
+*Proposed by the user.* A child who cannot read may know their parents' names only as sounds. The caseworker who writes them down hears them through their own language and accent, and spells them with their own writing habits. So the same name can arrive spelled in ways no spelling rule predicts. NameBridge therefore also compares names **by sound**, in three steps, each taken from the language pack:
+
+1. **Sound inventory.** The language's sounds, with digraphs that are a single sound kept as one unit: prenasalised *mb, nd, ng, nj, nk, mp, nt, nz*; palatal *cy, ry*; labialised *bw, rw, sw*; *sh, pf, ts* (Zorc & Nibagwire 2007, ch. 2). A name is read into this sound sequence, not split letter by letter.
+2. **Writing conventions.** How each sound is spelled by someone writing in Kirundi, Kinyarwanda, French, English, Swahili or Chichewa: e.g. /w/ as *w* or French *ou*; /ʃ/ as *sh* or French *ch*; /tʃ/ as Kirundi *c*, English *ch* or French *tch*; /dʒ/ as *j* or French *dj* (French orthography). The case record stores the convention of the person who wrote the name (`recorded_by_convention`), so the matcher can work back from their spelling to the possible sounds.
+3. **Listener confusions.** Sounds that are easily heard or written one for another, with a cost per pair: *r/l* are one sound in Rwanda-Rundi, and *l* is kept only in some proper nouns (*Kigali*) by Rwandan spelling rules; vowel length and tone are not written; *y* and *w* glides may be dropped or added (*-iye* / *-ie*). Pairs without a source enter as `hypothesis` and stay low-weight until checked.
+
+Matching then uses the sound sequence as one more comparison, next to spelling, with confusion-weighted costs. It never replaces the other evidence: sound alone, like a name alone, never confirms anyone (§5.6). English-based phonetic codes such as Double Metaphone, used by the CPIMS+ baseline, were built for English and are expected to do worse on these names; the benchmark measures that (§9).
+
 ### 5.5 Candidate retrieval before final scoring
 
 Use multiple blocking/index strategies in parallel:

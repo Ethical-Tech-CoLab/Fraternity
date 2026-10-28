@@ -172,6 +172,7 @@ Plan (all items done 26 Oct):
 - **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries).
 - **ICU / CLDR:** set up normalisation, transforms and transform-path logging (§5.4).
 - ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Burundi source decided 28 Oct (G6): NESA elements weighted by CENI 2025 frequencies, Kirundi spelling rules, Forebears as a check.
+- **Sound layer, first pass** (§5.4A, added 28 Oct): in each pack, the sound inventory (digraphs as single sounds), writing conventions for rn, rw, fr, en, sw and ny, and listener confusions, each with a source or marked `hypothesis`. *Schema ready 28 Oct* (`namebridge.schema.pack`).
 - **Done when:** the first packs load into the graph and pass the validator.
 
 ### Week 5 — 16–20 Nov: pilot corpus (phase 1)
@@ -194,6 +195,7 @@ Plan (all items done 26 Oct):
 - **Splits:** by person and family, so the same identity can't appear in both training and test; plus a temporal holdout (later invented records with newer patterns, e.g. renamed provinces).
 - **Child-report errors:** first names or nicknames only, and relationships confused, as in a young child's tracing request (`BENCHMARK_PROTOCOL.md` §2.3).
 - **Realism checks** before the freeze: the fidelity test and the copy test.
+- **Oral-report errors** (§5.4A): names generated as heard and written down by a caseworker with another language's spelling habits, using each pack's conventions and confusions.
 - **Done when:** the gold set passes the realism checks, and a sample of 300 pairs has had a human check.
 
 ### Week 7 — 30 Nov–4 Dec: pipeline (phase 2)
@@ -209,6 +211,7 @@ Plan (all items done 26 Oct):
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
 - **Consent and lawful basis** (§8 control 4): every case record stores why it may be used and with whom it may be shared.
 - **Protected-person flags** (§8 control 7), including **"possible name change"** candidates (`NAME_CHANGE.md` rule 2): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
+- **Sound comparison** (§5.4A): read each name into its pack's sound sequence and compare with confusion-weighted costs, as one more field next to spelling; report it against the Double Metaphone baseline.
 - **Done when:** the baseline runs on the benchmark and gives results; the access log records every read of case data; a flagged synthetic case never appears in an ordinary search.
 
 ### Week 8 — 7–11 Dec: model and evaluation (phase 2)
