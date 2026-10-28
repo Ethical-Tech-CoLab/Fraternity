@@ -28,20 +28,20 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - a study of name change in Malawi;
 - **IRB review for anything involving contact with people** (native-speaker review in Jan–Mar 2027; phase 3 case data). This becomes a gate when that work is planned (`IRB_DETERMINATION.md`).
 
-**Today (28 Oct):** the professor closed G1, G2, G3, G5 and G7. **Week 3 can start.** Still open: G4 (default in use; decide before the first results in week 6).
+**Today (28 Oct):** the professor closed G1, G2, G3, G5 and G7, and **week 3 is complete**, ahead of its 2–6 Nov slot. Next: week 4. Still open: G4 (default in use; decide before the first results in week 6).
 
-## Progress (as of 26 Oct 2026)
+## Progress (as of 28 Oct 2026)
 
-**Phase 0 (weeks 1–2) is done**, a week ahead of the original week-2 end (30 Oct). Everything that doesn't need outside people is written: 7 phase 0 documents, the code skeleton, and a tested sample-size module.
+**Weeks 1–3 are done ✔**, ahead of schedule. Phase 0 (weeks 1–2) was finished on 26 Oct and approved by the professor on 28 Oct. Week 3 (schemas, validators, regression suite, Kirundi spelling) was finished on 28 Oct, before its 2–6 Nov slot.
 
 **Still open:**
 
-- the professor's review (questions below);
+- G4, the error costs (the 26 Oct default is in use; decide before week 6);
 - the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9);
 - no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
-- Burundi name source: decided 28 Oct (G6 closed): NESA elements weighted by CENI 2025 frequencies; Forebears as a check.
+- sound layer gaps: no source yet on children's pronunciation or Chichewa spelling habits (`RESEARCH_LOG.md`, 28 Oct).
 
-**Next:** week 3, schema and validator. The user decided on 26 Oct to keep G1 as a hard gate and to settle G1–G3 with the professor on **Wed 28 Oct**. If G1 and G2 are resolved then, week 3 starts that day (planned for 2 Nov); if not, it waits.
+**Next:** week 4, first packs: `rw-kiny`, `bi-kirundi` and the DRC packs, the naming profiles from the public lists (allowed since G3 closed), ICU set-up, and the first pass of the sound layer.
 
 **Done ahead of schedule** (◐ marks in weeks 3–7): CPIMS+ field list; the Burundi sibling question; naming-profile sources and method; CongoNames source review; real-pattern sources; intake-guide rules; CPIMS+ baseline algorithm.
 
@@ -61,14 +61,18 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | UNICEF sources (child tracing, data, AI) | ✔ done (extra) | `RESEARCH_LOG.md` | `d27f327` |
 | CPIMS+ analysis and decision: integration target and baseline | ✔ done (extra) | `RESEARCH_LOG.md`; `SCOPE.md`; this file | `59c8130`, `8fb9343` |
 | Deliberate name change in exile: patterns and cross-cutting rules | ✔ done (extra) | `NAME_CHANGE.md` | `f02521d` |
-| Professor review of the phase 0 documents | ⏳ pending | — | — |
+| Professor review of the phase 0 documents | ✔ done 28 Oct: G1, G2, G3, G5, G7 closed | `MEETING_2026-10-28.md` | `4b10949`, `8d72e7c` |
+| Burundi name source (G6) | ✔ done 28 Oct | `RESEARCH_LOG.md` | `3e1c5ea` |
+| Examples for G4 and G5 | ✔ done 28 Oct | `GATE_EXAMPLES.md` | `fb5bf35` |
+| UNHCR's 2022 policy (GDPP) read | ✔ done 28 Oct | `RESEARCH_LOG.md`; `SCOPE.md` [S12] | `f8a3184` |
+| Rule 5 reworded: trace people who changed names, with nine safety layers | ✔ done 28 Oct | `NAME_CHANGE.md`; `SCOPE.md` §4 | `9b4989a`, `9316717` |
+| Week 3: schemas, validators, CPIMS+ allowlist, pack template, regression suite | ✔ done 28 Oct | `namebridge/src/namebridge/schema/` | `7bee067` |
+| Kirundi spelling rules | ✔ done 28 Oct | `RESEARCH_LOG.md` | `a448e72` |
+| Sound layer (names told aloud): design and schema | ✔ done (extra) 28 Oct | `CONCEPT-IDEA.md` §5.4A; `namebridge.schema.pack` | `415917e` |
 
-**Waiting on the professor:**
+**Decided by the professor on 28 Oct:** scope approved (G1); governments and law enforcement are not users (G2); no NYU IRB review needed for the public lists (G3, option A); alleged perpetrators never searched for, and a restricted name-change layer allowed with conditions (G5); open source, no sale (G7).
 
-- the not-a-user rule for governments and law enforcement (`SCOPE.md` §2);
-- the error costs and targets (`BENCHMARK_PROTOCOL.md` §7);
-- whether NYU's IRB needs to confirm that the aggregate use of public name lists (CongoNames, NESA) is not human-subjects research;
-- `NAME_CHANGE.md` rule 5: no support for searches for people who changed their names, including alleged perpetrators.
+**Still waiting on the professor:** the error costs and targets (G4, `BENCHMARK_PROTOCOL.md` §7).
 
 **Phase 0 documents:** `SCOPE.md`, `THREAT_MODEL.md`, `DPIA.md`, `DATA_RULES.md`, `BENCHMARK_PROTOCOL.md`, `NAME_CHANGE.md`, and `RESEARCH_LOG.md` (the evidence trail).
 
@@ -109,10 +113,10 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 | Week | Dates | §10 phase | Main work | Done when | Status |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 19–23 Oct | 0. Governance | Corridor, users, purposes, prohibited uses; repo skeleton | Scope document approved by the professor | ✔ done 26 Oct (review pending) |
+| 1 | 19–23 Oct | 0. Governance | Corridor, users, purposes, prohibited uses; repo skeleton | Scope document approved by the professor | ✔ done 26 Oct; approved 28 Oct |
 | 2 | 26–30 Oct | 0. Governance | Threat model, data-protection assessment (desk), benchmark protocol | Phase 0 exit criteria written | ✔ done 26 Oct |
-| 3 | 2–6 Nov | 1. Name corpus | Two-graph schema; language-pack template; CPIMS+ field mapping; Kinyarwanda and Kirundi research | Schema and validator in the repo | next |
-| 4 | 9–13 Nov | 1. Name corpus | Curate the Kinyarwanda, Kirundi and DRC packs; ICU / CLDR set-up | First packs load into the graph | — |
+| 3 | 2–6 Nov | 1. Name corpus | Two-graph schema; language-pack template; CPIMS+ field mapping; Kinyarwanda and Kirundi research | Schema and validator in the repo | ✔ done 28 Oct (early) |
+| 4 | 9–13 Nov | 1. Name corpus | Curate the Kinyarwanda, Kirundi and DRC packs; ICU / CLDR set-up | First packs load into the graph | next |
 | 5 | 16–20 Nov | 1. Name corpus | Reach the pilot corpus; negative constraints; review workflow | Graph v0.1, every edge sourced | — |
 | 6 | 23–27 Nov | 2. Linkage MVP | Synthetic benchmark (light week: Thanksgiving) | Gold set of matches, non-matches and families | — |
 | 7 | 30 Nov–4 Dec | 2. Linkage MVP | Preserve-first ingestion; transliteration; blocking; deterministic and CPIMS+-style baselines | Baseline results on the benchmark | — |
@@ -121,15 +125,15 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 
 ## Week by week
 
-### Week 1 — 19–23 Oct: scope (phase 0)
+### ✔ Week 1 — 19–23 Oct: scope (phase 0)
 
 - ✔ done 19 Oct: `CONCEPT-IDEA.md` added to the repo, and §14 corrected.
 - ✔ done 26 Oct: **corridor** confirmed in `SCOPE.md` §1 (DRC 65%, Burundi 22%, Rwanda 12% of Dzaleka, Mar 2025); §2.3 (Burundi) kept as an open question.
-- ✔ done 26 Oct: **users, purposes and prohibited uses** in `SCOPE.md` §2–4. Proposed: law enforcement and governments are not users in the pilot (to confirm with the professor).
+- ✔ done 26 Oct: **users, purposes and prohibited uses** in `SCOPE.md` §2–4. Law enforcement and governments are not users (confirmed by the professor 28 Oct, gate G2).
 - ✔ done 26 Oct: **repo** skeleton `namebridge/`: Python package, pytest suite, `data/graph` and `data/packs`, licences (code Apache-2.0; graph and packs CC BY 4.0).
-- **Done when:** a one-page scope is written (✔ `SCOPE.md`) and the professor has seen it (pending).
+- ✔ **Done when:** a one-page scope is written (✔ `SCOPE.md`) and the professor has seen it (✔ approved 28 Oct, gate G1).
 
-### Week 2 — 26–30 Oct: risks and test rules (phase 0)
+### ✔ Week 2 — 26–30 Oct: risks and test rules (phase 0)
 
 - ✔ done 26 Oct: **threat model** in `THREAT_MODEL.md`: 10 misuse actors and 13 threats, each with its controls.
 - ✔ done 26 Oct: **data-protection assessment** in `DPIA.md`, following Malawi's Data Protection Act 2024, s. 30(3).
@@ -149,10 +153,9 @@ Plan (all items done 26 Oct):
 - ✔ **Start the research** (`RESEARCH_LOG.md`): Kinyarwanda naming (HRW 1999, the onomastic sources in §2.2).
 - ✔ **Done when:** the phase 0 exit criteria are written (`SCOPE.md` §8): purpose, benchmark protocol, data rules, threat model. Data stewards and an advisory group can't be named yet, so record that as a gap.
 
-### Week 3 — 2–6 Nov: schema (phase 1)
+### ✔ Week 3 — 2–6 Nov: schema (phase 1) — done 28 Oct
 
-✔ **G1 and G2 closed 28 Oct.** Week 3 may start.
-
+✔ **G1 and G2 closed 28 Oct.**
 
 - ✔ **Name Knowledge Graph** (§5.1A): node and edge types, and the required edge metadata, as a schema with a validator. *Done 28 Oct:* `namebridge.schema.name_graph`; JSON Lines in `data/graph/`.
 - ✔ **Case graph** (§5.1B): schema only, kept empty and separate. *Done 28 Oct:* `namebridge.schema.case_graph` (fact metadata, lawful basis, protected flags and route, human-only confirmation, biometrics as pointers only).
@@ -160,19 +163,18 @@ Plan (all items done 26 Oct):
 - ✔ **Name-change rules in the schema** (*done 28 Oct:* no edge type for adopted names; `layer` must be public; `possible_name_change` forces the protected route) (`NAME_CHANGE.md`): the validator rejects edges between unrelated names; case records carry `other_names_used` and a `possible_name_change` route to protected handling.
 - ✔ **Language-pack template** (§11). *Done 28 Oct:* `data/packs/TEMPLATE.json` and `namebridge.schema.pack` (rules need a source, a practice kind and a confidence; `unknown` and `disputed` allowed).
 - ✔ **Regression suite:** set up the test suite that every later change must pass (§12). *Done 28 Oct:* 38 tests, including that the repo's own graph and packs validate.
-- ◐ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Partly done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. ✔ *Kirundi spelling rules done 28 Oct:* four automatic Kinyarwanda → Kirundi rules (cy→c, jy→j, shy→sh, by→vy), one-way only; e.g. Habyarimana (Rw) / Havyarimana (Bi). Details in `RESEARCH_LOG.md`.
-- **Done when:** the schema and validator are in the repo, with tests.
+- ✔ **Research:** Kirundi naming and spelling; whether Burundian siblings share a name (§2.3). *Done 26 Oct:* sibling question answered as **disputed / context-dependent**, with legal (1993 code, art. 13) and onomastic sources (Bigangara 1982; Duchaj & Ntihirageza 2009), and modelled as a varied parameter. ✔ *Kirundi spelling rules done 28 Oct:* four automatic Kinyarwanda → Kirundi rules (cy→c, jy→j, shy→sh, by→vy), one-way only; e.g. Habyarimana (Rw) / Havyarimana (Bi). Details in `RESEARCH_LOG.md`.
+- ✔ **Done when:** the schema and validator are in the repo, with tests (✔ 28 Oct: 42 tests pass).
 
 ### Week 4 — 9–13 Nov: first packs (phase 1)
 
 ✔ **G3 closed 28 Oct (option A)** and **G6 closed 28 Oct**: the public lists may be downloaded and processed under `DATA_RULES.md` DR-1.
 
-
 - **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili).
 - **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries).
 - **ICU / CLDR:** set up normalisation, transforms and transform-path logging (§5.4).
 - ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Burundi source decided 28 Oct (G6): NESA elements weighted by CENI 2025 frequencies, Kirundi spelling rules, Forebears as a check.
-- **Sound layer, first pass** (§5.4A, added 28 Oct): in each pack, the sound inventory (digraphs as single sounds), writing conventions for rn, rw, fr, en, sw and ny, and listener confusions, each with a source or marked `hypothesis`. *Schema ready 28 Oct* (`namebridge.schema.pack`).
+- ◐ **Sound layer, first pass** (§5.4A, added 28 Oct): in each pack, the sound inventory (digraphs as single sounds), writing conventions for rn, rw, fr, en, sw and ny, and listener confusions, each with a source or marked `hypothesis`. *Schema ready 28 Oct* (`namebridge.schema.pack`).
 - **Done when:** the first packs load into the graph and pass the validator.
 
 ### Week 5 — 16–20 Nov: pilot corpus (phase 1)
@@ -190,7 +192,6 @@ Plan (all items done 26 Oct):
 
 ⚠ **G4:** the size and targets use the 26 Oct default until the professor confirms.
 
-
 - **Synthetic gold set** (§9.1): about **26,000 invented people** (size derived in `BENCHMARK_PROTOCOL.md` §2.1), generated by recombination from the naming profiles. Invented people and families, with the corridor's error types (order, spelling, Christian names, renamed places, typos, incomplete dates, OCR errors), hard negatives with common names, and adversarially similar records.
 - **Splits:** by person and family, so the same identity can't appear in both training and test; plus a temporal holdout (later invented records with newer patterns, e.g. renamed provinces).
 - **Child-report errors:** first names or nicknames only, and relationships confused, as in a young child's tracing request (`BENCHMARK_PROTOCOL.md` §2.3).
@@ -200,8 +201,7 @@ Plan (all items done 26 Oct):
 
 ### Week 7 — 30 Nov–4 Dec: pipeline (phase 2)
 
-⚠ **G2** (roles) · ⚠ **G5** (routing for possible name change).
-
+✔ **G2** (roles) and **G5** (routing for possible name change) closed 28 Oct.
 
 - **Ingestion:** keep the original name exactly as written, and add parallel normalised forms (§5.3).
 - **Transliteration and variants** as hypotheses, with the path that produced each one (§5.4).
@@ -209,8 +209,8 @@ Plan (all items done 26 Oct):
 - **Baseline:** deterministic rules and phonetic matching (option 5).
 - ◐ **CPIMS+-style baseline** (algorithm documented from Primero's source on 26 Oct: field boosts, Double Metaphone, score/max, likely/possible; `RESEARCH_LOG.md`. **Remaining:** implement it): Double Metaphone, boosted field match and score/max normalisation, reimplemented from Primero's source.
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.
-- **Consent and lawful basis** (§8 control 4): every case record stores why it may be used and with whom it may be shared.
-- **Protected-person flags** (§8 control 7), including **"possible name change"** candidates (`NAME_CHANGE.md` rule 2): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
+- ◐ **Consent and lawful basis** (§8 control 4; *schema done 28 Oct:* every case record must carry `lawful_basis` and `sharing`): every case record stores why it may be used and with whom it may be shared.
+- ◐ **Protected-person flags** (§8 control 7; *schema done 28 Oct:* flags force the protected route, minors and possible name changes must be flagged), including **"possible name change"** candidates (`NAME_CHANGE.md` rule 2): minors, trafficking, domestic violence, asylum, witness protection, or a person who may not wish to be found. Flagged cases are suppressed or routed separately; every case involving a minor is flagged.
 - **Sound comparison** (§5.4A): read each name into its pack's sound sequence and compare with confusion-weighted costs, as one more field next to spelling; report it against the Double Metaphone baseline.
 - **Done when:** the baseline runs on the benchmark and gives results; the access log records every read of case data; a flagged synthetic case never appears in an ordinary search.
 
