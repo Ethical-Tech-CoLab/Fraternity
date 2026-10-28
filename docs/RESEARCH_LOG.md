@@ -1252,3 +1252,24 @@ No literacy figure for Dzaleka itself was found. The 2023 Dzaleka Education Asse
 - `TIMETABLE.md` week 7: sound comparison is a core field, reported per slice.
 
 **Next:** check the Dzaleka 2023 education microdata for adult literacy (UNHCR Microdata Library).
+
+## 2026-10-28 (night) — Literacy in Dzaleka itself: what the surveys hold
+
+**Question:** is there a literacy figure for Dzaleka?
+
+**Sources checked (metadata and reports only; no microdata downloaded):**
+- **Dzaleka Education Assessment 2023** ([DOS entry](https://services.dzaleka.com/resources/dzaleka-education-assessment-2023)): a pointer to UNHCR's Microdata Library; no figures published on the page.
+- **UNHCR Results Monitoring Survey (RMS) Malawi 2023** ([catalog 1119](https://microdata.unhcr.org/index.php/catalog/1119)): Dzaleka, Oct 2022–Mar 2023, 333 households, 1,323 individuals. Its individual data dictionary has school attendance and level (EDU01–EDU04) but **no literacy question**.
+- **UNHCR Socio-economic assessment, Dzaleka and Luwani, 2017** ([catalog 185](https://microdata.unhcr.org/index.php/catalog/185)): 802 Dzaleka households, March 2017. Its scope lists "education/literacy" for household members, released as an "edited, anonymous dataset for public distribution" (538 household-level variables). From the [report](https://microdata.unhcr.org/index.php/catalog/185/download/410), read in extracts only (the direct download returns a login page):
+  - Dzaleka household heads by origin: DRC 42%, Burundi 28%, Rwanda 26%, other 4%.
+  - The report's only statement on literacy is qualitative: "Many in the host communities cannot read and write … In the refugee community … many of them have some level of education."
+
+**Findings:**
+- **No published literacy figure for Dzaleka was found.**
+- Qualitatively, refugees in Dzaleka were *more* educated than the surrounding Malawian communities in 2017 [SEA 2017]. So the national figures (`RESEARCH_LOG.md`, literacy entry) may overstate illiteracy among camp adults.
+- The case for a core sound layer still holds:
+  - names are mostly typed by clerks and caseworkers in another language;
+  - children, women and older adults are the least literate;
+  - the 2017 data is old, and arrivals since then have changed the population.
+
+**Option, not taken (needs the user's decision):** register on the UNHCR Microdata Library, accept its terms, and compute the literacy share from the 2017 anonymised file. It is de-identified data about real refugees: not names, but outside what G3 covered (public name lists only). It would need its own short check under `DATA_RULES.md` and `IRB_DETERMINATION.md` before use. **Not needed for the semester:** the benchmark already treats the "written by ear" share as a varied parameter.
