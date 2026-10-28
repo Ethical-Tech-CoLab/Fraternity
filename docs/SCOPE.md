@@ -64,6 +64,7 @@ The **allowed purposes** are:
 
 Every other purpose is out of scope by default.
 
+
 ## 4. Prohibited uses
 
 These come from §8 and the §12 "should not have" list. The code and the documentation both state them.

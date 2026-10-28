@@ -1093,3 +1093,13 @@ offline.
 - `SCOPE.md` [S12] and `THREAT_MODEL.md` [T11] updated; the open item is closed in `TIMETABLE.md`.
 
 **Not verified:** Annex 1 (the transition activities), which may say when the 2015 policy is to be replaced.
+
+## 2026-10-28 (later) — Commercial use reopened; gate G7
+
+**Decision (user, 28 Oct 2026):** the 19 Oct rule "NameBridge is not sold" is withdrawn. Selling or licensing later is an open option; the free offer to tracing services and FSF stays. Nothing else is decided.
+
+**Facts checked:**
+- NYU [Statement of Policy on Intellectual Property](https://www.nyu.edu/about/policies-guidelines-compliance/policies-and-guidelines/policy-intellectual-property.html) §4.7 (accessed 28 Oct 2026): "Students generally own copyright in coursework they create", except where rights are assigned for particular courses or the work falls under NYU-ownership provisions (§4.1), e.g. research projects or sponsored programs "under the auspices of NYU". Faculty supervising students "should inform Students in advance if participation may result in NYU ownership". Not yet read: §4.1 itself.
+- The repo `Ethical-Tech-CoLab/Fraternity` is **public**: code already published under Apache-2.0 may be used and sold by anyone, irrevocably. Only future versions can change licence, and only if all copyright holders agree.
+
+**Changes:** `CONCEPT-IDEA.md` final phase; `TIMETABLE.md` final-phase row and new gate **G7** (ownership, licence, deal terms).

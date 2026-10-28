@@ -566,9 +566,11 @@ Probabilistic record linkage provides explicit tools for match weights, threshol
 - Introduce federated/PPRL matching only where agreements prohibit central pooling.
 - Continuously monitor drift, abuse, appeal and correction.
 
-### Final phase — free offer (added 19 Oct 2026)
+### Final phase — free offer (added 19 Oct 2026; commercial use reopened 28 Oct 2026)
 
-NameBridge is **not sold**. With a tested result in hand, the graph, packs, code and evaluation are offered free of charge to:
+*Changed 28 Oct 2026 (user):* the 19 Oct rule "NameBridge is not sold" is **withdrawn**. Selling or licensing later is an open option, subject to gate G7 (`TIMETABLE.md`).
+
+The free offer below remains the plan. With a tested result in hand, the graph, packs, code and evaluation are offered free of charge to:
 
 - **authorised tracing services** (e.g. ICRC Restoring Family Links, REFUNITE, UNHCR), which may run the matching system under the controls in §8; and
 - **Fraternidade Sem Fronteiras (FSF)**, whose work with children in care (foster children, the Órfãos do Congo project) involves tracing relatives.
