@@ -1011,3 +1011,46 @@ offline.
 **Output:** `docs/IRB_DETERMINATION.md` with three options (A self-determine; B email the HRPP, recommended; C formal NHSR via Cayuse) and a draft email. G3 updated in `TIMETABLE.md`; future IRB need noted under "not gates for the semester".
 
 **Gate status:** G3 stays **open (hard)**. The professor chooses A, B or C; it closes when a written answer is recorded.
+
+## 2026-10-28 — Unblocked work during the professor meeting: G6, UNHCR 2022, Malawi, G4/G5 examples
+
+**Focus:** while G1–G3 wait for today's meeting, the user asked to advance everything not blocked by a gate (Tavily).
+
+**Gate check:** G1 is open, so phase 1 work was not started. The items below are phase 0 gaps (UNHCR policy, Malawi name change), our own soft gate G6 (choosing a source; nothing downloaded) and decision support for G4/G5.
+
+### G6: a source for Burundian names
+
+| Candidate | What it is | Verdict |
+| --- | --- | --- |
+| **CENI 2025 candidate lists** ([e.g. Bujumbura province, National Assembly](https://www.ceniburundi.bi/wp-content/uploads/2025/02/BUJUMBURA-CANDIDATS-DEPUTES-2025.pdf); also communal lists, per [U. Antwerp archive](https://www.uantwerpen.be/en/projects/centre-des-grands-lacs-afrique/droit-pouvoir-paix-burundi/elections/elections-2025)) | Official "liste nominative définitive des candidats": surname in capitals, given names, birth year, sex, **ethnicity (Hutu/Tutsi/Twa)**, residence. Public by law; published Jan–Feb 2025 | **Proposed** as the Burundi profile source, on conditions (below) |
+| National exam lists (concours national, 9th year) | Results announced publicly, but the orientation lists go to provincial offices (RTNB on X, 27 Aug 2026); no public name list found | Not available |
+| `names-dataset` (PyPI, philipperemy) | 730k first names, 983k last names, Burundi included | **Rejected:** built from the 2021 Facebook leak of 533M accounts (its own README). Breach data; incompatible with `DATA_RULES.md` |
+| Kimenyi 1989, *Kinyarwanda and Kirundi Names* (appendix: most popular names) | Book (Edwin Mellen) | Use for meanings and structure only; copyrighted, no frequencies |
+| IJTPD 2016, "A Context-Based Approach to the Study of Names" (University of Burundi) | 70 student respondents; Kirundi surnames of Christian origin dominate; 54% named by the father | Structure only; sample too small for frequencies |
+
+**Conditions on CENI** (proposed; user to confirm, since G6 is ours):
+
+1. The parser **drops the ethnicity column on read**; it is never written to disk, counted or joined. This is stricter than DR-1.2, and is the ethnicity guard (T13) applied at ingestion.
+2. The source is **named in the G3 email** to the HRPP (done in `IRB_DETERMINATION.md`), because the raw files contain ethnicity.
+3. **Known bias:** adults only (born about 1955–2000), political candidates, more men. Recorded as a fidelity limit; Burundian children's names in the benchmark lean on the given-name trend sources instead.
+4. Nothing downloaded until G3 closes. *What was read today:* only an extract of one PDF, to check its columns. No names were saved.
+
+### UNHCR's 2022 General Policy (GDPP) on law-enforcement transfers
+
+- Refworld (two URLs) and the UNHCR blog still fail to extract. Dzaleka Online Services lists the PDF (720 KB, 15 Oct 2022) without a working link in the extract.
+- Indirect evidence: UNHCR's 2025 complementary-pathways guidance cites **GDPP para. 35** (inform the data subject before disclosing fraud-related data, with a right to object) and **para. 44** (assess the third party's protection before sharing).
+- **Still open.** The 2015 policy §6.3 (serious crime, competent authority, etc.) remains our reference. *Next step:* download the PDF by hand in a browser and read it.
+
+### Malawi name change
+
+- Still no study of refugees changing names in Malawi.
+- New: a documented chain of aliases for one genocide suspect (Rwandan → three Burundian aliases → a Malawian identity; Malawian passport 2007). Single source chain (The New Times via Nyasa Times, Jun 2023). Added to `NAME_CHANGE.md` §4 [N9] **without the names** (DR-1.1).
+- New: 396 foreigners' papers revoked in 2023; a critic called it "indiscriminate" [N10].
+- **Consequence:** the only Malawi evidence concerns alleged perpetrators, which rule 5 excludes, so it does not set benchmark rates.
+
+### G4/G5 examples
+
+- New `docs/GATE_EXAMPLES.md`: three invented cases for G4 (retrieval miss, minor false match, adult false match) and four for G5 (C1–C4), with options A/B/C for rule 5 (recommended: A).
+- Possible new rule raised for G4: a minor never reaches "strong evidence" without a non-name check.
+
+**Open:** user to confirm the CENI source for G6; GDPP text; professor's decisions on G1–G5.

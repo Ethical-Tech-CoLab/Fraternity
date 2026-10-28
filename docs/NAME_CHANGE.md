@@ -39,6 +39,8 @@ Under threat of forced return, refugees "hide their identities and change their 
 
 - **2023:** Malawi's Minister of Homeland Security said that **55 genocide suspects sought by Rwanda** may be hiding in Malawi "using Malawian names" and fraudulent passports. The government began **revoking citizenships and passports**. Critics said the campaign could ensnare legitimate refugees [N7].
 - **2020:** a former Minister of Homeland Security was **jailed for issuing fraudulent citizenships and passports to Burundians and Rwandans** [N7].
+- **One documented case shows the whole chain** [N9]: a Rwandan genocide suspect arrested in South Africa in May 2023 had claimed asylum **as a Burundian** under three successive aliases (1998, 1999, 2017) and also used a **Malawian identity with a Chichewa name**, on a Malawian passport issued in 2007. So a person can change given name, surname *and* claimed nationality, more than once, across four countries. *Single source chain* (The New Times, Kigali, via Nyasa Times); the arrest itself is confirmed by the UN residual mechanism (IRMCT), as reported in [N6]. Names are deliberately not copied here (`DATA_RULES.md` DR-1.1).
+- **Scale of the 2023 campaign** [N10]: Malawi said it had revoked papers for **396 foreigners**; the head of the Centre for Human Rights and Rehabilitation said it was "targeting everyone, indiscriminately". UNHCR had also asked Malawi to repatriate 522 asylum-seekers "associated with criminalities" (minister's statement, single source).
 - **The double edge:** in Malawi, the people who hide behind changed names include both victims and alleged perpetrators, and the government is actively looking for some of them. A tool that links old and new names is exactly what such a campaign would want.
 
 ## What can and cannot be modelled
@@ -68,7 +70,7 @@ Under threat of forced return, refugees "hide their identities and change their 
 
 ## Open questions
 
-- No study was found of name change **among refugees in Malawi** (in Dzaleka, or among people living outside the camp). The patterns above come from Tanzania and Uganda and are applied by analogy.
+- No study was found of name change **among refugees in Malawi** (in Dzaleka, or among people living outside the camp). The patterns above come from Tanzania and Uganda and are applied by analogy. *Searched again 28 Oct 2026 (Tavily): still none.* The only Malawi evidence is about alleged perpetrators [N6][N7][N9][N10], which is exactly the case rule 5 excludes, so it must not shape the benchmark's name-change rates.
 - How often step 1 and step 2 happen is unknown. Both are **varied parameters** in the benchmark, never a single value.
 
 ## Sources
@@ -80,4 +82,6 @@ Under threat of forced return, refugees "hide their identities and change their 
 - [N5] ["Names are Problems: For Congolese Refugees, for the Humanitarian System, and for Anthropological Writing"](https://americanethnologist.org/online-content/collections/rethinking-pseudonyms-in-ethnography/names-are-problems-for-congolese-refugees-for-the-humanitarian-system-and-for-anthropological-writing), *American Ethnologist* online collection.
 - [N6] TRT Afrika, ["Malawi says 55 Rwanda genocide suspects hiding in country after 'changing names'"](https://www.trtafrika.com/english/article/13514666), Jun 2023.
 - [N7] VOA, ["Malawi Revokes Dubious Citizenship of Refugees Wanted Abroad"](https://www.voanews.com/a/malawi-revokes-dubious-citizenship-of-refugees-wanted-abroad-/7125615.html), Jun 2023.
+- [N9] Nyasa Times, ["Rwandan genocide fugitive … used Malawian passport to evade capture"](https://www.nyasatimes.com/rwandan-genocide-fugitive-kayishema-used-malawian-passport-to-evade-capture), Jun 2023, citing *The New Times* (Kigali). Accessed 28 Oct 2026.
+- [N10] Citizenship Rights in Africa Initiative, [republication of the VOA report with the full critic quotes](https://citizenshiprightsafrica.org/malawi-revokes-dubious-citizenship-of-refugees-wanted-abroad), Jun 2023. Accessed 28 Oct 2026.
 - [N8] ICRC, [*Restoring Family Links: a guide for National Societies*](https://icrcndresourcecentre.org/wp-content/uploads/2019/06/RESTORINGFAMILY-LINKS-A-GUIDE.pdf), §7.3.2 (the located person decides whether contact details are shared).

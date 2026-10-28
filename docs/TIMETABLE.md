@@ -16,9 +16,9 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | **G1** ⛔ | Approve the phase 0 scope (`SCOPE.md`): purpose, users, prohibited uses. This is week 1's "done when" | Professor | **All of phase 1** (week 3 onward) | Mon 2 Nov | Open: to discuss with the professor on **Wed 28 Oct** |
 | **G2** ⛔ | Governments and law enforcement are not users (`SCOPE.md` §2) | Professor | Week 3 role model in the case schema; week 7 access controls | Mon 2 Nov | Open: to discuss on **Wed 28 Oct** |
 | **G3** ⛔ | Does NYU's IRB need to confirm the aggregate use of public name lists (CongoNames, NESA, the UN list)? Analysis in `IRB_DETERMINATION.md`: **likely Not Human Subjects Research** (public, not private, no interaction). The professor chooses **A** (self-determine, recorded in the log), **B** (email the HRPP; recommended) or **C** (formal NHSR via Cayuse) | Professor (→ HRPP if B or C) | Week 4: **downloading or processing any real name list**, and the naming profiles | Mon 9 Nov (B needs a few days; C about 1–2 weeks) | Open; analysis and draft email ready (26 Oct); to discuss on **Wed 28 Oct** |
-| **G4** ⚠ | Error costs and targets (`BENCHMARK_PROTOCOL.md` §7). Default: the ratios decided by the user on 26 Oct | Professor | Week 6: benchmark size (26,000 is derived from them) and generation; week 8 thresholds | Mon 23 Nov | Deferred by the user on 26 Oct, to decide after seeing example records; default in use |
-| **G5** ⚠ | `NAME_CHANGE.md` rule 5: no support for searches for people who changed names, including alleged perpetrators. Default: the rule as written | Professor | Week 7 protected-person routing; final wording of `SCOPE.md` §4 | Mon 30 Nov | Deferred by the user on 26 Oct, to decide after seeing examples; default in use |
-| **G6** ⚠ | A source for Burundian names (data dependency, not an approval) | Us | Week 4 `bi-kirundi` pack and Burundi profile | Mon 9 Nov | Open |
+| **G4** ⚠ | Error costs and targets (`BENCHMARK_PROTOCOL.md` §7). Default: the ratios decided by the user on 26 Oct | Professor | Week 6: benchmark size (26,000 is derived from them) and generation; week 8 thresholds | Mon 23 Nov | Deferred by the user on 26 Oct, to decide after seeing example records; default in use. **Examples ready 28 Oct:** `GATE_EXAMPLES.md` |
+| **G5** ⚠ | `NAME_CHANGE.md` rule 5: no support for searches for people who changed names, including alleged perpetrators. Default: the rule as written | Professor | Week 7 protected-person routing; final wording of `SCOPE.md` §4 | Mon 30 Nov | Deferred by the user on 26 Oct, to decide after seeing examples; default in use. **Examples ready 28 Oct:** `GATE_EXAMPLES.md` (recommended: option A) |
+| **G6** ⚠ | A source for Burundian names (data dependency, not an approval) | Us | Week 4 `bi-kirundi` pack and Burundi profile | Mon 9 Nov | Candidate proposed 28 Oct: CENI 2025 candidate lists, ethnicity column dropped on read (`RESEARCH_LOG.md`). **User to confirm**; download still waits for G3 |
 
 **Not gates for the semester** (they block phase 3, not phases 0–2):
 
@@ -40,7 +40,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9);
 - UNHCR's 2022 policy text on law-enforcement transfers (could not be fetched);
 - no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
-- no Burundi name source yet (needed in week 4).
+- Burundi name source: candidate proposed 28 Oct (CENI 2025 lists), user to confirm.
 
 **Next:** week 3, schema and validator. The user decided on 26 Oct to keep G1 as a hard gate and to settle G1–G3 with the professor on **Wed 28 Oct**. If G1 and G2 are resolved then, week 3 starts that day (planned for 2 Nov); if not, it waits.
 
@@ -172,7 +172,7 @@ Plan (all items done 26 Oct):
 - **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili).
 - **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries).
 - **ICU / CLDR:** set up normalisation, transforms and transform-path logging (§5.4).
-- ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Find a Burundi source.
+- ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Burundi source: CENI 2025 candidate lists proposed 28 Oct (G6).
 - **Done when:** the first packs load into the graph and pass the validator.
 
 ### Week 5 — 16–20 Nov: pilot corpus (phase 1)

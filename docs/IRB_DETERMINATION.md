@@ -9,7 +9,8 @@ To make the synthetic benchmark realistic, the plan (`BENCHMARK_PROTOCOL.md` §2
 1. **Download public name lists:**
    - CongoNames: 8.05 M names from DRC state-exam result lists, published under CC BY 4.0;
    - NESA Rwanda: published national-exam results;
-   - the UN Security Council 1533 sanctions list.
+   - the UN Security Council 1533 sanctions list;
+   - *proposed 28 Oct (gate G6):* Burundi's CENI 2025 final candidate lists (published PDFs: name, birth year, sex, **ethnicity**, residence). The ethnicity column is dropped by the parser before anything is written to disk (`RESEARCH_LOG.md`, 28 Oct).
 2. **Analyse them locally** and keep only aggregates (elements seen 5 or more times; no ethnicity patterns).
 3. **Delete the raw lists.**
 
@@ -89,7 +90,8 @@ Does this need IRB review?
 > To make the synthetic names realistic, we would like to compute **aggregate statistics** (frequency of name elements seen at least 5 times, name length, number of names per person, distribution by province and year) from **publicly available** name lists:
 > - the CongoNames corpus (published under CC BY 4.0 in the journal *Data*, 2026, compiled from DRC state-exam results);
 > - published Rwandan national-exam results;
-> - the UN Security Council sanctions list.
+> - the UN Security Council sanctions list;
+> - the final candidate lists for Burundi's 2025 elections, published by the national electoral commission (CENI). These lists also include each candidate's ethnicity; our parser would discard that column on reading and never store or analyse it.
 >
 > We would process the lists locally, keep only the aggregates, delete the raw lists, and publish nothing that identifies an individual. There is no interaction with any person and no private information.
 >
