@@ -1196,7 +1196,7 @@ offline.
 - **R5** every entry in every pack rule list needs a source and a confidence.
 - **R6** link types join only the right node types; transliteration needs two scripts.
 - **R7** ingested names become ObservedName nodes that pass the case schema.
-- **M1** GitHub Actions runs the tests and validators on Python 3.9 and 3.12 (`.github/workflows/namebridge-tests.yml`).
+- **M1** GitHub Actions runs the tests and validators on Python 3.10 and 3.12 (3.9, the local Python, is not offered on the runner; it is tested locally) (`.github/workflows/namebridge-tests.yml`).
 - **M2** `docs/SCHEMA.md`, the schema in plain language for reviewers.
 - **M3** duplicate links and contradictions (variant + not equivalent) are rejected.
 - **M4** name text must be Unicode NFC (W3C Character Model, "Content authors SHOULD use … NFC"); full ICU set-up stays in week 4.
