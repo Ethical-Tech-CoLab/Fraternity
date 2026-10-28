@@ -1207,3 +1207,20 @@ offline.
   - Mioni (1975), ["The standardization of the orthography in Rundi"](https://www.africabib.org/rec.php?RID=188045899): "in Burundi, it is more a question of orthographic habits than of an orthographic code".
   - Nassenstein, ["Kinyarwanda and Kirundi: On Colonial Divisions…"](https://journals.uhk.cz/modernafrica/article/download/184/180/361), *Modern Africa*: missionary orthographies, and the *by*/*vy* divergence.
   - So spelling habits varied, as the Omniglot snippet said. The specific Catholic vs Protestant differences are **still not documented**; Mioni's full text is the next place to look.
+
+## 2026-10-28 (night) — Catholic vs Protestant Kirundi spelling; how written clusters sound
+
+**Question:** the open item from the week 3 review: what are the Catholic vs Protestant spelling differences in Kirundi?
+
+**Sources:**
+- [O1] Mioni, A. (1975), "The standardization of the orthography in Rundi", *Journal of the Language Association of Eastern Africa* 3(1): 21–26 ([AfricaBib](https://www.africabib.org/rec.php?RID=188045899)); a 1968 Dar es Salaam conference paper. **Abstract only; the full text is not online.** A related book: Mioni (1970), *Problèmes de linguistique, d'orthographe et de coordination culturelle au Burundi* ([HathiTrust record](https://catalog.hathitrust.org/Record/003153779)).
+- [O2] Cox, E. E. (1969), Kirundi-English dictionary, Marston Memorial Historical Center; revised edition by M. Philipps, Feb 2023 ([PDF](https://www.matana.de/kirundi.pdf)). It contains "Orthography rules … drawn up by an orthography committee of the Alliance" (the Protestant missions' alliance).
+- [O3] Wikipedia (fr), [Église catholique au Burundi](https://fr.wikipedia.org/wiki/%C3%89glise_catholique_au_Burundi): the White Fathers (Catholic) introduced the Latin alphabet and spelling for Kirundi and Kinyarwanda; over 70% of Burundians were Catholic by 1930.
+- [O4] Foreign Service Institute, *Kirundi Basic Course* (US government; based on Meeussen 1959, *Essai de grammaire rundi*) ([PDF](https://fsi-languages.yojik.eu/languages/FSI/Kirundi/Basic/FSI%20-%20Kirundi%20Basic%20Course%20-%20Student%20Text.pdf)), pronunciation synopsis.
+- [O5] Nassenstein, *Modern Africa* (already cited, 28 Oct): missionaries chose «mw» for [mg], «rw» for [rgw], «tw» for [tkw].
+
+**Findings:**
+- **Catholic vs Protestant: the letter-by-letter differences are still not documented.** Mioni's abstract says only that "most of these habits were fixed in the first years of this century", which suggests habits, not a code [O1]. The Protestant committee's rules that we can read [O2] are about **apostrophes, elision and word division** (*n'uko* vs *nuko*; *Harih' ibitabo*). They also say "in some areas, people make the o a w before a and i, but we do not write it that way". Inference, not confirmed: the mission differences may lie more in word division and apostrophes than in letters. For names, that means joined vs split forms and apostrophes should be treated as variants (`hypothesis`). The Catholic spelling comes from the White Fathers [O3].
+- **Useful for the sound layer (two consistent sources):** written clusters are pronounced quite differently from their letters. «sw» often sounds like [skw]; «mw» like [my] or [mg]; «rw» like [rgw]; «vy» may contain a [z] sound; «tw» like [tkw] [O4][O5]. A listener who does not know Kirundi spelling may write what they hear, e.g. *rgw*, *skw* or *tkw* for «rw», «sw», «tw». These pairs go into the Kirundi and Kinyarwanda `listener_confusions` in week 4, with confidence `medium` (sourced pronunciation, but not a study of how listeners write it).
+
+**Next:** the full text of Mioni (1975) or (1970) would need library access (NYU Libraries / interlibrary loan). Not blocking; week 4 records the mission question as `disputed` / `hypothesis`.
