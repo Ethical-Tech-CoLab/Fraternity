@@ -1054,3 +1054,23 @@ offline.
 - Possible new rule raised for G4: a minor never reaches "strong evidence" without a non-name check.
 
 **Open:** user to confirm the CENI source for G6; GDPP text; professor's decisions on G1–G5.
+
+## 2026-10-28 (later) — G6 closed: how the Burundi profile is built
+
+**Question from the user:** how many names do the CENI lists hold, is there another safe source, and could social-media data be used with our filter?
+
+**Findings:**
+- **CENI size:** the 5 provincial National Assembly PDFs (e.g. Gitega 28 pages, Butanyerera 34 pages; party lists of up to about 46). Estimate **about 3,000–6,000 names**, not counted, because downloading waits for G3. After the ≥ 5 filter, only common elements survive. Commune and hill-council candidate lists (e.g. 486 candidates in one commune, *Le Renouveau*) were not found online.
+- **Forebears.io:** already aggregated (8,340 Burundian surnames and 6,435 given names, with incidence). Its sources and terms pages could not be fetched; it is commercial; noise ("Jean" as a surname, "Mama" as a given name) suggests social-media-like inputs. Usable only as a cross-check, citing the figures, never copying the tables.
+- **Kirundi and Kinyarwanda** are dialects of one language and share most of their name stock (Kimenyi 1989, *Kinyarwanda and Kirundi Names*, abstract via AfricaBib). The NESA lists, which are large and include minors, therefore cover most Burundian name elements.
+
+**Social-media data refused**, with the filter or without it:
+1. The people the rules protect are in it: refugees who changed their names (`NAME_CHANGE.md` rules 1 and 5).
+2. Social-media profiles are probably not "public" in the IRB sense, so using them would likely be human subjects research and would undo the G3 analysis.
+3. Platform terms of service forbid scraping; the only ready-made Burundi set is breach data (`names-dataset`).
+4. Quality is poor: nicknames, "Mama X", pseudonyms.
+
+**Decision (user, 28 Oct 2026), G6 closed:** the Burundi profile is built from **NESA name elements weighted by CENI 2025 frequencies** (ethnicity column dropped on read), plus the sourced Kirundi spelling differences; **Forebears aggregates as a cross-check only**.
+
+**Risk:** the Burundi third of the benchmark may look too Rwandan. The week 6 fidelity test measures it per origin.
+**Still gated:** downloading NESA and CENI waits for G3.
