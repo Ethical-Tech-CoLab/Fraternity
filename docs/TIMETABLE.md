@@ -24,7 +24,6 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 
 - named data stewards and an advisory group;
 - a tracing partner;
-- the text of UNHCR's 2022 policy;
 - a study of name change in Malawi;
 - **IRB review for anything involving contact with people** (native-speaker review in Jan–Mar 2027; phase 3 case data). This becomes a gate when that work is planned (`IRB_DETERMINATION.md`).
 
@@ -38,7 +37,6 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 
 - the professor's review (questions below);
 - the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9);
-- UNHCR's 2022 policy text on law-enforcement transfers (could not be fetched);
 - no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
 - Burundi name source: decided 28 Oct (G6 closed): NESA elements weighted by CENI 2025 frequencies; Forebears as a check.
 
@@ -58,7 +56,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | Benchmark size derived from the targets (26,000), and the realism plan (naming profiles) | ✔ done (extra) | `BENCHMARK_PROTOCOL.md` §2; `sample_size.py` | `070c525` |
 | Phase 0 exit check | ✔ done | `SCOPE.md` §8 | `e608432` |
 | Kinyarwanda research (week 2 groundwork) | ✔ done; packs in week 4 | `RESEARCH_LOG.md` | `cbcf4fe` |
-| Verification of open items (Malawi Act sections, HRW chapter, Burundi paper, Rwanda conflict) | ✔ done, except UNHCR's 2022 policy text | `RESEARCH_LOG.md` | `cbcf4fe` |
+| Verification of open items (Malawi Act sections, HRW chapter, Burundi paper, Rwanda conflict) | ✔ done (UNHCR's 2022 policy text read on 28 Oct) | `RESEARCH_LOG.md` | `cbcf4fe` |
 | UNICEF sources (child tracing, data, AI) | ✔ done (extra) | `RESEARCH_LOG.md` | `d27f327` |
 | CPIMS+ analysis and decision: integration target and baseline | ✔ done (extra) | `RESEARCH_LOG.md`; `SCOPE.md`; this file | `59c8130`, `8fb9343` |
 | Deliberate name change in exile: patterns and cross-cutting rules | ✔ done (extra) | `NAME_CHANGE.md` | `f02521d` |
@@ -138,7 +136,7 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 - ✔ done 26 Oct: **benchmark protocol** in `BENCHMARK_PROTOCOL.md`. The error costs were decided by the user: at the search step a missed candidate is worse; at the confirmation step a false match is worse (100 : 1 for minors).
 - ✔ done 26 Oct: **exit check** in `SCOPE.md` §8. Phase 0 is complete except for the gaps.
 - ✔ done 26 Oct: **Kinyarwanda research** groundwork: Kimenyi (1978) on gender-marked prefixes; the 2014 spelling reform; the fathers'-surname conflict, now modelled as a varied parameter (`RESEARCH_LOG.md`).
-- ✔ done 26 Oct: **open items verified** against primary texts: Malawi Act sections, the HRW chapter, Duchaj & Ntihirageza. Still open: the text of UNHCR's 2022 policy on law-enforcement transfers, which could not be fetched.
+- ✔ done 26 Oct: **open items verified** against primary texts: Malawi Act sections, the HRW chapter, Duchaj & Ntihirageza. UNHCR's 2022 policy read on 28 Oct (`RESEARCH_LOG.md`).
 - ✔ extra, 26 Oct: **UNICEF sources** and the **CPIMS+ code** were read. CPIMS+ was adopted as the integration target and baseline (`RESEARCH_LOG.md`).
 
 Plan (all items done 26 Oct):

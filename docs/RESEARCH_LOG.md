@@ -1074,3 +1074,22 @@ offline.
 
 **Risk:** the Burundi third of the benchmark may look too Rwandan. The week 6 fidelity test measures it per origin.
 **Still gated:** downloading NESA and CENI waits for G3.
+
+## 2026-10-28 (later) — UNHCR's 2022 General Policy (GDPP) read
+
+**Source:** UNHCR, *General Policy on Personal Data Protection and Privacy*, approved 20 Dec 2022, in force 31 Dec 2022, review by 31 Dec 2027 ([Refworld](https://www.refworld.org/policy/strategy/unhcr/2022/en/124207)). PDF downloaded by hand by the user (Refworld blocks automated tools). The PDF has 16 pages; **the annexes, including Annex 1 on transition, are not in it**.
+
+**Findings:**
+- **No law-enforcement section.** The GDPP has no equivalent of the 2015 policy's §6.3 (transfer to national law-enforcement agencies and courts). Sharing with any third party falls under **para. 44**: only "based on arrangements that afford an adequate level of protection", in line with the principles and the rights of data subjects.
+- **The 2015 policy stays in force.** Para. 75(a): for persons of concern, the 2015 policy "will be deemed an implementing instrument" under para. 16. So the 2015 §6.3.2 conditions (serious criminal offence, competent authority, and so on) still apply. Our references [S12] and [T11] are therefore correct, not outdated.
+- **Limitations (paras 62–63):** data-subject rights may be limited for safety and security, "investigatory and disciplinary proceedings", overriding operational needs, or the overriding rights of others. Each limitation must be issued by senior management or the data controller, documented, necessary and proportionate.
+- **Automated decisions (para. 41):** no automated decision with significant adverse effects, except with consent, for a contract, or when explicitly authorised. **Para. 42:** assess and mitigate the risks of automated decision-making. This matches our rule that confirmation is always a human decision (`BENCHMARK_PROTOCOL.md` §7) and the Malawi Act s. 25.
+- **Objection (para. 35):** a right to object at any time on grounds relating to the person's particular situation. Cited in UNHCR's 2025 complementary-pathways guidance for fraud disclosures.
+- **Sensitive data (footnote 3):** "Given the particularly vulnerable position of persons of concern to UNHCR, the nature of their personal data is generally sensitive"; data on offences and criminal proceedings is listed as sensitive.
+
+**Consequences:**
+- NameBridge's rule (no government or police users; no law-enforcement transfers) stays **stricter** than UNHCR's, which permits transfers under the 2015 §6.3 conditions. This is a deliberate difference to explain to partners that use UNHCR's standard.
+- If a tracing partner works under UNHCR, its data-sharing arrangement must meet para. 44, and our DPIA must answer para. 42 (risks of automated decisions).
+- `SCOPE.md` [S12] and `THREAT_MODEL.md` [T11] updated; the open item is closed in `TIMETABLE.md`.
+
+**Not verified:** Annex 1 (the transition activities), which may say when the 2015 policy is to be replaced.
