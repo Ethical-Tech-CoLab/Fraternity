@@ -1121,8 +1121,8 @@ offline.
 - **G1:** `SCOPE.md` approved.
 - **G2:** governments and law enforcement are not users.
 - **G3:** option **A**: NYU IRB review is not needed (recorded in `IRB_DETERMINATION.md`, Decision).
-- **G5:** alleged perpetrators, option **A** (never searched for). The restricted name-change layer was not discussed; default: not built.
-- **G7:** NameBridge stays open source; no intention to sell, because the work is humanitarian; licences may be offered where useful. Ownership not discussed. This replaces the afternoon note "commercial use reopened".
+- **G5:** alleged perpetrators, option **A** (never searched for). Restricted name-change layer: **yes, with conditions** (sourced patterns, week 7 access controls, legal check). *Corrected the same evening: first recorded as not discussed.*
+- **G7:** NameBridge stays open source; no intention to sell, because the work is humanitarian; licences may be offered where useful. No owner needs to be named, because it is open source. *Corrected the same evening: first recorded as not discussed.* This replaces the afternoon note "commercial use reopened".
 - **G4:** not discussed; the 26 Oct defaults stay in use.
 
 **Consequences:** week 3 (schema and validator) may start. In week 4, the public lists (CongoNames, NESA, CENI, the UN list) may be downloaded and processed under `DATA_RULES.md` DR-1 (study, keep aggregates, delete). Agenda with answers: `MEETING_2026-10-28.md`.
