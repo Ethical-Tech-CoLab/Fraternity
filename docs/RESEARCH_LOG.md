@@ -1593,3 +1593,23 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Data:** Bandundu city `located_in` Kwilu (2015–), sources UNICEF and OCHA; also kept in the 1966–2015 province. Places v0.8.1. **Tests:** 130 pass. Gap closed.
 
 **Ranking bug found and fixed (same day):** the resolver gave each part of a split a weight of 1, so "Bandundu" returned Kwilu, Kwango and Mai-Ndombe all at 1.00. A split into n parts now weighs 1/n per part: Bandundu city → Kwilu 1.00 (containment), the old province's parts 0.33 each; Kivu → Maniema, Nord-Kivu, Sud-Kivu 0.33 each. Two tests added. **Tests:** 132.
+
+## 2026-11-05 — Place data without Wikipedia
+
+**Rule (user, 5 Nov):** Wikipedia is not a source. All place links now rest on primary or recognised sources; `rw-wiki-towns`, `bi-wiki` and `cd-wiki` are gone from the dataset.
+
+**Rwandan towns, re-sourced:**
+- **Organic Law 29/2005** (RwandaLII, trilingual PDF; the UT Austin copy returns an HTML page): its annex has a **coded list of 30 districts and 416 sectors**, province = first two digits (01 Kigali, 02 South, 03 West, 04 North, 05 East). Sectors named Byumba (Gicumbi), Kibungo (Ngoma) and Gisenyi (Rubavu) confirm those towns; every district → province link now cites the law. Also found: a **Butare sector in Rusizi**, a homonym of Butare town (Huye).
+- **Musanze District's official site:** "Akarere ka Musanze gakomoka ku cyahoze ari Umujyi wa Ruhengeri, Akarere ka Mutobo, Akarere ka Kinigi…": the 2002–2006 town of Ruhengeri merged into Musanze with other units.
+- **REMA, State of Environment Report 2017:** "Huye City was renamed from Butare in 2006" (so Butare *was* renamed, unlike Byumba or Gisenyi; modelled as Butare (1962–2006) → Huye (2006–), located in Huye District); "the Kibuye area … of the District of Karongi".
+- **MINUBUMWE, History of Rwanda,** and **The New Times:** Rusizi District, former Cyangugu.
+- **Statoids, citing the UN Conference on the Standardization of Geographical Names (1991):** Butare: Astrida; Cyangugu: Shangugu; Gisenyi: Kisenyi; Kigali-Rural: Kigali Ngali, **Kigali Ngari** (r/l); Umutara: Mutara; 1946 territories with colonial spellings Biumba, Kibungu, Kîsenyi.
+- **Gitarama → Muhanga: indirect evidence only** (REMA map "Muhanga and Gitarama"; NESA lists a school "GS Gitarama" in Muhanga District). Kept at confidence 0.6 with a note; **open gap** until a direct source is found.
+
+**DRC, re-sourced and corrected (Statoids change history):** ~1975 Kongo-Central → Bas-Zaïre; 1997 Bas-Zaïre → Bas-Congo, Haut-Zaïre → **Haut-Congo**, Shaba → Katanga; ~1998 Haut-Congo → Orientale. The intermediate *Haut-Congo* was missing, and Kongo Central (2015) is a return to the pre-1975 name. Other names added: Kivou, Kassai, Lower/Upper Zaire.
+
+**Tools:** Tavily was rate-limited repeatedly; official PDFs and pages were fetched directly (RwandaLII, district sites, REMA, MINUBUMWE, Statoids). In zsh, a loop variable named `path` overwrote `PATH`; scripts now use Python.
+
+**Data:** places v0.10.0. **Tests:** 132 pass.
+
+**Open gaps:** Gitarama (direct source); Wikipedia-only entries in the packs (~32) and three Christian-name forms; DRC territories (coverage).

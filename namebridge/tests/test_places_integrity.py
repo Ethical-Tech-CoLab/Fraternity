@@ -39,7 +39,7 @@ def test_every_old_unit_has_a_successor():
 
 def test_every_sub_province_unit_is_placed():
     _, units, out, _ = load()
-    levels = {"commune", "zone", "quarter", "district", "town"}
+    levels = {"commune", "zone", "quarter", "district", "town", "sector"}
     # Current units must be placed; old ones reach a placed unit through their
     # successor (test_every_old_unit_has_a_successor).
     unplaced = [k for k, u in units.items() if u["level"] in levels and u["period"] in CURRENT

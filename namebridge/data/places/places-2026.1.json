@@ -1,15 +1,9 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.8.1",
+  "version": "0.10.0",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
-    "bi-wiki": {
-      "name": "Wikipedia, 'Provinces of Burundi' (table: territorial correspondence with former provinces; 1960-62 names)",
-      "url": "https://en.wikipedia.org/wiki/Provinces_of_Burundi",
-      "locator": "Current provinces table; History",
-      "language": "en"
-    },
     "bi-breaking": {
       "name": "Breaking Burundi, 'Senate approves five new provincial governors after major administrative reform', 2025",
       "url": "https://breakingburundi.com/burundi-senate-approves-five-new-provincial-governors-after-major-administrative-reform",
@@ -37,19 +31,13 @@
     "rw-statoids": {
       "name": "Statoids, 'Rwanda Provinces' (change history)",
       "url": "https://statoids.com/urw.html",
-      "locator": "2006-01-01: Rwanda reorganized from twelve provinces into five",
-      "language": "en"
-    },
-    "cd-wiki": {
-      "name": "Wikipedia, 'Provinces of the Democratic Republic of the Congo' (history table 1908-2015; current provinces with former province)",
-      "url": "https://en.wikipedia.org/wiki/Provinces_of_the_Democratic_Republic_of_the_Congo",
-      "locator": "history table; table of the 26 provinces, column 'former province'",
+      "locator": "2006-01-01: Rwanda reorganized from twelve provinces into five; 1946 colonial territoires: Astrida, Biumba, Kibungu, Kigali, Kîsenyi, Nyanza, Ruhengeri, Shangugu; Other names of subdivisions (citing the Fifth UN Conference on the Standardization of Geographical Names, 1991): Butare: Astrida (obsolete); Cyangugu: Shangugu (obsolete); Gisenyi: Kisenyi; Kigali-Rural: Kigali Ngali, Kigali Ngari; Umutara: Mutara",
       "language": "en"
     },
     "cd-statoids": {
       "name": "Statoids, 'Democratic Republic of Congo Provinces' (change history)",
       "url": "https://statoids.com/ucd.html",
-      "locator": "1966-07-01 city renames; 1972 Katanga renamed Shaba; 2015 reorganization table; table of 26 provinces with capitals (Haut-Katanga: Lubumbashi; Kasaï Oriental: Mbuji-Mayi; Kasaï-Central: Kananga; Tshopo: Kisangani; Sud-Kivu: Bukavu; Kinshasa: Kinshasa; Équateur: Mbandaka); 1966-2015 table (Bandundu: capital Bandundu); Kivu split into Maniema, Nord-Kivu, Sud-Kivu",
+      "locator": "1966-07-01 city renames; 1972 Katanga renamed Shaba; 2015 reorganization table; table of 26 provinces with capitals (Haut-Katanga: Lubumbashi; Kasaï Oriental: Mbuji-Mayi; Kasaï-Central: Kananga; Tshopo: Kisangani; Sud-Kivu: Bukavu; Kinshasa: Kinshasa; Équateur: Mbandaka); 1966-2015 table (Bandundu: capital Bandundu); Kivu split into Maniema, Nord-Kivu, Sud-Kivu; change history: ~1975 Kongo-Central renamed Bas-Zaïre; 1997-05-19 Bas-Zaïre to Bas-Congo, Haut-Zaïre to Haut-Congo, Shaba to Katanga; ~1998 Haut-Congo to Orientale; other names: Bas-Congo: Bas-Zaïre, Kongo-Central, Lower Zaire; Orientale: Haut-Congo, Haut-Zaïre, Upper Zaire; Kivu: Kivou; Kasai: Kassai",
       "language": "en"
     },
     "cd-crisisgroup": {
@@ -71,9 +59,9 @@
       "language": "en"
     },
     "rw-law-29-2005": {
-      "name": "Organic Law No 29/2005 of 31/12/2005 determining the administrative entities of the Republic of Rwanda (UT Austin repository copy)",
-      "url": "https://repositories.lib.utexas.edu/bitstreams/45c2a91d-00f9-4212-80cc-93dbe7f06631/download",
-      "locator": "Article 4 (four provinces and the City of Kigali, head offices); Annex I (boundaries, e.g. II.2.2.1 Musanze District)",
+      "name": "Organic Law No 29/2005 of 31/12/2005 determining the administrative entities of the Republic of Rwanda (RwandaLII, trilingual PDF)",
+      "url": "https://rwandalii.org/akn/rw/act/ol/2005/29/eng@2005-12-31/source.pdf",
+      "locator": "Article 4 (provinces and City of Kigali); annex: coded list of the 30 districts and 416 sectors (e.g. 0405 GICUMBI, 040503 BYUMBA; 0506 NGOMA, 050605 KIBUNGO; 0303 RUBAVU, 030304 GISENYI; 0306 RUSIZI, 030602 BUTARE)",
       "language": "en"
     },
     "rw-north": {
@@ -99,12 +87,6 @@
       "url": "https://www.westernprovince.gov.rw",
       "locator": "home page: one of four provinces and the City of Kigali (Umujyi wa Kigali); seat in Karongi District since January 2006",
       "language": "rw"
-    },
-    "rw-wiki-towns": {
-      "name": "Wikipedia articles on Rwandan towns: Ruhengeri, Butare, Gisenyi, Cyangugu, Muhanga, Byumba, Kibungo, Kibuye (disambiguation)",
-      "url": "https://en.wikipedia.org/wiki/Ruhengeri",
-      "locator": "lead and infobox of each article (en.wikipedia.org/wiki/<town>), read 5 Nov 2026",
-      "language": "en"
     },
     "bi-law-2023": {
       "name": "Burundi, Loi organique n°1/05 du 16 mars 2023 portant détermination et délimitation des provinces, des communes, des zones, des collines et/ou quartiers (scanned PDF published by CENI)",
@@ -176,6 +158,36 @@
       "name": "OCHA, 'DRC: A Year of Survival'",
       "url": "https://www.unocha.org/news/drc-year-survival",
       "locator": "'In the city of Bandundu, in Kwilu Province'",
+      "language": "en"
+    },
+    "rw-musanze-gov": {
+      "name": "Musanze District, official website (Akarere ka Musanze)",
+      "url": "https://www.musanze.gov.rw/akarere/menya-akarere",
+      "locator": "'Akarere ka Musanze gakomoka ku cyahoze ari Umujyi wa Ruhengeri, Akarere ka Mutobo, Akarere ka Kinigi, Imirenge 14 y'icyahoze ari Akarere ka Bugarura n'Imirenge 3 y'icyahoze ari Akarere ka Bukamba'",
+      "language": "rw"
+    },
+    "rw-minubumwe-history": {
+      "name": "MINUBUMWE (Ministry of National Unity and Civic Engagement), History of Rwanda (English edition)",
+      "url": "https://www.minubumwe.gov.rw/fileadmin/user_upload/MINUBUMWE/Archives/NURC_Archives/HISTORY_OF_RWANDA_ENGLISH_BOOK.pdf",
+      "locator": "prehistory chapter: 'Ruhimandyarya cave in Rusizi District, former Cyangugu Province'",
+      "language": "en"
+    },
+    "rw-newtimes-rusizi": {
+      "name": "The New Times (Kigali), 'Know your history: King Musinga and the bitter history of colonialism'",
+      "url": "https://www.newtimes.co.rw/article/121774/Education/know-your-history-king-musinga-and-the-bitter-history-of-colonialism",
+      "locator": "'Rusizi (formerly Cyangugu) district'",
+      "language": "en"
+    },
+    "rw-rema-2017": {
+      "name": "REMA (Rwanda Environment Management Authority), Rwanda State of Environment and Outlook Report 2017",
+      "url": "https://www.rema.gov.rw/fileadmin/user_upload/REMA/Publications/State_of_Environment___Atlas/Rwanda_State_of_Environment_Report_2017.pdf",
+      "locator": "secondary cities: 'Huye City was renamed from Butare in 2006 after the highest peak ... Ibisi Byahuye'; 'KivuWatt Power Project, located in the Kibuye area ... of the District of Karongi'; Figure 2 'Topography around Muhanga and Gitarama'",
+      "language": "en"
+    },
+    "rw-nesa-2024": {
+      "name": "NESA (National Examination and School Inspection Authority), School Performance Rankings 2023/2024",
+      "url": "https://www.nesa.gov.rw/fileadmin/user_upload/NESA/Ressources/Reports/School_Performance_Rankings_2023-2024_National_Examination_Results_1.pdf",
+      "locator": "school 270815 'GS GITARAMA', district Muhanga (indirect evidence for the town's location)",
       "language": "en"
     }
   },
@@ -1776,11 +1788,19 @@
       "period": "2015-"
     },
     {
-      "key": "CD:province:bas-zaire@1971-1997",
+      "key": "CD:province:bas-zaire@1975-1997",
       "name": "Bas-Zaïre",
       "country": "CD",
       "level": "province",
-      "period": "1971-1997"
+      "period": "1975-1997",
+      "other_names": [
+        {
+          "name": "Lower Zaire",
+          "lang": "en",
+          "source": "cd-statoids",
+          "note": "obsolete English name"
+        }
+      ]
     },
     {
       "key": "CD:province:equateur@1966-2015",
@@ -1795,6 +1815,13 @@
       "country": "CD",
       "level": "province",
       "period": "2015-"
+    },
+    {
+      "key": "CD:province:haut-congo@1997-1998",
+      "name": "Haut-Congo",
+      "country": "CD",
+      "level": "province",
+      "period": "1997-1998"
     },
     {
       "key": "CD:province:haut-katanga@2015-",
@@ -1818,11 +1845,19 @@
       "period": "2015-"
     },
     {
-      "key": "CD:province:haut-zaire@1971-1997",
+      "key": "CD:province:haut-zaire@1966-1997",
       "name": "Haut-Zaïre",
       "country": "CD",
       "level": "province",
-      "period": "1971-1997"
+      "period": "1966-1997",
+      "other_names": [
+        {
+          "name": "Upper Zaire",
+          "lang": "en",
+          "source": "cd-statoids",
+          "note": "obsolete English name"
+        }
+      ]
     },
     {
       "key": "CD:province:ituri@2015-",
@@ -1843,7 +1878,15 @@
       "name": "Kasaï-Occidental",
       "country": "CD",
       "level": "province",
-      "period": "1966-2015"
+      "period": "1966-2015",
+      "other_names": [
+        {
+          "name": "Kassai-Occidental",
+          "lang": "fr",
+          "source": "cd-statoids",
+          "note": "variant spelling of Kasai"
+        }
+      ]
     },
     {
       "key": "CD:province:kasai-oriental@1966-2015",
@@ -1892,7 +1935,22 @@
       "name": "Kivu",
       "country": "CD",
       "level": "province",
-      "period": "1966-1988"
+      "period": "1966-1988",
+      "other_names": [
+        {
+          "name": "Kivou",
+          "lang": "fr",
+          "source": "cd-statoids",
+          "note": "variant"
+        }
+      ]
+    },
+    {
+      "key": "CD:province:kongo-central@1966-1975",
+      "name": "Kongo-Central",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-1975"
     },
     {
       "key": "CD:province:kongo-central@2015-",
@@ -1965,11 +2023,11 @@
       "period": "2015-"
     },
     {
-      "key": "CD:province:orientale@1997-2015",
+      "key": "CD:province:orientale@1998-2015",
       "name": "Orientale",
       "country": "CD",
       "level": "province",
-      "period": "1997-2015"
+      "period": "1998-2015"
     },
     {
       "key": "CD:province:sankuru@2015-",
@@ -2277,6 +2335,12 @@
           "name": "Kigali Ngali",
           "lang": "rw",
           "source": "rw-north"
+        },
+        {
+          "name": "Kigali Ngari",
+          "lang": "rw",
+          "source": "rw-statoids",
+          "note": "r/l variant of Kigali Ngali (UNGEGN 1991)"
         }
       ]
     },
@@ -2363,7 +2427,15 @@
       "name": "Umutara",
       "country": "RW",
       "level": "province",
-      "period": "2002-2006"
+      "period": "2002-2006",
+      "other_names": [
+        {
+          "name": "Mutara",
+          "lang": "rw",
+          "source": "rw-statoids",
+          "note": "variant"
+        }
+      ]
     },
     {
       "key": "RW:province:western-province@2006-",
@@ -2391,6 +2463,14 @@
       ]
     },
     {
+      "key": "RW:sector:butare-rusizi@2006-",
+      "name": "Butare",
+      "country": "RW",
+      "level": "sector",
+      "period": "2006-",
+      "note": "not Butare town (Huye District): a sector of Rusizi District with the same name"
+    },
+    {
       "key": "RW:town:astrida@pre1962",
       "name": "Astrida",
       "country": "RW",
@@ -2398,26 +2478,26 @@
       "period": "pre1962"
     },
     {
-      "key": "RW:town:butare@current",
+      "key": "RW:town:butare@1962-2006",
       "name": "Butare",
       "country": "RW",
       "level": "town",
-      "period": "current",
-      "other_names": [
-        {
-          "name": "Huye",
-          "lang": "rw",
-          "note": "also known as Huye",
-          "source": "rw-wiki-towns"
-        }
-      ]
+      "period": "1962-2006"
     },
     {
       "key": "RW:town:byumba@current",
       "name": "Byumba",
       "country": "RW",
       "level": "town",
-      "period": "current"
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Biumba",
+          "lang": "fr",
+          "source": "rw-statoids",
+          "note": "colonial spelling (1946 territoire)"
+        }
+      ]
     },
     {
       "key": "RW:town:cyangugu@current",
@@ -2437,7 +2517,13 @@
           "name": "Kisenyi",
           "lang": "rw",
           "note": "historical rendering",
-          "source": "rw-wiki-towns"
+          "source": "rw-statoids"
+        },
+        {
+          "name": "Kîsenyi",
+          "lang": "fr",
+          "source": "rw-statoids",
+          "note": "colonial spelling (1946 territoire)"
         }
       ]
     },
@@ -2446,13 +2532,19 @@
       "name": "Gitarama",
       "country": "RW",
       "level": "town",
-      "period": "current",
+      "period": "current"
+    },
+    {
+      "key": "RW:town:huye@2006-",
+      "name": "Huye",
+      "country": "RW",
+      "level": "town",
+      "period": "2006-",
       "other_names": [
         {
-          "name": "Muhanga",
-          "lang": "rw",
-          "note": "Muhanga City",
-          "source": "rw-wiki-towns"
+          "name": "Huye City",
+          "lang": "en",
+          "source": "rw-rema-2017"
         }
       ]
     },
@@ -2461,7 +2553,15 @@
       "name": "Kibungo",
       "country": "RW",
       "level": "town",
-      "period": "current"
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Kibungu",
+          "lang": "fr",
+          "source": "rw-statoids",
+          "note": "colonial spelling (1946 territoire)"
+        }
+      ]
     },
     {
       "key": "RW:town:kibuye@current",
@@ -2469,6 +2569,20 @@
       "country": "RW",
       "level": "town",
       "period": "current"
+    },
+    {
+      "key": "RW:town:ruhengeri@2002-2006",
+      "name": "Ruhengeri",
+      "country": "RW",
+      "level": "town",
+      "period": "2002-2006",
+      "other_names": [
+        {
+          "name": "Umujyi wa Ruhengeri",
+          "lang": "rw",
+          "source": "rw-musanze-gov"
+        }
+      ]
     },
     {
       "key": "RW:town:ruhengeri@current",
@@ -2480,8 +2594,8 @@
         {
           "name": "Musanze",
           "lang": "rw",
-          "note": "today known as Musanze; some sources call the city by its district's name",
-          "source": "rw-wiki-towns"
+          "note": "the district that the former town of Ruhengeri became part of",
+          "source": "rw-musanze-gov"
         }
       ]
     },
@@ -2500,7 +2614,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2512,7 +2625,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2524,7 +2636,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2536,7 +2647,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2548,7 +2658,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2560,7 +2669,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2572,7 +2680,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2584,7 +2691,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2596,7 +2702,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2608,7 +2713,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2620,7 +2724,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2632,7 +2735,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2644,7 +2746,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2656,7 +2757,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2668,7 +2768,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2680,7 +2779,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2693,7 +2791,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2706,7 +2803,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2719,7 +2815,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2732,7 +2827,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2745,7 +2839,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2758,7 +2851,6 @@
       "relation": "merged_into",
       "year": 2025,
       "sources": [
-        "bi-wiki",
         "bi-breaking",
         "bi-cia",
         "bi-law-2023"
@@ -2771,8 +2863,7 @@
       "relation": "renamed_to",
       "year": 1962,
       "sources": [
-        "bi-statoids",
-        "bi-wiki"
+        "bi-statoids"
       ]
     },
     {
@@ -2781,7 +2872,6 @@
       "relation": "renamed_to",
       "year": 1962,
       "sources": [
-        "bi-wiki",
         "bi-statoids"
       ]
     },
@@ -2791,7 +2881,6 @@
       "relation": "renamed_to",
       "year": 1962,
       "sources": [
-        "bi-wiki",
         "bi-statoids"
       ]
     },
@@ -3039,12 +3128,12 @@
       ]
     },
     {
-      "from": "CD:province:bas-zaire@1971-1997",
+      "from": "CD:province:bas-zaire@1975-1997",
       "to": "CD:province:bas-congo@1997-2015",
       "relation": "renamed_to",
       "year": 1997,
       "sources": [
-        "cd-wiki"
+        "cd-statoids"
       ]
     },
     {
@@ -3053,17 +3142,7 @@
       "relation": "renamed_to",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-crisisgroup"
-      ]
-    },
-    {
-      "from": "CD:province:haut-zaire@1971-1997",
-      "to": "CD:province:orientale@1997-2015",
-      "relation": "renamed_to",
-      "year": 1997,
-      "sources": [
-        "cd-wiki"
       ]
     },
     {
@@ -3072,7 +3151,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-worldstatesmen"
@@ -3084,7 +3162,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-worldstatesmen"
@@ -3096,7 +3173,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-worldstatesmen"
@@ -3108,52 +3184,47 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-worldstatesmen"
       ]
     },
     {
-      "from": "CD:province:orientale@1997-2015",
+      "from": "CD:province:orientale@1998-2015",
       "to": "CD:province:bas-uele@2015-",
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
     },
     {
-      "from": "CD:province:orientale@1997-2015",
+      "from": "CD:province:orientale@1998-2015",
       "to": "CD:province:haut-uele@2015-",
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
     },
     {
-      "from": "CD:province:orientale@1997-2015",
+      "from": "CD:province:orientale@1998-2015",
       "to": "CD:province:ituri@2015-",
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
     },
     {
-      "from": "CD:province:orientale@1997-2015",
+      "from": "CD:province:orientale@1998-2015",
       "to": "CD:province:tshopo@2015-",
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3164,7 +3235,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3175,7 +3245,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3186,7 +3255,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3197,7 +3265,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3208,7 +3275,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3219,7 +3285,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3230,7 +3295,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3241,7 +3305,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup"
       ]
@@ -3252,7 +3315,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-rulers"
@@ -3264,7 +3326,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-rulers"
@@ -3276,7 +3337,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-rulers"
@@ -3288,7 +3348,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-rulers"
@@ -3300,7 +3359,6 @@
       "relation": "split_into",
       "year": 2015,
       "sources": [
-        "cd-wiki",
         "cd-statoids",
         "cd-crisisgroup",
         "cd-rulers"
@@ -3312,8 +3370,10 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-musanze-gov",
+        "rw-law-29-2005"
+      ],
+      "note": "the former town of Ruhengeri is part of Musanze District (district website); its urban sector is Muhoza (law annex)"
     },
     {
       "from": "RW:district:musanze@2006-",
@@ -3321,18 +3381,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns",
-        "rw-north"
-      ]
-    },
-    {
-      "from": "RW:town:butare@current",
-      "to": "RW:district:huye@2006-",
-      "relation": "located_in",
-      "year": null,
-      "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0403 lies in province 04"
     },
     {
       "from": "RW:district:huye@2006-",
@@ -3340,9 +3391,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns",
-        "rw-south"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0204 lies in province 02"
     },
     {
       "from": "RW:town:gitarama@current",
@@ -3350,8 +3401,11 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-rema-2017",
+        "rw-nesa-2024"
+      ],
+      "confidence": 0.6,
+      "note": "indirect evidence only (a map of 'Muhanga and Gitarama'; a school named Gitarama in Muhanga district); replace with a direct source"
     },
     {
       "from": "RW:district:muhanga@2006-",
@@ -3359,9 +3413,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns",
-        "rw-south"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0207 lies in province 02"
     },
     {
       "from": "RW:town:byumba@current",
@@ -3369,8 +3423,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "a sector of the same name is listed in this district (law 29/2005 annex)"
     },
     {
       "from": "RW:district:gicumbi@2006-",
@@ -3378,9 +3433,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns",
-        "rw-north"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0405 lies in province 04"
     },
     {
       "from": "RW:town:kibungo@current",
@@ -3388,8 +3443,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "a sector of the same name is listed in this district (law 29/2005 annex)"
     },
     {
       "from": "RW:district:ngoma@2006-",
@@ -3397,8 +3453,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0506 lies in province 05"
     },
     {
       "from": "RW:town:gisenyi@current",
@@ -3406,8 +3463,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "a sector of the same name is listed in this district (law 29/2005 annex)"
     },
     {
       "from": "RW:district:rubavu@2006-",
@@ -3415,8 +3473,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0303 lies in province 03"
     },
     {
       "from": "RW:town:kibuye@current",
@@ -3424,7 +3483,7 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
+        "rw-rema-2017"
       ]
     },
     {
@@ -3433,8 +3492,9 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0301 lies in province 03"
     },
     {
       "from": "RW:town:cyangugu@current",
@@ -3442,7 +3502,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
+        "rw-minubumwe-history",
+        "rw-newtimes-rusizi"
       ]
     },
     {
@@ -3451,16 +3512,17 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-wiki-towns"
-      ]
+        "rw-law-29-2005"
+      ],
+      "note": "district code 0306 lies in province 03"
     },
     {
       "from": "RW:town:astrida@pre1962",
-      "to": "RW:town:butare@current",
+      "to": "RW:town:butare@1962-2006",
       "relation": "renamed_to",
       "year": 1962,
       "sources": [
-        "rw-wiki-towns"
+        "rw-statoids"
       ]
     },
     {
@@ -3469,7 +3531,6 @@
       "relation": "renamed_to",
       "year": null,
       "sources": [
-        "rw-wiki-towns",
         "rw-statoids"
       ]
     },
@@ -7411,6 +7472,74 @@
         "cd-ocha-year-survival"
       ],
       "note": "Kwilu's capital is disputed: Statoids gives Kikwit, UNICEF (2021) and ReliefWeb give Bandundu; both cities are in Kwilu"
+    },
+    {
+      "from": "RW:sector:butare-rusizi@2006-",
+      "to": "RW:district:rusizi@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-law-29-2005"
+      ]
+    },
+    {
+      "from": "RW:town:ruhengeri@2002-2006",
+      "to": "RW:district:musanze@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-musanze-gov"
+      ],
+      "partial": false,
+      "note": "with the former districts of Mutobo and Kinigi and parts of Bugarura and Bukamba"
+    },
+    {
+      "from": "RW:town:butare@1962-2006",
+      "to": "RW:town:huye@2006-",
+      "relation": "renamed_to",
+      "year": 2006,
+      "sources": [
+        "rw-rema-2017"
+      ]
+    },
+    {
+      "from": "RW:town:huye@2006-",
+      "to": "RW:district:huye@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-rema-2017"
+      ],
+      "note": "the secondary city includes the sectors of Tumba, Ngoma, Mukura and part of Mbazi (REMA)"
+    },
+    {
+      "from": "CD:province:kongo-central@1966-1975",
+      "to": "CD:province:bas-zaire@1975-1997",
+      "relation": "renamed_to",
+      "year": 1975,
+      "sources": [
+        "cd-statoids"
+      ],
+      "note": "~1975 (Statoids)"
+    },
+    {
+      "from": "CD:province:haut-zaire@1966-1997",
+      "to": "CD:province:haut-congo@1997-1998",
+      "relation": "renamed_to",
+      "year": 1997,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:province:haut-congo@1997-1998",
+      "to": "CD:province:orientale@1998-2015",
+      "relation": "renamed_to",
+      "year": 1998,
+      "sources": [
+        "cd-statoids"
+      ],
+      "note": "~1998 (Statoids)"
     }
   ]
 }
