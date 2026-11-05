@@ -1404,3 +1404,26 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Graph:** three packs load as 133 nodes; valid. **Tests:** 96 pass.
 
 **Gaps:** CongoNames full article (token order in exam lists); Kivu Swahili spelling habits in names; Kinshasa vs eastern naming differences; DRC 2015 province names (cross-pack places).
+
+## 2026-11-05 — Name changes in court records: gate G8 and its blind spots
+
+**User's questions (5 Nov 2026):** are court name changes public, and can they be used? Clarified: not to track people, but as a check during one search ("Fulano da Silva" found in a court record as now "Siclano Souza").
+
+**Findings:**
+- **DRC:** *Code de la famille* art. 66 (read 5 Nov): court decisions changing a name are written in the margin of the birth (and marriage) certificate and sent by the clerk **for publication in the *Journal officiel***. Whether publication happens in practice, and whether the issues are online, is not checked.
+- **Rwanda:** name changes follow a ministerial order (a new one published 1 Jun 2026, replacing the 2025 order; The New Times, via Ground News). Whether individual changes are published by name: not confirmed.
+- **Malawi:** deed poll; publication requirement not found. **Burundi:** art. 17 of the Code not read.
+
+**Agreed in discussion:**
+- **A check during one search** fits rule 5 but must be **manual, by a caseworker on the protected route**. An automatic check would either send every searched name to an outside site (the search itself leaks) or need a local copy of all notices (bulk tracking). Findings go only into the protected case record; the person found decides on contact. Not written into `NAME_CHANGE.md`, by the user's choice.
+- **Aggregate patterns from notices:** opened as gate **G8** (professor), because the notices are personal data outside G3. Default: not used.
+
+**Blind spots of court and gazette notices as a pattern source:**
+1. **Only formal changes appear.** The changes that matter most here, Swahili names taken in Tanzania, Malawian names, names taken to escape someone, are mostly informal (Daley 2018; `NAME_CHANGE.md`).
+2. **The people most at risk are missing.** Someone hiding from traffickers or persecutors will not publish a new name in a gazette. The source under-represents exactly the protected cases.
+3. **Different reasons.** Citizens change names at home for marriage, embarrassing names, religion or a reversal of authenticité names; refugees change names for safety and invisibility. Patterns from one need not hold for the other.
+4. **Uneven coverage:** the DRC publishes by law, Rwanda perhaps, Malawi, Burundi and Tanzania unknown.
+5. **Sensitive reasons:** religious conversion is a reason for change and is sensitive data (G5 condition 3: legal check).
+6. **Patterns are not predictions:** over-trusting them would multiply false "possible name change" candidates (T17).
+
+**Mitigation:** the pattern set combines several sources with different blind spots: published studies of exile name change (Daley 2018; Duchaj & Ntihirageza 2009; further literature to search), the notices if G8 allows, and native-speaker and caseworker input in Jan–Mar 2027 (needs IRB review). The benchmark keeps the share of name changes a varied parameter, so results are reported across the range, not at one guess.
