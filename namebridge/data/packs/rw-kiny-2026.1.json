@@ -259,9 +259,9 @@
         "ou",
         "w"
       ],
-      "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana",
+      "confidence": "medium",
+      "note": "Wikipedia only"
     },
     {
       "sound": "/ʃ/",
@@ -296,9 +296,9 @@
       "spellings": [
         "tch"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'",
+      "confidence": "medium",
+      "note": "Wikipedia only"
     },
     {
       "sound": "/tʃ/",
@@ -346,9 +346,9 @@
         "gn",
         "ny"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
+      "source": "FSI, Swahili Basic Course, p. xi: ny 'as in Spanish cañon, Portuguese nenhum, French gagner' (a palatal nasal), so French writes the sound gn",
+      "confidence": "medium",
+      "note": "Wikipedia only"
     },
     {
       "sound": "/ɲ/",

@@ -263,9 +263,9 @@
         "ou",
         "w"
       ],
-      "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana",
+      "confidence": "medium",
+      "note": "Wikipedia only"
     },
     {
       "sound": "/ʃ/",
@@ -300,9 +300,9 @@
       "spellings": [
         "tch"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'",
+      "confidence": "medium",
+      "note": "Wikipedia only"
     },
     {
       "sound": "/tʃ/",
@@ -361,9 +361,9 @@
         "gn",
         "ny"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
+      "source": "FSI, Swahili Basic Course, p. xi: ny 'as in Spanish cañon, Portuguese nenhum, French gagner' (a palatal nasal), so French writes the sound gn",
+      "confidence": "medium",
+      "note": "Wikipedia only"
     },
     {
       "sound": "/ɲ/",
@@ -520,6 +520,11 @@
       "id": "colonial-place-spellings",
       "description": "Places renamed or respelled after independence: Kitega / Gitega, Usumbura / Bujumbura (1962), Hinga or Muhinga / Muyinga, Karusi / Karuzi. Older people may give the old form; foreign records may keep it. Goes into the cross-pack place data (week 4)",
       "source": "Statoids, Burundi provinces, 'Other names of subdivisions' and history (https://statoids.com/ubi.html); Wikipedia, Gitega and Bujumbura; accessed 5 Nov 2026"
+    },
+    {
+      "id": "swahili-prefixes",
+      "description": "Swahili renders Kirundi class prefixes differently (Burundi as Urundi, Barundi/Abarundi as Warundi): a name or place given through Swahili may carry a different prefix",
+      "source": "Alexandre, P. (1984), in UNESCO, African ethnonyms and toponyms, p. 65: \"'Urundi' and 'Warundi' are Swahili for 'Burundi' and 'Barundi/Abarundi'\""
     }
   ],
   "protected_or_sensitive_forms": [

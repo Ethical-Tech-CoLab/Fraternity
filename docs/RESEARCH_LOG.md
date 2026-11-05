@@ -1633,3 +1633,12 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Still without a primary source, kept at confidence `low` with a note:** French writers' *ou* for /w/, *tch* for /tʃ/, *gn* for /ɲ/ (8 entries across the three packs; the UNESCO study on spelling African names [P4] would cover them but UNESDOC does not load without a browser); "people are addressed by the given name in speech" (rw-kiny). **Open gaps.**
 
 **Tests:** 132 pass. Packs: rw-kiny, bi-kirundi, cd-swc-ln bumped; Christian names v0.4.0.
+
+## 2026-11-05 — French spellings of African names: UNESCO 1984
+
+**Source** (opened in Chrome at the user's request; the user downloaded the PDF, since UNESDOC renders it only in a browser viewer): UNESCO, *African ethnonyms and toponyms* (Meeting of Experts, Paris 1978; General History of Africa: Studies and Documents 6, 1984, 198 pp.).
+- **Cornevin, R., "The standardization of the spelling of African names: toponyms and ethnonyms"**, pp. 68–79: French and English renderings of the same names — "Adamaoua or Adamawa", "Haoussa (Hausa or Hawsa)", "Tchouana (Tswana)", "Evhé (Ewe in German and English)"; and "j and c(h) are usually given values close to their English value in 'anglophone' countries, but not normally in 'francophone' countries". Sources French *ou* for /w/ and *tch* for an affricate (medium).
+- **Alexandre, P.**, same volume, p. 65: "'Urundi' and 'Warundi' are Swahili for 'Burundi' and 'Barundi/Abarundi'": Swahili changes Kirundi class prefixes (Bu- → U-, Ba- → Wa-). New failure mode in `bi-kirundi`.
+- French *gn* = /ɲ/: not in the volume; sourced instead from the **FSI Swahili Basic Course**, p. xi (ny "as in … French *gagner*").
+
+**Result:** all 8 French entries re-sourced (medium). Of the 33 pack entries that rested only on a wiki, **one remains**: "people are addressed by the given name in speech" (rw-kiny), kept at `low` with a note. **Tests:** 132 pass.
