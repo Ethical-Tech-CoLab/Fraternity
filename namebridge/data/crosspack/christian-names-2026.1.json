@@ -1,6 +1,6 @@
 {
   "dataset_id": "christian-names-2026.1",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Christian given names across the corridor's languages, from Bible translations: each translation fixes the form of a biblical name in its language. A form in a Bible does not show that a person named Jean is recorded as Yohana by a Swahili writer; that is the hypothesis these edges let the matcher test, at low weight (CONCEPT-IDEA.md §3: cognates are for query expansion, not automatic equivalence).",
   "regions": [
     "CD",
@@ -74,6 +74,48 @@
       "name": "Harvestime, Chichewa Bible study course ('Ukadaulo wa kasanthulidwe ka Baibulo')",
       "url": "http://harvestime.org/translations/chichewa/creative%20bible%20study%20fina%20copy.pdf",
       "locator": "Chipangano Chatsopano: Mateyu, Marko, Luka, Yohane; Yohane Mbatizi; Paulo",
+      "language": "ny"
+    },
+    "fr-lsg-mt1": {
+      "name": "Louis Segond 1910 (public domain), Matthieu 1:18-25, via Bible Gateway",
+      "url": "https://www.biblegateway.com/passage/?search=Matthieu+1%3A18-25&version=LSG",
+      "locator": "Matthieu 1:18-25 (Marie, Joseph, Emmanuel); also Luc 1:27 on bible.com/bible/93",
+      "language": "fr"
+    },
+    "en-kjv-lk1": {
+      "name": "King James Version, Luke 1:27, via bible.com",
+      "url": "https://www.bible.com/bible/1/LUK.1.27",
+      "locator": "Luke 1:27 (Joseph, Mary)",
+      "language": "en"
+    },
+    "en-niv-mt1": {
+      "name": "New International Version, Matthew 1:23, via Bible Gateway (parallel with TKU)",
+      "url": "https://www.biblegateway.com/passage?search=Mathayo+1&version=TKU%3BNKJV%3BESV%3BNIV",
+      "locator": "Matthew 1:23-24 (Immanuel, Joseph, Mary)",
+      "language": "en"
+    },
+    "sw-tku-mt1": {
+      "name": "Tafsiri ya Kusoma (TKU, Swahili), Mathayo 1, via Bible Gateway",
+      "url": "https://www.biblegateway.com/passage?search=Mathayo+1&version=TKU%3BNKJV%3BESV%3BNIV",
+      "locator": "Mathayo 1:18-25 (Mariamu, Yusufu, Emanueli)",
+      "language": "sw"
+    },
+    "sw-sruv-mt1": {
+      "name": "Swahili Revised Union Version (SRUV), Mathayo 1:23, via bible.com (search snippet only)",
+      "url": "https://www.bible.com/bible/1818/MAT.1.23",
+      "locator": "Mathayo 1:23 (Imanueli)",
+      "language": "sw"
+    },
+    "rw-bibiliya-yera-mt1": {
+      "name": "Bibiliya Yera (Kinyarwanda Bible), PDF",
+      "url": "https://abisezerano.com/wp-content/uploads/2018/06/bibiliya.pdf",
+      "locator": "Matayo 1:18-23 (Mariya, Yosefu, Imanweli); Luka 1:26-27",
+      "language": "rw"
+    },
+    "ny-blp-lk1": {
+      "name": "Buku Lopatulika (BLP-2018, Chichewa), Luka 1:27, via bible.com",
+      "url": "https://www.bible.com/bible/1068/LUK.1.27",
+      "locator": "Luka 1:27 (Yosefe, Maria)",
       "language": "ny"
     }
   },
@@ -467,6 +509,131 @@
           "lang": "ny",
           "sources": [
             "ny-buku-lopatulika"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "maria",
+      "label": "Mary (Greek Maria / Mariam)",
+      "forms": [
+        {
+          "text": "Marie",
+          "lang": "fr",
+          "sources": [
+            "fr-lsg-mt1"
+          ]
+        },
+        {
+          "text": "Mary",
+          "lang": "en",
+          "sources": [
+            "en-kjv-lk1",
+            "en-niv-mt1"
+          ]
+        },
+        {
+          "text": "Mariamu",
+          "lang": "sw",
+          "sources": [
+            "sw-tku-mt1"
+          ]
+        },
+        {
+          "text": "Mariya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-mt1"
+          ]
+        },
+        {
+          "text": "Maria",
+          "lang": "ny",
+          "sources": [
+            "ny-blp-lk1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ioseph",
+      "label": "Joseph (Greek Iōsēph)",
+      "forms": [
+        {
+          "text": "Joseph",
+          "lang": "fr",
+          "sources": [
+            "fr-lsg-mt1"
+          ]
+        },
+        {
+          "text": "Joseph",
+          "lang": "en",
+          "sources": [
+            "en-kjv-lk1",
+            "en-niv-mt1"
+          ]
+        },
+        {
+          "text": "Yusufu",
+          "lang": "sw",
+          "sources": [
+            "sw-tku-mt1"
+          ]
+        },
+        {
+          "text": "Yosefu",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-mt1"
+          ]
+        },
+        {
+          "text": "Yosefe",
+          "lang": "ny",
+          "sources": [
+            "ny-blp-lk1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emmanouel",
+      "label": "Emmanuel (Greek Emmanouēl)",
+      "forms": [
+        {
+          "text": "Emmanuel",
+          "lang": "fr",
+          "sources": [
+            "fr-lsg-mt1"
+          ]
+        },
+        {
+          "text": "Immanuel",
+          "lang": "en",
+          "sources": [
+            "en-niv-mt1"
+          ]
+        },
+        {
+          "text": "Emanueli",
+          "lang": "sw",
+          "sources": [
+            "sw-tku-mt1"
+          ]
+        },
+        {
+          "text": "Imanueli",
+          "lang": "sw",
+          "sources": [
+            "sw-sruv-mt1"
+          ]
+        },
+        {
+          "text": "Imanweli",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-mt1"
           ]
         }
       ]

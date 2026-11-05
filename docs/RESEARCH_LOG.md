@@ -1456,3 +1456,14 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Changes:** the Christian-names dataset (v0.2.0) gains the Chichewa forms; only Yohane and Mateyu are new written forms, the rest join existing nodes (Marko, Luka, Petro, Yakobo, Paulo, Yuda now also *ny*). All three packs gain two Chichewa conventions: /tʃ/ written *ch* by a Chichewa writer (a Kirundi *c*-name may arrive as *ch*), and ŵ folded to w in search forms. Graph: 179 nodes, 32 edges, valid. **Tests:** 102 pass.
 
 **Still open on Chichewa:** a Chichewa dictionary of personal names (Scott & Hetherwick 1929 is a candidate, not read); how Malawian registration clerks actually write foreign names (a field question for Jan–Mar 2027).
+
+## 2026-11-05 — Mary, Joseph, Emmanuel; names from other religions' texts (held)
+
+**Sources (Tavily, 5 Nov 2026), read at the verse:** Louis Segond 1910 (public domain), Matthieu 1:18–25 and Luc 1:27: *Marie, Joseph, Emmanuel*; KJV Luke 1:27: *Mary, Joseph*; NIV Matthew 1:23: *Immanuel*; Swahili TKU, Mathayo 1:18–25: *Mariamu, Yusufu, Emanueli*; Swahili SRUV, Mathayo 1:23 (search snippet only): *Imanueli*; *Bibiliya Yera*, Matayo 1:18–23, Luka 1:27: *Mariya, Yosefu, Imanweli*; *Buku Lopatulika*, Luka 1:27: *Maria, Yosefe*. Not found: Kirundi and Lingala forms, Chichewa Emmanuel.
+
+**Data:** Christian-names dataset v0.3.0: 11 names, 46 proposed cognate edges. Note the two Swahili spellings of Emmanuel in two translations (Emanueli, Imanueli), itself evidence of spelling variation.
+
+**User's suggestion (5 Nov 2026):** look beyond the Bible, in other religions' books. **Assessment, not yet acted on:**
+- Useful in principle: the Qur'an and its translations fix forms such as Yusuf, Maryam, Ibrahim, Yahya, Isa, which are cognates of Joseph, Mary, Abraham, John and Jesus. Swahili Christian forms already come partly from Arabic (*Yusufu*), so some links exist anyway.
+- **Risk:** forms found only in another religion's texts (*Yahya* for John, *Isa* for Jesus) look nothing like the Christian forms; their main use in matching would be to link a person across a **change of religion and name**. That is the name-change case: rule 1 (an adopted name is not a variant, no public edge) and the restricted layer, which G5 allows only after a legal check of religion as sensitive data (condition 3). Labelling a form by its religious source would also encode religion, which the guard forbids.
+- **Proposal:** forms that are the ordinary rendering in a corridor language (e.g. Swahili *Yusufu*, *Ibrahimu*) may enter the public graph from neutral sources (dictionaries, Bibles, civil lists), tagged by language only. Forms attested only in another religion's texts wait for G5 condition 3 and the restricted layer.

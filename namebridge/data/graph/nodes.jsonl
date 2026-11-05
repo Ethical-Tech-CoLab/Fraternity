@@ -3,14 +3,22 @@
 {"code": "rn", "id": "lang:rn", "type": "Language"}
 {"code": "rw", "id": "lang:rw", "type": "Language"}
 {"code": "swc", "id": "lang:swc", "type": "Language"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:emmanouel", "label": "Emmanuel (Greek Emmanouēl)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:iakobos", "label": "James / Jacob (Greek Iakōbos)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:iohannes", "label": "John (Greek Iōannēs)", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ioseph", "label": "Joseph (Greek Iōsēph)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ioudas", "label": "Jude (Greek Ioudas)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:loukas", "label": "Luke (Greek Loukas)", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:maria", "label": "Mary (Greek Maria / Mariam)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:markos", "label": "Mark (Greek Markos)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:matthaios", "label": "Matthew (Greek Matthaios)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:paulos", "label": "Paul (Greek Paulos)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:petros", "label": "Peter (Greek Petros)", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:emanueli", "languages": ["sw"], "script": "Latn", "text": "Emanueli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:emmanuel", "languages": ["fr"], "script": "Latn", "text": "Emmanuel", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:imanueli", "languages": ["sw"], "script": "Latn", "text": "Imanueli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:imanweli", "languages": ["rw"], "script": "Latn", "text": "Imanweli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:immanuel", "languages": ["en"], "script": "Latn", "text": "Immanuel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:jacques", "languages": ["fr"], "script": "Latn", "text": "Jacques", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:yakobo", "languages": ["sw", "ln", "ny"], "script": "Latn", "text": "Yakobo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:jean", "languages": ["fr"], "script": "Latn", "text": "Jean", "type": "NameForm"}
@@ -19,11 +27,20 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:yohana", "languages": ["sw", "rw", "rn"], "script": "Latn", "text": "Yohana", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:yohane", "languages": ["ny"], "script": "Latn", "text": "Yohane", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:yowane", "languages": ["ln"], "script": "Latn", "text": "Yowane", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:joseph", "languages": ["fr", "en"], "script": "Latn", "text": "Joseph", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:yosefe", "languages": ["ny"], "script": "Latn", "text": "Yosefe", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:yosefu", "languages": ["rw"], "script": "Latn", "text": "Yosefu", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:yusufu", "languages": ["sw"], "script": "Latn", "text": "Yusufu", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioudas:jude", "languages": ["fr"], "script": "Latn", "text": "Jude", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioudas:yuda", "languages": ["sw", "rw", "ln", "ny"], "script": "Latn", "text": "Yuda", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:loukas:luc", "languages": ["fr"], "script": "Latn", "text": "Luc", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:loukas:luka", "languages": ["sw", "rn", "ln", "ny"], "script": "Latn", "text": "Luka", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:loukas:luke", "languages": ["en"], "script": "Latn", "text": "Luke", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:maria:maria", "languages": ["ny"], "script": "Latn", "text": "Maria", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:maria:mariamu", "languages": ["sw"], "script": "Latn", "text": "Mariamu", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:maria:marie", "languages": ["fr"], "script": "Latn", "text": "Marie", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:maria:mariya", "languages": ["rw"], "script": "Latn", "text": "Mariya", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:maria:mary", "languages": ["en"], "script": "Latn", "text": "Mary", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:markos:malako", "languages": ["ln"], "script": "Latn", "text": "Malako", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:markos:marc", "languages": ["fr"], "script": "Latn", "text": "Marc", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:markos:mariko", "languages": ["rw", "rn"], "script": "Latn", "text": "Mariko", "type": "NameForm"}
