@@ -293,17 +293,22 @@
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:kasai@2015-", "level": "province", "name": "Kasaï", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:katanga@1966-1972", "level": "province", "name": "Katanga", "period": "1966-1972", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:katanga@1997-2015", "level": "province", "name": "Katanga", "period": "1997-2015", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:kinshasa@1966-", "level": "province", "name": "Kinshasa", "period": "1966-", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:kivu@1966-1988", "level": "province", "name": "Kivu", "period": "1966-1988", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:kongo-central@2015-", "level": "province", "name": "Kongo Central", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:kwango@2015-", "level": "province", "name": "Kwango", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:kwilu@2015-", "level": "province", "name": "Kwilu", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:lomami@2015-", "level": "province", "name": "Lomami", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:lualaba@2015-", "level": "province", "name": "Lualaba", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:mai-ndombe@2015-", "level": "province", "name": "Mai-Ndombe", "period": "2015-", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:maniema@1988-", "level": "province", "name": "Maniema", "period": "1988-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:mongala@2015-", "level": "province", "name": "Mongala", "period": "2015-", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:nord-kivu@1988-", "level": "province", "name": "Nord-Kivu", "period": "1988-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:nord-ubangi@2015-", "level": "province", "name": "Nord-Ubangi", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:orientale@1997-2015", "level": "province", "name": "Orientale", "period": "1997-2015", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:sankuru@2015-", "level": "province", "name": "Sankuru", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:shaba@1972-1997", "level": "province", "name": "Shaba", "period": "1972-1997", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:sud-kivu@1988-", "level": "province", "name": "Sud-Kivu", "period": "1988-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:sud-ubangi@2015-", "level": "province", "name": "Sud-Ubangi", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:tanganyika@2015-", "level": "province", "name": "Tanganyika", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:tshopo@2015-", "level": "province", "name": "Tshopo", "period": "2015-", "type": "Region"}

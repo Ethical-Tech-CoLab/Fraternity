@@ -1567,3 +1567,19 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Examples:** *Kamenge* → zone of Ntahangwa → Bujumbura (2025), and the old Bujumbura Mairie; *Butanyerera* → earlier Kayanza, Kirundo, Ngozi (and part of Muramvya); *Nyanrusange* → Nyarusange → later Gishubi (derived); *Intara y'Amajyaruguru* and *Province du Nord* → Northern Province; *Élisabethville* → Lubumbashi.
 
 **Tests:** 124 (11 new). **Data:** places v0.7.0.
+
+## 2026-11-05 — Bug audit of the place data (user: no progress until bugs and gaps are closed)
+
+**Rule from the user (5 Nov 2026):** nothing advances while known bugs or gaps are open.
+
+**The bug** (42 commune → province links lost to an over-broad filter) was already fixed with a guard test. To catch the same *class* of error, the place data was audited and the checks made permanent (`tests/test_places_integrity.py`): no orphan units; no duplicate links; every old unit has a successor; every current commune, zone, quarter, district and town is placed in a larger unit; the crosswalk shares of each old commune add up to ≥ 90 %; every source is both defined and used.
+
+**What the audit found:**
+- An unused source (`rw-wikivoyage`, left over from the four removed links): removed.
+- **Nine current towns placed nowhere** (Bujumbura and eight DRC cities), so the resolver could not say that Lubumbashi is in Haut-Katanga. Placed from Statoids' tables of provinces and capitals (page fetched directly; Tavily rate-limited): Lubumbashi → Haut-Katanga, Mbuji-Mayi → Kasaï-Oriental, Kananga → Kasaï-Central, Kisangani → Tshopo, Mbandaka → Équateur, Bukavu → Sud-Kivu, Kinshasa → Kinshasa; Bujumbura → Bujumbura province (2023 law, art. 4: chef-lieu) and Bujumbura Mairie (CENI 2010).
+- **Bandundu city** was the capital of the 1966–2015 province; which of Kwango, Kwilu or Mai-Ndombe it lies in now is not in the source. Placed in the old province only; **open gap**.
+- Added from the same source: **Kivu split into Maniema, Nord-Kivu and Sud-Kivu**, the home region of most DRC refugees in Dzaleka; older people may say "Kivu".
+
+**Open gaps (in order):** Bandundu city's current province; Wikipedia-only sources still in the data (packs ~32 entries; Rwandan towns; part of the DRC changes; three Christian-name forms); DRC territories (coverage).
+
+**Tests:** 130 (6 new). **Data:** places v0.8.0.

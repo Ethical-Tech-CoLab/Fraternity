@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -40,12 +40,6 @@
       "locator": "2006-01-01: Rwanda reorganized from twelve provinces into five",
       "language": "en"
     },
-    "rw-wikivoyage": {
-      "name": "Wikivoyage, 'Rwanda' (cities renamed in the administrative reform; 'expect people to use either name')",
-      "url": "https://en.wikivoyage.org/wiki/Rwanda",
-      "locator": "Cities; Lake Kivu (Rubavu (Gisenyi), Karongi (Kibuye), Rusizi (Cyangugu)); Coffee tours (Huye (Butare))",
-      "language": "en"
-    },
     "cd-wiki": {
       "name": "Wikipedia, 'Provinces of the Democratic Republic of the Congo' (history table 1908-2015; current provinces with former province)",
       "url": "https://en.wikipedia.org/wiki/Provinces_of_the_Democratic_Republic_of_the_Congo",
@@ -55,7 +49,7 @@
     "cd-statoids": {
       "name": "Statoids, 'Democratic Republic of Congo Provinces' (change history)",
       "url": "https://statoids.com/ucd.html",
-      "locator": "1966-07-01 city renames; 1972 Katanga renamed Shaba; 2015 reorganization table",
+      "locator": "1966-07-01 city renames; 1972 Katanga renamed Shaba; 2015 reorganization table; table of 26 provinces with capitals (Haut-Katanga: Lubumbashi; Kasaï Oriental: Mbuji-Mayi; Kasaï-Central: Kananga; Tshopo: Kisangani; Sud-Kivu: Bukavu; Kinshasa: Kinshasa; Équateur: Mbandaka); 1966-2015 table (Bandundu: capital Bandundu); Kivu split into Maniema, Nord-Kivu, Sud-Kivu",
       "language": "en"
     },
     "cd-crisisgroup": {
@@ -1875,6 +1869,20 @@
       "period": "1997-2015"
     },
     {
+      "key": "CD:province:kinshasa@1966-",
+      "name": "Kinshasa",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:province:kivu@1966-1988",
+      "name": "Kivu",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-1988"
+    },
+    {
       "key": "CD:province:kongo-central@2015-",
       "name": "Kongo Central",
       "country": "CD",
@@ -1917,11 +1925,25 @@
       "period": "2015-"
     },
     {
+      "key": "CD:province:maniema@1988-",
+      "name": "Maniema",
+      "country": "CD",
+      "level": "province",
+      "period": "1988-"
+    },
+    {
       "key": "CD:province:mongala@2015-",
       "name": "Mongala",
       "country": "CD",
       "level": "province",
       "period": "2015-"
+    },
+    {
+      "key": "CD:province:nord-kivu@1988-",
+      "name": "Nord-Kivu",
+      "country": "CD",
+      "level": "province",
+      "period": "1988-"
     },
     {
       "key": "CD:province:nord-ubangi@2015-",
@@ -1950,6 +1972,13 @@
       "country": "CD",
       "level": "province",
       "period": "1972-1997"
+    },
+    {
+      "key": "CD:province:sud-kivu@1988-",
+      "name": "Sud-Kivu",
+      "country": "CD",
+      "level": "province",
+      "period": "1988-"
     },
     {
       "key": "CD:province:sud-ubangi@2015-",
@@ -7239,6 +7268,125 @@
       "sources": [
         "bi-law-2023",
         "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "CD:town:lubumbashi@1966-",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:mbuji-mayi@1966-",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:kananga@1966-",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:kisangani@1966-",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:mbandaka@1966-",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:kinshasa@1966-",
+      "to": "CD:province:kinshasa@1966-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:bukavu@1966-",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:bandundu@1966-",
+      "to": "CD:province:bandundu@1966-2015",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ],
+      "note": "capital of the 1966-2015 province; its province after the 2015 split is not yet sourced"
+    },
+    {
+      "from": "CD:province:kivu@1966-1988",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "split_into",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:province:kivu@1966-1988",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "split_into",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:province:kivu@1966-1988",
+      "to": "CD:province:maniema@1988-",
+      "relation": "split_into",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "BI:town:bujumbura@1962-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023"
+      ],
+      "note": "chef-lieu of Bujumbura province (art. 4)"
+    },
+    {
+      "from": "BI:town:bujumbura@1962-",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
       ]
     }
   ]
