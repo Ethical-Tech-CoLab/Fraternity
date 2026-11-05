@@ -5,11 +5,12 @@ personal data about real people goes in this folder**, synthetic or not;
 the synthetic benchmark lives elsewhere (week 6).
 
 - `graph/` — the Name Knowledge Graph as JSON Lines: `nodes.jsonl` and
-  `edges.jsonl` (empty until week 4). Schema and validator:
-  `namebridge.schema.name_graph`.
+  `edges.jsonl`. Schema and validator: `namebridge.schema.name_graph`.
+  Pack rules enter as Rule nodes via `python -m namebridge.packs
+  data/packs/*.json`; name-to-name edges come only from attested sources.
 - `packs/` — country/language packs (§11) as JSON. Start from
-  `TEMPLATE.json`; validator: `namebridge.schema.pack`. `rw-kiny`,
-  `bi-kirundi` and the DRC packs come in week 4.
+  `TEMPLATE.json`; validator: `namebridge.schema.pack`. Loaded so far:
+  `rw-kiny`, `bi-kirundi`; the DRC pack is next.
 
 The public graph holds **spelling variants only**: there is no edge type
 for an adopted or changed name (`docs/NAME_CHANGE.md` rule 1), and no

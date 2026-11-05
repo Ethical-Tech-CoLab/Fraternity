@@ -1381,3 +1381,11 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - **Not reachable:** Niyonkuru (1985), "Loan-Words in Kirundi", *African Study Monographs* 7: 81–87 (Kyoto repository PDF failed); Nimbona & Simon (2022), "La prononciation du français au Burundi", *Journal of Language Contact* 15(3–4) (abstract only: 12 speakers, eight features differing from reference French; whether r/l is one of them is unknown). Both need library access.
 
 **Files touched:** both packs to v0.2.0 (Chichewa writer convention `ny` in both; Kirundi r/l to `high`; colonial place spellings as a failure mode; new benchmark cases).
+
+## 2026-11-05 — Week 4: graph loader
+
+**Code:** `namebridge.packs` turns each pack into a Language node per language and a Rule node per rule entry (structures, order, transliteration, sound layer), each with the entry's source, confidence and pack version. Re-running replaces a pack's earlier nodes; an invalid pack writes nothing; the whole graph is validated before writing.
+
+**Design choice:** the loader makes **no name-to-name edges**. Applying a rule (e.g. by → vy) to generate variants would create `generated` edges in bulk; variant edges come only from attested sources (naming profiles, cross-pack given names), per DATA_RULES DR-1.5. Source nodes wait for the source register (week 5); until then each Rule node carries its source text.
+
+**Result:** `rw-kiny` and `bi-kirundi` load as 97 nodes; `data/graph` validates. **Tests:** 96 (5 new), from 91.

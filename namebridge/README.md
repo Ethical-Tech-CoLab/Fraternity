@@ -36,6 +36,12 @@ Validate the data in the repo:
 .venv/bin/python -m namebridge.schema.pack data/packs/*.json
 ```
 
+Load the packs into the graph (re-run after changing a pack):
+
+```sh
+.venv/bin/python -m namebridge.packs data/packs/*.json
+```
+
 ## Licences
 
 - Code: [Apache-2.0](LICENSE)

@@ -1,0 +1,89 @@
+"""Load language packs into the public Name Knowledge Graph (week 4).
+
+Each pack becomes a Language node per language and a Rule node per rule
+entry (structure, order, transliteration, sound layer ...), carrying the
+entry's source and confidence. Name-to-name edges are not made here: they
+come from attested sources (naming profiles, cross-pack given names), never
+from applying a rule to generate variants (DATA_RULES.md DR-1.5).
+
+Loading replaces the nodes a pack loaded before, so it can be re-run.
+
+Run: python -m namebridge.packs data/packs/<pack>.json ... [--graph data/graph]
+"""
+
+import json
+import sys
+from pathlib import Path
+
+from namebridge.schema.name_graph import read_jsonl, validate_graph
+from namebridge.schema.pack import RULE_FIELDS, validate_pack
+
+TEMPLATE_ID = "xx-template-2026.1"
+
+
+def pack_to_nodes(pack):
+    pid = pack["pack_id"]
+    nodes = [
+        {"id": f"lang:{lang}", "type": "Language", "code": lang}
+        for lang in pack["languages"]
+    ]
+    for field in RULE_FIELDS:
+        for i, entry in enumerate(pack[field]):
+            nodes.append({
+                "id": f"rule:{pid}:{field}:{entry.get('id', i)}",
+                "type": "Rule",
+                "pack_id": pid,
+                "pack_version": pack["version"],
+                "field": field,
+                "source": entry["source"],
+                "confidence": entry["confidence"],
+                "rule": entry,
+            })
+    return nodes
+
+
+def load(packs, graph_dir):
+    """Merge packs into graph_dir; return a list of errors (nothing is written if any)."""
+    errors = [e for pack in packs for e in validate_pack(pack)]
+    if errors:
+        return errors
+    graph_dir = Path(graph_dir)
+    nodes = read_jsonl(graph_dir / "nodes.jsonl")
+    edges = read_jsonl(graph_dir / "edges.jsonl")
+
+    loaded = {pack["pack_id"] for pack in packs}
+    nodes = [n for n in nodes if n.get("pack_id") not in loaded]
+    known = {n["id"] for n in nodes}
+    for pack in packs:
+        for node in pack_to_nodes(pack):
+            # Language nodes are shared between packs.
+            if node["id"] not in known:
+                nodes.append(node)
+                known.add(node["id"])
+
+    errors = validate_graph(nodes, edges)
+    if errors:
+        return errors
+    nodes.sort(key=lambda n: n["id"])
+    with (graph_dir / "nodes.jsonl").open("w", encoding="utf-8") as f:
+        for node in nodes:
+            f.write(json.dumps(node, ensure_ascii=False, sort_keys=True) + "\n")
+    return []
+
+
+if __name__ == "__main__":
+    args = sys.argv[1:]
+    graph = "data/graph"
+    if "--graph" in args:
+        i = args.index("--graph")
+        graph = args[i + 1]
+        del args[i:i + 2]
+    packs = []
+    for path in args:
+        with open(path, encoding="utf-8") as f:
+            pack = json.load(f)
+        if pack.get("pack_id") != TEMPLATE_ID:
+            packs.append(pack)
+    problems = load(packs, graph)
+    print("\n".join(problems) or f"{len(packs)} pack(s) loaded into {graph}")
+    sys.exit(1 if problems else 0)
