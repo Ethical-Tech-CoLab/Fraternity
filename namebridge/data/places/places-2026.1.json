@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -225,6 +225,12 @@
       "url": "https://www.unocha.org/attachments/67e4a867-4b05-481b-a5d2-32d49167bae1/OCHA_DRC_Snapshot_incident_against_Hum_December%202025.pdf",
       "locator": "map labels by territory, incl. Idjwi, Kabare, Walungu (Sud-Kivu) and 'Nyirangongo' (Nord-Kivu)",
       "language": "en"
+    },
+    "cd-cod-ab": {
+      "name": "HDX cod-ab-cod: Democratic Republic of the Congo, subnational administrative boundaries, Référentiel Géographique Commun (RGC), v01 (valid from 2019), updated 2026 (CC BY-IGO)",
+      "url": "https://data.humdata.org/dataset/cod-ab-cod",
+      "locator": "cod_admin_boundaries.xlsx, sheet cod_admin2 (164 level-2 units: territories and cities, no type column), with province (adm1)",
+      "language": "fr"
     }
   },
   "units": [
@@ -1801,6 +1807,1275 @@
       "country": "BI",
       "level": "zone",
       "period": "2025-"
+    },
+    {
+      "key": "CD:admin2:aketi-bas-uele@current",
+      "name": "Aketi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5204"
+    },
+    {
+      "key": "CD:admin2:ango-bas-uele@current",
+      "name": "Ango",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5207"
+    },
+    {
+      "key": "CD:admin2:aru-ituri@current",
+      "name": "Aru",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5409"
+    },
+    {
+      "key": "CD:admin2:bafwasende-tshopo@current",
+      "name": "Bafwasende",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5111"
+    },
+    {
+      "key": "CD:admin2:bagata-kwilu@current",
+      "name": "Bagata",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3202"
+    },
+    {
+      "key": "CD:admin2:bambesa-bas-uele@current",
+      "name": "Bambesa",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5209"
+    },
+    {
+      "key": "CD:admin2:banalia-tshopo@current",
+      "name": "Banalia",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5110"
+    },
+    {
+      "key": "CD:admin2:basankusu-equateur@current",
+      "name": "Basankusu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4107"
+    },
+    {
+      "key": "CD:admin2:basoko-tshopo@current",
+      "name": "Basoko",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5109"
+    },
+    {
+      "key": "CD:admin2:befale-tshuapa@current",
+      "name": "Befale",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4503"
+    },
+    {
+      "key": "CD:admin2:bikoro-equateur@current",
+      "name": "Bikoro",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4102"
+    },
+    {
+      "key": "CD:admin2:boende-tshuapa@current",
+      "name": "Boende",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4502"
+    },
+    {
+      "key": "CD:admin2:bokungu-tshuapa@current",
+      "name": "Bokungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4506"
+    },
+    {
+      "key": "CD:admin2:bolobo-mai-ndombe@current",
+      "name": "Bolobo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3308"
+    },
+    {
+      "key": "CD:admin2:bolomba-equateur@current",
+      "name": "Bolomba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4108"
+    },
+    {
+      "key": "CD:admin2:boma-kongo-central@current",
+      "name": "Boma",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2002"
+    },
+    {
+      "key": "CD:admin2:bomongo-equateur@current",
+      "name": "Bomongo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4104"
+    },
+    {
+      "key": "CD:admin2:bondo-bas-uele@current",
+      "name": "Bondo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5206"
+    },
+    {
+      "key": "CD:admin2:bongandanga-mongala@current",
+      "name": "Bongandanga",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4405"
+    },
+    {
+      "key": "CD:admin2:bosobolo-nord-ubangi@current",
+      "name": "Bosobolo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4306"
+    },
+    {
+      "key": "CD:admin2:budjala-sud-ubangi@current",
+      "name": "Budjala",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4203"
+    },
+    {
+      "key": "CD:admin2:bukama-haut-lomami@current",
+      "name": "Bukama",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7306"
+    },
+    {
+      "key": "CD:admin2:bulungu-kwilu@current",
+      "name": "Bulungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3204"
+    },
+    {
+      "key": "CD:admin2:bumba-mongala@current",
+      "name": "Bumba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4404"
+    },
+    {
+      "key": "CD:admin2:businga-nord-ubangi@current",
+      "name": "Businga",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4305"
+    },
+    {
+      "key": "CD:admin2:buta-bas-uele@current",
+      "name": "Buta",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5202"
+    },
+    {
+      "key": "CD:admin2:butembo-nord-kivu@current",
+      "name": "Butembo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6110"
+    },
+    {
+      "key": "CD:admin2:dekese-kasai@current",
+      "name": "Dekese",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9208"
+    },
+    {
+      "key": "CD:admin2:demba-kasai-central@current",
+      "name": "Demba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9106"
+    },
+    {
+      "key": "CD:admin2:dibaya-kasai-central@current",
+      "name": "Dibaya",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9102"
+    },
+    {
+      "key": "CD:admin2:dilolo-lualaba@current",
+      "name": "Dilolo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7205"
+    },
+    {
+      "key": "CD:admin2:dimbelenge-kasai-central@current",
+      "name": "Dimbelenge",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9107"
+    },
+    {
+      "key": "CD:admin2:djolu-tshuapa@current",
+      "name": "Djolu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4504"
+    },
+    {
+      "key": "CD:admin2:djugu-ituri@current",
+      "name": "Djugu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5405"
+    },
+    {
+      "key": "CD:admin2:dungu-haut-uele@current",
+      "name": "Dungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5305"
+    },
+    {
+      "key": "CD:admin2:faradje-haut-uele@current",
+      "name": "Faradje",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5307"
+    },
+    {
+      "key": "CD:admin2:feshi-kwango@current",
+      "name": "Feshi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3103"
+    },
+    {
+      "key": "CD:admin2:gbadolite-nord-ubangi@current",
+      "name": "Gbadolite",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4301"
+    },
+    {
+      "key": "CD:admin2:gemena-sud-ubangi@current",
+      "name": "Gemena",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4202"
+    },
+    {
+      "key": "CD:admin2:gungu-kwilu@current",
+      "name": "Gungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3210"
+    },
+    {
+      "key": "CD:admin2:idiofa-kwilu@current",
+      "name": "Idiofa",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3206"
+    },
+    {
+      "key": "CD:admin2:ikela-tshuapa@current",
+      "name": "Ikela",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4505"
+    },
+    {
+      "key": "CD:admin2:ilebo-kasai@current",
+      "name": "Ilebo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9205"
+    },
+    {
+      "key": "CD:admin2:ingende-equateur@current",
+      "name": "Ingende",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4109"
+    },
+    {
+      "key": "CD:admin2:inongo-mai-ndombe@current",
+      "name": "Inongo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3302"
+    },
+    {
+      "key": "CD:admin2:irumu-ituri@current",
+      "name": "Irumu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5402"
+    },
+    {
+      "key": "CD:admin2:isangi-tshopo@current",
+      "name": "Isangi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5105"
+    },
+    {
+      "key": "CD:admin2:kabalo-tanganyika@current",
+      "name": "Kabalo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7407"
+    },
+    {
+      "key": "CD:admin2:kabambare-maniema@current",
+      "name": "Kabambare",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6309"
+    },
+    {
+      "key": "CD:admin2:kabeya-kamwanga-kasai-oriental@current",
+      "name": "Kabeya-Kamwanga",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8207"
+    },
+    {
+      "key": "CD:admin2:kabinda-lomami@current",
+      "name": "Kabinda",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8102"
+    },
+    {
+      "key": "CD:admin2:kabongo-haut-lomami@current",
+      "name": "Kabongo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7304"
+    },
+    {
+      "key": "CD:admin2:kahemba-kwango@current",
+      "name": "Kahemba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3105"
+    },
+    {
+      "key": "CD:admin2:kailo-maniema@current",
+      "name": "Kailo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6302"
+    },
+    {
+      "key": "CD:admin2:kalemie-tanganyika@current",
+      "name": "Kalemie",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7402"
+    },
+    {
+      "key": "CD:admin2:kambove-haut-katanga@current",
+      "name": "Kambove",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7105"
+    },
+    {
+      "key": "CD:admin2:kamiji-lomami@current",
+      "name": "Kamiji",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8105"
+    },
+    {
+      "key": "CD:admin2:kamina-haut-lomami@current",
+      "name": "Kamina",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7302"
+    },
+    {
+      "key": "CD:admin2:kamonia-kasai@current",
+      "name": "Kamonia",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9202"
+    },
+    {
+      "key": "CD:admin2:kaniama-haut-lomami@current",
+      "name": "Kaniama",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7303"
+    },
+    {
+      "key": "CD:admin2:kapanga-lualaba@current",
+      "name": "Kapanga",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7207"
+    },
+    {
+      "key": "CD:admin2:kasangulu-kongo-central@current",
+      "name": "Kasangulu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2015"
+    },
+    {
+      "key": "CD:admin2:kasenga-haut-katanga@current",
+      "name": "Kasenga",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7107"
+    },
+    {
+      "key": "CD:admin2:kasongo-lunda-kwango@current",
+      "name": "Kasongo-Lunda",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3106"
+    },
+    {
+      "key": "CD:admin2:kasongo-maniema@current",
+      "name": "Kasongo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6311"
+    },
+    {
+      "key": "CD:admin2:katako-kombe-sankuru@current",
+      "name": "Katako-Kombe",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8308"
+    },
+    {
+      "key": "CD:admin2:katanda-kasai-oriental@current",
+      "name": "Katanda",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8209"
+    },
+    {
+      "key": "CD:admin2:kazumba-kasai-central@current",
+      "name": "Kazumba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9105"
+    },
+    {
+      "key": "CD:admin2:kenge-kwango@current",
+      "name": "Kenge",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3102"
+    },
+    {
+      "key": "CD:admin2:kibombo-maniema@current",
+      "name": "Kibombo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6313"
+    },
+    {
+      "key": "CD:admin2:kikwit-kwilu@current",
+      "name": "Kikwit",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3203"
+    },
+    {
+      "key": "CD:admin2:kimvula-kongo-central@current",
+      "name": "Kimvula",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2019"
+    },
+    {
+      "key": "CD:admin2:kindu-maniema@current",
+      "name": "Kindu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6301"
+    },
+    {
+      "key": "CD:admin2:kipushi-haut-katanga@current",
+      "name": "Kipushi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7102"
+    },
+    {
+      "key": "CD:admin2:kiri-mai-ndombe@current",
+      "name": "Kiri",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3303"
+    },
+    {
+      "key": "CD:admin2:kole-sankuru@current",
+      "name": "Kole",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8306"
+    },
+    {
+      "key": "CD:admin2:kongolo-tanganyika@current",
+      "name": "Kongolo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7409"
+    },
+    {
+      "key": "CD:admin2:kungu-sud-ubangi@current",
+      "name": "Kungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4204"
+    },
+    {
+      "key": "CD:admin2:kutu-mai-ndombe@current",
+      "name": "Kutu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3306"
+    },
+    {
+      "key": "CD:admin2:kwamouth-mai-ndombe@current",
+      "name": "Kwamouth",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3307"
+    },
+    {
+      "key": "CD:admin2:libenge-sud-ubangi@current",
+      "name": "Libenge",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4205"
+    },
+    {
+      "key": "CD:admin2:likasi-haut-katanga@current",
+      "name": "Likasi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7106"
+    },
+    {
+      "key": "CD:admin2:lisala-mongala@current",
+      "name": "Lisala",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4402"
+    },
+    {
+      "key": "CD:admin2:lodja-sankuru@current",
+      "name": "Lodja",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8303"
+    },
+    {
+      "key": "CD:admin2:lomela-sankuru@current",
+      "name": "Lomela",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8307"
+    },
+    {
+      "key": "CD:admin2:lubao-lomami@current",
+      "name": "Lubao",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8108"
+    },
+    {
+      "key": "CD:admin2:lubefu-sankuru@current",
+      "name": "Lubefu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8309"
+    },
+    {
+      "key": "CD:admin2:lubudi-lualaba@current",
+      "name": "Lubudi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7203"
+    },
+    {
+      "key": "CD:admin2:lubutu-maniema@current",
+      "name": "Lubutu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6305"
+    },
+    {
+      "key": "CD:admin2:luebo-kasai@current",
+      "name": "Luebo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9204"
+    },
+    {
+      "key": "CD:admin2:luilu-lomami@current",
+      "name": "Luilu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8104"
+    },
+    {
+      "key": "CD:admin2:luiza-kasai-central@current",
+      "name": "Luiza",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9104"
+    },
+    {
+      "key": "CD:admin2:lukolela-equateur@current",
+      "name": "Lukolela",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4103"
+    },
+    {
+      "key": "CD:admin2:lukula-kongo-central@current",
+      "name": "Lukula",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2005"
+    },
+    {
+      "key": "CD:admin2:luozi-kongo-central@current",
+      "name": "Luozi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2010"
+    },
+    {
+      "key": "CD:admin2:lupatapata-kasai-oriental@current",
+      "name": "Lupatapata",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8208"
+    },
+    {
+      "key": "CD:admin2:lusambo-sankuru@current",
+      "name": "Lusambo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8302"
+    },
+    {
+      "key": "CD:admin2:madimba-kongo-central@current",
+      "name": "Madimba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2017"
+    },
+    {
+      "key": "CD:admin2:mahagi-ituri@current",
+      "name": "Mahagi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5407"
+    },
+    {
+      "key": "CD:admin2:makanza-equateur@current",
+      "name": "Makanza",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4105"
+    },
+    {
+      "key": "CD:admin2:malemba-nkulu-haut-lomami@current",
+      "name": "Malemba-Nkulu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7305"
+    },
+    {
+      "key": "CD:admin2:mambasa-ituri@current",
+      "name": "Mambasa",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5403"
+    },
+    {
+      "key": "CD:admin2:manono-tanganyika@current",
+      "name": "Manono",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7406"
+    },
+    {
+      "key": "CD:admin2:masi-manimba-kwilu@current",
+      "name": "Masi-Manimba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3212"
+    },
+    {
+      "key": "CD:admin2:matadi-kongo-central@current",
+      "name": "Matadi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2001"
+    },
+    {
+      "key": "CD:admin2:mbanza-ngungu-kongo-central@current",
+      "name": "Mbanza-Ngungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2013"
+    },
+    {
+      "key": "CD:admin2:miabi-kasai-oriental@current",
+      "name": "Miabi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8205"
+    },
+    {
+      "key": "CD:admin2:mitwaba-haut-katanga@current",
+      "name": "Mitwaba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7108"
+    },
+    {
+      "key": "CD:admin2:moanda-kongo-central@current",
+      "name": "Moanda",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2003"
+    },
+    {
+      "key": "CD:admin2:moba-tanganyika@current",
+      "name": "Moba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7404"
+    },
+    {
+      "key": "CD:admin2:mobayi-mbongo-nord-ubangi@current",
+      "name": "Mobayi-Mbongo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4302"
+    },
+    {
+      "key": "CD:admin2:monkoto-tshuapa@current",
+      "name": "Monkoto",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4507"
+    },
+    {
+      "key": "CD:admin2:mushie-mai-ndombe@current",
+      "name": "Mushie",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3311"
+    },
+    {
+      "key": "CD:admin2:mutshatsha-lualaba@current",
+      "name": "Mutshatsha",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7202"
+    },
+    {
+      "key": "CD:admin2:mweka-kasai@current",
+      "name": "Mweka",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD9207"
+    },
+    {
+      "key": "CD:admin2:mwene-ditu-lomami@current",
+      "name": "Mwene-Ditu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8103"
+    },
+    {
+      "key": "CD:admin2:ngandajika-lomami@current",
+      "name": "Ngandajika",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8106"
+    },
+    {
+      "key": "CD:admin2:niangara-haut-uele@current",
+      "name": "Niangara",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5303"
+    },
+    {
+      "key": "CD:admin2:nyunzu-tanganyika@current",
+      "name": "Nyunzu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7410"
+    },
+    {
+      "key": "CD:admin2:oicha-nord-kivu@current",
+      "name": "Oïcha",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6107"
+    },
+    {
+      "key": "CD:admin2:opala-tshopo@current",
+      "name": "Opala",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5103"
+    },
+    {
+      "key": "CD:admin2:oshwe-mai-ndombe@current",
+      "name": "Oshwe",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3304"
+    },
+    {
+      "key": "CD:admin2:pangi-maniema@current",
+      "name": "Pangi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6307"
+    },
+    {
+      "key": "CD:admin2:poko-bas-uele@current",
+      "name": "Poko",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5208"
+    },
+    {
+      "key": "CD:admin2:popokabaka-kwango@current",
+      "name": "Popokabaka",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3108"
+    },
+    {
+      "key": "CD:admin2:punia-maniema@current",
+      "name": "Punia",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD6303"
+    },
+    {
+      "key": "CD:admin2:pweto-haut-katanga@current",
+      "name": "Pweto",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7109"
+    },
+    {
+      "key": "CD:admin2:rungu-haut-uele@current",
+      "name": "Rungu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5302"
+    },
+    {
+      "key": "CD:admin2:sakania-haut-katanga@current",
+      "name": "Sakania",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7104"
+    },
+    {
+      "key": "CD:admin2:sandoa-lualaba@current",
+      "name": "Sandoa",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD7206"
+    },
+    {
+      "key": "CD:admin2:seke-banza-kongo-central@current",
+      "name": "Seke-Banza",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2009"
+    },
+    {
+      "key": "CD:admin2:songololo-kongo-central@current",
+      "name": "Songololo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2011"
+    },
+    {
+      "key": "CD:admin2:tshela-kongo-central@current",
+      "name": "Tshela",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD2007"
+    },
+    {
+      "key": "CD:admin2:tshilenge-kasai-oriental@current",
+      "name": "Tshilenge",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD8202"
+    },
+    {
+      "key": "CD:admin2:ubundu-tshopo@current",
+      "name": "Ubundu",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5102"
+    },
+    {
+      "key": "CD:admin2:wamba-haut-uele@current",
+      "name": "Wamba",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5311"
+    },
+    {
+      "key": "CD:admin2:watsa-haut-uele@current",
+      "name": "Watsa",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5309"
+    },
+    {
+      "key": "CD:admin2:yahuma-tshopo@current",
+      "name": "Yahuma",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD5107"
+    },
+    {
+      "key": "CD:admin2:yakoma-nord-ubangi@current",
+      "name": "Yakoma",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4304"
+    },
+    {
+      "key": "CD:admin2:yumbi-mai-ndombe@current",
+      "name": "Yumbi",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD3310"
+    },
+    {
+      "key": "CD:admin2:zongo-sud-ubangi@current",
+      "name": "Zongo",
+      "country": "CD",
+      "level": "admin2",
+      "period": "current",
+      "note": "official level-2 unit (territory or city; the source has no type column)",
+      "pcode": "CD4206"
     },
     {
       "key": "CD:province:bandundu@1966-2015",
@@ -7504,7 +8779,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7513,7 +8789,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7522,7 +8799,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7531,7 +8809,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7540,7 +8819,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7558,7 +8838,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7624,7 +8905,8 @@
       "year": null,
       "sources": [
         "cd-unicef-kwilu-2021",
-        "cd-ocha-year-survival"
+        "cd-ocha-year-survival",
+        "cd-cod-ab"
       ],
       "note": "Kwilu's capital is disputed: Statoids gives Kikwit, UNICEF (2021) and ReliefWeb give Bandundu; both cities are in Kwilu"
     },
@@ -7702,7 +8984,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-scaleup-2023"
+        "cd-ocha-scaleup-2023",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7711,7 +8994,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-scaleup-2023"
+        "cd-ocha-scaleup-2023",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7720,7 +9004,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-scaleup-2023"
+        "cd-ocha-scaleup-2023",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7729,7 +9014,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-scaleup-2023"
+        "cd-ocha-scaleup-2023",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7738,7 +9024,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-scaleup-2023"
+        "cd-ocha-scaleup-2023",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7747,7 +9034,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-scaleup-2023"
+        "cd-ocha-scaleup-2023",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7756,7 +9044,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7765,7 +9054,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7774,7 +9064,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7783,7 +9074,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7792,7 +9084,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7801,7 +9094,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7810,7 +9104,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-sk-2026"
+        "cd-ocha-sk-2026",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7819,7 +9114,8 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-ocha-map-2025"
+        "cd-ocha-map-2025",
+        "cd-cod-ab"
       ]
     },
     {
@@ -7828,9 +9124,1279 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "cd-statoids"
+        "cd-statoids",
+        "cd-cod-ab"
       ],
       "note": "provincial capital (Statoids table of provinces)"
+    },
+    {
+      "from": "CD:admin2:matadi-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:boma-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:moanda-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lukula-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:tshela-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:seke-banza-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:luozi-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:songololo-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mbanza-ngungu-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kasangulu-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:madimba-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kimvula-kongo-central@current",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kenge-kwango@current",
+      "to": "CD:province:kwango@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:feshi-kwango@current",
+      "to": "CD:province:kwango@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kahemba-kwango@current",
+      "to": "CD:province:kwango@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kasongo-lunda-kwango@current",
+      "to": "CD:province:kwango@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:popokabaka-kwango@current",
+      "to": "CD:province:kwango@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bagata-kwilu@current",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kikwit-kwilu@current",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bulungu-kwilu@current",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:idiofa-kwilu@current",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:gungu-kwilu@current",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:masi-manimba-kwilu@current",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:inongo-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kiri-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:oshwe-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kutu-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kwamouth-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bolobo-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:yumbi-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mushie-mai-ndombe@current",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bikoro-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lukolela-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bomongo-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:makanza-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:basankusu-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bolomba-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:ingende-equateur@current",
+      "to": "CD:province:equateur@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:gemena-sud-ubangi@current",
+      "to": "CD:province:sud-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:budjala-sud-ubangi@current",
+      "to": "CD:province:sud-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kungu-sud-ubangi@current",
+      "to": "CD:province:sud-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:libenge-sud-ubangi@current",
+      "to": "CD:province:sud-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:zongo-sud-ubangi@current",
+      "to": "CD:province:sud-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:gbadolite-nord-ubangi@current",
+      "to": "CD:province:nord-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mobayi-mbongo-nord-ubangi@current",
+      "to": "CD:province:nord-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:yakoma-nord-ubangi@current",
+      "to": "CD:province:nord-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:businga-nord-ubangi@current",
+      "to": "CD:province:nord-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bosobolo-nord-ubangi@current",
+      "to": "CD:province:nord-ubangi@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lisala-mongala@current",
+      "to": "CD:province:mongala@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bumba-mongala@current",
+      "to": "CD:province:mongala@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bongandanga-mongala@current",
+      "to": "CD:province:mongala@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:boende-tshuapa@current",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:befale-tshuapa@current",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:djolu-tshuapa@current",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:ikela-tshuapa@current",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bokungu-tshuapa@current",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:monkoto-tshuapa@current",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:ubundu-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:opala-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:isangi-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:yahuma-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:basoko-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:banalia-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bafwasende-tshopo@current",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:buta-bas-uele@current",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:aketi-bas-uele@current",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bondo-bas-uele@current",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:ango-bas-uele@current",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:poko-bas-uele@current",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bambesa-bas-uele@current",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:rungu-haut-uele@current",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:niangara-haut-uele@current",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:dungu-haut-uele@current",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:faradje-haut-uele@current",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:watsa-haut-uele@current",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:wamba-haut-uele@current",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:irumu-ituri@current",
+      "to": "CD:province:ituri@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mambasa-ituri@current",
+      "to": "CD:province:ituri@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:djugu-ituri@current",
+      "to": "CD:province:ituri@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mahagi-ituri@current",
+      "to": "CD:province:ituri@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:aru-ituri@current",
+      "to": "CD:province:ituri@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:oicha-nord-kivu@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:butembo-nord-kivu@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kindu-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kailo-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:punia-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lubutu-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:pangi-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kabambare-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kasongo-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kibombo-maniema@current",
+      "to": "CD:province:maniema@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kipushi-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:sakania-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kambove-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:likasi-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kasenga-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mitwaba-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:pweto-haut-katanga@current",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mutshatsha-lualaba@current",
+      "to": "CD:province:lualaba@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lubudi-lualaba@current",
+      "to": "CD:province:lualaba@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:dilolo-lualaba@current",
+      "to": "CD:province:lualaba@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:sandoa-lualaba@current",
+      "to": "CD:province:lualaba@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kapanga-lualaba@current",
+      "to": "CD:province:lualaba@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kamina-haut-lomami@current",
+      "to": "CD:province:haut-lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kaniama-haut-lomami@current",
+      "to": "CD:province:haut-lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kabongo-haut-lomami@current",
+      "to": "CD:province:haut-lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:malemba-nkulu-haut-lomami@current",
+      "to": "CD:province:haut-lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:bukama-haut-lomami@current",
+      "to": "CD:province:haut-lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kalemie-tanganyika@current",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:moba-tanganyika@current",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:manono-tanganyika@current",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kabalo-tanganyika@current",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kongolo-tanganyika@current",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:nyunzu-tanganyika@current",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kabinda-lomami@current",
+      "to": "CD:province:lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mwene-ditu-lomami@current",
+      "to": "CD:province:lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:luilu-lomami@current",
+      "to": "CD:province:lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kamiji-lomami@current",
+      "to": "CD:province:lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:ngandajika-lomami@current",
+      "to": "CD:province:lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lubao-lomami@current",
+      "to": "CD:province:lomami@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:tshilenge-kasai-oriental@current",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:miabi-kasai-oriental@current",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kabeya-kamwanga-kasai-oriental@current",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lupatapata-kasai-oriental@current",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:katanda-kasai-oriental@current",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lusambo-sankuru@current",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lodja-sankuru@current",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kole-sankuru@current",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lomela-sankuru@current",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:katako-kombe-sankuru@current",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:lubefu-sankuru@current",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:dibaya-kasai-central@current",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:luiza-kasai-central@current",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kazumba-kasai-central@current",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:demba-kasai-central@current",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:dimbelenge-kasai-central@current",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:kamonia-kasai@current",
+      "to": "CD:province:kasai@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:luebo-kasai@current",
+      "to": "CD:province:kasai@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:ilebo-kasai@current",
+      "to": "CD:province:kasai@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:mweka-kasai@current",
+      "to": "CD:province:kasai@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
+    },
+    {
+      "from": "CD:admin2:dekese-kasai@current",
+      "to": "CD:province:kasai@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ]
     }
   ]
 }

@@ -1671,3 +1671,17 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - pp. 261–262: name-forming morphemes *nyira-*, *mukaa-*, *kaa-* (feminine) and *nya-*, *munya-*, *see-*, *nyiri-*, *rwaa-*, *ki-*; read directly, replacing the earlier second-hand citation.
 
 **Not in the article:** forms of address in speech, teknonymy ("Mama X"), Christian names. The gap `order-spoken-given-name` stays open (`low`); next candidate is Kimenyi (1989), *Kinyarwanda and Kirundi Names*. Note: the article mentions ethnic groups when describing the two countries; nothing about ethnicity enters the pack (DR-1.7).
+
+## 2026-11-05 — All DRC level-2 units from the official boundary data
+
+**User's decision (5 Nov):** treat the remaining DRC territories now, not later.
+
+**Source:** HDX `cod-ab-cod`, *Democratic Republic of the Congo – Subnational Administrative Boundaries*, **Référentiel Géographique Commun** (RGC), v01 (valid from 2019), updated on HDX April 2026, CC BY-IGO (downloaded by the user; HDX blocks scripted downloads). Sheet `cod_admin2`: **164 level-2 units, territories and cities together, with no type column.**
+
+**Method:** each unit is placed `located_in` its province (all 26 province names matched after folding: "Equateur"/"Équateur", "Maï-Ndombe"/"Mai-Ndombe"). Where a unit of the same name already existed in that province, the official source was added to it instead of creating a duplicate.
+
+**Result:** 141 new level-2 units (`level: admin2`, with the RGC pcode, noted as "territory or city"); **22 existing units cross-checked**, including all 14 Kivu territories taken from OCHA reports and cities such as Goma and Bukavu: the OCHA lists agree with the official data.
+
+**Ambiguity kept, not guessed:** without a type column, "Beni" may be the city or the territory; the territory's seat, **Oïcha**, is a separate unit, and pcodes CD6106 and CD6108 are absent (merged or retired units). The type of each level-2 unit is not asserted.
+
+**Data:** places v0.12.0. **Tests:** 132 pass.
