@@ -1303,3 +1303,27 @@ No literacy figure for Dzaleka itself was found. The 2023 Dzaleka Education Asse
 - Dzaleka literacy microdata (user's decision).
 
 **Tests:** 91, from 63.
+
+## 2026-11-05 — Week 4 started: the `rw-kiny` pack
+
+**Gates checked:** no open ⛔ gate blocks week 4 (G3 and G6 closed 28 Oct). G4 (⚠) concerns weeks 6 and 8 only.
+
+**Sources (re-read 5 Nov 2026, Tavily):**
+- *Kinyarwanda and Kirundi Comparative Grammar* (2007), Tables 25–26 ([extract](https://www.matana.de/kirundi_kinyarwanda.pdf)): consonant inventory, and which linguists accept *c*, *cy*, *jy*, *pf*, *ts*, *shy*, *ng* as phonemes (Coupez 1980 and Jacob 1985 reject *cy*, *jy*, *c*, *pf*, *ts*; only Kimenyi 2001 accepts *ng*).
+- Wikipedia, [Kinyarwanda](https://en.wikipedia.org/wiki/Kinyarwanda): the Cw/Cy pronunciation table (*rw* [ɾɡw], *sw* [skw], *tw* [tkw], *bw* [bɡ], *mw* [mŋ], *by* [bɟ], *ry* [ɾɟ]); the 2014 orthography reform met pushback (Niyomugabo & Uwizeyimana 2017, *Language Policy* 17(3)). Consistent with FSI and Nassenstein (28 Oct).
+- Wikibooks, [Kinyarwanda/Orthography](https://en.wikibooks.org/wiki/Kinyarwanda/Orthography): length and tone not written; *l* only in loanwords; *mp* = [mh]. Secondary source.
+- Wikipedia, [Rwandan names](https://en.wikipedia.org/wiki/Rwandan_names): ID card field *Amazina*; surname first, often in capitals (ALCASA cataloguing guidelines); people addressed by the given name in speech.
+- Wikipedia, [Swahili language](https://en.wikipedia.org/wiki/Swahili_language): *ch* = /tʃ/, *sh* = /ʃ/, *ny* = /ɲ/, *j* = [dʒ]; no /ʒ/.
+- The New Times, 29 Oct and 17 Nov 2014: the reform's existence and two-year transition. **The article bodies did not load; the letter-level changes are still undocumented.**
+
+**Pack:** `namebridge/data/packs/rw-kiny-2026.1.json`, v0.1.0. Every entry has a source and a confidence; disputed phonemes are `disputed`; listener confusions beyond the sourced pronunciations are `hypothesis`. Gender-marked prefixes are marked `generation_only` (C12). `relationship_implications`: agreement `disputed`, disagreement `neutral`.
+
+**Gaps:**
+- The 2014 orthography order's text (ministerial order, Official Gazette, Oct 2014): no rule applied until read (`orthography-2014`, confidence `unknown`).
+- Law 71/2024 arts 38–39: taken from `BENCHMARK_PROTOCOL.md` [B1]; re-read the article text before the graph release (week 5).
+- How French-, English- or Swahili-speaking writers spell *cy* and *jy*: no source; not entered.
+- Prenasal dropping (mb/b): no source; `hypothesis`.
+
+**Tests:** 91 pass; the pack passes `namebridge.schema.pack` (covered by `test_every_pack_in_repo_is_valid`).
+
+**Next:** `bi-kirundi` pack (four automatic Kinyarwanda → Kirundi rules), then the DRC pack and the loader that turns pack rules into Rule and Source nodes in the graph.
