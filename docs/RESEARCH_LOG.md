@@ -1356,3 +1356,15 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Placed in:** `CONCEPT-IDEA.md` §5.5A (design); `BENCHMARK_PROTOCOL.md` §2.5 (reciprocal pairs, varied share *r*); `TIMETABLE.md` weeks 6 and 7; G4 row (candidate answer to question 2, for the professor). Not in `GATE_EXAMPLES.md`, by the user's choice: that page only illustrates error costs.
 
 **Gap:** no source on how often both sides of a separated family file requests; *r* is varied.
+
+## 2026-11-05 — Week 4: the `bi-kirundi` pack
+
+**Sources read today (Tavily):**
+- [B4] Burundi, *Code des personnes et de la famille* (1993), Titre II "Du nom", arts 11–14 ([PDF](http://jafbase.fr/docAfrique/Burundi/Burundi-Code-civil.pdf)), **primary text read**: the name is obligatory and given names form part of it (art. 11); the legal name is the one on the birth record or the one used constantly and publicly in childhood, at least to age 16 (art. 12); "le nom est donné à l'enfant par la personne qui déclare la naissance; le choix du nom est libre" (art. 13); the registrar may object only if the name could harm the child (art. 14). **The law sets no inheritance of the father's name.**
+- [B5] University of Burundi repository, onomastics paper, §11.1.3, citing Bigangara (1982: 119): no family names before Christianisation except for kings; "missionaries … imposed the hereditary patronymic system wherein children necessarily bear their fathers' names".
+
+**Conflict, kept side by side:** [B5] describes an imposed patronymic practice; Duchaj & Ntihirageza (2009) describe a Kirundi name chosen first, which later works as the surname; the code leaves the choice free. The pack records inheritance as `disputed`, and the benchmark keeps *p* varied. Art. 12 matters for tracing: a name used throughout childhood can be the legal name even if it differs from the birth record.
+
+**Pack:** `namebridge/data/packs/bi-kirundi-2026.1.json`, v0.1.0: the four Kinyarwanda → Kirundi rules (high) and the ambiguous reverse (generate both options); sporadic differences left to graph edges; mission spellings as word-division/apostrophe variants (`hypothesis`); cluster pronunciations including *vy* ~ [z] (medium); CENI order (surname in capitals); Swahili names adopted in Tanzania routed as name changes, not variants. `relationship_implications`: agreement `context-dependent`, disagreement `disputed`.
+
+**Gaps:** a Kirundi-specific source for r/l (the current one is about Kinyarwanda; the phonology is shared); Mioni (1975) full text; spelling of *c*/*j* by French writers in Burundian records (no source).

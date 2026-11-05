@@ -1,0 +1,445 @@
+{
+  "pack_id": "bi-kirundi-2026.1",
+  "languages": [
+    "rn"
+  ],
+  "scripts": [
+    "Latn"
+  ],
+  "regions": [
+    "BI"
+  ],
+  "name_structures": [
+    {
+      "id": "structure-kirundi-first-then-christian",
+      "description": "A Kirundi name is given first; a French Christian name is added later (often at baptism), and the original Kirundi name then works as the surname",
+      "practice": "cultural",
+      "source": "Duchaj, K. & Ntihirageza, J. (2009), York University (BENCHMARK_PROTOCOL.md [B18]; RESEARCH_LOG.md, 26 Oct 2026)",
+      "confidence": "medium"
+    },
+    {
+      "id": "structure-no-precolonial-family-name",
+      "description": "Before Christianisation there were no family names except for kings; missionaries imposed a hereditary patronymic system in which children bear their fathers' names",
+      "practice": "cultural",
+      "source": "University of Burundi repository, onomastics paper, §11.1.3, citing Bigangara (1982: 119) (https://repository.ub.edu.bi/bitstreams/c2369042-37ce-4c26-8692-fdefc04a65d1/download), read 5 Nov 2026",
+      "confidence": "medium"
+    },
+    {
+      "id": "structure-inheritance-disputed",
+      "description": "Whether children share the father's name is disputed: the patronymic account above against the Rwanda-Rundi practice of a name chosen per child. The benchmark models it as the varied parameter p (BENCHMARK_PROTOCOL.md §2.2). Proximity to Rwanda is not evidence (CONCEPT-IDEA.md §2.3)",
+      "practice": "cultural",
+      "source": "Bigangara 1982 via University of Burundi (above), against Duchaj & Ntihirageza 2009; CONCEPT-IDEA.md §2.3",
+      "confidence": "disputed"
+    },
+    {
+      "id": "structure-civil-code",
+      "description": "The name is obligatory and may be accompanied by one or more given names, which then form part of the name (art. 11). The name is the one on the birth record, or the one used constantly and publicly in childhood, at least up to age 16 (art. 12). It is given by whoever declares the birth, and its choice is free (art. 13); the registrar may object only if it could harm the child (art. 14). The law sets no inheritance of the father's name",
+      "practice": "legal_document",
+      "source": "Burundi, Code des personnes et de la famille (1993), Titre II 'Du nom', arts 11-14 (http://jafbase.fr/docAfrique/Burundi/Burundi-Code-civil.pdf), read 5 Nov 2026; BENCHMARK_PROTOCOL.md [B4]",
+      "confidence": "high"
+    }
+  ],
+  "order_rules": [
+    {
+      "id": "order-ceni-surname-capitals",
+      "description": "Official candidate lists write the surname (Kirundi name) in capitals, then the given names: NSHIMIRIMANA Belyse",
+      "practice": "legal_document",
+      "source": "CENI Burundi, liste nominative définitive des candidats, 2025 (e.g. https://www.ceniburundi.bi/wp-content/uploads/2025/02/BUJUMBURA-CANDIDATS-DEPUTES-2025.pdf); columns checked 28 Oct 2026 (RESEARCH_LOG.md)",
+      "confidence": "medium"
+    },
+    {
+      "id": "order-aggregators-swap",
+      "description": "Aggregated name lists put Christian names in the surname slot ('Jean' as a surname), so order in foreign or scraped data is unreliable",
+      "practice": "database",
+      "source": "Forebears.io, Burundi surnames and forenames, observed 28 Oct 2026 (RESEARCH_LOG.md, G6 entry)",
+      "confidence": "low"
+    }
+  ],
+  "particles_and_morphemes": [],
+  "transliteration_rules": [
+    {
+      "id": "rw-to-rn-cy",
+      "from": "cy",
+      "to": "c",
+      "direction": "rw->rn",
+      "description": "Kinyarwanda cy is Kirundi c (cyane / cane). Deterministic in this direction only",
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), §1.1.1, Table 1 (https://www.matana.de/kirundi_kinyarwanda.pdf); Wikipedia, Rwanda-Rundi, 'Spelling'",
+      "confidence": "high"
+    },
+    {
+      "id": "rw-to-rn-jy",
+      "from": "jy",
+      "to": "j",
+      "direction": "rw->rn",
+      "description": "Kinyarwanda jy is Kirundi j (-jya / -ja)",
+      "source": "Comparative Grammar (2007), Table 1; Wikipedia, Rwanda-Rundi",
+      "confidence": "high"
+    },
+    {
+      "id": "rw-to-rn-shy",
+      "from": "shy",
+      "to": "sh",
+      "direction": "rw->rn",
+      "description": "Kinyarwanda shy is Kirundi sh (nshya / nsha)",
+      "source": "Comparative Grammar (2007), Table 1; Wikipedia, Rwanda-Rundi",
+      "confidence": "high"
+    },
+    {
+      "id": "rw-to-rn-by",
+      "from": "by",
+      "to": "vy",
+      "direction": "rw->rn",
+      "description": "Kinyarwanda by is Kirundi vy (umubyeyi / umuvyeyi; Habyarimana / Havyarimana)",
+      "source": "Comparative Grammar (2007), Table 1; Forebears, Burundi surnames (Havyarimana ranked 25th, accessed 28 Oct 2026)",
+      "confidence": "high"
+    },
+    {
+      "id": "rn-to-rw-ambiguous",
+      "from": "sh | c | j | vy",
+      "to": "{sh, shy} | {c, cy} | {j, jy} | {vy, by}",
+      "direction": "rn->rw",
+      "description": "The reverse is not deterministic: both languages also have plain sh, c and j (ishami, igishanga). Going from Kirundi, generate both options, each as a hypothesis",
+      "source": "Comparative Grammar (2007), §1.1.1; RESEARCH_LOG.md, 28 Oct 2026",
+      "confidence": "high"
+    },
+    {
+      "id": "sporadic-differences",
+      "description": "Other Kirundi/Kinyarwanda differences are word by word (Rundi -anka / Rwanda -anga). They need sourced graph edges, not rules",
+      "source": "Comparative Grammar (2007), §1.1.1",
+      "confidence": "high"
+    },
+    {
+      "id": "mission-spellings",
+      "description": "Catholic (White Fathers) and Protestant (Alliance) mission spellings differ; the letter-level differences are not documented. The Protestant rules that can be read concern apostrophes, elision and word division (n'uko / nuko). Joined, split and apostrophe forms of a name are therefore treated as variants",
+      "source": "Cox (1969, rev. Philipps 2023), Kirundi-English dictionary, orthography rules (https://www.matana.de/kirundi.pdf); Mioni (1975), J. Language Assoc. Eastern Africa 3(1): 21-26, abstract only; RESEARCH_LOG.md, 28 Oct 2026",
+      "confidence": "hypothesis"
+    }
+  ],
+  "phonetic_rules": [
+    {
+      "id": "r-l-one-sound",
+      "description": "[r] and [l] are one sound in Rwanda-Rundi; a name may be heard and written with either letter",
+      "source": "'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (shared Rwanda-Rundi phonology; RESEARCH_LOG.md [P2]); CONCEPT-IDEA.md §5.4A. Kirundi-specific source still to find",
+      "confidence": "medium"
+    },
+    {
+      "id": "length-and-tone-unwritten",
+      "description": "Vowel length and tone are not written in ordinary spelling; linguistic texts mark them with circumflex, macron or caron. Search forms fold them; the original form is kept",
+      "source": "Wikipedia, Rwanda-Rundi, 'Spelling'; Comparative Grammar (2007), Table 28",
+      "confidence": "high"
+    },
+    {
+      "id": "cluster-pronunciation",
+      "description": "Written clusters are pronounced differently from their letters: sw often [skw], mw [my] or [mg], rw [rgw], tw [tkw]; vy may contain a [z] sound",
+      "source": "FSI, Kirundi Basic Course, pronunciation synopsis (based on Meeussen 1959) (https://fsi-languages.yojik.eu/languages/FSI/Kirundi/Basic/FSI%20-%20Kirundi%20Basic%20Course%20-%20Student%20Text.pdf); Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026)",
+      "confidence": "medium"
+    },
+    {
+      "id": "o-to-w-unwritten",
+      "description": "In some areas o becomes w before a and i in speech, but it is not written that way",
+      "source": "Cox (1969, rev. 2023), orthography rules of the Alliance committee",
+      "confidence": "medium"
+    }
+  ],
+  "common_administrative_forms": [
+    {
+      "id": "uppercase-surname",
+      "description": "Surname in capitals before the given names (CENI lists); case is kept in the source value and folded only in search forms",
+      "source": "CENI 2025 candidate lists (order-ceni-surname-capitals)",
+      "confidence": "medium"
+    }
+  ],
+  "phoneme_inventory": [
+    {
+      "symbol": "/tʃ/",
+      "written": ["c"],
+      "note": "accepted by all four Kirundi sources",
+      "source": "Comparative Grammar (2007), Table 27 (Meeussen 1959, Stevick 1965, Cristini 2000, Bennett 2001)",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ʒ/",
+      "written": ["j"],
+      "note": "fricative, not English or Swahili [dʒ]",
+      "source": "Comparative Grammar (2007), Tables 25 and 27",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ʃ/",
+      "written": ["sh"],
+      "note": "one sound; Cristini (2000) lists it as dialectal",
+      "source": "Comparative Grammar (2007), Table 27",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/c/",
+      "written": ["cy"],
+      "note": "dialectal in Kirundi: accepted by Meeussen and Bennett, dialectal for Stevick, rejected by Cristini. Standard Kirundi writes c",
+      "source": "Comparative Grammar (2007), Table 27",
+      "confidence": "disputed"
+    },
+    {
+      "symbol": "/ɟ/",
+      "written": ["jy"],
+      "note": "dialectal, as for cy",
+      "source": "Comparative Grammar (2007), Table 27",
+      "confidence": "disputed"
+    },
+    {
+      "symbol": "/pf/",
+      "written": ["pf"],
+      "note": "one sound; accepted by all four sources",
+      "source": "Comparative Grammar (2007), Table 27",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ts/",
+      "written": ["ts"],
+      "note": "one sound; accepted by all four sources",
+      "source": "Comparative Grammar (2007), Table 27",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ɲ/",
+      "written": ["ny"],
+      "note": "one sound",
+      "source": "Comparative Grammar (2007), Table 27",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ɾ/",
+      "written": ["r", "l"],
+      "note": "one liquid; see phonetic_rules r-l-one-sound",
+      "source": "IJLRHSS 3(3); CONCEPT-IDEA.md §5.4A",
+      "confidence": "medium"
+    },
+    {
+      "symbol": "prenasalised stops",
+      "written": ["mb", "nd", "ng", "nj", "nk", "mp", "nt", "nz"],
+      "note": "each read as one unit; ng is not a separate phoneme for any Kirundi source",
+      "source": "Comparative Grammar (2007), ch. 2 and Table 27",
+      "confidence": "medium"
+    }
+  ],
+  "spelling_conventions": [
+    {
+      "sound": "/w/",
+      "writer_language": "fr",
+      "spellings": ["ou", "w"],
+      "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/ʃ/",
+      "writer_language": "fr",
+      "spellings": ["ch"],
+      "source": "Wikipedia, French orthography [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/ʃ/",
+      "writer_language": "en",
+      "spellings": ["sh"],
+      "source": "Collins, pronunciation guide [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/ʃ/",
+      "writer_language": "sw",
+      "spellings": ["sh"],
+      "source": "Wikipedia, Swahili language, 'Consonants' and 'Orthography', accessed 5 Nov 2026",
+      "confidence": "high"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "fr",
+      "spellings": ["tch"],
+      "source": "Wikipedia, French orthography [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "en",
+      "spellings": ["ch"],
+      "source": "Collins, pronunciation guide [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "sw",
+      "spellings": ["ch"],
+      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "confidence": "high"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "rw",
+      "spellings": ["c", "cy"],
+      "note": "a Kinyarwanda writer may write cy where Kirundi has c (reverse of rule rw-to-rn-cy)",
+      "source": "Comparative Grammar (2007), Table 1",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/ʒ/",
+      "writer_language": "fr",
+      "spellings": ["j", "ge", "gi"],
+      "source": "Wikipedia, French orthography [P3]",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/ʒ/",
+      "writer_language": "sw",
+      "spellings": ["j"],
+      "note": "Swahili has no /ʒ/; its j is [dʒ], so a Swahili writer likely writes j",
+      "source": "Wikipedia, Swahili language, 'Consonants' (no /ʒ/ in the inventory)",
+      "confidence": "hypothesis"
+    },
+    {
+      "sound": "/ɲ/",
+      "writer_language": "fr",
+      "spellings": ["gn", "ny"],
+      "source": "Wikipedia, French orthography [P3]",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/ɲ/",
+      "writer_language": "sw",
+      "spellings": ["ny"],
+      "source": "Wikipedia, Swahili language, 'Orthography'",
+      "confidence": "high"
+    }
+  ],
+  "listener_confusions": [
+    {
+      "sounds": ["/r/", "/l/"],
+      "listener": "any",
+      "note": "one sound in Rwanda-Rundi; heard and written either way",
+      "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/rw/", "/rgw/"],
+      "listener": "non-Kirundi writer",
+      "note": "written rw is said [rgw]; a writer who does not know the spelling may write rgw",
+      "source": "FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/sw/", "/skw/"],
+      "listener": "non-Kirundi writer",
+      "note": "written sw is often said [skw]",
+      "source": "As above",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/tw/", "/tkw/"],
+      "listener": "non-Kirundi writer",
+      "note": "written tw is said [tkw]",
+      "source": "As above",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/mw/", "/mg/"],
+      "listener": "non-Kirundi writer",
+      "note": "written mw is said [my] or [mg]",
+      "source": "As above",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/vy/", "/vz/"],
+      "listener": "non-Kirundi writer",
+      "note": "vy may contain a [z] sound; may be written vz, z or vi",
+      "source": "FSI Kirundi Basic Course, pronunciation synopsis",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/ᵐb/", "/b/"],
+      "listener": "non-Kirundi writer",
+      "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
+      "source": "No source yet; listed so the matcher can test it at low weight",
+      "confidence": "hypothesis"
+    }
+  ],
+  "relationship_implications": {
+    "surname_agreement": "context-dependent",
+    "surname_disagreement": "disputed",
+    "note": "If the patronymic practice applies (p), shared surnames among a father's children are expected and disagreement counts against kinship; if names are chosen per child, disagreement is neutral. Which practice applies is not known per family",
+    "source": "structure-no-precolonial-family-name; structure-kirundi-first-then-christian; structure-inheritance-disputed"
+  },
+  "known_failure_modes": [
+    {
+      "id": "kinyarwanda-spelling",
+      "description": "A Burundian name written in Kinyarwanda spelling (Havyarimana as Habyarimana) by a Rwandan clerk or in Rwandan records; see transliteration_rules",
+      "source": "Comparative Grammar (2007), Table 1"
+    },
+    {
+      "id": "surname-slot",
+      "description": "The Kirundi name and the Christian name swap places: order in CENI lists is surname first, in foreign systems often given name first, and aggregators put Christian names in the surname slot",
+      "source": "order-ceni-surname-capitals; order-aggregators-swap"
+    },
+    {
+      "id": "given-name-language",
+      "description": "The French Christian name changes form with the writer's language (Jean / John / Yohana); handled by the cross-pack given-name data (week 4)",
+      "source": "TIMETABLE.md week 4"
+    },
+    {
+      "id": "word-division",
+      "description": "Joined, split and apostrophe forms of the same name (mission spelling habits); see mission-spellings",
+      "source": "Cox (1969, rev. 2023)"
+    },
+    {
+      "id": "written-by-ear",
+      "description": "Names written by a clerk who hears the spoken form follow the sounds, not the spelling; see listener_confusions",
+      "source": "CONCEPT-IDEA.md §5.4A"
+    },
+    {
+      "id": "adopted-swahili-name",
+      "description": "Burundian refugees in Tanzanian towns took Swahili names to be less visible, and some kept them after naturalisation. Such a name is not a spelling variant and gets no public edge; matching across it goes through the protected route",
+      "source": "Daley (2018), Oxford (BENCHMARK_PROTOCOL.md [B18]); NAME_CHANGE.md rules 1 and 5; THREAT_MODEL.md T14"
+    }
+  ],
+  "protected_or_sensitive_forms": [
+    {
+      "id": "no-ethnic-marker",
+      "description": "CENI candidate lists carry an ethnicity column. It is dropped on read, never written, counted or joined; the pack holds no ethnic, clan or religious marker",
+      "source": "DATA_RULES.md DR-1.7; THREAT_MODEL.md T8, T18; RESEARCH_LOG.md, G6 entry"
+    },
+    {
+      "id": "changed-names",
+      "description": "Names adopted in exile are not variants; tracing across a name change uses the protected-person route",
+      "source": "NAME_CHANGE.md rules 1, 2 and 5"
+    }
+  ],
+  "benchmark_cases": [
+    {
+      "id": "bc-by-vy",
+      "a": "Havyarimana",
+      "b": "Habyarimana",
+      "expected": "same name (Kirundi / Kinyarwanda spelling)",
+      "source": "rw-to-rn-by"
+    },
+    {
+      "id": "bc-plain-sh",
+      "a": "Ndayishimiye",
+      "b": "Ndayishyimiye",
+      "expected": "possible same name only: going from Kirundi, sh may stay sh or be shy (rn-to-rw-ambiguous); the plain form must also be kept",
+      "source": "rn-to-rw-ambiguous"
+    },
+    {
+      "id": "bc-order",
+      "a": "NSHIMIRIMANA Belyse",
+      "b": "Belyse Nshimirimana",
+      "expected": "same name (order and case)",
+      "source": "order-ceni-surname-capitals"
+    },
+    {
+      "id": "bc-r-l",
+      "a": "Nshimirimana",
+      "b": "Nshimilimana",
+      "expected": "same name (r/l)",
+      "source": "r-l-one-sound"
+    }
+  ],
+  "reviewers": [],
+  "version": "0.1.0"
+}
