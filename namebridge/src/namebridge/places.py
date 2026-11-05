@@ -29,8 +29,9 @@ def validate_dataset(data):
     keys = {unit["key"] for unit in data["units"]}
     for unit in data["units"]:
         for other in unit.get("other_names", []):
-            if other.get("source") not in data["sources"]:
-                errors.append(f"dataset {did}: {unit['key']}: other name {other.get('name')!r} needs a known source")
+            for sid in [other.get("source")] + other.get("also_in", []):
+                if sid not in data["sources"]:
+                    errors.append(f"dataset {did}: {unit['key']}: other name {other.get('name')!r} needs a known source")
     for i, change in enumerate(data["changes"]):
         where = f"dataset {did}: change {i} ({change.get('from')} -> {change.get('to')})"
         if change.get("relation") not in PLACE_RELATIONS:

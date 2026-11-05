@@ -64,7 +64,9 @@ def test_rwandan_towns_kept_their_names():
 def test_kinyarwanda_province_names_are_sourced():
     nodes, _ = dataset_to_graph(places())
     north = next(n for n in nodes if n["name"] == "Northern Province")
-    assert {"name": "Intara y'Amajyaruguru", "lang": "rw", "source": "rw-north"} in north["other_names"]
+    north_rw = [o for o in north["other_names"] if o["name"] == "Intara y'Amajyaruguru"]
+    assert north_rw and north_rw[0]["source"] == "rw-north" and "rw-law-04-2010" in north_rw[0]["also_in"]
+    assert any(o["name"] == "Province du Nord" and o["lang"] == "fr" for o in north["other_names"])
 
 
 def test_other_name_needs_source():

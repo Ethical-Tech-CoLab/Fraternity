@@ -1500,3 +1500,17 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Schema and data:** a fourth place relation, `located_in` (containment, not a change); places carry `other_names` with sources. Places dataset v0.2.0: 110 units, 90 links. Graph: 306 nodes, 136 edges, valid. **Tests:** 111 (3 new), incl. one showing that Byumba the town and Byumba the former province share a name.
 
 **Still open:** French names of the provinces (*Province du Nord* …) from the French text of Law 29/2005; Burundi and DRC communes.
+
+## 2026-11-05 — Place gaps: French names (Rwanda), Burundi communes, DRC territories
+
+**Rwanda, French and Kinyarwanda names.** Organic Law n°04/2010/OL modifying Law 29/2005 (Rwanda Law Reform Commission; trilingual, text PDF) lists the provinces in three columns: *Intara y'Amajyaruguru* / Northern Province / *Province du Nord*; *Amajyepfo* / Southern / *du Sud*; *Iburasirazuba* / Eastern / *de l'Est*; *Intara y'**U**burengerazuba* / Western / *de l'Ouest*; *Umujyi wa Kigali* / City of Kigali / *Ville de Kigali*. **Official spelling variant:** the law writes *Uburengerazuba*, the Western Province's website *Iburengerazuba*; both recorded. Other names now carry `also_in` when a second source confirms them.
+
+**Burundi communes.** Primary source: *Loi organique n°1/05 du 16 mars 2023* (78-page scanned PDF on CENI's site). No text layer and no OCR installed, so pages 1–6 were read as images. Art. 3: 5 provinces, 42 communes, 451 zones, 3,044 collines/quartiers; art. 4: provinces and chefs-lieux (Cankuzo, Bujumbura, Makamba, Ngozi, Gitega); **art. 5: the 42 communes by province**, now in the graph as `located_in` their province. Observations:
+- The law does **not** map the 119 old communes to the 42 new ones. Several old commune names reappear as **zones** (Giteranyi, Gisanze, Gashoho, old communes of Muyinga, are zones of the new commune Butihinda), the same pattern as Rwanda's towns (name kept, level changed). Not recorded as links: a zone with an old commune's name need not cover the same territory.
+- The law writes **Karusi**; the province was **Karuzi**. Recorded as another name.
+- **Cross-border homonyms:** Burundi has communes *Muhanga*, *Nyanza* and *Gisagara*, which are also Rwandan districts. Place identity must always include the country (it does: `BI:` / `RW:` keys). Worth a failure mode in the matcher.
+- Tavily was rate-limited (HTTP 429) and the local Tavily key is still invalid (401); the PDF was downloaded directly from CENI into the scratchpad.
+
+**DRC territories.** UNGEGN 2021 (Ministry of the Interior data, 2017): 26 provinces, 33 villes, 145 territoires, 137 communes; the national programme is still "PDL 145 territoires" in 2026. Indicates the territories persisted through the 2015 reform. Adding them is coverage (`located_in`), not a name change; deferred. Most useful first: the territories of Nord- and Sud-Kivu, where most DRC refugees in Dzaleka come from (needs a sourced list).
+
+**Data:** places v0.4.0; graph 348 nodes, 178 edges, valid. **Tests:** 111 pass.
