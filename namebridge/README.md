@@ -40,6 +40,7 @@ Load the packs into the graph (re-run after changing a pack):
 
 ```sh
 .venv/bin/python -m namebridge.packs data/packs/*.json
+.venv/bin/python -m namebridge.crosspack data/crosspack/*.json
 ```
 
 ## Licences

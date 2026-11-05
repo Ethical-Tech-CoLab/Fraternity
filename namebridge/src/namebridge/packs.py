@@ -42,33 +42,39 @@ def pack_to_nodes(pack):
     return nodes
 
 
+def merge(graph_dir, owner_field, owners, new_nodes, new_edges=()):
+    """Replace what `owners` loaded before (nodes and edges whose owner_field is
+    in owners) with new_nodes and new_edges. Nodes with an id already in the
+    graph from another owner (Language nodes) are shared, not duplicated.
+    Returns a list of errors; nothing is written if there are any."""
+    graph_dir = Path(graph_dir)
+    nodes = [n for n in read_jsonl(graph_dir / "nodes.jsonl") if n.get(owner_field) not in owners]
+    edges = [e for e in read_jsonl(graph_dir / "edges.jsonl") if e.get(owner_field) not in owners]
+    known = {n["id"] for n in nodes}
+    for node in new_nodes:
+        if node["id"] not in known:
+            nodes.append(node)
+            known.add(node["id"])
+    edges.extend(new_edges)
+
+    errors = validate_graph(nodes, edges)
+    if errors:
+        return errors
+    for name, items in (("nodes.jsonl", nodes), ("edges.jsonl", edges)):
+        items.sort(key=lambda item: item["id"])
+        with (graph_dir / name).open("w", encoding="utf-8") as f:
+            for item in items:
+                f.write(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n")
+    return []
+
+
 def load(packs, graph_dir):
     """Merge packs into graph_dir; return a list of errors (nothing is written if any)."""
     errors = [e for pack in packs for e in validate_pack(pack)]
     if errors:
         return errors
-    graph_dir = Path(graph_dir)
-    nodes = read_jsonl(graph_dir / "nodes.jsonl")
-    edges = read_jsonl(graph_dir / "edges.jsonl")
-
-    loaded = {pack["pack_id"] for pack in packs}
-    nodes = [n for n in nodes if n.get("pack_id") not in loaded]
-    known = {n["id"] for n in nodes}
-    for pack in packs:
-        for node in pack_to_nodes(pack):
-            # Language nodes are shared between packs.
-            if node["id"] not in known:
-                nodes.append(node)
-                known.add(node["id"])
-
-    errors = validate_graph(nodes, edges)
-    if errors:
-        return errors
-    nodes.sort(key=lambda n: n["id"])
-    with (graph_dir / "nodes.jsonl").open("w", encoding="utf-8") as f:
-        for node in nodes:
-            f.write(json.dumps(node, ensure_ascii=False, sort_keys=True) + "\n")
-    return []
+    nodes = [node for pack in packs for node in pack_to_nodes(pack)]
+    return merge(graph_dir, "pack_id", {pack["pack_id"] for pack in packs}, nodes)
 
 
 if __name__ == "__main__":

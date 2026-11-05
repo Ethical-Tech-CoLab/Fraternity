@@ -11,6 +11,10 @@ the synthetic benchmark lives elsewhere (week 6).
 - `packs/` — country/language packs (§11) as JSON. Start from
   `TEMPLATE.json`; validator: `namebridge.schema.pack`. Loaded so far:
   `rw-kiny`, `bi-kirundi`, `cd-swc-ln` (DRC).
+- `crosspack/` — names shared across languages (Christian names from Bible
+  translations), loaded as NameConcept and NameForm nodes with proposed
+  `historical_cognate_of` edges: `python -m namebridge.crosspack
+  data/crosspack/*.json`.
 
 The public graph holds **spelling variants only**: there is no edge type
 for an adopted or changed name (`docs/NAME_CHANGE.md` rule 1), and no

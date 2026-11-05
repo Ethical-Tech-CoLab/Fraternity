@@ -1427,3 +1427,15 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 6. **Patterns are not predictions:** over-trusting them would multiply false "possible name change" candidates (T17).
 
 **Mitigation:** the pattern set combines several sources with different blind spots: published studies of exile name change (Daley 2018; Duchaj & Ntihirageza 2009; further literature to search), the notices if G8 allows, and native-speaker and caseworker input in Jan–Mar 2027 (needs IRB review). The benchmark keeps the share of name changes a varied parameter, so results are reported across the range, not at one guess.
+
+## 2026-11-05 — Week 4: Christian names across languages
+
+**Method:** a Bible translation fixes the form of each biblical name in its language, so book names and apostle lists are attested sources for Jean / John / Yohana-type links.
+
+**Sources (Tavily, 5 Nov 2026):** Biblafrique Lingala pages (book names with French equivalents, two versions); Lingala Wikipedia "Biblíya"; Wikipedia "Biblical canon" (English); *Biblia Takatifu*, Open.Bible edition (Swahili, Mathayo 10:2–4); Shepherds Global Classroom Swahili NT survey; BibleProject Kinyarwanda; *Bibiliya Yera* (Kinyarwanda PDF); Kirundi NT (dokumen.pub snippet only, single source).
+
+**Findings:** 8 names: John (Jean, John, Yohana [sw, rw, rn], Yoane / Yowane [ln]); Matthew (Matthieu, Matthew, Mathayo, Matayo [rw, rn, ln], Matai); Mark (Marc, Mark, Marko [sw, ln], Mariko [rw, rn], Malako); Luke (Luc, Luke, Luka); Peter (Pierre, Peter, Petro, Petero, Petelo); James (Jacques, Yakobo); Paul (Paul, Paulo, Pawulo); Jude (Jude, Yuda). The forms follow each language's sound rules already in the packs: Lingala l for r (Malako, Petelo), Kinyarwanda/Kirundi epenthetic vowels (Mariko, Petero, Pawulo).
+
+**Data and code:** `data/crosspack/christian-names-2026.1.json`; `namebridge.crosspack` turns it into 8 NameConcept and 30 NameForm nodes, with 30 `historical_cognate_of` edges, all `proposed`, confidence 0.6, each citing its sources. A form shared by several languages is one node (Yohana: sw, rw, rn). The graph loader now also writes edges; packs and cross-pack data reload independently. **Tests:** 102 (6 new).
+
+**Limits:** a Bible form shows the name exists in the language, not that a person baptised Jean is recorded as Yohana; the edges stay low-weight and proposed until reviewed. **Gaps:** Chichewa forms (no safe source found; a LinkedIn profile is not one); English James and Jude, French Paul (not in the pages read); common non-biblical given names (Emmanuel, Claude, Eric); Kirundi forms beyond the four gospels.
