@@ -1553,3 +1553,17 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - The OCHA war-period reports (2001–2004) also confirm several other old communes (Nyabitsinda, Kabezi, Nyabiraba, Mutimbuzi, Mubimbi, Mutambu, Buyengero) and write "Nyanza Lac" without the hyphen.
 
 **Data:** places v0.6.0 (Nyarusange, with sources); `bi-kirundi` v0.4.0. **Tests:** 113 pass.
+
+## 2026-11-05 — Place resolver: old names find new ones, and the reverse
+
+**User's requirement (5 Nov 2026):** depending on the person's answer, the model must recognise that a new name can refer to an old one, and the reverse.
+
+**Bujumbura's 13 urban communes of 2010** (CENI 2010 list: Buterere, Buyenzi, Bwiza, Cibitoke, Gihosha, Kamenge, Kanyosha, Kinama, Kinindo, Musaga, Ngagara, Nyakabiga, Rohero): in the official 2026 boundaries (BCG v02), twelve are **zones** of Ntahangwa, Mukaza or Mugere, and **Rohero is a quarter** ("Quartier Rohero", zone and commune Mukaza): a commune dropped two levels. New relation **`continues_as`** (same name at another level; `generated`, confidence 0.7, territory not checked). **Ambiguities found:** *Cibitoke* is an old province, a 2025 commune, a zone of that commune and a zone of Bujumbura city; *Gihosha* is a zone in Bujumbura and in Kirundo.
+
+**Code:** `namebridge.resolve_place`. A name (folded: case, accents, hyphens, spaces and prefixes such as *Quartier*, *Province du*, *Intara y'*, *Umujyi wa* ignored) is matched against every place's name and other names; the graph is then followed **later** (old → new), **earlier** (new → old) and **within** (the larger units it lies in). Each candidate has a score (product of step weights: the area share where recorded, 0.5 for a partial link without one, 1 otherwise), a `derived` flag when a step came from the project's own crosswalk, and the path that explains it. Rules that keep results meaningful: no reversing direction in time (Kayanza → Butanyerera must not continue to Kirundo); no going up after going back in time (Kayanza → old Busiga → Ngozi province is valid step by step but noise); on equal scores, a change over time is preferred to containment. A name that means several places returns all of them; choosing is the caller's job, with the rest of the evidence.
+
+**Error found by the resolver:** the 42 new communes had lost their `located_in` province links when the crosswalk was added (an over-broad filter). Restored, with a guard test.
+
+**Examples:** *Kamenge* → zone of Ntahangwa → Bujumbura (2025), and the old Bujumbura Mairie; *Butanyerera* → earlier Kayanza, Kirundo, Ngozi (and part of Muramvya); *Nyanrusange* → Nyarusange → later Gishubi (derived); *Intara y'Amajyaruguru* and *Province du Nord* → Northern Province; *Élisabethville* → Lubumbashi.
+
+**Tests:** 124 (11 new). **Data:** places v0.7.0.

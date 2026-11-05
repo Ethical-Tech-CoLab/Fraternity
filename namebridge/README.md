@@ -44,6 +44,13 @@ Load the packs into the graph (re-run after changing a pack):
 .venv/bin/python -m namebridge.places data/places/*.json
 ```
 
+Resolve a place name both ways in time (old → new, new → old), with the path that explains each candidate:
+
+```sh
+.venv/bin/python -m namebridge.resolve_place Kamenge
+.venv/bin/python -m namebridge.resolve_place Butanyerera
+```
+
 `scripts/burundi_crosswalk.py` rebuilds the Burundi old → new commune table from public boundary data (inputs and method in its docstring).
 
 ## Licences

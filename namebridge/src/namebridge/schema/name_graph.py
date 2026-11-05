@@ -43,7 +43,9 @@ EDGE_TYPES = {
 # located_in is containment, not a change: Rwandan towns mostly kept their
 # names in 2006 while the districts around them got new ones (Byumba is in
 # Gicumbi), so a person and a record may name different levels.
-PLACE_RELATIONS = {"renamed_to", "merged_into", "split_into", "located_in"}
+# continues_as: the same name carried on at another level (Bujumbura's 2010
+# urban communes are zones or quarters today).
+PLACE_RELATIONS = {"renamed_to", "merged_into", "split_into", "located_in", "continues_as"}
 EDGE_TYPES |= PLACE_RELATIONS
 
 NAME_NODES = {"NameForm", "NameConcept"}

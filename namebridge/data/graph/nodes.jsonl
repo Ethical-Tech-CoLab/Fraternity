@@ -86,15 +86,19 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:butaganzwa-kayanza@pre2025", "level": "commune", "name": "Butaganzwa", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:butaganzwa-ruyigi@pre2025", "level": "commune", "name": "Butaganzwa", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:butaganzwa@2025-", "level": "commune", "name": "Butaganzwa", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:buterere-bujumbura-mairie@2010", "level": "commune", "name": "Buterere", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:butezi-ruyigi@pre2025", "level": "commune", "name": "Butezi", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:butihinda-muyinga@pre2025", "level": "commune", "name": "Butihinda", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:butihinda@2025-", "level": "commune", "name": "Butihinda", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:buyengero-rumonge@pre2025", "level": "commune", "name": "Buyengero", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:buyenzi-bujumbura-mairie@2010", "level": "commune", "name": "Buyenzi", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:bwambarangwe-kirundo@pre2025", "level": "commune", "name": "Bwambarangwe", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:bweru-ruyigi@pre2025", "level": "commune", "name": "Bweru", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:bwiza-bujumbura-mairie@2010", "level": "commune", "name": "Bwiza", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:cankuzo-cankuzo@pre2025", "level": "commune", "name": "Cankuzo", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:cankuzo@2025-", "level": "commune", "name": "Cankuzo", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:cendajuru-cankuzo@pre2025", "level": "commune", "name": "Cendajuru", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:cibitoke-bujumbura-mairie@2010", "level": "commune", "name": "Cibitoke", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:cibitoke@2025-", "level": "commune", "name": "Cibitoke", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gahombo-kayanza@pre2025", "level": "commune", "name": "Gahombo", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gashikanwa-ngozi@pre2025", "level": "commune", "name": "Gashikanwa", "period": "pre2025", "type": "Region"}
@@ -105,6 +109,7 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:giharo-rutana@pre2025", "level": "commune", "name": "Giharo", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:giheta-gitega@pre2025", "level": "commune", "name": "Giheta", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gihogazi-karuzi@pre2025", "level": "commune", "name": "Gihogazi", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gihosha-bujumbura-mairie@2010", "level": "commune", "name": "Gihosha", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gisagara-cankuzo@pre2025", "level": "commune", "name": "Gisagara", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gisagara@2025-", "level": "commune", "name": "Gisagara", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:gishubi-gitega@pre2025", "level": "commune", "name": "Gishubi", "period": "pre2025", "type": "Region"}
@@ -123,6 +128,8 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:itaba-gitega@pre2025", "level": "commune", "name": "Itaba", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kabarore-kayanza@pre2025", "level": "commune", "name": "Kabarore", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kabezi-bujumbura-rural@pre2025", "level": "commune", "name": "Kabezi", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kamenge-bujumbura-mairie@2010", "level": "commune", "name": "Kamenge", "period": "2010", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kanyosha-bujumbura-mairie@2010", "level": "commune", "name": "Kanyosha", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kanyosha-bujumbura-rural@pre2025", "level": "commune", "name": "Kanyosha", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:karusi@2025-", "level": "commune", "name": "Karusi", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kayanza-kayanza@pre2025", "level": "commune", "name": "Kayanza", "period": "pre2025", "type": "Region"}
@@ -133,6 +140,8 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kigamba-cankuzo@pre2025", "level": "commune", "name": "Kigamba", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kiganda-muramvya@pre2025", "level": "commune", "name": "Kiganda", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kiganda@2025-", "level": "commune", "name": "Kiganda", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kinama-bujumbura-mairie@2010", "level": "commune", "name": "Kinama", "period": "2010", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kinindo-bujumbura-mairie@2010", "level": "commune", "name": "Kinindo", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kinyinya-ruyigi@pre2025", "level": "commune", "name": "Kinyinya", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kiremba-ngozi@pre2025", "level": "commune", "name": "Kiremba", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:kiremba@2025-", "level": "commune", "name": "Kiremba", "period": "2025-", "type": "Region"}
@@ -171,6 +180,7 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:muramvya@2025-", "level": "commune", "name": "Muramvya", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:muruta-kayanza@pre2025", "level": "commune", "name": "Muruta", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:murwi-cibitoke@pre2025", "level": "commune", "name": "Murwi", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:musaga-bujumbura-mairie@2010", "level": "commune", "name": "Musaga", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:musigati-bubanza@pre2025", "level": "commune", "name": "Musigati", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:musongati-rutana@pre2025", "level": "commune", "name": "Musongati", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:musongati@2025-", "level": "commune", "name": "Musongati", "period": "2025-", "type": "Region"}
@@ -184,6 +194,7 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:mwaro@2025-", "level": "commune", "name": "Mwaro", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:mwumba-ngozi@pre2025", "level": "commune", "name": "Mwumba", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:ndava-mwaro@pre2025", "level": "commune", "name": "Ndava", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:ngagara-bujumbura-mairie@2010", "level": "commune", "name": "Ngagara", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:ngozi-ngozi@pre2025", "level": "commune", "name": "Ngozi", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:ngozi@2025-", "level": "commune", "name": "Ngozi", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:ntahangwa-bujumbura-mairie@pre2025", "level": "commune", "name": "Ntahangwa", "period": "pre2025", "type": "Region"}
@@ -194,11 +205,13 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyabikere-karuzi@pre2025", "level": "commune", "name": "Nyabikere", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyabiraba-bujumbura-rural@pre2025", "level": "commune", "name": "Nyabiraba", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyabitsinda-ruyigi@pre2025", "level": "commune", "name": "Nyabitsinda", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyakabiga-bujumbura-mairie@2010", "level": "commune", "name": "Nyakabiga", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyamurenza-ngozi@pre2025", "level": "commune", "name": "Nyamurenza", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyanza-lac-makamba@pre2025", "level": "commune", "name": "Nyanza-Lac", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyanza@2025-", "level": "commune", "name": "Nyanza", "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:nyarusange-gitega@pre2025", "level": "commune", "name": "Nyarusange", "other_names": [{"lang": "rn", "name": "Nyanrusange", "note": "truncated as 'Nyanrusang' in the boundary data; an extra n before r. The official (CENI 2010) and UN/USAID/FAO form is Nyarusange", "source": "bi-geoboundaries-2007"}], "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:rango-kayanza@pre2025", "level": "commune", "name": "Rango", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:rohero-bujumbura-mairie@2010", "level": "commune", "name": "Rohero", "period": "2010", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:rugazi-bubanza@pre2025", "level": "commune", "name": "Rugazi", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:rugombo-cibitoke@pre2025", "level": "commune", "name": "Rugombo", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:ruhororo-ngozi@pre2025", "level": "commune", "name": "Ruhororo", "period": "pre2025", "type": "Region"}
@@ -246,8 +259,22 @@
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:province:rumonge@pre2025", "level": "province", "name": "Rumonge", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:province:rutana@pre2025", "level": "province", "name": "Rutana", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:province:ruyigi@pre2025", "level": "province", "name": "Ruyigi", "period": "pre2025", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:quarter:rohero-mukaza@2025-", "level": "quarter", "name": "Rohero", "other_names": [{"lang": "fr", "name": "Quartier Rohero", "note": "official form with the 'Quartier' prefix", "source": "bi-cod-ab-2026"}], "period": "2025-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:town:bujumbura@1962-", "level": "town", "name": "Bujumbura", "period": "1962-", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:town:usumbura@pre1962", "level": "town", "name": "Usumbura", "period": "pre1962", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:buterere-ntahangwa@2025-", "level": "zone", "name": "Buterere", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:buyenzi-mukaza@2025-", "level": "zone", "name": "Buyenzi", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:bwiza-mukaza@2025-", "level": "zone", "name": "Bwiza", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:cibitoke-ntahangwa@2025-", "level": "zone", "name": "Cibitoke", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:gihosha-ntahangwa@2025-", "level": "zone", "name": "Gihosha", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:kamenge-ntahangwa@2025-", "level": "zone", "name": "Kamenge", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:kanyosha-mugere@2025-", "level": "zone", "name": "Kanyosha", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:kinama-ntahangwa@2025-", "level": "zone", "name": "Kinama", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:kinindo-mugere@2025-", "level": "zone", "name": "Kinindo", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:mukaza-mukaza@2025-", "level": "zone", "name": "Mukaza", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:musaga-mugere@2025-", "level": "zone", "name": "Musaga", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:ngagara-ntahangwa@2025-", "level": "zone", "name": "Ngagara", "period": "2025-", "type": "Region"}
+{"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:zone:nyakabiga-mukaza@2025-", "level": "zone", "name": "Nyakabiga", "period": "2025-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:bandundu@1966-2015", "level": "province", "name": "Bandundu", "period": "1966-2015", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:bas-congo@1997-2015", "level": "province", "name": "Bas-Congo", "period": "1997-2015", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:bas-uele@2015-", "level": "province", "name": "Bas-Uele", "period": "2015-", "type": "Region"}

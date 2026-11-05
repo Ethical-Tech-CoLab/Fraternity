@@ -99,3 +99,11 @@ def test_burundi_crosswalk_is_derived_and_proposed():
     isale = [e for e in edges if by[e["from"]]["name"] == "Isale" and e["relation_type"] == "merged_into"]
     assert {by[e["to"]]["name"] for e in isale} == {"Isare", "Ntahangwa"}
     assert all(e["confidence_basis"] == "generated" and e["review_status"] == "proposed" and e["partial"] for e in isale)
+
+
+def test_every_new_burundi_commune_is_in_a_province():
+    # Guards against losing the 42 commune -> province links (lost once on 5 Nov 2026).
+    nodes, edges = dataset_to_graph(places())
+    new_communes = {n["id"] for n in nodes if n["country"] == "BI" and n["level"] == "commune" and n["period"] == "2025-"}
+    placed = {e["from"] for e in edges if e["relation_type"] == "located_in"}
+    assert len(new_communes) == 42 and new_communes <= placed

@@ -325,7 +325,7 @@ Use multiple blocking/index strategies in parallel:
 - graph-neighborhood expansion with maximum path cost;
 - phonetic keys selected by language;
 - date-of-birth ranges rather than exact dates where records are uncertain;
-- place hierarchies and historical place names;
+- place hierarchies and historical place names: the **place resolver** (`namebridge.resolve_place`, added 5 Nov 2026) takes a place as a person or record gives it and returns every place it can mean, following renames, mergers, splits and level changes both ways in time (old → new and new → old), with the path and a score; a name that means several places returns all of them;
 - parent/relative/household/event anchors; and
 - document or contact identifiers, where lawfully available.
 

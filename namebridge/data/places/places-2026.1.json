@@ -1,7 +1,7 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.6.0",
-  "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side.",
+  "version": "0.7.0",
+  "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
     "bi-wiki": {
@@ -361,6 +361,14 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:buterere-bujumbura-mairie@2010",
+      "name": "Buterere",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
       "key": "BI:commune:butezi-ruyigi@pre2025",
       "name": "Butezi",
       "country": "BI",
@@ -389,6 +397,14 @@
       "period": "pre2025"
     },
     {
+      "key": "BI:commune:buyenzi-bujumbura-mairie@2010",
+      "name": "Buyenzi",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
       "key": "BI:commune:bwambarangwe-kirundo@pre2025",
       "name": "Bwambarangwe",
       "country": "BI",
@@ -402,6 +418,14 @@
       "country": "BI",
       "level": "commune",
       "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bwiza-bujumbura-mairie@2010",
+      "name": "Bwiza",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
     },
     {
       "key": "BI:commune:cankuzo-cankuzo@pre2025",
@@ -423,6 +447,14 @@
       "country": "BI",
       "level": "commune",
       "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:cibitoke-bujumbura-mairie@2010",
+      "name": "Cibitoke",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
     },
     {
       "key": "BI:commune:cibitoke@2025-",
@@ -493,6 +525,14 @@
       "country": "BI",
       "level": "commune",
       "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gihosha-bujumbura-mairie@2010",
+      "name": "Gihosha",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
     },
     {
       "key": "BI:commune:gisagara-cankuzo@pre2025",
@@ -630,6 +670,22 @@
       "period": "pre2025"
     },
     {
+      "key": "BI:commune:kamenge-bujumbura-mairie@2010",
+      "name": "Kamenge",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
+      "key": "BI:commune:kanyosha-bujumbura-mairie@2010",
+      "name": "Kanyosha",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
       "key": "BI:commune:kanyosha-bujumbura-rural@pre2025",
       "name": "Kanyosha",
       "country": "BI",
@@ -699,6 +755,22 @@
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:kinama-bujumbura-mairie@2010",
+      "name": "Kinama",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
+      "key": "BI:commune:kinindo-bujumbura-mairie@2010",
+      "name": "Kinindo",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
     },
     {
       "key": "BI:commune:kinyinya-ruyigi@pre2025",
@@ -977,6 +1049,14 @@
       "period": "pre2025"
     },
     {
+      "key": "BI:commune:musaga-bujumbura-mairie@2010",
+      "name": "Musaga",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
       "key": "BI:commune:musigati-bubanza@pre2025",
       "name": "Musigati",
       "country": "BI",
@@ -1068,6 +1148,14 @@
       "period": "pre2025"
     },
     {
+      "key": "BI:commune:ngagara-bujumbura-mairie@2010",
+      "name": "Ngagara",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
       "key": "BI:commune:ngozi-ngozi@pre2025",
       "name": "Ngozi",
       "country": "BI",
@@ -1139,11 +1227,33 @@
       "name_source": "bi-cod-ab-2026"
     },
     {
+      "key": "BI:commune:nyakabiga-bujumbura-mairie@2010",
+      "name": "Nyakabiga",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
+    },
+    {
       "key": "BI:commune:nyamurenza-ngozi@pre2025",
       "name": "Nyamurenza",
       "country": "BI",
       "level": "commune",
       "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:nyanza-lac-makamba@pre2025",
+      "name": "Nyanza-Lac",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:nyanza@2025-",
+      "name": "Nyanza",
+      "country": "BI",
+      "level": "commune",
+      "period": "2025-"
     },
     {
       "key": "BI:commune:nyarusange-gitega@pre2025",
@@ -1167,25 +1277,19 @@
       ]
     },
     {
-      "key": "BI:commune:nyanza-lac-makamba@pre2025",
-      "name": "Nyanza-Lac",
-      "country": "BI",
-      "level": "commune",
-      "period": "pre2025"
-    },
-    {
-      "key": "BI:commune:nyanza@2025-",
-      "name": "Nyanza",
-      "country": "BI",
-      "level": "commune",
-      "period": "2025-"
-    },
-    {
       "key": "BI:commune:rango-kayanza@pre2025",
       "name": "Rango",
       "country": "BI",
       "level": "commune",
       "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:rohero-bujumbura-mairie@2010",
+      "name": "Rohero",
+      "country": "BI",
+      "level": "commune",
+      "period": "2010",
+      "name_source": "bi-ceni-2010"
     },
     {
       "key": "BI:commune:rugazi-bubanza@pre2025",
@@ -1525,6 +1629,21 @@
       "period": "pre2025"
     },
     {
+      "key": "BI:quarter:rohero-mukaza@2025-",
+      "name": "Rohero",
+      "country": "BI",
+      "level": "quarter",
+      "period": "2025-",
+      "other_names": [
+        {
+          "name": "Quartier Rohero",
+          "lang": "fr",
+          "source": "bi-cod-ab-2026",
+          "note": "official form with the 'Quartier' prefix"
+        }
+      ]
+    },
+    {
       "key": "BI:town:bujumbura@1962-",
       "name": "Bujumbura",
       "country": "BI",
@@ -1537,6 +1656,97 @@
       "country": "BI",
       "level": "town",
       "period": "pre1962"
+    },
+    {
+      "key": "BI:zone:buterere-ntahangwa@2025-",
+      "name": "Buterere",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:buyenzi-mukaza@2025-",
+      "name": "Buyenzi",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:bwiza-mukaza@2025-",
+      "name": "Bwiza",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:cibitoke-ntahangwa@2025-",
+      "name": "Cibitoke",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:gihosha-ntahangwa@2025-",
+      "name": "Gihosha",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:kamenge-ntahangwa@2025-",
+      "name": "Kamenge",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:kanyosha-mugere@2025-",
+      "name": "Kanyosha",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:kinama-ntahangwa@2025-",
+      "name": "Kinama",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:kinindo-mugere@2025-",
+      "name": "Kinindo",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:mukaza-mukaza@2025-",
+      "name": "Mukaza",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:musaga-mugere@2025-",
+      "name": "Musaga",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:ngagara-ntahangwa@2025-",
+      "name": "Ngagara",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:zone:nyakabiga-mukaza@2025-",
+      "name": "Nyakabiga",
+      "country": "BI",
+      "level": "zone",
+      "period": "2025-"
     },
     {
       "key": "CD:province:bandundu@1966-2015",
@@ -6198,6 +6408,838 @@
       "confidence": 0.6,
       "share": 0.155,
       "partial": true
+    },
+    {
+      "from": "BI:commune:buterere-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:buterere-ntahangwa@2025-",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:buterere-bujumbura-mairie@2010",
+      "to": "BI:zone:buterere-ntahangwa@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:buyenzi-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:buyenzi-mukaza@2025-",
+      "to": "BI:commune:mukaza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:buyenzi-bujumbura-mairie@2010",
+      "to": "BI:zone:buyenzi-mukaza@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:bwiza-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:bwiza-mukaza@2025-",
+      "to": "BI:commune:mukaza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:bwiza-bujumbura-mairie@2010",
+      "to": "BI:zone:bwiza-mukaza@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:cibitoke-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:cibitoke-ntahangwa@2025-",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:cibitoke-bujumbura-mairie@2010",
+      "to": "BI:zone:cibitoke-ntahangwa@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:gihosha-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:gihosha-ntahangwa@2025-",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:gihosha-bujumbura-mairie@2010",
+      "to": "BI:zone:gihosha-ntahangwa@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:kamenge-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:kamenge-ntahangwa@2025-",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kamenge-bujumbura-mairie@2010",
+      "to": "BI:zone:kamenge-ntahangwa@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:kanyosha-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:kanyosha-mugere@2025-",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kanyosha-bujumbura-mairie@2010",
+      "to": "BI:zone:kanyosha-mugere@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:kinama-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:kinama-ntahangwa@2025-",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kinama-bujumbura-mairie@2010",
+      "to": "BI:zone:kinama-ntahangwa@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:kinindo-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:kinindo-mugere@2025-",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kinindo-bujumbura-mairie@2010",
+      "to": "BI:zone:kinindo-mugere@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:musaga-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:musaga-mugere@2025-",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:musaga-bujumbura-mairie@2010",
+      "to": "BI:zone:musaga-mugere@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:ngagara-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:ngagara-ntahangwa@2025-",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:ngagara-bujumbura-mairie@2010",
+      "to": "BI:zone:ngagara-ntahangwa@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:nyakabiga-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:nyakabiga-mukaza@2025-",
+      "to": "BI:commune:mukaza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:nyakabiga-bujumbura-mairie@2010",
+      "to": "BI:zone:nyakabiga-mukaza@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:rohero-bujumbura-mairie@2010",
+      "to": "BI:province:bujumbura-mairie@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010"
+      ]
+    },
+    {
+      "from": "BI:zone:mukaza-mukaza@2025-",
+      "to": "BI:commune:mukaza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:quarter:rohero-mukaza@2025-",
+      "to": "BI:zone:mukaza-mukaza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:rohero-bujumbura-mairie@2010",
+      "to": "BI:quarter:rohero-mukaza@2025-",
+      "relation": "continues_as",
+      "year": null,
+      "sources": [
+        "bi-ceni-2010",
+        "bi-cod-ab-2026"
+      ],
+      "basis": "generated",
+      "confidence": 0.7,
+      "note": "same name in Bujumbura in the 2010 commune list (CENI) and the 2026 official boundaries; territory not checked"
+    },
+    {
+      "from": "BI:commune:butaganzwa@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:butihinda@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:cankuzo@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:gisagara@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:gisuru@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:muyinga@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:ruyigi@2025-",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:bubanza@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:bukinanyana@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:cibitoke@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:isare@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:mpanda@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:mugere@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:mugina@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:muhuta@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:mukaza@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:ntahangwa@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:rwibaga@2025-",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:bururi@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:makamba@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:matana@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:musongati@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:nyanza@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:rumonge@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:rutana@2025-",
+      "to": "BI:province:burunga@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:busoni@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kayanza@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kiremba@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kirundo@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:matongo@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:muhanga@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:ngozi@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:tangara@2025-",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:bugendana@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:gishubi@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:gitega@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:karusi@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:kiganda@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:muramvya@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:mwaro@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:nyabihanga@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
+    },
+    {
+      "from": "BI:commune:shombo@2025-",
+      "to": "BI:province:gitega@2025-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-law-2023",
+        "bi-cod-ab-2026"
+      ]
     }
   ]
 }
