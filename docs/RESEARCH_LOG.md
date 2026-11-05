@@ -1642,3 +1642,11 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - French *gn* = /ɲ/: not in the volume; sourced instead from the **FSI Swahili Basic Course**, p. xi (ny "as in … French *gagner*").
 
 **Result:** all 8 French entries re-sourced (medium). Of the 33 pack entries that rested only on a wiki, **one remains**: "people are addressed by the given name in speech" (rw-kiny), kept at `low` with a note. **Tests:** 132 pass.
+
+## 2026-11-05 — Gitarama sourced; "given name in speech" still open
+
+**Gitarama → Muhanga, now direct and official:** MINEDUC, Muhanga District environmental and social management plan ("The climate is tropical in Muhanga (Gitarama)"); MININFRA, ESIA report for Muhanga City (roads "extend to Gahogo and **Gitarama administrative Cells of the Nyamabuye Sector**": Gitarama is also a cell of the town centre); The New Times ("all roads in Gitarama town, Muhanga district"). Confidence back to the dataset default; the indirect REMA/NESA evidence is no longer needed (NESA source removed).
+
+**"Rwandans are addressed by the given name in speech":** no primary source found (searched official, UN and press sources). A Presbyterian Church (USA) mission letter (2017) describes two names (a Rwandan name and, for Christians, a baptismal name) but not forms of address. Kept at `low`; would be closed by Kimenyi (1978), *Anthropological Linguistics* 20(6) (JSTOR, needs NYU library access). Teknonymy ("Mama Teta"), relevant to children's reports like "Mama Belyse" (`GATE_EXAMPLES.md`), also lacks a non-wiki source: **open**.
+
+**Tests:** 132 pass.

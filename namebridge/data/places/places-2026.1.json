@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -184,16 +184,28 @@
       "locator": "secondary cities: 'Huye City was renamed from Butare in 2006 after the highest peak ... Ibisi Byahuye'; 'KivuWatt Power Project, located in the Kibuye area ... of the District of Karongi'; Figure 2 'Topography around Muhanga and Gitarama'",
       "language": "en"
     },
-    "rw-nesa-2024": {
-      "name": "NESA (National Examination and School Inspection Authority), School Performance Rankings 2023/2024",
-      "url": "https://www.nesa.gov.rw/fileadmin/user_upload/NESA/Ressources/Reports/School_Performance_Rankings_2023-2024_National_Examination_Results_1.pdf",
-      "locator": "school 270815 'GS GITARAMA', district Muhanga (indirect evidence for the town's location)",
-      "language": "en"
-    },
     "rw-uk-factfile": {
       "name": "UK Government, Rwanda Toponymic Factfile (2025)",
       "url": "https://assets.publishing.service.gov.uk/media/679903cd636f8db3c270713e/Rwanda_Toponymic_Factfile.pdf",
       "locator": "names table: 'Musanze (Ruhangeri)' populated place",
+      "language": "en"
+    },
+    "rw-mineduc-muhanga": {
+      "name": "MINEDUC, Muhanga District ESMP for construction of classrooms and latrines (Rwanda QBE-HCD project)",
+      "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/SPIU_Documents/ESMP/muhanga/MUHANGA_DISTRICT-_ESMP_FOR_CONSTRUCTION_OF_CLASSROOMS_AND_LATRINES_SUB-PROJECTS_UNDER_RWANDA_QBE-HCD_PROJECT.pdf",
+      "locator": "district profile: 'The climate is tropical in Muhanga (Gitarama)'",
+      "language": "en"
+    },
+    "rw-mininfra-muhanga": {
+      "name": "MININFRA, Environmental and Social Impact Assessment report, Muhanga District (RUDP II phase 3)",
+      "url": "https://www.mininfra.gov.rw/fileadmin/user_upload/Mininfra/Documents/Housing_and_Urban_Planning_Docs/ESIA_Final_Report-Muhanga_District.pdf",
+      "locator": "project description: roads 'extend to Gahogo and Gitarama administrative Cells of the Nyamabuye Sector' in Muhanga City",
+      "language": "en"
+    },
+    "rw-newtimes-gitarama": {
+      "name": "The New Times (Kigali), 'Gitarama roads, houses to be named'",
+      "url": "https://www.newtimes.co.rw/article/10795/gitarama-roads-houses-to-be-named/amp",
+      "locator": "'All roads in Gitarama town, Muhanga district …'",
       "language": "en"
     }
   },
@@ -3413,11 +3425,11 @@
       "relation": "located_in",
       "year": null,
       "sources": [
-        "rw-rema-2017",
-        "rw-nesa-2024"
+        "rw-mineduc-muhanga",
+        "rw-mininfra-muhanga",
+        "rw-newtimes-gitarama"
       ],
-      "confidence": 0.6,
-      "note": "indirect evidence only (a map of 'Muhanga and Gitarama'; a school named Gitarama in Muhanga district); replace with a direct source"
+      "note": "Gitarama is also an administrative cell of Nyamabuye sector, the town centre of Muhanga City (MININFRA)"
     },
     {
       "from": "RW:district:muhanga@2006-",
