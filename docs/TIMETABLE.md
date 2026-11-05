@@ -31,6 +31,18 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 
 **Today (28 Oct):** the professor closed G1, G2, G3, G5 and G7, and **week 3 is complete**, ahead of its 2–6 Nov slot. Next: week 4. Still open: G4 (default in use; decide before the first results in week 6).
 
+### Next session (written 5 Nov 2026, end of session)
+
+**Open gaps (close first, per the user's rule):**
+1. rw-kiny `order-spoken-given-name` and teknonymy ("Mama X"): no primary source yet; waiting on Kimenyi (1989), *Kinyarwanda and Kirundi Names* (user searching NYU Libraries; table of contents or pages on forms of address are enough).
+2. Optional coverage: 16 secondary DRC towns in the RGC capitals list (Likasi, Mbanza-Ngungu, Basankusu, Bulungu …).
+
+**Week 4 items still to do:**
+3. ICU / CLDR set-up: Unicode NFC, folding (accents, ŵ, ɛ/ɔ, tone marks, hyphens, prefixes), transform-path logging (§5.4). `namebridge.resolve_place.fold` is a first, place-only version.
+4. Naming profiles from CongoNames and the NESA lists (DR-1: aggregates only, delete raw files).
+
+**State:** graph valid; 132 tests pass; packs rw-kiny, bi-kirundi, cd-swc-ln; cross-pack Christian names (11 names, 7 languages); places (Burundi, Rwanda, DRC incl. RGC level 2 and 3) with the resolver `namebridge.resolve_place`.
+
 ## Progress (as of 28 Oct 2026)
 
 **Weeks 1–3 are done ✔**, ahead of schedule. Phase 0 (weeks 1–2) was finished on 26 Oct and approved by the professor on 28 Oct. Week 3 (schemas, validators, regression suite, Kirundi spelling) was finished on 28 Oct, before its 2–6 Nov slot.
