@@ -10,7 +10,7 @@ Knowledge about names, **never about people**. Public, CC BY 4.0. Files: `namebr
 
 **Things in it (nodes):** a written name form (`NameForm`, e.g. *Havyarimana* in Latin script), a name concept, a morpheme (a meaningful part, e.g. *-imana*), a script, a language, a locale, a region, a rule, and a source.
 
-**Links (edges)** say how two names relate: spelling variant, sound variant, romanisation, transliteration, nickname, formal form, historical cognate (*Jean* / *Yohana*), derived from, contains a morpheme, inflected form, previous or married form (as a general rule only), commonly confused with, and **not equivalent to** (a negative rule).
+**Links (edges)** say how two names relate: spelling variant, sound variant, romanisation, transliteration, nickname, formal form, historical cognate (*Jean* / *Yohana*), derived from, contains a morpheme, inflected form, previous or married form (as a general rule only), commonly confused with, and **not equivalent to** (a negative rule). **Places** (added 5 Nov 2026) have three links of their own, always from the old unit to the new: **renamed to**, **merged into** (marked *partial* when only part of the old unit went there) and **split into**. They join place nodes only, never names.
 
 **Every link must have:**
 

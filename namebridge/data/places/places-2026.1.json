@@ -1,0 +1,1591 @@
+{
+  "dataset_id": "places-2026.1",
+  "version": "0.1.0",
+  "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided). Records and memories use old and new names side by side.",
+  "confidence": 0.9,
+  "sources": {
+    "bi-wiki": {
+      "name": "Wikipedia, 'Provinces of Burundi' (table: territorial correspondence with former provinces; 1960-62 names)",
+      "url": "https://en.wikipedia.org/wiki/Provinces_of_Burundi",
+      "locator": "Current provinces table; History",
+      "language": "en"
+    },
+    "bi-breaking": {
+      "name": "Breaking Burundi, 'Senate approves five new provincial governors after major administrative reform', 2025",
+      "url": "https://breakingburundi.com/burundi-senate-approves-five-new-provincial-governors-after-major-administrative-reform",
+      "locator": "governors' provinces and the former provinces they unite",
+      "language": "en"
+    },
+    "bi-cia": {
+      "name": "CIA World Factbook, Burundi administrative divisions, 2024 and 2025 editions (via worldfactbookarchive.org)",
+      "url": "https://worldfactbookarchive.org/archive/field/BI/Administrative%20divisions",
+      "locator": "2024 note: law of March 2023 reducing 18 provinces to five, full implementation by 2025",
+      "language": "en"
+    },
+    "bi-statoids": {
+      "name": "Statoids, 'Burundi Provinces' (change history)",
+      "url": "https://statoids.com/ubi.html",
+      "locator": "Change history: 1962-07-01 Usumbura renamed Bujumbura; other names (Kitega, Muhinga)",
+      "language": "en"
+    },
+    "rw-nationsonline": {
+      "name": "Nations Online Project, 'Administrative Map of Rwanda (provinces until 2006)'",
+      "url": "https://www.nationsonline.org/oneworld/map/rwanda_map.htm",
+      "locator": "list of the 12 former provinces and the new province each is now part of",
+      "language": "en"
+    },
+    "rw-statoids": {
+      "name": "Statoids, 'Rwanda Provinces' (change history)",
+      "url": "https://statoids.com/urw.html",
+      "locator": "2006-01-01: Rwanda reorganized from twelve provinces into five",
+      "language": "en"
+    },
+    "rw-wikivoyage": {
+      "name": "Wikivoyage, 'Rwanda' (cities renamed in the administrative reform; 'expect people to use either name')",
+      "url": "https://en.wikivoyage.org/wiki/Rwanda",
+      "locator": "Cities; Lake Kivu (Rubavu (Gisenyi), Karongi (Kibuye), Rusizi (Cyangugu)); Coffee tours (Huye (Butare))",
+      "language": "en"
+    },
+    "cd-wiki": {
+      "name": "Wikipedia, 'Provinces of the Democratic Republic of the Congo' (history table 1908-2015; current provinces with former province)",
+      "url": "https://en.wikipedia.org/wiki/Provinces_of_the_Democratic_Republic_of_the_Congo",
+      "locator": "history table; table of the 26 provinces, column 'former province'",
+      "language": "en"
+    },
+    "cd-statoids": {
+      "name": "Statoids, 'Democratic Republic of Congo Provinces' (change history)",
+      "url": "https://statoids.com/ucd.html",
+      "locator": "1966-07-01 city renames; 1972 Katanga renamed Shaba; 2015 reorganization table",
+      "language": "en"
+    },
+    "cd-crisisgroup": {
+      "name": "International Crisis Group, 'Katanga: Tensions in DRC's Mineral Heartland', Report 239",
+      "url": "https://www.crisisgroup.org/rpt/africa/democratic-republic-congo/239-katanga-tensions-drcs-mineral-heartland",
+      "locator": "découpage: laws 015/004 (28 Feb 2015) and 015/006 (25 Mar 2015); six provinces broken up, Bas-Congo renamed",
+      "language": "en"
+    },
+    "cd-worldstatesmen": {
+      "name": "WorldStatesmen.org, 'Provinces of Congo (Kinshasa)', Katanga",
+      "url": "https://www.worldstatesmen.org/Congo-K_Provinces_1960-1966.html",
+      "locator": "2 Jan 1972 Katanga renamed Shaba; 15 May 1997 name Katanga restored; 16 Jul 2015 split",
+      "language": "en"
+    },
+    "cd-rulers": {
+      "name": "Rulers.org, 'Congo (Kinshasa) provinces'",
+      "url": "https://rulers.org/cngkprov.html",
+      "locator": "Kasaï-Oriental split 15 Jul 2015; Kasaï-Occidental split 18 Jul 2015",
+      "language": "en"
+    }
+  },
+  "units": [
+    {
+      "key": "BI:province:bubanza@pre2025",
+      "name": "Bubanza",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:buhumuza@2025-",
+      "name": "Buhumuza",
+      "country": "BI",
+      "level": "province",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:province:bujumbura-mairie@pre2025",
+      "name": "Bujumbura Mairie",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:bujumbura-rural@pre2025",
+      "name": "Bujumbura Rural",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:bujumbura@2025-",
+      "name": "Bujumbura",
+      "country": "BI",
+      "level": "province",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:province:burunga@2025-",
+      "name": "Burunga",
+      "country": "BI",
+      "level": "province",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:province:bururi@pre2025",
+      "name": "Bururi",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:butanyerera@2025-",
+      "name": "Butanyerera",
+      "country": "BI",
+      "level": "province",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:province:cankuzo@pre2025",
+      "name": "Cankuzo",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:cibitoke@pre2025",
+      "name": "Cibitoke",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:gitega@2025-",
+      "name": "Gitega",
+      "country": "BI",
+      "level": "province",
+      "period": "2025-"
+    },
+    {
+      "key": "BI:province:gitega@pre2025",
+      "name": "Gitega",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:karuzi@pre2025",
+      "name": "Karuzi",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:kayanza@pre2025",
+      "name": "Kayanza",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:kirundo@pre2025",
+      "name": "Kirundo",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:kitega@1960-1962",
+      "name": "Kitega",
+      "country": "BI",
+      "level": "province",
+      "period": "1960-1962"
+    },
+    {
+      "key": "BI:province:makamba@pre2025",
+      "name": "Makamba",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:muhinga@1960-1962",
+      "name": "Muhinga",
+      "country": "BI",
+      "level": "province",
+      "period": "1960-1962"
+    },
+    {
+      "key": "BI:province:muramvya@pre2025",
+      "name": "Muramvya",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:muyinga@pre2025",
+      "name": "Muyinga",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:mwaro@pre2025",
+      "name": "Mwaro",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:ngozi@pre2025",
+      "name": "Ngozi",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:rumonge@pre2025",
+      "name": "Rumonge",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:rutana@pre2025",
+      "name": "Rutana",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:province:ruyigi@pre2025",
+      "name": "Ruyigi",
+      "country": "BI",
+      "level": "province",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:town:bujumbura@1962-",
+      "name": "Bujumbura",
+      "country": "BI",
+      "level": "town",
+      "period": "1962-"
+    },
+    {
+      "key": "BI:town:usumbura@pre1962",
+      "name": "Usumbura",
+      "country": "BI",
+      "level": "town",
+      "period": "pre1962"
+    },
+    {
+      "key": "CD:province:bandundu@1966-2015",
+      "name": "Bandundu",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-2015"
+    },
+    {
+      "key": "CD:province:bas-congo@1997-2015",
+      "name": "Bas-Congo",
+      "country": "CD",
+      "level": "province",
+      "period": "1997-2015"
+    },
+    {
+      "key": "CD:province:bas-uele@2015-",
+      "name": "Bas-Uele",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:bas-zaire@1971-1997",
+      "name": "Bas-Zaïre",
+      "country": "CD",
+      "level": "province",
+      "period": "1971-1997"
+    },
+    {
+      "key": "CD:province:equateur@1966-2015",
+      "name": "Équateur",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-2015"
+    },
+    {
+      "key": "CD:province:equateur@2015-",
+      "name": "Équateur",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:haut-katanga@2015-",
+      "name": "Haut-Katanga",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:haut-lomami@2015-",
+      "name": "Haut-Lomami",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:haut-uele@2015-",
+      "name": "Haut-Uele",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:haut-zaire@1971-1997",
+      "name": "Haut-Zaïre",
+      "country": "CD",
+      "level": "province",
+      "period": "1971-1997"
+    },
+    {
+      "key": "CD:province:ituri@2015-",
+      "name": "Ituri",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:kasai-central@2015-",
+      "name": "Kasaï-Central",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:kasai-occidental@1966-2015",
+      "name": "Kasaï-Occidental",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-2015"
+    },
+    {
+      "key": "CD:province:kasai-oriental@1966-2015",
+      "name": "Kasaï-Oriental",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-2015"
+    },
+    {
+      "key": "CD:province:kasai-oriental@2015-",
+      "name": "Kasaï-Oriental",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:kasai@2015-",
+      "name": "Kasaï",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:katanga@1966-1972",
+      "name": "Katanga",
+      "country": "CD",
+      "level": "province",
+      "period": "1966-1972"
+    },
+    {
+      "key": "CD:province:katanga@1997-2015",
+      "name": "Katanga",
+      "country": "CD",
+      "level": "province",
+      "period": "1997-2015"
+    },
+    {
+      "key": "CD:province:kongo-central@2015-",
+      "name": "Kongo Central",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:kwango@2015-",
+      "name": "Kwango",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:kwilu@2015-",
+      "name": "Kwilu",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:lomami@2015-",
+      "name": "Lomami",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:lualaba@2015-",
+      "name": "Lualaba",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:mai-ndombe@2015-",
+      "name": "Mai-Ndombe",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:mongala@2015-",
+      "name": "Mongala",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:nord-ubangi@2015-",
+      "name": "Nord-Ubangi",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:orientale@1997-2015",
+      "name": "Orientale",
+      "country": "CD",
+      "level": "province",
+      "period": "1997-2015"
+    },
+    {
+      "key": "CD:province:sankuru@2015-",
+      "name": "Sankuru",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:shaba@1972-1997",
+      "name": "Shaba",
+      "country": "CD",
+      "level": "province",
+      "period": "1972-1997"
+    },
+    {
+      "key": "CD:province:sud-ubangi@2015-",
+      "name": "Sud-Ubangi",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:tanganyika@2015-",
+      "name": "Tanganyika",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:tshopo@2015-",
+      "name": "Tshopo",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:province:tshuapa@2015-",
+      "name": "Tshuapa",
+      "country": "CD",
+      "level": "province",
+      "period": "2015-"
+    },
+    {
+      "key": "CD:town:bakwanga@pre1966",
+      "name": "Bakwanga",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:bandundu@1966-",
+      "name": "Bandundu",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:banningville@pre1966",
+      "name": "Banningville",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:bukavu@1966-",
+      "name": "Bukavu",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:coquilhatville@pre1966",
+      "name": "Coquilhatville",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:costermansville@pre1966",
+      "name": "Costermansville",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:elisabethville@pre1966",
+      "name": "Élisabethville",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:kananga@1966-",
+      "name": "Kananga",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:kinshasa@1966-",
+      "name": "Kinshasa",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:kisangani@1966-",
+      "name": "Kisangani",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:leopoldville@pre1966",
+      "name": "Léopoldville",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:lubumbashi@1966-",
+      "name": "Lubumbashi",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:luluabourg@pre1966",
+      "name": "Luluabourg",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "CD:town:mbandaka@1966-",
+      "name": "Mbandaka",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:mbuji-mayi@1966-",
+      "name": "Mbuji-Mayi",
+      "country": "CD",
+      "level": "town",
+      "period": "1966-"
+    },
+    {
+      "key": "CD:town:stanleyville@pre1966",
+      "name": "Stanleyville",
+      "country": "CD",
+      "level": "town",
+      "period": "pre1966"
+    },
+    {
+      "key": "RW:province:butare@2002-2006",
+      "name": "Butare",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:byumba@2002-2006",
+      "name": "Byumba",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:cyangugu@2002-2006",
+      "name": "Cyangugu",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:eastern-province@2006-",
+      "name": "Eastern Province",
+      "country": "RW",
+      "level": "province",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:province:gikongoro@2002-2006",
+      "name": "Gikongoro",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:gisenyi@2002-2006",
+      "name": "Gisenyi",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:gitarama@2002-2006",
+      "name": "Gitarama",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:kibungo@2002-2006",
+      "name": "Kibungo",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:kibuye@2002-2006",
+      "name": "Kibuye",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:kigali-rural@2002-2006",
+      "name": "Kigali-Rural",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:kigali@2006-",
+      "name": "Kigali",
+      "country": "RW",
+      "level": "province",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:province:northern-province@2006-",
+      "name": "Northern Province",
+      "country": "RW",
+      "level": "province",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:province:ruhengeri@2002-2006",
+      "name": "Ruhengeri",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:southern-province@2006-",
+      "name": "Southern Province",
+      "country": "RW",
+      "level": "province",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:province:umutara@2002-2006",
+      "name": "Umutara",
+      "country": "RW",
+      "level": "province",
+      "period": "2002-2006"
+    },
+    {
+      "key": "RW:province:western-province@2006-",
+      "name": "Western Province",
+      "country": "RW",
+      "level": "province",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:town:butare@pre2006",
+      "name": "Butare",
+      "country": "RW",
+      "level": "town",
+      "period": "pre2006"
+    },
+    {
+      "key": "RW:town:cyangugu@pre2006",
+      "name": "Cyangugu",
+      "country": "RW",
+      "level": "town",
+      "period": "pre2006"
+    },
+    {
+      "key": "RW:town:gisenyi@pre2006",
+      "name": "Gisenyi",
+      "country": "RW",
+      "level": "town",
+      "period": "pre2006"
+    },
+    {
+      "key": "RW:town:huye@2006-",
+      "name": "Huye",
+      "country": "RW",
+      "level": "town",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:town:karongi@2006-",
+      "name": "Karongi",
+      "country": "RW",
+      "level": "town",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:town:kibuye@pre2006",
+      "name": "Kibuye",
+      "country": "RW",
+      "level": "town",
+      "period": "pre2006"
+    },
+    {
+      "key": "RW:town:rubavu@2006-",
+      "name": "Rubavu",
+      "country": "RW",
+      "level": "town",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:town:rusizi@2006-",
+      "name": "Rusizi",
+      "country": "RW",
+      "level": "town",
+      "period": "2006-"
+    }
+  ],
+  "changes": [
+    {
+      "from": "BI:province:cankuzo@pre2025",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:muyinga@pre2025",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:ruyigi@pre2025",
+      "to": "BI:province:buhumuza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:bubanza@pre2025",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:bujumbura-mairie@pre2025",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:cibitoke@pre2025",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:bururi@pre2025",
+      "to": "BI:province:burunga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:makamba@pre2025",
+      "to": "BI:province:burunga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:rutana@pre2025",
+      "to": "BI:province:burunga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:kayanza@pre2025",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:kirundo@pre2025",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:ngozi@pre2025",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:karuzi@pre2025",
+      "to": "BI:province:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:mwaro@pre2025",
+      "to": "BI:province:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ]
+    },
+    {
+      "from": "BI:province:rumonge@pre2025",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:province:rumonge@pre2025",
+      "to": "BI:province:burunga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:province:muramvya@pre2025",
+      "to": "BI:province:bujumbura@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:province:muramvya@pre2025",
+      "to": "BI:province:butanyerera@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:province:muramvya@pre2025",
+      "to": "BI:province:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:province:gitega@pre2025",
+      "to": "BI:province:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:province:gitega@pre2025",
+      "to": "BI:province:burunga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-wiki",
+        "bi-breaking",
+        "bi-cia"
+      ],
+      "partial": true
+    },
+    {
+      "from": "BI:town:usumbura@pre1962",
+      "to": "BI:town:bujumbura@1962-",
+      "relation": "renamed_to",
+      "year": 1962,
+      "sources": [
+        "bi-statoids",
+        "bi-wiki"
+      ]
+    },
+    {
+      "from": "BI:province:kitega@1960-1962",
+      "to": "BI:province:gitega@pre2025",
+      "relation": "renamed_to",
+      "year": 1962,
+      "sources": [
+        "bi-wiki",
+        "bi-statoids"
+      ]
+    },
+    {
+      "from": "BI:province:muhinga@1960-1962",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "renamed_to",
+      "year": 1962,
+      "sources": [
+        "bi-wiki",
+        "bi-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:butare@2002-2006",
+      "to": "RW:province:southern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:gikongoro@2002-2006",
+      "to": "RW:province:southern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:gitarama@2002-2006",
+      "to": "RW:province:southern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:byumba@2002-2006",
+      "to": "RW:province:northern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:ruhengeri@2002-2006",
+      "to": "RW:province:northern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:cyangugu@2002-2006",
+      "to": "RW:province:western-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:gisenyi@2002-2006",
+      "to": "RW:province:western-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:kibuye@2002-2006",
+      "to": "RW:province:western-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:kibungo@2002-2006",
+      "to": "RW:province:eastern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:umutara@2002-2006",
+      "to": "RW:province:eastern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ]
+    },
+    {
+      "from": "RW:province:kigali-rural@2002-2006",
+      "to": "RW:province:kigali@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ],
+      "partial": true
+    },
+    {
+      "from": "RW:province:kigali-rural@2002-2006",
+      "to": "RW:province:northern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ],
+      "partial": true
+    },
+    {
+      "from": "RW:province:kigali-rural@2002-2006",
+      "to": "RW:province:eastern-province@2006-",
+      "relation": "merged_into",
+      "year": 2006,
+      "sources": [
+        "rw-nationsonline",
+        "rw-statoids"
+      ],
+      "partial": true
+    },
+    {
+      "from": "RW:town:butare@pre2006",
+      "to": "RW:town:huye@2006-",
+      "relation": "renamed_to",
+      "year": 2006,
+      "sources": [
+        "rw-wikivoyage"
+      ]
+    },
+    {
+      "from": "RW:town:gisenyi@pre2006",
+      "to": "RW:town:rubavu@2006-",
+      "relation": "renamed_to",
+      "year": 2006,
+      "sources": [
+        "rw-wikivoyage"
+      ]
+    },
+    {
+      "from": "RW:town:kibuye@pre2006",
+      "to": "RW:town:karongi@2006-",
+      "relation": "renamed_to",
+      "year": 2006,
+      "sources": [
+        "rw-wikivoyage"
+      ]
+    },
+    {
+      "from": "RW:town:cyangugu@pre2006",
+      "to": "RW:town:rusizi@2006-",
+      "relation": "renamed_to",
+      "year": 2006,
+      "sources": [
+        "rw-wikivoyage"
+      ]
+    },
+    {
+      "from": "CD:town:leopoldville@pre1966",
+      "to": "CD:town:kinshasa@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:stanleyville@pre1966",
+      "to": "CD:town:kisangani@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:elisabethville@pre1966",
+      "to": "CD:town:lubumbashi@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:coquilhatville@pre1966",
+      "to": "CD:town:mbandaka@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:banningville@pre1966",
+      "to": "CD:town:bandundu@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:bakwanga@pre1966",
+      "to": "CD:town:mbuji-mayi@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:luluabourg@pre1966",
+      "to": "CD:town:kananga@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:town:costermansville@pre1966",
+      "to": "CD:town:bukavu@1966-",
+      "relation": "renamed_to",
+      "year": 1966,
+      "sources": [
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:province:katanga@1966-1972",
+      "to": "CD:province:shaba@1972-1997",
+      "relation": "renamed_to",
+      "year": 1972,
+      "sources": [
+        "cd-worldstatesmen",
+        "cd-statoids"
+      ]
+    },
+    {
+      "from": "CD:province:shaba@1972-1997",
+      "to": "CD:province:katanga@1997-2015",
+      "relation": "renamed_to",
+      "year": 1997,
+      "sources": [
+        "cd-worldstatesmen"
+      ]
+    },
+    {
+      "from": "CD:province:bas-zaire@1971-1997",
+      "to": "CD:province:bas-congo@1997-2015",
+      "relation": "renamed_to",
+      "year": 1997,
+      "sources": [
+        "cd-wiki"
+      ]
+    },
+    {
+      "from": "CD:province:bas-congo@1997-2015",
+      "to": "CD:province:kongo-central@2015-",
+      "relation": "renamed_to",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:haut-zaire@1971-1997",
+      "to": "CD:province:orientale@1997-2015",
+      "relation": "renamed_to",
+      "year": 1997,
+      "sources": [
+        "cd-wiki"
+      ]
+    },
+    {
+      "from": "CD:province:katanga@1997-2015",
+      "to": "CD:province:haut-katanga@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-worldstatesmen"
+      ]
+    },
+    {
+      "from": "CD:province:katanga@1997-2015",
+      "to": "CD:province:haut-lomami@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-worldstatesmen"
+      ]
+    },
+    {
+      "from": "CD:province:katanga@1997-2015",
+      "to": "CD:province:lualaba@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-worldstatesmen"
+      ]
+    },
+    {
+      "from": "CD:province:katanga@1997-2015",
+      "to": "CD:province:tanganyika@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-worldstatesmen"
+      ]
+    },
+    {
+      "from": "CD:province:orientale@1997-2015",
+      "to": "CD:province:bas-uele@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:orientale@1997-2015",
+      "to": "CD:province:haut-uele@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:orientale@1997-2015",
+      "to": "CD:province:ituri@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:orientale@1997-2015",
+      "to": "CD:province:tshopo@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:equateur@1966-2015",
+      "to": "CD:province:equateur@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:equateur@1966-2015",
+      "to": "CD:province:mongala@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:equateur@1966-2015",
+      "to": "CD:province:nord-ubangi@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:equateur@1966-2015",
+      "to": "CD:province:sud-ubangi@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:equateur@1966-2015",
+      "to": "CD:province:tshuapa@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:bandundu@1966-2015",
+      "to": "CD:province:kwango@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:bandundu@1966-2015",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:bandundu@1966-2015",
+      "to": "CD:province:mai-ndombe@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup"
+      ]
+    },
+    {
+      "from": "CD:province:kasai-occidental@1966-2015",
+      "to": "CD:province:kasai@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-rulers"
+      ]
+    },
+    {
+      "from": "CD:province:kasai-occidental@1966-2015",
+      "to": "CD:province:kasai-central@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-rulers"
+      ]
+    },
+    {
+      "from": "CD:province:kasai-oriental@1966-2015",
+      "to": "CD:province:kasai-oriental@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-rulers"
+      ]
+    },
+    {
+      "from": "CD:province:kasai-oriental@1966-2015",
+      "to": "CD:province:lomami@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-rulers"
+      ]
+    },
+    {
+      "from": "CD:province:kasai-oriental@1966-2015",
+      "to": "CD:province:sankuru@2015-",
+      "relation": "split_into",
+      "year": 2015,
+      "sources": [
+        "cd-wiki",
+        "cd-statoids",
+        "cd-crisisgroup",
+        "cd-rulers"
+      ]
+    }
+  ]
+}

@@ -15,6 +15,10 @@ the synthetic benchmark lives elsewhere (week 6).
   translations), loaded as NameConcept and NameForm nodes with proposed
   `historical_cognate_of` edges: `python -m namebridge.crosspack
   data/crosspack/*.json`.
+- `places/` — provinces and towns renamed, merged or split (Burundi 1962 and
+  2025, Rwanda 2006, DRC 1966–2015), loaded as Region nodes with
+  `renamed_to`, `merged_into` and `split_into` edges: `python -m
+  namebridge.places data/places/*.json`.
 
 The public graph holds **spelling variants only**: there is no edge type
 for an adopted or changed name (`docs/NAME_CHANGE.md` rule 1), and no

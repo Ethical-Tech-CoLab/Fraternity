@@ -37,9 +37,16 @@ EDGE_TYPES = {
     "not_equivalent_to",  # negative constraint
 }
 
+# Places change too: a record may give a province or town by a name that was
+# later changed, merged into a larger unit, or split (Burundi 2025, Rwanda
+# 2006, DRC 2015). These relations join Region nodes only, old to new.
+PLACE_RELATIONS = {"renamed_to", "merged_into", "split_into"}
+EDGE_TYPES |= PLACE_RELATIONS
+
 NAME_NODES = {"NameForm", "NameConcept"}
 # Endpoint types for each relation; anything else is a modelling error.
-ENDPOINTS = {rel: (NAME_NODES, NAME_NODES) for rel in EDGE_TYPES}
+ENDPOINTS = {rel: (NAME_NODES, NAME_NODES) for rel in EDGE_TYPES - PLACE_RELATIONS}
+ENDPOINTS.update({rel: ({"Region"}, {"Region"}) for rel in PLACE_RELATIONS})
 ENDPOINTS["contains_morpheme"] = (NAME_NODES, {"Morpheme"})
 ENDPOINTS["married_or_previous_form_of"] = (NAME_NODES | {"Rule"}, NAME_NODES | {"Rule"})
 ENDPOINTS["transliteration_of"] = ({"NameForm"}, {"NameForm"})
@@ -51,7 +58,7 @@ ENDPOINTS["transliteration_of"] = ({"NameForm"}, {"NameForm"})
 # between unrelated names) is enforced for edges that use a variant type.
 SPELLING_VARIANTS = {"orthographic_variant_of", "phonetic_variant_of", "romanization_variant_of"}
 MIN_SPELLING_SIMILARITY = 0.8
-EQUIVALENCE_TYPES = EDGE_TYPES - {"not_equivalent_to", "commonly_confused_with", "contains_morpheme"}
+EQUIVALENCE_TYPES = EDGE_TYPES - {"not_equivalent_to", "commonly_confused_with", "contains_morpheme"} - PLACE_RELATIONS
 
 REQUIRED_EDGE_FIELDS = (
     "id", "from", "to", "relation_type",
@@ -83,6 +90,9 @@ def validate_node(node):
         text = str(node.get("text", ""))
         if text != unicodedata.normalize("NFC", text):
             errors.append(f"node {nid}: text must be Unicode NFC (W3C Character Model)")
+    if node.get("type") == "Region":
+        if not node.get("name") or not re.match(r"^[A-Z]{2}$", str(node.get("country", ""))):
+            errors.append(f"node {nid}: Region needs a 'name' and an ISO 3166 'country' (e.g. BI)")
     for key in forbidden_keys(node):
         errors.append(f"node {nid}: forbidden attribute {key!r} (no ethnicity, clan or religion; SCOPE.md §4)")
     return errors

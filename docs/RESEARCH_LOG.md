@@ -1467,3 +1467,19 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - Useful in principle: the Qur'an and its translations fix forms such as Yusuf, Maryam, Ibrahim, Yahya, Isa, which are cognates of Joseph, Mary, Abraham, John and Jesus. Swahili Christian forms already come partly from Arabic (*Yusufu*), so some links exist anyway.
 - **Risk:** forms found only in another religion's texts (*Yahya* for John, *Isa* for Jesus) look nothing like the Christian forms; their main use in matching would be to link a person across a **change of religion and name**. That is the name-change case: rule 1 (an adopted name is not a variant, no public edge) and the restricted layer, which G5 allows only after a legal check of religion as sensitive data (condition 3). Labelling a form by its religious source would also encode religion, which the guard forbids.
 - **Proposal:** forms that are the ordinary rendering in a corridor language (e.g. Swahili *Yusufu*, *Ibrahimu*) may enter the public graph from neutral sources (dictionaries, Bibles, civil lists), tagged by language only. Forms attested only in another religion's texts wait for G5 condition 3 and the restricted layer.
+
+## 2026-11-05 — Week 4: place names that changed
+
+**Why:** places are one of the main kinds of evidence (§5.6), and records, children and older people use old and new names side by side. The decision (user, 5 Nov): put place changes in the graph.
+
+**Schema:** three relations, Region to Region only, old to new: `renamed_to`, `merged_into` (with `partial` when only part of the old unit went there) and `split_into`. They are not name variants and do not count as name equivalence. A Region node needs a name and an ISO 3166 country. `SCHEMA.md` updated.
+
+**Sources (Tavily, 5 Nov 2026):**
+- **Burundi 2025** (law of March 2023; 18 provinces → 5): Wikipedia, *Provinces of Burundi* (table of correspondence with former provinces); Breaking Burundi and Burundi Times on the 2025 governors; CIA World Factbook 2024/2025. Muramvya, Rumonge and Gitega (zone of Mahwa) were split between new provinces (`partial`). *Small conflict:* Breaking Burundi puts all of Muramvya in Gitega; Wikipedia splits it between Bujumbura, Butanyerera and Gitega. Recorded as partial to all three.
+- **Burundi 1962:** Usumbura → Bujumbura (1 Jul 1962), Kitega → Gitega, Muhinga → Muyinga (Statoids; Wikipedia).
+- **Rwanda 2006** (12 provinces → 5): Nations Online (which former province went where; Kigali-Rural split three ways); Statoids. Town renames confirmed only for Butare → Huye, Gisenyi → Rubavu, Kibuye → Karongi, Cyangugu → Rusizi (Wikivoyage: "expect people to use either name"). **Not confirmed, left out:** Ruhengeri → Musanze, Gitarama → Muhanga, Byumba → Gicumbi, Kibungo → Ngoma, Umutara → Nyagatare.
+- **DRC:** 1966 city renames (Léopoldville → Kinshasa, Stanleyville → Kisangani, Élisabethville → Lubumbashi, Costermansville → Bukavu, and four more; Statoids); Katanga → Shaba (1972) → Katanga (1997) (WorldStatesmen); Bas-Zaïre → Bas-Congo → Kongo Central, Haut-Zaïre → Orientale (Wikipedia); the 2015 *découpage*, laws 015/004 and 015/006, six provinces split into 21 (Wikipedia table; Statoids; Crisis Group; Rulers.org).
+
+**Data and code:** `data/places/places-2026.1.json` (100 units, 76 changes, each sourced); `namebridge.places`. Graph: 296 nodes, 122 edges, valid. **Tests:** 108 (6 new).
+
+**Gaps:** the unconfirmed Rwandan town renames; the Kinyarwanda names of the new provinces (records in Kinyarwanda use them); communes and districts (Burundi 119 → 42 communes); HDX boundary files for coordinates (not needed for name matching yet).
