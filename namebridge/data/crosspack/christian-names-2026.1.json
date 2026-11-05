@@ -1,6 +1,6 @@
 {
   "dataset_id": "christian-names-2026.1",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Christian given names across the corridor's languages, from Bible translations: each translation fixes the form of a biblical name in its language. A form in a Bible does not show that a person named Jean is recorded as Yohana by a Swahili writer; that is the hypothesis these edges let the matcher test, at low weight (CONCEPT-IDEA.md §3: cognates are for query expansion, not automatic equivalence).",
   "regions": [
     "CD",
@@ -15,18 +15,6 @@
       "url": "https://www.biblafrique.net/Lingala/Lingala.htm",
       "locator": "Nouveau Testament, book list (two versions)",
       "language": "ln"
-    },
-    "ln-wikipedia": {
-      "name": "Lingala Wikipedia, 'Biblíya' (book names)",
-      "url": "https://ln.wikipedia.org/wiki/Bibl%C3%ADya",
-      "locator": "New Testament book list",
-      "language": "ln"
-    },
-    "en-canon": {
-      "name": "Wikipedia, 'Biblical canon' (New Testament table)",
-      "url": "https://en.wikipedia.org/wiki/Books_of_the_Bible",
-      "locator": "New Testament table: canonical gospels; Acts of Paul and Thecla, Acts of Peter",
-      "language": "en"
     },
     "sw-biblia": {
       "name": "Biblia Takatifu (Swahili), Open.Bible edition",
@@ -62,12 +50,6 @@
       "name": "Buku Lopatulika (Chichewa Bible), Bible Society of Malawi; 1922, revised 1966, 2014, 2018",
       "url": "https://www.bible.com/versions/1068-blp-2018-buku-lopatulika",
       "locator": "New Testament book list (also https://www.bibliatodo.com/ny/baibulo/baibulo/buku-lopatulika)",
-      "language": "ny"
-    },
-    "ny-wikipedia": {
-      "name": "Chichewa Wikipedia, 'Paulo Mtumwi'",
-      "url": "https://ny.wikipedia.org/wiki/Paulo_Mtumwi",
-      "locator": "article title and text",
       "language": "ny"
     },
     "ny-harvestime": {
@@ -117,6 +99,12 @@
       "url": "https://www.bible.com/bible/1068/LUK.1.27",
       "locator": "Luka 1:27 (Yosefe, Maria)",
       "language": "ny"
+    },
+    "en-kjv": {
+      "name": "King James Version, book list (bible.com) and Acts 13:9 ('Saul, (who also is called Paul,)')",
+      "url": "https://www.bible.com/versions/1-kjv-king-james-version",
+      "locator": "Old and New Testament book list: Matthew, Mark, Luke, John, James, 1-2 Peter, Jude; Acts 13:9 for Paul",
+      "language": "en"
     }
   },
   "concepts": [
@@ -135,7 +123,7 @@
           "text": "John",
           "lang": "en",
           "sources": [
-            "en-canon"
+            "en-kjv"
           ]
         },
         {
@@ -167,13 +155,6 @@
           ]
         },
         {
-          "text": "Yowane",
-          "lang": "ln",
-          "sources": [
-            "ln-wikipedia"
-          ]
-        },
-        {
           "text": "Yohane",
           "lang": "ny",
           "sources": [
@@ -198,7 +179,7 @@
           "text": "Matthew",
           "lang": "en",
           "sources": [
-            "en-canon"
+            "en-kjv"
           ]
         },
         {
@@ -260,7 +241,7 @@
           "text": "Mark",
           "lang": "en",
           "sources": [
-            "en-canon"
+            "en-kjv"
           ]
         },
         {
@@ -322,7 +303,7 @@
           "text": "Luke",
           "lang": "en",
           "sources": [
-            "en-canon"
+            "en-kjv"
           ]
         },
         {
@@ -370,7 +351,7 @@
           "text": "Peter",
           "lang": "en",
           "sources": [
-            "en-canon"
+            "en-kjv"
           ]
         },
         {
@@ -445,7 +426,7 @@
           "text": "Paul",
           "lang": "en",
           "sources": [
-            "en-canon"
+            "en-kjv"
           ]
         },
         {
@@ -466,7 +447,6 @@
           "text": "Paulo",
           "lang": "ny",
           "sources": [
-            "ny-wikipedia",
             "ny-harvestime"
           ]
         }

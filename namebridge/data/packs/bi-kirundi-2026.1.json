@@ -264,7 +264,8 @@
         "w"
       ],
       "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
-      "confidence": "medium"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/ʃ/",
@@ -272,8 +273,8 @@
       "spellings": [
         "ch"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "high"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
+      "confidence": "medium"
     },
     {
       "sound": "/ʃ/",
@@ -290,7 +291,7 @@
       "spellings": [
         "sh"
       ],
-      "source": "Wikipedia, Swahili language, 'Consonants' and 'Orthography', accessed 5 Nov 2026",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -300,7 +301,8 @@
         "tch"
       ],
       "source": "Wikipedia, French orthography [P3]",
-      "confidence": "high"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/tʃ/",
@@ -317,7 +319,7 @@
       "spellings": [
         "ch"
       ],
-      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -339,8 +341,8 @@
         "ge",
         "gi"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "medium"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 254: 'When the consonant g is immediately followed by the vowels e or i it is always pronounced j' (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
+      "confidence": "high"
     },
     {
       "sound": "/ʒ/",
@@ -349,8 +351,8 @@
         "j"
       ],
       "note": "Swahili has no /ʒ/; its j is [dʒ], so a Swahili writer likely writes j",
-      "source": "Wikipedia, Swahili language, 'Consonants' (no /ʒ/ in the inventory)",
-      "confidence": "hypothesis"
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026: sh is 'an unvoiced palatal grooved fricative (note the lack of a voiced counterpart)', so Swahili has no /ʒ/; j is 'as in English Joe'",
+      "confidence": "medium"
     },
     {
       "sound": "/ɲ/",
@@ -360,7 +362,8 @@
         "ny"
       ],
       "source": "Wikipedia, French orthography [P3]",
-      "confidence": "medium"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/ɲ/",
@@ -368,8 +371,9 @@
       "spellings": [
         "ny"
       ],
-      "source": "Wikipedia, Swahili language, 'Orthography'",
-      "confidence": "high"
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
+      "confidence": "high",
+      "note": "written ny before vowels, n before consonants (nchi)"
     },
     {
       "sound": "/ɾ/",
@@ -575,5 +579,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.4.0"
+  "version": "0.5.0"
 }

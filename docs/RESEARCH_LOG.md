@@ -1613,3 +1613,23 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Data:** places v0.10.0. **Tests:** 132 pass.
 
 **Open gaps:** Gitarama (direct source); Wikipedia-only entries in the packs (~32) and three Christian-name forms; DRC territories (coverage).
+
+## 2026-11-05 — Packs and Christian names: Wikipedia replaced where a primary source exists
+
+**Starting point:** 33 pack entries rested only on a wiki, plus three wiki sources in the Christian names.
+
+**Sources read (5 Nov 2026):**
+- **FSI, Swahili Basic Course** (US Foreign Service Institute, public domain; scanned, read as page images, pp. viii–xii): ch as in "cheese" (strongly affricated); j as in "Joe"; ng' as in "sing", also word-initially; **ny written ny before vowels, n before consonants** (nchi); **sh "an unvoiced palatal grooved fricative (note the lack of a voiced counterpart)"**, so Swahili has no /ʒ/; r (a flap) and l are distinct. Re-sourced 12 entries.
+- **FSI, Lingala Basic Course** (pp. xii–xiv): /ɛ/ and /ɔ/ are phonemes, "usually written e … o, but sometimes ɛ … ɔ"; ny = /ɲ/; **/r/ and /v/ only in unassimilated loan words** (why Lingala has Malako, Petelo); z ranges over [z, ʒ, dz, dʒ]. Re-sourced 2 entries.
+- **FSI, Introduction to French Phonology** (Salazar; scanned): p. 254 "When the consonant g is immediately followed by e or i it is always pronounced j" (high); p. 253 a section on written *ch* (audio drills only; medium); p. 329 "an s between two vowels is pronounced z", hence *ss* (medium). Re-sourced 6 entries.
+- **Zorc & Nibagwire (2007)**: /mp'aamafaraanga/ < /n-h-a…/ (written *mp* = n + h); §2.5.12 velarized consonants (bw, kw, tw). Re-sourced 2 entries.
+- **IRB Canada, RIR RWA103584.E (2010)**, quoting the 2008 ID card law: a single field "Amazina/names"; the order within it is not stated (claim narrowed accordingly).
+- **ALCASA, Africana Cataloging Guidelines 4c**: surname first "also … in Rwanda – in Kinyarwanda as well as French publications", often in capitals, varying even within one publication; **"Central African names (Congolese etc.) did not traditionally include a surname"** (new order rule in the DRC pack).
+- **King James Version** (bible.com book list; Acts 13:9 for Paul): replaces the Wikipedia canon table for the English forms.
+- **UK Rwanda Toponymic Factfile (2025)**: "Musanze (Ruhangeri)", another spelling of Ruhengeri (places data).
+
+**Removed:** the Lingala form *Yowane* (only source: Lingala Wikipedia); the Chichewa Wikipedia source (*Paulo* keeps the Harvestime course).
+
+**Still without a primary source, kept at confidence `low` with a note:** French writers' *ou* for /w/, *tch* for /tʃ/, *gn* for /ɲ/ (8 entries across the three packs; the UNESCO study on spelling African names [P4] would cover them but UNESDOC does not load without a browser); "people are addressed by the given name in speech" (rw-kiny). **Open gaps.**
+
+**Tests:** 132 pass. Packs: rw-kiny, bi-kirundi, cd-swc-ln bumped; Christian names v0.4.0.

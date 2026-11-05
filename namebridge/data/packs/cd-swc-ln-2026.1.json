@@ -69,6 +69,13 @@
       "practice": "database",
       "source": "SCOPE.md §1 (DRC); BENCHMARK_PROTOCOL.md §2.3; ICC, Annex 1, 'The issue of names used to identify citizens of the DRC' (SCOPE.md [S9])",
       "confidence": "medium"
+    },
+    {
+      "id": "order-no-traditional-surname",
+      "description": "Central African (Congolese) names did not traditionally include a surname; that has been changing, but should not be assumed. Library practice establishes such names in direct order",
+      "practice": "database",
+      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'Central African names (Congolese etc.) did not traditionally include a surname … These names are often established in direct order'",
+      "confidence": "medium"
     }
   ],
   "particles_and_morphemes": [],
@@ -120,7 +127,7 @@
         "ch"
       ],
       "note": "Swahili spelling; French writers use tch",
-      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -129,7 +136,7 @@
         "sh"
       ],
       "note": "Swahili spelling; French writers use ch",
-      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -138,7 +145,7 @@
         "ny"
       ],
       "note": "one sound",
-      "source": "Wikipedia, Swahili language, 'Orthography'",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -147,7 +154,7 @@
         "ng'"
       ],
       "note": "the apostrophe separates it from ng (two sounds); often dropped in records",
-      "source": "Wikipedia, Swahili language, 'Orthography'",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -157,7 +164,7 @@
         "e"
       ],
       "note": "Lingala open e; usually written e",
-      "source": "Wikipedia, Lingala",
+      "source": "FSI, Lingala Basic Course, Student Text, pp. xii-xiv: orthography/phoneme chart and note 3 ('/ɛ/ is usually written e, but sometimes ɛ; /ɔ/ is usually o, but sometimes ɔ'); note 1 (/r/ and /v/ only in unassimilated loan words) (public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Lingala/Basic/FSI%20-%20Lingala%20Basic%20Course%20-%20Student%20Text.pdf)",
       "confidence": "high"
     },
     {
@@ -167,7 +174,7 @@
         "o"
       ],
       "note": "Lingala open o; usually written o",
-      "source": "Wikipedia, Lingala",
+      "source": "FSI, Lingala Basic Course, Student Text, pp. xii-xiv: orthography/phoneme chart and note 3 ('/ɛ/ is usually written e, but sometimes ɛ; /ɔ/ is usually o, but sometimes ɔ'); note 1 (/r/ and /v/ only in unassimilated loan words) (public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Lingala/Basic/FSI%20-%20Lingala%20Basic%20Course%20-%20Student%20Text.pdf)",
       "confidence": "high"
     },
     {
@@ -193,9 +200,9 @@
         "ou",
         "w"
       ],
-      "note": "Mwamba / Mouamba",
+      "note": "Mwamba / Mouamba; Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)",
       "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3]); Wikipedia, Lingala (French-influenced ou for [u] in the Republic of the Congo)",
-      "confidence": "medium"
+      "confidence": "low"
     },
     {
       "sound": "/s/",
@@ -205,7 +212,7 @@
         "ss"
       ],
       "note": "double s between vowels, French-influenced",
-      "source": "Wikipedia, Lingala, 'Writing system'",
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 329: 'An s between two vowels is pronounced z', hence ss for /s/ between vowels (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf); APiCS Online, survey 60, Lingala (French spellings in Lingala)",
       "confidence": "medium"
     },
     {
@@ -214,8 +221,8 @@
       "spellings": [
         "ch"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "high"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
+      "confidence": "medium"
     },
     {
       "sound": "/tʃ/",
@@ -224,7 +231,8 @@
         "tch"
       ],
       "source": "Wikipedia, French orthography [P3]",
-      "confidence": "high"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/tʃ/",
@@ -418,5 +426,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.2.0"
+  "version": "0.3.0"
 }

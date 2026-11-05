@@ -35,16 +35,16 @@
   "order_rules": [
     {
       "id": "order-id-card-single-field",
-      "description": "The national ID card has one field, Amazina ('names'), with no first/last split; the Kinyarwanda name is commonly written first, then the given name",
+      "description": "The national ID card has one field for names, 'Amazina/names', with no first/last split. The order of the names inside the field is not stated by this source",
       "practice": "legal_document",
-      "source": "Wikipedia, Rwandan names, 'Official records', citing Immigration and Refugee Board of Canada, 'Rwanda: Procedures for obtaining the National Identity Card', 14 Oct 2010",
-      "confidence": "medium"
+      "source": "Immigration and Refugee Board of Canada, RIR RWA103584.E (21 Sep 2010), 'Rwanda: Procedures for obtaining the National Identity Card…', quoting the 2008 law: card fields 'Amazina/names; Itariki yavutseho/date of birth; Igitsina/sex…' (https://www.justice.gov/sites/default/files/eoir/legacy/2014/10/14/RWA103584.E.pdf)",
+      "confidence": "high"
     },
     {
       "id": "order-surname-first-uppercase",
-      "description": "In Kinyarwanda and French publications the Kinyarwanda name comes first, often in capitals: MUGISHA Jean",
+      "description": "In Kinyarwanda and French publications the Kinyarwanda name may come first, often in capitals (MUGISHA Jean); the capitals vary even within one publication",
       "practice": "database",
-      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order', via Wikipedia, Rwandan names",
+      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'surnames before given names … also true elsewhere, e.g. in Rwanda – in Kinyarwanda as well as French publications'; 'often the surname is given (helpfully) all upper-case, though sometimes even that varies'",
       "confidence": "medium"
     },
     {
@@ -52,7 +52,8 @@
       "description": "In speech people are usually addressed by the given name; the Kinyarwanda name is used where a formal or identifying form is needed. A name reported orally may therefore be the given name alone",
       "practice": "cultural",
       "source": "Wikipedia, Rwandan names, 'Address in spoken life'",
-      "confidence": "low"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     }
   ],
   "particles_and_morphemes": [
@@ -114,7 +115,7 @@
     {
       "id": "mp-is-mh",
       "description": "After m, the letter p stands for an aspirated [h]: impamvu [imhamvu]",
-      "source": "Wikibooks, Kinyarwanda/Orthography",
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007) (https://www.matana.de/kirundi_kinyarwanda.pdf), §2 (compensatory lengthening): /mp'aamafaraanga/ 'Give me some money!' < /n-h-a ama-faraanga/: written mp stands for n + h",
       "confidence": "medium"
     },
     {
@@ -128,7 +129,7 @@
     {
       "id": "uppercase-kiny-name",
       "description": "Kinyarwanda name in capitals before the given name (MUGISHA Jean). Capitals mark which element is the Kinyarwanda name; case is kept in the source value and folded only in search forms",
-      "source": "Wikipedia, Rwandan names, 'Written order and capitalisation'",
+      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026",
       "confidence": "medium"
     }
   ],
@@ -259,7 +260,8 @@
         "w"
       ],
       "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
-      "confidence": "medium"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/ʃ/",
@@ -267,8 +269,8 @@
       "spellings": [
         "ch"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "high"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
+      "confidence": "medium"
     },
     {
       "sound": "/ʃ/",
@@ -285,7 +287,7 @@
       "spellings": [
         "sh"
       ],
-      "source": "Wikipedia, Swahili language, 'Consonants' and 'Orthography', accessed 5 Nov 2026",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -295,7 +297,8 @@
         "tch"
       ],
       "source": "Wikipedia, French orthography [P3]",
-      "confidence": "high"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/tʃ/",
@@ -312,7 +315,7 @@
       "spellings": [
         "ch"
       ],
-      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
       "confidence": "high"
     },
     {
@@ -323,8 +326,8 @@
         "ge",
         "gi"
       ],
-      "source": "Wikipedia, French orthography [P3]",
-      "confidence": "medium"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 254: 'When the consonant g is immediately followed by the vowels e or i it is always pronounced j' (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
+      "confidence": "high"
     },
     {
       "sound": "/ʒ/",
@@ -333,8 +336,8 @@
         "j"
       ],
       "note": "Swahili has no /ʒ/; its j is [dʒ], so a Swahili writer likely writes j for both",
-      "source": "Wikipedia, Swahili language, 'Consonants' (no /ʒ/ in the inventory)",
-      "confidence": "hypothesis"
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026: sh is 'an unvoiced palatal grooved fricative (note the lack of a voiced counterpart)', so Swahili has no /ʒ/; j is 'as in English Joe'",
+      "confidence": "medium"
     },
     {
       "sound": "/ɲ/",
@@ -344,7 +347,8 @@
         "ny"
       ],
       "source": "Wikipedia, French orthography [P3]",
-      "confidence": "medium"
+      "confidence": "low",
+      "note": "Wikipedia only; needs a primary source (RESEARCH_LOG.md, 5 Nov 2026)"
     },
     {
       "sound": "/ɲ/",
@@ -352,8 +356,9 @@
       "spellings": [
         "ny"
       ],
-      "source": "Wikipedia, Swahili language, 'Orthography'",
-      "confidence": "high"
+      "source": "FSI, Swahili Basic Course, Student Text, 'The Pronunciation of Swahili', pp. viii-xii (US Foreign Service Institute, public domain; https://fsi-languages.yojik.eu/languages/oldfsi/languages/Swahili/Basic/FSI%20-%20Swahili%20Basic%20Course%20-%20Student%20Text.pdf), read 5 Nov 2026",
+      "confidence": "high",
+      "note": "written ny before vowels, n before consonants (nchi)"
     },
     {
       "sound": "/ɾ/",
@@ -425,7 +430,7 @@
       ],
       "listener": "non-Kinyarwanda writer",
       "note": "written bw is said [bɡ]",
-      "source": "Wikipedia, Kinyarwanda (Cw table)",
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007) (https://www.matana.de/kirundi_kinyarwanda.pdf), §2.5.12 (back vowels u, o become w or a velarized consonant: bw, kw, tw); FSI Kirundi Basic Course, pronunciation synopsis (mw [mg], rw [rgw], tw [tkw])",
       "confidence": "medium"
     },
     {
@@ -564,5 +569,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.3.0"
+  "version": "0.4.0"
 }

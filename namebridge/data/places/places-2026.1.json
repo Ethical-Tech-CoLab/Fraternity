@@ -189,6 +189,12 @@
       "url": "https://www.nesa.gov.rw/fileadmin/user_upload/NESA/Ressources/Reports/School_Performance_Rankings_2023-2024_National_Examination_Results_1.pdf",
       "locator": "school 270815 'GS GITARAMA', district Muhanga (indirect evidence for the town's location)",
       "language": "en"
+    },
+    "rw-uk-factfile": {
+      "name": "UK Government, Rwanda Toponymic Factfile (2025)",
+      "url": "https://assets.publishing.service.gov.uk/media/679903cd636f8db3c270713e/Rwanda_Toponymic_Factfile.pdf",
+      "locator": "names table: 'Musanze (Ruhangeri)' populated place",
+      "language": "en"
     }
   },
   "units": [
@@ -2596,6 +2602,12 @@
           "lang": "rw",
           "note": "the district that the former town of Ruhengeri became part of",
           "source": "rw-musanze-gov"
+        },
+        {
+          "name": "Ruhangeri",
+          "lang": "rw",
+          "source": "rw-uk-factfile",
+          "note": "spelling in the UK toponymic factfile ('Musanze (Ruhangeri)')"
         }
       ]
     },
