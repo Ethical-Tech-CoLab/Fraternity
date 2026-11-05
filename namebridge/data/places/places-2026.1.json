@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.10.1",
+  "version": "0.11.0",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -206,6 +206,24 @@
       "name": "The New Times (Kigali), 'Gitarama roads, houses to be named'",
       "url": "https://www.newtimes.co.rw/article/10795/gitarama-roads-houses-to-be-named/amp",
       "locator": "'All roads in Gitarama town, Muhanga district …'",
+      "language": "en"
+    },
+    "cd-ocha-scaleup-2023": {
+      "name": "OCHA, DRC: Ituri, North Kivu, South Kivu - Scale up Response Report (July-November 2023)",
+      "url": "https://www.unocha.org/publications/report/democratic-republic-congo/democratic-republic-congo-ituri-north-kivu-south-kivu-scale-response-report-reporting-period-july-november-2023",
+      "locator": "'in the province, particularly in the territories of Masisi, Rutshuru, Lubero, Beni, Nyiragongo and Walikale' (North Kivu)",
+      "language": "en"
+    },
+    "cd-ocha-sk-2026": {
+      "name": "OCHA, RD Congo: Situation humanitaire dans la province du Sud-Kivu, rapport de situation #4 (21 avril 2026)",
+      "url": "https://www.unocha.org/publications/report/democratic-republic-congo/rd-congo-situation-humanitaire-dans-la-province-du-sud-kivu-rapport-de-situation-4-21-avril-2026",
+      "locator": "territoires de Fizi, Mwenga, Uvira, Kalehe, Shabunda; Walungu, Uvira, Kabare",
+      "language": "fr"
+    },
+    "cd-ocha-map-2025": {
+      "name": "OCHA, Eastern DRC: Incidents against humanitarian workers (December 2025), map by territory",
+      "url": "https://www.unocha.org/attachments/67e4a867-4b05-481b-a5d2-32d49167bae1/OCHA_DRC_Snapshot_incident_against_Hum_December%202025.pdf",
+      "locator": "map labels by territory, incl. Idjwi, Kabare, Walungu (Sud-Kivu) and 'Nyirangongo' (Nord-Kivu)",
       "language": "en"
     }
   },
@@ -2097,6 +2115,112 @@
       "period": "2015-"
     },
     {
+      "key": "CD:territory:beni@current",
+      "name": "Beni",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:fizi@current",
+      "name": "Fizi",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:idjwi@current",
+      "name": "Idjwi",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:kabare@current",
+      "name": "Kabare",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:kalehe@current",
+      "name": "Kalehe",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:lubero@current",
+      "name": "Lubero",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:masisi@current",
+      "name": "Masisi",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:mwenga@current",
+      "name": "Mwenga",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:nyiragongo@current",
+      "name": "Nyiragongo",
+      "country": "CD",
+      "level": "territory",
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Nyirangongo",
+          "lang": "fr",
+          "source": "cd-ocha-map-2025",
+          "note": "spelling on an OCHA map (an extra n before g)"
+        }
+      ]
+    },
+    {
+      "key": "CD:territory:rutshuru@current",
+      "name": "Rutshuru",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:shabunda@current",
+      "name": "Shabunda",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:uvira@current",
+      "name": "Uvira",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:walikale@current",
+      "name": "Walikale",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
+      "key": "CD:territory:walungu@current",
+      "name": "Walungu",
+      "country": "CD",
+      "level": "territory",
+      "period": "current"
+    },
+    {
       "key": "CD:town:bakwanga@pre1966",
       "name": "Bakwanga",
       "country": "CD",
@@ -2144,6 +2268,13 @@
       "country": "CD",
       "level": "town",
       "period": "pre1966"
+    },
+    {
+      "key": "CD:town:goma@current",
+      "name": "Goma",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
     },
     {
       "key": "CD:town:kananga@1966-",
@@ -7564,6 +7695,142 @@
         "cd-statoids"
       ],
       "note": "~1998 (Statoids)"
+    },
+    {
+      "from": "CD:territory:masisi@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-scaleup-2023"
+      ]
+    },
+    {
+      "from": "CD:territory:rutshuru@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-scaleup-2023"
+      ]
+    },
+    {
+      "from": "CD:territory:lubero@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-scaleup-2023"
+      ]
+    },
+    {
+      "from": "CD:territory:beni@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-scaleup-2023"
+      ]
+    },
+    {
+      "from": "CD:territory:nyiragongo@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-scaleup-2023"
+      ]
+    },
+    {
+      "from": "CD:territory:walikale@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-scaleup-2023"
+      ]
+    },
+    {
+      "from": "CD:territory:fizi@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:mwenga@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:uvira@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:kalehe@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:shabunda@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:walungu@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:kabare@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-sk-2026"
+      ]
+    },
+    {
+      "from": "CD:territory:idjwi@current",
+      "to": "CD:province:sud-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-ocha-map-2025"
+      ]
+    },
+    {
+      "from": "CD:town:goma@current",
+      "to": "CD:province:nord-kivu@1988-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-statoids"
+      ],
+      "note": "provincial capital (Statoids table of provinces)"
     }
   ]
 }

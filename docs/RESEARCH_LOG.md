@@ -1650,3 +1650,13 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **"Rwandans are addressed by the given name in speech":** no primary source found (searched official, UN and press sources). A Presbyterian Church (USA) mission letter (2017) describes two names (a Rwandan name and, for Christians, a baptismal name) but not forms of address. Kept at `low`; would be closed by Kimenyi (1978), *Anthropological Linguistics* 20(6) (JSTOR, needs NYU library access). Teknonymy ("Mama Teta"), relevant to children's reports like "Mama Belyse" (`GATE_EXAMPLES.md`), also lacks a non-wiki source: **open**.
 
 **Tests:** 132 pass.
+
+## 2026-11-05 — Territories of Nord-Kivu and Sud-Kivu
+
+**Why these first:** most DRC refugees in Dzaleka come from the Kivus; a person may name the territory (Masisi, Uvira…) rather than the province.
+
+**Sources (OCHA, UN):** *Scale up Response Report, Ituri, North Kivu, South Kivu* (Jul–Nov 2023): North Kivu territories Masisi, Rutshuru, Lubero, Beni, Nyiragongo, Walikale; *Sud-Kivu sitrep #4* (21 Apr 2026): Fizi, Mwenga, Uvira, Kalehe, Shabunda, Walungu, Kabare; *Eastern DRC incidents map* (Dec 2025): adds Idjwi, and spells **"Nyirangongo"** (an extra *n*), the same nasal insertion as Nyarusange/Nyanrusange, now in an official UN document. Goma placed in Nord-Kivu (Statoids, provincial capitals).
+
+**Data:** 14 territories `located_in` their province; places v0.11.0. **Tests:** 132 pass (integrity tests now cover the territory level).
+
+**Not done (coverage):** territories of the other 24 provinces; Beni and Uvira as towns (homonyms of their territories).

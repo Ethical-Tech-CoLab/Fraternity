@@ -314,6 +314,20 @@
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:tanganyika@2015-", "level": "province", "name": "Tanganyika", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:tshopo@2015-", "level": "province", "name": "Tshopo", "period": "2015-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:province:tshuapa@2015-", "level": "province", "name": "Tshuapa", "period": "2015-", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:beni@current", "level": "territory", "name": "Beni", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:fizi@current", "level": "territory", "name": "Fizi", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:idjwi@current", "level": "territory", "name": "Idjwi", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:kabare@current", "level": "territory", "name": "Kabare", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:kalehe@current", "level": "territory", "name": "Kalehe", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:lubero@current", "level": "territory", "name": "Lubero", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:masisi@current", "level": "territory", "name": "Masisi", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:mwenga@current", "level": "territory", "name": "Mwenga", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:nyiragongo@current", "level": "territory", "name": "Nyiragongo", "other_names": [{"lang": "fr", "name": "Nyirangongo", "note": "spelling on an OCHA map (an extra n before g)", "source": "cd-ocha-map-2025"}], "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:rutshuru@current", "level": "territory", "name": "Rutshuru", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:shabunda@current", "level": "territory", "name": "Shabunda", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:uvira@current", "level": "territory", "name": "Uvira", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:walikale@current", "level": "territory", "name": "Walikale", "period": "current", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:territory:walungu@current", "level": "territory", "name": "Walungu", "period": "current", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:bakwanga@pre1966", "level": "town", "name": "Bakwanga", "period": "pre1966", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:bandundu@1966-", "level": "town", "name": "Bandundu", "period": "1966-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:banningville@pre1966", "level": "town", "name": "Banningville", "period": "pre1966", "type": "Region"}
@@ -321,6 +335,7 @@
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:coquilhatville@pre1966", "level": "town", "name": "Coquilhatville", "period": "pre1966", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:costermansville@pre1966", "level": "town", "name": "Costermansville", "period": "pre1966", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:elisabethville@pre1966", "level": "town", "name": "Élisabethville", "period": "pre1966", "type": "Region"}
+{"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:goma@current", "level": "town", "name": "Goma", "period": "current", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:kananga@1966-", "level": "town", "name": "Kananga", "period": "1966-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:kinshasa@1966-", "level": "town", "name": "Kinshasa", "period": "1966-", "type": "Region"}
 {"country": "CD", "dataset_id": "places-2026.1", "id": "region:CD:town:kisangani@1966-", "level": "town", "name": "Kisangani", "period": "1966-", "type": "Region"}
