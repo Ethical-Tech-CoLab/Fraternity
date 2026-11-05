@@ -1685,3 +1685,10 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Ambiguity kept, not guessed:** without a type column, "Beni" may be the city or the territory; the territory's seat, **Oïcha**, is a separate unit, and pcodes CD6106 and CD6108 are absent (merged or retired units). The type of each level-2 unit is not asserted.
 
 **Data:** places v0.12.0. **Tests:** 132 pass.
+
+**Same day, from the same RGC file (gap found by a spot check: "Tshikapa" returned nothing):**
+- **Level 3:** 519 units (communes, sectors, chiefdoms; e.g. Kinshasa's communes Bandalungwa, Barumbu…), each `located_in` its level-2 unit; none left without a parent. Tshikapa is a level-3 unit of Kamonia.
+- **Provincial capitals** (sheet `cod_admincapitals`, `adm_p_lvl = 1`): all 25 placed. **Two conflicts settled by the official source:** Kwilu's capital is **Bandundu** (as UNICEF 2021 and ReliefWeb; Statoids' Kikwit superseded); Kasaï's capital is **Tshikapa** (Statoids' Luebo superseded). The file writes "Mbuji Mayi" without a hyphen (folding handles it).
+- Places v0.13.0. **Tests:** 132 pass.
+
+**Open gap after this:** "given name in speech" and teknonymy (rw-kiny), waiting on Kimenyi (1989).
