@@ -331,6 +331,23 @@ Use multiple blocking/index strategies in parallel:
 
 The goal of blocking is high recall. Final scoring then suppresses weak candidates.
 
+### 5.5A Reciprocal search: both sides looking (added 5 Nov 2026)
+
+*Proposed by the user (5 Nov 2026).* A tracing request describes two people: the one searching and the one sought. If the sought person is also searching, their request describes the first person in turn. So every request is matched two ways:
+
+1. **Against registered people** (as in Primero/CPIMS+, which matches caregivers' tracing requests against registered children; `RESEARCH_LOG.md`, 26 Oct).
+2. **Against other requests, crossed:** the sought person in request A against the searcher in request B, and the reverse. A girl names "Mama Belyse"; a Belyse, separately, is looking for a daughter whose name and age agree with the girl's.
+
+**Why it is strong evidence.** Two accounts given separately, each pointing at the other, are worth more than either alone, because their errors are mostly independent. Not always: if one clerk or interpreter wrote both, their spelling habits are shared, so `written_by` and `recorded_by_convention` (§5.4A) are checked and shared-writer pairs get no independence credit (§5.6: no evidence counted twice).
+
+**Rules:**
+
+- **Both paths run at once.** Many sought people never file a request (they do not know where to look, are elsewhere, or have died). The reciprocal path adds candidates and raises their priority; it never replaces the one-sided search.
+- **Standing searches.** Requests stay active: a request filed later is matched against earlier ones. Mutual matches can be months apart.
+- **The sought person's details are never shown to a searcher.** The searcher must supply them: name, age, places, relatives, how they were separated. Anyone could otherwise claim to be the mother of a girl whose name the system revealed. Disclosure is a caseworker's act, after the person found agrees (`NAME_CHANGE.md` rule 6; RFL guide §7.3.2).
+- **A reciprocal match does not close a case.** It is a strong candidate for verification. Knowing a child's name is no proof: whoever took a child knows her name too, and traffickers can be relatives (IFRC; `RESEARCH_LOG.md`, 26 Oct). Verification follows the child-protection standard: "matching information from both parties without bringing them into contact, and asking verifying questions", then a best-interests check before any reunification of a child.[^cpms13]
+- **Minors:** a reciprocal match with verified details is a candidate answer to G4 question 2, the non-name check a minor needs before "strong evidence" (`GATE_EXAMPLES.md`). The professor decides.
+
 ### 5.6 Probabilistic evidence model
 
 Use a Fellegi–Sunter-style model or another calibrated probabilistic linker as the interpretable starting point. Splink implements this approach at scale and supports term-frequency adjustments, custom fuzzy comparisons and explainable diagnostics. Its own documentation stresses that person linkage works best with several partly independent fields, such as name, date of birth and city, rather than a name alone.[^splink]
@@ -744,4 +761,5 @@ This architecture directly supports the missing-person intent while avoiding the
 [^pprl]: Vatsalan and Christen, [“Multi-Party Privacy-Preserving Record Linkage using Bloom Filters”](https://arxiv.org/html/1612.08835v1), 2016.
 [^prob-linkage]: Sayers et al., [“Probabilistic record linkage”](https://pmc.ncbi.nlm.nih.gov/articles/PMC5005943/), *International Journal of Epidemiology*, 2016.
 [^fraternity-concept]: Ethical Tech CoLab, [Fraternity `CONCEPT.md`](https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/CONCEPT.md).
+[^cpms13]: Alliance for Child Protection in Humanitarian Action, *Child Protection Minimum Standards*, Standard 13 "Unaccompanied and separated children", draft 2 for consultation, §13.9 Verification ([PDF](https://alliancecpha.org/sites/default/files/news/attachments/st-13-uasc_draft-2-for-consultation.pdf)), accessed 5 Nov 2026; consistent with Better Care Network, ["Verification and Family Reunification"](https://bettercarenetwork.org/library/childrens-care-in-emergencies/verification-and-family-reunification) ("adults may identify the wrong child"). The draft's final wording is not yet checked.
 [^fraternity-background]: Ethical Tech CoLab, [Fraternity `RESEARCH_BACKGROUND_DOCUMENT.md`](https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/RESEARCH_BACKGROUND_DOCUMENT.md).

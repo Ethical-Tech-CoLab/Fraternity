@@ -109,6 +109,7 @@ The generator never copies a real full name. It **recombines** common elements f
 - **Family relationships**: parent, sibling, spouse, household.
 - **Non-match** pairs, including all hard negatives.
 - The "expected" outcome for each query: found / not present / insufficient evidence. Some sought people have **no** record, so abstention can be tested.
+- **Reciprocal pairs** (`CONCEPT-IDEA.md` §5.5A, added 5 Nov 2026): some sought people also file a request for the searcher. The share is a **varied parameter** *r* (no source yet on how often both sides search); some pairs are written by the same clerk, so shared-writer errors are tested. Results are reported with and without the reciprocal path, so its gain is measured, not assumed.
 
 ## 3. Splits (§9.3)
 

@@ -1337,3 +1337,22 @@ No literacy figure for Dzaleka itself was found. The 2023 Dzaleka Education Asse
 **Limits agreed:** a spelling yields a set of possible IPA readings, not one transcription (length and tone are unwritten; names written by ear are already filtered through the writer); IPA is never shown to or typed by caseworkers; sound never decides a match alone (T17).
 
 **Files touched:** `docs/TIMETABLE.md` (week 7).
+
+## 2026-11-05 — Reciprocal search: both sides looking (user's proposal)
+
+**User's idea (5 Nov 2026), reading `GATE_EXAMPLES.md` example 1:** if a girl remembers her mother as "Mama Belyse", look for a Belyse who is herself searching for a daughter like the girl. The girl's name is never shown to the mother; the mother must supply it. If it is right, the case is solved; if not, search more widely.
+
+**Sources:**
+- [V1] Alliance CPHA, *Child Protection Minimum Standards*, Standard 13 (UASC), draft 2 for consultation, §13.9 ([PDF](https://alliancecpha.org/sites/default/files/news/attachments/st-13-uasc_draft-2-for-consultation.pdf)): verification "is usually done by matching information from both parties without bringing them into contact, and asking verifying questions"; it also confirms both sides want reunification and that "the child is not handed over to the wrong person". *Draft text, read from a search extract; final wording not checked.*
+- [V2] Better Care Network, [Verification and Family Reunification](https://bettercarenetwork.org/library/childrens-care-in-emergencies/verification-and-family-reunification): "adults may identify the wrong child"; a claimed relationship "should be verified before reunification".
+- Primero/CPIMS+ already matches caregivers' tracing requests against registered children (26 Oct entry).
+
+**Assessment:** the idea is sound and matches the standard [V1]. Three changes, agreed in discussion:
+1. A reciprocal match is a **strong candidate, not a closed case**: knowing a child's name is not proof (traffickers can be relatives, IFRC); verification and a best-interests check still follow.
+2. The **one-sided search runs at the same time**, not after: many sought people never file a request.
+3. **Standing searches**: a later request is matched against earlier ones.
+Added: no independence credit when the same clerk wrote both requests (shared spelling habits).
+
+**Placed in:** `CONCEPT-IDEA.md` §5.5A (design); `BENCHMARK_PROTOCOL.md` §2.5 (reciprocal pairs, varied share *r*); `TIMETABLE.md` weeks 6 and 7; G4 row (candidate answer to question 2, for the professor). Not in `GATE_EXAMPLES.md`, by the user's choice: that page only illustrates error costs.
+
+**Gap:** no source on how often both sides of a separated family file requests; *r* is varied.
