@@ -48,3 +48,27 @@ def test_region_needs_country():
 def test_repo_graph_holds_the_places():
     ids = {n.get("dataset_id") for n in ng.read_jsonl(ROOT / "graph" / "nodes.jsonl")}
     assert "places-2026.1" in ids
+
+
+def test_rwandan_towns_kept_their_names():
+    # Byumba the town was not renamed in 2006: it is the capital of Gicumbi
+    # District. Byumba the former province was merged; both share the name.
+    nodes, edges = dataset_to_graph(places())
+    names = {n["id"]: n["name"] for n in nodes}
+    town = next(n["id"] for n in nodes if n["name"] == "Byumba" and n["level"] == "town")
+    byumba = [e for e in edges if e["from"] == town]
+    assert byumba and all(e["relation_type"] == "located_in" for e in byumba)
+    assert any(names[e["to"]] == "Gicumbi" for e in byumba)
+
+
+def test_kinyarwanda_province_names_are_sourced():
+    nodes, _ = dataset_to_graph(places())
+    north = next(n for n in nodes if n["name"] == "Northern Province")
+    assert {"name": "Intara y'Amajyaruguru", "lang": "rw", "source": "rw-north"} in north["other_names"]
+
+
+def test_other_name_needs_source():
+    data = places()
+    unit = next(u for u in data["units"] if u.get("other_names"))
+    unit["other_names"][0]["source"] = "nowhere"
+    assert any("needs a known source" in e for e in validate_dataset(data))

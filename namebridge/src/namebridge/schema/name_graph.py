@@ -40,7 +40,10 @@ EDGE_TYPES = {
 # Places change too: a record may give a province or town by a name that was
 # later changed, merged into a larger unit, or split (Burundi 2025, Rwanda
 # 2006, DRC 2015). These relations join Region nodes only, old to new.
-PLACE_RELATIONS = {"renamed_to", "merged_into", "split_into"}
+# located_in is containment, not a change: Rwandan towns mostly kept their
+# names in 2006 while the districts around them got new ones (Byumba is in
+# Gicumbi), so a person and a record may name different levels.
+PLACE_RELATIONS = {"renamed_to", "merged_into", "split_into", "located_in"}
 EDGE_TYPES |= PLACE_RELATIONS
 
 NAME_NODES = {"NameForm", "NameConcept"}

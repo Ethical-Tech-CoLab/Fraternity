@@ -1483,3 +1483,20 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Data and code:** `data/places/places-2026.1.json` (100 units, 76 changes, each sourced); `namebridge.places`. Graph: 296 nodes, 122 edges, valid. **Tests:** 108 (6 new).
 
 **Gaps:** the unconfirmed Rwandan town renames; the Kinyarwanda names of the new provinces (records in Kinyarwanda use them); communes and districts (Burundi 119 → 42 communes); HDX boundary files for coordinates (not needed for name matching yet).
+
+## 2026-11-05 — Rwanda place gaps: towns were not renamed, districts were
+
+**Question (user):** close the Rwanda gaps, and explain the difficulty. The difficulty: the renames are widely known, but no page read so far stated them, and the project adds a link only when a read source states it.
+
+**Findings (Tavily, 5 Nov 2026):**
+- **Two of the five expected renames were wrong.** Byumba was not renamed: it is "a city and sector … and the capital of Gicumbi District". Kibungo likewise is "the capital of Ngoma District". In 2006 the *towns* mostly kept their names; the *districts* around them got new ones.
+- **Ruhengeri:** "today known as Musanze … the capital of Musanze District"; "some sources now refer to the city itself as Musanze". **Butare:** "also known as Huye and formerly known as Astrida" (renamed 1962); capital of Huye District. **Gitarama:** "Muhanga district, then known as Gitarama"; infobox "Muhanga City / Gitarama". **Gisenyi:** still Gisenyi, "historically rendered as Kisenyi", in Rubavu District. **Cyangugu:** still Cyangugu, "formerly Shangugu", capital of Rusizi District. **Kibuye:** a city in Karongi District. (Wikipedia, each town's article.)
+- **Umutara** was a province (capital Nyagatare), already in the data as merged into the Eastern Province.
+- **Organic Law 29/2005**, art. 4 (English text read): four provinces and the City of Kigali, with head offices.
+- **Kinyarwanda names**, from each province's official site: *Intara y'Amajyaruguru* (Northern; "brought together the former Ruhengeri, Byumba and the northern part of the former **Kigali Ngali**", the Kinyarwanda name of Kigali-Rural), *Intara y'Amajyepfo* (Southern; former prefectures Gitarama, Butare, Gikongoro), *Intara y'Iburasirazuba* (Eastern), *Intara y'Iburengerazuba* (Western), *Umujyi wa Kigali*.
+
+**Correction:** the four town renames taken from Wikivoyage on 5 Nov ("Gisenyi → Rubavu" etc.) were imprecise and are removed. Lesson recorded: a travel guide's "X (Y)" does not say whether Y is a new name or the surrounding district.
+
+**Schema and data:** a fourth place relation, `located_in` (containment, not a change); places carry `other_names` with sources. Places dataset v0.2.0: 110 units, 90 links. Graph: 306 nodes, 136 edges, valid. **Tests:** 111 (3 new), incl. one showing that Byumba the town and Byumba the former province share a name.
+
+**Still open:** French names of the provinces (*Province du Nord* …) from the French text of Law 29/2005; Burundi and DRC communes.

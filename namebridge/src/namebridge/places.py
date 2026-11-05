@@ -2,10 +2,12 @@
 
 A dataset (data/places/*.json) lists units (a name in a country at a level,
 over a period) and changes between them, each with its sources. Each unit
-becomes a Region node and each change a proposed edge, old to new:
-renamed_to, merged_into (partial when only part of the unit went there) or
-split_into. A child who says "Kayanza" and a record that says "Butanyerera"
-can then be compared.
+becomes a Region node, with its other names (Kinyarwanda names, colonial
+names, old spellings) and their sources, and each change a proposed edge,
+old to new: renamed_to, merged_into (partial when only part of the unit went
+there) or split_into. located_in records containment, not a change (Byumba
+is in Gicumbi District). A child who says "Kayanza" and a record that says
+"Butanyerera" can then be compared.
 
 Run: python -m namebridge.places data/places/<dataset>.json ... [--graph data/graph]
 """
@@ -25,6 +27,10 @@ def validate_dataset(data):
     if errors:
         return errors
     keys = {unit["key"] for unit in data["units"]}
+    for unit in data["units"]:
+        for other in unit.get("other_names", []):
+            if other.get("source") not in data["sources"]:
+                errors.append(f"dataset {did}: {unit['key']}: other name {other.get('name')!r} needs a known source")
     for i, change in enumerate(data["changes"]):
         where = f"dataset {did}: change {i} ({change.get('from')} -> {change.get('to')})"
         if change.get("relation") not in PLACE_RELATIONS:
@@ -45,7 +51,8 @@ def dataset_to_graph(data):
     sources = data["sources"]
     nodes = [
         {"id": f"region:{unit['key']}", "type": "Region", "name": unit["name"], "country": unit["country"],
-         "level": unit["level"], "period": unit["period"], "dataset_id": did}
+         "level": unit["level"], "period": unit["period"], "dataset_id": did,
+         **({"other_names": unit["other_names"]} if unit.get("other_names") else {})}
         for unit in data["units"]
     ]
     edges = []

@@ -1,7 +1,7 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.1.0",
-  "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided). Records and memories use old and new names side by side.",
+  "version": "0.2.0",
+  "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side.",
   "confidence": 0.9,
   "sources": {
     "bi-wiki": {
@@ -74,6 +74,42 @@
       "name": "Rulers.org, 'Congo (Kinshasa) provinces'",
       "url": "https://rulers.org/cngkprov.html",
       "locator": "Kasaï-Oriental split 15 Jul 2015; Kasaï-Occidental split 18 Jul 2015",
+      "language": "en"
+    },
+    "rw-law-29-2005": {
+      "name": "Organic Law No 29/2005 of 31/12/2005 determining the administrative entities of the Republic of Rwanda (UT Austin repository copy)",
+      "url": "https://repositories.lib.utexas.edu/bitstreams/45c2a91d-00f9-4212-80cc-93dbe7f06631/download",
+      "locator": "Article 4 (four provinces and the City of Kigali, head offices); Annex I (boundaries, e.g. II.2.2.1 Musanze District)",
+      "language": "en"
+    },
+    "rw-north": {
+      "name": "Northern Province of Rwanda, official website (Intara y'Amajyaruguru)",
+      "url": "https://www.northernprovince.gov.rw",
+      "locator": "home page: created by Law 29/2005 from the former Ruhengeri, Byumba and northern part of Kigali Ngali; districts Burera, Gakenke, Gicumbi, Musanze, Rulindo",
+      "language": "rw"
+    },
+    "rw-south": {
+      "name": "Southern Province of Rwanda, official website (Intara y'Amajyepfo)",
+      "url": "https://www.southernprovince.gov.rw",
+      "locator": "home page: brought together the former prefectures of Gitarama, Butare and Gikongoro; 8 districts incl. Muhanga, Huye",
+      "language": "rw"
+    },
+    "rw-east": {
+      "name": "Eastern Province of Rwanda, official website (Intara y'Iburasirazuba)",
+      "url": "https://www.easternprovince.gov.rw",
+      "locator": "home page title and description",
+      "language": "rw"
+    },
+    "rw-west": {
+      "name": "Western Province of Rwanda, official website (Intara y'Iburengerazuba)",
+      "url": "https://www.westernprovince.gov.rw",
+      "locator": "home page: one of four provinces and the City of Kigali (Umujyi wa Kigali); seat in Karongi District since January 2006",
+      "language": "rw"
+    },
+    "rw-wiki-towns": {
+      "name": "Wikipedia articles on Rwandan towns: Ruhengeri, Butare, Gisenyi, Cyangugu, Muhanga, Byumba, Kibungo, Kibuye (disambiguation)",
+      "url": "https://en.wikipedia.org/wiki/Ruhengeri",
+      "locator": "lead and infobox of each article (en.wikipedia.org/wiki/<town>), read 5 Nov 2026",
       "language": "en"
     }
   },
@@ -611,6 +647,62 @@
       "period": "pre1966"
     },
     {
+      "key": "RW:district:gicumbi@2006-",
+      "name": "Gicumbi",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:huye@2006-",
+      "name": "Huye",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:karongi@2006-",
+      "name": "Karongi",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:muhanga@2006-",
+      "name": "Muhanga",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:musanze@2006-",
+      "name": "Musanze",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:ngoma@2006-",
+      "name": "Ngoma",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:rubavu@2006-",
+      "name": "Rubavu",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
+      "key": "RW:district:rusizi@2006-",
+      "name": "Rusizi",
+      "country": "RW",
+      "level": "district",
+      "period": "2006-"
+    },
+    {
       "key": "RW:province:butare@2002-2006",
       "name": "Butare",
       "country": "RW",
@@ -636,7 +728,14 @@
       "name": "Eastern Province",
       "country": "RW",
       "level": "province",
-      "period": "2006-"
+      "period": "2006-",
+      "other_names": [
+        {
+          "name": "Intara y'Iburasirazuba",
+          "lang": "rw",
+          "source": "rw-east"
+        }
+      ]
     },
     {
       "key": "RW:province:gikongoro@2002-2006",
@@ -678,21 +777,42 @@
       "name": "Kigali-Rural",
       "country": "RW",
       "level": "province",
-      "period": "2002-2006"
+      "period": "2002-2006",
+      "other_names": [
+        {
+          "name": "Kigali Ngali",
+          "lang": "rw",
+          "source": "rw-north"
+        }
+      ]
     },
     {
       "key": "RW:province:kigali@2006-",
       "name": "Kigali",
       "country": "RW",
       "level": "province",
-      "period": "2006-"
+      "period": "2006-",
+      "other_names": [
+        {
+          "name": "Umujyi wa Kigali",
+          "lang": "rw",
+          "source": "rw-west"
+        }
+      ]
     },
     {
       "key": "RW:province:northern-province@2006-",
       "name": "Northern Province",
       "country": "RW",
       "level": "province",
-      "period": "2006-"
+      "period": "2006-",
+      "other_names": [
+        {
+          "name": "Intara y'Amajyaruguru",
+          "lang": "rw",
+          "source": "rw-north"
+        }
+      ]
     },
     {
       "key": "RW:province:ruhengeri@2002-2006",
@@ -706,7 +826,14 @@
       "name": "Southern Province",
       "country": "RW",
       "level": "province",
-      "period": "2006-"
+      "period": "2006-",
+      "other_names": [
+        {
+          "name": "Intara y'Amajyepfo",
+          "lang": "rw",
+          "source": "rw-south"
+        }
+      ]
     },
     {
       "key": "RW:province:umutara@2002-2006",
@@ -720,63 +847,116 @@
       "name": "Western Province",
       "country": "RW",
       "level": "province",
-      "period": "2006-"
+      "period": "2006-",
+      "other_names": [
+        {
+          "name": "Intara y'Iburengerazuba",
+          "lang": "rw",
+          "source": "rw-west"
+        }
+      ]
     },
     {
-      "key": "RW:town:butare@pre2006",
+      "key": "RW:town:astrida@pre1962",
+      "name": "Astrida",
+      "country": "RW",
+      "level": "town",
+      "period": "pre1962"
+    },
+    {
+      "key": "RW:town:butare@current",
       "name": "Butare",
       "country": "RW",
       "level": "town",
-      "period": "pre2006"
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Huye",
+          "lang": "rw",
+          "note": "also known as Huye",
+          "source": "rw-wiki-towns"
+        }
+      ]
     },
     {
-      "key": "RW:town:cyangugu@pre2006",
+      "key": "RW:town:byumba@current",
+      "name": "Byumba",
+      "country": "RW",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "RW:town:cyangugu@current",
       "name": "Cyangugu",
       "country": "RW",
       "level": "town",
-      "period": "pre2006"
+      "period": "current"
     },
     {
-      "key": "RW:town:gisenyi@pre2006",
+      "key": "RW:town:gisenyi@current",
       "name": "Gisenyi",
       "country": "RW",
       "level": "town",
-      "period": "pre2006"
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Kisenyi",
+          "lang": "rw",
+          "note": "historical rendering",
+          "source": "rw-wiki-towns"
+        }
+      ]
     },
     {
-      "key": "RW:town:huye@2006-",
-      "name": "Huye",
+      "key": "RW:town:gitarama@current",
+      "name": "Gitarama",
       "country": "RW",
       "level": "town",
-      "period": "2006-"
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Muhanga",
+          "lang": "rw",
+          "note": "Muhanga City",
+          "source": "rw-wiki-towns"
+        }
+      ]
     },
     {
-      "key": "RW:town:karongi@2006-",
-      "name": "Karongi",
+      "key": "RW:town:kibungo@current",
+      "name": "Kibungo",
       "country": "RW",
       "level": "town",
-      "period": "2006-"
+      "period": "current"
     },
     {
-      "key": "RW:town:kibuye@pre2006",
+      "key": "RW:town:kibuye@current",
       "name": "Kibuye",
       "country": "RW",
       "level": "town",
-      "period": "pre2006"
+      "period": "current"
     },
     {
-      "key": "RW:town:rubavu@2006-",
-      "name": "Rubavu",
+      "key": "RW:town:ruhengeri@current",
+      "name": "Ruhengeri",
       "country": "RW",
       "level": "town",
-      "period": "2006-"
+      "period": "current",
+      "other_names": [
+        {
+          "name": "Musanze",
+          "lang": "rw",
+          "note": "today known as Musanze; some sources call the city by its district's name",
+          "source": "rw-wiki-towns"
+        }
+      ]
     },
     {
-      "key": "RW:town:rusizi@2006-",
-      "name": "Rusizi",
+      "key": "RW:town:shangugu@colonial",
+      "name": "Shangugu",
       "country": "RW",
       "level": "town",
-      "period": "2006-"
+      "period": "colonial"
     }
   ],
   "changes": [
@@ -1066,7 +1246,9 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005",
+        "rw-south"
       ]
     },
     {
@@ -1076,7 +1258,9 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005",
+        "rw-south"
       ]
     },
     {
@@ -1086,7 +1270,9 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005",
+        "rw-south"
       ]
     },
     {
@@ -1096,7 +1282,9 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005",
+        "rw-north"
       ]
     },
     {
@@ -1106,7 +1294,9 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005",
+        "rw-north"
       ]
     },
     {
@@ -1116,7 +1306,8 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ]
     },
     {
@@ -1126,7 +1317,8 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ]
     },
     {
@@ -1136,7 +1328,8 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ]
     },
     {
@@ -1146,7 +1339,8 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ]
     },
     {
@@ -1156,7 +1350,8 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ]
     },
     {
@@ -1166,7 +1361,8 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ],
       "partial": true
     },
@@ -1177,7 +1373,9 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005",
+        "rw-north"
       ],
       "partial": true
     },
@@ -1188,45 +1386,10 @@
       "year": 2006,
       "sources": [
         "rw-nationsonline",
-        "rw-statoids"
+        "rw-statoids",
+        "rw-law-29-2005"
       ],
       "partial": true
-    },
-    {
-      "from": "RW:town:butare@pre2006",
-      "to": "RW:town:huye@2006-",
-      "relation": "renamed_to",
-      "year": 2006,
-      "sources": [
-        "rw-wikivoyage"
-      ]
-    },
-    {
-      "from": "RW:town:gisenyi@pre2006",
-      "to": "RW:town:rubavu@2006-",
-      "relation": "renamed_to",
-      "year": 2006,
-      "sources": [
-        "rw-wikivoyage"
-      ]
-    },
-    {
-      "from": "RW:town:kibuye@pre2006",
-      "to": "RW:town:karongi@2006-",
-      "relation": "renamed_to",
-      "year": 2006,
-      "sources": [
-        "rw-wikivoyage"
-      ]
-    },
-    {
-      "from": "RW:town:cyangugu@pre2006",
-      "to": "RW:town:rusizi@2006-",
-      "relation": "renamed_to",
-      "year": 2006,
-      "sources": [
-        "rw-wikivoyage"
-      ]
     },
     {
       "from": "CD:town:leopoldville@pre1966",
@@ -1585,6 +1748,173 @@
         "cd-statoids",
         "cd-crisisgroup",
         "cd-rulers"
+      ]
+    },
+    {
+      "from": "RW:town:ruhengeri@current",
+      "to": "RW:district:musanze@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:musanze@2006-",
+      "to": "RW:province:northern-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns",
+        "rw-north"
+      ]
+    },
+    {
+      "from": "RW:town:butare@current",
+      "to": "RW:district:huye@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:huye@2006-",
+      "to": "RW:province:southern-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns",
+        "rw-south"
+      ]
+    },
+    {
+      "from": "RW:town:gitarama@current",
+      "to": "RW:district:muhanga@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:muhanga@2006-",
+      "to": "RW:province:southern-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns",
+        "rw-south"
+      ]
+    },
+    {
+      "from": "RW:town:byumba@current",
+      "to": "RW:district:gicumbi@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:gicumbi@2006-",
+      "to": "RW:province:northern-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns",
+        "rw-north"
+      ]
+    },
+    {
+      "from": "RW:town:kibungo@current",
+      "to": "RW:district:ngoma@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:ngoma@2006-",
+      "to": "RW:province:eastern-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:town:gisenyi@current",
+      "to": "RW:district:rubavu@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:rubavu@2006-",
+      "to": "RW:province:western-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:town:kibuye@current",
+      "to": "RW:district:karongi@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:karongi@2006-",
+      "to": "RW:province:western-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:town:cyangugu@current",
+      "to": "RW:district:rusizi@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:district:rusizi@2006-",
+      "to": "RW:province:western-province@2006-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:town:astrida@pre1962",
+      "to": "RW:town:butare@current",
+      "relation": "renamed_to",
+      "year": 1962,
+      "sources": [
+        "rw-wiki-towns"
+      ]
+    },
+    {
+      "from": "RW:town:shangugu@colonial",
+      "to": "RW:town:cyangugu@current",
+      "relation": "renamed_to",
+      "year": null,
+      "sources": [
+        "rw-wiki-towns",
+        "rw-statoids"
       ]
     }
   ]
