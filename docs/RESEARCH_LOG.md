@@ -1327,3 +1327,13 @@ No literacy figure for Dzaleka itself was found. The 2023 Dzaleka Education Asse
 **Tests:** 91 pass; the pack passes `namebridge.schema.pack` (covered by `test_every_pack_in_repo_is_valid`).
 
 **Next:** `bi-kirundi` pack (four automatic Kinyarwanda → Kirundi rules), then the DRC pack and the loader that turns pack rules into Rule and Source nodes in the graph.
+
+## 2026-11-05 — Decision: IPA for the sound layer, in week 7
+
+**Question (user):** should names use the International Phonetic Alphabet?
+
+**Decision (user, 5 Nov 2026):** yes, as the sound layer's internal comparison format, done in week 7 with the sound comparison. Until then, packs keep their current sound notation (`rw-kiny` 0.1.0 mixes spelling and IPA); week 7 converts them to strict IPA and adds a validator check.
+
+**Limits agreed:** a spelling yields a set of possible IPA readings, not one transcription (length and tone are unwritten; names written by ear are already filtered through the writer); IPA is never shown to or typed by caseworkers; sound never decides a match alone (T17).
+
+**Files touched:** `docs/TIMETABLE.md` (week 7).
