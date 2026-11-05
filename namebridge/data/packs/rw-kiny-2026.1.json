@@ -103,13 +103,13 @@
     {
       "id": "length-and-tone-unwritten",
       "description": "Vowel length and tone are not written in the official orthography; linguistic texts write long vowels doubled (aa) and tone with accents. Search forms fold both; the original form is kept (CONCEPT-IDEA.md §5.3)",
-      "source": "Wikibooks, Kinyarwanda/Orthography; Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), Table 28 (https://www.matana.de/kirundi_kinyarwanda.pdf)",
+      "source": "Wikibooks, Kinyarwanda/Orthography; Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), Table 28 (https://www.matana.de/kirundi_kinyarwanda.pdf); van de Vijver, R., Uwambayinema, E. & Chuang, Y.-Y. (2024), 'Comprehension and production of Kinyarwanda verbs in the Discriminative Lexicon', Linguistics 62(1): 79-119 (doi:10.1515/ling-2021-0164), §2 Kinyarwanda phonotactics: five vowels, each short or long (citing Myers 2005); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: a tone language, tone marked only in linguistic writing",
       "confidence": "high"
     },
     {
       "id": "glide-strengthening",
       "description": "Written glide clusters are pronounced with a stop: rw [ɾɡw], sw [skw], tw [tkw], bw [bɡ], mw [mŋ], by [bɟ], ry [ɾɟ], py [pc], ty [tc]. Spelling follows the letters, speech does not",
-      "source": "Wikipedia, Kinyarwanda, phonology (Cw/Cy table), accessed 5 Nov 2026; FSI Kirundi Basic Course, pronunciation synopsis; Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026)",
+      "source": "Wikipedia, Kinyarwanda, phonology (Cw/Cy table), accessed 5 Nov 2026; FSI Kirundi Basic Course, pronunciation synopsis; Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: phonetic transcription by a Rwandan linguist renders rya as [rgya] and rw'indimi as [rgwiindimi]",
       "confidence": "high"
     },
     {
@@ -149,7 +149,7 @@
         "jy"
       ],
       "note": "one sound; phonemic status disputed as for cy",
-      "source": "Comparative Grammar (2007), Tables 25-26",
+      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984)",
       "confidence": "disputed"
     },
     {
@@ -185,7 +185,7 @@
         "shy"
       ],
       "note": "one sound; not accepted by Bizimana (1998)",
-      "source": "Comparative Grammar (2007), Tables 25-26",
+      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984)",
       "confidence": "medium"
     },
     {
@@ -194,7 +194,7 @@
         "pf"
       ],
       "note": "one sound",
-      "source": "Comparative Grammar (2007), Tables 25-26",
+      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984)",
       "confidence": "medium"
     },
     {
@@ -203,7 +203,7 @@
         "ts"
       ],
       "note": "one sound",
-      "source": "Comparative Grammar (2007), Tables 25-26",
+      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984)",
       "confidence": "medium"
     },
     {
@@ -244,10 +244,13 @@
         "nk",
         "mp",
         "nt",
-        "nz"
+        "nz",
+        "mf",
+        "mv",
+        "ns"
       ],
       "note": "each read as one unit, not letter by letter",
-      "source": "Comparative Grammar (2007), ch. 2 (CONCEPT-IDEA.md §5.4A; RESEARCH_LOG.md [P1])",
+      "source": "Comparative Grammar (2007), ch. 2 (CONCEPT-IDEA.md §5.4A; RESEARCH_LOG.md [P1]); van de Vijver, R., Uwambayinema, E. & Chuang, Y.-Y. (2024), 'Comprehension and production of Kinyarwanda verbs in the Discriminative Lexicon', Linguistics 62(1): 79-119 (doi:10.1515/ling-2021-0164), §2 Kinyarwanda phonotactics (prenasalised consonants incl. mf, mv, ns; after Walker et al. 2008)",
       "confidence": "medium"
     }
   ],
@@ -400,7 +403,7 @@
       ],
       "listener": "non-Kinyarwanda writer",
       "note": "written rw is said [ɾɡw]; a writer who does not know the spelling may write rgw or rugw",
-      "source": "Wikipedia, Kinyarwanda (Cw table); FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not",
+      "source": "Wikipedia, Kinyarwanda (Cw table); FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716 (transcription [rgw] for written rw)",
       "confidence": "medium"
     },
     {
@@ -569,5 +572,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.4.1"
+  "version": "0.4.2"
 }

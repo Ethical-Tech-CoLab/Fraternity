@@ -1692,3 +1692,10 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - Places v0.13.0. **Tests:** 132 pass.
 
 **Open gap after this:** "given name in speech" and teknonymy (rw-kiny), waiting on Kimenyi (1989).
+
+## 2026-11-05 — Two sources from the user's NYU access (not Kimenyi 1989)
+
+- **Rusanganwa, J. (2006), "Rwanda: Language Situation"**, *Encyclopedia of Language & Linguistics*, 2nd ed., pp. 715–716 (author at the National University of Rwanda). Used: a phonetic transcription rendering written *rya* as [rgya] and *rw'indimi* as [rgwiindimi] (primary support for the rw → [rgw] rule and listener confusion); shy, jy, mf, pf, ts treated as single units by Rwandan linguists; Kinyarwanda is a tone language, tone marked only in linguistic writing; first written by missionaries (Catholic prayer book, 1907). Also lists Swahili's role (commerce, and religious use); nothing about religion enters the pack.
+- **van de Vijver, Uwambayinema & Chuang (2024)**, *Linguistics* 62(1): 79–119, §2: five vowels, each short or long (Myers 2005); i/e and u/o become glides before vowels; a full list of prenasalised consonants, adding **mf, mv, ns** to the pack's inventory.
+
+Copyrighted: summarised, not reproduced. Neither covers forms of address or teknonymy: that gap stays open, pending Kimenyi (1989). rw-kiny bumped; **tests:** 132 pass.
