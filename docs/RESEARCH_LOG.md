@@ -1591,3 +1591,5 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Conflict, kept side by side:** Statoids gives **Kikwit** as Kwilu's capital; UNICEF (2021) and ReliefWeb give **Bandundu**. Location is consistent (both cities are in Kwilu), so matching is unaffected; the capital is not recorded as a fact.
 
 **Data:** Bandundu city `located_in` Kwilu (2015–), sources UNICEF and OCHA; also kept in the 1966–2015 province. Places v0.8.1. **Tests:** 130 pass. Gap closed.
+
+**Ranking bug found and fixed (same day):** the resolver gave each part of a split a weight of 1, so "Bandundu" returned Kwilu, Kwango and Mai-Ndombe all at 1.00. A split into n parts now weighs 1/n per part: Bandundu city → Kwilu 1.00 (containment), the old province's parts 0.33 each; Kivu → Maniema, Nord-Kivu, Sud-Kivu 0.33 each. Two tests added. **Tests:** 132.

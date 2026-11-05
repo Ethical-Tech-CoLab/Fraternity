@@ -10,8 +10,9 @@ mean, then follows the place links of the graph both ways in time:
 - within: located_in, upwards, to give the larger units it lies in.
 
 Each candidate comes with the path that explains it and a score: the
-product of the step weights (the area share when the link records one, 0.5
-for a partial link without a share, 1 otherwise). Names are compared folded:
+product of the step weights (the area share when the link records one, 1/n
+for each of the n parts of a split, 0.5 for a partial link without a share,
+1 otherwise). Names are compared folded:
 case, accents, hyphens, spaces and prefixes such as "Quartier" or
 "Province de" are ignored, so "Nyanza Lac" finds "Nyanza-Lac". A name that
 means several places (Cibitoke, Byumba, Gihosha) returns all of them: the
@@ -62,10 +63,13 @@ class PlaceIndex:
         found = self.by_name.get(fold(name), set())
         return sorted(n for n in found if country is None or self.nodes[n]["country"] == country)
 
-    @staticmethod
-    def _weight(edge):
+    def _weight(self, edge):
         if edge.get("share") is not None:
             return float(edge["share"])
+        if edge["relation_type"] == "split_into":
+            # A unit split into n parts: each part is one of n possibilities.
+            parts = sum(1 for e in self.out[edge["from"]] if e["relation_type"] == "split_into")
+            return 1.0 / parts
         return 0.5 if edge.get("partial") else 1.0
 
     def resolve(self, name, country=None, max_steps=4):

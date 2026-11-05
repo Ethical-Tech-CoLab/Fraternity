@@ -70,3 +70,15 @@ def test_country_filter(index):
     # Muhanga is a Burundian commune and a Rwandan district.
     assert {r["country"] for r in index.resolve("Muhanga")} >= {"BI", "RW"}
     assert {r["country"] for r in index.resolve("Muhanga", "BI")} == {"BI"}
+
+
+def test_city_outranks_the_parts_of_its_split_province(index):
+    # Bandundu city is in Kwilu; the old Bandundu province split into three.
+    rows = {r["name"]: r for r in index.resolve("Bandundu")}
+    assert rows["Kwilu"]["score"] == 1.0
+    assert rows["Kwango"]["score"] < 1.0 and rows["Mai-Ndombe"]["score"] < 1.0
+
+
+def test_split_parts_share_the_weight(index):
+    scores = [r["score"] for r in index.resolve("Kivu") if r["kind"] == "later"]
+    assert len(scores) == 3 and all(abs(s - 1 / 3) < 0.01 for s in scores)
