@@ -14,14 +14,14 @@
       "id": "structure-kiny-name-plus-given",
       "description": "A Kinyarwanda name chosen for each child, plus a given name (often a Christian name in French or English form). The Kinyarwanda name is not inherited: most Rwandans do not share a family name with their parents or siblings",
       "practice": "cultural",
-      "source": "Human Rights Watch, Leave None to Tell the Story, 1999, 'Language, Spelling and Names' (https://www.hrw.org/reports/1999/rwanda/Geno1-3-08.htm); Wikipedia, Rwandan names (https://en.wikipedia.org/wiki/Rwandan_names), accessed 5 Nov 2026",
-      "confidence": "medium"
+      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), p. 259: no family names in Rwanda; children, father and mother each have their own name; women keep their names when married. Human Rights Watch, Leave None to Tell the Story, 1999, 'Language, Spelling and Names' (https://www.hrw.org/reports/1999/rwanda/Geno1-3-08.htm); Wikipedia, Rwandan names (https://en.wikipedia.org/wiki/Rwandan_names), accessed 5 Nov 2026",
+      "confidence": "high"
     },
     {
       "id": "structure-father-element",
       "description": "Some accounts describe an optional third name from the father's side, or siblings' names sharing a root; others say surnames are not inherited. Unresolved: the benchmark models it as the varied parameter q (BENCHMARK_PROTOCOL.md §2.2)",
       "practice": "cultural",
-      "source": "The New Times, 'Rwanda's Naming Traditions Explained', 6 May 2026 (https://allafrica.com/stories/202605070011.html), against HRW 1999 (above); RESEARCH_LOG.md, 26 Oct 2026",
+      "source": "The New Times, 'Rwanda's Naming Traditions Explained', 6 May 2026 (https://allafrica.com/stories/202605070011.html), against HRW 1999 (above); RESEARCH_LOG.md, 26 Oct 2026; Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), p. 258: the father names the child at the seventh-day ceremony (no inheritance of a name described)",
       "confidence": "disputed"
     },
     {
@@ -53,7 +53,7 @@
       "practice": "cultural",
       "source": "Wikipedia, Rwandan names, 'Address in spoken life'",
       "confidence": "low",
-      "note": "Wikipedia only; needs a primary source. Searched 5 Nov 2026 (official, UN and press sources): not found. Likely source: Kimenyi (1978), Anthropological Linguistics 20(6), via NYU library (JSTOR)"
+      "note": "Wikipedia only; needs a primary source. Checked 5 Nov 2026: official, UN and press sources, and Kimenyi (1978), which does not cover forms of address, teknonymy or Christian names. Next candidate: Kimenyi (1989), Kinyarwanda and Kirundi Names"
     }
   ],
   "particles_and_morphemes": [
@@ -66,7 +66,7 @@
       ],
       "description": "Name-initial elements described as feminine. Used ONLY to keep generated names consistent with generated sex; never to infer anyone's sex (BENCHMARK_PROTOCOL.md C12)",
       "use": "generation_only",
-      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411); RESEARCH_LOG.md, 26 Oct 2026",
+      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes",
       "confidence": "medium"
     },
     {
@@ -81,7 +81,7 @@
       ],
       "description": "Name-initial elements described as masculine. Same restriction: generation only, never inference",
       "use": "generation_only",
-      "source": "Kimenyi 1978 (above)",
+      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes",
       "confidence": "medium"
     }
   ],
@@ -569,5 +569,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.4.0"
+  "version": "0.4.1"
 }

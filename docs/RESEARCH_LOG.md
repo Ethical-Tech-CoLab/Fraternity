@@ -1660,3 +1660,14 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Data:** 14 territories `located_in` their province; places v0.11.0. **Tests:** 132 pass (integrity tests now cover the territory level).
 
 **Not done (coverage):** territories of the other 24 provinces; Beni and Uvira as towns (homonyms of their territories).
+
+## 2026-11-05 — Kimenyi (1978) read in full
+
+**Source:** Kimenyi, A. (1978), "Aspects of Naming in Kinyarwanda", *Anthropological Linguistics* 20(6): 258–271 (JSTOR; copy obtained by the user through NYU Libraries; scanned in two columns, read as page images where the text layer was broken). Copyrighted: summarised, not reproduced.
+
+**Findings used:**
+- p. 259: no family names in Rwanda; children, father and mother each have their own name; women keep their names when married. Now the primary source of `structure-kiny-name-plus-given` (confidence high).
+- p. 258: the naming ceremony is held on the evening of the seventh day; neighbours' children and the mother propose names, but the father names the child. Added to the (still disputed) father-element entry: the article describes naming by the father, not inheriting his name.
+- pp. 261–262: name-forming morphemes *nyira-*, *mukaa-*, *kaa-* (feminine) and *nya-*, *munya-*, *see-*, *nyiri-*, *rwaa-*, *ki-*; read directly, replacing the earlier second-hand citation.
+
+**Not in the article:** forms of address in speech, teknonymy ("Mama X"), Christian names. The gap `order-spoken-given-name` stays open (`low`); next candidate is Kimenyi (1989), *Kinyarwanda and Kirundi Names*. Note: the article mentions ethnic groups when describing the two countries; nothing about ethnicity enters the pack (DR-1.7).
