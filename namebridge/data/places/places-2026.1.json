@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -164,6 +164,18 @@
       "name": "FAO, Burundi livestock case study (May 2008), FAO Knowledge Repository",
       "url": "https://openknowledge.fao.org/server/api/core/bitstreams/cfd0a845-2a67-4fa2-ae06-8ec8ea874ce3/content",
       "locator": "case study one: Gitega commune borders Makebuko, Nyarusange and Itaba communes",
+      "language": "en"
+    },
+    "cd-unicef-kwilu-2021": {
+      "name": "UNICEF DRC, Rapport provincial: Province du Kwilu (MICS 2018 analysis), 2021",
+      "url": "https://www.unicef.org/drcongo/media/6796/file/COD-2021-NMODA-KWILU.pdf",
+      "locator": "p. 1: Kwilu, from the split of the former Bandundu province, has the territories of Bagata, Bulungu, Gungu, Idiofa and Masimanimba and 'la ville de Bandundu qui est le chef-lieu de la province'",
+      "language": "fr"
+    },
+    "cd-ocha-year-survival": {
+      "name": "OCHA, 'DRC: A Year of Survival'",
+      "url": "https://www.unocha.org/news/drc-year-survival",
+      "locator": "'In the city of Bandundu, in Kwilu Province'",
       "language": "en"
     }
   },
@@ -7341,7 +7353,7 @@
       "sources": [
         "cd-statoids"
       ],
-      "note": "capital of the 1966-2015 province; its province after the 2015 split is not yet sourced"
+      "note": "capital of the 1966-2015 province"
     },
     {
       "from": "CD:province:kivu@1966-1988",
@@ -7388,6 +7400,17 @@
       "sources": [
         "bi-ceni-2010"
       ]
+    },
+    {
+      "from": "CD:town:bandundu@1966-",
+      "to": "CD:province:kwilu@2015-",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-unicef-kwilu-2021",
+        "cd-ocha-year-survival"
+      ],
+      "note": "Kwilu's capital is disputed: Statoids gives Kikwit, UNICEF (2021) and ReliefWeb give Bandundu; both cities are in Kwilu"
     }
   ]
 }

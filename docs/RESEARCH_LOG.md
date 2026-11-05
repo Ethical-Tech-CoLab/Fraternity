@@ -1583,3 +1583,11 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Open gaps (in order):** Bandundu city's current province; Wikipedia-only sources still in the data (packs ~32 entries; Rwandan towns; part of the DRC changes; three Christian-name forms); DRC territories (coverage).
 
 **Tests:** 130 (6 new). **Data:** places v0.8.0.
+
+## 2026-11-05 — Bandundu city is in Kwilu; Kwilu's capital is disputed
+
+**Sources:** UNICEF DRC, *Rapport provincial: Province du Kwilu* (2021), read: Kwilu, from the split of the former Bandundu province, has the territories of Bagata, Bulungu, Gungu, Idiofa and Masimanimba "et la ville de Bandundu qui est le chef-lieu de la province"; OCHA, *DRC: A Year of Survival* ("the city of Bandundu, in Kwilu Province"); ReliefWeb ("Bandundu, the capital of Kwilu Province"); Radio Okapi tags "bandundu ville, kwilu". A tourism site and French Wikipedia point the same way but are not cited.
+
+**Conflict, kept side by side:** Statoids gives **Kikwit** as Kwilu's capital; UNICEF (2021) and ReliefWeb give **Bandundu**. Location is consistent (both cities are in Kwilu), so matching is unaffected; the capital is not recorded as a fact.
+
+**Data:** Bandundu city `located_in` Kwilu (2015–), sources UNICEF and OCHA; also kept in the 1966–2015 province. Places v0.8.1. **Tests:** 130 pass. Gap closed.
