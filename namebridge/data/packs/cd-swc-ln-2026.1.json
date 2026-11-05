@@ -97,6 +97,12 @@
       "description": "Names from eastern DRC show r/l alternation in attested aliases, as well as nasal insertion and loss (patterns from the UN 1533 sanctions list aliases)",
       "source": "UN Security Council Consolidated List, 1533 (DRC) entries, aliases (BENCHMARK_PROTOCOL.md [B12]); used for patterns only, no names copied",
       "confidence": "medium"
+    },
+    {
+      "id": "chichewa-w-circumflex",
+      "description": "Chichewa and Chitumbuka spelling has one accented letter, ŵ (standardised 1973). A Malawian writer may use it; search forms fold ŵ to w, and the original is kept",
+      "source": "UK Government, Malawi Toponymic Factfile, 2025, 'Languages' (https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf), read 5 Nov 2026",
+      "confidence": "high"
     }
   ],
   "common_administrative_forms": [
@@ -110,49 +116,70 @@
   "phoneme_inventory": [
     {
       "symbol": "/tʃ/",
-      "written": ["ch"],
+      "written": [
+        "ch"
+      ],
       "note": "Swahili spelling; French writers use tch",
       "source": "Wikipedia, Swahili language, 'Consonants'",
       "confidence": "high"
     },
     {
       "symbol": "/ʃ/",
-      "written": ["sh"],
+      "written": [
+        "sh"
+      ],
       "note": "Swahili spelling; French writers use ch",
       "source": "Wikipedia, Swahili language, 'Consonants'",
       "confidence": "high"
     },
     {
       "symbol": "/ɲ/",
-      "written": ["ny"],
+      "written": [
+        "ny"
+      ],
       "note": "one sound",
       "source": "Wikipedia, Swahili language, 'Orthography'",
       "confidence": "high"
     },
     {
       "symbol": "/ŋ/",
-      "written": ["ng'"],
+      "written": [
+        "ng'"
+      ],
       "note": "the apostrophe separates it from ng (two sounds); often dropped in records",
       "source": "Wikipedia, Swahili language, 'Orthography'",
       "confidence": "high"
     },
     {
       "symbol": "/ɛ/",
-      "written": ["ɛ", "e"],
+      "written": [
+        "ɛ",
+        "e"
+      ],
       "note": "Lingala open e; usually written e",
       "source": "Wikipedia, Lingala",
       "confidence": "high"
     },
     {
       "symbol": "/ɔ/",
-      "written": ["ɔ", "o"],
+      "written": [
+        "ɔ",
+        "o"
+      ],
       "note": "Lingala open o; usually written o",
       "source": "Wikipedia, Lingala",
       "confidence": "high"
     },
     {
       "symbol": "prenasalised stops",
-      "written": ["mb", "nd", "nj", "ng", "mv", "nz"],
+      "written": [
+        "mb",
+        "nd",
+        "nj",
+        "ng",
+        "mv",
+        "nz"
+      ],
       "note": "each one unit in Swahili and Lingala",
       "source": "Wikipedia, Swahili language, 'Consonants'; LinguaCommons, Lingala pronunciation guide",
       "confidence": "high"
@@ -162,7 +189,10 @@
     {
       "sound": "/w/",
       "writer_language": "fr",
-      "spellings": ["ou", "w"],
+      "spellings": [
+        "ou",
+        "w"
+      ],
       "note": "Mwamba / Mouamba",
       "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3]); Wikipedia, Lingala (French-influenced ou for [u] in the Republic of the Congo)",
       "confidence": "medium"
@@ -170,7 +200,10 @@
     {
       "sound": "/s/",
       "writer_language": "fr",
-      "spellings": ["s", "ss"],
+      "spellings": [
+        "s",
+        "ss"
+      ],
       "note": "double s between vowels, French-influenced",
       "source": "Wikipedia, Lingala, 'Writing system'",
       "confidence": "medium"
@@ -178,78 +211,121 @@
     {
       "sound": "/ʃ/",
       "writer_language": "fr",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "fr",
-      "spellings": ["tch"],
+      "spellings": [
+        "tch"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "en",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Collins, pronunciation guide [P3]",
       "confidence": "high"
     },
     {
       "sound": "/j/",
       "writer_language": "ln",
-      "spellings": ["y", "i", ""],
+      "spellings": [
+        "y",
+        "i",
+        ""
+      ],
       "source": "APiCS Online, survey chapter 60, Lingala",
       "confidence": "high"
     },
     {
       "sound": "/w/",
       "writer_language": "ln",
-      "spellings": ["w", "o", "u", ""],
+      "spellings": [
+        "w",
+        "o",
+        "u",
+        ""
+      ],
       "source": "APiCS Online, survey chapter 60, Lingala",
       "confidence": "high"
     },
     {
       "sound": "/ɾ/",
       "writer_language": "ny",
-      "spellings": ["r after i or e", "l elsewhere"],
+      "spellings": [
+        "r after i or e",
+        "l elsewhere"
+      ],
       "note": "Chichewa (Malawi) writes its single r/l sound by the preceding vowel; a Malawian clerk may apply it to a refugee's name. Swahili itself keeps r and l apart",
       "source": "Wikipedia, Chewa language (1973 orthography); Lyons & Mchombo, Chichewa Grammar; Wiktionary, Chichewa entry guidelines",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "ny",
+      "spellings": [
+        "ch"
+      ],
+      "note": "Chichewa never writes c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza)",
+      "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026",
       "confidence": "medium"
     }
   ],
   "listener_confusions": [
     {
-      "sounds": ["/r/", "/l/"],
+      "sounds": [
+        "/r/",
+        "/l/"
+      ],
       "listener": "any",
       "note": "attested in eastern DRC aliases; Swahili keeps them apart, so weight is lower than in Rwanda-Rundi",
       "source": "UN 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
       "confidence": "medium"
     },
     {
-      "sounds": ["/ᵐp/", "/p/"],
+      "sounds": [
+        "/ᵐp/",
+        "/p/"
+      ],
       "listener": "any",
       "note": "a nasal before a consonant inserted or lost (patterns like -mp- / -p-, -ns- / -s-)",
       "source": "UN 1533 aliases (BENCHMARK_PROTOCOL.md [B12]); APiCS (prenasal written or not)",
       "confidence": "medium"
     },
     {
-      "sounds": ["/m/", "/n/"],
+      "sounds": [
+        "/m/",
+        "/n/"
+      ],
       "listener": "any",
       "note": "word-final or pre-consonant m/n heard one for the other",
       "source": "UN 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
       "confidence": "hypothesis"
     },
     {
-      "sounds": ["/e/", "/ɛ/"],
+      "sounds": [
+        "/e/",
+        "/ɛ/"
+      ],
       "listener": "any",
       "note": "not distinguished in writing; merged in Kinshasa speech",
       "source": "Wikipedia, Lingala; APiCS",
       "confidence": "medium"
     },
     {
-      "sounds": ["/o/", "/u/"],
+      "sounds": [
+        "/o/",
+        "/u/"
+      ],
       "listener": "any",
       "note": "close-mid o written o or u in Lingala",
       "source": "APiCS Online, survey chapter 60, Lingala",
@@ -342,5 +418,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.1.0"
+  "version": "0.2.0"
 }

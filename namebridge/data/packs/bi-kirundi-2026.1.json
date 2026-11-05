@@ -139,6 +139,12 @@
       "description": "In some areas o becomes w before a and i in speech, but it is not written that way",
       "source": "Cox (1969, rev. 2023), orthography rules of the Alliance committee",
       "confidence": "medium"
+    },
+    {
+      "id": "chichewa-w-circumflex",
+      "description": "Chichewa and Chitumbuka spelling has one accented letter, ŵ (standardised 1973). A Malawian writer may use it; search forms fold ŵ to w, and the original is kept",
+      "source": "UK Government, Malawi Toponymic Factfile, 2025, 'Languages' (https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf), read 5 Nov 2026",
+      "confidence": "high"
     }
   ],
   "common_administrative_forms": [
@@ -375,6 +381,16 @@
       "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis",
       "source": "Wikipedia, Chewa language, 'Notes on the consonants' (official spelling since 1973: the r/l sound is written r after i or e, otherwise l), accessed 5 Nov 2026; Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U'); Wiktionary, Chichewa entry guidelines",
       "confidence": "medium"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "ny",
+      "spellings": [
+        "ch"
+      ],
+      "note": "Chichewa never writes c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza)",
+      "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026",
+      "confidence": "medium"
     }
   ],
   "listener_confusions": [
@@ -549,5 +565,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.2.0"
+  "version": "0.3.0"
 }

@@ -1,8 +1,13 @@
 {
   "dataset_id": "christian-names-2026.1",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Christian given names across the corridor's languages, from Bible translations: each translation fixes the form of a biblical name in its language. A form in a Bible does not show that a person named Jean is recorded as Yohana by a Swahili writer; that is the hypothesis these edges let the matcher test, at low weight (CONCEPT-IDEA.md §3: cognates are for query expansion, not automatic equivalence).",
-  "regions": ["CD", "BI", "RW", "MW"],
+  "regions": [
+    "CD",
+    "BI",
+    "RW",
+    "MW"
+  ],
   "confidence": 0.6,
   "sources": {
     "biblafrique-ln": {
@@ -52,6 +57,24 @@
       "url": "https://dokumen.pub/bibiliya-the-holy-bible-new-testament-in-kurundi-rundi-ikurundi.html",
       "locator": "book list: Matayo, Mariko, Luka, Yohana",
       "language": "rn"
+    },
+    "ny-buku-lopatulika": {
+      "name": "Buku Lopatulika (Chichewa Bible), Bible Society of Malawi; 1922, revised 1966, 2014, 2018",
+      "url": "https://www.bible.com/versions/1068-blp-2018-buku-lopatulika",
+      "locator": "New Testament book list (also https://www.bibliatodo.com/ny/baibulo/baibulo/buku-lopatulika)",
+      "language": "ny"
+    },
+    "ny-wikipedia": {
+      "name": "Chichewa Wikipedia, 'Paulo Mtumwi'",
+      "url": "https://ny.wikipedia.org/wiki/Paulo_Mtumwi",
+      "locator": "article title and text",
+      "language": "ny"
+    },
+    "ny-harvestime": {
+      "name": "Harvestime, Chichewa Bible study course ('Ukadaulo wa kasanthulidwe ka Baibulo')",
+      "url": "http://harvestime.org/translations/chichewa/creative%20bible%20study%20fina%20copy.pdf",
+      "locator": "Chipangano Chatsopano: Mateyu, Marko, Luka, Yohane; Yohane Mbatizi; Paulo",
+      "language": "ny"
     }
   },
   "concepts": [
@@ -59,89 +82,393 @@
       "id": "iohannes",
       "label": "John (Greek Iōannēs)",
       "forms": [
-        {"text": "Jean", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "John", "lang": "en", "sources": ["en-canon"]},
-        {"text": "Yohana", "lang": "sw", "sources": ["sw-biblia"]},
-        {"text": "Yohana", "lang": "rw", "sources": ["rw-bibleproject"]},
-        {"text": "Yohana", "lang": "rn", "sources": ["rn-nt"]},
-        {"text": "Yoane", "lang": "ln", "sources": ["biblafrique-ln"]},
-        {"text": "Yowane", "lang": "ln", "sources": ["ln-wikipedia"]}
+        {
+          "text": "Jean",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "John",
+          "lang": "en",
+          "sources": [
+            "en-canon"
+          ]
+        },
+        {
+          "text": "Yohana",
+          "lang": "sw",
+          "sources": [
+            "sw-biblia"
+          ]
+        },
+        {
+          "text": "Yohana",
+          "lang": "rw",
+          "sources": [
+            "rw-bibleproject"
+          ]
+        },
+        {
+          "text": "Yohana",
+          "lang": "rn",
+          "sources": [
+            "rn-nt"
+          ]
+        },
+        {
+          "text": "Yoane",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Yowane",
+          "lang": "ln",
+          "sources": [
+            "ln-wikipedia"
+          ]
+        },
+        {
+          "text": "Yohane",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika",
+            "ny-harvestime"
+          ]
+        }
       ]
     },
     {
       "id": "matthaios",
       "label": "Matthew (Greek Matthaios)",
       "forms": [
-        {"text": "Matthieu", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "Matthew", "lang": "en", "sources": ["en-canon"]},
-        {"text": "Mathayo", "lang": "sw", "sources": ["sw-biblia"]},
-        {"text": "Matayo", "lang": "rw", "sources": ["rw-bibleproject"]},
-        {"text": "Matayo", "lang": "rn", "sources": ["rn-nt"]},
-        {"text": "Matayo", "lang": "ln", "sources": ["biblafrique-ln"]},
-        {"text": "Matai", "lang": "ln", "sources": ["biblafrique-ln"]}
+        {
+          "text": "Matthieu",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Matthew",
+          "lang": "en",
+          "sources": [
+            "en-canon"
+          ]
+        },
+        {
+          "text": "Mathayo",
+          "lang": "sw",
+          "sources": [
+            "sw-biblia"
+          ]
+        },
+        {
+          "text": "Matayo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibleproject"
+          ]
+        },
+        {
+          "text": "Matayo",
+          "lang": "rn",
+          "sources": [
+            "rn-nt"
+          ]
+        },
+        {
+          "text": "Matayo",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Matai",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Mateyu",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika"
+          ]
+        }
       ]
     },
     {
       "id": "markos",
       "label": "Mark (Greek Markos)",
       "forms": [
-        {"text": "Marc", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "Mark", "lang": "en", "sources": ["en-canon"]},
-        {"text": "Marko", "lang": "sw", "sources": ["sw-shepherds"]},
-        {"text": "Marko", "lang": "ln", "sources": ["biblafrique-ln"]},
-        {"text": "Mariko", "lang": "rw", "sources": ["rw-bibleproject"]},
-        {"text": "Mariko", "lang": "rn", "sources": ["rn-nt"]},
-        {"text": "Malako", "lang": "ln", "sources": ["biblafrique-ln"]}
+        {
+          "text": "Marc",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Mark",
+          "lang": "en",
+          "sources": [
+            "en-canon"
+          ]
+        },
+        {
+          "text": "Marko",
+          "lang": "sw",
+          "sources": [
+            "sw-shepherds"
+          ]
+        },
+        {
+          "text": "Marko",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Mariko",
+          "lang": "rw",
+          "sources": [
+            "rw-bibleproject"
+          ]
+        },
+        {
+          "text": "Mariko",
+          "lang": "rn",
+          "sources": [
+            "rn-nt"
+          ]
+        },
+        {
+          "text": "Malako",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Marko",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika"
+          ]
+        }
       ]
     },
     {
       "id": "loukas",
       "label": "Luke (Greek Loukas)",
       "forms": [
-        {"text": "Luc", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "Luke", "lang": "en", "sources": ["en-canon"]},
-        {"text": "Luka", "lang": "sw", "sources": ["sw-shepherds"]},
-        {"text": "Luka", "lang": "rn", "sources": ["rn-nt"]},
-        {"text": "Luka", "lang": "ln", "sources": ["biblafrique-ln"]}
+        {
+          "text": "Luc",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Luke",
+          "lang": "en",
+          "sources": [
+            "en-canon"
+          ]
+        },
+        {
+          "text": "Luka",
+          "lang": "sw",
+          "sources": [
+            "sw-shepherds"
+          ]
+        },
+        {
+          "text": "Luka",
+          "lang": "rn",
+          "sources": [
+            "rn-nt"
+          ]
+        },
+        {
+          "text": "Luka",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Luka",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika"
+          ]
+        }
       ]
     },
     {
       "id": "petros",
       "label": "Peter (Greek Petros)",
       "forms": [
-        {"text": "Pierre", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "Peter", "lang": "en", "sources": ["en-canon"]},
-        {"text": "Petro", "lang": "sw", "sources": ["sw-biblia"]},
-        {"text": "Petero", "lang": "rw", "sources": ["rw-bibleproject"]},
-        {"text": "Petelo", "lang": "ln", "sources": ["biblafrique-ln"]}
+        {
+          "text": "Pierre",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Peter",
+          "lang": "en",
+          "sources": [
+            "en-canon"
+          ]
+        },
+        {
+          "text": "Petro",
+          "lang": "sw",
+          "sources": [
+            "sw-biblia"
+          ]
+        },
+        {
+          "text": "Petero",
+          "lang": "rw",
+          "sources": [
+            "rw-bibleproject"
+          ]
+        },
+        {
+          "text": "Petelo",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Petro",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika"
+          ]
+        }
       ]
     },
     {
       "id": "iakobos",
       "label": "James / Jacob (Greek Iakōbos)",
       "forms": [
-        {"text": "Jacques", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "Yakobo", "lang": "sw", "sources": ["sw-biblia"]},
-        {"text": "Yakobo", "lang": "ln", "sources": ["biblafrique-ln"]}
+        {
+          "text": "Jacques",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Yakobo",
+          "lang": "sw",
+          "sources": [
+            "sw-biblia"
+          ]
+        },
+        {
+          "text": "Yakobo",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Yakobo",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika"
+          ]
+        }
       ]
     },
     {
       "id": "paulos",
       "label": "Paul (Greek Paulos)",
       "forms": [
-        {"text": "Paul", "lang": "en", "sources": ["en-canon"]},
-        {"text": "Paulo", "lang": "sw", "sources": ["sw-shepherds"]},
-        {"text": "Pawulo", "lang": "rw", "sources": ["rw-bibiliya-yera"]}
+        {
+          "text": "Paul",
+          "lang": "en",
+          "sources": [
+            "en-canon"
+          ]
+        },
+        {
+          "text": "Paulo",
+          "lang": "sw",
+          "sources": [
+            "sw-shepherds"
+          ]
+        },
+        {
+          "text": "Pawulo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        },
+        {
+          "text": "Paulo",
+          "lang": "ny",
+          "sources": [
+            "ny-wikipedia",
+            "ny-harvestime"
+          ]
+        }
       ]
     },
     {
       "id": "ioudas",
       "label": "Jude (Greek Ioudas)",
       "forms": [
-        {"text": "Jude", "lang": "fr", "sources": ["biblafrique-ln"]},
-        {"text": "Yuda", "lang": "sw", "sources": ["sw-biblia"]},
-        {"text": "Yuda", "lang": "rw", "sources": ["rw-bibleproject"]},
-        {"text": "Yuda", "lang": "ln", "sources": ["biblafrique-ln"]}
+        {
+          "text": "Jude",
+          "lang": "fr",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Yuda",
+          "lang": "sw",
+          "sources": [
+            "sw-biblia"
+          ]
+        },
+        {
+          "text": "Yuda",
+          "lang": "rw",
+          "sources": [
+            "rw-bibleproject"
+          ]
+        },
+        {
+          "text": "Yuda",
+          "lang": "ln",
+          "sources": [
+            "biblafrique-ln"
+          ]
+        },
+        {
+          "text": "Yuda",
+          "lang": "ny",
+          "sources": [
+            "ny-buku-lopatulika"
+          ]
+        }
       ]
     }
   ]

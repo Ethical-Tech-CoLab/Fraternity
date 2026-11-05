@@ -1439,3 +1439,20 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Data and code:** `data/crosspack/christian-names-2026.1.json`; `namebridge.crosspack` turns it into 8 NameConcept and 30 NameForm nodes, with 30 `historical_cognate_of` edges, all `proposed`, confidence 0.6, each citing its sources. A form shared by several languages is one node (Yohana: sw, rw, rn). The graph loader now also writes edges; packs and cross-pack data reload independently. **Tests:** 102 (6 new).
 
 **Limits:** a Bible form shows the name exists in the language, not that a person baptised Jean is recorded as Yohana; the edges stay low-weight and proposed until reviewed. **Gaps:** Chichewa forms (no safe source found; a LinkedIn profile is not one); English James and Jude, French Paul (not in the pages read); common non-biblical given names (Emmanuel, Claude, Eric); Kirundi forms beyond the four gospels.
+
+## 2026-11-05 — Chichewa gap: Bible forms and clerks' spelling habits
+
+**Question (user):** close the Chichewa gap using dictionaries, phonetics, literature, language schools, talk transcripts.
+
+**Sources (Tavily, 5 Nov 2026):**
+- *Buku Lopatulika*, Bible Society of Malawi (1922; revised 1966, 2014, 2018), book lists on [bible.com](https://www.bible.com/versions/1068-blp-2018-buku-lopatulika) and [bibliatodo](https://www.bibliatodo.com/ny/baibulo/baibulo/buku-lopatulika): **Mateyu, Marko, Luka, Yohane, Yakobo, Petro, Yuda**.
+- Chichewa Wikipedia, [Paulo Mtumwi](https://ny.wikipedia.org/wiki/Paulo_Mtumwi): **Paulo**.
+- Harvestime Chichewa Bible-study course ([PDF](http://harvestime.org/translations/chichewa/creative%20bible%20study%20fina%20copy.pdf)): the four gospels, **Yohane Mbatizi** (John the Baptist, cf. Jean-Baptiste), Paulo.
+- **Peace Corps Malawi**, *An Introduction to the Chichewa Language* (US government language course; [PDF](https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf)): "The letter C always carries an H"; no Q or X; ng' as a separate sound.
+- **UK Government, *Malawi Toponymic Factfile*** (2025; [PDF](https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf)): Chichewa spelling standardised in 1973 (New Chichewa Orthography Rules); one accented letter, ŵ (also Chitumbuka). Also lists Malawi's 28 districts (for the place data).
+
+**Not usable:** talk or audio sources. The research tools read text only, so audio cannot be analysed; transcripts carry no pronunciation. LinkedIn profiles of people with these names were rejected (real people, not sources).
+
+**Changes:** the Christian-names dataset (v0.2.0) gains the Chichewa forms; only Yohane and Mateyu are new written forms, the rest join existing nodes (Marko, Luka, Petro, Yakobo, Paulo, Yuda now also *ny*). All three packs gain two Chichewa conventions: /tʃ/ written *ch* by a Chichewa writer (a Kirundi *c*-name may arrive as *ch*), and ŵ folded to w in search forms. Graph: 179 nodes, 32 edges, valid. **Tests:** 102 pass.
+
+**Still open on Chichewa:** a Chichewa dictionary of personal names (Scott & Hetherwick 1929 is a candidate, not read); how Malawian registration clerks actually write foreign names (a field question for Jan–Mar 2027).
