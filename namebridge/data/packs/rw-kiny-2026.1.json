@@ -129,84 +129,116 @@
   "phoneme_inventory": [
     {
       "symbol": "/c/",
-      "written": ["cy"],
+      "written": [
+        "cy"
+      ],
       "note": "one sound; its phonemic status is disputed (accepted by Overdulve, Kimenyi; not by Coupez, Jacob, Bizimana)",
       "source": "Kinyarwanda and Kirundi Comparative Grammar (2007), Tables 25-26",
       "confidence": "disputed"
     },
     {
       "symbol": "/ɟ/",
-      "written": ["jy"],
+      "written": [
+        "jy"
+      ],
       "note": "one sound; phonemic status disputed as for cy",
       "source": "Comparative Grammar (2007), Tables 25-26",
       "confidence": "disputed"
     },
     {
       "symbol": "/tʃ/",
-      "written": ["c"],
+      "written": [
+        "c"
+      ],
       "note": "single letter c is an affricate",
       "source": "Comparative Grammar (2007), Table 25",
       "confidence": "medium"
     },
     {
       "symbol": "/ʒ/",
-      "written": ["j"],
+      "written": [
+        "j"
+      ],
       "note": "fricative, not English or Swahili [dʒ]",
       "source": "Comparative Grammar (2007), Table 25",
       "confidence": "high"
     },
     {
       "symbol": "/ʃ/",
-      "written": ["sh"],
+      "written": [
+        "sh"
+      ],
       "note": "one sound",
       "source": "Comparative Grammar (2007), Table 25",
       "confidence": "high"
     },
     {
       "symbol": "/ʃʲ/",
-      "written": ["shy"],
+      "written": [
+        "shy"
+      ],
       "note": "one sound; not accepted by Bizimana (1998)",
       "source": "Comparative Grammar (2007), Tables 25-26",
       "confidence": "medium"
     },
     {
       "symbol": "/pf/",
-      "written": ["pf"],
+      "written": [
+        "pf"
+      ],
       "note": "one sound",
       "source": "Comparative Grammar (2007), Tables 25-26",
       "confidence": "medium"
     },
     {
       "symbol": "/ts/",
-      "written": ["ts"],
+      "written": [
+        "ts"
+      ],
       "note": "one sound",
       "source": "Comparative Grammar (2007), Tables 25-26",
       "confidence": "medium"
     },
     {
       "symbol": "/ɲ/",
-      "written": ["ny"],
+      "written": [
+        "ny"
+      ],
       "note": "one sound",
       "source": "Comparative Grammar (2007), Tables 25-26",
       "confidence": "high"
     },
     {
       "symbol": "/ɾ/",
-      "written": ["r", "l"],
+      "written": [
+        "r",
+        "l"
+      ],
       "note": "one liquid; see phonetic_rules r-l-one-sound",
       "source": "IJLRHSS 3(3); Wikibooks, Kinyarwanda/Orthography",
       "confidence": "high"
     },
     {
       "symbol": "/ŋ/",
-      "written": ["ng"],
+      "written": [
+        "ng"
+      ],
       "note": "accepted as a phoneme only by Kimenyi (2001); usually part of prenasalised ng",
       "source": "Comparative Grammar (2007), Table 26",
       "confidence": "disputed"
     },
     {
       "symbol": "prenasalised stops",
-      "written": ["mb", "nd", "ng", "nj", "nk", "mp", "nt", "nz"],
+      "written": [
+        "mb",
+        "nd",
+        "ng",
+        "nj",
+        "nk",
+        "mp",
+        "nt",
+        "nz"
+      ],
       "note": "each read as one unit, not letter by letter",
       "source": "Comparative Grammar (2007), ch. 2 (CONCEPT-IDEA.md §5.4A; RESEARCH_LOG.md [P1])",
       "confidence": "medium"
@@ -216,63 +248,84 @@
     {
       "sound": "/w/",
       "writer_language": "fr",
-      "spellings": ["ou", "w"],
+      "spellings": [
+        "ou",
+        "w"
+      ],
       "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
       "confidence": "medium"
     },
     {
       "sound": "/ʃ/",
       "writer_language": "fr",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "high"
     },
     {
       "sound": "/ʃ/",
       "writer_language": "en",
-      "spellings": ["sh"],
+      "spellings": [
+        "sh"
+      ],
       "source": "Collins, pronunciation guide [P3]",
       "confidence": "high"
     },
     {
       "sound": "/ʃ/",
       "writer_language": "sw",
-      "spellings": ["sh"],
+      "spellings": [
+        "sh"
+      ],
       "source": "Wikipedia, Swahili language, 'Consonants' and 'Orthography', accessed 5 Nov 2026",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "fr",
-      "spellings": ["tch"],
+      "spellings": [
+        "tch"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "en",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Collins, pronunciation guide [P3]",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "sw",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Wikipedia, Swahili language, 'Consonants'",
       "confidence": "high"
     },
     {
       "sound": "/ʒ/",
       "writer_language": "fr",
-      "spellings": ["j", "ge", "gi"],
+      "spellings": [
+        "j",
+        "ge",
+        "gi"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "medium"
     },
     {
       "sound": "/ʒ/",
       "writer_language": "sw",
-      "spellings": ["j"],
+      "spellings": [
+        "j"
+      ],
       "note": "Swahili has no /ʒ/; its j is [dʒ], so a Swahili writer likely writes j for both",
       "source": "Wikipedia, Swahili language, 'Consonants' (no /ʒ/ in the inventory)",
       "confidence": "hypothesis"
@@ -280,77 +333,120 @@
     {
       "sound": "/ɲ/",
       "writer_language": "fr",
-      "spellings": ["gn", "ny"],
+      "spellings": [
+        "gn",
+        "ny"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "medium"
     },
     {
       "sound": "/ɲ/",
       "writer_language": "sw",
-      "spellings": ["ny"],
+      "spellings": [
+        "ny"
+      ],
       "source": "Wikipedia, Swahili language, 'Orthography'",
       "confidence": "high"
+    },
+    {
+      "sound": "/ɾ/",
+      "writer_language": "ny",
+      "spellings": [
+        "r after i or e",
+        "l elsewhere"
+      ],
+      "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis",
+      "source": "Wikipedia, Chewa language, 'Notes on the consonants' (official spelling since 1973: the r/l sound is written r after i or e, otherwise l), accessed 5 Nov 2026; Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U'); Wiktionary, Chichewa entry guidelines",
+      "confidence": "medium"
     }
   ],
   "listener_confusions": [
     {
-      "sounds": ["/r/", "/l/"],
+      "sounds": [
+        "/r/",
+        "/l/"
+      ],
       "listener": "any",
       "note": "one sound in Kinyarwanda; heard and written either way (Kigali / Kigari; KAKOLELE / KAKORERE in UN 1533 aliases)",
       "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 entries (BENCHMARK_PROTOCOL.md [B12])",
       "confidence": "medium"
     },
     {
-      "sounds": ["/ɾw/", "/ɾɡw/"],
+      "sounds": [
+        "/ɾw/",
+        "/ɾɡw/"
+      ],
       "listener": "non-Kinyarwanda writer",
       "note": "written rw is said [ɾɡw]; a writer who does not know the spelling may write rgw or rugw",
       "source": "Wikipedia, Kinyarwanda (Cw table); FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not",
       "confidence": "medium"
     },
     {
-      "sounds": ["/sw/", "/skw/"],
+      "sounds": [
+        "/sw/",
+        "/skw/"
+      ],
       "listener": "non-Kinyarwanda writer",
       "note": "written sw is said [skw]",
       "source": "As above",
       "confidence": "medium"
     },
     {
-      "sounds": ["/tw/", "/tkw/"],
+      "sounds": [
+        "/tw/",
+        "/tkw/"
+      ],
       "listener": "non-Kinyarwanda writer",
       "note": "written tw is said [tkw]",
       "source": "As above",
       "confidence": "medium"
     },
     {
-      "sounds": ["/bw/", "/bɡ/"],
+      "sounds": [
+        "/bw/",
+        "/bɡ/"
+      ],
       "listener": "non-Kinyarwanda writer",
       "note": "written bw is said [bɡ]",
       "source": "Wikipedia, Kinyarwanda (Cw table)",
       "confidence": "medium"
     },
     {
-      "sounds": ["/mw/", "/mŋ/"],
+      "sounds": [
+        "/mw/",
+        "/mŋ/"
+      ],
       "listener": "non-Kinyarwanda writer",
       "note": "written mw is said [mŋ]; may be heard as m + ng or mg",
       "source": "Wikipedia, Kinyarwanda (Cw table); IJLRHSS 3(3) (umwana [umwŋana])",
       "confidence": "medium"
     },
     {
-      "sounds": ["/c/", "/tʃ/"],
+      "sounds": [
+        "/c/",
+        "/tʃ/"
+      ],
       "listener": "any",
       "note": "cy and c are close, and linguists disagree whether they contrast; may be written one for the other",
       "source": "Comparative Grammar (2007), Table 26 (disputed status)",
       "confidence": "hypothesis"
     },
     {
-      "sounds": ["/ʃʲ/", "/ʃ/"],
+      "sounds": [
+        "/ʃʲ/",
+        "/ʃ/"
+      ],
       "listener": "any",
       "note": "shy may be heard and written as sh",
       "source": "Comparative Grammar (2007), Table 26 (shy not accepted by Bizimana)",
       "confidence": "hypothesis"
     },
     {
-      "sounds": ["/ᵐb/", "/b/"],
+      "sounds": [
+        "/ᵐb/",
+        "/b/"
+      ],
       "listener": "non-Kinyarwanda writer",
       "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
       "source": "No source yet; listed so the matcher can test it at low weight",
@@ -442,8 +538,15 @@
       "b": "Rgwema",
       "expected": "possible same name (written by ear; hypothesis-weighted)",
       "source": "listener_confusions /ɾw/ ~ /ɾɡw/"
+    },
+    {
+      "id": "bc-chichewa-clerk",
+      "a": "Rukundo",
+      "b": "Lukundo",
+      "expected": "possible same name (Chichewa clerk's r/l rule; hypothesis-weighted)",
+      "source": "spelling_conventions ny /ɾ/"
     }
   ],
   "reviewers": [],
-  "version": "0.1.0"
+  "version": "0.2.0"
 }

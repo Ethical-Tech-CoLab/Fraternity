@@ -118,9 +118,9 @@
   "phonetic_rules": [
     {
       "id": "r-l-one-sound",
-      "description": "[r] and [l] are one sound in Rwanda-Rundi; a name may be heard and written with either letter",
-      "source": "'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (shared Rwanda-Rundi phonology; RESEARCH_LOG.md [P2]); CONCEPT-IDEA.md §5.4A. Kirundi-specific source still to find",
-      "confidence": "medium"
+      "description": "[r] and [l] are one sound in Kirundi; a word or name may be written with either letter. Kirundi's own dictionary lists 'school' as ishūri, ishūli, ishure and ishule, and the Swahili loan kalamu became ikaramu ('pencil'). l survives mainly in foreign names (Luka, Yerusalemu in the Kirundi New Testament)",
+      "source": "Cox, E. E. (1969), Kirundi-English dictionary, rev. M. Philipps, Feb 2023, English-Kirundi part, entries 'school' and 'pencil' (https://www.matana.de/kirundi.pdf), read 5 Nov 2026; Kirundi New Testament, book list and text (dokumen.pub record, snippet only); IJLRHSS 3(3) for the shared Rwanda-Rundi phonology",
+      "confidence": "high"
     },
     {
       "id": "length-and-tone-unwritten",
@@ -152,70 +152,98 @@
   "phoneme_inventory": [
     {
       "symbol": "/tʃ/",
-      "written": ["c"],
+      "written": [
+        "c"
+      ],
       "note": "accepted by all four Kirundi sources",
       "source": "Comparative Grammar (2007), Table 27 (Meeussen 1959, Stevick 1965, Cristini 2000, Bennett 2001)",
       "confidence": "high"
     },
     {
       "symbol": "/ʒ/",
-      "written": ["j"],
+      "written": [
+        "j"
+      ],
       "note": "fricative, not English or Swahili [dʒ]",
       "source": "Comparative Grammar (2007), Tables 25 and 27",
       "confidence": "high"
     },
     {
       "symbol": "/ʃ/",
-      "written": ["sh"],
+      "written": [
+        "sh"
+      ],
       "note": "one sound; Cristini (2000) lists it as dialectal",
       "source": "Comparative Grammar (2007), Table 27",
       "confidence": "high"
     },
     {
       "symbol": "/c/",
-      "written": ["cy"],
+      "written": [
+        "cy"
+      ],
       "note": "dialectal in Kirundi: accepted by Meeussen and Bennett, dialectal for Stevick, rejected by Cristini. Standard Kirundi writes c",
       "source": "Comparative Grammar (2007), Table 27",
       "confidence": "disputed"
     },
     {
       "symbol": "/ɟ/",
-      "written": ["jy"],
+      "written": [
+        "jy"
+      ],
       "note": "dialectal, as for cy",
       "source": "Comparative Grammar (2007), Table 27",
       "confidence": "disputed"
     },
     {
       "symbol": "/pf/",
-      "written": ["pf"],
+      "written": [
+        "pf"
+      ],
       "note": "one sound; accepted by all four sources",
       "source": "Comparative Grammar (2007), Table 27",
       "confidence": "high"
     },
     {
       "symbol": "/ts/",
-      "written": ["ts"],
+      "written": [
+        "ts"
+      ],
       "note": "one sound; accepted by all four sources",
       "source": "Comparative Grammar (2007), Table 27",
       "confidence": "high"
     },
     {
       "symbol": "/ɲ/",
-      "written": ["ny"],
+      "written": [
+        "ny"
+      ],
       "note": "one sound",
       "source": "Comparative Grammar (2007), Table 27",
       "confidence": "high"
     },
     {
       "symbol": "/ɾ/",
-      "written": ["r", "l"],
+      "written": [
+        "r",
+        "l"
+      ],
       "note": "one liquid; see phonetic_rules r-l-one-sound",
       "source": "IJLRHSS 3(3); CONCEPT-IDEA.md §5.4A",
       "confidence": "medium"
     },
     {
       "symbol": "prenasalised stops",
-      "written": ["mb", "nd", "ng", "nj", "nk", "mp", "nt", "nz"],
+      "written": [
+        "mb",
+        "nd",
+        "ng",
+        "nj",
+        "nk",
+        "mp",
+        "nt",
+        "nz"
+      ],
       "note": "each read as one unit; ng is not a separate phoneme for any Kirundi source",
       "source": "Comparative Grammar (2007), ch. 2 and Table 27",
       "confidence": "medium"
@@ -225,56 +253,74 @@
     {
       "sound": "/w/",
       "writer_language": "fr",
-      "spellings": ["ou", "w"],
+      "spellings": [
+        "ou",
+        "w"
+      ],
       "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3])",
       "confidence": "medium"
     },
     {
       "sound": "/ʃ/",
       "writer_language": "fr",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "high"
     },
     {
       "sound": "/ʃ/",
       "writer_language": "en",
-      "spellings": ["sh"],
+      "spellings": [
+        "sh"
+      ],
       "source": "Collins, pronunciation guide [P3]",
       "confidence": "high"
     },
     {
       "sound": "/ʃ/",
       "writer_language": "sw",
-      "spellings": ["sh"],
+      "spellings": [
+        "sh"
+      ],
       "source": "Wikipedia, Swahili language, 'Consonants' and 'Orthography', accessed 5 Nov 2026",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "fr",
-      "spellings": ["tch"],
+      "spellings": [
+        "tch"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "en",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Collins, pronunciation guide [P3]",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "sw",
-      "spellings": ["ch"],
+      "spellings": [
+        "ch"
+      ],
       "source": "Wikipedia, Swahili language, 'Consonants'",
       "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "rw",
-      "spellings": ["c", "cy"],
+      "spellings": [
+        "c",
+        "cy"
+      ],
       "note": "a Kinyarwanda writer may write cy where Kirundi has c (reverse of rule rw-to-rn-cy)",
       "source": "Comparative Grammar (2007), Table 1",
       "confidence": "medium"
@@ -282,14 +328,20 @@
     {
       "sound": "/ʒ/",
       "writer_language": "fr",
-      "spellings": ["j", "ge", "gi"],
+      "spellings": [
+        "j",
+        "ge",
+        "gi"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "medium"
     },
     {
       "sound": "/ʒ/",
       "writer_language": "sw",
-      "spellings": ["j"],
+      "spellings": [
+        "j"
+      ],
       "note": "Swahili has no /ʒ/; its j is [dʒ], so a Swahili writer likely writes j",
       "source": "Wikipedia, Swahili language, 'Consonants' (no /ʒ/ in the inventory)",
       "confidence": "hypothesis"
@@ -297,63 +349,100 @@
     {
       "sound": "/ɲ/",
       "writer_language": "fr",
-      "spellings": ["gn", "ny"],
+      "spellings": [
+        "gn",
+        "ny"
+      ],
       "source": "Wikipedia, French orthography [P3]",
       "confidence": "medium"
     },
     {
       "sound": "/ɲ/",
       "writer_language": "sw",
-      "spellings": ["ny"],
+      "spellings": [
+        "ny"
+      ],
       "source": "Wikipedia, Swahili language, 'Orthography'",
       "confidence": "high"
+    },
+    {
+      "sound": "/ɾ/",
+      "writer_language": "ny",
+      "spellings": [
+        "r after i or e",
+        "l elsewhere"
+      ],
+      "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis",
+      "source": "Wikipedia, Chewa language, 'Notes on the consonants' (official spelling since 1973: the r/l sound is written r after i or e, otherwise l), accessed 5 Nov 2026; Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U'); Wiktionary, Chichewa entry guidelines",
+      "confidence": "medium"
     }
   ],
   "listener_confusions": [
     {
-      "sounds": ["/r/", "/l/"],
+      "sounds": [
+        "/r/",
+        "/l/"
+      ],
       "listener": "any",
       "note": "one sound in Rwanda-Rundi; heard and written either way",
       "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
       "confidence": "medium"
     },
     {
-      "sounds": ["/rw/", "/rgw/"],
+      "sounds": [
+        "/rw/",
+        "/rgw/"
+      ],
       "listener": "non-Kirundi writer",
       "note": "written rw is said [rgw]; a writer who does not know the spelling may write rgw",
       "source": "FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not",
       "confidence": "medium"
     },
     {
-      "sounds": ["/sw/", "/skw/"],
+      "sounds": [
+        "/sw/",
+        "/skw/"
+      ],
       "listener": "non-Kirundi writer",
       "note": "written sw is often said [skw]",
       "source": "As above",
       "confidence": "medium"
     },
     {
-      "sounds": ["/tw/", "/tkw/"],
+      "sounds": [
+        "/tw/",
+        "/tkw/"
+      ],
       "listener": "non-Kirundi writer",
       "note": "written tw is said [tkw]",
       "source": "As above",
       "confidence": "medium"
     },
     {
-      "sounds": ["/mw/", "/mg/"],
+      "sounds": [
+        "/mw/",
+        "/mg/"
+      ],
       "listener": "non-Kirundi writer",
       "note": "written mw is said [my] or [mg]",
       "source": "As above",
       "confidence": "medium"
     },
     {
-      "sounds": ["/vy/", "/vz/"],
+      "sounds": [
+        "/vy/",
+        "/vz/"
+      ],
       "listener": "non-Kirundi writer",
       "note": "vy may contain a [z] sound; may be written vz, z or vi",
       "source": "FSI Kirundi Basic Course, pronunciation synopsis",
       "confidence": "medium"
     },
     {
-      "sounds": ["/ᵐb/", "/b/"],
+      "sounds": [
+        "/ᵐb/",
+        "/b/"
+      ],
       "listener": "non-Kirundi writer",
       "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
       "source": "No source yet; listed so the matcher can test it at low weight",
@@ -396,6 +485,11 @@
       "id": "adopted-swahili-name",
       "description": "Burundian refugees in Tanzanian towns took Swahili names to be less visible, and some kept them after naturalisation. Such a name is not a spelling variant and gets no public edge; matching across it goes through the protected route",
       "source": "Daley (2018), Oxford (BENCHMARK_PROTOCOL.md [B18]); NAME_CHANGE.md rules 1 and 5; THREAT_MODEL.md T14"
+    },
+    {
+      "id": "colonial-place-spellings",
+      "description": "Places renamed or respelled after independence: Kitega / Gitega, Usumbura / Bujumbura (1962), Hinga or Muhinga / Muyinga, Karusi / Karuzi. Older people may give the old form; foreign records may keep it. Goes into the cross-pack place data (week 4)",
+      "source": "Statoids, Burundi provinces, 'Other names of subdivisions' and history (https://statoids.com/ubi.html); Wikipedia, Gitega and Bujumbura; accessed 5 Nov 2026"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -438,8 +532,22 @@
       "b": "Nshimilimana",
       "expected": "same name (r/l)",
       "source": "r-l-one-sound"
+    },
+    {
+      "id": "bc-chichewa-clerk",
+      "a": "Nkurunziza",
+      "b": "Nkulunziza",
+      "expected": "possible same name (Chichewa clerk's r/l rule; hypothesis-weighted)",
+      "source": "spelling_conventions ny /ɾ/"
+    },
+    {
+      "id": "bc-dictionary-rl",
+      "a": "Ishure",
+      "b": "Ishule",
+      "expected": "same word (attested in Cox's dictionary); the pattern for names",
+      "source": "r-l-one-sound"
     }
   ],
   "reviewers": [],
-  "version": "0.1.0"
+  "version": "0.2.0"
 }

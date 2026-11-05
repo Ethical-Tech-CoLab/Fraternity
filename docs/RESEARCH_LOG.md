@@ -1368,3 +1368,16 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Pack:** `namebridge/data/packs/bi-kirundi-2026.1.json`, v0.1.0: the four Kinyarwanda → Kirundi rules (high) and the ambiguous reverse (generate both options); sporadic differences left to graph edges; mission spellings as word-division/apostrophe variants (`hypothesis`); cluster pronunciations including *vy* ~ [z] (medium); CENI order (surname in capitals); Swahili names adopted in Tanzania routed as name changes, not variants. `relationship_implications`: agreement `context-dependent`, disagreement `disputed`.
 
 **Gaps:** a Kirundi-specific source for r/l (the current one is about Kinyarwanda; the phonology is shared); Mioni (1975) full text; spelling of *c*/*j* by French writers in Burundian records (no source).
+
+## 2026-11-05 — Kirundi r/l outside linguistics; Chichewa clerks; colonial place names
+
+**Question (user):** find Kirundi-specific evidence for r/l, looking in safe sources that are not about linguistics (literature, etc.).
+
+**Sources and findings:**
+- [R1] **Cox, *Kirundi-English dictionary*** (1969; rev. M. Philipps, Feb 2023; [PDF](https://www.matana.de/kirundi.pdf)), English-Kirundi part, read 5 Nov: **"school: ishūri, ishūli, ishure, ishule"** (four spellings of one word, r/l and i/e) and **"pencil: ikaramu (Sw.)"** (Swahili *kalamu*, l → r). Also *ivatiri* "car" (French *voiture*). **Kirundi-specific evidence of r/l variation in writing**; the `bi-kirundi` r/l rule moves to `high`.
+- [R2] **Kirundi New Testament** (book list via a dokumen.pub record; snippet only, page did not load): *Matayo, Mariko, Luka, Yohana*; *Yerusalemu*. l kept in some foreign names, r in others (*Mariko*). Single source, snippet; consistent with the Kinyarwanda rule (l only in names that already had it).
+- [R3] **Chichewa, the language of Malawian clerks:** r and l are one sound; the official spelling (1973) writes **r after i or e, l elsewhere** ([Wikipedia, Chewa language](https://en.wikipedia.org/wiki/Chewa_language); Lyons & Mchombo, *Chichewa Grammar*: "R usually follows the vowels E and I … L follows the vowels A, O, U"; [Wiktionary guidelines](https://en.wiktionary.org/wiki/Wiktionary:Chichewa_entry_guidelines)). Three consistent sources. **Consequence:** a Malawian clerk writing a refugee's name may apply the rule (*Nkurunziza* → *Nkulunziza*, *Rukundo* → *Lukundo*). The rule is sourced; that clerks apply it to foreign names is a hypothesis. Partly closes the Chichewa gap of 28 Oct.
+- [R4] **Colonial place names** ([Statoids, Burundi](https://statoids.com/ubi.html); Wikipedia, Gitega, Bujumbura): Kitega → Gitega, Usumbura → Bujumbura (1 Jul 1962), Hinga / Muhinga → Muyinga, Karusi → Karuzi. Older people and old records may use the colonial forms. For the cross-pack place data.
+- **Not reachable:** Niyonkuru (1985), "Loan-Words in Kirundi", *African Study Monographs* 7: 81–87 (Kyoto repository PDF failed); Nimbona & Simon (2022), "La prononciation du français au Burundi", *Journal of Language Contact* 15(3–4) (abstract only: 12 speakers, eight features differing from reference French; whether r/l is one of them is unknown). Both need library access.
+
+**Files touched:** both packs to v0.2.0 (Chichewa writer convention `ny` in both; Kirundi r/l to `high`; colonial place spellings as a failure mode; new benchmark cases).

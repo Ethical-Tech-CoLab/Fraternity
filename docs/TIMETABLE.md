@@ -39,7 +39,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - G4, the error costs (the 26 Oct default is in use; decide before week 6);
 - the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9);
 - no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
-- sound layer gaps: no source yet on children's pronunciation or Chichewa spelling habits (`RESEARCH_LOG.md`, 28 Oct).
+- sound layer gaps: no source yet on children's pronunciation (`RESEARCH_LOG.md`, 28 Oct). Chichewa's r/l spelling rule found 5 Nov; other Chichewa habits still unsourced.
 
 **Next:** week 4, first packs: `rw-kiny`, `bi-kirundi` and the DRC packs, the naming profiles from the public lists (allowed since G3 closed), ICU set-up, and the first pass of the sound layer.
 
