@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side.",
   "confidence": 0.9,
   "sources": {
@@ -147,6 +147,30 @@
       "url": "https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/namebridge/scripts/burundi_crosswalk.py",
       "locator": "share = fraction of the old commune's (new-colline) area that lies in the new commune; 43 of 3,067 collines fell outside all old polygons (boundary mismatch) and are not counted",
       "language": "en"
+    },
+    "bi-ceni-2010": {
+      "name": "CENI Burundi, Rapport général sur le processus électoral de 2010 (registration tables by province and commune)",
+      "url": "https://www.ceniburundi.bi/wp-content/uploads/2011/02/Rapport_general_des_elections_de_2010.pdf",
+      "locator": "p. 107ff, table of registered voters by province and commune (e.g. GITEGA: ... MUTAHO, NYARUSANGE, RYANSORO; BUJUMBURA RURAL: ISALE, KANYOSHA, MUGONGOMANGA ...)",
+      "language": "fr"
+    },
+    "bi-ocha-2001": {
+      "name": "OCHA Burundi Weekly Information Update, 09-22 Apr 2001 (ReliefWeb)",
+      "url": "https://reliefweb.int/report/burundi/ocha-burundi-weekly-information-update-09-22-apr-2001",
+      "locator": "'Displaced populations from Nyarusange commune / Gitega province'",
+      "language": "en"
+    },
+    "bi-usaid-2005": {
+      "name": "USAID Field Report Burundi, Dec 2005 (ReliefWeb)",
+      "url": "https://reliefweb.int/report/burundi/usaid-field-report-burundi-dec-2005",
+      "locator": "'... Nyarusange communes in Gitega'",
+      "language": "en"
+    },
+    "bi-fao-2008": {
+      "name": "FAO, Burundi livestock case study (May 2008), FAO Knowledge Repository",
+      "url": "https://openknowledge.fao.org/server/api/core/bitstreams/cfd0a845-2a67-4fa2-ae06-8ec8ea874ce3/content",
+      "locator": "case study one: Gitega commune borders Makebuko, Nyarusange and Itaba communes",
+      "language": "en"
     }
   },
   "units": [
@@ -247,7 +271,10 @@
       "country": "BI",
       "level": "commune",
       "period": "pre2025",
-      "name_source": "bi-cod-ab-2026"
+      "name_source": "bi-cod-ab-2026",
+      "name_also_in": [
+        "bi-ceni-2010"
+      ]
     },
     {
       "key": "BI:commune:bukinanyana@2025-",
@@ -563,7 +590,16 @@
       "name": "Isale",
       "country": "BI",
       "level": "commune",
-      "period": "pre2025"
+      "period": "pre2025",
+      "name_source": "bi-ceni-2010",
+      "other_names": [
+        {
+          "name": "Isare",
+          "lang": "rn",
+          "source": "bi-law-2023",
+          "note": "the 2025 commune that took most of it is spelled Isare (r/l)"
+        }
+      ]
     },
     {
       "key": "BI:commune:isare@2025-",
@@ -846,7 +882,15 @@
       "country": "BI",
       "level": "commune",
       "period": "pre2025",
-      "name_source": "bi-cm-2022"
+      "name_source": "bi-cm-2022",
+      "other_names": [
+        {
+          "name": "Mugongomanga",
+          "lang": "rn",
+          "source": "bi-ceni-2010",
+          "note": "written as one word by CENI (2010); hyphenated in the 2022 communiqué"
+        }
+      ]
     },
     {
       "key": "BI:commune:muha-bujumbura-mairie@pre2025",
@@ -1102,12 +1146,25 @@
       "period": "pre2025"
     },
     {
-      "key": "BI:commune:nyanrusang-gitega@pre2025",
-      "name": "Nyanrusang",
+      "key": "BI:commune:nyarusange-gitega@pre2025",
+      "name": "Nyarusange",
       "country": "BI",
       "level": "commune",
       "period": "pre2025",
-      "note": "name truncated in the boundary source; full form unconfirmed (probably Nyanrusange)"
+      "name_source": "bi-ceni-2010",
+      "other_names": [
+        {
+          "name": "Nyanrusange",
+          "lang": "rn",
+          "source": "bi-geoboundaries-2007",
+          "note": "truncated as 'Nyanrusang' in the boundary data; an extra n before r. The official (CENI 2010) and UN/USAID/FAO form is Nyarusange"
+        }
+      ],
+      "name_also_in": [
+        "bi-ocha-2001",
+        "bi-usaid-2005",
+        "bi-fao-2008"
+      ]
     },
     {
       "key": "BI:commune:nyanza-lac-makamba@pre2025",
@@ -4267,7 +4324,7 @@
       "share": 1.0
     },
     {
-      "from": "BI:commune:nyanrusang-gitega@pre2025",
+      "from": "BI:commune:nyarusange-gitega@pre2025",
       "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
@@ -4276,7 +4333,7 @@
       ]
     },
     {
-      "from": "BI:commune:nyanrusang-gitega@pre2025",
+      "from": "BI:commune:nyarusange-gitega@pre2025",
       "to": "BI:commune:gishubi@2025-",
       "relation": "merged_into",
       "year": 2025,

@@ -1538,3 +1538,18 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Data and code:** places v0.5.0, 271 units, 343 links; graph 467 nodes, 389 edges, valid. Loader accepts derived links (basis, confidence, share). **Tests:** 113 (2 new).
 
 **Next (user's correction):** replace the Wikipedia-only sources in the packs, the Christian names and the places data with primary sources.
+
+## 2026-11-05 — "Nyanrusang": the official name is Nyarusange
+
+**Question (user):** find the truncated commune name in reports of international organisations, given Burundi's wars.
+
+**Findings (Tavily, then the primary PDF):**
+- **UN and agency reports write *Nyarusange*:** OCHA Burundi Weekly Information Update, 9–22 Apr 2001 ("Displaced populations from Nyarusange commune / Gitega province"); USAID Field Report, Dec 2005 ("Nyarusange communes in Gitega"); FAO livestock case study, May 2008 (Gitega commune borders "Makebuko, Nyarusange and Itaba communes").
+- **The official Burundian source agrees:** CENI, *Rapport général sur le processus électoral de 2010*, registration table by commune: GITEGA … MUTAHO, **NYARUSANGE**, RYANSORO. Downloaded from CENI and read locally; only commune names were used (the report also lists candidates; nothing about people was kept).
+- ***Nyanrusange*** appears only in geoBoundaries (truncated "Nyanrusang") and in Wikipedia and its copies: an **extra n before r**. Kept as another name, and added to the `bi-kirundi` pack as an attested listener confusion (/nr/ ~ /r/, medium).
+- **A homonym:** OCHA (Jul 2005) also mentions "Nyarusange" as a *sector* of Musigati commune (Bubanza). Same name, different place, a different level.
+- **Other official variants found in the same CENI table:** *MUGONGOMANGA* written as one word (the 2022 communiqué writes *Mugongo-Manga*); *ISALE* (2010) vs *Isare* (2023 law), an r/l alternation between two official sources; *BUKINANYANA* and *KANYOSHA* confirmed. The `bi-kirundi` r/l rule now cites these official sources.
+- **New gap:** in 2010 Bujumbura Mairie had **13 urban communes** (Buterere, Buyenzi, Bwiza, Cibitoke, Gihosha, Kamenge, Kanyosha, Kinama, Kinindo, Musaga, Ngagara, Nyakabiga, Rohero), later merged into Muha, Mukaza and Ntahangwa. People from the capital will use these names; not yet in the data.
+- The OCHA war-period reports (2001–2004) also confirm several other old communes (Nyabitsinda, Kabezi, Nyabiraba, Mutimbuzi, Mubimbi, Mutambu, Buyengero) and write "Nyanza Lac" without the hyphen.
+
+**Data:** places v0.6.0 (Nyarusange, with sources); `bi-kirundi` v0.4.0. **Tests:** 113 pass.

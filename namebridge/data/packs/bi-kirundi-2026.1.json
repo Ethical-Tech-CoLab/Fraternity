@@ -118,8 +118,8 @@
   "phonetic_rules": [
     {
       "id": "r-l-one-sound",
-      "description": "[r] and [l] are one sound in Kirundi; a word or name may be written with either letter. Kirundi's own dictionary lists 'school' as ishūri, ishūli, ishure and ishule, and the Swahili loan kalamu became ikaramu ('pencil'). l survives mainly in foreign names (Luka, Yerusalemu in the Kirundi New Testament)",
-      "source": "Cox, E. E. (1969), Kirundi-English dictionary, rev. M. Philipps, Feb 2023, English-Kirundi part, entries 'school' and 'pencil' (https://www.matana.de/kirundi.pdf), read 5 Nov 2026; Kirundi New Testament, book list and text (dokumen.pub record, snippet only); IJLRHSS 3(3) for the shared Rwanda-Rundi phonology",
+      "description": "[r] and [l] are one sound in Kirundi; a word or name may be written with either letter. Kirundi's own dictionary lists 'school' as ishūri, ishūli, ishure and ishule, and the Swahili loan kalamu became ikaramu ('pencil'). l survives mainly in foreign names (Luka, Yerusalemu in the Kirundi New Testament). Official place names show it too: the commune ISALE (CENI 2010) became Isare (Organic Law 1/05 of 16 March 2023)",
+      "source": "Cox, E. E. (1969), Kirundi-English dictionary, rev. M. Philipps, Feb 2023, English-Kirundi part, entries 'school' and 'pencil' (https://www.matana.de/kirundi.pdf), read 5 Nov 2026; Kirundi New Testament, book list and text (dokumen.pub record, snippet only); IJLRHSS 3(3) for the shared Rwanda-Rundi phonology; CENI, Rapport général sur le processus électoral de 2010 (commune ISALE); Loi organique n°1/05 du 16 mars 2023, art. 5 (commune Isare)",
       "confidence": "high"
     },
     {
@@ -463,6 +463,16 @@
       "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
       "source": "No source yet; listed so the matcher can test it at low weight",
       "confidence": "hypothesis"
+    },
+    {
+      "sounds": [
+        "/nr/",
+        "/r/"
+      ],
+      "listener": "any",
+      "note": "an n before r added or dropped in writing: the commune Nyarusange (CENI 2010; OCHA 2001; USAID 2005; FAO 2008) appears as Nyanrusange in boundary data",
+      "source": "CENI 2010 general election report (NYARUSANGE) against geoBoundaries BDI ADM2 (Nyanrusang[e]); RESEARCH_LOG.md, 5 Nov 2026",
+      "confidence": "medium"
     }
   ],
   "relationship_implications": {
@@ -565,5 +575,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.3.0"
+  "version": "0.4.0"
 }
