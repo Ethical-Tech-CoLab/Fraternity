@@ -71,7 +71,8 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | Sound layer (names told aloud): design and schema | ✔ done (extra) 28 Oct | `CONCEPT-IDEA.md` §5.4A; `namebridge.schema.pack` | `415917e` |
 | Week 4: `rw-kiny` pack v0.1.0 (structures, order, sound inventory, writer conventions, listener confusions) | ◐ done 5 Nov, ahead of 9–13 Nov | `namebridge/data/packs/rw-kiny-2026.1.json` | `a7f1b86` |
 | Week 4: `bi-kirundi` pack v0.1.0 (the four rw→rn rules and the ambiguous reverse; mission spellings as hypothesis; civil code arts 11–14 read) | ◐ done 5 Nov | `namebridge/data/packs/bi-kirundi-2026.1.json` | `b05ccbe` |
-| Week 4: graph loader (packs → Rule and Language nodes; repeatable; nothing written if a pack is invalid) | ✔ done 5 Nov | `namebridge/src/namebridge/packs.py` | this commit |
+| Week 4: graph loader (packs → Rule and Language nodes; repeatable; nothing written if a pack is invalid) | ✔ done 5 Nov | `namebridge/src/namebridge/packs.py` | `6ae9cc3` |
+| Week 4: DRC pack `cd-swc-ln` v0.1.0 (Family Code arts 56–64 read; authenticité 1972–1997; Lingala spelling) | ✔ done 5 Nov | `namebridge/data/packs/cd-swc-ln-2026.1.json` | this commit |
 
 **Decided by the professor on 28 Oct:** scope approved (G1); governments and law enforcement are not users (G2); no NYU IRB review needed for the public lists (G3, option A); alleged perpetrators never searched for, and a restricted name-change layer allowed with conditions (G5); open source, no sale (G7).
 
@@ -174,7 +175,7 @@ Plan (all items done 26 Oct):
 
 ✔ **G3 closed 28 Oct (option A)** and **G6 closed 28 Oct**: the public lists may be downloaded and processed under `DATA_RULES.md` DR-1.
 
-- ◐ **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili). *`rw-kiny-2026.1` and `bi-kirundi-2026.1` v0.1.0 done 5 Nov* (sourced; pass the validator); both **load into the graph** as 97 sourced Rule and Language nodes (`namebridge.packs`, 5 Nov). **Remaining:** DRC.
+- ◐ **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili). ✔ *`rw-kiny-2026.1`, `bi-kirundi-2026.1` and `cd-swc-ln-2026.1` (DRC) done 5 Nov* (sourced; pass the validator); all three **load into the graph** as 133 sourced Rule and Language nodes (`namebridge.packs`). **Remaining in week 4:** cross-pack data, ICU, naming profiles.
 - **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries).
 - **ICU / CLDR:** set up normalisation, transforms and transform-path logging (§5.4).
 - ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Burundi source decided 28 Oct (G6): NESA elements weighted by CENI 2025 frequencies, Kirundi spelling rules, Forebears as a check.

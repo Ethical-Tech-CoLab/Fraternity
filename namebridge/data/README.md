@@ -10,7 +10,7 @@ the synthetic benchmark lives elsewhere (week 6).
   data/packs/*.json`; name-to-name edges come only from attested sources.
 - `packs/` — country/language packs (§11) as JSON. Start from
   `TEMPLATE.json`; validator: `namebridge.schema.pack`. Loaded so far:
-  `rw-kiny`, `bi-kirundi`; the DRC pack is next.
+  `rw-kiny`, `bi-kirundi`, `cd-swc-ln` (DRC).
 
 The public graph holds **spelling variants only**: there is no edge type
 for an adopted or changed name (`docs/NAME_CHANGE.md` rule 1), and no

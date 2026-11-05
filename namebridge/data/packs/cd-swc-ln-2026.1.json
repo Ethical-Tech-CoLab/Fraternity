@@ -1,0 +1,346 @@
+{
+  "pack_id": "cd-swc-ln-2026.1",
+  "languages": [
+    "swc",
+    "ln",
+    "fr"
+  ],
+  "scripts": [
+    "Latn"
+  ],
+  "regions": [
+    "CD"
+  ],
+  "name_structures": [
+    {
+      "id": "structure-prenom-nom-postnom",
+      "description": "Every Congolese is designated by a name of one or more elements; the prénom, the nom and the postnom are the elements of the name (art. 56). Names are drawn from Congolese cultural heritage (art. 58); the child bears the name chosen by the parents (art. 59)",
+      "practice": "legal_document",
+      "source": "DRC, Code de la famille (consolidated 2017), arts 56, 58, 59 (https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf), read 5 Nov 2026",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-family-members-differ",
+      "description": "Members of one family who share a nom must each add different complementary elements (art. 57); a parent who passes on their name must add at least one element different from their own (art. 61). So relatives may share one element, never the whole name",
+      "practice": "legal_document",
+      "source": "Code de la famille (2017), arts 57 and 61, read 5 Nov 2026",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-married-woman",
+      "description": "A married woman keeps her name; during the marriage she may add her husband's name to hers, and a widow who has not remarried may keep using it (art. 62)",
+      "practice": "legal_document",
+      "source": "Code de la famille (2017), art. 62, read 5 Nov 2026",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-authenticite",
+      "description": "Authenticité: from 1971-72 Christian (European) given names were banned and replaced by ancestral names; nom + postnom became the identity. From 24 Apr 1990 Christian names could again be used in daily life but not in registers or official documents; from 1997 they could be registered again. Adults born before about 1997 may have records without the prénom they use",
+      "practice": "legal_document",
+      "source": "Immigration and Refugee Board of Canada, Réponse aux demandes d'information (doc 449451), citing Ndaywel è Nziem (1998), 'De l'authenticité à la libération : se prénommer en République démocratique du Congo', Politique Africaine; Pauwels & Pintens (1983), 'La législation zaïroise relative au nom' (https://www.droitcongolais.info/files/Hum.Sc.-NS-_T.XLVII,2_PAUWELS-J.-M.et-PINTENS-W._La-legislation-zairoise-relative-au-nom.-Droit-et-authenticite-africaine_1983.pdf); read 5 Nov 2026",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-dual-origin",
+      "description": "Modern Congolese names combine locally rooted Bantu elements with Christian or French-origin elements",
+      "practice": "cultural",
+      "source": "Tshabu Ngandu et al. (2026), 'CongoNames Corpus', Data 11(7):169, abstract via the corpus repository (https://github.com/bernard-ng/drc-names-corpus), read 5 Nov 2026",
+      "confidence": "medium"
+    }
+  ],
+  "order_rules": [
+    {
+      "id": "order-immutable-in-civil-records",
+      "description": "The order in which the name elements were declared, and their spelling, are immutable (art. 56); changing a name, its spelling or its order needs a court (art. 64)",
+      "practice": "legal_document",
+      "source": "Code de la famille (2017), arts 56 and 64, read 5 Nov 2026",
+      "confidence": "high"
+    },
+    {
+      "id": "order-prenom-written-or-omitted",
+      "description": "Since 1990 the prénom may precede nom and postnom, but written identity long continued to ignore prénoms while speech used them. A record may hold nom + postnom only, and an oral report the prénom only",
+      "practice": "legal_document",
+      "source": "Ndaywel è Nziem (1998), p. 104, quoted by IRB Canada (doc 449451)",
+      "confidence": "high"
+    },
+    {
+      "id": "order-foreign-forms",
+      "description": "Forms with first/last fields (UNHCR, other countries) do not follow the declared order: the postnom is dropped, or nom and postnom are swapped (Mutombo Kalala Pierre / Pierre Mutombo)",
+      "practice": "database",
+      "source": "SCOPE.md §1 (DRC); BENCHMARK_PROTOCOL.md §2.3; ICC, Annex 1, 'The issue of names used to identify citizens of the DRC' (SCOPE.md [S9])",
+      "confidence": "medium"
+    }
+  ],
+  "particles_and_morphemes": [],
+  "transliteration_rules": [],
+  "phonetic_rules": [
+    {
+      "id": "lingala-open-vowels-unwritten",
+      "description": "Lingala has seven vowels (e/ɛ, o/ɔ distinct); the 1976 standard writes ɛ and ɔ, but everyday writing uses e and o, and tone is almost never marked. Search forms fold ɛ to e and ɔ to o; the original form is kept",
+      "source": "Wikipedia, Lingala, 'Writing system' (Société Zaïroise des Linguistes, 1976), accessed 5 Nov 2026; APiCS Online, survey chapter 60, Lingala",
+      "confidence": "high"
+    },
+    {
+      "id": "lingala-spelling-vacillates",
+      "description": "Lingala has no uniformly accepted spelling; the same writer varies. Semivowel y is written i, y or not at all; w as w, o, u or not at all; close-mid o as o or u; a word-initial prenasal written or not (sango / nsango)",
+      "source": "APiCS Online, survey chapter 60, Lingala (https://apics-online.info/surveys/60); Wikipedia, Lingala",
+      "confidence": "high"
+    },
+    {
+      "id": "swahili-orthography",
+      "description": "Congo Swahili is written with the standard Swahili alphabet: ch, sh, ny, ng' as single sounds; prenasalised mb, nd, nj, ng, mv, nz. Its regional varieties (Kivu, Katanga, Maniema, Ituri) differ mainly in grammar; spelling differences in names are not documented",
+      "source": "Wikipedia, Congo Swahili and Swahili language, accessed 5 Nov 2026; Bose (2016), 'Morphosyntactic core features of Kivu Swahili', Afrikanistik-Aegyptologie-Online",
+      "confidence": "medium"
+    },
+    {
+      "id": "r-l-variation",
+      "description": "Names from eastern DRC show r/l alternation in attested aliases, as well as nasal insertion and loss (patterns from the UN 1533 sanctions list aliases)",
+      "source": "UN Security Council Consolidated List, 1533 (DRC) entries, aliases (BENCHMARK_PROTOCOL.md [B12]); used for patterns only, no names copied",
+      "confidence": "medium"
+    }
+  ],
+  "common_administrative_forms": [
+    {
+      "id": "nom-postnom-identity",
+      "description": "Nom + postnom as the identity on documents issued 1972-1997, without a prénom",
+      "source": "structure-authenticite",
+      "confidence": "high"
+    }
+  ],
+  "phoneme_inventory": [
+    {
+      "symbol": "/tʃ/",
+      "written": ["ch"],
+      "note": "Swahili spelling; French writers use tch",
+      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ʃ/",
+      "written": ["sh"],
+      "note": "Swahili spelling; French writers use ch",
+      "source": "Wikipedia, Swahili language, 'Consonants'",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ɲ/",
+      "written": ["ny"],
+      "note": "one sound",
+      "source": "Wikipedia, Swahili language, 'Orthography'",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ŋ/",
+      "written": ["ng'"],
+      "note": "the apostrophe separates it from ng (two sounds); often dropped in records",
+      "source": "Wikipedia, Swahili language, 'Orthography'",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ɛ/",
+      "written": ["ɛ", "e"],
+      "note": "Lingala open e; usually written e",
+      "source": "Wikipedia, Lingala",
+      "confidence": "high"
+    },
+    {
+      "symbol": "/ɔ/",
+      "written": ["ɔ", "o"],
+      "note": "Lingala open o; usually written o",
+      "source": "Wikipedia, Lingala",
+      "confidence": "high"
+    },
+    {
+      "symbol": "prenasalised stops",
+      "written": ["mb", "nd", "nj", "ng", "mv", "nz"],
+      "note": "each one unit in Swahili and Lingala",
+      "source": "Wikipedia, Swahili language, 'Consonants'; LinguaCommons, Lingala pronunciation guide",
+      "confidence": "high"
+    }
+  ],
+  "spelling_conventions": [
+    {
+      "sound": "/w/",
+      "writer_language": "fr",
+      "spellings": ["ou", "w"],
+      "note": "Mwamba / Mouamba",
+      "source": "Wikipedia, French orthography (RESEARCH_LOG.md [P3]); Wikipedia, Lingala (French-influenced ou for [u] in the Republic of the Congo)",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/s/",
+      "writer_language": "fr",
+      "spellings": ["s", "ss"],
+      "note": "double s between vowels, French-influenced",
+      "source": "Wikipedia, Lingala, 'Writing system'",
+      "confidence": "medium"
+    },
+    {
+      "sound": "/ʃ/",
+      "writer_language": "fr",
+      "spellings": ["ch"],
+      "source": "Wikipedia, French orthography [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "fr",
+      "spellings": ["tch"],
+      "source": "Wikipedia, French orthography [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/tʃ/",
+      "writer_language": "en",
+      "spellings": ["ch"],
+      "source": "Collins, pronunciation guide [P3]",
+      "confidence": "high"
+    },
+    {
+      "sound": "/j/",
+      "writer_language": "ln",
+      "spellings": ["y", "i", ""],
+      "source": "APiCS Online, survey chapter 60, Lingala",
+      "confidence": "high"
+    },
+    {
+      "sound": "/w/",
+      "writer_language": "ln",
+      "spellings": ["w", "o", "u", ""],
+      "source": "APiCS Online, survey chapter 60, Lingala",
+      "confidence": "high"
+    },
+    {
+      "sound": "/ɾ/",
+      "writer_language": "ny",
+      "spellings": ["r after i or e", "l elsewhere"],
+      "note": "Chichewa (Malawi) writes its single r/l sound by the preceding vowel; a Malawian clerk may apply it to a refugee's name. Swahili itself keeps r and l apart",
+      "source": "Wikipedia, Chewa language (1973 orthography); Lyons & Mchombo, Chichewa Grammar; Wiktionary, Chichewa entry guidelines",
+      "confidence": "medium"
+    }
+  ],
+  "listener_confusions": [
+    {
+      "sounds": ["/r/", "/l/"],
+      "listener": "any",
+      "note": "attested in eastern DRC aliases; Swahili keeps them apart, so weight is lower than in Rwanda-Rundi",
+      "source": "UN 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/ᵐp/", "/p/"],
+      "listener": "any",
+      "note": "a nasal before a consonant inserted or lost (patterns like -mp- / -p-, -ns- / -s-)",
+      "source": "UN 1533 aliases (BENCHMARK_PROTOCOL.md [B12]); APiCS (prenasal written or not)",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/m/", "/n/"],
+      "listener": "any",
+      "note": "word-final or pre-consonant m/n heard one for the other",
+      "source": "UN 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
+      "confidence": "hypothesis"
+    },
+    {
+      "sounds": ["/e/", "/ɛ/"],
+      "listener": "any",
+      "note": "not distinguished in writing; merged in Kinshasa speech",
+      "source": "Wikipedia, Lingala; APiCS",
+      "confidence": "medium"
+    },
+    {
+      "sounds": ["/o/", "/u/"],
+      "listener": "any",
+      "note": "close-mid o written o or u in Lingala",
+      "source": "APiCS Online, survey chapter 60, Lingala",
+      "confidence": "medium"
+    }
+  ],
+  "relationship_implications": {
+    "surname_agreement": "context-dependent",
+    "surname_disagreement": "neutral",
+    "note": "The law requires relatives who share a nom to differ in another element, and a parent who passes a name to add one. Sharing one element is evidence of a possible link; sharing all elements suggests the same person, not relatives. Different noms are common among siblings and are no evidence against kinship",
+    "source": "Code de la famille (2017), arts 57 and 61; SCOPE.md [S5]"
+  },
+  "known_failure_modes": [
+    {
+      "id": "authenticite-prenom-gap",
+      "description": "Adults registered 1972-1997 may have no prénom on documents while using a Christian prénom in daily life; a search by prénom misses the record and a search by nom + postnom misses the oral report",
+      "source": "structure-authenticite"
+    },
+    {
+      "id": "postnom-dropped-or-swapped",
+      "description": "The postnom is dropped, or taken as a surname, in forms with first/last fields",
+      "source": "order-foreign-forms"
+    },
+    {
+      "id": "married-name-added",
+      "description": "A married woman's name may carry her husband's name added after hers; compare with and without it",
+      "source": "structure-married-woman"
+    },
+    {
+      "id": "lingala-spelling",
+      "description": "Lingala spelling varies by writer and within one writer (glides, o/u, initial nasal, French spellings)",
+      "source": "lingala-spelling-vacillates"
+    },
+    {
+      "id": "given-name-language",
+      "description": "The Christian prénom changes form with the writer's language (Jean / John / Yohana / Jeannot); handled by the cross-pack given-name data (week 4)",
+      "source": "TIMETABLE.md week 4"
+    },
+    {
+      "id": "renamed-places",
+      "description": "Places renamed after 1971 and in the 2015 provincial reform (old and new province names coexist in records)",
+      "source": "TIMETABLE.md week 4 (cross-pack places, DRC 2015)"
+    },
+    {
+      "id": "court-name-changes",
+      "description": "A legal name change by court (art. 64) or by adoption (art. 63) is a change, not a variant; it is never a public edge",
+      "source": "Code de la famille (2017), arts 63-64; NAME_CHANGE.md rule 1"
+    }
+  ],
+  "protected_or_sensitive_forms": [
+    {
+      "id": "no-ethnic-marker",
+      "description": "The pack holds no ethnic, clan, tribal or religious marker, and names are never used to infer one; this matters in eastern DRC, where names have been read as markers of group membership",
+      "source": "SCOPE.md §4; THREAT_MODEL.md T8, T18; DATA_RULES.md DR-1.7"
+    },
+    {
+      "id": "changed-names",
+      "description": "Names adopted in exile are not variants; tracing across a name change uses the protected-person route",
+      "source": "NAME_CHANGE.md rules 1, 2 and 5"
+    }
+  ],
+  "benchmark_cases": [
+    {
+      "id": "bc-postnom-dropped",
+      "a": "Mutombo Kalala Pierre",
+      "b": "Pierre Mutombo",
+      "expected": "possible same person (postnom dropped, order changed)",
+      "source": "BENCHMARK_PROTOCOL.md §2.3"
+    },
+    {
+      "id": "bc-authenticite",
+      "a": "Mutombo Kalala",
+      "b": "Pierre Mutombo",
+      "expected": "possible same person (record without prénom vs oral report)",
+      "source": "authenticite-prenom-gap"
+    },
+    {
+      "id": "bc-french-ou",
+      "a": "Mwamba",
+      "b": "Mouamba",
+      "expected": "same name (French ou for w)",
+      "source": "spelling_conventions fr /w/"
+    },
+    {
+      "id": "bc-relatives-share-one",
+      "a": "Mutombo Kalala Pierre",
+      "b": "Mutombo Ilunga Marie",
+      "expected": "different people; possible relatives (one shared element, art. 57)",
+      "source": "structure-family-members-differ"
+    }
+  ],
+  "reviewers": [],
+  "version": "0.1.0"
+}

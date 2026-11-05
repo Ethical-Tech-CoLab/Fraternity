@@ -1389,3 +1389,18 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **Design choice:** the loader makes **no name-to-name edges**. Applying a rule (e.g. by → vy) to generate variants would create `generated` edges in bulk; variant edges come only from attested sources (naming profiles, cross-pack given names), per DATA_RULES DR-1.5. Source nodes wait for the source register (week 5); until then each Rule node carries its source text.
 
 **Result:** `rw-kiny` and `bi-kirundi` load as 97 nodes; `data/graph` validates. **Tests:** 96 (5 new), from 91.
+
+## 2026-11-05 — Week 4: the DRC pack (`cd-swc-ln`)
+
+**Sources (Tavily, 5 Nov 2026):**
+- [C1] DRC, *Code de la famille* (consolidated 2017), arts 56–64 ([PDF](https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf)), **primary text read**: prénom, nom and postnom are the elements of the name, and their declared order and spelling are immutable (56); relatives sharing a nom must add different elements (57); names drawn from Congolese cultural heritage (58); parents choose (59); a parent passing on a name adds a different element (61); a married woman keeps her name and may add her husband's (62); adoption (63); changes only by court (64). Confirms the 26 Oct reading.
+- [C2] Immigration and Refugee Board of Canada, RIR doc 449451, quoting **Ndaywel è Nziem (1998)**, *Politique Africaine*, and [C3] **Pauwels & Pintens (1983)**, "La législation zaïroise relative au nom" ([PDF](https://www.droitcongolais.info/files/Hum.Sc.-NS-_T.XLVII,2_PAUWELS-J.-M.et-PINTENS-W._La-legislation-zairoise-relative-au-nom.-Droit-et-authenticite-africaine_1983.pdf)): **authenticité**. Christian given names banned from 1971–72 (nationality law of 5 Jan 1972; "affaire des prénoms"); from 24 Apr 1990 allowed in daily life but **not in registers or official documents**; registrable again from 1997. Ndaywel: "l'identité « écrite » a continué à ignorer les prénoms", while speech used them. **Consequence:** adults registered 1972–1997 may have nom + postnom only on documents and a Christian prénom in speech. New failure mode and benchmark case.
+- [C4] Wikipedia, [Lingala](https://en.wikipedia.org/wiki/Lingala), and [APiCS survey 60](https://apics-online.info/surveys/60): no uniform spelling; the 1976 standard writes ɛ/ɔ, everyday writing uses e/o; y as i/y/none, w as w/o/u/none, o as o/u, initial prenasal written or not; French-influenced *ou*, *ss*.
+- [C5] Wikipedia, [Congo Swahili](https://en.wikipedia.org/wiki/Congo_Swahili); Bose (2016), Kivu Swahili: regional varieties differ mainly in grammar; spelling differences in names not documented.
+- CongoNames article (MDPI) did not load; repository abstract read ("dual linguistic origin: Bantu and Christian/French-origin components"). Order of elements in the exam lists to be read when building the profiles.
+
+**Pack:** `namebridge/data/packs/cd-swc-ln-2026.1.json` v0.1.0 (languages swc, ln, fr). UN 1533 aliases are cited for patterns (r/l, nasal insertion) but **no sanctioned person's name is copied** into the pack (`data/README.md`: no data about real people). No ethnic or group marker; eastern DRC names are never read as group markers.
+
+**Graph:** three packs load as 133 nodes; valid. **Tests:** 96 pass.
+
+**Gaps:** CongoNames full article (token order in exam lists); Kivu Swahili spelling habits in names; Kinshasa vs eastern naming differences; DRC 2015 province names (cross-pack places).
