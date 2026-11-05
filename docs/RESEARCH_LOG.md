@@ -1514,3 +1514,27 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 **DRC territories.** UNGEGN 2021 (Ministry of the Interior data, 2017): 26 provinces, 33 villes, 145 territoires, 137 communes; the national programme is still "PDL 145 territoires" in 2026. Indicates the territories persisted through the 2015 reform. Adding them is coverage (`located_in`), not a name change; deferred. Most useful first: the territories of Nord- and Sud-Kivu, where most DRC refugees in Dzaleka come from (needs a sourced list).
 
 **Data:** places v0.4.0; graph 348 nodes, 178 edges, valid. **Tests:** 111 pass.
+
+## 2026-11-05 — Burundi old → new commune table, built by the project
+
+**User's proposal (5 Nov 2026):** build the conversion table ourselves, since the 2023 law lists only the new units. **User's correction, same day:** Wikipedia is not a good source (now a standing rule: wikis only as pointers to primary sources).
+
+**Sources:**
+- **New division:** HDX `cod-ab-bdi` v02, Bureau de Centralisation de Géomatique (BCG), valid from 2026, CC BY-IGO (downloaded by the user; HDX blocks scripted downloads with HTTP 202). 5 provinces, 42 communes, 462 zones, 3,067 collines with areas and coordinates. **Its 42 communes match art. 5 of the 2023 law exactly**, province by province: two independent official sources agree.
+- **Old division:** geoBoundaries gbOpen BDI ADM1/ADM2 (2007 boundaries; 18 provinces, 119 communes; NYU Spatial Data Repository, Stanford, Map Maker; public domain). The OCHA/IGEBU 2016 "SHP Admin3 Collines" file on HDX turned out to hold **one record only** (a stub); Wikipedia's colline list covers 30 of 119 communes and is not a source anyway.
+- **Full forms of names truncated at 10 characters in geoBoundaries:** Bukinanyana, Bwambarangwe, Nyabitsinda, Kanyosha (2026 official data); Mugongo-Manga, Mpinga-Kayove (Council of Ministers communiqué, 15 Jun 2022). *Nyanrusang* left as in the source, flagged (probably Nyanrusange, unconfirmed).
+
+**Method** (`namebridge/scripts/burundi_crosswalk.py`, reproducible, no external libraries): each new colline's point is located inside the old commune polygons; the collines' areas are summed per (old, new) pair. No name matching, so the duplicate colline names the government itself flagged (communiqué, 2022) do not matter. 43 of 3,067 collines fell outside all old polygons (boundary mismatch at edges and lakeshore) and are not counted.
+
+**Validation against independent sources:** at province level the result reproduces the published correspondence exactly: Gitega 97% → Gitega and 3% → Burunga (the zone of Mahwa), Muramvya split Gitega 82% / Butanyerera 13% / Bujumbura 6%, Rumonge Burunga 60% / Bujumbura 40%, all other provinces 100% to the expected new one.
+
+**Result:** 104 of 119 old communes went ≥ 95% into one new commune; 116 ≥ 60%. Links with share ≥ 5% are kept (134), `partial` below 95%, all `generated` and `proposed` with the share recorded. Findings useful for matching:
+- **Isale → Isare** (and partly Ntahangwa): an r/l alternation in an official commune name.
+- **Two old communes named Butaganzwa** (Kayanza → Matongo; Ruyigi → Butaganzwa): an old place name alone can be ambiguous within one country.
+- **Mwumba** (a commune name in the 2022 draft) was an old commune that went wholly into Ngozi.
+
+**Licences:** CC BY-IGO (BCG) and public domain (geoBoundaries); the derived table is published under CC BY 4.0 with attribution to both.
+
+**Data and code:** places v0.5.0, 271 units, 343 links; graph 467 nodes, 389 edges, valid. Loader accepts derived links (basis, confidence, share). **Tests:** 113 (2 new).
+
+**Next (user's correction):** replace the Wikipedia-only sources in the packs, the Christian names and the places data with primary sources.

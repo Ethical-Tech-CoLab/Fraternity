@@ -74,3 +74,28 @@ def test_other_name_needs_source():
     unit = next(u for u in data["units"] if u.get("other_names"))
     unit["other_names"][0]["source"] = "nowhere"
     assert any("needs a known source" in e for e in validate_dataset(data))
+
+
+def _by_name(nodes):
+    return {n["id"]: n for n in nodes}
+
+
+def test_burundi_crosswalk_keeps_the_two_butaganzwas_apart():
+    nodes, edges = dataset_to_graph(places())
+    by = _by_name(nodes)
+    targets = {}
+    for e in edges:
+        src = by[e["from"]]
+        if src["name"] == "Butaganzwa" and src["period"] == "pre2025" and e["relation_type"] == "merged_into":
+            targets.setdefault(e["from"], set()).add(by[e["to"]]["name"])
+    assert len(targets) == 2
+    assert {"Matongo"} in targets.values()  # the Kayanza one
+    assert any("Butaganzwa" in t for t in targets.values())  # the Ruyigi one
+
+
+def test_burundi_crosswalk_is_derived_and_proposed():
+    nodes, edges = dataset_to_graph(places())
+    by = _by_name(nodes)
+    isale = [e for e in edges if by[e["from"]]["name"] == "Isale" and e["relation_type"] == "merged_into"]
+    assert {by[e["to"]]["name"] for e in isale} == {"Isare", "Ntahangwa"}
+    assert all(e["confidence_basis"] == "generated" and e["review_status"] == "proposed" and e["partial"] for e in isale)

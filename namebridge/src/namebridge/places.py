@@ -71,15 +71,18 @@ def dataset_to_graph(data):
             "source_language": refs[0]["language"],
             "applicable_languages": [],
             "applicable_regions": [country],
-            "confidence": data["confidence"],
-            "confidence_basis": "attested",
+            # Links derived by the project (e.g. the Burundi commune crosswalk)
+            # carry basis "generated" and stay proposed (DATA_RULES.md DR-1.5).
+            "confidence": change.get("confidence", data["confidence"]),
+            "confidence_basis": change.get("basis", "attested"),
             "reversible": True,
             "review_status": "proposed",
             "license": LICENSE,
             "dataset_id": did,
         }
-        if change.get("partial"):
-            edge["partial"] = True
+        for extra in ("partial", "share", "note"):
+            if change.get(extra) is not None:
+                edge[extra] = change[extra]
         edges.append(edge)
     return nodes, edges
 

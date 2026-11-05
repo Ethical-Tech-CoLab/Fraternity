@@ -44,6 +44,8 @@ Load the packs into the graph (re-run after changing a pack):
 .venv/bin/python -m namebridge.places data/places/*.json
 ```
 
+`scripts/burundi_crosswalk.py` rebuilds the Burundi old → new commune table from public boundary data (inputs and method in its docstring).
+
 ## Licences
 
 - Code: [Apache-2.0](LICENSE)

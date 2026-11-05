@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side.",
   "confidence": 0.9,
   "sources": {
@@ -123,15 +123,81 @@
       "url": "https://www.rlrc.gov.rw/index.php?eID=dumpFile&t=f&f=74749&token=155203318fb157fc554e411cd10602d97eee1889",
       "locator": "article on the number and head offices of the Provinces and the City of Kigali (four provinces and the City of Kigali, in three languages)",
       "language": "rw"
+    },
+    "bi-cod-ab-2026": {
+      "name": "HDX cod-ab-bdi v02: Burundi administrative boundaries levels 0-4, Bureau de Centralisation de Géomatique (BCG), valid from 2026 (CC BY-IGO)",
+      "url": "https://data.humdata.org/dataset/cod-ab-bdi",
+      "locator": "bdi_admin_boundaries.xlsx: sheets bdi_admin2 (42 communes), bdi_admin3 (462 zones), bdi_admin4 (3,067 collines with area), bdi_adminpoints (coordinates), bdi_admincapitals",
+      "language": "fr"
+    },
+    "bi-geoboundaries-2007": {
+      "name": "geoBoundaries gbOpen BDI ADM1 and ADM2 (2007 boundaries: 18 provinces, 119 communes; source NYU Spatial Data Repository, Stanford University, Map Maker; public domain)",
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/BDI/ADM2/",
+      "locator": "release 9469f09; shapeName (names truncated at 10 characters in some features)",
+      "language": "fr"
+    },
+    "bi-cm-2022": {
+      "name": "Présidence de la République du Burundi, Communiqué du Conseil des Ministres du 15 juin 2022 (draft of the 2023 reform)",
+      "url": "https://www.presidence.gov.bi/wp-content/uploads/2022/06/Communique-CM-15-JUIN-2022.pdf",
+      "locator": "point 1: draft communes by province (Mugongo-Manga, Mpinga-Kayove, Mubimbi, Muha, Mabanda, Mwumba)",
+      "language": "fr"
+    },
+    "bi-crosswalk": {
+      "name": "NameBridge derived crosswalk: each new colline located by its point inside the old commune polygons, area-weighted (scripts/burundi_crosswalk.py), from bi-cod-ab-2026 and bi-geoboundaries-2007",
+      "url": "https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/namebridge/scripts/burundi_crosswalk.py",
+      "locator": "share = fraction of the old commune's (new-colline) area that lies in the new commune; 43 of 3,067 collines fell outside all old polygons (boundary mismatch) and are not counted",
+      "language": "en"
     }
   },
   "units": [
+    {
+      "key": "BI:commune:bisoro-mwaro@pre2025",
+      "name": "Bisoro",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bubanza-bubanza@pre2025",
+      "name": "Bubanza",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
     {
       "key": "BI:commune:bubanza@2025-",
       "name": "Bubanza",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:bugabira-kirundo@pre2025",
+      "name": "Bugabira",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:buganda-cibitoke@pre2025",
+      "name": "Buganda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bugarama-rumonge@pre2025",
+      "name": "Bugarama",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bugendana-gitega@pre2025",
+      "name": "Bugendana",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:bugendana@2025-",
@@ -141,11 +207,82 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:bugenyuzi-karuzi@pre2025",
+      "name": "Bugenyuzi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:buhiga-karuzi@pre2025",
+      "name": "Buhiga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:buhinyuza-muyinga@pre2025",
+      "name": "Buhinyuza",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bukemba-rutana@pre2025",
+      "name": "Bukemba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bukeye-muramvya@pre2025",
+      "name": "Bukeye",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bukinanyana-cibitoke@pre2025",
+      "name": "Bukinanyana",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "name_source": "bi-cod-ab-2026"
+    },
+    {
       "key": "BI:commune:bukinanyana@2025-",
       "name": "Bukinanyana",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:bukirasazi-gitega@pre2025",
+      "name": "Bukirasazi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:burambi-rumonge@pre2025",
+      "name": "Burambi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:buraza-gitega@pre2025",
+      "name": "Buraza",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bururi-bururi@pre2025",
+      "name": "Bururi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:bururi@2025-",
@@ -155,11 +292,39 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:busiga-ngozi@pre2025",
+      "name": "Busiga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:busoni-kirundo@pre2025",
+      "name": "Busoni",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:busoni@2025-",
       "name": "Busoni",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:butaganzwa-kayanza@pre2025",
+      "name": "Butaganzwa",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:butaganzwa-ruyigi@pre2025",
+      "name": "Butaganzwa",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:butaganzwa@2025-",
@@ -169,11 +334,54 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:butezi-ruyigi@pre2025",
+      "name": "Butezi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:butihinda-muyinga@pre2025",
+      "name": "Butihinda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:butihinda@2025-",
       "name": "Butihinda",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:buyengero-rumonge@pre2025",
+      "name": "Buyengero",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:bwambarangwe-kirundo@pre2025",
+      "name": "Bwambarangwe",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "name_source": "bi-cod-ab-2026"
+    },
+    {
+      "key": "BI:commune:bweru-ruyigi@pre2025",
+      "name": "Bweru",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:cankuzo-cankuzo@pre2025",
+      "name": "Cankuzo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:cankuzo@2025-",
@@ -183,11 +391,88 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:cendajuru-cankuzo@pre2025",
+      "name": "Cendajuru",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:cibitoke@2025-",
       "name": "Cibitoke",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:gahombo-kayanza@pre2025",
+      "name": "Gahombo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gashikanwa-ngozi@pre2025",
+      "name": "Gashikanwa",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gashoho-muyinga@pre2025",
+      "name": "Gashoho",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gasorwe-muyinga@pre2025",
+      "name": "Gasorwe",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gatara-kayanza@pre2025",
+      "name": "Gatara",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gihanga-bubanza@pre2025",
+      "name": "Gihanga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:giharo-rutana@pre2025",
+      "name": "Giharo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:giheta-gitega@pre2025",
+      "name": "Giheta",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gihogazi-karuzi@pre2025",
+      "name": "Gihogazi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gisagara-cankuzo@pre2025",
+      "name": "Gisagara",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:gisagara@2025-",
@@ -197,11 +482,32 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:gishubi-gitega@pre2025",
+      "name": "Gishubi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:gishubi@2025-",
       "name": "Gishubi",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:gisozi-mwaro@pre2025",
+      "name": "Gisozi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gisuru-ruyigi@pre2025",
+      "name": "Gisuru",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:gisuru@2025-",
@@ -211,11 +517,53 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:gitanga-rutana@pre2025",
+      "name": "Gitanga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gitaramuka-karuzi@pre2025",
+      "name": "Gitaramuka",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gitega-gitega@pre2025",
+      "name": "Gitega",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:gitega@2025-",
       "name": "Gitega",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:giteranyi-muyinga@pre2025",
+      "name": "Giteranyi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:gitobe-kirundo@pre2025",
+      "name": "Gitobe",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:isale-bujumbura-rural@pre2025",
+      "name": "Isale",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:isare@2025-",
@@ -225,11 +573,47 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:itaba-gitega@pre2025",
+      "name": "Itaba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kabarore-kayanza@pre2025",
+      "name": "Kabarore",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kabezi-bujumbura-rural@pre2025",
+      "name": "Kabezi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kanyosha-bujumbura-rural@pre2025",
+      "name": "Kanyosha",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "name_source": "bi-cod-ab-2026"
+    },
+    {
       "key": "BI:commune:karusi@2025-",
       "name": "Karusi",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:kayanza-kayanza@pre2025",
+      "name": "Kayanza",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:kayanza@2025-",
@@ -239,11 +623,60 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:kayogoro-makamba@pre2025",
+      "name": "Kayogoro",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kayokwe-mwaro@pre2025",
+      "name": "Kayokwe",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kibago-makamba@pre2025",
+      "name": "Kibago",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kigamba-cankuzo@pre2025",
+      "name": "Kigamba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kiganda-muramvya@pre2025",
+      "name": "Kiganda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:kiganda@2025-",
       "name": "Kiganda",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:kinyinya-ruyigi@pre2025",
+      "name": "Kinyinya",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:kiremba-ngozi@pre2025",
+      "name": "Kiremba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:kiremba@2025-",
@@ -253,11 +686,39 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:kirundo-kirundo@pre2025",
+      "name": "Kirundo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:kirundo@2025-",
       "name": "Kirundo",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:mabanda-makamba@pre2025",
+      "name": "Mabanda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mabayi-cibitoke@pre2025",
+      "name": "Mabayi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:makamba-makamba@pre2025",
+      "name": "Makamba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:makamba@2025-",
@@ -267,11 +728,39 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:makebuko-gitega@pre2025",
+      "name": "Makebuko",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:marangara-ngozi@pre2025",
+      "name": "Marangara",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:matana-bururi@pre2025",
+      "name": "Matana",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:matana@2025-",
       "name": "Matana",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:matongo-kayanza@pre2025",
+      "name": "Matongo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:matongo@2025-",
@@ -281,11 +770,54 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:mbuye-muramvya@pre2025",
+      "name": "Mbuye",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mishiha-cankuzo@pre2025",
+      "name": "Mishiha",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mpanda-bubanza@pre2025",
+      "name": "Mpanda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:mpanda@2025-",
       "name": "Mpanda",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:mpinga-kayove-rutana@pre2025",
+      "name": "Mpinga-Kayove",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "name_source": "bi-cm-2022"
+    },
+    {
+      "key": "BI:commune:mubimbi-bujumbura-rural@pre2025",
+      "name": "Mubimbi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mugamba-bururi@pre2025",
+      "name": "Mugamba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:mugere@2025-",
@@ -295,11 +827,40 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:mugina-cibitoke@pre2025",
+      "name": "Mugina",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:mugina@2025-",
       "name": "Mugina",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:mugongo-manga-bujumbura-rural@pre2025",
+      "name": "Mugongo-Manga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "name_source": "bi-cm-2022"
+    },
+    {
+      "key": "BI:commune:muha-bujumbura-mairie@pre2025",
+      "name": "Muha",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:muhanga-kayanza@pre2025",
+      "name": "Muhanga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:muhanga@2025-",
@@ -309,11 +870,25 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:muhuta-rumonge@pre2025",
+      "name": "Muhuta",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:muhuta@2025-",
       "name": "Muhuta",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:mukaza-bujumbura-mairie@pre2025",
+      "name": "Mukaza",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:mukaza@2025-",
@@ -323,11 +898,53 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:mukike-bujumbura-rural@pre2025",
+      "name": "Mukike",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:muramvya-muramvya@pre2025",
+      "name": "Muramvya",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:muramvya@2025-",
       "name": "Muramvya",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:muruta-kayanza@pre2025",
+      "name": "Muruta",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:murwi-cibitoke@pre2025",
+      "name": "Murwi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:musigati-bubanza@pre2025",
+      "name": "Musigati",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:musongati-rutana@pre2025",
+      "name": "Musongati",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:musongati@2025-",
@@ -337,11 +954,53 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:mutaho-gitega@pre2025",
+      "name": "Mutaho",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mutambu-bujumbura-rural@pre2025",
+      "name": "Mutambu",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mutimbuzi-bujumbura-rural@pre2025",
+      "name": "Mutimbuzi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:mutumba-karuzi@pre2025",
+      "name": "Mutumba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:muyinga-muyinga@pre2025",
+      "name": "Muyinga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:muyinga@2025-",
       "name": "Muyinga",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:mwakiro-muyinga@pre2025",
+      "name": "Mwakiro",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:mwaro@2025-",
@@ -351,11 +1010,39 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:mwumba-ngozi@pre2025",
+      "name": "Mwumba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:ndava-mwaro@pre2025",
+      "name": "Ndava",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:ngozi-ngozi@pre2025",
+      "name": "Ngozi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:ngozi@2025-",
       "name": "Ngozi",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:ntahangwa-bujumbura-mairie@pre2025",
+      "name": "Ntahangwa",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:ntahangwa@2025-",
@@ -365,11 +1052,69 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:ntega-kirundo@pre2025",
+      "name": "Ntega",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:nyabihanga-mwaro@pre2025",
+      "name": "Nyabihanga",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:nyabihanga@2025-",
       "name": "Nyabihanga",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:nyabikere-karuzi@pre2025",
+      "name": "Nyabikere",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:nyabiraba-bujumbura-rural@pre2025",
+      "name": "Nyabiraba",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:nyabitsinda-ruyigi@pre2025",
+      "name": "Nyabitsinda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "name_source": "bi-cod-ab-2026"
+    },
+    {
+      "key": "BI:commune:nyamurenza-ngozi@pre2025",
+      "name": "Nyamurenza",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:nyanrusang-gitega@pre2025",
+      "name": "Nyanrusang",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025",
+      "note": "name truncated in the boundary source; full form unconfirmed (probably Nyanrusange)"
+    },
+    {
+      "key": "BI:commune:nyanza-lac-makamba@pre2025",
+      "name": "Nyanza-Lac",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:nyanza@2025-",
@@ -379,6 +1124,41 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:rango-kayanza@pre2025",
+      "name": "Rango",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:rugazi-bubanza@pre2025",
+      "name": "Rugazi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:rugombo-cibitoke@pre2025",
+      "name": "Rugombo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:ruhororo-ngozi@pre2025",
+      "name": "Ruhororo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:rumonge-rumonge@pre2025",
+      "name": "Rumonge",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:rumonge@2025-",
       "name": "Rumonge",
       "country": "BI",
@@ -386,11 +1166,46 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:rusaka-mwaro@pre2025",
+      "name": "Rusaka",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:rutana-rutana@pre2025",
+      "name": "Rutana",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:rutana@2025-",
       "name": "Rutana",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:rutegama-muramvya@pre2025",
+      "name": "Rutegama",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:rutovu-bururi@pre2025",
+      "name": "Rutovu",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:ruyigi-ruyigi@pre2025",
+      "name": "Ruyigi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:commune:ruyigi@2025-",
@@ -407,6 +1222,20 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:ryansoro-gitega@pre2025",
+      "name": "Ryansoro",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:shombo-karuzi@pre2025",
+      "name": "Shombo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:shombo@2025-",
       "name": "Shombo",
       "country": "BI",
@@ -414,11 +1243,46 @@
       "period": "2025-"
     },
     {
+      "key": "BI:commune:songa-bururi@pre2025",
+      "name": "Songa",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:tangara-ngozi@pre2025",
+      "name": "Tangara",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
       "key": "BI:commune:tangara@2025-",
       "name": "Tangara",
       "country": "BI",
       "level": "commune",
       "period": "2025-"
+    },
+    {
+      "key": "BI:commune:vugizo-makamba@pre2025",
+      "name": "Vugizo",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:vumbi-kirundo@pre2025",
+      "name": "Vumbi",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
+    },
+    {
+      "key": "BI:commune:vyanda-bururi@pre2025",
+      "name": "Vyanda",
+      "country": "BI",
+      "level": "commune",
+      "period": "pre2025"
     },
     {
       "key": "BI:province:bubanza@pre2025",
@@ -2302,382 +3166,2981 @@
       ]
     },
     {
-      "from": "BI:commune:butaganzwa@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:bubanza-bubanza@pre2025",
+      "to": "BI:province:bubanza@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:butihinda@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:bubanza-bubanza@pre2025",
+      "to": "BI:commune:bubanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gihanga-bubanza@pre2025",
+      "to": "BI:province:bubanza@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:cankuzo@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:gihanga-bubanza@pre2025",
+      "to": "BI:commune:mpanda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mpanda-bubanza@pre2025",
+      "to": "BI:province:bubanza@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:gisagara@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:mpanda-bubanza@pre2025",
+      "to": "BI:commune:mpanda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:musigati-bubanza@pre2025",
+      "to": "BI:province:bubanza@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:gisuru@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:musigati-bubanza@pre2025",
+      "to": "BI:commune:bubanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:rugazi-bubanza@pre2025",
+      "to": "BI:province:bubanza@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:muyinga@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:rugazi-bubanza@pre2025",
+      "to": "BI:commune:mpanda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:muha-bujumbura-mairie@pre2025",
+      "to": "BI:province:bujumbura-mairie@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:ruyigi@2025-",
-      "to": "BI:province:buhumuza@2025-",
+      "from": "BI:commune:muha-bujumbura-mairie@pre2025",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.995
+    },
+    {
+      "from": "BI:commune:mukaza-bujumbura-mairie@pre2025",
+      "to": "BI:province:bujumbura-mairie@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:bubanza@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:mukaza-bujumbura-mairie@pre2025",
+      "to": "BI:commune:mukaza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ntahangwa-bujumbura-mairie@pre2025",
+      "to": "BI:province:bujumbura-mairie@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:bukinanyana@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:ntahangwa-bujumbura-mairie@pre2025",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:isale-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:cibitoke@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:isale-bujumbura-rural@pre2025",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.524,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:isale-bujumbura-rural@pre2025",
+      "to": "BI:commune:isare@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.476,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:kabezi-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:isare@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:kabezi-bujumbura-rural@pre2025",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kanyosha-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:mpanda@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:kanyosha-bujumbura-rural@pre2025",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.653,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:kanyosha-bujumbura-rural@pre2025",
+      "to": "BI:commune:mukaza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.22,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:kanyosha-bujumbura-rural@pre2025",
+      "to": "BI:commune:rwibaga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.127,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:mubimbi-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:mugere@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:mubimbi-bujumbura-rural@pre2025",
+      "to": "BI:commune:isare@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mugongo-manga-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:mugina@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:mugongo-manga-bujumbura-rural@pre2025",
+      "to": "BI:commune:rwibaga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.835,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:mugongo-manga-bujumbura-rural@pre2025",
+      "to": "BI:commune:isare@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.165,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:mukike-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:muhuta@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:mukike-bujumbura-rural@pre2025",
+      "to": "BI:commune:rwibaga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mutambu-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:mukaza@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:mutambu-bujumbura-rural@pre2025",
+      "to": "BI:commune:mugere@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.921,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:mutambu-bujumbura-rural@pre2025",
+      "to": "BI:commune:rwibaga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.079,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:mutimbuzi-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:ntahangwa@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:mutimbuzi-bujumbura-rural@pre2025",
+      "to": "BI:commune:ntahangwa@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.981
+    },
+    {
+      "from": "BI:commune:nyabiraba-bujumbura-rural@pre2025",
+      "to": "BI:province:bujumbura-rural@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:rwibaga@2025-",
-      "to": "BI:province:bujumbura@2025-",
+      "from": "BI:commune:nyabiraba-bujumbura-rural@pre2025",
+      "to": "BI:commune:rwibaga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bururi-bururi@pre2025",
+      "to": "BI:province:bururi@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:bururi@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:bururi-bururi@pre2025",
+      "to": "BI:commune:bururi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:matana-bururi@pre2025",
+      "to": "BI:province:bururi@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:makamba@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:matana-bururi@pre2025",
+      "to": "BI:commune:matana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mugamba-bururi@pre2025",
+      "to": "BI:province:bururi@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:matana@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:mugamba-bururi@pre2025",
+      "to": "BI:commune:matana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:rutovu-bururi@pre2025",
+      "to": "BI:province:bururi@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:musongati@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:rutovu-bururi@pre2025",
+      "to": "BI:commune:bururi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:songa-bururi@pre2025",
+      "to": "BI:province:bururi@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:nyanza@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:songa-bururi@pre2025",
+      "to": "BI:commune:matana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:vyanda-bururi@pre2025",
+      "to": "BI:province:bururi@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:rumonge@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:vyanda-bururi@pre2025",
+      "to": "BI:commune:bururi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:cankuzo-cankuzo@pre2025",
+      "to": "BI:province:cankuzo@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:rutana@2025-",
-      "to": "BI:province:burunga@2025-",
+      "from": "BI:commune:cankuzo-cankuzo@pre2025",
+      "to": "BI:commune:cankuzo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.94,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:cendajuru-cankuzo@pre2025",
+      "to": "BI:province:cankuzo@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:busoni@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:cendajuru-cankuzo@pre2025",
+      "to": "BI:commune:gisagara@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.957
+    },
+    {
+      "from": "BI:commune:gisagara-cankuzo@pre2025",
+      "to": "BI:province:cankuzo@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:kayanza@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:gisagara-cankuzo@pre2025",
+      "to": "BI:commune:gisagara@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kigamba-cankuzo@pre2025",
+      "to": "BI:province:cankuzo@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:kiremba@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:kigamba-cankuzo@pre2025",
+      "to": "BI:commune:cankuzo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mishiha-cankuzo@pre2025",
+      "to": "BI:province:cankuzo@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:kirundo@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:mishiha-cankuzo@pre2025",
+      "to": "BI:commune:gisagara@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:buganda-cibitoke@pre2025",
+      "to": "BI:province:cibitoke@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:matongo@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:buganda-cibitoke@pre2025",
+      "to": "BI:commune:bukinanyana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.935,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:buganda-cibitoke@pre2025",
+      "to": "BI:commune:cibitoke@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.065,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:bukinanyana-cibitoke@pre2025",
+      "to": "BI:province:cibitoke@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:muhanga@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:bukinanyana-cibitoke@pre2025",
+      "to": "BI:commune:bukinanyana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mabayi-cibitoke@pre2025",
+      "to": "BI:province:cibitoke@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:ngozi@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:mabayi-cibitoke@pre2025",
+      "to": "BI:commune:mugina@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mugina-cibitoke@pre2025",
+      "to": "BI:province:cibitoke@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:tangara@2025-",
-      "to": "BI:province:butanyerera@2025-",
+      "from": "BI:commune:mugina-cibitoke@pre2025",
+      "to": "BI:commune:mugina@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:murwi-cibitoke@pre2025",
+      "to": "BI:province:cibitoke@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:bugendana@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:murwi-cibitoke@pre2025",
+      "to": "BI:commune:cibitoke@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.622,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:murwi-cibitoke@pre2025",
+      "to": "BI:commune:bukinanyana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.378,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:rugombo-cibitoke@pre2025",
+      "to": "BI:province:cibitoke@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:gishubi@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:rugombo-cibitoke@pre2025",
+      "to": "BI:commune:cibitoke@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bugendana-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:gitega@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:bugendana-gitega@pre2025",
+      "to": "BI:commune:bugendana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bukirasazi-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:karusi@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:bukirasazi-gitega@pre2025",
+      "to": "BI:commune:gishubi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:buraza-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:kiganda@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:buraza-gitega@pre2025",
+      "to": "BI:commune:gishubi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:giheta-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:muramvya@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:giheta-gitega@pre2025",
+      "to": "BI:commune:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gishubi-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:mwaro@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:gishubi-gitega@pre2025",
+      "to": "BI:commune:gishubi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gitega-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:nyabihanga@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:gitega-gitega@pre2025",
+      "to": "BI:commune:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:itaba-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
     },
     {
-      "from": "BI:commune:shombo@2025-",
-      "to": "BI:province:gitega@2025-",
+      "from": "BI:commune:itaba-gitega@pre2025",
+      "to": "BI:commune:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:makebuko-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
       "relation": "located_in",
       "year": null,
       "sources": [
-        "bi-law-2023"
+        "bi-geoboundaries-2007"
       ]
+    },
+    {
+      "from": "BI:commune:makebuko-gitega@pre2025",
+      "to": "BI:commune:gitega@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mutaho-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mutaho-gitega@pre2025",
+      "to": "BI:commune:bugendana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:nyanrusang-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:nyanrusang-gitega@pre2025",
+      "to": "BI:commune:gishubi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ryansoro-gitega@pre2025",
+      "to": "BI:province:gitega@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:ryansoro-gitega@pre2025",
+      "to": "BI:commune:gishubi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.667,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:ryansoro-gitega@pre2025",
+      "to": "BI:commune:matana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.333,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:bugenyuzi-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bugenyuzi-karuzi@pre2025",
+      "to": "BI:commune:karusi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.74,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:bugenyuzi-karuzi@pre2025",
+      "to": "BI:commune:shombo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.26,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:buhiga-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:buhiga-karuzi@pre2025",
+      "to": "BI:commune:karusi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gihogazi-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gihogazi-karuzi@pre2025",
+      "to": "BI:commune:shombo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gitaramuka-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gitaramuka-karuzi@pre2025",
+      "to": "BI:commune:karusi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mutumba-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mutumba-karuzi@pre2025",
+      "to": "BI:commune:karusi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.957
+    },
+    {
+      "from": "BI:commune:nyabikere-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:nyabikere-karuzi@pre2025",
+      "to": "BI:commune:shombo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:shombo-karuzi@pre2025",
+      "to": "BI:province:karuzi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:shombo-karuzi@pre2025",
+      "to": "BI:commune:shombo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:butaganzwa-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:butaganzwa-kayanza@pre2025",
+      "to": "BI:commune:matongo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gahombo-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gahombo-kayanza@pre2025",
+      "to": "BI:commune:muhanga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gatara-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gatara-kayanza@pre2025",
+      "to": "BI:commune:matongo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kabarore-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kabarore-kayanza@pre2025",
+      "to": "BI:commune:kayanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kayanza-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kayanza-kayanza@pre2025",
+      "to": "BI:commune:kayanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:matongo-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:matongo-kayanza@pre2025",
+      "to": "BI:commune:matongo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:muhanga-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:muhanga-kayanza@pre2025",
+      "to": "BI:commune:muhanga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:muruta-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:muruta-kayanza@pre2025",
+      "to": "BI:commune:kayanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:rango-kayanza@pre2025",
+      "to": "BI:province:kayanza@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:rango-kayanza@pre2025",
+      "to": "BI:commune:muhanga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bugabira-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bugabira-kirundo@pre2025",
+      "to": "BI:commune:kirundo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:busoni-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:busoni-kirundo@pre2025",
+      "to": "BI:commune:busoni@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bwambarangwe-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bwambarangwe-kirundo@pre2025",
+      "to": "BI:commune:busoni@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gitobe-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gitobe-kirundo@pre2025",
+      "to": "BI:commune:busoni@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kirundo-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kirundo-kirundo@pre2025",
+      "to": "BI:commune:kirundo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ntega-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:ntega-kirundo@pre2025",
+      "to": "BI:commune:kirundo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:vumbi-kirundo@pre2025",
+      "to": "BI:province:kirundo@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:vumbi-kirundo@pre2025",
+      "to": "BI:commune:kirundo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kayogoro-makamba@pre2025",
+      "to": "BI:province:makamba@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kayogoro-makamba@pre2025",
+      "to": "BI:commune:makamba@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kibago-makamba@pre2025",
+      "to": "BI:province:makamba@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kibago-makamba@pre2025",
+      "to": "BI:commune:makamba@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mabanda-makamba@pre2025",
+      "to": "BI:province:makamba@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mabanda-makamba@pre2025",
+      "to": "BI:commune:nyanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:makamba-makamba@pre2025",
+      "to": "BI:province:makamba@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:makamba-makamba@pre2025",
+      "to": "BI:commune:makamba@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:nyanza-lac-makamba@pre2025",
+      "to": "BI:province:makamba@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:nyanza-lac-makamba@pre2025",
+      "to": "BI:commune:nyanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:vugizo-makamba@pre2025",
+      "to": "BI:province:makamba@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:vugizo-makamba@pre2025",
+      "to": "BI:commune:nyanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bukeye-muramvya@pre2025",
+      "to": "BI:province:muramvya@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bukeye-muramvya@pre2025",
+      "to": "BI:commune:matongo@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.631,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:bukeye-muramvya@pre2025",
+      "to": "BI:commune:muramvya@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.369,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:kiganda-muramvya@pre2025",
+      "to": "BI:province:muramvya@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kiganda-muramvya@pre2025",
+      "to": "BI:commune:kiganda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mbuye-muramvya@pre2025",
+      "to": "BI:province:muramvya@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mbuye-muramvya@pre2025",
+      "to": "BI:commune:kiganda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.572,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:mbuye-muramvya@pre2025",
+      "to": "BI:commune:muramvya@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.428,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:muramvya-muramvya@pre2025",
+      "to": "BI:province:muramvya@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:muramvya-muramvya@pre2025",
+      "to": "BI:commune:muramvya@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.72,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:muramvya-muramvya@pre2025",
+      "to": "BI:commune:isare@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.28,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:rutegama-muramvya@pre2025",
+      "to": "BI:province:muramvya@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:rutegama-muramvya@pre2025",
+      "to": "BI:commune:kiganda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:buhinyuza-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:buhinyuza-muyinga@pre2025",
+      "to": "BI:commune:muyinga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:butihinda-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:butihinda-muyinga@pre2025",
+      "to": "BI:commune:butihinda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gashoho-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gashoho-muyinga@pre2025",
+      "to": "BI:commune:butihinda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gasorwe-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gasorwe-muyinga@pre2025",
+      "to": "BI:commune:muyinga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:giteranyi-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:giteranyi-muyinga@pre2025",
+      "to": "BI:commune:butihinda@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:muyinga-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:muyinga-muyinga@pre2025",
+      "to": "BI:commune:muyinga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mwakiro-muyinga@pre2025",
+      "to": "BI:province:muyinga@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mwakiro-muyinga@pre2025",
+      "to": "BI:commune:muyinga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bisoro-mwaro@pre2025",
+      "to": "BI:province:mwaro@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bisoro-mwaro@pre2025",
+      "to": "BI:commune:mwaro@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gisozi-mwaro@pre2025",
+      "to": "BI:province:mwaro@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gisozi-mwaro@pre2025",
+      "to": "BI:commune:mwaro@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kayokwe-mwaro@pre2025",
+      "to": "BI:province:mwaro@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kayokwe-mwaro@pre2025",
+      "to": "BI:commune:mwaro@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ndava-mwaro@pre2025",
+      "to": "BI:province:mwaro@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:ndava-mwaro@pre2025",
+      "to": "BI:commune:nyabihanga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:nyabihanga-mwaro@pre2025",
+      "to": "BI:province:mwaro@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:nyabihanga-mwaro@pre2025",
+      "to": "BI:commune:nyabihanga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:rusaka-mwaro@pre2025",
+      "to": "BI:province:mwaro@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:rusaka-mwaro@pre2025",
+      "to": "BI:commune:nyabihanga@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.701,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:rusaka-mwaro@pre2025",
+      "to": "BI:commune:mwaro@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.299,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:busiga-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:busiga-ngozi@pre2025",
+      "to": "BI:commune:ngozi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.585,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:busiga-ngozi@pre2025",
+      "to": "BI:commune:kayanza@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.415,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:gashikanwa-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gashikanwa-ngozi@pre2025",
+      "to": "BI:commune:tangara@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.972
+    },
+    {
+      "from": "BI:commune:kiremba-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kiremba-ngozi@pre2025",
+      "to": "BI:commune:kiremba@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:marangara-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:marangara-ngozi@pre2025",
+      "to": "BI:commune:kiremba@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mwumba-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mwumba-ngozi@pre2025",
+      "to": "BI:commune:ngozi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ngozi-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:ngozi-ngozi@pre2025",
+      "to": "BI:commune:ngozi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.969
+    },
+    {
+      "from": "BI:commune:nyamurenza-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:nyamurenza-ngozi@pre2025",
+      "to": "BI:commune:kiremba@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ruhororo-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:ruhororo-ngozi@pre2025",
+      "to": "BI:commune:tangara@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:tangara-ngozi@pre2025",
+      "to": "BI:province:ngozi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:tangara-ngozi@pre2025",
+      "to": "BI:commune:tangara@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bugarama-rumonge@pre2025",
+      "to": "BI:province:rumonge@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bugarama-rumonge@pre2025",
+      "to": "BI:commune:muhuta@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:burambi-rumonge@pre2025",
+      "to": "BI:province:rumonge@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:burambi-rumonge@pre2025",
+      "to": "BI:commune:rumonge@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:buyengero-rumonge@pre2025",
+      "to": "BI:province:rumonge@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:buyengero-rumonge@pre2025",
+      "to": "BI:commune:rumonge@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:muhuta-rumonge@pre2025",
+      "to": "BI:province:rumonge@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:muhuta-rumonge@pre2025",
+      "to": "BI:commune:muhuta@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:rumonge-rumonge@pre2025",
+      "to": "BI:province:rumonge@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:rumonge-rumonge@pre2025",
+      "to": "BI:commune:rumonge@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bukemba-rutana@pre2025",
+      "to": "BI:province:rutana@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bukemba-rutana@pre2025",
+      "to": "BI:commune:rutana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:giharo-rutana@pre2025",
+      "to": "BI:province:rutana@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:giharo-rutana@pre2025",
+      "to": "BI:commune:musongati@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gitanga-rutana@pre2025",
+      "to": "BI:province:rutana@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gitanga-rutana@pre2025",
+      "to": "BI:commune:rutana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:mpinga-kayove-rutana@pre2025",
+      "to": "BI:province:rutana@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:mpinga-kayove-rutana@pre2025",
+      "to": "BI:commune:musongati@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:musongati-rutana@pre2025",
+      "to": "BI:province:rutana@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:musongati-rutana@pre2025",
+      "to": "BI:commune:musongati@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:rutana-rutana@pre2025",
+      "to": "BI:province:rutana@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:rutana-rutana@pre2025",
+      "to": "BI:commune:rutana@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:butaganzwa-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:butaganzwa-ruyigi@pre2025",
+      "to": "BI:commune:butaganzwa@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 0.972
+    },
+    {
+      "from": "BI:commune:butezi-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:butezi-ruyigi@pre2025",
+      "to": "BI:commune:ruyigi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:bweru-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:bweru-ruyigi@pre2025",
+      "to": "BI:commune:ruyigi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:gisuru-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:gisuru-ruyigi@pre2025",
+      "to": "BI:commune:gisuru@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:kinyinya-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:kinyinya-ruyigi@pre2025",
+      "to": "BI:commune:gisuru@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:nyabitsinda-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:nyabitsinda-ruyigi@pre2025",
+      "to": "BI:commune:gisuru@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.8,
+      "share": 1.0
+    },
+    {
+      "from": "BI:commune:ruyigi-ruyigi@pre2025",
+      "to": "BI:province:ruyigi@pre2025",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "bi-geoboundaries-2007"
+      ]
+    },
+    {
+      "from": "BI:commune:ruyigi-ruyigi@pre2025",
+      "to": "BI:commune:ruyigi@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.845,
+      "partial": true
+    },
+    {
+      "from": "BI:commune:ruyigi-ruyigi@pre2025",
+      "to": "BI:commune:butaganzwa@2025-",
+      "relation": "merged_into",
+      "year": 2025,
+      "sources": [
+        "bi-crosswalk",
+        "bi-cod-ab-2026",
+        "bi-geoboundaries-2007"
+      ],
+      "basis": "generated",
+      "confidence": 0.6,
+      "share": 0.155,
+      "partial": true
     }
   ]
 }
