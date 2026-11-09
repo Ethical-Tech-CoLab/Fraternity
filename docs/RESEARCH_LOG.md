@@ -1793,3 +1793,7 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 **Searched, not available online:** Ntahombaye (1983) (held by the AfricaMuseum library, Tervuren); Kimenyi (1989); Mioni (1975, 1970). These need interlibrary loan.
 
 **Tests:** 133 pass; graph valid.
+
+## 2026-11-09 — Gangji, Pascoe & Smouse (2015), published version, read in full
+
+Copy obtained by the user through NYU. Same data as the thesis. Changes (cd-swc-ln 0.5.1): the published article is now the primary citation; **`child-r-to-l` lowered to `low`**, because the authors state that "much of the evidence for lateralization comes from the production of /lɛdiɔ/ for redio" (one word); weak syllable deletion is described as "the second most frequent process" (ages 3;0–5;6). The authors also caution that all 24 children spoke English as a second language and that their full language profiles were not recorded. **Tests:** 133 pass.

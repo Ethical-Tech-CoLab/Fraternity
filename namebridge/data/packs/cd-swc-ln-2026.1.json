@@ -122,28 +122,28 @@
     {
       "id": "child-r-to-l",
       "description": "Young children say r as l: the most widespread pattern at every age from 3 to 5 (redio → ledio, lori → loli); r is the last sound acquired (by about 6). A name told by a child may have l for r; derived: Rehema → Lehema, Furaha → Fulaha",
-      "source": "Gangji, N. (2012), 'Phonological development in Swahili: a descriptive, cross-sectional study of typically developing pre-schoolers in Tanzania', MSc thesis, University of Cape Town (http://hdl.handle.net/11427/2916), §4.3 and Figure 3, read 9 Nov 2026; published as Gangji, Pascoe & Smouse (2015), International Journal of Language & Communication Disorders 50(2): 151-164, doi:10.1111/1460-6984.12118",
-      "confidence": "medium",
-      "note": "24 children aged 3;0-5;11 in Dar es Salaam (coastal Swahili, most with English as a second language), single words named from pictures; a process counts for an age group when 2 of 4 children showed it. Not Congo Swahili, and not Kinyarwanda/Kirundi children (no source found for those yet). Name examples marked 'derived' apply the pattern"
+      "source": "Gangji, N., Pascoe, M. & Smouse, M. (2015), 'Swahili speech development: preliminary normative data from typically developing pre-school children in Tanzania', International Journal of Language & Communication Disorders 50(2): 151-164 (https://doi.org/10.1111/1460-6984.12118), Table 5 and Discussion, read in full 9 Nov 2026 (copy via the user, NYU); also the thesis behind it: Gangji (2012), University of Cape Town (http://hdl.handle.net/11427/2916)",
+      "confidence": "low",
+      "note": "24 children aged 3;0-5;11 in Dar es Salaam (coastal Swahili, most with English as a second language), single words named from pictures; a process counts for an age group when 2 of 4 children showed it. Not Congo Swahili, and not Kinyarwanda/Kirundi children (no source found for those yet). Name examples marked 'derived' apply the pattern. The authors warn that 'much of the evidence for lateralization comes from the production of /lɛdiɔ/ for redio' (one word)"
     },
     {
       "id": "child-weak-syllable-deletion",
-      "description": "Children up to about 5;5 drop unstressed syllables from words of three or more syllables (themanini → nini); two-syllable words were said correctly. A long name told by a young child may be cut to its last syllables; derived: Nshimirimana → Mana, Ndayishimiye → Shimiye",
-      "source": "Gangji, N. (2012), 'Phonological development in Swahili: a descriptive, cross-sectional study of typically developing pre-schoolers in Tanzania', MSc thesis, University of Cape Town (http://hdl.handle.net/11427/2916), §4.3 and Figure 3, read 9 Nov 2026; published as Gangji, Pascoe & Smouse (2015), International Journal of Language & Communication Disorders 50(2): 151-164, doi:10.1111/1460-6984.12118",
+      "description": "The second most frequent pattern: children aged 3;0-5;6 drop unstressed syllables from words of three or more syllables (themanini → nini); two-syllable words were said correctly. A long name told by a young child may be cut to its last syllables; derived: Nshimirimana → Mana, Ndayishimiye → Shimiye",
+      "source": "Gangji, N., Pascoe, M. & Smouse, M. (2015), 'Swahili speech development: preliminary normative data from typically developing pre-school children in Tanzania', International Journal of Language & Communication Disorders 50(2): 151-164 (https://doi.org/10.1111/1460-6984.12118), Table 5 and Discussion, read in full 9 Nov 2026 (copy via the user, NYU); also the thesis behind it: Gangji (2012), University of Cape Town (http://hdl.handle.net/11427/2916)",
       "confidence": "medium",
       "note": "24 children aged 3;0-5;11 in Dar es Salaam (coastal Swahili, most with English as a second language), single words named from pictures; a process counts for an age group when 2 of 4 children showed it. Not Congo Swahili, and not Kinyarwanda/Kirundi children (no source found for those yet). Name examples marked 'derived' apply the pattern. The derived Kirundi examples assume the same pattern applies in Kirundi; untested"
     },
     {
       "id": "child-initial-consonant-deletion",
       "description": "Children drop the first consonant of words of three or four syllables (nanasi → anasi, hospitali → ospitali); derived: Bahati → Ahati",
-      "source": "Gangji, N. (2012), 'Phonological development in Swahili: a descriptive, cross-sectional study of typically developing pre-schoolers in Tanzania', MSc thesis, University of Cape Town (http://hdl.handle.net/11427/2916), §4.3 and Figure 3, read 9 Nov 2026; published as Gangji, Pascoe & Smouse (2015), International Journal of Language & Communication Disorders 50(2): 151-164, doi:10.1111/1460-6984.12118",
+      "source": "Gangji, N., Pascoe, M. & Smouse, M. (2015), 'Swahili speech development: preliminary normative data from typically developing pre-school children in Tanzania', International Journal of Language & Communication Disorders 50(2): 151-164 (https://doi.org/10.1111/1460-6984.12118), Table 5 and Discussion, read in full 9 Nov 2026 (copy via the user, NYU); also the thesis behind it: Gangji (2012), University of Cape Town (http://hdl.handle.net/11427/2916)",
       "confidence": "low",
       "note": "24 children aged 3;0-5;11 in Dar es Salaam (coastal Swahili, most with English as a second language), single words named from pictures; a process counts for an age group when 2 of 4 children showed it. Not Congo Swahili, and not Kinyarwanda/Kirundi children (no source found for those yet). Name examples marked 'derived' apply the pattern"
     },
     {
       "id": "child-cluster-reduction",
       "description": "The youngest children (3;0-3;11) simplify consonant clusters (mwamvuli → mavuli); derived: Mwamba → Mamba",
-      "source": "Gangji, N. (2012), 'Phonological development in Swahili: a descriptive, cross-sectional study of typically developing pre-schoolers in Tanzania', MSc thesis, University of Cape Town (http://hdl.handle.net/11427/2916), §4.3 and Figure 3, read 9 Nov 2026; published as Gangji, Pascoe & Smouse (2015), International Journal of Language & Communication Disorders 50(2): 151-164, doi:10.1111/1460-6984.12118",
+      "source": "Gangji, N., Pascoe, M. & Smouse, M. (2015), 'Swahili speech development: preliminary normative data from typically developing pre-school children in Tanzania', International Journal of Language & Communication Disorders 50(2): 151-164 (https://doi.org/10.1111/1460-6984.12118), Table 5 and Discussion, read in full 9 Nov 2026 (copy via the user, NYU); also the thesis behind it: Gangji (2012), University of Cape Town (http://hdl.handle.net/11427/2916)",
       "confidence": "low",
       "note": "24 children aged 3;0-5;11 in Dar es Salaam (coastal Swahili, most with English as a second language), single words named from pictures; a process counts for an age group when 2 of 4 children showed it. Not Congo Swahili, and not Kinyarwanda/Kirundi children (no source found for those yet). Name examples marked 'derived' apply the pattern"
     }
@@ -381,8 +381,8 @@
       ],
       "listener": "any (child speaker)",
       "note": "children aged 3-5 say r as l (child-r-to-l); in Swahili, unlike Rwanda-Rundi, r and l are distinct for adults, so the confusion comes from the child's age, not the language",
-      "source": "Gangji, N. (2012), 'Phonological development in Swahili: a descriptive, cross-sectional study of typically developing pre-schoolers in Tanzania', MSc thesis, University of Cape Town (http://hdl.handle.net/11427/2916), §4.3 and Figure 3, read 9 Nov 2026; published as Gangji, Pascoe & Smouse (2015), International Journal of Language & Communication Disorders 50(2): 151-164, doi:10.1111/1460-6984.12118",
-      "confidence": "medium"
+      "source": "Gangji, N., Pascoe, M. & Smouse, M. (2015), 'Swahili speech development: preliminary normative data from typically developing pre-school children in Tanzania', International Journal of Language & Communication Disorders 50(2): 151-164 (https://doi.org/10.1111/1460-6984.12118), Table 5 and Discussion, read in full 9 Nov 2026 (copy via the user, NYU); also the thesis behind it: Gangji (2012), University of Cape Town (http://hdl.handle.net/11427/2916)",
+      "confidence": "low"
     }
   ],
   "relationship_implications": {
@@ -476,5 +476,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.5.0"
+  "version": "0.5.1"
 }
