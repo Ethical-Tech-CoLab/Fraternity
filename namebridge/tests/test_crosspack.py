@@ -47,3 +47,10 @@ def test_packs_and_crosspack_coexist(tmp_path):
 def test_repo_graph_holds_the_christian_names():
     ids = {n.get("dataset_id") for n in read_jsonl(ROOT / "graph" / "nodes.jsonl")}
     assert "christian-names-2026.1" in ids
+
+
+def test_slug_keeps_letters_without_decomposition():
+    # Regression (9 Nov 2026): ɛ/ɔ were dropped, so distinct forms could share an id.
+    from namebridge.crosspack import _slug
+    assert _slug("Pɛtɛlɔ") == "petelo"
+    assert _slug("Pɛtɛlɔ") != _slug("Ptl")

@@ -82,3 +82,11 @@ def test_city_outranks_the_parts_of_its_split_province(index):
 def test_split_parts_share_the_weight(index):
     scores = [r["score"] for r in index.resolve("Kivu") if r["kind"] == "later"]
     assert len(scores) == 3 and all(abs(s - 1 / 3) < 0.01 for s in scores)
+
+
+def test_place_fold_keeps_letters_without_decomposition():
+    # Regression (9 Nov 2026): the old ASCII fold dropped ɛ/ɔ/ŋ entirely.
+    from namebridge.resolve_place import fold
+    assert fold("Mɛsɛ") == "mese"
+    assert fold("Commune Ŋoma") == "ngoma"
+    assert fold("Kasaï-Central") == fold("Kasai Central") == "kasaicentral"

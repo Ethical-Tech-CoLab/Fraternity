@@ -23,10 +23,10 @@ Run: python -m namebridge.resolve_place <name> [--country BI] [--graph data/grap
 
 import re
 import sys
-import unicodedata
 from collections import defaultdict
 from pathlib import Path
 
+from namebridge.normalize import fold as normalize_fold
 from namebridge.schema.name_graph import PLACE_RELATIONS, read_jsonl
 
 TEMPORAL = PLACE_RELATIONS - {"located_in"}
@@ -39,9 +39,9 @@ _PREFIX = re.compile(
 
 
 def fold(name):
-    text = unicodedata.normalize("NFKD", str(name)).encode("ascii", "ignore").decode().lower()
-    text = re.sub(r"[’'`]", " ", text).strip()
-    text = _PREFIX.sub("", text)
+    # Shared name folding (namebridge.normalize). The former ASCII conversion here dropped
+    # letters with no decomposition (ɛ, ɔ, ŋ), so "Mɛsɛ" became "ms" (fixed 9 Nov 2026).
+    text = _PREFIX.sub("", normalize_fold(name))
     return re.sub(r"[^a-z0-9]", "", text)
 
 

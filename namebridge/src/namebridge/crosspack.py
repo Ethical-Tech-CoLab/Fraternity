@@ -15,14 +15,16 @@ import re
 import sys
 import unicodedata
 
+from namebridge.normalize import fold as normalize_fold
 from namebridge.packs import merge
 
 LICENSE = "CC-BY-4.0"
 
 
 def _slug(text):
-    folded = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
-    return re.sub(r"[^a-z0-9]+", "-", folded.lower()).strip("-")
+    # Shared folding (namebridge.normalize): the former ASCII conversion dropped ɛ, ɔ, ŋ,
+    # so two different forms could get the same node id (fixed 9 Nov 2026).
+    return re.sub(r"[^a-z0-9]+", "-", normalize_fold(text)).strip("-")
 
 
 def validate_dataset(data):
