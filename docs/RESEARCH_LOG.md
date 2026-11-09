@@ -2011,3 +2011,15 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 **Bug found and fixed, with an audit for the same class:** the place-name fold (`resolve_place.fold`) converted to ASCII **dropping** any letter without a Unicode decomposition: ɛ, ɔ and ŋ (Lingala) vanished, so "Mɛsɛ" became "ms". The audit found the same code in `crosspack._slug`, which builds node ids for Christian-name forms: two different forms could have received the same id. Both now use `namebridge.normalize`; regression tests added in `test_resolve_place.py` and `test_crosspack.py`. Reloading the graph changed **no** id (no current form contained those letters), so the bug had not yet corrupted data.
 
 **Week 4:** items 1 (closed), 3 and 4 done; item 2 (16 secondary DRC towns) optional and not done. **Tests:** 152 pass.
+
+## 2026-11-09 — Week 5 started (ahead of schedule): Christian names from open Bible translations
+
+**Gates checked:** G7 (closed) no longer blocks the first public release; G8 (open) blocks only name-change notices; G4 (soft) affects week 6. Week 5 may proceed.
+
+**Target re-read:** CONCEPT-IDEA §10 phase 1 asks for **2,000–10,000 _name_ relationships**; the 1,136 place edges do not count. Before this work the graph held **45** name edges. **Wikidata** (listed as a candidate in the week 5 plan) is a wiki and is excluded as a source under the "Wikipedia is not a source" rule (pointer only).
+
+**Method:** each Bible book named after a person has a fixed id (JHN, MAT, RUT …), so a translation's running header (USFM `\h`) gives that person's name in that language with no guessing. Five open translations from ebible.org: French Louis Segond 1910 and English WEB (public domain), Swahili ULB (Door43), Lingala and Chichewa (Biblica) (CC BY-SA 4.0; only individual names are taken, which are facts, so the dataset stays CC BY 4.0 with attribution). Kinyarwanda forms from the first-chapter headings of Bibiliya Yera (already cited); Timoteyo from Ibyakozwe 16:1. Kirundi and Kinyarwanda are not on ebible.org or Door43; Kirundi stays limited to the four Gospel names (gap). Script: `scripts/build_crosspack_bible.py`.
+
+**Result (christian-names 0.5.0):** 37 concepts (26 new: Samuel, Esther, Daniel, Jérémie, Josué, Ruth, Timothée …), 163 forms added, 35 existing forms given a second source. **Name edges: 45 → 161.**
+
+**Bug found and fixed:** after the 9 Nov folding fix, forms that differ only by accents (Joël / Joel, Philémon / Philemon) got the same node id and the loader produced duplicate edges. Such forms now stay separate nodes, the later one with a short stable suffix; a test covers it, and no existing node id changed (checked against the previous graph). **Tests:** 153 pass.

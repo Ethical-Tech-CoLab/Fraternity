@@ -10,6 +10,7 @@ equivalence (CONCEPT-IDEA.md §3).
 Run: python -m namebridge.crosspack data/crosspack/<dataset>.json ... [--graph data/graph]
 """
 
+import hashlib
 import json
 import re
 import sys
@@ -60,15 +61,22 @@ def dataset_to_graph(data):
             entry = by_text.setdefault(form["text"], {"langs": [], "sources": []})
             entry["langs"].append(form["lang"])
             entry["sources"].extend(s for s in form["sources"] if s not in entry["sources"])
-        for text, entry in by_text.items():
-            fid = f"nf:{did}:{concept['id']}:{_slug(text)}"
+        # Forms that differ only by accents (Joël / Joel) fold to the same slug; they stay
+        # separate nodes, the later ones (in text order) with a short stable suffix.
+        used = {}
+        for text, entry in sorted(by_text.items()):
+            slug = _slug(text)
+            if slug in used and used[slug] != text:
+                slug = f"{slug}-{hashlib.sha256(text.encode('utf-8')).hexdigest()[:6]}"
+            used.setdefault(_slug(text), text)
+            fid = f"nf:{did}:{concept['id']}:{slug}"
             nodes.append({
                 "id": fid, "type": "NameForm", "text": unicodedata.normalize("NFC", text),
                 "script": "Latn", "languages": entry["langs"], "dataset_id": did,
             })
             refs = [sources[s] for s in entry["sources"]]
             edges.append({
-                "id": f"e:{did}:{concept['id']}:{_slug(text)}",
+                "id": f"e:{did}:{concept['id']}:{slug}",
                 "from": fid, "to": cid, "relation_type": "historical_cognate_of",
                 "source_name": "; ".join(r["name"] for r in refs),
                 "source_url": "; ".join(r["url"] for r in refs),

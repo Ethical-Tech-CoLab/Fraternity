@@ -1,6 +1,6 @@
 {
   "dataset_id": "christian-names-2026.1",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Christian given names across the corridor's languages, from Bible translations: each translation fixes the form of a biblical name in its language. A form in a Bible does not show that a person named Jean is recorded as Yohana by a Swahili writer; that is the hypothesis these edges let the matcher test, at low weight (CONCEPT-IDEA.md §3: cognates are for query expansion, not automatic equivalence).",
   "regions": [
     "CD",
@@ -37,7 +37,7 @@
     "rw-bibiliya-yera": {
       "name": "Bibiliya Yera (Kinyarwanda Bible), PDF",
       "url": "https://abisezerano.com/wp-content/uploads/2018/06/bibiliya.pdf",
-      "locator": "Ibyakozwe n'Intumwa 21:11-13 (Pawulo)",
+      "locator": "Ibyakozwe n'Intumwa 21:11-13 (Pawulo); first-chapter headings of each book named after a person (read 9 Nov 2026); Timoteyo from Ibyakozwe 16:1",
       "language": "rw"
     },
     "rn-nt": {
@@ -105,6 +105,41 @@
       "url": "https://www.bible.com/versions/1-kjv-king-james-version",
       "locator": "Old and New Testament book list: Matthew, Mark, Luke, John, James, 1-2 Peter, Jude; Acts 13:9 for Paul",
       "language": "en"
+    },
+    "ebible-fr-lsg": {
+      "name": "Louis Segond 1910 (public domain), USFM edition from ebible.org",
+      "url": "https://ebible.org/details.php?id=fraLSG",
+      "locator": "running header (USFM \\h) of each book named after a person",
+      "language": "fr",
+      "note": "only individual names are taken (facts), not text"
+    },
+    "ebible-en-web": {
+      "name": "World English Bible (public domain), USFM edition from ebible.org",
+      "url": "https://ebible.org/details.php?id=engwebp",
+      "locator": "running header (USFM \\h) of each book named after a person",
+      "language": "en",
+      "note": "only individual names are taken (facts), not text"
+    },
+    "ebible-sw-ulb": {
+      "name": "Swahili Unlocked Literal Bible (Door43 World Missions Community, CC BY-SA 4.0), ebible.org",
+      "url": "https://ebible.org/details.php?id=swhulb",
+      "locator": "running header (USFM \\h) of each book named after a person",
+      "language": "sw",
+      "note": "only individual names are taken (facts), not text"
+    },
+    "ebible-ln-biblica": {
+      "name": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org",
+      "url": "https://ebible.org/details.php?id=lin",
+      "locator": "running header (USFM \\h) of each book named after a person",
+      "language": "ln",
+      "note": "only individual names are taken (facts), not text"
+    },
+    "ebible-ny-biblica": {
+      "name": "Chichewa Bible (Biblica, Inc., 2002/2016, CC BY-SA 4.0), ebible.org",
+      "url": "https://ebible.org/details.php?id=nya",
+      "locator": "running header (USFM \\h) of each book named after a person",
+      "language": "ny",
+      "note": "only individual names are taken (facts), not text"
     }
   },
   "concepts": [
@@ -116,28 +151,32 @@
           "text": "Jean",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
           "text": "John",
           "lang": "en",
           "sources": [
-            "en-kjv"
+            "en-kjv",
+            "ebible-en-web"
           ]
         },
         {
           "text": "Yohana",
           "lang": "sw",
           "sources": [
-            "sw-biblia"
+            "sw-biblia",
+            "ebible-sw-ulb"
           ]
         },
         {
           "text": "Yohana",
           "lang": "rw",
           "sources": [
-            "rw-bibleproject"
+            "rw-bibleproject",
+            "rw-bibiliya-yera"
           ]
         },
         {
@@ -151,7 +190,8 @@
           "text": "Yoane",
           "lang": "ln",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-ln-biblica"
           ]
         },
         {
@@ -159,7 +199,8 @@
           "lang": "ny",
           "sources": [
             "ny-buku-lopatulika",
-            "ny-harvestime"
+            "ny-harvestime",
+            "ebible-ny-biblica"
           ]
         }
       ]
@@ -172,28 +213,32 @@
           "text": "Matthieu",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
           "text": "Matthew",
           "lang": "en",
           "sources": [
-            "en-kjv"
+            "en-kjv",
+            "ebible-en-web"
           ]
         },
         {
           "text": "Mathayo",
           "lang": "sw",
           "sources": [
-            "sw-biblia"
+            "sw-biblia",
+            "ebible-sw-ulb"
           ]
         },
         {
           "text": "Matayo",
           "lang": "rw",
           "sources": [
-            "rw-bibleproject"
+            "rw-bibleproject",
+            "rw-bibiliya-yera"
           ]
         },
         {
@@ -207,7 +252,8 @@
           "text": "Matayo",
           "lang": "ln",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-ln-biblica"
           ]
         },
         {
@@ -221,7 +267,8 @@
           "text": "Mateyu",
           "lang": "ny",
           "sources": [
-            "ny-buku-lopatulika"
+            "ny-buku-lopatulika",
+            "ebible-ny-biblica"
           ]
         }
       ]
@@ -234,21 +281,24 @@
           "text": "Marc",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
           "text": "Mark",
           "lang": "en",
           "sources": [
-            "en-kjv"
+            "en-kjv",
+            "ebible-en-web"
           ]
         },
         {
           "text": "Marko",
           "lang": "sw",
           "sources": [
-            "sw-shepherds"
+            "sw-shepherds",
+            "ebible-sw-ulb"
           ]
         },
         {
@@ -262,7 +312,8 @@
           "text": "Mariko",
           "lang": "rw",
           "sources": [
-            "rw-bibleproject"
+            "rw-bibleproject",
+            "rw-bibiliya-yera"
           ]
         },
         {
@@ -276,14 +327,16 @@
           "text": "Malako",
           "lang": "ln",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-ln-biblica"
           ]
         },
         {
           "text": "Marko",
           "lang": "ny",
           "sources": [
-            "ny-buku-lopatulika"
+            "ny-buku-lopatulika",
+            "ebible-ny-biblica"
           ]
         }
       ]
@@ -296,21 +349,24 @@
           "text": "Luc",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
           "text": "Luke",
           "lang": "en",
           "sources": [
-            "en-kjv"
+            "en-kjv",
+            "ebible-en-web"
           ]
         },
         {
           "text": "Luka",
           "lang": "sw",
           "sources": [
-            "sw-shepherds"
+            "sw-shepherds",
+            "ebible-sw-ulb"
           ]
         },
         {
@@ -324,14 +380,23 @@
           "text": "Luka",
           "lang": "ln",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-ln-biblica"
           ]
         },
         {
           "text": "Luka",
           "lang": "ny",
           "sources": [
-            "ny-buku-lopatulika"
+            "ny-buku-lopatulika",
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Luka",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
           ]
         }
       ]
@@ -344,42 +409,48 @@
           "text": "Pierre",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
           "text": "Peter",
           "lang": "en",
           "sources": [
-            "en-kjv"
+            "en-kjv",
+            "ebible-en-web"
           ]
         },
         {
           "text": "Petro",
           "lang": "sw",
           "sources": [
-            "sw-biblia"
+            "sw-biblia",
+            "ebible-sw-ulb"
           ]
         },
         {
           "text": "Petero",
           "lang": "rw",
           "sources": [
-            "rw-bibleproject"
+            "rw-bibleproject",
+            "rw-bibiliya-yera"
           ]
         },
         {
           "text": "Petelo",
           "lang": "ln",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-ln-biblica"
           ]
         },
         {
           "text": "Petro",
           "lang": "ny",
           "sources": [
-            "ny-buku-lopatulika"
+            "ny-buku-lopatulika",
+            "ebible-ny-biblica"
           ]
         }
       ]
@@ -392,7 +463,8 @@
           "text": "Jacques",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
@@ -413,7 +485,36 @@
           "text": "Yakobo",
           "lang": "ny",
           "sources": [
-            "ny-buku-lopatulika"
+            "ny-buku-lopatulika",
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "James",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Waraka Wa Yakobo",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Jake",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yakobo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
           ]
         }
       ]
@@ -460,21 +561,24 @@
           "text": "Jude",
           "lang": "fr",
           "sources": [
-            "biblafrique-ln"
+            "biblafrique-ln",
+            "ebible-fr-lsg"
           ]
         },
         {
           "text": "Yuda",
           "lang": "sw",
           "sources": [
-            "sw-biblia"
+            "sw-biblia",
+            "ebible-sw-ulb"
           ]
         },
         {
           "text": "Yuda",
           "lang": "rw",
           "sources": [
-            "rw-bibleproject"
+            "rw-bibleproject",
+            "rw-bibiliya-yera"
           ]
         },
         {
@@ -488,7 +592,22 @@
           "text": "Yuda",
           "lang": "ny",
           "sources": [
-            "ny-buku-lopatulika"
+            "ny-buku-lopatulika",
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Jude",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Jide",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
           ]
         }
       ]
@@ -614,6 +733,1254 @@
           "lang": "rw",
           "sources": [
             "rw-bibiliya-yera-mt1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yehoshua",
+      "label": "Joshua (Hebrew Yehoshua)",
+      "forms": [
+        {
+          "text": "Josué",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Joshua",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Yoshua",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Jozue",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yoswa",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Yosuwa",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rut",
+      "label": "Ruth",
+      "forms": [
+        {
+          "text": "Ruth",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Ruth",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Ruth",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Rite",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Rute",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Rusi",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shemuel",
+      "label": "Samuel",
+      "forms": [
+        {
+          "text": "Samuel",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Samuel",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Samweli",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Samuele",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Samueli",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Samweli",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ezra",
+      "label": "Ezra",
+      "forms": [
+        {
+          "text": "Esdras",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Ezra",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Ezra",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Esidrasi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Ezara",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Ezira",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nehemyah",
+      "label": "Nehemiah",
+      "forms": [
+        {
+          "text": "Néhémie",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Nehemiah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Nehemia",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Neyemi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Nehemiya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Nehemiya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ester",
+      "label": "Esther",
+      "forms": [
+        {
+          "text": "Esther",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Esther",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Esta",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Ester",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Estere",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Esiteri",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iyyov",
+      "label": "Job",
+      "forms": [
+        {
+          "text": "Job",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Job",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Ayubu",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Yobo",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yobu",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Yobu",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yeshayahu",
+      "label": "Isaiah",
+      "forms": [
+        {
+          "text": "Ésaïe",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Isaiah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Isaya",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Ezayi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yesaya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Yesaya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yirmeyahu",
+      "label": "Jeremiah",
+      "forms": [
+        {
+          "text": "Jérémie",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Jeremiah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Yeremia",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Jeremi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yeremiya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Yeremiya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yehezkel",
+      "label": "Ezekiel",
+      "forms": [
+        {
+          "text": "Ézéchiel",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Ezekiel",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Ezekieli",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Ezekieli",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Ezekieli",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Ezekiyeli",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daniel",
+      "label": "Daniel",
+      "forms": [
+        {
+          "text": "Daniel",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Daniel",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Danieli",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Daniele",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Danieli",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Daniyeli",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hoshea",
+      "label": "Hosea",
+      "forms": [
+        {
+          "text": "Osée",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Hosea",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Hosea",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Oze",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Hoseya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Hoseya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yoel",
+      "label": "Joel",
+      "forms": [
+        {
+          "text": "Joël",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Joel",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Joeli",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Joeli",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yoweli",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Yoweli",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amos",
+      "label": "Amos",
+      "forms": [
+        {
+          "text": "Amos",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Amos",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Amosi",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Amosi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Amosi",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Amosi",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ovadyah",
+      "label": "Obadiah",
+      "forms": [
+        {
+          "text": "Abdias",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Obadiah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Obadia",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Abidiasi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Obadiya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Obadiya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yonah",
+      "label": "Jonah",
+      "forms": [
+        {
+          "text": "Jonas",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Jonah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Yona",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Yona",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Yona",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Yona",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mikhah",
+      "label": "Micah",
+      "forms": [
+        {
+          "text": "Michée",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Micah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Mika",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Mishe",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Mika",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Mika",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nahum",
+      "label": "Nahum",
+      "forms": [
+        {
+          "text": "Nahum",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Nahum",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Nahumu",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Naumi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Nahumu",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Nahumu",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "habaqquq",
+      "label": "Habakkuk",
+      "forms": [
+        {
+          "text": "Habacuc",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Habakkuk",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Habakuki",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Abakuki",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Habakuku",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Habakuki",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tsefanyah",
+      "label": "Zephaniah",
+      "forms": [
+        {
+          "text": "Sophonie",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Zephaniah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Sefania",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Sofoni",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Zefaniya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Zefaniya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "haggai",
+      "label": "Haggai",
+      "forms": [
+        {
+          "text": "Aggée",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Haggai",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Hagai",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Aje",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Hagai",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Hagayi",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zekharyah",
+      "label": "Zechariah",
+      "forms": [
+        {
+          "text": "Zacharie",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Zechariah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Zekaria",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Zakari",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Zekariya",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Zekariya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malakhi",
+      "label": "Malachi",
+      "forms": [
+        {
+          "text": "Malachie",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Malachi",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Malaki",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Malashi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Malaki",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Malaki",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timotheos",
+      "label": "Timothy",
+      "forms": [
+        {
+          "text": "Timothée",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Timothy",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Timotheo",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Timote",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Timoteyo",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Timoteyo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "titos",
+      "label": "Titus",
+      "forms": [
+        {
+          "text": "Tite",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Titus",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Tito",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Tito",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Tito",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Tito",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "philemon",
+      "label": "Philemon",
+      "forms": [
+        {
+          "text": "Philémon",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg"
+          ]
+        },
+        {
+          "text": "Philemon",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ]
+        },
+        {
+          "text": "Filemoni",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb"
+          ]
+        },
+        {
+          "text": "Filemo",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica"
+          ]
+        },
+        {
+          "text": "Filemoni",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica"
+          ]
+        },
+        {
+          "text": "Filemoni",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera"
           ]
         }
       ]

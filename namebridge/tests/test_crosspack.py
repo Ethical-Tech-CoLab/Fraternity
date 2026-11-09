@@ -54,3 +54,16 @@ def test_slug_keeps_letters_without_decomposition():
     from namebridge.crosspack import _slug
     assert _slug("Pɛtɛlɔ") == "petelo"
     assert _slug("Pɛtɛlɔ") != _slug("Ptl")
+
+
+def test_forms_differing_only_by_accents_stay_separate():
+    # Joël (fr) and Joel (en) fold to the same slug; both forms must survive with distinct ids.
+    from namebridge.crosspack import dataset_to_graph
+    data = {"dataset_id": "t-2026.1", "regions": ["CD"], "confidence": 0.6,
+            "sources": {"s": {"name": "n", "url": "u", "locator": "l", "language": "fr"}},
+            "concepts": [{"id": "yoel", "label": "Joel", "forms": [
+                {"text": "Joël", "lang": "fr", "sources": ["s"]}, {"text": "Joel", "lang": "en", "sources": ["s"]}]}]}
+    nodes, edges = dataset_to_graph(data)
+    forms = [n for n in nodes if n["type"] == "NameForm"]
+    assert sorted(n["text"] for n in forms) == ["Joel", "Joël"]
+    assert len({n["id"] for n in forms}) == 2 and len({e["id"] for e in edges}) == 2
