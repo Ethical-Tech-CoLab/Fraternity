@@ -1803,3 +1803,16 @@ Copy obtained by the user through NYU. Same data as the thesis. Changes (cd-swc-
 **Correction of the earlier entry today ("Mama X" has two readings):** the user's observation was made **in Malawi**, not in the Great Lakes: everyone used *mama* and *papa* to refer to a person, as Portuguese uses *senhora*/*senhor*. The people there were mostly from the DRC, some from Rwanda. A Kenyan colleague of the user speaks the same way (second-hand). Source wording corrected in rw-kiny 0.6.2 and added to cd-swc-ln 0.5.2 (`order-mama-x`), where it supports the honorific reading for Congolese speakers.
 
 **User's decision:** Kimenyi (1989), Ntahombaye (1983) and Mioni (1975) exist only in print and will **not** be requested; their key content already arrived second-hand (Adekunle 2007 citing Kimenyi pp. 106–108; Simbananiye 2005 drawing on Ntahombaye). `order-spoken-given-name` stays `low`; Catholic vs Protestant Kirundi spelling stays undocumented. Item 1 of the next-session list is closed.
+
+## 2026-11-09 — Wikis removed as sources (user's decision)
+
+Per the rule "Wikipedia is not a source" (5 Nov), the user decided to remove every remaining wiki citation. **20 entries** across the three packs: 17 citing Wikipedia/Wiktionary alongside another source, plus 3 citing **Wikibooks** (missed by the first audit, which searched only for "Wikipedia").
+
+**Confidence after removal:**
+- Unchanged (a published source remains): Kirundi transliteration (Comparative Grammar), length/tone (Comparative Grammar, van de Vijver et al., Rusanganwa), Kinyarwanda name structure (Kimenyi 1978, HRW), Lingala spelling and e/ɛ (APiCS), Congo Swahili (Bose 2016), rw/mw confusions (FSI, Nassenstein, Rusanganwa), colonial place names (Statoids, plus Niyonkuru 1987).
+- **Lowered:** Chichewa r/l writing rule, 3 entries → `low` (the remaining "Lyons & Mchombo, *Chichewa Grammar*" could not be confirmed as a published book); Kinyarwanda glide table → `medium` (sw, by, py, ty rest on the FSI synopsis only); Kinyarwanda r/l rule and liquid inventory → `medium` (one IJLRHSS article remains; the Kirundi r/l rule has stronger sources); Swahili/Lingala prenasals → `medium` (website only); the Lingala "1976 standard" date removed (Wikipedia only).
+- `order-spoken-given-name` → **`hypothesis`**; its source now states that no published source was found and that Wikipedia was only the pointer.
+
+**Guards:** `validate_pack` rejects any source containing "wiki" (rule entries and failure modes) unless it says "only as a pointer"; `test_no_wiki_source_anywhere_in_repo_graph` scans every graph file (packs, cross-pack names, places). **Tests:** 135 pass; graph valid. Packs: bi-kirundi 0.8.1, cd-swc-ln 0.5.3, rw-kiny 0.6.4.
+
+**Gaps opened by this (sources to find later):** a Chichewa orthography source (Malawi's 1973 rules); a Swahili or Lingala grammar for prenasals; a Kinyarwanda phonology for the full glide table.

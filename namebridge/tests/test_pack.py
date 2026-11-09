@@ -68,3 +68,27 @@ def test_note_cannot_contradict_source():
     pack["spelling_conventions"][0]["source"] = "FSI, Swahili Basic Course, p. xi"
     pack["spelling_conventions"][0]["note"] = "Wikipedia only"
     assert any("Wikipedia only" in e for e in validate_pack(pack))
+
+
+def test_wikipedia_is_not_a_source():
+    pack = template()
+    pack["spelling_conventions"][0]["source"] = "Wikipedia, Kirundi"
+    assert any("not a source" in e for e in validate_pack(pack))
+    pack["spelling_conventions"][0]["source"] = "No published source; first seen on Wikipedia, used only as a pointer"
+    assert not any("not a source" in e for e in validate_pack(pack))
+    pack = template()
+    pack["known_failure_modes"].append({"id": "x", "description": "d", "source": "Wikibooks, Kinyarwanda"})
+    assert any("not a source" in e for e in validate_pack(pack))
+
+
+def test_no_wiki_source_anywhere_in_repo_graph():
+    # Same rule for every dataset that reaches the graph (packs, cross-pack names, places).
+    import re
+    graph = Path(__file__).resolve().parents[1] / "data" / "graph"
+    bad = []
+    for path in graph.glob("*.jsonl"):
+        for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            for m in re.finditer(r'"source(?:_url)?": "([^"]*)"', line):
+                if "wiki" in m.group(1).lower() and "only as a pointer" not in m.group(1).lower():
+                    bad.append(f"{path.name}:{n}")
+    assert bad == [], bad[:5]

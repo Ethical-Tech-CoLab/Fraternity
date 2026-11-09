@@ -91,20 +91,21 @@
   "phonetic_rules": [
     {
       "id": "lingala-open-vowels-unwritten",
-      "description": "Lingala has seven vowels (e/ɛ, o/ɔ distinct); the 1976 standard writes ɛ and ɔ, but everyday writing uses e and o, and tone is almost never marked. Search forms fold ɛ to e and ɔ to o; the original form is kept",
-      "source": "Wikipedia, Lingala, 'Writing system' (Société Zaïroise des Linguistes, 1976), accessed 5 Nov 2026; APiCS Online, survey chapter 60, Lingala",
-      "confidence": "high"
+      "description": "Lingala has seven vowels (e/ɛ, o/ɔ distinct); the standard spelling writes ɛ and ɔ, but everyday writing uses e and o, and tone is almost never marked. Search forms fold ɛ to e and ɔ to o; the original form is kept",
+      "source": "APiCS Online, survey chapter 60, Lingala",
+      "confidence": "medium",
+      "note": "the date of the standard (1976) came only from Wikipedia and was removed"
     },
     {
       "id": "lingala-spelling-vacillates",
       "description": "Lingala has no uniformly accepted spelling; the same writer varies. Semivowel y is written i, y or not at all; w as w, o, u or not at all; close-mid o as o or u; a word-initial prenasal written or not (sango / nsango)",
-      "source": "APiCS Online, survey chapter 60, Lingala (https://apics-online.info/surveys/60); Wikipedia, Lingala",
+      "source": "APiCS Online, survey chapter 60, Lingala (https://apics-online.info/surveys/60)",
       "confidence": "high"
     },
     {
       "id": "swahili-orthography",
       "description": "Congo Swahili is written with the standard Swahili alphabet: ch, sh, ny, ng' as single sounds; prenasalised mb, nd, nj, ng, mv, nz. Its regional varieties (Kivu, Katanga, Maniema, Ituri) differ mainly in grammar; spelling differences in names are not documented",
-      "source": "Wikipedia, Congo Swahili and Swahili language, accessed 5 Nov 2026; Bose (2016), 'Morphosyntactic core features of Kivu Swahili', Afrikanistik-Aegyptologie-Online",
+      "source": "Bose (2016), 'Morphosyntactic core features of Kivu Swahili', Afrikanistik-Aegyptologie-Online",
       "confidence": "medium"
     },
     {
@@ -223,9 +224,9 @@
         "mv",
         "nz"
       ],
-      "note": "each one unit in Swahili and Lingala",
-      "source": "Wikipedia, Swahili language, 'Consonants'; LinguaCommons, Lingala pronunciation guide",
-      "confidence": "high"
+      "note": "each one unit in Swahili and Lingala. remaining source is a pronunciation-guide website; a grammar would raise it",
+      "source": "LinguaCommons, Lingala pronunciation guide",
+      "confidence": "medium"
     }
   ],
   "spelling_conventions": [
@@ -308,9 +309,9 @@
         "r after i or e",
         "l elsewhere"
       ],
-      "note": "Chichewa (Malawi) writes its single r/l sound by the preceding vowel; a Malawian clerk may apply it to a refugee's name. Swahili itself keeps r and l apart",
-      "source": "Wikipedia, Chewa language (1973 orthography); Lyons & Mchombo, Chichewa Grammar; Wiktionary, Chichewa entry guidelines",
-      "confidence": "medium"
+      "note": "Chichewa (Malawi) writes its single r/l sound by the preceding vowel; a Malawian clerk may apply it to a refugee's name. Swahili itself keeps r and l apart. Wikipedia and Wiktionary removed as sources (9 Nov 2026); the remaining 'Lyons & Mchombo, Chichewa Grammar' could not be confirmed as a published book, and the 1973 official orthography decision itself was not found",
+      "source": "Lyons & Mchombo, Chichewa Grammar",
+      "confidence": "low"
     },
     {
       "sound": "/tʃ/",
@@ -361,7 +362,7 @@
       ],
       "listener": "any",
       "note": "not distinguished in writing; merged in Kinshasa speech",
-      "source": "Wikipedia, Lingala; APiCS",
+      "source": "APiCS",
       "confidence": "medium"
     },
     {
@@ -476,5 +477,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.5.2"
+  "version": "0.5.3"
 }

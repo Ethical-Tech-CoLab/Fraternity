@@ -78,7 +78,7 @@
       "to": "c",
       "direction": "rw->rn",
       "description": "Kinyarwanda cy is Kirundi c (cyane / cane). Deterministic in this direction only",
-      "source": "Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), §1.1.1, Table 1 (https://www.matana.de/kirundi_kinyarwanda.pdf); Wikipedia, Rwanda-Rundi, 'Spelling'",
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), §1.1.1, Table 1 (https://www.matana.de/kirundi_kinyarwanda.pdf)",
       "confidence": "high"
     },
     {
@@ -87,7 +87,7 @@
       "to": "j",
       "direction": "rw->rn",
       "description": "Kinyarwanda jy is Kirundi j (-jya / -ja)",
-      "source": "Comparative Grammar (2007), Table 1; Wikipedia, Rwanda-Rundi",
+      "source": "Comparative Grammar (2007), Table 1",
       "confidence": "high"
     },
     {
@@ -96,7 +96,7 @@
       "to": "sh",
       "direction": "rw->rn",
       "description": "Kinyarwanda shy is Kirundi sh (nshya / nsha)",
-      "source": "Comparative Grammar (2007), Table 1; Wikipedia, Rwanda-Rundi",
+      "source": "Comparative Grammar (2007), Table 1",
       "confidence": "high"
     },
     {
@@ -140,7 +140,7 @@
     {
       "id": "length-and-tone-unwritten",
       "description": "Vowel length and tone are not written in ordinary spelling; linguistic texts mark them with circumflex, macron or caron. Search forms fold them; the original form is kept",
-      "source": "Wikipedia, Rwanda-Rundi, 'Spelling'; Comparative Grammar (2007), Table 28",
+      "source": "Comparative Grammar (2007), Table 28",
       "confidence": "high"
     },
     {
@@ -429,9 +429,9 @@
         "r after i or e",
         "l elsewhere"
       ],
-      "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis",
-      "source": "Wikipedia, Chewa language, 'Notes on the consonants' (official spelling since 1973: the r/l sound is written r after i or e, otherwise l), accessed 5 Nov 2026; Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U'); Wiktionary, Chichewa entry guidelines",
-      "confidence": "medium"
+      "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis. Wikipedia and Wiktionary removed as sources (9 Nov 2026); the remaining 'Lyons & Mchombo, Chichewa Grammar' could not be confirmed as a published book, and the 1973 official orthography decision itself was not found",
+      "source": "Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U')",
+      "confidence": "low"
     },
     {
       "sound": "/tʃ/",
@@ -587,7 +587,7 @@
     {
       "id": "colonial-place-spellings",
       "description": "Places renamed or respelled after independence: Kitega / Gitega, Usumbura / Bujumbura (1962), Hinga or Muhinga / Muyinga, Karusi / Karuzi. Older people may give the old form; foreign records may keep it. Goes into the cross-pack place data (week 4)",
-      "source": "Statoids, Burundi provinces, 'Other names of subdivisions' and history (https://statoids.com/ubi.html); Wikipedia, Gitega and Bujumbura; accessed 5 Nov 2026"
+      "source": "Statoids, Burundi provinces, 'Other names of subdivisions' and history (https://statoids.com/ubi.html); accessed 5 Nov 2026; Niyonkuru, L. (1987), 'Loan-words in Kirundi: a preliminary study', African Study Monographs 7: 81-87, pp. 82-83 (Usumbura as the Swahili rendering of Bujumbura)"
     },
     {
       "id": "swahili-prefixes",
@@ -667,5 +667,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.8.0"
+  "version": "0.8.1"
 }

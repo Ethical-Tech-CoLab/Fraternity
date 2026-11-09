@@ -68,6 +68,11 @@ def validate_pack(pack):
                 errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE_LEVELS)}")
             if f in ("name_structures", "order_rules") and rule.get("practice") not in PRACTICE_KINDS:
                 errors.append(f"{where}: practice must be one of {sorted(PRACTICE_KINDS)}")
+            # Wikis (Wikipedia, Wiktionary, Wikibooks...) are not sources (user rule,
+            # 5 Nov 2026); they may be named only as a pointer to where a claim was first seen.
+            src = str(rule.get("source", "")).lower()
+            if "wiki" in src and "only as a pointer" not in src:
+                errors.append(f"{where}: a wiki is not a source; cite the primary source or mark it 'only as a pointer'")
             # A note must not contradict the source: "Wikipedia only" left behind
             # after the source was replaced (found 9 Nov 2026 in 8 entries).
             if "wikipedia only" in str(rule.get("note", "")).lower() and "wikipedia" not in str(rule.get("source", "")).lower():
@@ -79,6 +84,11 @@ def validate_pack(pack):
     for i, conf in enumerate(pack["listener_confusions"] if isinstance(pack["listener_confusions"], list) else []):
         if len(conf.get("sounds", [])) < 2:
             errors.append(f"pack {pid}: listener_confusions[{i}] needs at least two sounds")
+
+    for i, fm in enumerate(pack["known_failure_modes"] if isinstance(pack["known_failure_modes"], list) else []):
+        src = str(fm.get("source", "")).lower() if isinstance(fm, dict) else ""
+        if "wiki" in src and "only as a pointer" not in src:
+            errors.append(f"pack {pid}: known_failure_modes[{fm.get('id', i)}]: a wiki is not a source")
 
     impl = pack["relationship_implications"]
     for f in ("surname_agreement", "surname_disagreement"):

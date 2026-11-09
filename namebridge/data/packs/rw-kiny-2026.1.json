@@ -14,7 +14,7 @@
       "id": "structure-kiny-name-plus-given",
       "description": "A Kinyarwanda name chosen for each child, plus a given name (often a Christian name in French or English form). The Kinyarwanda name is not inherited: most Rwandans do not share a family name with their parents or siblings",
       "practice": "cultural",
-      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), p. 259: no family names in Rwanda; children, father and mother each have their own name; women keep their names when married. Human Rights Watch, Leave None to Tell the Story, 1999, 'Language, Spelling and Names' (https://www.hrw.org/reports/1999/rwanda/Geno1-3-08.htm); Wikipedia, Rwandan names (https://en.wikipedia.org/wiki/Rwandan_names), accessed 5 Nov 2026",
+      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), p. 259: no family names in Rwanda; children, father and mother each have their own name; women keep their names when married. Human Rights Watch, Leave None to Tell the Story, 1999, 'Language, Spelling and Names' (https://www.hrw.org/reports/1999/rwanda/Geno1-3-08.htm)",
       "confidence": "high"
     },
     {
@@ -51,9 +51,9 @@
       "id": "order-spoken-given-name",
       "description": "In speech people are usually addressed by the given name; the Kinyarwanda name is used where a formal or identifying form is needed. A name reported orally may therefore be the given name alone",
       "practice": "cultural",
-      "source": "Wikipedia, Rwandan names, 'Address in spoken life'",
-      "confidence": "low",
-      "note": "Wikipedia only; needs a primary source. Checked 5 Nov 2026: official, UN and press sources, and Kimenyi (1978), which does not cover forms of address, teknonymy or Christian names. Checked 9 Nov 2026: Fédry (2009) covers teknonymy and name avoidance (order-teknonym, failure modes child-avoids-parent-name and child-withholds-own-name) but not which name is used in speech. Next candidate: Kimenyi (1989), Kinyarwanda and Kirundi Names. Checked 9 Nov 2026: Adekunle (2007) covers in-law address and the naming ceremony but not everyday use of the given name vs the Kinyarwanda name. 9 Nov 2026, user's decision: the remaining library sources (Kimenyi 1989, Ntahombaye 1983) exist only in print and will not be requested; the rule stays low on the Wikipedia claim until a field observation or another source settles it"
+      "source": "No published source found (searched 5 and 9 Nov 2026: official, UN and press sources, Kimenyi 1978, Fédry 2009, Adekunle 2007). The claim was first seen on Wikipedia, 'Rwandan names', which is used only as a pointer, not as a source",
+      "confidence": "hypothesis",
+      "note": "Hypothesis with no published source. Checked: official, UN and press sources and Kimenyi (1978) on 5 Nov 2026; Fédry (2009) and Adekunle (2007) on 9 Nov 2026 (they cover teknonymy and name taboos, not everyday use of the given name). Kimenyi (1989) and Ntahombaye (1983) exist only in print and will not be requested (user's decision, 9 Nov 2026). A field observation would settle it"
     },
     {
       "id": "order-teknonym",
@@ -105,20 +105,22 @@
     {
       "id": "r-l-one-sound",
       "description": "[r] and [l] are one sound. Spelling uses r, except l in proper nouns that already used it and unintegrated loanwords (Kigali, Kamali). A name may be written with either letter",
-      "source": "'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (http://www.ijlrhss.com/paper/volume-3-issue-3/3-HSS-598.pdf); Wikibooks, Kinyarwanda/Orthography",
-      "confidence": "high"
+      "source": "'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (http://www.ijlrhss.com/paper/volume-3-issue-3/3-HSS-598.pdf)",
+      "confidence": "medium",
+      "note": "Wikibooks removed as a source (9 Nov 2026); the remaining source is one article in IJLRHSS, a journal of uncertain review standards. The Kirundi r/l rule (bi-kirundi r-l-one-sound) has stronger sources (Cox dictionary, official place names)"
     },
     {
       "id": "length-and-tone-unwritten",
       "description": "Vowel length and tone are not written in the official orthography; linguistic texts write long vowels doubled (aa) and tone with accents. Search forms fold both; the original form is kept (CONCEPT-IDEA.md §5.3)",
-      "source": "Wikibooks, Kinyarwanda/Orthography; Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), Table 28 (https://www.matana.de/kirundi_kinyarwanda.pdf); van de Vijver, R., Uwambayinema, E. & Chuang, Y.-Y. (2024), 'Comprehension and production of Kinyarwanda verbs in the Discriminative Lexicon', Linguistics 62(1): 79-119 (doi:10.1515/ling-2021-0164), §2 Kinyarwanda phonotactics: five vowels, each short or long (citing Myers 2005); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: a tone language, tone marked only in linguistic writing",
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007), Table 28 (https://www.matana.de/kirundi_kinyarwanda.pdf); van de Vijver, R., Uwambayinema, E. & Chuang, Y.-Y. (2024), 'Comprehension and production of Kinyarwanda verbs in the Discriminative Lexicon', Linguistics 62(1): 79-119 (doi:10.1515/ling-2021-0164), §2 Kinyarwanda phonotactics: five vowels, each short or long (citing Myers 2005); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: a tone language, tone marked only in linguistic writing",
       "confidence": "high"
     },
     {
       "id": "glide-strengthening",
       "description": "Written glide clusters are pronounced with a stop: rw [ɾɡw], sw [skw], tw [tkw], bw [bɡ], mw [mŋ], by [bɟ], ry [ɾɟ], py [pc], ty [tc]. Spelling follows the letters, speech does not",
-      "source": "Wikipedia, Kinyarwanda, phonology (Cw/Cy table), accessed 5 Nov 2026; FSI Kirundi Basic Course, pronunciation synopsis; Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: phonetic transcription by a Rwandan linguist renders rya as [rgya] and rw'indimi as [rgwiindimi]",
-      "confidence": "high"
+      "source": "FSI Kirundi Basic Course, pronunciation synopsis; Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: phonetic transcription by a Rwandan linguist renders rya as [rgya] and rw'indimi as [rgwiindimi]; Nassenstein, N. (2019), Modern Africa 7(1): 11-40, p. 27 (mw for [mg], rw for [rgw], tw for [tkw])",
+      "confidence": "medium",
+      "note": "after removing Wikipedia, rw, ry, mw, tw and bw keep published support (Rusanganwa 2006; Nassenstein 2019); sw, by, py, ty rest on the FSI synopsis only"
     },
     {
       "id": "mp-is-mh",
@@ -229,9 +231,9 @@
         "r",
         "l"
       ],
-      "note": "one liquid; see phonetic_rules r-l-one-sound",
-      "source": "IJLRHSS 3(3); Wikibooks, Kinyarwanda/Orthography",
-      "confidence": "high"
+      "note": "one liquid; see phonetic_rules r-l-one-sound. Wikibooks removed as a source (9 Nov 2026); the remaining source is one article in IJLRHSS, a journal of uncertain review standards. The Kirundi r/l rule (bi-kirundi r-l-one-sound) has stronger sources (Cox dictionary, official place names)",
+      "source": "IJLRHSS 3(3)",
+      "confidence": "medium"
     },
     {
       "symbol": "/ŋ/",
@@ -375,9 +377,9 @@
         "r after i or e",
         "l elsewhere"
       ],
-      "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis",
-      "source": "Wikipedia, Chewa language, 'Notes on the consonants' (official spelling since 1973: the r/l sound is written r after i or e, otherwise l), accessed 5 Nov 2026; Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U'); Wiktionary, Chichewa entry guidelines",
-      "confidence": "medium"
+      "note": "Chichewa (Malawi) has one r/l sound and writes it by the preceding vowel. A Malawian clerk may apply this rule to a refugee's name (Nkurunziza as Nkulunziza). The rule is sourced; that clerks apply it to foreign names is a hypothesis. Wikipedia and Wiktionary removed as sources (9 Nov 2026); the remaining 'Lyons & Mchombo, Chichewa Grammar' could not be confirmed as a published book, and the 1973 official orthography decision itself was not found",
+      "source": "Lyons & Mchombo, Chichewa Grammar ('R usually follows the vowels E and I ... L follows the vowels A, O, U')",
+      "confidence": "low"
     },
     {
       "sound": "/tʃ/",
@@ -408,7 +410,7 @@
       ],
       "listener": "non-Kinyarwanda writer",
       "note": "written rw is said [ɾɡw]; a writer who does not know the spelling may write rgw or rugw",
-      "source": "Wikipedia, Kinyarwanda (Cw table); FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716 (transcription [rgw] for written rw)",
+      "source": "FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716 (transcription [rgw] for written rw)",
       "confidence": "medium"
     },
     {
@@ -448,7 +450,7 @@
       ],
       "listener": "non-Kinyarwanda writer",
       "note": "written mw is said [mŋ]; may be heard as m + ng or mg",
-      "source": "Wikipedia, Kinyarwanda (Cw table); IJLRHSS 3(3) (umwana [umwŋana])",
+      "source": "IJLRHSS 3(3) (umwana [umwŋana]); Nassenstein, N. (2019), Modern Africa 7(1): 11-40, p. 27 (mw for [mg], rw for [rgw], tw for [tkw])",
       "confidence": "medium"
     },
     {
@@ -607,5 +609,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.6.2"
+  "version": "0.6.4"
 }
