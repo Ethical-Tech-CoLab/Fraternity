@@ -307,21 +307,24 @@
       "writer_language": "ny",
       "spellings": [
         "r after i or e",
-        "l elsewhere"
+        "l after a, o or u",
+        "l at the start of a word (no Chichewa word begins with r)",
+        "r for l after i or e (hypercorrection)"
       ],
-      "note": "Chichewa (Malawi) writes its single r/l sound by the preceding vowel; a Malawian clerk may apply it to a refugee's name. Swahili itself keeps r and l apart. Wikipedia and Wiktionary removed as sources (9 Nov 2026); the remaining 'Lyons & Mchombo, Chichewa Grammar' could not be confirmed as a published book, and the 1973 official orthography decision itself was not found",
-      "source": "Lyons & Mchombo, Chichewa Grammar",
-      "confidence": "low"
+      "note": "Sourced: the writing rule (Chirwa 2008, from the Chichewa Orthography Rules; 1973 date from the UK factfile). Hypothesis, not sourced: that Malawian clerks apply it to refugees' names (word-initial l: Rukundo as Lukundo; after a/o/u: Nkurunziza as Nkulunziza; hypercorrect r after i/e). Swahili itself keeps r and l apart",
+      "source": "Chirwa, M. N. (2008), 'Trill maintenance and replacement in Chichewa: a study on newsreaders' speech from three radio stations in Malawi', MA dissertation, University of Cape Town (http://hdl.handle.net/11427/10191), read 9 Nov 2026: pp. 4-5 and 31, citing Mchombo (2001) and the Chichewa Orthography Rules: [r] and [l] are allophones of one phoneme; <r> is written after the front vowels i and e, <l> after a, o and u, within a morpheme; no Chichewa word begins with r; in speech the trill is often replaced by [l], and writers unsure of the rule hypercorrect (ndili misspelled ndiri); UK Government, Malawi Toponymic Factfile (2025), 'Languages' (https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf): 'The orthography of Chichewa was standardised in 1973 in the New Chichewa Orthography Rules'",
+      "confidence": "high"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "ny",
       "spellings": [
-        "ch"
+        "ch",
+        "tch"
       ],
-      "note": "Chichewa never writes c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza)",
-      "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026",
-      "confidence": "medium"
+      "note": "Chichewa Board spelling writes ch (and tch when aspirated), never c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza); that clerks do so with refugees' names is a hypothesis",
+      "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026; Downing, L. J. & Mtenje, A. (2017), The Phonology of Chichewa, Oxford University Press, ch. 1, note 2 (publisher preview, https://api.pageplace.de/preview/DT0400.9780191037733_A30389705/preview-9780191037733_A30389705.pdf), read 9 Nov 2026: the Chichewa Board's convention writes the unaspirated affricate as ch and the aspirated one as tch; earlier work (Watkins 1937) and some linguists write c",
+      "confidence": "high"
     }
   ],
   "listener_confusions": [
@@ -477,5 +480,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.5.3"
+  "version": "0.6.0"
 }

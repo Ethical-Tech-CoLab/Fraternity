@@ -1816,3 +1816,13 @@ Per the rule "Wikipedia is not a source" (5 Nov), the user decided to remove eve
 **Guards:** `validate_pack` rejects any source containing "wiki" (rule entries and failure modes) unless it says "only as a pointer"; `test_no_wiki_source_anywhere_in_repo_graph` scans every graph file (packs, cross-pack names, places). **Tests:** 135 pass; graph valid. Packs: bi-kirundi 0.8.1, cd-swc-ln 0.5.3, rw-kiny 0.6.4.
 
 **Gaps opened by this (sources to find later):** a Chichewa orthography source (Malawi's 1973 rules); a Swahili or Lingala grammar for prenasals; a Kinyarwanda phonology for the full glide table.
+
+## 2026-11-09 — Chichewa spelling sourced; confidence policy
+
+**User's request:** all entries at `high`. Agreed approach: confidence is raised **only when a strong source is found**, entry by entry; `disputed` (7) and `hypothesis` (7) are kept because they describe the state of the evidence. Baseline before this work: 53 high, 74 medium, 11 low.
+
+**Chichewa r/l (3 entries, `low` → `high`):** Chirwa, M. N. (2008), *Trill maintenance and replacement in Chichewa*, MA dissertation, University of Cape Town (open access), pp. 4–5 and 31, citing Mchombo (2001) and the Chichewa Orthography Rules: r and l are allophones of one phoneme; **r after i and e, l after a, o, u**, within a morpheme; **no Chichewa word begins with r**; in speech r is often replaced by l, and writers hypercorrect (*ndili* written *ndiri*). Date: UK Government, *Malawi Toponymic Factfile* (2025): "standardised in 1973 in the New Chichewa Orthography Rules". The unconfirmed "Lyons & Mchombo" citation was replaced. Spellings now include word-initial l and hypercorrect r. **Still a hypothesis:** that Malawian clerks apply these rules to refugees' names (benchmark cases stay hypothesis-weighted).
+
+**Chichewa c → ch (3 entries, `medium` → `high`):** Downing, L. J. & Mtenje, A. (2017), *The Phonology of Chichewa* (Oxford University Press), ch. 1 note 2 (publisher preview): the Chichewa Board writes the plain affricate **ch** and the aspirated one **tch**; Watkins (1937) and some linguists write c. Added *tch* as a spelling. Peace Corps Malawi kept as a second source.
+
+Packs: bi-kirundi 0.9.0, cd-swc-ln 0.6.0, rw-kiny 0.7.0. **Tests:** 135 pass; graph valid.
