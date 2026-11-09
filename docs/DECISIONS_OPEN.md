@@ -1,6 +1,6 @@
 # Decisions Making: decisions still open
 
-*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026 from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`. Also published as a page: https://claude.ai/artifact/WXeszv3CEeaBwC3WVq7ZmY (private until shared).*
+*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026 from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
 
 Five questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
 
