@@ -145,6 +145,41 @@
       "description": "Chichewa and Chitumbuka spelling has one accented letter, ŵ (standardised 1973). A Malawian writer may use it; search forms fold ŵ to w, and the original is kept",
       "source": "UK Government, Malawi Toponymic Factfile, 2025, 'Languages' (https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf), read 5 Nov 2026",
       "confidence": "high"
+    },
+    {
+      "id": "fr-nasal-vowel-split",
+      "description": "Burundian speakers often say a French nasal vowel inside a word as an oral vowel plus a nasal consonant matching the next consonant (m before b/p, n before t/d, ŋ before k/g, ɱ before f/v), as in Kirundi prenasalised consonants: campagne [kampaɲ], cinquante [sɛŋkant], profonde [pʁɔfɔnd]. Word-internal 65.2% of nasal vowels; word-initial 26%; word-final 11.3% (the final nasal mostly stays). French ɑ̃ is fronted to [ã]. A French name said this way may be written by ear with an n or m: derived examples Vincent → Vinsent/Vinsenti, Ambroise → Ambrwaz",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.1, Table 3 and examples",
+      "confidence": "medium",
+      "note": "Corpus: 12 university-educated adults (mean age 38.5), mostly reading aloud; speakers born in Bujumbura were closest to standard French, and the authors attribute the differences to schooling, so less-schooled speakers and children may deviate more (not measured). Name examples marked 'derived' apply the pattern; they are not in the source"
+    },
+    {
+      "id": "fr-vowel-glide",
+      "description": "Two French vowels in a row are split with a glide: Louis [luwi] (10/12 speakers), mouette [muwɛt], lier [lije], million [milijɔ̃]; after a consonant + r/l, a j is inserted: étrier [etʁije] (11/12). French ui [ɥi] becomes [wi] or [y]: huit [wit] (12/12). Written by ear: Louis as Luwi; derived: Daniel as Danijel/Daniyeli, Gabriel as Gabriyeli",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.3",
+      "confidence": "medium",
+      "note": "Corpus: 12 university-educated adults (mean age 38.5), mostly reading aloud; speakers born in Bujumbura were closest to standard French, and the authors attribute the differences to schooling, so less-schooled speakers and children may deviate more (not measured). Name examples marked 'derived' apply the pattern; they are not in the source"
+    },
+    {
+      "id": "fr-r-dropped",
+      "description": "French r is often dropped at the end of a word (the vowel before it is lengthened) and after a consonant: trois [twa] (7/12), quatre [kaːt] (7/12), pêcheur [peʃœː]; never at the start of a word. r also varies widely in sound (uvular, pharyngeal, Kirundi-style tap). Derived: Pierre heard as Pie/Pyè, Victoire as Viktwa",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.2 and Table 5",
+      "confidence": "medium",
+      "note": "Corpus: 12 university-educated adults (mean age 38.5), mostly reading aloud; speakers born in Bujumbura were closest to standard French, and the authors attribute the differences to schooling, so less-schooled speakers and children may deviate more (not measured). Name examples marked 'derived' apply the pattern; they are not in the source"
+    },
+    {
+      "id": "fr-u-to-u-or-i",
+      "description": "French u [y] (absent from Kirundi) is occasionally said [u] or [i]: influence [ɛ̃fluwɑ̃s] (7/12), reliure [ʁəlijiʁ] (2/12); not general. Derived: Lucie heard as Lusi/Lusiya, Justine as Jistine",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.1",
+      "confidence": "low",
+      "note": "Corpus: 12 university-educated adults (mean age 38.5), mostly reading aloud; speakers born in Bujumbura were closest to standard French, and the authors attribute the differences to schooling, so less-schooled speakers and children may deviate more (not measured). Name examples marked 'derived' apply the pattern; they are not in the source. Occasional only"
+    },
+    {
+      "id": "fr-h-pronounced",
+      "description": "Kirundi has h, French writes a silent h: about 1 speaker in 3 pronounced it (hasard [hazaʁ]). A French listener may drop an h the speaker said; derived: Hélène / Elène, Henri / Enri",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §3.2 and §5.2",
+      "confidence": "low",
+      "note": "Corpus: 12 university-educated adults (mean age 38.5), mostly reading aloud; speakers born in Bujumbura were closest to standard French, and the authors attribute the differences to schooling, so less-schooled speakers and children may deviate more (not measured). Name examples marked 'derived' apply the pattern; they are not in the source"
     }
   ],
   "common_administrative_forms": [
@@ -264,8 +299,7 @@
         "w"
       ],
       "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana",
-      "confidence": "medium",
-      "note": "Wikipedia only"
+      "confidence": "medium"
     },
     {
       "sound": "/ʃ/",
@@ -301,8 +335,7 @@
         "tch"
       ],
       "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'",
-      "confidence": "medium",
-      "note": "Wikipedia only"
+      "confidence": "medium"
     },
     {
       "sound": "/tʃ/",
@@ -362,8 +395,7 @@
         "ny"
       ],
       "source": "FSI, Swahili Basic Course, p. xi: ny 'as in Spanish cañon, Portuguese nenhum, French gagner' (a palatal nasal), so French writes the sound gn",
-      "confidence": "medium",
-      "note": "Wikipedia only"
+      "confidence": "medium"
     },
     {
       "sound": "/ɲ/",
@@ -477,6 +509,27 @@
       "note": "an n before r added or dropped in writing: the commune Nyarusange (CENI 2010; OCHA 2001; USAID 2005; FAO 2008) appears as Nyanrusange in boundary data",
       "source": "CENI 2010 general election report (NYARUSANGE) against geoBoundaries BDI ADM2 (Nyanrusang[e]); RESEARCH_LOG.md, 5 Nov 2026",
       "confidence": "medium"
+    },
+    {
+      "sounds": [
+        "/ɑ̃/",
+        "/an/",
+        "/am/"
+      ],
+      "listener": "any",
+      "note": "French nasal vowel said as vowel + nasal consonant (fr-nasal-vowel-split); a listener writes n/m or a French nasal spelling (an, en)",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.1",
+      "confidence": "medium"
+    },
+    {
+      "sounds": [
+        "/ɥi/",
+        "/wi/"
+      ],
+      "listener": "any",
+      "note": "French ui said [wi] (huit [wit], 12/12)",
+      "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.3",
+      "confidence": "medium"
     }
   ],
   "relationship_implications": {
@@ -589,5 +642,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.6.0"
+  "version": "0.7.0"
 }

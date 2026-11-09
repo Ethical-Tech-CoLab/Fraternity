@@ -61,3 +61,10 @@ def test_transliteration_rules_need_a_source():
     assert any("needs a source" in e for e in validate_pack(pack))
     pack["transliteration_rules"][0]["source"] = "Zorc & Nibagwire 2007, Table 1"
     assert validate_pack(pack) == []
+
+
+def test_note_cannot_contradict_source():
+    pack = template()
+    pack["spelling_conventions"][0]["source"] = "FSI, Swahili Basic Course, p. xi"
+    pack["spelling_conventions"][0]["note"] = "Wikipedia only"
+    assert any("Wikipedia only" in e for e in validate_pack(pack))

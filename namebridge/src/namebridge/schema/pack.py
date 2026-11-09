@@ -68,6 +68,10 @@ def validate_pack(pack):
                 errors.append(f"{where}: confidence must be one of {sorted(CONFIDENCE_LEVELS)}")
             if f in ("name_structures", "order_rules") and rule.get("practice") not in PRACTICE_KINDS:
                 errors.append(f"{where}: practice must be one of {sorted(PRACTICE_KINDS)}")
+            # A note must not contradict the source: "Wikipedia only" left behind
+            # after the source was replaced (found 9 Nov 2026 in 8 entries).
+            if "wikipedia only" in str(rule.get("note", "")).lower() and "wikipedia" not in str(rule.get("source", "")).lower():
+                errors.append(f"{where}: note says 'Wikipedia only' but the source is not Wikipedia; update the note")
 
     for i, conv in enumerate(pack["spelling_conventions"] if isinstance(pack["spelling_conventions"], list) else []):
         if not conv.get("writer_language") or not conv.get("sound") or not conv.get("spellings"):

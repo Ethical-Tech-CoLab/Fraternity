@@ -1742,3 +1742,23 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 **Correction made during this work:** a DOI was first written for this source from memory without checking; it was replaced before commit by the repository's home page, with a note that the exact record URL was not recorded.
 
 **Tests:** 132 pass; graph valid.
+
+## 2026-11-09 — Nimbona & Simon (2022) read in full: how Burundians say French names
+
+**Source:** Nimbona, G. & Simon, A. C. (2022), "La prononciation du français au Burundi : influence du français de Belgique et du kirundi", *Journal of Language Contact* 15: 481–511, doi:10.1163/19552629-15030002. Copy obtained by the user; kept in `~/namebridge-ref`. Summarised, not reproduced.
+
+**Why it matters:** most Burundian given names are Christian names in French form. This paper shows how Kirundi speakers pronounce French, which is how a child or relative will say such a name aloud, and how a caseworker may then write it.
+
+**Corpus and limits:** 12 university-educated adults (4 women, mean age 38.5), PFC protocol (word list, text reading, narration). Bujumbura-born speakers were closest to standard French; the authors attribute differences to schooling. **Less-schooled speakers and children are not covered and may deviate more.** Name examples in the pack marked "derived" apply the pattern and are not in the paper.
+
+**Added to bi-kirundi 0.7.0 (5 phonetic rules, 2 listener confusions):**
+- `fr-nasal-vowel-split` (medium): French nasal vowels said as oral vowel + a nasal consonant matching the next consonant, as in Kirundi prenasals: 65.2% word-internal, 26% initial, 11.3% final (Table 3); *campagne* [kampaɲ], *cinquante* [sɛŋkant].
+- `fr-vowel-glide` (medium): glide between vowels: **Louis [luwi] (10/12)**, *étrier* [etʁije] (11/12); French *ui* → [wi] (*huit*, 12/12).
+- `fr-r-dropped` (medium): r dropped word-finally and after a consonant (*trois* [twa], *quatre* [kaːt], 7/12 each), never word-initially.
+- `fr-u-to-u-or-i` (low, occasional), `fr-h-pronounced` (low, 1 speaker in 3).
+
+**Same session: a bug in the packs and a guard.** 8 sound entries (3 packs) still had the note "Wikipedia only" after their source had been replaced by Cornevin (1984) or the FSI course on 5 Nov; the note contradicted the source. Notes fixed (bi-kirundi 0.6.1, cd-swc-ln 0.4.1, rw-kiny 0.5.2). **Guard:** `validate_pack` now rejects a "Wikipedia only" note when the source is not Wikipedia; test `test_note_cannot_contradict_source`.
+
+**Audit, still open (for the user to decide):** about 16 pack entries still list Wikipedia **alongside** another source (e.g. Kirundi transliteration with the Comparative Grammar; Lingala spelling with APiCS; the Chichewa r/l rule with Wikipedia and Wiktionary). Per the "Wikipedia is not a source" rule they should cite only the non-wiki source, or be marked `low` where Wikipedia is the only real support (the Chichewa entries look like that case).
+
+**Tests:** 133 pass; graph valid.
