@@ -76,6 +76,14 @@
       "practice": "database",
       "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'Central African names (Congolese etc.) did not traditionally include a surname … These names are often established in direct order'",
       "confidence": "medium"
+    },
+    {
+      "id": "order-mama-x",
+      "description": "Swahili 'mama X' / 'baba X' has two readings: respectful address with the person's own name ('Mrs. X') or a teknonym after a child ('X's mother'). Any adult woman may be addressed as 'mama'",
+      "practice": "cultural",
+      "source": "Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term",
+      "confidence": "medium",
+      "note": "Source describes Swahili generally (East African usage), not Congo Swahili specifically"
     }
   ],
   "particles_and_morphemes": [],
@@ -381,6 +389,11 @@
       "id": "court-name-changes",
       "description": "A legal name change by court (art. 64) or by adoption (art. 63) is a change, not a variant; it is never a public edge",
       "source": "Code de la famille (2017), arts 63-64; NAME_CHANGE.md rule 1"
+    },
+    {
+      "id": "mama-x-two-readings",
+      "description": "'Mama X' / 'Papa X' is ambiguous: X may be the person's OWN name (respectful address, like 'Mrs. X') or the name of their CHILD (teknonym, 'X's mother'). Search both readings: X as a given name of the sought adult, and X as a child of the sought adult. 'Mama'/'Papa' alone does not show that the person is anyone's parent",
+      "source": "order-mama-x"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -426,5 +439,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.3.0"
+  "version": "0.4.0"
 }

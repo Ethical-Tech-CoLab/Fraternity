@@ -1714,3 +1714,15 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 **Search note:** Tavily returned HTTP 429 on two of five sequential calls; no other open Rwanda-specific source on forms of address was found (an Instagram post and language-learning pages are not sources).
 
 **Tests:** 132 pass; graph valid.
+
+## 2026-11-09 — Correction: "Mama X" has two readings
+
+**User's first-hand observation (they have been in the region):** for Rwandans, *mama* and *papa* are used like *senhora*/*senhor* (madam/sir), i.e. respectful address for any adult, not only for parents.
+
+**Published support (Swahili):** Kraska-Szlenk, I. (2018), "Kinship metaphors in Swahili language and culture" (University of Warsaw; [PDF](https://bibliotekanauki.pl/articles/462487.pdf)), Table 1 lists both **"mama X" = teknonym, "X's mother"** and **"mama X" = honorific, "Mrs. X"**; "any adult woman can be addressed or referred to as mama", also with her own name; *baba* is the mirror term.
+
+**What was wrong:** the earlier entry today read "Mama Belyse" only as "mother of Belyse". In `GATE_EXAMPLES.md` example 1, Belyse is the mother's **own** name, i.e. the honorific reading.
+
+**Changes:** rw-kiny 0.5.1: new failure mode `mama-x-two-readings` (search X both as the adult's own given name and as a child's name; "Mama" alone does not show parenthood), `order-teknonym` and `child-avoids-parent-name` reworded; source = the user's field observation plus the Swahili paper. cd-swc-ln 0.4.0: new rule `order-mama-x` (medium; Swahili in general, not Congo Swahili specifically) and the same failure mode. **Tests:** 132 pass; graph valid.
+
+**Benchmark implication (week 6):** generated oral reports should include "Mama/Papa + own given name" and "Mama/Papa + child's name", so recall is measured on both readings.

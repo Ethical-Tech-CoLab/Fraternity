@@ -57,9 +57,9 @@
     },
     {
       "id": "order-teknonym",
-      "description": "A parent may be called 'Mother of X' / 'Father of X' after a child (teknonymy); where it is used it usually replaces the birth name in everyday address. The child named is often the eldest son or daughter, elsewhere the last-born. A parent reported as 'Mama X' gives the CHILD's name, not the parent's",
+      "description": "A parent may be called 'Mother of X' / 'Father of X' after a child (teknonymy); where used it usually replaces the birth name in everyday address, often after the eldest or the last-born. BUT 'mama'/'papa' are also plain respectful address for any adult (like 'sir/madam'), so 'Mama X' may carry the person's own name: see failure mode mama-x-two-readings",
       "practice": "cultural",
-      "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 49: renaming of the parent by the child's name ('Père de Untel', 'Mère de Untel') is 'très répandu en Afrique' and usually supplants the birth name; often the eldest son or daughter, elsewhere the last child",
+      "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 49: renaming of the parent by the child's name ('Père de Untel', 'Mère de Untel') is 'très répandu en Afrique' and usually supplants the birth name; often the eldest son or daughter, elsewhere the last child; Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term; the user's first-hand observation in the region (9 Nov 2026): 'mama' and 'papa' are used like 'senhora'/'senhor' (madam/sir) in Portuguese",
       "confidence": "low",
       "note": "The source describes Africa in general and does not name Rwanda for this practice; low until a Rwanda-specific source (Kimenyi 1989). The Wikipedia example 'Mama Teta' is not used as a source"
     }
@@ -524,13 +524,18 @@
     },
     {
       "id": "child-avoids-parent-name",
-      "description": "A child may not say, or not know, a parent's own name, because children do not call parents by name; expect kin terms or teknonyms ('Mama Belyse' = mother of Belyse) instead. In Rwanda the avoidance also covers parents-in-law. Retrieval must not require the parent's own name, and a teknonym should be searched as the name of a CHILD of the sought person",
+      "description": "A child may not say, or not know, a parent's own name, because children do not call parents by name; expect kin terms or 'Mama X'/'Papa X' instead, whose X may be the parent's own name or a sibling's (mama-x-two-readings). In Rwanda the avoidance also covers parents-in-law. Retrieval must not require the parent's full own name",
       "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 55: in Africa generally the child does not call father or mother by name; in many places, Rwanda named, this also applies to parents-in-law"
     },
     {
       "id": "child-withholds-own-name",
       "description": "A Rwandan child under about 15 may be reluctant to say their own name, as part of an upbringing in modesty; a minor who gives no name, or only a nickname, is not evidence of a false or hidden identity",
       "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 63: 'Au Rwanda, on ne dit pas son propre nom avant la fin de la croissance physique, vers 15 ans (ntaw'igura agikura)'; the article cites personal communications (Ganza 2002; Mbonimpa), so treat as low confidence"
+    },
+    {
+      "id": "mama-x-two-readings",
+      "description": "'Mama X' / 'Papa X' is ambiguous: X may be the person's OWN name (respectful address, like 'Mrs. X') or the name of their CHILD (teknonym, 'X's mother'). Search both readings: X as a given name of the sought adult, and X as a child of the sought adult. 'Mama'/'Papa' alone does not show that the person is anyone's parent",
+      "source": "the user's first-hand observation in the region (9 Nov 2026): 'mama' and 'papa' are used like 'senhora'/'senhor' (madam/sir) in Portuguese (field observation, not a published source; a Rwanda-specific publication, e.g. Kimenyi 1989, would let it be cited); Swahili evidence: Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -590,5 +595,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.5.0"
+  "version": "0.5.1"
 }
