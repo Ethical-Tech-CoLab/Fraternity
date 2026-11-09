@@ -27,20 +27,22 @@ def test_repo_graph_yohana_reaches_other_languages_through_the_concept():
     assert jean["path_confidence"] == round(jean["path"][0]["confidence"] * jean["path"][1]["confidence"], 4)
 
 
-def test_repo_graph_negative_constraint_reported():
+def test_repo_graph_different_names_stay_candidates():
+    # User's decision (9 Nov 2026): never hide a candidate; flag it instead.
     r = NameGraph(REPO_GRAPH).variants("ISHIMWE")
-    assert {"Ashimwe", "Nishimwe"} <= {n["form"] for n in r["not_equivalent"]}
+    assert {"Ashimwe", "Nishimwe"} <= {n["form"] for n in r["also_check"]}
     assert not {"Ashimwe", "Nishimwe"} & {v["form"] for v in r["variants"]}
+    assert "François" in {n["form"] for n in NameGraph(REPO_GRAPH).variants("Françoise")["also_check"]}
 
 
-def test_negative_constraint_blocks_a_reachable_variant(tmp_path):
+def test_different_name_is_flagged_not_hidden(tmp_path):
     g = _graph(tmp_path, ["Aaa", "Bbb", "Ccc"], [
         _edge("e1", "nf:aaa", "nf:bbb", "orthographic_variant_of"),
         _edge("e2", "nf:bbb", "nf:ccc", "orthographic_variant_of"),
         _edge("e3", "nf:aaa", "nf:ccc", "not_equivalent_to")])
     r = g.variants("Aaa")
     assert [v["form"] for v in r["variants"]] == ["Bbb"]
-    assert [n["form"] for n in r["not_equivalent"]] == ["Ccc"]
+    assert [n["form"] for n in r["also_check"]] == ["Ccc"]
 
 
 def test_deprecated_edges_are_ignored(tmp_path):
@@ -57,7 +59,7 @@ def test_one_way_edges_are_followed_one_way(tmp_path):
 def test_confused_names_are_never_variants(tmp_path):
     g = _graph(tmp_path, ["Aaa", "Bbb"], [_edge("e1", "nf:aaa", "nf:bbb", "commonly_confused_with")])
     r = g.variants("Aaa")
-    assert r["variants"] == [] and [c["form"] for c in r["commonly_confused_with"]] == ["Bbb"]
+    assert r["variants"] == [] and [c["form"] for c in r["also_check"]] == ["Bbb"]
 
 
 def test_min_confidence_prunes_long_paths(tmp_path):

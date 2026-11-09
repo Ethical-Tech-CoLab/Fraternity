@@ -27,7 +27,7 @@ The gap comes from a deliberate rule: we add only relationships that a source at
 
 The exit criterion for phase 1, "every edge sourced and confidence-scored", is met either way.
 
-**Why the edge count understates coverage** (analysis of 9 Nov): spelling variation (a final vowel added, a silent *h*, a doubled letter, *y* for *i*, and letters families add freely because they like them) is handled by **general rules** in the language packs and by tolerating any one-letter change at search time, not by storing every pair. The graph's own value lies in what similarity cannot do: linking forms that look different (Jean / Yohana) and **blocking** forms that look alike but are different names (François / Françoise, Justin / Justine, Ishimwe / Nishimwe).
+**Why the edge count understates coverage** (analysis of 9 Nov): spelling variation (a final vowel added, a silent *h*, a doubled letter, *y* for *i*, and letters families add freely because they like them) is handled by **general rules** in the language packs and by tolerating any one-letter change at search time, not by storing every pair. The graph's own value lies in what similarity cannot do: linking forms that look different (Jean / Yohana) and **flagging** forms that look alike but are different names (François / Françoise, Justin / Justine, Ishimwe / Nishimwe). Flagged names stay on the candidate list, because a relative may not remember the spelling; the flag tells the caseworker to confirm with other evidence (age, place, relatives).
 
 ---
 

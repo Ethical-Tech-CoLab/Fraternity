@@ -8,8 +8,12 @@ This queries NAMES, never people: the public graph holds general naming knowledg
   through NameConcept nodes where forms share a concept (Jean -> John: Greek Iōannēs -> Yohana).
 - Each variant comes with its best path: every step's relation type, confidence, basis,
   review status and source. Path confidence is the product of step confidences (conservative).
-- not_equivalent_to edges are negative constraints: a variant they touch is removed and the
-  constraint is reported. commonly_confused_with is reported separately, never as a variant.
+- Nothing is hidden from a search (user's decision, 9 Nov 2026): a relative may not remember
+  the spelling, and a record may have lost a letter. Forms joined by not_equivalent_to
+  (different names that look alike: Françoise / François) and commonly_confused_with are
+  returned in `also_check`, with the reason, so they stay on the candidate list; they are only
+  kept out of `variants`, which lists forms of the same name. Confirmation then needs other
+  evidence (age, place, relatives); a name never confirms anyone alone.
 - Ambiguous paths: when the query matches forms of more than one concept (Yakobo: James or
   Jacob), `ambiguous_between` lists the concepts and each variant names the concept it came
   through, so alternatives are not read as variants of each other.
@@ -83,10 +87,7 @@ class NameGraph:
                 best[nxt] = (c, path + [self._step(node, nxt, e)])
                 heapq.heappush(heap, (-c, nxt))
 
-        blocked = {}
-        for s in starts:
-            for other, e in self.negative[s]:
-                blocked[other] = e
+        different = {o for s in starts for o, _ in self.negative[s]}
         # Ambiguous paths: the query matches forms of more than one concept (Swahili "Yakobo" is
         # both James/Jacques and Jacob). Each variant then says which concept it came through.
         concept_of = {}
@@ -98,7 +99,7 @@ class NameGraph:
         results = []
         for nid, (conf, path) in best.items():
             n = self.nodes[nid]
-            if nid in starts or n["type"] != "NameForm" or nid in blocked:
+            if nid in starts or n["type"] != "NameForm" or nid in different:
                 continue
             item = {"form": n["text"], "languages": n.get("languages", []), "node": nid, "path_confidence": round(conf, 4), "path": path}
             if ambiguous:
@@ -111,8 +112,11 @@ class NameGraph:
             "matched_forms": [{"node": s, "form": self.nodes[s]["text"], "languages": self.nodes[s].get("languages", [])} for s in starts],
             "ambiguous_between": ambiguous,
             "variants": results,
-            "not_equivalent": [{"form": self.nodes[o]["text"], "node": o, **self._step(s, o, e)} for s in starts for o, e in self.negative[s]],
-            "commonly_confused_with": [{"form": self.nodes[o]["text"], "node": o, **self._step(s, o, e)} for s in starts for o, e in self.confused[s]],
+            "also_check": (
+                [{"form": self.nodes[o]["text"], "node": o, "reason": "different name that looks alike: keep as a candidate, confirm with other evidence", **self._step(s, o, e)}
+                 for s in starts for o, e in self.negative[s]]
+                + [{"form": self.nodes[o]["text"], "node": o, "reason": "commonly confused with the query: keep as a candidate", **self._step(s, o, e)}
+                   for s in starts for o, e in self.confused[s]]),
             "note": "Name knowledge only: variants are hypotheses for search, never confirmation of an identity (CONCEPT-IDEA.md §5.6)",
         }
 

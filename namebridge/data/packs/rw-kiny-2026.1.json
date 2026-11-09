@@ -654,7 +654,7 @@
     },
     {
       "id": "french-gender-pair-merged",
-      "description": "French masculine and feminine forms differ by one or two letters and look more alike than real variants (François / Françoise 0.98, Justin / Justine 0.97 Jaro-Winkler) but are different names given to different sexes. Similarity alone would merge them; negative constraints in attested-variants-2026.1 block them. A record that drops or adds the final -e can still be the same person, so other evidence decides",
+      "description": "French masculine and feminine forms differ by one or two letters and look more alike than real variants (François / Françoise 0.98, Justin / Justine 0.97 Jaro-Winkler) but are different names given to different sexes. They must not be merged as one name, and must not be hidden either: a record may have lost or gained the final -e, and a relative may not remember the spelling. The negative constraints in attested-variants-2026.1 keep them out of 'variants' and list them under 'also_check', so the candidate stays visible and other evidence decides",
       "source": "attested-variants-2026.1 (sex counts in the CongoNames, CENI and NEC profiles)"
     }
   ],
@@ -715,5 +715,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.14.0"
+  "version": "0.14.1"
 }
