@@ -14,6 +14,10 @@ REJECTED = {
     ("elisha", "fr"): "'Il' is a pronoun", ("elisha", "sw"): "'Israeli' is a people", ("elisha", "ny"): "'Israeli' is a people",
     ("stephanos", "fr"): "'Joseph' is another person", ("stephanos", "ln"): "'Isalaele' is a people",
     ("barnabas", "ln"): "'Bayuda' means 'the Jews'", ("silas", "fr"): "'Juifs' means 'Jews'", ("kornelios", "ln"): "'Molimo' means 'spirit'",
+    # second batch (9 Nov 2026)
+    ("adam", "sw"): "'Baada' means 'after'", ("adam", "ny"): "'Zaka' is not the name", ("yishmael", "sw"): "'Kisha' means 'then'",
+    ("yoshiyahu", "sw"): "'Kisha' means 'then'", ("kalev", "ln"): "'Isalaele' is a people", ("kalev", "ny"): "'Malire' is not the name",
+    ("kalev", "rw"): "'Kandi' means 'and'", ("hannah", "ln"): "'Nganga' is not the name",
 }
 SRC = {"fr": ("ebible-fr-lsg-align", "https://ebible.org/details.php?id=fraLSG", "Louis Segond 1910 (public domain), ebible.org"),
        "sw": ("ebible-sw-ulb-align", "https://ebible.org/details.php?id=swhulb", "Swahili Unlocked Literal Bible (Door43, CC BY-SA 4.0), ebible.org"),

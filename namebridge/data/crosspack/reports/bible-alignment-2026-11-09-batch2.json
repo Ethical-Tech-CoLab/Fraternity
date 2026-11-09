@@ -1,0 +1,6623 @@
+{
+ "report": [
+  {
+   "concept": "adam",
+   "seed": "Adam",
+   "seed_count": 9,
+   "forms": {
+    "fr": {
+     "form": "Adam",
+     "count": 11,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Baada",
+     "count": 8,
+     "similarity": 0.633,
+     "status": "ambiguous",
+     "rivals": [
+      [
+       "Lameki",
+       10
+      ],
+      [
+       "Wakati",
+       7
+      ]
+     ]
+    },
+    "ln": {
+     "form": "Adamu",
+     "count": 12,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Zaka",
+     "count": 9,
+     "similarity": 0.667,
+     "status": "ambiguous",
+     "rivals": [
+      [
+       "Atabadwa",
+       8
+      ]
+     ]
+    },
+    "rw": {
+     "form": "Adamu",
+     "count": 11,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "hevel",
+   "seed": "Abel",
+   "seed_count": 8,
+   "forms": {
+    "fr": {
+     "form": "Abel",
+     "count": 9,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Habili",
+     "count": 10,
+     "similarity": 0.75,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Abele",
+     "count": 9,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Abele",
+     "count": 8,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Abeli",
+     "count": 9,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "qayin",
+   "seed": "Cain",
+   "seed_count": 19,
+   "forms": {
+    "fr": {
+     "form": "Caïn",
+     "count": 21,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Kaini",
+     "count": 20,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Kayina",
+     "count": 24,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Kaini",
+     "count": 21,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Kayini",
+     "count": 20,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "lot",
+   "seed": "Lot",
+   "seed_count": 27,
+   "forms": {
+    "fr": {
+     "form": "Lot",
+     "count": 28,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Lutu",
+     "count": 26,
+     "similarity": 0.75,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Loti",
+     "count": 29,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Loti",
+     "count": 32,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Loti",
+     "count": 29,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "yishmael",
+   "seed": "Ishmael",
+   "seed_count": 14,
+   "forms": {
+    "fr": {
+     "form": "Ismaël",
+     "count": 16,
+     "similarity": 0.962,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Kisha",
+     "count": 12,
+     "similarity": 0.79,
+     "status": "ambiguous",
+     "rivals": [
+      [
+       "Isaka",
+       19
+      ]
+     ]
+    },
+    "ln": {
+     "form": "Isimaeli",
+     "count": 19,
+     "similarity": 0.895,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Ismaeli",
+     "count": 17,
+     "similarity": 0.924,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Ishimayeli",
+     "count": 16,
+     "similarity": 0.93,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "esav",
+   "seed": "Esau",
+   "seed_count": 76,
+   "forms": {
+    "fr": {
+     "form": "Ésaü",
+     "count": 85,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Esau",
+     "count": 79,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Ezawu",
+     "count": 85,
+     "similarity": 0.805,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Esau",
+     "count": 79,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Esawu",
+     "count": 81,
+     "similarity": 0.953,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "lavan",
+   "seed": "Laban",
+   "seed_count": 45,
+   "forms": {
+    "fr": {
+     "form": "Laban",
+     "count": 49,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Labani",
+     "count": 50,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Labani",
+     "count": 53,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Labani",
+     "count": 51,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Labani",
+     "count": 50,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "leah",
+   "seed": "Leah",
+   "seed_count": 21,
+   "forms": {
+    "fr": {
+     "form": "Léa",
+     "count": 22,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Lea",
+     "count": 22,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Lea",
+     "count": 23,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Leya",
+     "count": 26,
+     "similarity": 0.867,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Leya",
+     "count": 22,
+     "similarity": 0.867,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "dinah",
+   "seed": "Dinah",
+   "seed_count": 6,
+   "forms": {
+    "fr": {
+     "form": "Dina",
+     "count": 8,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Dina",
+     "count": 6,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Dina",
+     "count": 8,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "status": "no candidate"
+    }
+   }
+  },
+  {
+   "concept": "yehudah",
+   "seed": "Judah",
+   "seed_count": 20,
+   "forms": {
+    "fr": {
+     "form": "Juda",
+     "count": 22,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Yuda",
+     "count": 19,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "form": "Yuda",
+     "count": 25,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Yuda",
+     "count": 23,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "reuven",
+   "seed": "Reuben",
+   "seed_count": 5,
+   "forms": {
+    "fr": {
+     "form": "Ruben",
+     "count": 5,
+     "similarity": 0.86,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Rubeni",
+     "count": 5,
+     "similarity": 0.81,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Ribeni",
+     "count": 5,
+     "similarity": 0.725,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Rubeni",
+     "count": 5,
+     "similarity": 0.81,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Rubeni",
+     "count": 4,
+     "similarity": 0.81,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "efrayim",
+   "seed": "Ephraim",
+   "seed_count": 8,
+   "forms": {
+    "fr": {
+     "form": "Éphraïm",
+     "count": 8,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Efrahimu",
+     "count": 7,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Efrayimi",
+     "count": 9,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Efereimu",
+     "count": 9,
+     "similarity": 0.856,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Efurayimu",
+     "count": 9,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "menashe",
+   "seed": "Manasseh",
+   "seed_count": 8,
+   "forms": {
+    "fr": {
+     "form": "Manassé",
+     "count": 8,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Manase",
+     "count": 7,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Manase",
+     "count": 9,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Manase",
+     "count": 8,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Manase",
+     "count": 9,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "miryam",
+   "seed": "Miriam",
+   "seed_count": 7,
+   "forms": {
+    "fr": {
+     "form": "Marie",
+     "count": 9,
+     "similarity": 0.63,
+     "status": "ambiguous",
+     "rivals": [
+      [
+       "Moïse",
+       9
+      ]
+     ]
+    },
+    "sw": {
+     "form": "Miriamu",
+     "count": 6,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Miriami",
+     "count": 9,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Miriamu",
+     "count": 9,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Miriyamu",
+     "count": 8,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "kalev",
+   "seed": "Caleb",
+   "seed_count": 8,
+   "forms": {
+    "fr": {
+     "form": "Caleb",
+     "count": 10,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Kalebu",
+     "count": 10,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Isalaele",
+     "count": 5,
+     "similarity": 0.658,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Malire",
+     "count": 5,
+     "similarity": 0.7,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Kandi",
+     "count": 8,
+     "similarity": 0.68,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "rahav",
+   "seed": "Rahab",
+   "seed_count": 5,
+   "forms": {
+    "fr": {
+     "form": "Rahab",
+     "count": 6,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Rahabu",
+     "count": 6,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "form": "Rahabu",
+     "count": 7,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "boaz",
+   "seed": "Boaz",
+   "seed_count": 22,
+   "forms": {
+    "fr": {
+     "form": "Boaz",
+     "count": 25,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "status": "no candidate"
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "form": "Bowazi",
+     "count": 19,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "hannah",
+   "seed": "Hannah",
+   "seed_count": 13,
+   "forms": {
+    "fr": {
+     "form": "Anne",
+     "count": 16,
+     "similarity": 0.75,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Hana",
+     "count": 17,
+     "similarity": 0.922,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Nganga",
+     "count": 9,
+     "similarity": 0.694,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "form": "Hana",
+     "count": 15,
+     "similarity": 0.922,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "eli",
+   "seed": "Eli",
+   "seed_count": 32,
+   "forms": {
+    "fr": {
+     "form": "Éli",
+     "count": 39,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Eli",
+     "count": 35,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Eli",
+     "count": 42,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Eli",
+     "count": 43,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Eli",
+     "count": 37,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "shaul",
+   "seed": "Saul",
+   "seed_count": 106,
+   "forms": {
+    "fr": {
+     "form": "Saül",
+     "count": 117,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Sauli",
+     "count": 111,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Saulo",
+     "count": 130,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Sauli",
+     "count": 116,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Sawuli",
+     "count": 114,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "yishai",
+   "seed": "Jesse",
+   "seed_count": 18,
+   "forms": {
+    "fr": {
+     "status": "no candidate"
+    },
+    "sw": {
+     "form": "Yese",
+     "count": 20,
+     "similarity": 0.953,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "form": "Yese",
+     "count": 18,
+     "similarity": 0.953,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Yesayi",
+     "count": 19,
+     "similarity": 0.79,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "golyat",
+   "seed": "Goliath",
+   "seed_count": 3,
+   "forms": {
+    "fr": {
+     "form": "Goliath",
+     "count": 3,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Goliathi",
+     "count": 3,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Goliati",
+     "count": 4,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Goliati",
+     "count": 3,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Goliyati",
+     "count": 3,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "avigayil",
+   "seed": "Abigail",
+   "seed_count": 9,
+   "forms": {
+    "fr": {
+     "form": "Abigaïl",
+     "count": 11,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Abigaili",
+     "count": 10,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "form": "Abigayeli",
+     "count": 11,
+     "similarity": 0.927,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Abigayili",
+     "count": 9,
+     "similarity": 0.956,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "avshalom",
+   "seed": "Absalom",
+   "seed_count": 94,
+   "forms": {
+    "fr": {
+     "form": "Absalom",
+     "count": 101,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Absalomu",
+     "count": 93,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Abisalomi",
+     "count": 99,
+     "similarity": 0.941,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Abisalomu",
+     "count": 94,
+     "similarity": 0.941,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Abusalomu",
+     "count": 95,
+     "similarity": 0.941,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "natan",
+   "seed": "Nathan",
+   "seed_count": 11,
+   "forms": {
+    "fr": {
+     "form": "Nathan",
+     "count": 13,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Nathani",
+     "count": 11,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Natan",
+     "count": 12,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Natani",
+     "count": 12,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Natani",
+     "count": 12,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "yoav",
+   "seed": "Joab",
+   "seed_count": 58,
+   "forms": {
+    "fr": {
+     "form": "Joab",
+     "count": 65,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Yoabu",
+     "count": 64,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Joabi",
+     "count": 66,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Yowabu",
+     "count": 61,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Yowabu",
+     "count": 63,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "avner",
+   "seed": "Abner",
+   "seed_count": 44,
+   "forms": {
+    "fr": {
+     "form": "Abner",
+     "count": 43,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Abneri",
+     "count": 46,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Abineri",
+     "count": 48,
+     "similarity": 0.924,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Abineri",
+     "count": 44,
+     "similarity": 0.924,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Abuneri",
+     "count": 47,
+     "similarity": 0.924,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "rehavam",
+   "seed": "Rehoboam",
+   "seed_count": 19,
+   "forms": {
+    "fr": {
+     "form": "Roboam",
+     "count": 22,
+     "similarity": 0.925,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Rehoboamu",
+     "count": 21,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Roboami",
+     "count": 24,
+     "similarity": 0.882,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Rehobowamu",
+     "count": 22,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Rehobowamu",
+     "count": 20,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "yarovam",
+   "seed": "Jeroboam",
+   "seed_count": 38,
+   "forms": {
+    "fr": {
+     "form": "Jéroboam",
+     "count": 42,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Yeroboamu",
+     "count": 34,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Jeroboami",
+     "count": 44,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Yeroboamu",
+     "count": 37,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Yerobowamu",
+     "count": 40,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "ahav",
+   "seed": "Ahab",
+   "seed_count": 50,
+   "forms": {
+    "fr": {
+     "form": "Achab",
+     "count": 61,
+     "similarity": 0.94,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Ahabu",
+     "count": 65,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "form": "Ahabu",
+     "count": 64,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Ahabu",
+     "count": 59,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "izevel",
+   "seed": "Jezebel",
+   "seed_count": 14,
+   "forms": {
+    "fr": {
+     "form": "Jézabel",
+     "count": 14,
+     "similarity": 0.894,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Yezebeli",
+     "count": 14,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Jezabeli",
+     "count": 15,
+     "similarity": 0.869,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Yezebeli",
+     "count": 15,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Yezebeli",
+     "count": 13,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "naaman",
+   "seed": "Naaman",
+   "seed_count": 11,
+   "forms": {
+    "fr": {
+     "status": "no candidate"
+    },
+    "sw": {
+     "status": "no candidate"
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "status": "no candidate"
+    }
+   }
+  },
+  {
+   "concept": "hizqiyahu",
+   "seed": "Hezekiah",
+   "seed_count": 42,
+   "forms": {
+    "fr": {
+     "form": "Ézéchias",
+     "count": 44,
+     "similarity": 0.845,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Hezekia",
+     "count": 43,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Ezekiasi",
+     "count": 48,
+     "similarity": 0.833,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Hezekiya",
+     "count": 47,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Hezekiya",
+     "count": 48,
+     "similarity": 0.95,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "yoshiyahu",
+   "seed": "Josiah",
+   "seed_count": 11,
+   "forms": {
+    "fr": {
+     "form": "Josias",
+     "count": 15,
+     "similarity": 0.933,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Kisha",
+     "count": 11,
+     "similarity": 0.656,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "form": "Yosiya",
+     "count": 14,
+     "similarity": 0.933,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "mordekhai",
+   "seed": "Mordecai",
+   "seed_count": 58,
+   "forms": {
+    "fr": {
+     "form": "Mardochée",
+     "count": 60,
+     "similarity": 0.7,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Modekai",
+     "count": 63,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Maridoshe",
+     "count": 76,
+     "similarity": 0.612,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Mordekai",
+     "count": 66,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Moridekayi",
+     "count": 62,
+     "similarity": 0.88,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "haman",
+   "seed": "Haman",
+   "seed_count": 53,
+   "forms": {
+    "fr": {
+     "form": "Haman",
+     "count": 54,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Hamani",
+     "count": 50,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Amani",
+     "count": 59,
+     "similarity": 0.867,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Hamani",
+     "count": 57,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Hamani",
+     "count": 52,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "zerubbavel",
+   "seed": "Zerubbabel",
+   "seed_count": 12,
+   "forms": {
+    "fr": {
+     "form": "Zorobabel",
+     "count": 13,
+     "similarity": 0.8,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Zerubabeli",
+     "count": 11,
+     "similarity": 0.938,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Zorobabeli",
+     "count": 12,
+     "similarity": 0.777,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Zerubabeli",
+     "count": 13,
+     "similarity": 0.938,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Zebedayo",
+     "count": 10,
+     "similarity": 0.707,
+     "status": "ambiguous",
+     "rivals": [
+      [
+       "Wera",
+       11
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "concept": "nevukhadnetsar",
+   "seed": "Nebuchadnezzar",
+   "seed_count": 29,
+   "forms": {
+    "fr": {
+     "form": "Nebucadnetsar",
+     "count": 32,
+     "similarity": 0.926,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Nebukadneza",
+     "count": 27,
+     "similarity": 0.957,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Nabukodonozori",
+     "count": 30,
+     "similarity": 0.719,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Nebukadinezara",
+     "count": 28,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Nebukadinezari",
+     "count": 28,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "elisheva",
+   "seed": "Elizabeth",
+   "seed_count": 9,
+   "forms": {
+    "fr": {
+     "form": "Élisabeth",
+     "count": 10,
+     "similarity": 0.942,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Elizabeti",
+     "count": 8,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Elizabeti",
+     "count": 12,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Elizabeti",
+     "count": 11,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Elizabeti",
+     "count": 11,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "nikodemos",
+   "seed": "Nicodemus",
+   "seed_count": 5,
+   "forms": {
+    "fr": {
+     "form": "Nicodème",
+     "count": 6,
+     "similarity": 0.931,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Nikodemo",
+     "count": 4,
+     "similarity": 0.931,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Nikodemi",
+     "count": 6,
+     "similarity": 0.931,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Nekodimo",
+     "count": 6,
+     "similarity": 0.754,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "status": "no candidate"
+    }
+   }
+  },
+  {
+   "concept": "thomas",
+   "seed": "Thomas",
+   "seed_count": 8,
+   "forms": {
+    "fr": {
+     "form": "Thomas",
+     "count": 7,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Thomaso",
+     "count": 5,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Toma",
+     "count": 9,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Tomasi",
+     "count": 10,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Toma",
+     "count": 9,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "philippos",
+   "seed": "Philip",
+   "seed_count": 26,
+   "forms": {
+    "fr": {
+     "form": "Philippe",
+     "count": 29,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Filipo",
+     "count": 24,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Filipo",
+     "count": 32,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Filipo",
+     "count": 31,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Filipo",
+     "count": 27,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "andreas",
+   "seed": "Andrew",
+   "seed_count": 5,
+   "forms": {
+    "fr": {
+     "form": "André",
+     "count": 5,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Andrea",
+     "count": 5,
+     "similarity": 0.933,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Andre",
+     "count": 5,
+     "similarity": 0.967,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Andreya",
+     "count": 6,
+     "similarity": 0.91,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Andereya",
+     "count": 6,
+     "similarity": 0.827,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "nathanael",
+   "seed": "Nathanael",
+   "seed_count": 6,
+   "forms": {
+    "fr": {
+     "form": "Nathanaël",
+     "count": 6,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Nathanaeli",
+     "count": 6,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Natanaele",
+     "count": 6,
+     "similarity": 0.978,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Natanieli",
+     "count": 7,
+     "similarity": 0.931,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Natanayeli",
+     "count": 7,
+     "similarity": 0.96,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "ananias",
+   "seed": "Ananias",
+   "seed_count": 10,
+   "forms": {
+    "fr": {
+     "form": "Ananias",
+     "count": 11,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Anania",
+     "count": 10,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Ananiasi",
+     "count": 13,
+     "similarity": 0.975,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Hananiya",
+     "count": 12,
+     "similarity": 0.869,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Ananiya",
+     "count": 10,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "apollos",
+   "seed": "Apollos",
+   "seed_count": 8,
+   "forms": {
+    "fr": {
+     "form": "Apollos",
+     "count": 9,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Apolo",
+     "count": 10,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Apolosi",
+     "count": 10,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Apolo",
+     "count": 11,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Apolo",
+     "count": 8,
+     "similarity": 0.943,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "priskilla",
+   "seed": "Priscilla",
+   "seed_count": 3,
+   "forms": {
+    "fr": {
+     "form": "Priscille",
+     "count": 4,
+     "similarity": 0.956,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Prisila",
+     "count": 4,
+     "similarity": 0.956,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Prisile",
+     "count": 4,
+     "similarity": 0.905,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "status": "no candidate"
+    },
+    "rw": {
+     "form": "Purisikila",
+     "count": 3,
+     "similarity": 0.869,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "akylas",
+   "seed": "Aquila",
+   "seed_count": 3,
+   "forms": {
+    "fr": {
+     "form": "Aquilas",
+     "count": 4,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Akwila",
+     "count": 4,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Akilasi",
+     "count": 4,
+     "similarity": 0.879,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Pakuti",
+     "count": 2,
+     "similarity": 0.778,
+     "status": "ambiguous",
+     "rivals": [
+      [
+       "Akaya",
+       2
+      ]
+     ]
+    },
+    "rw": {
+     "form": "Akwila",
+     "count": 3,
+     "similarity": 0.911,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "felix",
+   "seed": "Felix",
+   "seed_count": 9,
+   "forms": {
+    "fr": {
+     "form": "Félix",
+     "count": 12,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Feliki",
+     "count": 9,
+     "similarity": 0.893,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Felikisi",
+     "count": 12,
+     "similarity": 0.86,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Felike",
+     "count": 10,
+     "similarity": 0.893,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Feliki",
+     "count": 9,
+     "similarity": 0.893,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "festos",
+   "seed": "Festus",
+   "seed_count": 13,
+   "forms": {
+    "fr": {
+     "form": "Festus",
+     "count": 16,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Festo",
+     "count": 17,
+     "similarity": 0.893,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Festisi",
+     "count": 17,
+     "similarity": 0.91,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Festo",
+     "count": 17,
+     "similarity": 0.893,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Fesito",
+     "count": 13,
+     "similarity": 0.844,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "zakchaios",
+   "seed": "Zacchaeus",
+   "seed_count": 3,
+   "forms": {
+    "fr": {
+     "status": "no candidate"
+    },
+    "sw": {
+     "form": "Zakayo",
+     "count": 3,
+     "similarity": 0.793,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "status": "no candidate"
+    },
+    "ny": {
+     "form": "Zakeyu",
+     "count": 4,
+     "similarity": 0.857,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Zakayo",
+     "count": 4,
+     "similarity": 0.793,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  },
+  {
+   "concept": "tabitha",
+   "seed": "Dorcas",
+   "seed_count": 3,
+   "forms": {
+    "fr": {
+     "form": "Dorcas",
+     "count": 2,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "sw": {
+     "form": "Dorcas",
+     "count": 2,
+     "similarity": 1.0,
+     "status": "ok",
+     "rivals": []
+    },
+    "ln": {
+     "form": "Dorkasi",
+     "count": 4,
+     "similarity": 0.971,
+     "status": "ok",
+     "rivals": []
+    },
+    "ny": {
+     "form": "Dorika",
+     "count": 2,
+     "similarity": 0.922,
+     "status": "ok",
+     "rivals": []
+    },
+    "rw": {
+     "form": "Doruka",
+     "count": 2,
+     "similarity": 0.922,
+     "status": "ok",
+     "rivals": []
+    }
+   }
+  }
+ ],
+ "proposals": [
+  {
+   "concept": "adam",
+   "label": "Adam",
+   "text": "Adam",
+   "lang": "fr",
+   "seed": "Adam",
+   "seed_count": 9,
+   "count": 11,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     2,
+     5
+    ]
+   ]
+  },
+  {
+   "concept": "adam",
+   "label": "Adam",
+   "text": "Adamu",
+   "lang": "ln",
+   "seed": "Adam",
+   "seed_count": 9,
+   "count": 12,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     2,
+     5
+    ]
+   ]
+  },
+  {
+   "concept": "adam",
+   "label": "Adam",
+   "text": "Adamu",
+   "lang": "rw",
+   "seed": "Adam",
+   "seed_count": 9,
+   "count": 11,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     2,
+     5
+    ]
+   ]
+  },
+  {
+   "concept": "hevel",
+   "label": "Abel",
+   "text": "Abel",
+   "lang": "fr",
+   "seed": "Abel",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "hevel",
+   "label": "Abel",
+   "text": "Habili",
+   "lang": "sw",
+   "seed": "Abel",
+   "seed_count": 8,
+   "count": 10,
+   "similarity": 0.75,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "hevel",
+   "label": "Abel",
+   "text": "Abele",
+   "lang": "ln",
+   "seed": "Abel",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "hevel",
+   "label": "Abel",
+   "text": "Abele",
+   "lang": "ny",
+   "seed": "Abel",
+   "seed_count": 8,
+   "count": 8,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "hevel",
+   "label": "Abel",
+   "text": "Abeli",
+   "lang": "rw",
+   "seed": "Abel",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "qayin",
+   "label": "Cain",
+   "text": "Caïn",
+   "lang": "fr",
+   "seed": "Cain",
+   "seed_count": 19,
+   "count": 21,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "qayin",
+   "label": "Cain",
+   "text": "Kaini",
+   "lang": "sw",
+   "seed": "Cain",
+   "seed_count": 19,
+   "count": 20,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "qayin",
+   "label": "Cain",
+   "text": "Kayina",
+   "lang": "ln",
+   "seed": "Cain",
+   "seed_count": 19,
+   "count": 24,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "qayin",
+   "label": "Cain",
+   "text": "Kaini",
+   "lang": "ny",
+   "seed": "Cain",
+   "seed_count": 19,
+   "count": 21,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "qayin",
+   "label": "Cain",
+   "text": "Kayini",
+   "lang": "rw",
+   "seed": "Cain",
+   "seed_count": 19,
+   "count": 20,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "GEN",
+     4,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "lot",
+   "label": "Lot",
+   "text": "Lot",
+   "lang": "fr",
+   "seed": "Lot",
+   "seed_count": 27,
+   "count": 28,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     13,
+     14
+    ],
+    [
+     "GEN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "lot",
+   "label": "Lot",
+   "text": "Lutu",
+   "lang": "sw",
+   "seed": "Lot",
+   "seed_count": 27,
+   "count": 26,
+   "similarity": 0.75,
+   "passages": [
+    [
+     "GEN",
+     13,
+     14
+    ],
+    [
+     "GEN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "lot",
+   "label": "Lot",
+   "text": "Loti",
+   "lang": "ln",
+   "seed": "Lot",
+   "seed_count": 27,
+   "count": 29,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "GEN",
+     13,
+     14
+    ],
+    [
+     "GEN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "lot",
+   "label": "Lot",
+   "text": "Loti",
+   "lang": "ny",
+   "seed": "Lot",
+   "seed_count": 27,
+   "count": 32,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "GEN",
+     13,
+     14
+    ],
+    [
+     "GEN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "lot",
+   "label": "Lot",
+   "text": "Loti",
+   "lang": "rw",
+   "seed": "Lot",
+   "seed_count": 27,
+   "count": 29,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "GEN",
+     13,
+     14
+    ],
+    [
+     "GEN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "yishmael",
+   "label": "Ishmael",
+   "text": "Ismaël",
+   "lang": "fr",
+   "seed": "Ishmael",
+   "seed_count": 14,
+   "count": 16,
+   "similarity": 0.962,
+   "passages": [
+    [
+     "GEN",
+     16,
+     17
+    ],
+    [
+     "GEN",
+     21,
+     21
+    ],
+    [
+     "GEN",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "yishmael",
+   "label": "Ishmael",
+   "text": "Isimaeli",
+   "lang": "ln",
+   "seed": "Ishmael",
+   "seed_count": 14,
+   "count": 19,
+   "similarity": 0.895,
+   "passages": [
+    [
+     "GEN",
+     16,
+     17
+    ],
+    [
+     "GEN",
+     21,
+     21
+    ],
+    [
+     "GEN",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "yishmael",
+   "label": "Ishmael",
+   "text": "Ismaeli",
+   "lang": "ny",
+   "seed": "Ishmael",
+   "seed_count": 14,
+   "count": 17,
+   "similarity": 0.924,
+   "passages": [
+    [
+     "GEN",
+     16,
+     17
+    ],
+    [
+     "GEN",
+     21,
+     21
+    ],
+    [
+     "GEN",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "yishmael",
+   "label": "Ishmael",
+   "text": "Ishimayeli",
+   "lang": "rw",
+   "seed": "Ishmael",
+   "seed_count": 14,
+   "count": 16,
+   "similarity": 0.93,
+   "passages": [
+    [
+     "GEN",
+     16,
+     17
+    ],
+    [
+     "GEN",
+     21,
+     21
+    ],
+    [
+     "GEN",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "esav",
+   "label": "Esau",
+   "text": "Ésaü",
+   "lang": "fr",
+   "seed": "Esau",
+   "seed_count": 76,
+   "count": 85,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     25,
+     28
+    ],
+    [
+     "GEN",
+     32,
+     33
+    ],
+    [
+     "GEN",
+     36,
+     36
+    ]
+   ]
+  },
+  {
+   "concept": "esav",
+   "label": "Esau",
+   "text": "Esau",
+   "lang": "sw",
+   "seed": "Esau",
+   "seed_count": 76,
+   "count": 79,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     25,
+     28
+    ],
+    [
+     "GEN",
+     32,
+     33
+    ],
+    [
+     "GEN",
+     36,
+     36
+    ]
+   ]
+  },
+  {
+   "concept": "esav",
+   "label": "Esau",
+   "text": "Ezawu",
+   "lang": "ln",
+   "seed": "Esau",
+   "seed_count": 76,
+   "count": 85,
+   "similarity": 0.805,
+   "passages": [
+    [
+     "GEN",
+     25,
+     28
+    ],
+    [
+     "GEN",
+     32,
+     33
+    ],
+    [
+     "GEN",
+     36,
+     36
+    ]
+   ]
+  },
+  {
+   "concept": "esav",
+   "label": "Esau",
+   "text": "Esau",
+   "lang": "ny",
+   "seed": "Esau",
+   "seed_count": 76,
+   "count": 79,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     25,
+     28
+    ],
+    [
+     "GEN",
+     32,
+     33
+    ],
+    [
+     "GEN",
+     36,
+     36
+    ]
+   ]
+  },
+  {
+   "concept": "esav",
+   "label": "Esau",
+   "text": "Esawu",
+   "lang": "rw",
+   "seed": "Esau",
+   "seed_count": 76,
+   "count": 81,
+   "similarity": 0.953,
+   "passages": [
+    [
+     "GEN",
+     25,
+     28
+    ],
+    [
+     "GEN",
+     32,
+     33
+    ],
+    [
+     "GEN",
+     36,
+     36
+    ]
+   ]
+  },
+  {
+   "concept": "lavan",
+   "label": "Laban",
+   "text": "Laban",
+   "lang": "fr",
+   "seed": "Laban",
+   "seed_count": 45,
+   "count": 49,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     29,
+     31
+    ]
+   ]
+  },
+  {
+   "concept": "lavan",
+   "label": "Laban",
+   "text": "Labani",
+   "lang": "sw",
+   "seed": "Laban",
+   "seed_count": 45,
+   "count": 50,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "GEN",
+     29,
+     31
+    ]
+   ]
+  },
+  {
+   "concept": "lavan",
+   "label": "Laban",
+   "text": "Labani",
+   "lang": "ln",
+   "seed": "Laban",
+   "seed_count": 45,
+   "count": 53,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "GEN",
+     29,
+     31
+    ]
+   ]
+  },
+  {
+   "concept": "lavan",
+   "label": "Laban",
+   "text": "Labani",
+   "lang": "ny",
+   "seed": "Laban",
+   "seed_count": 45,
+   "count": 51,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "GEN",
+     29,
+     31
+    ]
+   ]
+  },
+  {
+   "concept": "lavan",
+   "label": "Laban",
+   "text": "Labani",
+   "lang": "rw",
+   "seed": "Laban",
+   "seed_count": 45,
+   "count": 50,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "GEN",
+     29,
+     31
+    ]
+   ]
+  },
+  {
+   "concept": "leah",
+   "label": "Leah",
+   "text": "Léa",
+   "lang": "fr",
+   "seed": "Leah",
+   "seed_count": 21,
+   "count": 22,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "GEN",
+     29,
+     30
+    ]
+   ]
+  },
+  {
+   "concept": "leah",
+   "label": "Leah",
+   "text": "Lea",
+   "lang": "sw",
+   "seed": "Leah",
+   "seed_count": 21,
+   "count": 22,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "GEN",
+     29,
+     30
+    ]
+   ]
+  },
+  {
+   "concept": "leah",
+   "label": "Leah",
+   "text": "Lea",
+   "lang": "ln",
+   "seed": "Leah",
+   "seed_count": 21,
+   "count": 23,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "GEN",
+     29,
+     30
+    ]
+   ]
+  },
+  {
+   "concept": "leah",
+   "label": "Leah",
+   "text": "Leya",
+   "lang": "ny",
+   "seed": "Leah",
+   "seed_count": 21,
+   "count": 26,
+   "similarity": 0.867,
+   "passages": [
+    [
+     "GEN",
+     29,
+     30
+    ]
+   ]
+  },
+  {
+   "concept": "leah",
+   "label": "Leah",
+   "text": "Leya",
+   "lang": "rw",
+   "seed": "Leah",
+   "seed_count": 21,
+   "count": 22,
+   "similarity": 0.867,
+   "passages": [
+    [
+     "GEN",
+     29,
+     30
+    ]
+   ]
+  },
+  {
+   "concept": "dinah",
+   "label": "Dinah",
+   "text": "Dina",
+   "lang": "fr",
+   "seed": "Dinah",
+   "seed_count": 6,
+   "count": 8,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     34,
+     34
+    ]
+   ]
+  },
+  {
+   "concept": "dinah",
+   "label": "Dinah",
+   "text": "Dina",
+   "lang": "sw",
+   "seed": "Dinah",
+   "seed_count": 6,
+   "count": 6,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     34,
+     34
+    ]
+   ]
+  },
+  {
+   "concept": "dinah",
+   "label": "Dinah",
+   "text": "Dina",
+   "lang": "ln",
+   "seed": "Dinah",
+   "seed_count": 6,
+   "count": 8,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     34,
+     34
+    ]
+   ]
+  },
+  {
+   "concept": "yehudah",
+   "label": "Judah",
+   "text": "Juda",
+   "lang": "fr",
+   "seed": "Judah",
+   "seed_count": 20,
+   "count": 22,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     38,
+     38
+    ],
+    [
+     "GEN",
+     43,
+     44
+    ]
+   ]
+  },
+  {
+   "concept": "yehudah",
+   "label": "Judah",
+   "text": "Yuda",
+   "lang": "sw",
+   "seed": "Judah",
+   "seed_count": 20,
+   "count": 19,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     38,
+     38
+    ],
+    [
+     "GEN",
+     43,
+     44
+    ]
+   ]
+  },
+  {
+   "concept": "yehudah",
+   "label": "Judah",
+   "text": "Yuda",
+   "lang": "ny",
+   "seed": "Judah",
+   "seed_count": 20,
+   "count": 25,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     38,
+     38
+    ],
+    [
+     "GEN",
+     43,
+     44
+    ]
+   ]
+  },
+  {
+   "concept": "yehudah",
+   "label": "Judah",
+   "text": "Yuda",
+   "lang": "rw",
+   "seed": "Judah",
+   "seed_count": 20,
+   "count": 23,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "GEN",
+     38,
+     38
+    ],
+    [
+     "GEN",
+     43,
+     44
+    ]
+   ]
+  },
+  {
+   "concept": "reuven",
+   "label": "Reuben",
+   "text": "Ruben",
+   "lang": "fr",
+   "seed": "Reuben",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.86,
+   "passages": [
+    [
+     "GEN",
+     37,
+     37
+    ],
+    [
+     "GEN",
+     42,
+     42
+    ]
+   ]
+  },
+  {
+   "concept": "reuven",
+   "label": "Reuben",
+   "text": "Rubeni",
+   "lang": "sw",
+   "seed": "Reuben",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.81,
+   "passages": [
+    [
+     "GEN",
+     37,
+     37
+    ],
+    [
+     "GEN",
+     42,
+     42
+    ]
+   ]
+  },
+  {
+   "concept": "reuven",
+   "label": "Reuben",
+   "text": "Ribeni",
+   "lang": "ln",
+   "seed": "Reuben",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.725,
+   "passages": [
+    [
+     "GEN",
+     37,
+     37
+    ],
+    [
+     "GEN",
+     42,
+     42
+    ]
+   ]
+  },
+  {
+   "concept": "reuven",
+   "label": "Reuben",
+   "text": "Rubeni",
+   "lang": "ny",
+   "seed": "Reuben",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.81,
+   "passages": [
+    [
+     "GEN",
+     37,
+     37
+    ],
+    [
+     "GEN",
+     42,
+     42
+    ]
+   ]
+  },
+  {
+   "concept": "reuven",
+   "label": "Reuben",
+   "text": "Rubeni",
+   "lang": "rw",
+   "seed": "Reuben",
+   "seed_count": 5,
+   "count": 4,
+   "similarity": 0.81,
+   "passages": [
+    [
+     "GEN",
+     37,
+     37
+    ],
+    [
+     "GEN",
+     42,
+     42
+    ]
+   ]
+  },
+  {
+   "concept": "efrayim",
+   "label": "Ephraim",
+   "text": "Éphraïm",
+   "lang": "fr",
+   "seed": "Ephraim",
+   "seed_count": 8,
+   "count": 8,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "efrayim",
+   "label": "Ephraim",
+   "text": "Efrahimu",
+   "lang": "sw",
+   "seed": "Ephraim",
+   "seed_count": 8,
+   "count": 7,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "efrayim",
+   "label": "Ephraim",
+   "text": "Efrayimi",
+   "lang": "ln",
+   "seed": "Ephraim",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "efrayim",
+   "label": "Ephraim",
+   "text": "Efereimu",
+   "lang": "ny",
+   "seed": "Ephraim",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.856,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "efrayim",
+   "label": "Ephraim",
+   "text": "Efurayimu",
+   "lang": "rw",
+   "seed": "Ephraim",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "menashe",
+   "label": "Manasseh",
+   "text": "Manassé",
+   "lang": "fr",
+   "seed": "Manasseh",
+   "seed_count": 8,
+   "count": 8,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "menashe",
+   "label": "Manasseh",
+   "text": "Manase",
+   "lang": "sw",
+   "seed": "Manasseh",
+   "seed_count": 8,
+   "count": 7,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "menashe",
+   "label": "Manasseh",
+   "text": "Manase",
+   "lang": "ln",
+   "seed": "Manasseh",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "menashe",
+   "label": "Manasseh",
+   "text": "Manase",
+   "lang": "ny",
+   "seed": "Manasseh",
+   "seed_count": 8,
+   "count": 8,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "menashe",
+   "label": "Manasseh",
+   "text": "Manase",
+   "lang": "rw",
+   "seed": "Manasseh",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "GEN",
+     48,
+     48
+    ]
+   ]
+  },
+  {
+   "concept": "miryam",
+   "label": "Miriam",
+   "text": "Miriamu",
+   "lang": "sw",
+   "seed": "Miriam",
+   "seed_count": 7,
+   "count": 6,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "NUM",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "miryam",
+   "label": "Miriam",
+   "text": "Miriami",
+   "lang": "ln",
+   "seed": "Miriam",
+   "seed_count": 7,
+   "count": 9,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "NUM",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "miryam",
+   "label": "Miriam",
+   "text": "Miriamu",
+   "lang": "ny",
+   "seed": "Miriam",
+   "seed_count": 7,
+   "count": 9,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "NUM",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "miryam",
+   "label": "Miriam",
+   "text": "Miriyamu",
+   "lang": "rw",
+   "seed": "Miriam",
+   "seed_count": 7,
+   "count": 8,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "NUM",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "kalev",
+   "label": "Caleb",
+   "text": "Caleb",
+   "lang": "fr",
+   "seed": "Caleb",
+   "seed_count": 8,
+   "count": 10,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "JOS",
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "kalev",
+   "label": "Caleb",
+   "text": "Kalebu",
+   "lang": "sw",
+   "seed": "Caleb",
+   "seed_count": 8,
+   "count": 10,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JOS",
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "kalev",
+   "label": "Caleb",
+   "text": "Isalaele",
+   "lang": "ln",
+   "seed": "Caleb",
+   "seed_count": 8,
+   "count": 5,
+   "similarity": 0.658,
+   "passages": [
+    [
+     "JOS",
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "kalev",
+   "label": "Caleb",
+   "text": "Malire",
+   "lang": "ny",
+   "seed": "Caleb",
+   "seed_count": 8,
+   "count": 5,
+   "similarity": 0.7,
+   "passages": [
+    [
+     "JOS",
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "kalev",
+   "label": "Caleb",
+   "text": "Kandi",
+   "lang": "rw",
+   "seed": "Caleb",
+   "seed_count": 8,
+   "count": 8,
+   "similarity": 0.68,
+   "passages": [
+    [
+     "JOS",
+     14,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "rahav",
+   "label": "Rahab",
+   "text": "Rahab",
+   "lang": "fr",
+   "seed": "Rahab",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "JOS",
+     2,
+     2
+    ],
+    [
+     "JOS",
+     6,
+     6
+    ]
+   ]
+  },
+  {
+   "concept": "rahav",
+   "label": "Rahab",
+   "text": "Rahabu",
+   "lang": "sw",
+   "seed": "Rahab",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JOS",
+     2,
+     2
+    ],
+    [
+     "JOS",
+     6,
+     6
+    ]
+   ]
+  },
+  {
+   "concept": "rahav",
+   "label": "Rahab",
+   "text": "Rahabu",
+   "lang": "rw",
+   "seed": "Rahab",
+   "seed_count": 5,
+   "count": 7,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JOS",
+     2,
+     2
+    ],
+    [
+     "JOS",
+     6,
+     6
+    ]
+   ]
+  },
+  {
+   "concept": "boaz",
+   "label": "Boaz",
+   "text": "Boaz",
+   "lang": "fr",
+   "seed": "Boaz",
+   "seed_count": 22,
+   "count": 25,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "RUT",
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "boaz",
+   "label": "Boaz",
+   "text": "Bowazi",
+   "lang": "rw",
+   "seed": "Boaz",
+   "seed_count": 22,
+   "count": 19,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "RUT",
+     2,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "hannah",
+   "label": "Hannah",
+   "text": "Anne",
+   "lang": "fr",
+   "seed": "Hannah",
+   "seed_count": 13,
+   "count": 16,
+   "similarity": 0.75,
+   "passages": [
+    [
+     "1SA",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "hannah",
+   "label": "Hannah",
+   "text": "Hana",
+   "lang": "sw",
+   "seed": "Hannah",
+   "seed_count": 13,
+   "count": 17,
+   "similarity": 0.922,
+   "passages": [
+    [
+     "1SA",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "hannah",
+   "label": "Hannah",
+   "text": "Nganga",
+   "lang": "ln",
+   "seed": "Hannah",
+   "seed_count": 13,
+   "count": 9,
+   "similarity": 0.694,
+   "passages": [
+    [
+     "1SA",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "hannah",
+   "label": "Hannah",
+   "text": "Hana",
+   "lang": "rw",
+   "seed": "Hannah",
+   "seed_count": 13,
+   "count": 15,
+   "similarity": 0.922,
+   "passages": [
+    [
+     "1SA",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "eli",
+   "label": "Eli",
+   "text": "Éli",
+   "lang": "fr",
+   "seed": "Eli",
+   "seed_count": 32,
+   "count": 39,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "eli",
+   "label": "Eli",
+   "text": "Eli",
+   "lang": "sw",
+   "seed": "Eli",
+   "seed_count": 32,
+   "count": 35,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "eli",
+   "label": "Eli",
+   "text": "Eli",
+   "lang": "ln",
+   "seed": "Eli",
+   "seed_count": 32,
+   "count": 42,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "eli",
+   "label": "Eli",
+   "text": "Eli",
+   "lang": "ny",
+   "seed": "Eli",
+   "seed_count": 32,
+   "count": 43,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "eli",
+   "label": "Eli",
+   "text": "Eli",
+   "lang": "rw",
+   "seed": "Eli",
+   "seed_count": 32,
+   "count": 37,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "shaul",
+   "label": "Saul (king)",
+   "text": "Saül",
+   "lang": "fr",
+   "seed": "Saul",
+   "seed_count": 106,
+   "count": 117,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     9,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "shaul",
+   "label": "Saul (king)",
+   "text": "Sauli",
+   "lang": "sw",
+   "seed": "Saul",
+   "seed_count": 106,
+   "count": 111,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1SA",
+     9,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "shaul",
+   "label": "Saul (king)",
+   "text": "Saulo",
+   "lang": "ln",
+   "seed": "Saul",
+   "seed_count": 106,
+   "count": 130,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1SA",
+     9,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "shaul",
+   "label": "Saul (king)",
+   "text": "Sauli",
+   "lang": "ny",
+   "seed": "Saul",
+   "seed_count": 106,
+   "count": 116,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1SA",
+     9,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "shaul",
+   "label": "Saul (king)",
+   "text": "Sawuli",
+   "lang": "rw",
+   "seed": "Saul",
+   "seed_count": 106,
+   "count": 114,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "1SA",
+     9,
+     15
+    ]
+   ]
+  },
+  {
+   "concept": "yishai",
+   "label": "Jesse",
+   "text": "Yese",
+   "lang": "sw",
+   "seed": "Jesse",
+   "seed_count": 18,
+   "count": 20,
+   "similarity": 0.953,
+   "passages": [
+    [
+     "1SA",
+     16,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "yishai",
+   "label": "Jesse",
+   "text": "Yese",
+   "lang": "ny",
+   "seed": "Jesse",
+   "seed_count": 18,
+   "count": 18,
+   "similarity": 0.953,
+   "passages": [
+    [
+     "1SA",
+     16,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "yishai",
+   "label": "Jesse",
+   "text": "Yesayi",
+   "lang": "rw",
+   "seed": "Jesse",
+   "seed_count": 18,
+   "count": 19,
+   "similarity": 0.79,
+   "passages": [
+    [
+     "1SA",
+     16,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "golyat",
+   "label": "Goliath",
+   "text": "Goliath",
+   "lang": "fr",
+   "seed": "Goliath",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     17,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "golyat",
+   "label": "Goliath",
+   "text": "Goliathi",
+   "lang": "sw",
+   "seed": "Goliath",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "1SA",
+     17,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "golyat",
+   "label": "Goliath",
+   "text": "Goliati",
+   "lang": "ln",
+   "seed": "Goliath",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "1SA",
+     17,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "golyat",
+   "label": "Goliath",
+   "text": "Goliati",
+   "lang": "ny",
+   "seed": "Goliath",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "1SA",
+     17,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "golyat",
+   "label": "Goliath",
+   "text": "Goliyati",
+   "lang": "rw",
+   "seed": "Goliath",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "1SA",
+     17,
+     17
+    ]
+   ]
+  },
+  {
+   "concept": "avigayil",
+   "label": "Abigail",
+   "text": "Abigaïl",
+   "lang": "fr",
+   "seed": "Abigail",
+   "seed_count": 9,
+   "count": 11,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1SA",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "avigayil",
+   "label": "Abigail",
+   "text": "Abigaili",
+   "lang": "sw",
+   "seed": "Abigail",
+   "seed_count": 9,
+   "count": 10,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "1SA",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "avigayil",
+   "label": "Abigail",
+   "text": "Abigayeli",
+   "lang": "ny",
+   "seed": "Abigail",
+   "seed_count": 9,
+   "count": 11,
+   "similarity": 0.927,
+   "passages": [
+    [
+     "1SA",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "avigayil",
+   "label": "Abigail",
+   "text": "Abigayili",
+   "lang": "rw",
+   "seed": "Abigail",
+   "seed_count": 9,
+   "count": 9,
+   "similarity": 0.956,
+   "passages": [
+    [
+     "1SA",
+     25,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "avshalom",
+   "label": "Absalom",
+   "text": "Absalom",
+   "lang": "fr",
+   "seed": "Absalom",
+   "seed_count": 94,
+   "count": 101,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "2SA",
+     13,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "avshalom",
+   "label": "Absalom",
+   "text": "Absalomu",
+   "lang": "sw",
+   "seed": "Absalom",
+   "seed_count": 94,
+   "count": 93,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "2SA",
+     13,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "avshalom",
+   "label": "Absalom",
+   "text": "Abisalomi",
+   "lang": "ln",
+   "seed": "Absalom",
+   "seed_count": 94,
+   "count": 99,
+   "similarity": 0.941,
+   "passages": [
+    [
+     "2SA",
+     13,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "avshalom",
+   "label": "Absalom",
+   "text": "Abisalomu",
+   "lang": "ny",
+   "seed": "Absalom",
+   "seed_count": 94,
+   "count": 94,
+   "similarity": 0.941,
+   "passages": [
+    [
+     "2SA",
+     13,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "avshalom",
+   "label": "Absalom",
+   "text": "Abusalomu",
+   "lang": "rw",
+   "seed": "Absalom",
+   "seed_count": 94,
+   "count": 95,
+   "similarity": 0.941,
+   "passages": [
+    [
+     "2SA",
+     13,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "natan",
+   "label": "Nathan",
+   "text": "Nathan",
+   "lang": "fr",
+   "seed": "Nathan",
+   "seed_count": 11,
+   "count": 13,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "2SA",
+     7,
+     7
+    ],
+    [
+     "2SA",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "natan",
+   "label": "Nathan",
+   "text": "Nathani",
+   "lang": "sw",
+   "seed": "Nathan",
+   "seed_count": 11,
+   "count": 11,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "2SA",
+     7,
+     7
+    ],
+    [
+     "2SA",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "natan",
+   "label": "Nathan",
+   "text": "Natan",
+   "lang": "ln",
+   "seed": "Nathan",
+   "seed_count": 11,
+   "count": 12,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "2SA",
+     7,
+     7
+    ],
+    [
+     "2SA",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "natan",
+   "label": "Nathan",
+   "text": "Natani",
+   "lang": "ny",
+   "seed": "Nathan",
+   "seed_count": 11,
+   "count": 12,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "2SA",
+     7,
+     7
+    ],
+    [
+     "2SA",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "natan",
+   "label": "Nathan",
+   "text": "Natani",
+   "lang": "rw",
+   "seed": "Nathan",
+   "seed_count": 11,
+   "count": 12,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "2SA",
+     7,
+     7
+    ],
+    [
+     "2SA",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "yoav",
+   "label": "Joab",
+   "text": "Joab",
+   "lang": "fr",
+   "seed": "Joab",
+   "seed_count": 58,
+   "count": 65,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ],
+    [
+     "2SA",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "yoav",
+   "label": "Joab",
+   "text": "Yoabu",
+   "lang": "sw",
+   "seed": "Joab",
+   "seed_count": 58,
+   "count": 64,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ],
+    [
+     "2SA",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "yoav",
+   "label": "Joab",
+   "text": "Joabi",
+   "lang": "ln",
+   "seed": "Joab",
+   "seed_count": 58,
+   "count": 66,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ],
+    [
+     "2SA",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "yoav",
+   "label": "Joab",
+   "text": "Yowabu",
+   "lang": "ny",
+   "seed": "Joab",
+   "seed_count": 58,
+   "count": 61,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ],
+    [
+     "2SA",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "yoav",
+   "label": "Joab",
+   "text": "Yowabu",
+   "lang": "rw",
+   "seed": "Joab",
+   "seed_count": 58,
+   "count": 63,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ],
+    [
+     "2SA",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "avner",
+   "label": "Abner",
+   "text": "Abner",
+   "lang": "fr",
+   "seed": "Abner",
+   "seed_count": 44,
+   "count": 43,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ]
+   ]
+  },
+  {
+   "concept": "avner",
+   "label": "Abner",
+   "text": "Abneri",
+   "lang": "sw",
+   "seed": "Abner",
+   "seed_count": 44,
+   "count": 46,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ]
+   ]
+  },
+  {
+   "concept": "avner",
+   "label": "Abner",
+   "text": "Abineri",
+   "lang": "ln",
+   "seed": "Abner",
+   "seed_count": 44,
+   "count": 48,
+   "similarity": 0.924,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ]
+   ]
+  },
+  {
+   "concept": "avner",
+   "label": "Abner",
+   "text": "Abineri",
+   "lang": "ny",
+   "seed": "Abner",
+   "seed_count": 44,
+   "count": 44,
+   "similarity": 0.924,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ]
+   ]
+  },
+  {
+   "concept": "avner",
+   "label": "Abner",
+   "text": "Abuneri",
+   "lang": "rw",
+   "seed": "Abner",
+   "seed_count": 44,
+   "count": 47,
+   "similarity": 0.924,
+   "passages": [
+    [
+     "2SA",
+     2,
+     3
+    ]
+   ]
+  },
+  {
+   "concept": "rehavam",
+   "label": "Rehoboam",
+   "text": "Roboam",
+   "lang": "fr",
+   "seed": "Rehoboam",
+   "seed_count": 19,
+   "count": 22,
+   "similarity": 0.925,
+   "passages": [
+    [
+     "1KI",
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "rehavam",
+   "label": "Rehoboam",
+   "text": "Rehoboamu",
+   "lang": "sw",
+   "seed": "Rehoboam",
+   "seed_count": 19,
+   "count": 21,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "1KI",
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "rehavam",
+   "label": "Rehoboam",
+   "text": "Roboami",
+   "lang": "ln",
+   "seed": "Rehoboam",
+   "seed_count": 19,
+   "count": 24,
+   "similarity": 0.882,
+   "passages": [
+    [
+     "1KI",
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "rehavam",
+   "label": "Rehoboam",
+   "text": "Rehobowamu",
+   "lang": "ny",
+   "seed": "Rehoboam",
+   "seed_count": 19,
+   "count": 22,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1KI",
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "rehavam",
+   "label": "Rehoboam",
+   "text": "Rehobowamu",
+   "lang": "rw",
+   "seed": "Rehoboam",
+   "seed_count": 19,
+   "count": 20,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1KI",
+     12,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "yarovam",
+   "label": "Jeroboam",
+   "text": "Jéroboam",
+   "lang": "fr",
+   "seed": "Jeroboam",
+   "seed_count": 38,
+   "count": 42,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "1KI",
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "yarovam",
+   "label": "Jeroboam",
+   "text": "Yeroboamu",
+   "lang": "sw",
+   "seed": "Jeroboam",
+   "seed_count": 38,
+   "count": 34,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "1KI",
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "yarovam",
+   "label": "Jeroboam",
+   "text": "Jeroboami",
+   "lang": "ln",
+   "seed": "Jeroboam",
+   "seed_count": 38,
+   "count": 44,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "1KI",
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "yarovam",
+   "label": "Jeroboam",
+   "text": "Yeroboamu",
+   "lang": "ny",
+   "seed": "Jeroboam",
+   "seed_count": 38,
+   "count": 37,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "1KI",
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "yarovam",
+   "label": "Jeroboam",
+   "text": "Yerobowamu",
+   "lang": "rw",
+   "seed": "Jeroboam",
+   "seed_count": 38,
+   "count": 40,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1KI",
+     11,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "ahav",
+   "label": "Ahab",
+   "text": "Achab",
+   "lang": "fr",
+   "seed": "Ahab",
+   "seed_count": 50,
+   "count": 61,
+   "similarity": 0.94,
+   "passages": [
+    [
+     "1KI",
+     16,
+     22
+    ]
+   ]
+  },
+  {
+   "concept": "ahav",
+   "label": "Ahab",
+   "text": "Ahabu",
+   "lang": "sw",
+   "seed": "Ahab",
+   "seed_count": 50,
+   "count": 65,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1KI",
+     16,
+     22
+    ]
+   ]
+  },
+  {
+   "concept": "ahav",
+   "label": "Ahab",
+   "text": "Ahabu",
+   "lang": "ny",
+   "seed": "Ahab",
+   "seed_count": 50,
+   "count": 64,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1KI",
+     16,
+     22
+    ]
+   ]
+  },
+  {
+   "concept": "ahav",
+   "label": "Ahab",
+   "text": "Ahabu",
+   "lang": "rw",
+   "seed": "Ahab",
+   "seed_count": 50,
+   "count": 59,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "1KI",
+     16,
+     22
+    ]
+   ]
+  },
+  {
+   "concept": "izevel",
+   "label": "Jezebel",
+   "text": "Jézabel",
+   "lang": "fr",
+   "seed": "Jezebel",
+   "seed_count": 14,
+   "count": 14,
+   "similarity": 0.894,
+   "passages": [
+    [
+     "1KI",
+     18,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "izevel",
+   "label": "Jezebel",
+   "text": "Yezebeli",
+   "lang": "sw",
+   "seed": "Jezebel",
+   "seed_count": 14,
+   "count": 14,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "1KI",
+     18,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "izevel",
+   "label": "Jezebel",
+   "text": "Jezabeli",
+   "lang": "ln",
+   "seed": "Jezebel",
+   "seed_count": 14,
+   "count": 15,
+   "similarity": 0.869,
+   "passages": [
+    [
+     "1KI",
+     18,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "izevel",
+   "label": "Jezebel",
+   "text": "Yezebeli",
+   "lang": "ny",
+   "seed": "Jezebel",
+   "seed_count": 14,
+   "count": 15,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "1KI",
+     18,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "izevel",
+   "label": "Jezebel",
+   "text": "Yezebeli",
+   "lang": "rw",
+   "seed": "Jezebel",
+   "seed_count": 14,
+   "count": 13,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "1KI",
+     18,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "hizqiyahu",
+   "label": "Hezekiah",
+   "text": "Ézéchias",
+   "lang": "fr",
+   "seed": "Hezekiah",
+   "seed_count": 42,
+   "count": 44,
+   "similarity": 0.845,
+   "passages": [
+    [
+     "2KI",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "hizqiyahu",
+   "label": "Hezekiah",
+   "text": "Hezekia",
+   "lang": "sw",
+   "seed": "Hezekiah",
+   "seed_count": 42,
+   "count": 43,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "2KI",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "hizqiyahu",
+   "label": "Hezekiah",
+   "text": "Ezekiasi",
+   "lang": "ln",
+   "seed": "Hezekiah",
+   "seed_count": 42,
+   "count": 48,
+   "similarity": 0.833,
+   "passages": [
+    [
+     "2KI",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "hizqiyahu",
+   "label": "Hezekiah",
+   "text": "Hezekiya",
+   "lang": "ny",
+   "seed": "Hezekiah",
+   "seed_count": 42,
+   "count": 47,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "2KI",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "hizqiyahu",
+   "label": "Hezekiah",
+   "text": "Hezekiya",
+   "lang": "rw",
+   "seed": "Hezekiah",
+   "seed_count": 42,
+   "count": 48,
+   "similarity": 0.95,
+   "passages": [
+    [
+     "2KI",
+     18,
+     20
+    ]
+   ]
+  },
+  {
+   "concept": "yoshiyahu",
+   "label": "Josiah",
+   "text": "Josias",
+   "lang": "fr",
+   "seed": "Josiah",
+   "seed_count": 11,
+   "count": 15,
+   "similarity": 0.933,
+   "passages": [
+    [
+     "2KI",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "yoshiyahu",
+   "label": "Josiah",
+   "text": "Kisha",
+   "lang": "sw",
+   "seed": "Josiah",
+   "seed_count": 11,
+   "count": 11,
+   "similarity": 0.656,
+   "passages": [
+    [
+     "2KI",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "yoshiyahu",
+   "label": "Josiah",
+   "text": "Yosiya",
+   "lang": "rw",
+   "seed": "Josiah",
+   "seed_count": 11,
+   "count": 14,
+   "similarity": 0.933,
+   "passages": [
+    [
+     "2KI",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "mordekhai",
+   "label": "Mordecai",
+   "text": "Mardochée",
+   "lang": "fr",
+   "seed": "Mordecai",
+   "seed_count": 58,
+   "count": 60,
+   "similarity": 0.7,
+   "passages": [
+    [
+     "EST",
+     2,
+     10
+    ]
+   ]
+  },
+  {
+   "concept": "mordekhai",
+   "label": "Mordecai",
+   "text": "Modekai",
+   "lang": "sw",
+   "seed": "Mordecai",
+   "seed_count": 58,
+   "count": 63,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "EST",
+     2,
+     10
+    ]
+   ]
+  },
+  {
+   "concept": "mordekhai",
+   "label": "Mordecai",
+   "text": "Maridoshe",
+   "lang": "ln",
+   "seed": "Mordecai",
+   "seed_count": 58,
+   "count": 76,
+   "similarity": 0.612,
+   "passages": [
+    [
+     "EST",
+     2,
+     10
+    ]
+   ]
+  },
+  {
+   "concept": "mordekhai",
+   "label": "Mordecai",
+   "text": "Mordekai",
+   "lang": "ny",
+   "seed": "Mordecai",
+   "seed_count": 58,
+   "count": 66,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "EST",
+     2,
+     10
+    ]
+   ]
+  },
+  {
+   "concept": "mordekhai",
+   "label": "Mordecai",
+   "text": "Moridekayi",
+   "lang": "rw",
+   "seed": "Mordecai",
+   "seed_count": 58,
+   "count": 62,
+   "similarity": 0.88,
+   "passages": [
+    [
+     "EST",
+     2,
+     10
+    ]
+   ]
+  },
+  {
+   "concept": "haman",
+   "label": "Haman",
+   "text": "Haman",
+   "lang": "fr",
+   "seed": "Haman",
+   "seed_count": 53,
+   "count": 54,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "EST",
+     3,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "haman",
+   "label": "Haman",
+   "text": "Hamani",
+   "lang": "sw",
+   "seed": "Haman",
+   "seed_count": 53,
+   "count": 50,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "EST",
+     3,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "haman",
+   "label": "Haman",
+   "text": "Amani",
+   "lang": "ln",
+   "seed": "Haman",
+   "seed_count": 53,
+   "count": 59,
+   "similarity": 0.867,
+   "passages": [
+    [
+     "EST",
+     3,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "haman",
+   "label": "Haman",
+   "text": "Hamani",
+   "lang": "ny",
+   "seed": "Haman",
+   "seed_count": 53,
+   "count": 57,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "EST",
+     3,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "haman",
+   "label": "Haman",
+   "text": "Hamani",
+   "lang": "rw",
+   "seed": "Haman",
+   "seed_count": 53,
+   "count": 52,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "EST",
+     3,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "zerubbavel",
+   "label": "Zerubbabel",
+   "text": "Zorobabel",
+   "lang": "fr",
+   "seed": "Zerubbabel",
+   "seed_count": 12,
+   "count": 13,
+   "similarity": 0.8,
+   "passages": [
+    [
+     "EZR",
+     3,
+     5
+    ],
+    [
+     "HAG",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "zerubbavel",
+   "label": "Zerubbabel",
+   "text": "Zerubabeli",
+   "lang": "sw",
+   "seed": "Zerubbabel",
+   "seed_count": 12,
+   "count": 11,
+   "similarity": 0.938,
+   "passages": [
+    [
+     "EZR",
+     3,
+     5
+    ],
+    [
+     "HAG",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "zerubbavel",
+   "label": "Zerubbabel",
+   "text": "Zorobabeli",
+   "lang": "ln",
+   "seed": "Zerubbabel",
+   "seed_count": 12,
+   "count": 12,
+   "similarity": 0.777,
+   "passages": [
+    [
+     "EZR",
+     3,
+     5
+    ],
+    [
+     "HAG",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "zerubbavel",
+   "label": "Zerubbabel",
+   "text": "Zerubabeli",
+   "lang": "ny",
+   "seed": "Zerubbabel",
+   "seed_count": 12,
+   "count": 13,
+   "similarity": 0.938,
+   "passages": [
+    [
+     "EZR",
+     3,
+     5
+    ],
+    [
+     "HAG",
+     1,
+     2
+    ]
+   ]
+  },
+  {
+   "concept": "nevukhadnetsar",
+   "label": "Nebuchadnezzar",
+   "text": "Nebucadnetsar",
+   "lang": "fr",
+   "seed": "Nebuchadnezzar",
+   "seed_count": 29,
+   "count": 32,
+   "similarity": 0.926,
+   "passages": [
+    [
+     "DAN",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "nevukhadnetsar",
+   "label": "Nebuchadnezzar",
+   "text": "Nebukadneza",
+   "lang": "sw",
+   "seed": "Nebuchadnezzar",
+   "seed_count": 29,
+   "count": 27,
+   "similarity": 0.957,
+   "passages": [
+    [
+     "DAN",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "nevukhadnetsar",
+   "label": "Nebuchadnezzar",
+   "text": "Nabukodonozori",
+   "lang": "ln",
+   "seed": "Nebuchadnezzar",
+   "seed_count": 29,
+   "count": 30,
+   "similarity": 0.719,
+   "passages": [
+    [
+     "DAN",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "nevukhadnetsar",
+   "label": "Nebuchadnezzar",
+   "text": "Nebukadinezara",
+   "lang": "ny",
+   "seed": "Nebuchadnezzar",
+   "seed_count": 29,
+   "count": 28,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "DAN",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "nevukhadnetsar",
+   "label": "Nebuchadnezzar",
+   "text": "Nebukadinezari",
+   "lang": "rw",
+   "seed": "Nebuchadnezzar",
+   "seed_count": 29,
+   "count": 28,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "DAN",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "elisheva",
+   "label": "Elizabeth",
+   "text": "Élisabeth",
+   "lang": "fr",
+   "seed": "Elizabeth",
+   "seed_count": 9,
+   "count": 10,
+   "similarity": 0.942,
+   "passages": [
+    [
+     "LUK",
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "concept": "elisheva",
+   "label": "Elizabeth",
+   "text": "Elizabeti",
+   "lang": "sw",
+   "seed": "Elizabeth",
+   "seed_count": 9,
+   "count": 8,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "LUK",
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "concept": "elisheva",
+   "label": "Elizabeth",
+   "text": "Elizabeti",
+   "lang": "ln",
+   "seed": "Elizabeth",
+   "seed_count": 9,
+   "count": 12,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "LUK",
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "concept": "elisheva",
+   "label": "Elizabeth",
+   "text": "Elizabeti",
+   "lang": "ny",
+   "seed": "Elizabeth",
+   "seed_count": 9,
+   "count": 11,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "LUK",
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "concept": "elisheva",
+   "label": "Elizabeth",
+   "text": "Elizabeti",
+   "lang": "rw",
+   "seed": "Elizabeth",
+   "seed_count": 9,
+   "count": 11,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "LUK",
+     1,
+     1
+    ]
+   ]
+  },
+  {
+   "concept": "nikodemos",
+   "label": "Nicodemus",
+   "text": "Nicodème",
+   "lang": "fr",
+   "seed": "Nicodemus",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 0.931,
+   "passages": [
+    [
+     "JHN",
+     3,
+     3
+    ],
+    [
+     "JHN",
+     7,
+     7
+    ],
+    [
+     "JHN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "nikodemos",
+   "label": "Nicodemus",
+   "text": "Nikodemo",
+   "lang": "sw",
+   "seed": "Nicodemus",
+   "seed_count": 5,
+   "count": 4,
+   "similarity": 0.931,
+   "passages": [
+    [
+     "JHN",
+     3,
+     3
+    ],
+    [
+     "JHN",
+     7,
+     7
+    ],
+    [
+     "JHN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "nikodemos",
+   "label": "Nicodemus",
+   "text": "Nikodemi",
+   "lang": "ln",
+   "seed": "Nicodemus",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 0.931,
+   "passages": [
+    [
+     "JHN",
+     3,
+     3
+    ],
+    [
+     "JHN",
+     7,
+     7
+    ],
+    [
+     "JHN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "nikodemos",
+   "label": "Nicodemus",
+   "text": "Nekodimo",
+   "lang": "ny",
+   "seed": "Nicodemus",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 0.754,
+   "passages": [
+    [
+     "JHN",
+     3,
+     3
+    ],
+    [
+     "JHN",
+     7,
+     7
+    ],
+    [
+     "JHN",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "thomas",
+   "label": "Thomas",
+   "text": "Thomas",
+   "lang": "fr",
+   "seed": "Thomas",
+   "seed_count": 8,
+   "count": 7,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "JHN",
+     11,
+     11
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ],
+    [
+     "JHN",
+     20,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "thomas",
+   "label": "Thomas",
+   "text": "Thomaso",
+   "lang": "sw",
+   "seed": "Thomas",
+   "seed_count": 8,
+   "count": 5,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JHN",
+     11,
+     11
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ],
+    [
+     "JHN",
+     20,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "thomas",
+   "label": "Thomas",
+   "text": "Toma",
+   "lang": "ln",
+   "seed": "Thomas",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "JHN",
+     11,
+     11
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ],
+    [
+     "JHN",
+     20,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "thomas",
+   "label": "Thomas",
+   "text": "Tomasi",
+   "lang": "ny",
+   "seed": "Thomas",
+   "seed_count": 8,
+   "count": 10,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JHN",
+     11,
+     11
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ],
+    [
+     "JHN",
+     20,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "thomas",
+   "label": "Thomas",
+   "text": "Toma",
+   "lang": "rw",
+   "seed": "Thomas",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "JHN",
+     11,
+     11
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ],
+    [
+     "JHN",
+     20,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "philippos",
+   "label": "Philip",
+   "text": "Philippe",
+   "lang": "fr",
+   "seed": "Philip",
+   "seed_count": 26,
+   "count": 29,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "ACT",
+     8,
+     8
+    ],
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "philippos",
+   "label": "Philip",
+   "text": "Filipo",
+   "lang": "sw",
+   "seed": "Philip",
+   "seed_count": 26,
+   "count": 24,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "ACT",
+     8,
+     8
+    ],
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "philippos",
+   "label": "Philip",
+   "text": "Filipo",
+   "lang": "ln",
+   "seed": "Philip",
+   "seed_count": 26,
+   "count": 32,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "ACT",
+     8,
+     8
+    ],
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "philippos",
+   "label": "Philip",
+   "text": "Filipo",
+   "lang": "ny",
+   "seed": "Philip",
+   "seed_count": 26,
+   "count": 31,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "ACT",
+     8,
+     8
+    ],
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "philippos",
+   "label": "Philip",
+   "text": "Filipo",
+   "lang": "rw",
+   "seed": "Philip",
+   "seed_count": 26,
+   "count": 27,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "ACT",
+     8,
+     8
+    ],
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ],
+    [
+     "JHN",
+     14,
+     14
+    ]
+   ]
+  },
+  {
+   "concept": "andreas",
+   "label": "Andrew",
+   "text": "André",
+   "lang": "fr",
+   "seed": "Andrew",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "andreas",
+   "label": "Andrew",
+   "text": "Andrea",
+   "lang": "sw",
+   "seed": "Andrew",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.933,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "andreas",
+   "label": "Andrew",
+   "text": "Andre",
+   "lang": "ln",
+   "seed": "Andrew",
+   "seed_count": 5,
+   "count": 5,
+   "similarity": 0.967,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "andreas",
+   "label": "Andrew",
+   "text": "Andreya",
+   "lang": "ny",
+   "seed": "Andrew",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 0.91,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "andreas",
+   "label": "Andrew",
+   "text": "Andereya",
+   "lang": "rw",
+   "seed": "Andrew",
+   "seed_count": 5,
+   "count": 6,
+   "similarity": 0.827,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     6,
+     6
+    ],
+    [
+     "JHN",
+     12,
+     12
+    ]
+   ]
+  },
+  {
+   "concept": "nathanael",
+   "label": "Nathanael",
+   "text": "Nathanaël",
+   "lang": "fr",
+   "seed": "Nathanael",
+   "seed_count": 6,
+   "count": 6,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     21,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "nathanael",
+   "label": "Nathanael",
+   "text": "Nathanaeli",
+   "lang": "sw",
+   "seed": "Nathanael",
+   "seed_count": 6,
+   "count": 6,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     21,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "nathanael",
+   "label": "Nathanael",
+   "text": "Natanaele",
+   "lang": "ln",
+   "seed": "Nathanael",
+   "seed_count": 6,
+   "count": 6,
+   "similarity": 0.978,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     21,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "nathanael",
+   "label": "Nathanael",
+   "text": "Natanieli",
+   "lang": "ny",
+   "seed": "Nathanael",
+   "seed_count": 6,
+   "count": 7,
+   "similarity": 0.931,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     21,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "nathanael",
+   "label": "Nathanael",
+   "text": "Natanayeli",
+   "lang": "rw",
+   "seed": "Nathanael",
+   "seed_count": 6,
+   "count": 7,
+   "similarity": 0.96,
+   "passages": [
+    [
+     "JHN",
+     1,
+     1
+    ],
+    [
+     "JHN",
+     21,
+     21
+    ]
+   ]
+  },
+  {
+   "concept": "ananias",
+   "label": "Ananias",
+   "text": "Ananias",
+   "lang": "fr",
+   "seed": "Ananias",
+   "seed_count": 10,
+   "count": 11,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "ACT",
+     5,
+     5
+    ],
+    [
+     "ACT",
+     9,
+     9
+    ],
+    [
+     "ACT",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "ananias",
+   "label": "Ananias",
+   "text": "Anania",
+   "lang": "sw",
+   "seed": "Ananias",
+   "seed_count": 10,
+   "count": 10,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "ACT",
+     5,
+     5
+    ],
+    [
+     "ACT",
+     9,
+     9
+    ],
+    [
+     "ACT",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "ananias",
+   "label": "Ananias",
+   "text": "Ananiasi",
+   "lang": "ln",
+   "seed": "Ananias",
+   "seed_count": 10,
+   "count": 13,
+   "similarity": 0.975,
+   "passages": [
+    [
+     "ACT",
+     5,
+     5
+    ],
+    [
+     "ACT",
+     9,
+     9
+    ],
+    [
+     "ACT",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "ananias",
+   "label": "Ananias",
+   "text": "Hananiya",
+   "lang": "ny",
+   "seed": "Ananias",
+   "seed_count": 10,
+   "count": 12,
+   "similarity": 0.869,
+   "passages": [
+    [
+     "ACT",
+     5,
+     5
+    ],
+    [
+     "ACT",
+     9,
+     9
+    ],
+    [
+     "ACT",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "ananias",
+   "label": "Ananias",
+   "text": "Ananiya",
+   "lang": "rw",
+   "seed": "Ananias",
+   "seed_count": 10,
+   "count": 10,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "ACT",
+     5,
+     5
+    ],
+    [
+     "ACT",
+     9,
+     9
+    ],
+    [
+     "ACT",
+     22,
+     23
+    ]
+   ]
+  },
+  {
+   "concept": "apollos",
+   "label": "Apollos",
+   "text": "Apollos",
+   "lang": "fr",
+   "seed": "Apollos",
+   "seed_count": 8,
+   "count": 9,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "ACT",
+     18,
+     19
+    ],
+    [
+     "1CO",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "apollos",
+   "label": "Apollos",
+   "text": "Apolo",
+   "lang": "sw",
+   "seed": "Apollos",
+   "seed_count": 8,
+   "count": 10,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "ACT",
+     18,
+     19
+    ],
+    [
+     "1CO",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "apollos",
+   "label": "Apollos",
+   "text": "Apolosi",
+   "lang": "ln",
+   "seed": "Apollos",
+   "seed_count": 8,
+   "count": 10,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "ACT",
+     18,
+     19
+    ],
+    [
+     "1CO",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "apollos",
+   "label": "Apollos",
+   "text": "Apolo",
+   "lang": "ny",
+   "seed": "Apollos",
+   "seed_count": 8,
+   "count": 11,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "ACT",
+     18,
+     19
+    ],
+    [
+     "1CO",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "apollos",
+   "label": "Apollos",
+   "text": "Apolo",
+   "lang": "rw",
+   "seed": "Apollos",
+   "seed_count": 8,
+   "count": 8,
+   "similarity": 0.943,
+   "passages": [
+    [
+     "ACT",
+     18,
+     19
+    ],
+    [
+     "1CO",
+     1,
+     4
+    ]
+   ]
+  },
+  {
+   "concept": "priskilla",
+   "label": "Priscilla",
+   "text": "Priscille",
+   "lang": "fr",
+   "seed": "Priscilla",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.956,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "priskilla",
+   "label": "Priscilla",
+   "text": "Prisila",
+   "lang": "sw",
+   "seed": "Priscilla",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.956,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "priskilla",
+   "label": "Priscilla",
+   "text": "Prisile",
+   "lang": "ln",
+   "seed": "Priscilla",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.905,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "priskilla",
+   "label": "Priscilla",
+   "text": "Purisikila",
+   "lang": "rw",
+   "seed": "Priscilla",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 0.869,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "akylas",
+   "label": "Aquila",
+   "text": "Aquilas",
+   "lang": "fr",
+   "seed": "Aquila",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "akylas",
+   "label": "Aquila",
+   "text": "Akwila",
+   "lang": "sw",
+   "seed": "Aquila",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "akylas",
+   "label": "Aquila",
+   "text": "Akilasi",
+   "lang": "ln",
+   "seed": "Aquila",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.879,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "akylas",
+   "label": "Aquila",
+   "text": "Akwila",
+   "lang": "rw",
+   "seed": "Aquila",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 0.911,
+   "passages": [
+    [
+     "ACT",
+     18,
+     18
+    ]
+   ]
+  },
+  {
+   "concept": "felix",
+   "label": "Felix",
+   "text": "Félix",
+   "lang": "fr",
+   "seed": "Felix",
+   "seed_count": 9,
+   "count": 12,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "ACT",
+     23,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "felix",
+   "label": "Felix",
+   "text": "Feliki",
+   "lang": "sw",
+   "seed": "Felix",
+   "seed_count": 9,
+   "count": 9,
+   "similarity": 0.893,
+   "passages": [
+    [
+     "ACT",
+     23,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "felix",
+   "label": "Felix",
+   "text": "Felikisi",
+   "lang": "ln",
+   "seed": "Felix",
+   "seed_count": 9,
+   "count": 12,
+   "similarity": 0.86,
+   "passages": [
+    [
+     "ACT",
+     23,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "felix",
+   "label": "Felix",
+   "text": "Felike",
+   "lang": "ny",
+   "seed": "Felix",
+   "seed_count": 9,
+   "count": 10,
+   "similarity": 0.893,
+   "passages": [
+    [
+     "ACT",
+     23,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "felix",
+   "label": "Felix",
+   "text": "Feliki",
+   "lang": "rw",
+   "seed": "Felix",
+   "seed_count": 9,
+   "count": 9,
+   "similarity": 0.893,
+   "passages": [
+    [
+     "ACT",
+     23,
+     25
+    ]
+   ]
+  },
+  {
+   "concept": "festos",
+   "label": "Festus",
+   "text": "Festus",
+   "lang": "fr",
+   "seed": "Festus",
+   "seed_count": 13,
+   "count": 16,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "ACT",
+     24,
+     26
+    ]
+   ]
+  },
+  {
+   "concept": "festos",
+   "label": "Festus",
+   "text": "Festo",
+   "lang": "sw",
+   "seed": "Festus",
+   "seed_count": 13,
+   "count": 17,
+   "similarity": 0.893,
+   "passages": [
+    [
+     "ACT",
+     24,
+     26
+    ]
+   ]
+  },
+  {
+   "concept": "festos",
+   "label": "Festus",
+   "text": "Festisi",
+   "lang": "ln",
+   "seed": "Festus",
+   "seed_count": 13,
+   "count": 17,
+   "similarity": 0.91,
+   "passages": [
+    [
+     "ACT",
+     24,
+     26
+    ]
+   ]
+  },
+  {
+   "concept": "festos",
+   "label": "Festus",
+   "text": "Festo",
+   "lang": "ny",
+   "seed": "Festus",
+   "seed_count": 13,
+   "count": 17,
+   "similarity": 0.893,
+   "passages": [
+    [
+     "ACT",
+     24,
+     26
+    ]
+   ]
+  },
+  {
+   "concept": "festos",
+   "label": "Festus",
+   "text": "Fesito",
+   "lang": "rw",
+   "seed": "Festus",
+   "seed_count": 13,
+   "count": 13,
+   "similarity": 0.844,
+   "passages": [
+    [
+     "ACT",
+     24,
+     26
+    ]
+   ]
+  },
+  {
+   "concept": "zakchaios",
+   "label": "Zacchaeus",
+   "text": "Zakayo",
+   "lang": "sw",
+   "seed": "Zacchaeus",
+   "seed_count": 3,
+   "count": 3,
+   "similarity": 0.793,
+   "passages": [
+    [
+     "LUK",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "zakchaios",
+   "label": "Zacchaeus",
+   "text": "Zakeyu",
+   "lang": "ny",
+   "seed": "Zacchaeus",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.857,
+   "passages": [
+    [
+     "LUK",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "zakchaios",
+   "label": "Zacchaeus",
+   "text": "Zakayo",
+   "lang": "rw",
+   "seed": "Zacchaeus",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.793,
+   "passages": [
+    [
+     "LUK",
+     19,
+     19
+    ]
+   ]
+  },
+  {
+   "concept": "tabitha",
+   "label": "Tabitha / Dorcas",
+   "text": "Dorcas",
+   "lang": "fr",
+   "seed": "Dorcas",
+   "seed_count": 3,
+   "count": 2,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "ACT",
+     9,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "tabitha",
+   "label": "Tabitha / Dorcas",
+   "text": "Dorcas",
+   "lang": "sw",
+   "seed": "Dorcas",
+   "seed_count": 3,
+   "count": 2,
+   "similarity": 1.0,
+   "passages": [
+    [
+     "ACT",
+     9,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "tabitha",
+   "label": "Tabitha / Dorcas",
+   "text": "Dorkasi",
+   "lang": "ln",
+   "seed": "Dorcas",
+   "seed_count": 3,
+   "count": 4,
+   "similarity": 0.971,
+   "passages": [
+    [
+     "ACT",
+     9,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "tabitha",
+   "label": "Tabitha / Dorcas",
+   "text": "Dorika",
+   "lang": "ny",
+   "seed": "Dorcas",
+   "seed_count": 3,
+   "count": 2,
+   "similarity": 0.922,
+   "passages": [
+    [
+     "ACT",
+     9,
+     9
+    ]
+   ]
+  },
+  {
+   "concept": "tabitha",
+   "label": "Tabitha / Dorcas",
+   "text": "Doruka",
+   "lang": "rw",
+   "seed": "Dorcas",
+   "seed_count": 3,
+   "count": 2,
+   "similarity": 0.922,
+   "passages": [
+    [
+     "ACT",
+     9,
+     9
+    ]
+   ]
+  }
+ ]
+}

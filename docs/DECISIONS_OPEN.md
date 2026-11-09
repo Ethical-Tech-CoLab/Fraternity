@@ -16,7 +16,17 @@ Five questions only the professor can settle. Everything already decided has bee
 
 ## G9 — How big must the name corpus be? (by 20 Nov)
 
-The concept paper (§10, phase 1) asks for **2,000–10,000** sourced relationships between names. The graph has **299** today, and with sourced material only the semester projection is about **600–900**.
+The concept paper (§10, phase 1) asks for **2,000–10,000** sourced relationships between names. What the graph holds today depends on how relationships are counted:
+
+| Measure | Today |
+| --- | --- |
+| Name edges stored in the graph | **502** |
+| Pairs of name forms linked as the same name | **731** |
+| Pairs flagged as different names that look alike | 11 |
+| Pairs that share a sourced name part (e.g. both end in *-imana*, "God") | 367 |
+| Rules in the language packs that apply to any name (final vowel, silent *h*, r/l …) | 180 |
+
+The gap between edges and pairs comes from the design: the forms of one name are stored around a shared concept, so the 7 forms of John (Jean, John, Yohana, Yoane, Yohane …) are 7 edges but 21 linked pairs. With sourced material only, the semester projection is about **800–1,000 edges** (roughly **1,200–1,500 linked pairs**).
 
 The gap comes from a deliberate rule: we add only relationships that a source attests (Bible translations, official name lists, published studies), never variants we invent ourselves, because invented variants produce false matches. Spelling variants are still handled, but by the matcher at search time, not stored in the graph.
 

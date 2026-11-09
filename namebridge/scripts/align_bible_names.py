@@ -55,11 +55,39 @@ TARGETS = [  # concept id, label, seed (English WEB), passages [(book, first, la
     ("martha", "Martha", "Martha", [("LUK", 10, 10), ("JHN", 11, 12)]),
     ("kornelios", "Cornelius", "Cornelius", [("ACT", 10, 10)]),
 ]
+# Second batch (9 Nov 2026): more common biblical names; run with "extra" as 4th argument.
+EXTRA = [
+    ("adam", "Adam", "Adam", [("GEN", 2, 5)]), ("hevel", "Abel", "Abel", [("GEN", 4, 4)]), ("qayin", "Cain", "Cain", [("GEN", 4, 4)]),
+    ("lot", "Lot", "Lot", [("GEN", 13, 14), ("GEN", 19, 19)]), ("yishmael", "Ishmael", "Ishmael", [("GEN", 16, 17), ("GEN", 21, 21), ("GEN", 25, 25)]),
+    ("esav", "Esau", "Esau", [("GEN", 25, 28), ("GEN", 32, 33), ("GEN", 36, 36)]), ("lavan", "Laban", "Laban", [("GEN", 29, 31)]),
+    ("leah", "Leah", "Leah", [("GEN", 29, 30)]), ("dinah", "Dinah", "Dinah", [("GEN", 34, 34)]), ("yehudah", "Judah", "Judah", [("GEN", 38, 38), ("GEN", 43, 44)]),
+    ("reuven", "Reuben", "Reuben", [("GEN", 37, 37), ("GEN", 42, 42)]), ("efrayim", "Ephraim", "Ephraim", [("GEN", 48, 48)]),
+    ("menashe", "Manasseh", "Manasseh", [("GEN", 48, 48)]), ("miryam", "Miriam", "Miriam", [("NUM", 12, 12)]),
+    ("kalev", "Caleb", "Caleb", [("JOS", 14, 15)]), ("rahav", "Rahab", "Rahab", [("JOS", 2, 2), ("JOS", 6, 6)]),
+    ("boaz", "Boaz", "Boaz", [("RUT", 2, 4)]), ("hannah", "Hannah", "Hannah", [("1SA", 1, 2)]), ("eli", "Eli", "Eli", [("1SA", 1, 4)]),
+    ("shaul", "Saul (king)", "Saul", [("1SA", 9, 15)]), ("yishai", "Jesse", "Jesse", [("1SA", 16, 17)]),
+    ("golyat", "Goliath", "Goliath", [("1SA", 17, 17)]), ("avigayil", "Abigail", "Abigail", [("1SA", 25, 25)]),
+    ("avshalom", "Absalom", "Absalom", [("2SA", 13, 18)]), ("natan", "Nathan", "Nathan", [("2SA", 7, 7), ("2SA", 12, 12)]),
+    ("yoav", "Joab", "Joab", [("2SA", 2, 3), ("2SA", 18, 20)]), ("avner", "Abner", "Abner", [("2SA", 2, 3)]),
+    ("rehavam", "Rehoboam", "Rehoboam", [("1KI", 12, 14)]), ("yarovam", "Jeroboam", "Jeroboam", [("1KI", 11, 14)]),
+    ("ahav", "Ahab", "Ahab", [("1KI", 16, 22)]), ("izevel", "Jezebel", "Jezebel", [("1KI", 18, 21)]), ("naaman", "Naaman", "Naaman", [("2KI", 5, 5)]),
+    ("hizqiyahu", "Hezekiah", "Hezekiah", [("2KI", 18, 20)]), ("yoshiyahu", "Josiah", "Josiah", [("2KI", 22, 23)]),
+    ("mordekhai", "Mordecai", "Mordecai", [("EST", 2, 10)]), ("haman", "Haman", "Haman", [("EST", 3, 9)]),
+    ("zerubbavel", "Zerubbabel", "Zerubbabel", [("EZR", 3, 5), ("HAG", 1, 2)]), ("nevukhadnetsar", "Nebuchadnezzar", "Nebuchadnezzar", [("DAN", 1, 4)]),
+    ("elisheva", "Elizabeth", "Elizabeth", [("LUK", 1, 1)]), ("nikodemos", "Nicodemus", "Nicodemus", [("JHN", 3, 3), ("JHN", 7, 7), ("JHN", 19, 19)]),
+    ("thomas", "Thomas", "Thomas", [("JHN", 11, 11), ("JHN", 14, 14), ("JHN", 20, 21)]), ("philippos", "Philip", "Philip", [("ACT", 8, 8), ("JHN", 1, 1), ("JHN", 6, 6), ("JHN", 12, 12), ("JHN", 14, 14)]),
+    ("andreas", "Andrew", "Andrew", [("JHN", 1, 1), ("JHN", 6, 6), ("JHN", 12, 12)]), ("nathanael", "Nathanael", "Nathanael", [("JHN", 1, 1), ("JHN", 21, 21)]),
+    ("ananias", "Ananias", "Ananias", [("ACT", 5, 5), ("ACT", 9, 9), ("ACT", 22, 23)]), ("apollos", "Apollos", "Apollos", [("ACT", 18, 19), ("1CO", 1, 4)]),
+    ("priskilla", "Priscilla", "Priscilla", [("ACT", 18, 18)]), ("akylas", "Aquila", "Aquila", [("ACT", 18, 18)]),
+    ("felix", "Felix", "Felix", [("ACT", 23, 25)]), ("festos", "Festus", "Festus", [("ACT", 24, 26)]), ("zakchaios", "Zacchaeus", "Zacchaeus", [("LUK", 19, 19)]),
+    ("tabitha", "Tabitha / Dorcas", "Dorcas", [("ACT", 9, 9)]),
+]
 STOP = {"God", "Yahweh", "Lord", "LORD", "Israel", "Egypt", "Dieu", "Éternel", "Seigneur", "Mungu", "Bwana", "Yahwe", "Nzambe", "Yawe", "Nkolo",
         "Mulungu", "Yehova", "Ambuye", "Chauta", "Imana", "Uwiteka", "Yesu", "Jésus", "Jesus", "Yezu", "Israël", "Isiraeli", "Egypte", "Égypte", "Misri"}
 TRANS = {"fraLSG": "fr", "swhulb": "sw", "lin": "ln", "nya": "ny"}
-RW_BOOKS = {"GEN": "Itangiriro", "EXO": "Kuva", "LEV": "Abalewi", "JDG": "ABACAMANZA", "RUT": "Rusi", "1SA": "1 Samweli",
-            "1KI": "1 Abami", "2KI": "2 Abami", "LUK": "Luka", "JHN": "Yohana", "ACT": "Ibyakozwe n’intumwa"}
+RW_BOOKS = {"GEN": "Itangiriro", "EXO": "Kuva", "LEV": "Abalewi", "NUM": "Kubara", "JOS": "Yosuwa", "JDG": "ABACAMANZA", "RUT": "Rusi",
+            "1SA": "1 Samweli", "2SA": "2 Samweli", "1KI": "1 Abami", "2KI": "2 Abami", "EZR": "Ezira", "EST": "Esiteri", "DAN": "Daniyeli",
+            "HAG": "Hagayi", "LUK": "Luka", "JHN": "Yohana", "ACT": "Ibyakozwe n’intumwa", "1CO": "1 Abakorinto"}
 CAP = re.compile(r"\b([A-ZÀ-ÝŴ][a-zà-ÿŵ'’]+)")
 
 
@@ -104,6 +132,8 @@ def passage(books, spans):
 
 
 folder, rw_pdf, out = Path(sys.argv[1]), sys.argv[2], sys.argv[3]
+if len(sys.argv) > 4 and sys.argv[4] == "extra":
+    TARGETS = EXTRA
 en = load_usfm(folder / "engwebp.zip")
 others = {lang: load_usfm(folder / f"{tid}.zip") for tid, lang in TRANS.items()}
 others["rw"] = load_rw(rw_pdf)
