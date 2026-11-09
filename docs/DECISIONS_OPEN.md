@@ -2,7 +2,7 @@
 
 *NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026 from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
 
-Five questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
+Four questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
@@ -10,7 +10,6 @@ Five questions only the professor can settle. Everything already decided has bee
 | **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov** (blocks week 6) | The ratios set on 26 Oct |
 | **Reviewers** for the name graph | Whether any edge can move past "proposed" | before release | Everything stays "proposed" |
 | **Legal check** for Muslim names | Whether those names enter the graph | no deadline | Left out of v0.1 |
-| **G8** Name-change notices | One possible source of name-change patterns | after week 7 | Not used |
 
 ---
 
@@ -102,16 +101,3 @@ Many people in the corridor carry Muslim names (Hassan / Hasani, Fatuma / Fatima
 - **A check this semester**: by NYU or a contact the professor names.
 - **After the semester** *(default if undecided)*: Muslim names stay out of v0.1; the gap is stated in the release note.
 
----
-
-## G8 — May we read published name-change notices? (after week 7)
-
-Courts publish legal name changes in official journals (DRC *Journal officiel*, Family Code art. 66; the Rwanda Official Gazette). Read only for **patterns** (what kinds of change occur), they would help us model people who change their names. They are personal data, though, and fall outside what the earlier IRB decision (G3) covered.
-
-A known limit: only formal changes appear. The people most at risk, who change names informally or to hide, are absent from these notices.
-
-> **May notices be read for aggregate patterns only, with no individual kept?**
-
-- **Yes, aggregate patterns only**: under the same rules as the public name lists.
-- **Yes, after an IRB opinion**: as option B was for G3.
-- **No** *(default in use)*: the pattern set relies on published studies instead.
