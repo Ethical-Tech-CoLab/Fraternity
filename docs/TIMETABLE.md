@@ -4,6 +4,8 @@ Draft, 19 Oct 2026; progress updated 26 Oct 2026. The project is **NameBridge** 
 
 ## ⛔ Gates: decisions that block work
 
+**For the professor:** the decisions still open, explained with examples, are in `DECISIONS_OPEN.md`.
+
 **Rule:** a task listed under "Blocks" must **not start** while its gate is open. Before any work session, check this table. Claude checks it too (`CLAUDE.md`), and stops and warns if a request would start blocked work.
 
 - **⛔ hard gate:** do not proceed. The decision changes what we build, or whether we may do it at all.
