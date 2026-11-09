@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.13.1",
+  "version": "0.13.3",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -8071,56 +8071,72 @@
       "name": "Beni",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6109",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:fizi@current",
       "name": "Fizi",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6210",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:idjwi@current",
       "name": "Idjwi",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6206",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:kabare@current",
       "name": "Kabare",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6202",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:kalehe@current",
       "name": "Kalehe",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6205",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:lubero@current",
       "name": "Lubero",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6105",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:masisi@current",
       "name": "Masisi",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6103",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:mwenga@current",
       "name": "Mwenga",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6212",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:nyiragongo@current",
@@ -8135,42 +8151,54 @@
           "source": "cd-ocha-map-2025",
           "note": "spelling on an OCHA map (an extra n before g)"
         }
-      ]
+      ],
+      "pcode": "CD6102",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:rutshuru@current",
       "name": "Rutshuru",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6111",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:shabunda@current",
       "name": "Shabunda",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6203",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:uvira@current",
       "name": "Uvira",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6208",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:walikale@current",
       "name": "Walikale",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6104",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:territory:walungu@current",
       "name": "Walungu",
       "country": "CD",
       "level": "territory",
-      "period": "current"
+      "period": "current",
+      "pcode": "CD6207",
+      "pcode_note": "added 9 Nov 2026 from the RGC level-2 sheet (unique name match)"
     },
     {
       "key": "CD:town:bakwanga@pre1966",
@@ -8831,6 +8859,118 @@
       "country": "RW",
       "level": "town",
       "period": "colonial"
+    },
+    {
+      "key": "CD:town:banalia@current",
+      "name": "Banalia",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:basankusu@current",
+      "name": "Basankusu",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:bulungu@current",
+      "name": "Bulungu",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:dilolo@current",
+      "name": "Dilolo",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:likasi@current",
+      "name": "Likasi",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:luebo@current",
+      "name": "Luebo",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:mbanza-ngungu@current",
+      "name": "Mbanza Ngungu",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:miabi@current",
+      "name": "Miabi",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:mobayi@current",
+      "name": "Mobayi",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:mwene-ditu@current",
+      "name": "Mwene Ditu",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:tshela@current",
+      "name": "Tshela",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:tshilenge@current",
+      "name": "Tshilenge",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:tshimbulu@current",
+      "name": "Tshimbulu",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:yumbi@current",
+      "name": "Yumbi",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:masisi@current",
+      "name": "Masisi",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
+    },
+    {
+      "key": "CD:town:walikale@current",
+      "name": "Walikale",
+      "country": "CD",
+      "level": "town",
+      "period": "current"
     }
   ],
   "changes": [
@@ -20036,6 +20176,166 @@
         "cd-cod-ab"
       ],
       "note": "provincial capital (RGC capitals list)"
+    },
+    {
+      "from": "CD:town:banalia@current",
+      "to": "CD:admin2:banalia-tshopo@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:basankusu@current",
+      "to": "CD:admin2:basankusu-equateur@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:bulungu@current",
+      "to": "CD:admin2:bulungu-kwilu@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:dilolo@current",
+      "to": "CD:admin2:dilolo-lualaba@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:likasi@current",
+      "to": "CD:admin2:likasi-haut-katanga@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:luebo@current",
+      "to": "CD:admin2:luebo-kasai@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:mbanza-ngungu@current",
+      "to": "CD:admin2:mbanza-ngungu-kongo-central@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:miabi@current",
+      "to": "CD:admin2:miabi-kasai-oriental@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:mobayi@current",
+      "to": "CD:admin2:mobayi-mbongo-nord-ubangi@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:mwene-ditu@current",
+      "to": "CD:admin2:mwene-ditu-lomami@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:tshela@current",
+      "to": "CD:admin2:tshela-kongo-central@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:tshilenge@current",
+      "to": "CD:admin2:tshilenge-kasai-oriental@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:tshimbulu@current",
+      "to": "CD:admin2:dibaya-kasai-central@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:yumbi@current",
+      "to": "CD:admin2:yumbi-mai-ndombe@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), placed in its level-2 unit by pcode"
+    },
+    {
+      "from": "CD:town:masisi@current",
+      "to": "CD:territory:masisi@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), seat of the territory of the same name"
+    },
+    {
+      "from": "CD:town:walikale@current",
+      "to": "CD:territory:walikale@current",
+      "relation": "located_in",
+      "year": null,
+      "sources": [
+        "cd-cod-ab"
+      ],
+      "note": "secondary capital (RGC capitals list, adm_p_lvl 2), seat of the territory of the same name"
     }
   ]
 }

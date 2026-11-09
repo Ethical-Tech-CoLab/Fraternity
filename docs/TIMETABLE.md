@@ -41,10 +41,10 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | # | Item | From | Owner | Note |
 | --- | --- | --- | --- | --- |
 | 1 | ~~Confidence batch 4: Lingala and Congo Swahili~~ | week 4 | Claude | ✔ 9 Nov: 3 raised (APiCS writing facts); Swahili orthography and prenasals kept medium (no open grammar) |
-| 2 | Kinyarwanda 2014 spelling reform: the letter-level changes (`rw-kiny` `orthography-2014` is `unknown`) | weeks 4–5 | **user** (download) | order not online; source: Niyomugabo & Uwizeyimana (2017), doi:10.1007/s10993-016-9427-x, via NYU |
+| 2 | ~~Kinyarwanda 2014 spelling reform~~ | weeks 4–5 | user + Claude | ✔ 9 Nov: Niyomugabo & Uwizeyimana Table 1 (nc→nsh, nts→ns, cy/jy→k/g before i/e, nta); rw-kiny 0.13.0 |
 | 3 | ~~Replace the two flagged third-party sources~~ | week 4 | Claude | ✔ 9 Nov: not replaceable online; no edge depends on the Kirundi snippet; Kinyarwanda PDF re-described (Grace Geeks edition) |
 | 4 | ~~Non-biblical given names~~ | week 4 | Claude | ✔ 9 Nov: not added: written in French across the corridor; no open source for other forms |
-| 5 | 16 secondary DRC towns from the RGC capitals list | week 4 | **user** (download) | optional; HDX blocks scripts |
+| 5 | ~~16 secondary DRC towns~~ | week 4 | user + Claude | ✔ 9 Nov: added by pcode; 14 Kivu territories given their missing pcodes |
 | 6 | ~~Children's pronunciation in Kinyarwanda, Kirundi, Chichewa~~ | week 4 | Claude | ✔ 9 Nov: none exists (McLeod 2024 index lists only Swahili); varied parameter in the benchmark |
 | 7 | Dzaleka literacy figure: 2017 socio-economic survey microdata, behind a login | week 4 | user (access request) | the benchmark varies the share of names written by ear meanwhile |
 | 8 | Muslim names (Hassan/Hasani, Fatuma/Fatima) | week 4 | — | **blocked** by G5 condition 3 (legal check: religion is sensitive data) |

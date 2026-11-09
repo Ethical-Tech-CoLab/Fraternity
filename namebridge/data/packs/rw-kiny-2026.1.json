@@ -115,9 +115,10 @@
   "transliteration_rules": [
     {
       "id": "orthography-2014",
-      "description": "Ministerial order on Kinyarwanda orthography, gazetted Oct 2014, with two years to comply; it met public pushback, so old and new spellings coexist in records. The letter-level changes are NOT yet documented here: no rule is applied until the order's text is read",
-      "source": "The New Times, 29 Oct 2014 (https://www.newtimes.co.rw/article/112825/News/how-new-orthography-will-simplify-kinyarwanda) and 17 Nov 2014 (https://www.newtimes.co.rw/article/113403); Niyomugabo & Uwizeyimana (2017), Language Policy 17(3): 307-318, doi:10.1007/s10993-016-9427-x",
-      "confidence": "unknown"
+      "description": "Spelling changes of the ministerial instructions No. 001/2014 (gazetted 13 Oct 2014): nc and nsh -> nsh; ncw and nshw -> nshw; nts and ns -> ns (intsinzi -> insinzi, creating homographs); (n)jy, (n)cy, (n)g, (n)k before i or e -> g, k; the negation nta joined to verbs but written apart from other words. After public resistance the Minister promised to cancel the instructions, so old and new spellings coexist in records",
+      "source": "Niyomugabo, C. & Uwizeyimana, V. (2018), 'A top-down orthography change and language attitudes in the context of a language-loyal country', Language Policy 17(3): 307-318 (https://doi.org/10.1007/s10993-016-9427-x), read in full 9 Nov 2026 (copy via the user, NYU), Table 1 and p. 312; ministerial instructions No. 001/2014 of 08/10/2014, Official Gazette no 41 bis of 13/10/2014; earlier: The New Times, 29 Oct 2014 (https://www.newtimes.co.rw/article/112825/News/how-new-orthography-will-simplify-kinyarwanda) and 17 Nov 2014 (https://www.newtimes.co.rw/article/113403); Niyomugabo & Uwizeyimana (2017), Language Policy 17(3): 307-318, doi:10.1007/s10993-016-9427-x",
+      "confidence": "high",
+      "note": "The changes are documented; whether and when the instructions were formally cancelled is not (the article reports the promise). Treat old and new forms as possible spellings of one name in both directions; nts/ns may join two different words (homographs)"
     }
   ],
   "phonetic_rules": [
@@ -416,6 +417,17 @@
       "note": "Chichewa Board spelling writes ch (and tch when aspirated), never c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza); that clerks do so with refugees' names is a hypothesis",
       "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026; Downing, L. J. & Mtenje, A. (2017), The Phonology of Chichewa, Oxford University Press, ch. 1, note 2 (publisher preview, https://api.pageplace.de/preview/DT0400.9780191037733_A30389705/preview-9780191037733_A30389705.pdf), read 9 Nov 2026: the Chichewa Board's convention writes the unaspirated affricate as ch and the aspirated one as tch; earlier work (Watkins 1937) and some linguists write c",
       "confidence": "high"
+    },
+    {
+      "sound": "/ʃ/ after n",
+      "writer_language": "rw",
+      "spellings": [
+        "nsh (2014 rule)",
+        "nc (older)"
+      ],
+      "source": "Niyomugabo, C. & Uwizeyimana, V. (2018), 'A top-down orthography change and language attitudes in the context of a language-loyal country', Language Policy 17(3): 307-318 (https://doi.org/10.1007/s10993-016-9427-x), read in full 9 Nov 2026 (copy via the user, NYU), Table 1 and p. 312; ministerial instructions No. 001/2014 of 08/10/2014, Official Gazette no 41 bis of 13/10/2014",
+      "confidence": "high",
+      "note": "names such as Nshuti may appear with nc in older records; also ncw / nshw"
     }
   ],
   "listener_confusions": [
@@ -586,6 +598,11 @@
       "id": "compound-christian-name-split",
       "description": "Compound Christian names are written as separate words, so their parts appear as separate elements: Jean-Marie Vianney, Jean Baptiste, Jean Bosco, Jean de Dieu ('vianney', 'baptiste', 'bosco' and 'dieu' are among the most frequent last elements). Compare joined, hyphenated and split forms, and do not treat 'Vianney' alone as a different person from 'Jean-Marie Vianney' without other evidence",
       "source": "NameBridge profile rw-nec-2026.1, from NEC Rwanda final district-council candidate lists (31 Oct 2026; 1,163 adults, four provinces)"
+    },
+    {
+      "id": "orthography-2014-forms",
+      "description": "A Kinyarwanda name may be spelled by the pre-2014 or the 2014 rules: nc/nsh, nts/ns, cy or jy / k or g before i and e, nta joined or apart (Ntakirutimana / Nta kirutimana). Compare both; nts/ns can also merge different words, so a match through it needs other evidence",
+      "source": "orthography-2014"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -645,5 +662,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.12.0"
+  "version": "0.13.0"
 }
