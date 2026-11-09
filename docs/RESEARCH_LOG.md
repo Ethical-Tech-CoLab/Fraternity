@@ -1940,7 +1940,7 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 
 **Rwanda: found.** The National Institute of Statistics of Rwanda publishes, in each *Rwanda Vital Statistics Report*, an annex "Top 20 most preferred babies' surnames by sex" from the CRVS system: **2024** (Annex 1) and **2025** (Annex 2). Profile `data/profiles/rw-nisr-2026.1.json` (script `scripts/build_profile_nisr.py`, report checksums recorded): 4 lists of 20 Kinyarwanda names with counts (largest: ISHIMWE, male, 8,407 in 2025; INEZA, female, 8,216), plus births registered (341,029 in 2024; 356,838 in 2025).
 
-**Findings:** most top names are **unisex** (failure mode `kinyarwanda-names-unisex`); names sharing a root are **distinct names** (Ishimwe/Ashimwe/Nishimwe, Iganze/Aganze, Mpano/Impano; failure mode `same-root-different-names`); none of the top names uses the gendered prefixes nyira-/muka-, which therefore mark older names (note on the prefix entries; they stay `medium`). rw-kiny 0.12.0.
+**Findings:** most top names are **unisex** (failure mode `kinyarwanda-names-unisex`); names sharing a root are **distinct names** (Ishimwe/Ashimwe/Nishimwe, Iganze/Aganze, Mpano/Impano; failure mode `same-root-different-names`); none of the top names uses the gendered prefixes nyira-/muka-, which therefore mark older names (note on the prefix entries; they stay `medium`). rw-kiny 0.11.0.
 
 **Data quality, kept as published:** the same name appears twice in one column in both years (e.g. female INEZA ranks 1 and 11 in 2024). An earlier copy of the 2025 report (`alpha.statistics.gov.rw`) prints the 2024 figures under the 2025 title; the final report is used.
 
