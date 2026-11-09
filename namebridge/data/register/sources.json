@@ -226,6 +226,19 @@
       "use": "facts only (names, dates, relations and short locators); no text reproduced"
     },
     {
+      "url": "https://github.com/Ethical-Tech-CoLab/Fraternity/tree/main/namebridge/data/profiles",
+      "name": "NameBridge naming profiles, counts by sex: cd-congonames-2026.1 (François 25,984 M / 247 F; Justin 32,649 M / 270 F; Jean 116,996 M / 481 F), bi-ceni-2026.1 (Justine F only, Justin M only, Jeanne F only, Claudine F only, Claude M only) and rw-nec-2026.1 (Françoise F only, François M only)",
+      "language": "fr",
+      "datasets": [
+        "attested-variants-2026.1"
+      ],
+      "kind": "NameBridge derived data",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
       "url": "https://openknowledge.fao.org/server/api/core/bitstreams/cfd0a845-2a67-4fa2-ae06-8ec8ea874ce3/content",
       "name": "FAO, Burundi livestock case study (May 2008), FAO Knowledge Repository",
       "language": "en",
@@ -825,7 +838,7 @@
     }
   ],
   "summary": {
-    "sources": 63,
+    "sources": 64,
     "licence_verified": 12,
     "with_concern": 2
   }

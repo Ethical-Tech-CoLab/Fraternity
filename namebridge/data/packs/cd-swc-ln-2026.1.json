@@ -170,6 +170,24 @@
       "source": "Gangji, N., Pascoe, M. & Smouse, M. (2015), 'Swahili speech development: preliminary normative data from typically developing pre-school children in Tanzania', International Journal of Language & Communication Disorders 50(2): 151-164 (https://doi.org/10.1111/1460-6984.12118), Table 5 and Discussion, read in full 9 Nov 2026 (copy via the user, NYU); also the thesis behind it: Gangji (2012), University of Cape Town (http://hdl.handle.net/11427/2916)",
       "confidence": "low",
       "note": "24 children aged 3;0-5;11 in Dar es Salaam (coastal Swahili, most with English as a second language), single words named from pictures; a process counts for an age group when 2 of 4 children showed it. Not Congo Swahili, and not Kinyarwanda/Kirundi children (no source found for those yet). Name examples marked 'derived' apply the pattern"
+    },
+    {
+      "id": "foreign-name-final-vowel",
+      "description": "A foreign name is often written with a final vowel added: Daniel -> Danieli, David -> Davidi, Abraham -> Abrahamu, Mark -> Marko, Peter -> Petero. Compare with and without the final vowel",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Aaron/Aaroni, Amos/Amosi, Benjamin/Benjamini, Daniel/Danieli, David/Davidi, Ezekiel/Ezekieli, Abraham/Abrahamu, Nahum/Nahumu, Mark/Marko, Paul/Paulo, Peter/Petero; Swahili ULB and Lingala Biblica forms in the same dataset",
+      "confidence": "high"
+    },
+    {
+      "id": "foreign-name-epenthetic-vowel",
+      "description": "A vowel is inserted to break a consonant cluster of a foreign name: Abraham -> Aburahamu, Ezra -> Ezira, Barnaba -> Barinaba, Yoswa -> Yosuwa, Kornelio -> Koruneliyo",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Abrahamu/Aburahamu, Ezra/Ezira, Barnaba/Barinaba, Yoswa/Yosuwa, Korneliyo/Koruneliyo, Marko/Mariko; Swahili ULB and Lingala Biblica forms in the same dataset",
+      "confidence": "high"
+    },
+    {
+      "id": "foreign-name-glide-between-vowels",
+      "description": "A glide y or w is written between two vowels of a foreign name: Daniel -> Daniyeli, Ezekiel -> Ezekiyeli, Hosea -> Hoseya, Naomi -> Nawomi, Paulo -> Pawulo",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Danieli/Daniyeli, Ezekieli/Ezekiyeli, Gideoni/Gideyoni, Hagai/Hagayi, Hosea/Hoseya, Kornelio/Korneliyo, Naomi/Nawomi, Paulo/Pawulo; Swahili ULB and Lingala Biblica forms in the same dataset",
+      "confidence": "high"
     }
   ],
   "common_administrative_forms": [
@@ -362,6 +380,26 @@
       "source": "Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48): dj in 16 DRC names (Djolu, Budjala, Bosondjo), j in 11 (Kisanji, Kajiji)",
       "confidence": "high",
       "note": "French writing uses dj for this sound (French j is /ʒ/); Congolese names occur both ways, so Djuma/Juma-type pairs are one name"
+    },
+    {
+      "sound": "(silent h)",
+      "writer_language": "fr",
+      "spellings": [
+        "h written or not at the end, after t, or after a vowel"
+      ],
+      "note": "Sara/Sarah, Ester/Esther, Marte/Marthe, Jonatan/Jonathan, Debora/Deborah, Rebeka/Rebekah; also names like Jessica/Jessicah. French h is silent, so writers add or drop it freely",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026; French orthography (silent h; double letters), Nimbona et al. §3.2",
+      "confidence": "high"
+    },
+    {
+      "sound": "(double letter)",
+      "writer_language": "fr",
+      "spellings": [
+        "a consonant or vowel written single or double"
+      ],
+      "note": "Hagai/Haggai, Aroni/Aaroni, Jeanette/Jeannette",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026; French orthography (silent h; double letters), Nimbona et al. §3.2",
+      "confidence": "high"
     }
   ],
   "listener_confusions": [
@@ -487,6 +525,11 @@
       "id": "compound-prenom-split",
       "description": "Compound given names may be written as one word or two: 'dieu' is the 46th most frequent final token (20,034 times), consistent with forms like Dieu Donné / Dieudonné. Compare joined and split forms. (Interpretation of an aggregate; the full names were not inspected)",
       "source": "NameBridge naming profile cd-congonames-2026.1 (data/profiles/), from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169, 8,053,983 DRC exam-list records 2008-2023: last-token top 50"
+    },
+    {
+      "id": "french-gender-pair-merged",
+      "description": "French masculine and feminine forms differ by one or two letters and look more alike than real variants (François / Françoise 0.98, Justin / Justine 0.97 Jaro-Winkler) but are different names given to different sexes. Similarity alone would merge them; negative constraints in attested-variants-2026.1 block them. A record that drops or adds the final -e can still be the same person, so other evidence decides",
+      "source": "attested-variants-2026.1 (sex counts in the CongoNames, CENI and NEC profiles)"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -532,5 +575,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.9.1"
+  "version": "0.10.0"
 }

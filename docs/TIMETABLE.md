@@ -241,7 +241,7 @@ Plan (all items done 26 Oct):
 
 - **Ingestion:** keep the original name exactly as written, and add parallel normalised forms (§5.3).
 - **Transliteration and variants** as hypotheses, with the path that produced each one (§5.4).
-- **Blocking:** the strategies in §5.5, aiming for high recall.
+- **Blocking:** the strategies in §5.5, aiming for high recall. *9 Nov (user):* families vary names freely, so candidate retrieval must tolerate **any** single edit (insertion, deletion, substitution, doubling; up to 2 for long names), with sourced patterns scored cheaper than arbitrary edits and negative constraints blocking; a name alone never confirms (§5.6).
 - **Baseline:** deterministic rules and phonetic matching (option 5).
 - ◐ **CPIMS+-style baseline** (algorithm documented from Primero's source on 26 Oct: field boosts, Double Metaphone, score/max, likely/possible; `RESEARCH_LOG.md`. **Remaining:** implement it): Double Metaphone, boosted field match and score/max normalisation, reimplemented from Primero's source.
 - **Access controls on the case side** (§8, §12), on synthetic data: roles, an access log, and the retention and deletion flow. Person and family views kept separate.

@@ -1,29 +1,314 @@
 {
   "dataset_id": "attested-variants-2026.1",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Language 'und' (undetermined) is used where the source gives a country but no language. Relationships between personal-name forms attested in real aggregate data (naming profiles), never invented: spelling variants that co-occur as frequent forms, and negative constraints between names that are registered as distinct. All edges are proposed until a human reviewer with a role reviews them.",
   "sources": {
-    "congonames-profile": {"name": "NameBridge profile cd-congonames-2026.1, from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169 (8,053,983 DRC exam records)", "url": "https://doi.org/10.3390/data11070169", "locator": "first-token top 50 (counts: ngoy 58,229; ngoyi 20,600; ngoie 14,157; mwamba 16,052; muamba 11,265)", "language": "fr"},
-    "nisr-profile": {"name": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)", "url": "https://statistics.gov.rw/statistical-publications/vital-statistics", "locator": "names registered as separate entries with their own counts in the same table", "language": "rw"}
+    "congonames-profile": {
+      "name": "NameBridge profile cd-congonames-2026.1, from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169 (8,053,983 DRC exam records)",
+      "url": "https://doi.org/10.3390/data11070169",
+      "locator": "first-token top 50 (counts: ngoy 58,229; ngoyi 20,600; ngoie 14,157; mwamba 16,052; muamba 11,265)",
+      "language": "fr"
+    },
+    "nisr-profile": {
+      "name": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)",
+      "url": "https://statistics.gov.rw/statistical-publications/vital-statistics",
+      "locator": "names registered as separate entries with their own counts in the same table",
+      "language": "rw"
+    },
+    "profiles-by-sex": {
+      "name": "NameBridge naming profiles, counts by sex: cd-congonames-2026.1 (François 25,984 M / 247 F; Justin 32,649 M / 270 F; Jean 116,996 M / 481 F), bi-ceni-2026.1 (Justine F only, Justin M only, Jeanne F only, Claudine F only, Claude M only) and rw-nec-2026.1 (Françoise F only, François M only)",
+      "url": "https://github.com/Ethical-Tech-CoLab/Fraternity/tree/main/namebridge/data/profiles",
+      "locator": "elements and elements_by_sex",
+      "language": "fr"
+    }
   },
   "forms": [
-    {"id": "ngoy", "text": "Ngoy", "lang": "und"}, {"id": "ngoyi", "text": "Ngoyi", "lang": "und"}, {"id": "ngoie", "text": "Ngoie", "lang": "und"},
-    {"id": "mwamba", "text": "Mwamba", "lang": "und"}, {"id": "muamba", "text": "Muamba", "lang": "und"},
-    {"id": "ishimwe", "text": "Ishimwe", "lang": "rw"}, {"id": "ashimwe", "text": "Ashimwe", "lang": "rw"}, {"id": "nishimwe", "text": "Nishimwe", "lang": "rw"},
-    {"id": "iganze", "text": "Iganze", "lang": "rw"}, {"id": "aganze", "text": "Aganze", "lang": "rw"},
-    {"id": "mpano", "text": "Mpano", "lang": "rw"}, {"id": "impano", "text": "Impano", "lang": "rw"},
-    {"id": "ineza", "text": "Ineza", "lang": "rw"}, {"id": "inezayimana", "text": "Inezayimana", "lang": "rw"}, {"id": "uwineza", "text": "Uwineza", "lang": "rw"}
+    {
+      "id": "ngoy",
+      "text": "Ngoy",
+      "lang": "und"
+    },
+    {
+      "id": "ngoyi",
+      "text": "Ngoyi",
+      "lang": "und"
+    },
+    {
+      "id": "ngoie",
+      "text": "Ngoie",
+      "lang": "und"
+    },
+    {
+      "id": "mwamba",
+      "text": "Mwamba",
+      "lang": "und"
+    },
+    {
+      "id": "muamba",
+      "text": "Muamba",
+      "lang": "und"
+    },
+    {
+      "id": "ishimwe",
+      "text": "Ishimwe",
+      "lang": "rw"
+    },
+    {
+      "id": "ashimwe",
+      "text": "Ashimwe",
+      "lang": "rw"
+    },
+    {
+      "id": "nishimwe",
+      "text": "Nishimwe",
+      "lang": "rw"
+    },
+    {
+      "id": "iganze",
+      "text": "Iganze",
+      "lang": "rw"
+    },
+    {
+      "id": "aganze",
+      "text": "Aganze",
+      "lang": "rw"
+    },
+    {
+      "id": "mpano",
+      "text": "Mpano",
+      "lang": "rw"
+    },
+    {
+      "id": "impano",
+      "text": "Impano",
+      "lang": "rw"
+    },
+    {
+      "id": "ineza",
+      "text": "Ineza",
+      "lang": "rw"
+    },
+    {
+      "id": "inezayimana",
+      "text": "Inezayimana",
+      "lang": "rw"
+    },
+    {
+      "id": "uwineza",
+      "text": "Uwineza",
+      "lang": "rw"
+    },
+    {
+      "id": "francois",
+      "text": "François",
+      "lang": "fr"
+    },
+    {
+      "id": "francoise",
+      "text": "Françoise",
+      "lang": "fr"
+    },
+    {
+      "id": "justin",
+      "text": "Justin",
+      "lang": "fr"
+    },
+    {
+      "id": "justine",
+      "text": "Justine",
+      "lang": "fr"
+    },
+    {
+      "id": "jean-fr",
+      "text": "Jean",
+      "lang": "fr"
+    },
+    {
+      "id": "jeanne",
+      "text": "Jeanne",
+      "lang": "fr"
+    },
+    {
+      "id": "claude",
+      "text": "Claude",
+      "lang": "fr"
+    },
+    {
+      "id": "claudine",
+      "text": "Claudine",
+      "lang": "fr"
+    }
   ],
   "relations": [
-    {"from": "ngoyi", "to": "ngoy", "relation_type": "orthographic_variant_of", "source": "congonames-profile", "confidence": 0.6, "confidence_basis": "statistical", "regions": ["CD"], "note": "final -i written or not; both among the 50 most frequent first tokens"},
-    {"from": "ngoie", "to": "ngoyi", "relation_type": "orthographic_variant_of", "source": "congonames-profile", "confidence": 0.6, "confidence_basis": "statistical", "regions": ["CD"], "note": "y written i; y as i, y or nothing is documented for Congolese writing (cd-swc-ln lingala-spelling-vacillates)"},
-    {"from": "muamba", "to": "mwamba", "relation_type": "orthographic_variant_of", "source": "congonames-profile", "confidence": 0.6, "confidence_basis": "statistical", "regions": ["CD"], "note": "w written u (cd-swc-ln lingala-spelling-vacillates)"},
-    {"from": "ashimwe", "to": "ishimwe", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"], "note": "registered as separate names with separate counts; same root, different names"},
-    {"from": "nishimwe", "to": "ishimwe", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"]},
-    {"from": "nishimwe", "to": "ashimwe", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"]},
-    {"from": "aganze", "to": "iganze", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"]},
-    {"from": "impano", "to": "mpano", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"]},
-    {"from": "inezayimana", "to": "ineza", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"]},
-    {"from": "uwineza", "to": "ineza", "relation_type": "not_equivalent_to", "source": "nisr-profile", "confidence": 0.8, "confidence_basis": "attested", "regions": ["RW"]}
+    {
+      "from": "ngoyi",
+      "to": "ngoy",
+      "relation_type": "orthographic_variant_of",
+      "source": "congonames-profile",
+      "confidence": 0.6,
+      "confidence_basis": "statistical",
+      "regions": [
+        "CD"
+      ],
+      "note": "final -i written or not; both among the 50 most frequent first tokens"
+    },
+    {
+      "from": "ngoie",
+      "to": "ngoyi",
+      "relation_type": "orthographic_variant_of",
+      "source": "congonames-profile",
+      "confidence": 0.6,
+      "confidence_basis": "statistical",
+      "regions": [
+        "CD"
+      ],
+      "note": "y written i; y as i, y or nothing is documented for Congolese writing (cd-swc-ln lingala-spelling-vacillates)"
+    },
+    {
+      "from": "muamba",
+      "to": "mwamba",
+      "relation_type": "orthographic_variant_of",
+      "source": "congonames-profile",
+      "confidence": 0.6,
+      "confidence_basis": "statistical",
+      "regions": [
+        "CD"
+      ],
+      "note": "w written u (cd-swc-ln lingala-spelling-vacillates)"
+    },
+    {
+      "from": "ashimwe",
+      "to": "ishimwe",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ],
+      "note": "registered as separate names with separate counts; same root, different names"
+    },
+    {
+      "from": "nishimwe",
+      "to": "ishimwe",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ]
+    },
+    {
+      "from": "nishimwe",
+      "to": "ashimwe",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ]
+    },
+    {
+      "from": "aganze",
+      "to": "iganze",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ]
+    },
+    {
+      "from": "impano",
+      "to": "mpano",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ]
+    },
+    {
+      "from": "inezayimana",
+      "to": "ineza",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ]
+    },
+    {
+      "from": "uwineza",
+      "to": "ineza",
+      "relation_type": "not_equivalent_to",
+      "source": "nisr-profile",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "RW"
+      ]
+    },
+    {
+      "from": "francoise",
+      "to": "francois",
+      "relation_type": "not_equivalent_to",
+      "source": "profiles-by-sex",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "CD",
+        "BI",
+        "RW"
+      ],
+      "note": "masculine and feminine forms given to different sexes; different names"
+    },
+    {
+      "from": "justine",
+      "to": "justin",
+      "relation_type": "not_equivalent_to",
+      "source": "profiles-by-sex",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "CD",
+        "BI",
+        "RW"
+      ],
+      "note": "masculine and feminine forms given to different sexes; different names"
+    },
+    {
+      "from": "jeanne",
+      "to": "jean-fr",
+      "relation_type": "not_equivalent_to",
+      "source": "profiles-by-sex",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "CD",
+        "BI",
+        "RW"
+      ],
+      "note": "masculine and feminine forms given to different sexes; different names"
+    },
+    {
+      "from": "claudine",
+      "to": "claude",
+      "relation_type": "not_equivalent_to",
+      "source": "profiles-by-sex",
+      "confidence": 0.8,
+      "confidence_basis": "attested",
+      "regions": [
+        "CD",
+        "BI",
+        "RW"
+      ],
+      "note": "masculine and feminine forms given to different sexes; different names"
+    }
   ]
 }

@@ -153,6 +153,24 @@
       "description": "Chichewa and Chitumbuka spelling has one accented letter, ŵ (standardised 1973). A Malawian writer may use it; search forms fold ŵ to w, and the original is kept",
       "source": "UK Government, Malawi Toponymic Factfile, 2025, 'Languages' (https://assets.publishing.service.gov.uk/media/68aee2f02f1856648215588f/Malawi_Toponymic_Factfile.pdf), read 5 Nov 2026",
       "confidence": "high"
+    },
+    {
+      "id": "foreign-name-final-vowel",
+      "description": "A foreign name is often written with a final vowel added: Daniel -> Danieli, David -> Davidi, Abraham -> Abrahamu, Mark -> Marko, Peter -> Petero. Compare with and without the final vowel",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Aaron/Aaroni, Amos/Amosi, Benjamin/Benjamini, Daniel/Danieli, David/Davidi, Ezekiel/Ezekieli, Abraham/Abrahamu, Nahum/Nahumu, Mark/Marko, Paul/Paulo, Peter/Petero; 'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (vowel insertion and glide insertion in loanwords)",
+      "confidence": "high"
+    },
+    {
+      "id": "foreign-name-epenthetic-vowel",
+      "description": "A vowel is inserted to break a consonant cluster of a foreign name: Abraham -> Aburahamu, Ezra -> Ezira, Barnaba -> Barinaba, Yoswa -> Yosuwa, Kornelio -> Koruneliyo",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Abrahamu/Aburahamu, Ezra/Ezira, Barnaba/Barinaba, Yoswa/Yosuwa, Korneliyo/Koruneliyo, Marko/Mariko; 'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (vowel insertion and glide insertion in loanwords)",
+      "confidence": "high"
+    },
+    {
+      "id": "foreign-name-glide-between-vowels",
+      "description": "A glide y or w is written between two vowels of a foreign name: Daniel -> Daniyeli, Ezekiel -> Ezekiyeli, Hosea -> Hoseya, Naomi -> Nawomi, Paulo -> Pawulo",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Danieli/Daniyeli, Ezekieli/Ezekiyeli, Gideoni/Gideyoni, Hagai/Hagayi, Hosea/Hoseya, Kornelio/Korneliyo, Naomi/Nawomi, Paulo/Pawulo; 'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (vowel insertion and glide insertion in loanwords)",
+      "confidence": "high"
     }
   ],
   "common_administrative_forms": [
@@ -428,6 +446,26 @@
       "source": "Niyomugabo, C. & Uwizeyimana, V. (2018), 'A top-down orthography change and language attitudes in the context of a language-loyal country', Language Policy 17(3): 307-318 (https://doi.org/10.1007/s10993-016-9427-x), read in full 9 Nov 2026 (copy via the user, NYU), Table 1 and p. 312; ministerial instructions No. 001/2014 of 08/10/2014, Official Gazette no 41 bis of 13/10/2014",
       "confidence": "high",
       "note": "names such as Nshuti may appear with nc in older records; also ncw / nshw"
+    },
+    {
+      "sound": "(silent h)",
+      "writer_language": "fr",
+      "spellings": [
+        "h written or not at the end, after t, or after a vowel"
+      ],
+      "note": "Sara/Sarah, Ester/Esther, Marte/Marthe, Jonatan/Jonathan, Debora/Deborah, Rebeka/Rebekah; also names like Jessica/Jessicah. French h is silent, so writers add or drop it freely",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026; French orthography (silent h; double letters), Nimbona et al. §3.2",
+      "confidence": "high"
+    },
+    {
+      "sound": "(double letter)",
+      "writer_language": "fr",
+      "spellings": [
+        "a consonant or vowel written single or double"
+      ],
+      "note": "Hagai/Haggai, Aroni/Aaroni, Jeanette/Jeannette",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026; French orthography (silent h; double letters), Nimbona et al. §3.2",
+      "confidence": "high"
     }
   ],
   "listener_confusions": [
@@ -520,6 +558,16 @@
       "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
       "source": "No source yet; listed so the matcher can test it at low weight",
       "confidence": "hypothesis"
+    },
+    {
+      "sounds": [
+        "/i/",
+        "/j/ written y"
+      ],
+      "listener": "any writer of a French-form name",
+      "note": "i and y swapped in French-form names (Belyse / Belise, Eloi / Eloy); attested in the DRC data (Ngoie / Ngoyi) but not yet in Rwandan or Burundian data",
+      "source": "user's example (9 Nov 2026); NameBridge profile cd-congonames-2026.1 (ngoie / ngoyi)",
+      "confidence": "hypothesis"
     }
   ],
   "relationship_implications": {
@@ -603,6 +651,11 @@
       "id": "orthography-2014-forms",
       "description": "A Kinyarwanda name may be spelled by the pre-2014 or the 2014 rules: nc/nsh, nts/ns, cy or jy / k or g before i and e, nta joined or apart (Ntakirutimana / Nta kirutimana). Compare both; nts/ns can also merge different words, so a match through it needs other evidence",
       "source": "orthography-2014"
+    },
+    {
+      "id": "french-gender-pair-merged",
+      "description": "French masculine and feminine forms differ by one or two letters and look more alike than real variants (François / Françoise 0.98, Justin / Justine 0.97 Jaro-Winkler) but are different names given to different sexes. Similarity alone would merge them; negative constraints in attested-variants-2026.1 block them. A record that drops or adds the final -e can still be the same person, so other evidence decides",
+      "source": "attested-variants-2026.1 (sex counts in the CongoNames, CENI and NEC profiles)"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -662,5 +715,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.13.0"
+  "version": "0.14.0"
 }

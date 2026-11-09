@@ -225,6 +225,24 @@
       "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §3.2 and §5.2",
       "confidence": "low",
       "note": "Corpus: 12 university-educated adults (mean age 38.5), mostly reading aloud; speakers born in Bujumbura were closest to standard French, and the authors attribute the differences to schooling, so less-schooled speakers and children may deviate more (not measured). Name examples marked 'derived' apply the pattern; they are not in the source"
+    },
+    {
+      "id": "foreign-name-final-vowel",
+      "description": "A foreign name is often written with a final vowel added: Daniel -> Danieli, David -> Davidi, Abraham -> Abrahamu, Mark -> Marko, Peter -> Petero. Compare with and without the final vowel",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Aaron/Aaroni, Amos/Amosi, Benjamin/Benjamini, Daniel/Danieli, David/Davidi, Ezekiel/Ezekieli, Abraham/Abrahamu, Nahum/Nahumu, Mark/Marko, Paul/Paulo, Peter/Petero; Nimbona, G. & Simon, A. C. (2022), Journal of Language Contact 15: 481-511, §3.3: Kirundi syllables are always open (no final consonant); a vowel cannot stand alone as a syllable inside or at the end of a word",
+      "confidence": "high"
+    },
+    {
+      "id": "foreign-name-epenthetic-vowel",
+      "description": "A vowel is inserted to break a consonant cluster of a foreign name: Abraham -> Aburahamu, Ezra -> Ezira, Barnaba -> Barinaba, Yoswa -> Yosuwa, Kornelio -> Koruneliyo",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Abrahamu/Aburahamu, Ezra/Ezira, Barnaba/Barinaba, Yoswa/Yosuwa, Korneliyo/Koruneliyo, Marko/Mariko; Nimbona, G. & Simon, A. C. (2022), Journal of Language Contact 15: 481-511, §3.3: Kirundi syllables are always open (no final consonant); a vowel cannot stand alone as a syllable inside or at the end of a word",
+      "confidence": "high"
+    },
+    {
+      "id": "foreign-name-glide-between-vowels",
+      "description": "A glide y or w is written between two vowels of a foreign name: Daniel -> Daniyeli, Ezekiel -> Ezekiyeli, Hosea -> Hoseya, Naomi -> Nawomi, Paulo -> Pawulo",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026: Danieli/Daniyeli, Ezekieli/Ezekiyeli, Gideoni/Gideyoni, Hagai/Hagayi, Hosea/Hoseya, Kornelio/Korneliyo, Naomi/Nawomi, Paulo/Pawulo; Nimbona, G. & Simon, A. C. (2022), Journal of Language Contact 15: 481-511, §3.3: Kirundi syllables are always open (no final consonant); a vowel cannot stand alone as a syllable inside or at the end of a word",
+      "confidence": "high"
     }
   ],
   "common_administrative_forms": [
@@ -479,6 +497,26 @@
       "note": "Chichewa Board spelling writes ch (and tch when aspirated), never c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza); that clerks do so with refugees' names is a hypothesis",
       "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026; Downing, L. J. & Mtenje, A. (2017), The Phonology of Chichewa, Oxford University Press, ch. 1, note 2 (publisher preview, https://api.pageplace.de/preview/DT0400.9780191037733_A30389705/preview-9780191037733_A30389705.pdf), read 9 Nov 2026: the Chichewa Board's convention writes the unaspirated affricate as ch and the aspirated one as tch; earlier work (Watkins 1937) and some linguists write c",
       "confidence": "high"
+    },
+    {
+      "sound": "(silent h)",
+      "writer_language": "fr",
+      "spellings": [
+        "h written or not at the end, after t, or after a vowel"
+      ],
+      "note": "Sara/Sarah, Ester/Esther, Marte/Marthe, Jonatan/Jonathan, Debora/Deborah, Rebeka/Rebekah; also names like Jessica/Jessicah. French h is silent, so writers add or drop it freely",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026; French orthography (silent h; double letters), Nimbona et al. §3.2",
+      "confidence": "high"
+    },
+    {
+      "sound": "(double letter)",
+      "writer_language": "fr",
+      "spellings": [
+        "a consonant or vowel written single or double"
+      ],
+      "note": "Hagai/Haggai, Aroni/Aaroni, Jeanette/Jeannette",
+      "source": "NameBridge cross-pack dataset christian-names-2026.1 (forms attested in Bible translations in fr, en, sw, ln, ny, rw, rn); pattern analysis of 9 Nov 2026; French orthography (silent h; double letters), Nimbona et al. §3.2",
+      "confidence": "high"
     }
   ],
   "listener_confusions": [
@@ -592,6 +630,16 @@
       "note": "rw may be said [gw] with the r dropped (kurwaara [kugwaːra]); a name beginning Rw- may be heard as Gw-. Kept medium until attested in writing",
       "source": "Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013), example (28b) /ku-rwaar-a/ [kuɾgwaːra]~[kugwaːra], /ku-gur-w-a/ [kuguɾgwa]~[kugugwa]",
       "confidence": "medium"
+    },
+    {
+      "sounds": [
+        "/i/",
+        "/j/ written y"
+      ],
+      "listener": "any writer of a French-form name",
+      "note": "i and y swapped in French-form names (Belyse / Belise, Eloi / Eloy); attested in the DRC data (Ngoie / Ngoyi) but not yet in Rwandan or Burundian data",
+      "source": "user's example (9 Nov 2026); NameBridge profile cd-congonames-2026.1 (ngoie / ngoyi)",
+      "confidence": "hypothesis"
     }
   ],
   "relationship_implications": {
@@ -660,6 +708,11 @@
       "id": "title-read-as-name",
       "description": "A parent reported as Nyirababiri or Sebabiri (mother/father of twins) is named by a title shared by every parent of twins; it must not be matched as a personal name",
       "source": "structure-twin-parent-titles"
+    },
+    {
+      "id": "french-gender-pair-merged",
+      "description": "French masculine and feminine forms differ by one or two letters and look more alike than real variants (François / Françoise 0.98, Justin / Justine 0.97 Jaro-Winkler) but are different names given to different sexes. Similarity alone would merge them; negative constraints in attested-variants-2026.1 block them. A record that drops or adds the final -e can still be the same person, so other evidence decides",
+      "source": "attested-variants-2026.1 (sex counts in the CongoNames, CENI and NEC profiles)"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -719,5 +772,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.15.0"
+  "version": "0.16.0"
 }

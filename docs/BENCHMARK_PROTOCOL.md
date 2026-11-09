@@ -61,6 +61,10 @@ Errors are injected **GeCo-style** [B8], with documented rates per source:
 | Phonetic errors from oral reports and interpreters | `l`/`r` confusion in Kinyarwanda and Kirundi |
 | **Written by ear** (§5.4A): the writer's convention for each sound, listener confusions, and clusters spelled as heard | `Ciza` → `Tchiza` (French writer); «rw» → `rgw`, «sw» → `skw` |
 | Typos and OCR errors | `rn`→`m`, `1`→`l` |
+| **Foreign-name adaptation** (added 9 Nov 2026; pack rules `foreign-name-final-vowel`, `foreign-name-epenthetic-vowel`, `foreign-name-glide-between-vowels`, attested across Bible translations) | `Daniel` → `Danieli` / `Daniyeli`; `Abraham` → `Aburahamu` |
+| **Silent letters and double letters** (added 9 Nov 2026; French-writer conventions, attested) | `Sara` / `Sarah`; `Ester` / `Esther`; `Jeanette` / `Jeannette` |
+| **Free variation** (added 9 Nov 2026, user's observation: families add, change or double letters because they like how it looks, with no pattern): random single-letter insertion, substitution, deletion or doubling, at a **varied rate** (no source on how often) | `Jessica` → `Jessicah`; `Belise` → `Belyse`; `Eloi` → `Eloy` |
+| **Hard negatives one letter apart** (added 9 Nov 2026): different names that differ by one or two letters, from the negative constraints (French masculine/feminine pairs; same-root Kinyarwanda names) | `François` / `Françoise`; `Ishimwe` / `Nishimwe` |
 | Truncation and missing diacritics | MRZ and ASCII fields |
 | Incomplete or rounded ages; age heaping | "about 10" |
 | Places renamed over time | Burundi provinces 2025; DRC provinces 2015 |
