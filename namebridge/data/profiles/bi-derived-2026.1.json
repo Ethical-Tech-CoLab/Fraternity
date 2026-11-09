@@ -1,0 +1,548 @@
+{
+  "profile_id": "bi-derived-2026.1",
+  "version": "0.1.0",
+  "origin": "BI",
+  "confidence": "medium",
+  "method": "DERIVED, not observed: the Kinyarwanda names of profile rw-nisr-2026.1 converted to Kirundi spelling with the bi-kirundi rw->rn rules (rw-to-rn-shy, rw-to-rn-cy, rw-to-rn-jy, rw-to-rn-by). Counts are the Rwandan counts, kept only as relative weights. Built 9 Nov 2026 by scripts/build_profile_bi_derived.py",
+  "sources": [
+    {
+      "name": "rw-nisr-2026.1 (NISR, Rwanda Vital Statistics Reports 2024 and 2025)"
+    },
+    {
+      "name": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007), §1.1.1, Table 1, via the bi-kirundi pack transliteration rules"
+    }
+  ],
+  "known_bias": "Kirundi and Kinyarwanda share most name stock but not all; names specific to Burundi are missing, and Rwandan popularity is not Burundian popularity. Newborns of 2024-2025, not the refugees' generation. To be checked against real Burundian frequencies (option (ii): CENI lists under DR-1)",
+  "elements": {
+    "derived_kirundi_name_top20_female_2024": [
+      {
+        "element": "ineza",
+        "count": 6792,
+        "from_kinyarwanda": "ineza",
+        "rules": []
+      },
+      {
+        "element": "uwase",
+        "count": 4606,
+        "from_kinyarwanda": "uwase",
+        "rules": []
+      },
+      {
+        "element": "ishimwe",
+        "count": 4545,
+        "from_kinyarwanda": "ishimwe",
+        "rules": []
+      },
+      {
+        "element": "irakoze",
+        "count": 2575,
+        "from_kinyarwanda": "irakoze",
+        "rules": []
+      },
+      {
+        "element": "igiraneza",
+        "count": 2329,
+        "from_kinyarwanda": "igiraneza",
+        "rules": []
+      },
+      {
+        "element": "uwineza",
+        "count": 1932,
+        "from_kinyarwanda": "uwineza",
+        "rules": []
+      },
+      {
+        "element": "inezayimana",
+        "count": 1653,
+        "from_kinyarwanda": "inezayimana",
+        "rules": []
+      },
+      {
+        "element": "iganze",
+        "count": 1641,
+        "from_kinyarwanda": "iganze",
+        "rules": []
+      },
+      {
+        "element": "iradukunda",
+        "count": 1605,
+        "from_kinyarwanda": "iradukunda",
+        "rules": []
+      },
+      {
+        "element": "umutoniwase",
+        "count": 1414,
+        "from_kinyarwanda": "umutoniwase",
+        "rules": []
+      },
+      {
+        "element": "ineza",
+        "count": 1309,
+        "from_kinyarwanda": "ineza",
+        "rules": []
+      },
+      {
+        "element": "irasubiza",
+        "count": 1279,
+        "from_kinyarwanda": "irasubiza",
+        "rules": []
+      },
+      {
+        "element": "umukundwa",
+        "count": 1115,
+        "from_kinyarwanda": "umukundwa",
+        "rules": []
+      },
+      {
+        "element": "isimbi",
+        "count": 1061,
+        "from_kinyarwanda": "isimbi",
+        "rules": []
+      },
+      {
+        "element": "nishimwe",
+        "count": 1048,
+        "from_kinyarwanda": "nishimwe",
+        "rules": []
+      },
+      {
+        "element": "igihozo",
+        "count": 1009,
+        "from_kinyarwanda": "igihozo",
+        "rules": []
+      },
+      {
+        "element": "kundwa",
+        "count": 985,
+        "from_kinyarwanda": "kundwa",
+        "rules": []
+      },
+      {
+        "element": "niyogisubizo",
+        "count": 928,
+        "from_kinyarwanda": "niyogisubizo",
+        "rules": []
+      },
+      {
+        "element": "ishimwe",
+        "count": 917,
+        "from_kinyarwanda": "ishimwe",
+        "rules": []
+      },
+      {
+        "element": "izivyose",
+        "count": 892,
+        "from_kinyarwanda": "izibyose",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      }
+    ],
+    "derived_kirundi_name_top20_male_2024": [
+      {
+        "element": "ishimwe",
+        "count": 6751,
+        "from_kinyarwanda": "ishimwe",
+        "rules": []
+      },
+      {
+        "element": "iganze",
+        "count": 3239,
+        "from_kinyarwanda": "iganze",
+        "rules": []
+      },
+      {
+        "element": "mugisha",
+        "count": 3009,
+        "from_kinyarwanda": "mugisha",
+        "rules": []
+      },
+      {
+        "element": "hirwa",
+        "count": 2415,
+        "from_kinyarwanda": "hirwa",
+        "rules": []
+      },
+      {
+        "element": "irakoze",
+        "count": 2362,
+        "from_kinyarwanda": "irakoze",
+        "rules": []
+      },
+      {
+        "element": "igiraneza",
+        "count": 1939,
+        "from_kinyarwanda": "igiraneza",
+        "rules": []
+      },
+      {
+        "element": "ineza",
+        "count": 1904,
+        "from_kinyarwanda": "ineza",
+        "rules": []
+      },
+      {
+        "element": "izivyose",
+        "count": 1664,
+        "from_kinyarwanda": "izibyose",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      },
+      {
+        "element": "irasubiza",
+        "count": 1590,
+        "from_kinyarwanda": "irasubiza",
+        "rules": []
+      },
+      {
+        "element": "iradukunda",
+        "count": 1587,
+        "from_kinyarwanda": "iradukunda",
+        "rules": []
+      },
+      {
+        "element": "ganza",
+        "count": 1401,
+        "from_kinyarwanda": "ganza",
+        "rules": []
+      },
+      {
+        "element": "ashimwe",
+        "count": 1372,
+        "from_kinyarwanda": "ashimwe",
+        "rules": []
+      },
+      {
+        "element": "kwizera",
+        "count": 1368,
+        "from_kinyarwanda": "kwizera",
+        "rules": []
+      },
+      {
+        "element": "niyogisubizo",
+        "count": 1140,
+        "from_kinyarwanda": "niyogisubizo",
+        "rules": []
+      },
+      {
+        "element": "gwiza",
+        "count": 1031,
+        "from_kinyarwanda": "gwiza",
+        "rules": []
+      },
+      {
+        "element": "vyishimo",
+        "count": 983,
+        "from_kinyarwanda": "byishimo",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      },
+      {
+        "element": "iranzi",
+        "count": 975,
+        "from_kinyarwanda": "iranzi",
+        "rules": []
+      },
+      {
+        "element": "manzi",
+        "count": 951,
+        "from_kinyarwanda": "manzi",
+        "rules": []
+      },
+      {
+        "element": "aganze",
+        "count": 904,
+        "from_kinyarwanda": "aganze",
+        "rules": []
+      },
+      {
+        "element": "vyiringiro",
+        "count": 900,
+        "from_kinyarwanda": "byiringiro",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      }
+    ],
+    "derived_kirundi_name_top20_female_2025": [
+      {
+        "element": "ineza",
+        "count": 8216,
+        "from_kinyarwanda": "ineza",
+        "rules": []
+      },
+      {
+        "element": "ishimwe",
+        "count": 4844,
+        "from_kinyarwanda": "ishimwe",
+        "rules": []
+      },
+      {
+        "element": "uwase",
+        "count": 4598,
+        "from_kinyarwanda": "uwase",
+        "rules": []
+      },
+      {
+        "element": "irakoze",
+        "count": 2469,
+        "from_kinyarwanda": "irakoze",
+        "rules": []
+      },
+      {
+        "element": "igiraneza",
+        "count": 2367,
+        "from_kinyarwanda": "igiraneza",
+        "rules": []
+      },
+      {
+        "element": "iganze",
+        "count": 2278,
+        "from_kinyarwanda": "iganze",
+        "rules": []
+      },
+      {
+        "element": "uwineza",
+        "count": 1778,
+        "from_kinyarwanda": "uwineza",
+        "rules": []
+      },
+      {
+        "element": "inezayimana",
+        "count": 1727,
+        "from_kinyarwanda": "inezayimana",
+        "rules": []
+      },
+      {
+        "element": "iradukunda",
+        "count": 1581,
+        "from_kinyarwanda": "iradukunda",
+        "rules": []
+      },
+      {
+        "element": "kundwa",
+        "count": 1523,
+        "from_kinyarwanda": "kundwa",
+        "rules": []
+      },
+      {
+        "element": "umutoniwase",
+        "count": 1490,
+        "from_kinyarwanda": "umutoniwase",
+        "rules": []
+      },
+      {
+        "element": "irasubiza",
+        "count": 1330,
+        "from_kinyarwanda": "irasubiza",
+        "rules": []
+      },
+      {
+        "element": "umukundwa",
+        "count": 1180,
+        "from_kinyarwanda": "umukundwa",
+        "rules": []
+      },
+      {
+        "element": "agwize",
+        "count": 1111,
+        "from_kinyarwanda": "agwize",
+        "rules": []
+      },
+      {
+        "element": "nishimwe",
+        "count": 1050,
+        "from_kinyarwanda": "nishimwe",
+        "rules": []
+      },
+      {
+        "element": "ishimwe",
+        "count": 1031,
+        "from_kinyarwanda": "ishimwe",
+        "rules": []
+      },
+      {
+        "element": "izivyose",
+        "count": 1001,
+        "from_kinyarwanda": "izibyose",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      },
+      {
+        "element": "isimbi",
+        "count": 979,
+        "from_kinyarwanda": "isimbi",
+        "rules": []
+      },
+      {
+        "element": "igihozo",
+        "count": 946,
+        "from_kinyarwanda": "igihozo",
+        "rules": []
+      },
+      {
+        "element": "niyogisubizo",
+        "count": 907,
+        "from_kinyarwanda": "niyogisubizo",
+        "rules": []
+      }
+    ],
+    "derived_kirundi_name_top20_male_2025": [
+      {
+        "element": "ishimwe",
+        "count": 8407,
+        "from_kinyarwanda": "ishimwe",
+        "rules": []
+      },
+      {
+        "element": "iganze",
+        "count": 4215,
+        "from_kinyarwanda": "iganze",
+        "rules": []
+      },
+      {
+        "element": "mugisha",
+        "count": 2953,
+        "from_kinyarwanda": "mugisha",
+        "rules": []
+      },
+      {
+        "element": "hirwa",
+        "count": 2845,
+        "from_kinyarwanda": "hirwa",
+        "rules": []
+      },
+      {
+        "element": "irakoze",
+        "count": 2167,
+        "from_kinyarwanda": "irakoze",
+        "rules": []
+      },
+      {
+        "element": "igiraneza",
+        "count": 1958,
+        "from_kinyarwanda": "igiraneza",
+        "rules": []
+      },
+      {
+        "element": "izivyose",
+        "count": 1834,
+        "from_kinyarwanda": "izibyose",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      },
+      {
+        "element": "ineza",
+        "count": 1831,
+        "from_kinyarwanda": "ineza",
+        "rules": []
+      },
+      {
+        "element": "irasubiza",
+        "count": 1564,
+        "from_kinyarwanda": "irasubiza",
+        "rules": []
+      },
+      {
+        "element": "iradukunda",
+        "count": 1547,
+        "from_kinyarwanda": "iradukunda",
+        "rules": []
+      },
+      {
+        "element": "ganza",
+        "count": 1412,
+        "from_kinyarwanda": "ganza",
+        "rules": []
+      },
+      {
+        "element": "kwizera",
+        "count": 1301,
+        "from_kinyarwanda": "kwizera",
+        "rules": []
+      },
+      {
+        "element": "gwiza",
+        "count": 1224,
+        "from_kinyarwanda": "gwiza",
+        "rules": []
+      },
+      {
+        "element": "niyogisubizo",
+        "count": 1135,
+        "from_kinyarwanda": "niyogisubizo",
+        "rules": []
+      },
+      {
+        "element": "mpano",
+        "count": 1110,
+        "from_kinyarwanda": "mpano",
+        "rules": []
+      },
+      {
+        "element": "vyishimo",
+        "count": 1051,
+        "from_kinyarwanda": "byishimo",
+        "rules": [
+          "rw-to-rn-by"
+        ]
+      },
+      {
+        "element": "igabe",
+        "count": 985,
+        "from_kinyarwanda": "igabe",
+        "rules": []
+      },
+      {
+        "element": "impano",
+        "count": 926,
+        "from_kinyarwanda": "impano",
+        "rules": []
+      },
+      {
+        "element": "bigwi",
+        "count": 918,
+        "from_kinyarwanda": "bigwi",
+        "rules": []
+      },
+      {
+        "element": "iranzi",
+        "count": 916,
+        "from_kinyarwanda": "iranzi",
+        "rules": []
+      }
+    ]
+  },
+  "never": "No ethnicity, clan or religion pattern (BENCHMARK_PROTOCOL.md §2.4; C12)",
+  "converted_forms": [
+    {
+      "kinyarwanda": "byiringiro",
+      "kirundi": "vyiringiro"
+    },
+    {
+      "kinyarwanda": "byishimo",
+      "kirundi": "vyishimo"
+    },
+    {
+      "kinyarwanda": "izibyose",
+      "kirundi": "izivyose"
+    }
+  ],
+  "cross_check": {
+    "against": "Forebears.io, 'Most common Burundian surnames' (aggregator estimate; gate G6: cross-check only), top 48 read 9 Nov 2026 (https://forebears.io/burundi/surnames)",
+    "derived_distinct_names": 34,
+    "aggregator_top_names": 48,
+    "in_both": [
+      "irakoze",
+      "kwizera",
+      "mugisha"
+    ],
+    "share_of_derived_found": 0.088,
+    "reading": "Low overlap: the derived profile (names of 2024-2025 newborns) misses the most frequent names of the older population (theophoric -imana and Nda-/Ni- forms). Expected from the generational gap; it confirms the known bias and supports option (ii) for real Burundian frequencies. The aggregator also lists Christian names as surnames (Jean, Eric, Innocent), see bi-kirundi order-aggregators-swap",
+    "stored": "only overlap figures and the common names; the aggregator's table is not copied"
+  }
+}

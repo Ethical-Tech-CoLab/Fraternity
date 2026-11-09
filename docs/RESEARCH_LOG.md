@@ -1949,3 +1949,13 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 **Burundi: no published aggregates found.** INSBU (formerly ISTEEBU) publishes no name frequencies; Geneanet and Forebears are aggregators, allowed only as a cross-check (G6). Decision needed (see the user).
 
 **Tests:** 141 pass.
+
+## 2026-11-09 — Burundi option (i): derived profile, and why it is not enough
+
+**User's decision:** option (i) now, then option (ii).
+
+**(i) Derived profile** `data/profiles/bi-derived-2026.1.json` (script `scripts/build_profile_bi_derived.py`; confidence **medium**, marked DERIVED): the 80 entries of `rw-nisr-2026.1` converted with the bi-kirundi rw→rn rules (cy→c, jy→j, shy→sh, by→vy). Only 3 forms change: byiringiro→vyiringiro, byishimo→vyishimo, izibyose→izivyose.
+
+**Cross-check (G6: aggregator as a check only):** Forebears.io, top 48 Burundian surnames (read 9 Nov; only overlap figures stored, the table is not copied). **3 of 34** distinct derived names are in it (irakoze, kwizera, mugisha): **8.8%**. The derived profile misses the most frequent names of the older population (theophoric *-imana* names, Nda-/Ni- forms such as Nkurunziza, Ndayishimiye, Manirakiza). This quantifies the generational bias already noted: newborns of 2024–2025 are not the refugees' generation. The aggregator also lists Christian names as surnames (Jean, Eric, Innocent), consistent with `order-aggregators-swap`.
+
+**Consequence:** real Burundian frequencies are needed → option (ii), CENI 2025 lists under DR-1 (next).
