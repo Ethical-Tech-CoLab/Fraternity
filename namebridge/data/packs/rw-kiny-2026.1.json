@@ -53,7 +53,15 @@
       "practice": "cultural",
       "source": "Wikipedia, Rwandan names, 'Address in spoken life'",
       "confidence": "low",
-      "note": "Wikipedia only; needs a primary source. Checked 5 Nov 2026: official, UN and press sources, and Kimenyi (1978), which does not cover forms of address, teknonymy or Christian names. Next candidate: Kimenyi (1989), Kinyarwanda and Kirundi Names"
+      "note": "Wikipedia only; needs a primary source. Checked 5 Nov 2026: official, UN and press sources, and Kimenyi (1978), which does not cover forms of address, teknonymy or Christian names. Checked 9 Nov 2026: Fédry (2009) covers teknonymy and name avoidance (order-teknonym, failure modes child-avoids-parent-name and child-withholds-own-name) but not which name is used in speech. Next candidate: Kimenyi (1989), Kinyarwanda and Kirundi Names"
+    },
+    {
+      "id": "order-teknonym",
+      "description": "A parent may be called 'Mother of X' / 'Father of X' after a child (teknonymy); where it is used it usually replaces the birth name in everyday address. The child named is often the eldest son or daughter, elsewhere the last-born. A parent reported as 'Mama X' gives the CHILD's name, not the parent's",
+      "practice": "cultural",
+      "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 49: renaming of the parent by the child's name ('Père de Untel', 'Mère de Untel') is 'très répandu en Afrique' and usually supplants the birth name; often the eldest son or daughter, elsewhere the last child",
+      "confidence": "low",
+      "note": "The source describes Africa in general and does not name Rwanda for this practice; low until a Rwanda-specific source (Kimenyi 1989). The Wikipedia example 'Mama Teta' is not used as a source"
     }
   ],
   "particles_and_morphemes": [
@@ -513,6 +521,16 @@
       "id": "prefix-sex-inference",
       "description": "Inferring sex from feminine or masculine prefixes is forbidden; a match is never scored up or down on it",
       "source": "BENCHMARK_PROTOCOL.md C12"
+    },
+    {
+      "id": "child-avoids-parent-name",
+      "description": "A child may not say, or not know, a parent's own name, because children do not call parents by name; expect kin terms or teknonyms ('Mama Belyse' = mother of Belyse) instead. In Rwanda the avoidance also covers parents-in-law. Retrieval must not require the parent's own name, and a teknonym should be searched as the name of a CHILD of the sought person",
+      "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 55: in Africa generally the child does not call father or mother by name; in many places, Rwanda named, this also applies to parents-in-law"
+    },
+    {
+      "id": "child-withholds-own-name",
+      "description": "A Rwandan child under about 15 may be reluctant to say their own name, as part of an upbringing in modesty; a minor who gives no name, or only a nickname, is not evidence of a false or hidden identity",
+      "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 63: 'Au Rwanda, on ne dit pas son propre nom avant la fin de la croissance physique, vers 15 ans (ntaw'igura agikura)'; the article cites personal communications (Ganza 2002; Mbonimpa), so treat as low confidence"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -572,5 +590,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.4.2"
+  "version": "0.5.0"
 }

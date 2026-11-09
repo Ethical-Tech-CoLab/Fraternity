@@ -1699,3 +1699,18 @@ Added: no independence credit when the same clerk wrote both requests (shared sp
 - **van de Vijver, Uwambayinema & Chuang (2024)**, *Linguistics* 62(1): 79–119, §2: five vowels, each short or long (Myers 2005); i/e and u/o become glides before vowels; a full list of prenasalised consonants, adding **mf, mv, ns** to the pack's inventory.
 
 Copyrighted: summarised, not reproduced. Neither covers forms of address or teknonymy: that gap stays open, pending Kimenyi (1989). rw-kiny bumped; **tests:** 132 pass.
+
+## 2026-11-09 — Teknonymy and name avoidance: Fédry (2009)
+
+**Source:** Fédry, J. (2009), "« Le nom, c'est l'homme »", *L'Homme* 191: 77–106 (peer-reviewed; open access on OpenEdition). Summarised, not reproduced.
+
+**Findings used (rw-kiny 0.5.0):**
+- **para. 49, teknonymy:** naming the parent after a child ("Père de Untel", "Mère de Untel") is very widespread in Africa and usually replaces the birth name in everyday use. The child named is often the eldest son or daughter, elsewhere the last-born. New rule `order-teknonym`, confidence **low**: the paragraph describes Africa in general and does not name Rwanda.
+- **para. 55, name avoidance:** in Africa generally a child does not call a parent by name; in many places, **Rwanda named**, this extends to parents-in-law. New failure mode `child-avoids-parent-name`: a child may not know a parent's own name, and "Mama Belyse" names the child, not the mother (`GATE_EXAMPLES.md`, example 1). Retrieval must not depend on the parent's own name.
+- **para. 63, Rwanda:** one does not say one's own name before the end of physical growth, about 15 (*ntaw'igura agikura*), as education in modesty. The article's evidence is personal communication (Ganza 2002; Mbonimpa), so treat it as weak evidence. New failure mode `child-withholds-own-name`: a minor who gives no name or only a nickname is not evidence of a hidden identity (consistent with `NAME_CHANGE.md`: never use names as credibility evidence).
+
+**Still open:** `order-spoken-given-name` (which name Rwandans use in speech) is not covered by Fédry; it stays `low` on the Wikipedia claim, pending Kimenyi (1989). Teknonymy needs a Rwanda-specific source to rise above `low`. Ntahombaye (1983), *Des noms et des hommes* (Karthala), the standard study of Burundian names, is the candidate for bi-kirundi (needs library access).
+
+**Search note:** Tavily returned HTTP 429 on two of five sequential calls; no other open Rwanda-specific source on forms of address was found (an Instagram post and language-learning pages are not sources).
+
+**Tests:** 132 pass; graph valid.

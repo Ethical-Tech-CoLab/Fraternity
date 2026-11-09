@@ -34,7 +34,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 ### Next session (written 5 Nov 2026, end of session)
 
 **Open gaps (close first, per the user's rule):**
-1. rw-kiny `order-spoken-given-name` and teknonymy ("Mama X"): no primary source yet; waiting on Kimenyi (1989), *Kinyarwanda and Kirundi Names* (user searching NYU Libraries; table of contents or pages on forms of address are enough).
+1. rw-kiny `order-spoken-given-name`: no primary source yet; waiting on Kimenyi (1989), *Kinyarwanda and Kirundi Names* (user searching NYU Libraries; table of contents or pages on forms of address are enough). **9 Nov:** teknonymy and name avoidance partly sourced from Fédry (2009) (rule `order-teknonym` at `low`, Africa-wide; two child failure modes); Kimenyi (1989) would also lift teknonymy to Rwanda-specific. For bi-kirundi: Ntahombaye (1983), *Des noms et des hommes*.
 2. Optional coverage: 16 secondary DRC towns in the RGC capitals list (Likasi, Mbanza-Ngungu, Basankusu, Bulungu …).
 
 **Week 4 items still to do:**
