@@ -525,6 +525,19 @@
       "use": "facts only (names, dates, relations and short locators); no text reproduced"
     },
     {
+      "url": "https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf",
+      "name": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi', Anthropologie et Sociétés 29(1): 167-181 (names addressed to Imana); Cox, Kirundi-English dictionary (Imana: God)",
+      "language": "fr",
+      "datasets": [
+        "morphemes-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
       "url": "https://www.geoboundaries.org/api/current/gbOpen/BDI/ADM2/",
       "name": "geoBoundaries gbOpen BDI ADM1 and ADM2 (2007 boundaries: 18 provinces, 119 communes; source NYU Spatial Data Repository, Stanford University, Map Maker; public domain)",
       "language": "fr",
@@ -532,6 +545,32 @@
         "places-2026.1"
       ],
       "kind": "open geodata",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.jstor.org/stable/30027411",
+      "name": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271",
+      "language": "en",
+      "datasets": [
+        "morphemes-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.matana.de/kirundi.pdf",
+      "name": "Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary",
+      "language": "en",
+      "datasets": [
+        "morphemes-2026.1"
+      ],
+      "kind": "other",
       "licence": "not stated",
       "licence_verified": false,
       "how_verified": null,
@@ -786,7 +825,7 @@
     }
   ],
   "summary": {
-    "sources": 60,
+    "sources": 63,
     "licence_verified": 12,
     "with_concern": 2
   }

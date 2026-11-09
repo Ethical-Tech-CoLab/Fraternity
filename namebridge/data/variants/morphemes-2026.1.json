@@ -1,0 +1,785 @@
+{
+  "dataset_id": "morphemes-2026.1",
+  "version": "0.1.0",
+  "description": "Frequent real names (elements seen 5+ times in the naming profiles) linked to name parts with a sourced meaning. Mechanical segmentation: basis 'generated', never reviewable; these edges explain shared parts and are not variants.",
+  "sources": {
+    "simbananiye": {
+      "name": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi', Anthropologie et Sociétés 29(1): 167-181 (names addressed to Imana); Cox, Kirundi-English dictionary (Imana: God)",
+      "url": "https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf",
+      "locator": "pp. 171-176",
+      "language": "fr"
+    },
+    "kimenyi": {
+      "name": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271",
+      "url": "https://www.jstor.org/stable/30027411",
+      "locator": "pp. 261-262 (nyira-, mukaa-, munya-)",
+      "language": "en"
+    },
+    "cox": {
+      "name": "Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary",
+      "url": "https://www.matana.de/kirundi.pdf",
+      "locator": "umuhūngu 'boy, son'",
+      "language": "en"
+    }
+  },
+  "forms": [
+    {
+      "id": "imana",
+      "text": "imana",
+      "lang": "rw",
+      "type": "Morpheme",
+      "meaning": "God (Imana)"
+    },
+    {
+      "id": "rw-habimana",
+      "text": "Habimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-hakizimana",
+      "text": "Hakizimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-hategekimana",
+      "text": "Hategekimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-inezayimana",
+      "text": "Inezayimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-mbarushimana",
+      "text": "Mbarushimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-mukeshimana",
+      "text": "Mukeshimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-musabyimana",
+      "text": "Musabyimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-mushimiyimana",
+      "text": "Mushimiyimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-nizeyimana",
+      "text": "Nizeyimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-nsengimana",
+      "text": "Nsengimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-nshimiyimana",
+      "text": "Nshimiyimana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-uwimana",
+      "text": "Uwimana",
+      "lang": "rw"
+    },
+    {
+      "id": "imana-rn",
+      "text": "imana",
+      "lang": "rn",
+      "type": "Morpheme",
+      "meaning": "God (Imana)"
+    },
+    {
+      "id": "rn-akimana",
+      "text": "Akimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-bigirimana",
+      "text": "Bigirimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-bizimana",
+      "text": "Bizimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-habonimana",
+      "text": "Habonimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-hakizimana",
+      "text": "Hakizimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-harerimana",
+      "text": "Harerimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-hatungimana",
+      "text": "Hatungimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-havyarimana",
+      "text": "Havyarimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-kubwimana",
+      "text": "Kubwimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-mukeshimana",
+      "text": "Mukeshimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nahimana",
+      "text": "Nahimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-ndagijimana",
+      "text": "Ndagijimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-ndereyimana",
+      "text": "Ndereyimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nduwimana",
+      "text": "Nduwimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nizigiyimana",
+      "text": "Nizigiyimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nkeshimana",
+      "text": "Nkeshimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nkunzimana",
+      "text": "Nkunzimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nsabimana",
+      "text": "Nsabimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nsavyimana",
+      "text": "Nsavyimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nshimirimana",
+      "text": "Nshimirimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-ntakarutimana",
+      "text": "Ntakarutimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-ntakirutimana",
+      "text": "Ntakirutimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-ntunzwenimana",
+      "text": "Ntunzwenimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-nzeyimana",
+      "text": "Nzeyimana",
+      "lang": "rn"
+    },
+    {
+      "id": "rn-uwimana",
+      "text": "Uwimana",
+      "lang": "rn"
+    },
+    {
+      "id": "nyira",
+      "text": "nyira",
+      "lang": "rw",
+      "type": "Morpheme",
+      "meaning": "feminine name-forming element"
+    },
+    {
+      "id": "rw-nyiraneza",
+      "text": "Nyiraneza",
+      "lang": "rw"
+    },
+    {
+      "id": "muka",
+      "text": "muka",
+      "lang": "rw",
+      "type": "Morpheme",
+      "meaning": "feminine name-forming element"
+    },
+    {
+      "id": "rw-mukamana",
+      "text": "Mukamana",
+      "lang": "rw"
+    },
+    {
+      "id": "rw-mukandayisenga",
+      "text": "Mukandayisenga",
+      "lang": "rw"
+    },
+    {
+      "id": "munya",
+      "text": "munya",
+      "lang": "rw",
+      "type": "Morpheme",
+      "meaning": "masculine name-forming element"
+    },
+    {
+      "id": "rw-munyaneza",
+      "text": "Munyaneza",
+      "lang": "rw"
+    },
+    {
+      "id": "hungu",
+      "text": "hungu",
+      "lang": "rn",
+      "type": "Morpheme",
+      "meaning": "boy (umuhungu)"
+    },
+    {
+      "id": "rn-gahungu",
+      "text": "Gahungu",
+      "lang": "rn"
+    }
+  ],
+  "relations": [
+    {
+      "from": "rw-habimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-hakizimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-hategekimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-inezayimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-mbarushimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-mukeshimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-musabyimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-mushimiyimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-nizeyimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-nsengimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-nshimiyimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-uwimana",
+      "to": "imana",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-akimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-bigirimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-bizimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-habonimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-hakizimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-harerimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-hatungimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-havyarimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-kubwimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-mukeshimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nahimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-ndagijimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-ndereyimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nduwimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nizigiyimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nkeshimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nkunzimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nsabimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nsavyimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nshimirimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-ntakarutimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-ntakirutimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-ntunzwenimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-nzeyimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-uwimana",
+      "to": "imana-rn",
+      "relation_type": "contains_morpheme",
+      "source": "simbananiye",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-nyiraneza",
+      "to": "nyira",
+      "relation_type": "contains_morpheme",
+      "source": "kimenyi",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-mukamana",
+      "to": "muka",
+      "relation_type": "contains_morpheme",
+      "source": "kimenyi",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-mukandayisenga",
+      "to": "muka",
+      "relation_type": "contains_morpheme",
+      "source": "kimenyi",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rw-munyaneza",
+      "to": "munya",
+      "relation_type": "contains_morpheme",
+      "source": "kimenyi",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "RW"
+      ],
+      "reversible": false
+    },
+    {
+      "from": "rn-gahungu",
+      "to": "hungu",
+      "relation_type": "contains_morpheme",
+      "source": "cox",
+      "confidence": 0.7,
+      "confidence_basis": "generated",
+      "regions": [
+        "BI"
+      ],
+      "reversible": false
+    }
+  ]
+}

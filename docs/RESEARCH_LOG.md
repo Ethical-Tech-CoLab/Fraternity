@@ -2045,3 +2045,11 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 **Pre-screen by the author (not a review in the `namebridge.review` sense):** 9 results rejected and listed with reasons in `scripts/add_aligned_names.py` (Elisha fr/sw/ny "Il"/"Israeli"; Stephen fr "Joseph", ln "Isalaele"; Barnabas ln "Bayuda" = the Jews; Silas fr "Juifs"; Cornelius ln "Molimo" = spirit; Elijah ln "Elize", ambiguous with Elisha). Full table kept for reviewers: `data/crosspack/reports/bible-alignment-2026-11-09.json`.
 
 **Result (christian-names 0.6.0):** 123 forms added (basis **statistical**, confidence **0.4**, proposed, with counts and similarity in each form's `evidence`), 62 concepts (Joseph, Moïse, David, Abraham, Sara, Isaac, Rebecca, Jacob, Rachel, Benjamin, Noé, Gédéon, Débora, Samson, Élie, Élisée, Salomon, Jonathan, Naomi, Aaron, Étienne, Barnabas, Silas, Lazare, Marthe, Corneille). The cross-pack loader now accepts a per-form basis and confidence (merged forms keep the strongest). **Tests:** 170 pass.
+
+## 2026-11-09 — Week 5: name parts (contains_morpheme)
+
+`scripts/build_morphemes.py` → `data/variants/morphemes-2026.1.json` (the variants loader now also builds Morpheme nodes, with a meaning). Only parts with a **sourced meaning**: *-imana* "God" (Simbananiye 2005; Cox), *nyira-*, *muka-*, *munya-* (Kimenyi 1978), *-hungu* "boy" (Cox). Names: elements seen 5+ times in the CENI, NEC and NISR profiles. **42 edges**: 37 names ending in -imana (Kirundi 25, Kinyarwanda 12), Nyiraneza, Mukamana, Mukandayisenga, Munyaneza, Gahungu; checked by listing. Basis **generated** (mechanical segmentation), so they can never be reviewed; they explain why names look alike (Nshimirimana / Nshimiyimana share -imana) and are not variants.
+
+**Noted, not added:** *Ntakarutimana* and *Ntakirutimana* both occur 5+ times in the CENI profile; they may be forms of one name (ka/ki), but no source says so: a question for a linguist reviewer.
+
+**Corpus count (G9):** name relationships now **299** (attested 168, statistical 89, generated 42). **Tests:** 170 pass.

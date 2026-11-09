@@ -37,18 +37,27 @@ def validate_dataset(data):
 def dataset_to_graph(data):
     did, src = data["dataset_id"], data["sources"]
     forms = {f["id"]: f for f in data["forms"]}
-    nodes = [{"id": f"nf:{did}:{f['id']}", "type": "NameForm", "text": f["text"], "script": "Latn",
-              "languages": [f["lang"]], "dataset_id": did} for f in data["forms"]]
+    def nid(fid):
+        return f"{'mo' if forms[fid].get('type') == 'Morpheme' else 'nf'}:{did}:{fid}"
+
+    nodes = []
+    for f in data["forms"]:
+        node = {"id": nid(f["id"]), "type": f.get("type", "NameForm"), "text": f["text"], "languages": [f["lang"]], "dataset_id": did}
+        if node["type"] == "NameForm":
+            node["script"] = "Latn"
+        if f.get("meaning"):
+            node["meaning"] = f["meaning"]
+        nodes.append(node)
     edges = []
     for r in data["relations"]:
         s = src[r["source"]]
         edge = {"id": f"e:{did}:{r['from']}:{r['relation_type']}:{r['to']}",
-                "from": f"nf:{did}:{r['from']}", "to": f"nf:{did}:{r['to']}", "relation_type": r["relation_type"],
+                "from": nid(r["from"]), "to": nid(r["to"]), "relation_type": r["relation_type"],
                 "source_name": s["name"], "source_url": s["url"], "source_excerpt_or_locator": s["locator"],
                 "source_language": s["language"],
                 "applicable_languages": sorted({forms[r["from"]]["lang"], forms[r["to"]]["lang"]}),
                 "applicable_regions": r["regions"], "confidence": r["confidence"], "confidence_basis": r["confidence_basis"],
-                "reversible": True, "review_status": "proposed", "license": LICENSE, "dataset_id": did}
+                "reversible": r.get("reversible", True), "review_status": "proposed", "license": LICENSE, "dataset_id": did}
         if r.get("note"):
             edge["note"] = r["note"]
         edges.append(edge)

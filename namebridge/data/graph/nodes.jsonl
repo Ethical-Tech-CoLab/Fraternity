@@ -3,6 +3,12 @@
 {"code": "rn", "id": "lang:rn", "type": "Language"}
 {"code": "rw", "id": "lang:rw", "type": "Language"}
 {"code": "swc", "id": "lang:swc", "type": "Language"}
+{"dataset_id": "morphemes-2026.1", "id": "mo:morphemes-2026.1:hungu", "languages": ["rn"], "meaning": "boy (umuhungu)", "text": "hungu", "type": "Morpheme"}
+{"dataset_id": "morphemes-2026.1", "id": "mo:morphemes-2026.1:imana", "languages": ["rw"], "meaning": "God (Imana)", "text": "imana", "type": "Morpheme"}
+{"dataset_id": "morphemes-2026.1", "id": "mo:morphemes-2026.1:imana-rn", "languages": ["rn"], "meaning": "God (Imana)", "text": "imana", "type": "Morpheme"}
+{"dataset_id": "morphemes-2026.1", "id": "mo:morphemes-2026.1:muka", "languages": ["rw"], "meaning": "feminine name-forming element", "text": "muka", "type": "Morpheme"}
+{"dataset_id": "morphemes-2026.1", "id": "mo:morphemes-2026.1:munya", "languages": ["rw"], "meaning": "masculine name-forming element", "text": "munya", "type": "Morpheme"}
+{"dataset_id": "morphemes-2026.1", "id": "mo:morphemes-2026.1:nyira", "languages": ["rw"], "meaning": "feminine name-forming element", "text": "nyira", "type": "Morpheme"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:aharon", "label": "Aaron", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:amos", "label": "Amos", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:avraham", "label": "Abraham", "type": "NameConcept"}
@@ -327,6 +333,48 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:zekharyah:zechariah", "languages": ["en"], "script": "Latn", "text": "Zechariah", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:zekharyah:zekaria", "languages": ["sw"], "script": "Latn", "text": "Zekaria", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:zekharyah:zekariya", "languages": ["ny", "rw"], "script": "Latn", "text": "Zekariya", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-akimana", "languages": ["rn"], "script": "Latn", "text": "Akimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-bigirimana", "languages": ["rn"], "script": "Latn", "text": "Bigirimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-bizimana", "languages": ["rn"], "script": "Latn", "text": "Bizimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-gahungu", "languages": ["rn"], "script": "Latn", "text": "Gahungu", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-habonimana", "languages": ["rn"], "script": "Latn", "text": "Habonimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-hakizimana", "languages": ["rn"], "script": "Latn", "text": "Hakizimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-harerimana", "languages": ["rn"], "script": "Latn", "text": "Harerimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-hatungimana", "languages": ["rn"], "script": "Latn", "text": "Hatungimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-havyarimana", "languages": ["rn"], "script": "Latn", "text": "Havyarimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-kubwimana", "languages": ["rn"], "script": "Latn", "text": "Kubwimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-mukeshimana", "languages": ["rn"], "script": "Latn", "text": "Mukeshimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nahimana", "languages": ["rn"], "script": "Latn", "text": "Nahimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-ndagijimana", "languages": ["rn"], "script": "Latn", "text": "Ndagijimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-ndereyimana", "languages": ["rn"], "script": "Latn", "text": "Ndereyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nduwimana", "languages": ["rn"], "script": "Latn", "text": "Nduwimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nizigiyimana", "languages": ["rn"], "script": "Latn", "text": "Nizigiyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nkeshimana", "languages": ["rn"], "script": "Latn", "text": "Nkeshimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nkunzimana", "languages": ["rn"], "script": "Latn", "text": "Nkunzimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nsabimana", "languages": ["rn"], "script": "Latn", "text": "Nsabimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nsavyimana", "languages": ["rn"], "script": "Latn", "text": "Nsavyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nshimirimana", "languages": ["rn"], "script": "Latn", "text": "Nshimirimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-ntakarutimana", "languages": ["rn"], "script": "Latn", "text": "Ntakarutimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-ntakirutimana", "languages": ["rn"], "script": "Latn", "text": "Ntakirutimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-ntunzwenimana", "languages": ["rn"], "script": "Latn", "text": "Ntunzwenimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-nzeyimana", "languages": ["rn"], "script": "Latn", "text": "Nzeyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rn-uwimana", "languages": ["rn"], "script": "Latn", "text": "Uwimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-habimana", "languages": ["rw"], "script": "Latn", "text": "Habimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-hakizimana", "languages": ["rw"], "script": "Latn", "text": "Hakizimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-hategekimana", "languages": ["rw"], "script": "Latn", "text": "Hategekimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-inezayimana", "languages": ["rw"], "script": "Latn", "text": "Inezayimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-mbarushimana", "languages": ["rw"], "script": "Latn", "text": "Mbarushimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-mukamana", "languages": ["rw"], "script": "Latn", "text": "Mukamana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-mukandayisenga", "languages": ["rw"], "script": "Latn", "text": "Mukandayisenga", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-mukeshimana", "languages": ["rw"], "script": "Latn", "text": "Mukeshimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-munyaneza", "languages": ["rw"], "script": "Latn", "text": "Munyaneza", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-musabyimana", "languages": ["rw"], "script": "Latn", "text": "Musabyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-mushimiyimana", "languages": ["rw"], "script": "Latn", "text": "Mushimiyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-nizeyimana", "languages": ["rw"], "script": "Latn", "text": "Nizeyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-nsengimana", "languages": ["rw"], "script": "Latn", "text": "Nsengimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-nshimiyimana", "languages": ["rw"], "script": "Latn", "text": "Nshimiyimana", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-nyiraneza", "languages": ["rw"], "script": "Latn", "text": "Nyiraneza", "type": "NameForm"}
+{"dataset_id": "morphemes-2026.1", "id": "nf:morphemes-2026.1:rw-uwimana", "languages": ["rw"], "script": "Latn", "text": "Uwimana", "type": "NameForm"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:bisoro-mwaro@pre2025", "level": "commune", "name": "Bisoro", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:bubanza-bubanza@pre2025", "level": "commune", "name": "Bubanza", "period": "pre2025", "type": "Region"}
 {"country": "BI", "dataset_id": "places-2026.1", "id": "region:BI:commune:bubanza@2025-", "level": "commune", "name": "Bubanza", "period": "2025-", "type": "Region"}
