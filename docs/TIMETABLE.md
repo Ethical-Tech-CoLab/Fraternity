@@ -40,12 +40,12 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 
 | # | Item | From | Owner | Note |
 | --- | --- | --- | --- | --- |
-| 1 | Confidence batch 4: Lingala and Congo Swahili entries (about 10) | week 4 | Claude | never started; the profiles took priority |
-| 2 | Kinyarwanda 2014 spelling reform: the letter-level changes (`rw-kiny` `orthography-2014` is `unknown`) | weeks 4–5 | Claude | also feeds week 5's real-pattern variants |
-| 3 | Replace the two flagged third-party sources (dokumen.pub, abisezerano.com) | week 4 | Claude | `data/register/sources.json` |
-| 4 | Non-biblical given names (Claude, Eric, Aline, Désiré …): other-language forms and nicknames (Jeannot) | week 4 | Claude | low priority: mostly written in French |
-| 5 | 16 secondary DRC towns from the RGC capitals list | week 4 | Claude | optional |
-| 6 | Children's pronunciation in Kinyarwanda, Kirundi, Chichewa | week 4 | Claude | only Swahili found (Gangji et al. 2015) |
+| 1 | ~~Confidence batch 4: Lingala and Congo Swahili~~ | week 4 | Claude | ✔ 9 Nov: 3 raised (APiCS writing facts); Swahili orthography and prenasals kept medium (no open grammar) |
+| 2 | Kinyarwanda 2014 spelling reform: the letter-level changes (`rw-kiny` `orthography-2014` is `unknown`) | weeks 4–5 | **user** (download) | order not online; source: Niyomugabo & Uwizeyimana (2017), doi:10.1007/s10993-016-9427-x, via NYU |
+| 3 | ~~Replace the two flagged third-party sources~~ | week 4 | Claude | ✔ 9 Nov: not replaceable online; no edge depends on the Kirundi snippet; Kinyarwanda PDF re-described (Grace Geeks edition) |
+| 4 | ~~Non-biblical given names~~ | week 4 | Claude | ✔ 9 Nov: not added: written in French across the corridor; no open source for other forms |
+| 5 | 16 secondary DRC towns from the RGC capitals list | week 4 | **user** (download) | optional; HDX blocks scripts |
+| 6 | ~~Children's pronunciation in Kinyarwanda, Kirundi, Chichewa~~ | week 4 | Claude | ✔ 9 Nov: none exists (McLeod 2024 index lists only Swahili); varied parameter in the benchmark |
 | 7 | Dzaleka literacy figure: 2017 socio-economic survey microdata, behind a login | week 4 | user (access request) | the benchmark varies the share of names written by ear meanwhile |
 | 8 | Muslim names (Hassan/Hasani, Fatuma/Fatima) | week 4 | — | **blocked** by G5 condition 3 (legal check: religion is sensitive data) |
 | 9 | Week 5: Onomaverse review; real-pattern variants (UN 1533 aliases kept outside the repo; 2014 forms); graph v0.1 release note and tag | week 5 | Claude; tag needs the user | G9 decides the release wording |

@@ -26,8 +26,8 @@ VERIFIED = {  # url prefix -> (licence as stated by the source, how verified)
     "https://www.bible.com/versions/1-kjv": ("public domain", "King James Version text"),
 }
 CONCERNS = {
-    "https://dokumen.pub/": "third-party host of a copyrighted book; used only for a book-list snippet; replace with a publisher or library source",
-    "https://abisezerano.com/": "third-party copy of a copyrighted Bible; used only for names (facts); replace with the Bible Society of Rwanda's edition if a citable one is found",
+    "https://dokumen.pub/": "third-party host of a copyrighted book; used only for a book-list snippet (Matayo, Mariko, Luka, Yohana). Not replaceable online (checked 9 Nov 2026: Cox's dictionary lacks them; bible.com blocks scripts); the same four spellings are attested for Kinyarwanda and Swahili by other sources, so no edge depends on this one. Official source to use when someone can read it: Société Biblique du Burundi, Bibiliya Yera (2015), also in its mobile app",
+    "https://abisezerano.com/": "digital edition of Bibiliya Yera prepared by the volunteer group Grace Geeks (stated on its first page), hosted by a third party; whether the Bible Society of Rwanda authorised it is not verified; used only for names (facts)",
 }
 KIND = [("ebible.org", "religious text"), ("bible", "religious text"), ("biblafrique", "religious text"), ("open.bible", "religious text"),
         ("shepherdsglobal", "religious text"), ("harvestime", "religious text"), ("bibleproject", "religious text"),

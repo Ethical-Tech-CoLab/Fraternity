@@ -115,8 +115,8 @@
       "id": "lingala-open-vowels-unwritten",
       "description": "Lingala has seven vowels (e/ɛ, o/ɔ distinct); the standard spelling writes ɛ and ɔ, but everyday writing uses e and o, and tone is almost never marked. Search forms fold ɛ to e and ɔ to o; the original form is kept",
       "source": "APiCS Online, survey chapter 60, Lingala",
-      "confidence": "medium",
-      "note": "the date of the standard (1976) came only from Wikipedia and was removed"
+      "confidence": "high",
+      "note": "the date of the standard (1976) came only from Wikipedia and was removed. Raised 9 Nov 2026 (batch 4): APiCS survey 60 (Meeuwis, in the Atlas of Pidgin and Creole Language Structures, Oxford University Press) is a peer-reviewed reference that states this as a fact about writing, which meets the writing-attestation policy"
     },
     {
       "id": "lingala-spelling-vacillates",
@@ -128,7 +128,8 @@
       "id": "swahili-orthography",
       "description": "Congo Swahili is written with the standard Swahili alphabet: ch, sh, ny, ng' as single sounds; prenasalised mb, nd, nj, ng, mv, nz. Its regional varieties (Kivu, Katanga, Maniema, Ituri) differ mainly in grammar; spelling differences in names are not documented",
       "source": "Bose (2016), 'Morphosyntactic core features of Kivu Swahili', Afrikanistik-Aegyptologie-Online",
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "Kept medium (9 Nov 2026): the FSI Swahili course is a scan without a text layer, and no other open Swahili grammar was found"
     },
     {
       "id": "r-l-variation",
@@ -246,7 +247,7 @@
         "mv",
         "nz"
       ],
-      "note": "each one unit in Swahili and Lingala. remaining source is a pronunciation-guide website; a grammar would raise it",
+      "note": "each one unit in Swahili and Lingala. remaining source is a pronunciation-guide website; a grammar would raise it. Kept medium (9 Nov 2026): the FSI Swahili course is a scan without a text layer, and no other open Swahili grammar was found",
       "source": "LinguaCommons, Lingala pronunciation guide",
       "confidence": "medium"
     }
@@ -400,9 +401,9 @@
         "/ɛ/"
       ],
       "listener": "any",
-      "note": "not distinguished in writing; merged in Kinshasa speech",
+      "note": "not distinguished in writing; merged in Kinshasa speech. Raised 9 Nov 2026 (batch 4): APiCS survey 60 (Meeuwis, in the Atlas of Pidgin and Creole Language Structures, Oxford University Press) is a peer-reviewed reference that states this as a fact about writing, which meets the writing-attestation policy",
       "source": "APiCS",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "sounds": [
@@ -410,9 +411,9 @@
         "/u/"
       ],
       "listener": "any",
-      "note": "close-mid o written o or u in Lingala",
+      "note": "close-mid o written o or u in Lingala. Raised 9 Nov 2026 (batch 4): APiCS survey 60 (Meeuwis, in the Atlas of Pidgin and Creole Language Structures, Oxford University Press) is a peer-reviewed reference that states this as a fact about writing, which meets the writing-attestation policy",
       "source": "APiCS Online, survey chapter 60, Lingala",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "sounds": [
@@ -531,5 +532,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.9.0"
+  "version": "0.9.1"
 }
