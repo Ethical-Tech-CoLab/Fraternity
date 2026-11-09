@@ -1987,3 +1987,11 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 **Pack changes (rw-kiny 0.12.0):** gendered prefixes → **high** (nyira-, muka- all women, 17/17; munya- all men, 5/5; small sample, agrees with Kimenyi 1978; still generation only, never inference); NEC evidence added to the surname-first order rule; new failure mode `compound-christian-name-split` (vianney, baptiste, bosco, dieu as separate elements).
 
 **Limits:** no birth years (no cohort split), four provinces, candidates (more schooled, engaged); 30% seats reserved for women affect the sex ratio. **Tests:** 141 pass.
+
+## 2026-11-09 — Burundian children's names: search closed, option 1 kept
+
+**User's decision:** try to find real data on Burundian children's names (option 2); if none, keep the low-confidence derived profile (option 1).
+
+**Search (official sites browsed by link, no content searches, to avoid pulling minors' names into the session):** `mineduc.gov.bi` shows "UNDER CONSTRUCTION"; `mesrs.gov.bi` has notices and press texts about the 2026 entrance exam to the schools of excellence, the 2020 national certification exam and the university "poles of excellence", with **no attached lists**. One location search found only a **private per-school lookup service** for exam results, not a public list; not used (DR-1 covers public lists; harvesting minors' records from a lookup interface is excluded).
+
+**Outcome: option 1.** `bi-derived-2026.1` stays `low`, now with a `children_gap` note. In the benchmark, results for **Burundian children** are reported separately and flagged as resting on this derived profile. Adults use `bi-ceni-2026.1`.

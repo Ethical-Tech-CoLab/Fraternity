@@ -545,5 +545,6 @@
     "reading": "Low overlap: the derived profile (names of 2024-2025 newborns) misses the most frequent names of the older population (theophoric -imana and Nda-/Ni- forms). Expected from the generational gap; it confirms the known bias and supports option (ii) for real Burundian frequencies. The aggregator also lists Christian names as surnames (Jean, Eric, Innocent), see bi-kirundi order-aggregators-swap",
     "stored": "only overlap figures and the common names; the aggregator's table is not copied"
   },
-  "superseded_for_adults_by": "bi-ceni-2026.1 (real adult frequencies, 9 Nov 2026); keep for recently born children only"
+  "superseded_for_adults_by": "bi-ceni-2026.1 (real adult frequencies, 9 Nov 2026); keep for recently born children only",
+  "children_gap": "No real data on Burundian children's names was found (searched 9 Nov 2026): the Ministry of Education site (mineduc.gov.bi) is under construction; the Ministry of Higher Education and Research (mesrs.gov.bi) publishes only press texts about exam results, without lists; the only online source of exam results is a private per-school lookup service, not a public list, and was not used (DR-1 covers public lists only). Benchmark results for Burundian children are therefore reported separately and flagged as resting on this low-confidence derived profile (user's decision, option 1)"
 }
