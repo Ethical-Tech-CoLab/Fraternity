@@ -53,15 +53,15 @@
       "practice": "cultural",
       "source": "Wikipedia, Rwandan names, 'Address in spoken life'",
       "confidence": "low",
-      "note": "Wikipedia only; needs a primary source. Checked 5 Nov 2026: official, UN and press sources, and Kimenyi (1978), which does not cover forms of address, teknonymy or Christian names. Checked 9 Nov 2026: Fédry (2009) covers teknonymy and name avoidance (order-teknonym, failure modes child-avoids-parent-name and child-withholds-own-name) but not which name is used in speech. Next candidate: Kimenyi (1989), Kinyarwanda and Kirundi Names"
+      "note": "Wikipedia only; needs a primary source. Checked 5 Nov 2026: official, UN and press sources, and Kimenyi (1978), which does not cover forms of address, teknonymy or Christian names. Checked 9 Nov 2026: Fédry (2009) covers teknonymy and name avoidance (order-teknonym, failure modes child-avoids-parent-name and child-withholds-own-name) but not which name is used in speech. Next candidate: Kimenyi (1989), Kinyarwanda and Kirundi Names. Checked 9 Nov 2026: Adekunle (2007) covers in-law address and the naming ceremony but not everyday use of the given name vs the Kinyarwanda name"
     },
     {
       "id": "order-teknonym",
-      "description": "A parent may be called 'Mother of X' / 'Father of X' after a child (teknonymy); where used it usually replaces the birth name in everyday address, often after the eldest or the last-born. BUT 'mama'/'papa' are also plain respectful address for any adult (like 'sir/madam'), so 'Mama X' may carry the person's own name: see failure mode mama-x-two-readings",
+      "description": "A parent may be called 'father/mother of X' after a child (teknonymy). In Rwanda this is documented for in-laws: a married woman may address her parents-in-law as 'the father or mother of so-and-so', using the name of their YOUNGEST child, or by praise names, or by a new name she creates. 'mama'/'papa' are also plain respectful address for any adult, so 'Mama X' may carry the person's own name: see mama-x-two-readings",
       "practice": "cultural",
-      "source": "Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 49: renaming of the parent by the child's name ('Père de Untel', 'Mère de Untel') is 'très répandu en Afrique' and usually supplants the birth name; often the eldest son or daughter, elsewhere the last child; Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term; the user's first-hand observation in the region (9 Nov 2026): 'mama' and 'papa' are used like 'senhora'/'senhor' (madam/sir) in Portuguese",
-      "confidence": "low",
-      "note": "The source describes Africa in general and does not name Rwanda for this practice; low until a Rwanda-specific source (Kimenyi 1989). The Wikipedia example 'Mama Teta' is not used as a source"
+      "source": "Adekunle, J. O. (2007), Culture and Customs of Rwanda, Westport, CT: Greenwood Press, chapter 'Gender Roles, Marriage, and Family' (taboo passage, around pp. 103-105; notes 19 and 22 on p. 114); read 9 Nov 2026 from an online copy (https://e-ihuriro.rcsprwanda.org/wp-content/uploads/2023/07/Philosophy-Ethics-and-Rwanda-culture_-Julius-O.-Adekunle_Culture-and-Customs-of-Rwanda.pdf): 'a woman is able to address her parents-in-law as \"the father or mother of so-and-so,\" using the name of the youngest child, or she can use the praise names of the individual' (citing Kimenyi 1989, Kinyarwanda and Kirundi Names, pp. 106-108); Fédry, J. (2009), '\"Le nom, c'est l'homme\"', L'Homme 191: 77-106 (https://journals.openedition.org/lhomme/22195), read 9 Nov 2026, para. 49: renaming of the parent by the child's name ('Père de Untel', 'Mère de Untel') is 'très répandu en Afrique' and usually supplants the birth name; often the eldest son or daughter, elsewhere the last child; Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term; the user's first-hand observation in the region (9 Nov 2026): 'mama' and 'papa' are used like 'senhora'/'senhor' (madam/sir) in Portuguese",
+      "confidence": "medium",
+      "note": "Rwanda-specific for in-laws (Adekunle 2007, from Kimenyi 1989); its use outside in-law address in Rwanda rests on Fédry (2009, Africa-wide) and the user's observation. Kimenyi (1989) pp. 106-108 would confirm directly"
     }
   ],
   "particles_and_morphemes": [
@@ -533,6 +533,11 @@
       "id": "mama-x-two-readings",
       "description": "'Mama X' / 'Papa X' is ambiguous: X may be the person's OWN name (respectful address, like 'Mrs. X') or the name of their CHILD (teknonym, 'X's mother'). Search both readings: X as a given name of the sought adult, and X as a child of the sought adult. 'Mama'/'Papa' alone does not show that the person is anyone's parent",
       "source": "the user's first-hand observation in the region (9 Nov 2026): 'mama' and 'papa' are used like 'senhora'/'senhor' (madam/sir) in Portuguese (field observation, not a published source; a Rwanda-specific publication, e.g. Kimenyi 1989, would let it be cited); Swahili evidence: Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term"
+    },
+    {
+      "id": "wife-avoids-husband-name",
+      "description": "Traditionally a married Rwandan woman does not say the names of her husband or her parents-in-law (taboo gutsinda), and does not call her husband's brothers, sisters or cousins by their first names. A wife searching for a missing husband, or giving his relatives' names, may use a teknonym, a praise name or a kin term, or ask someone else to say the name. Intake must accept that, and the reporter's reluctance is not a sign of a false claim. Many such taboos are weaker today",
+      "source": "Adekunle, J. O. (2007), Culture and Customs of Rwanda, Westport, CT: Greenwood Press, chapter 'Gender Roles, Marriage, and Family' (taboo passage, around pp. 103-105; notes 19 and 22 on p. 114); read 9 Nov 2026 from an online copy (https://e-ihuriro.rcsprwanda.org/wp-content/uploads/2023/07/Philosophy-Ethics-and-Rwanda-culture_-Julius-O.-Adekunle_Culture-and-Customs-of-Rwanda.pdf): a wife 'was prohibited from calling her husband's brothers, sisters, or cousins by their first names'; 'Under no circumstances would a woman call her parents-in-law by name. This taboo is called gutsinda (when women are not allowed to name their husbands)'; 'many aspects of the traditional culture, especially the taboos on women, are no longer applicable' (section taken from Kimenyi, A. (1978), 'An Ethnolinguistic Analysis of Kinyarwanda Kinship Terms', Sixth Annual Meeting of the California Linguistic Association)"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -592,5 +597,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.5.2"
+  "version": "0.6.0"
 }

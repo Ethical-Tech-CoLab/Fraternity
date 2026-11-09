@@ -28,8 +28,9 @@
       "id": "structure-inheritance-disputed",
       "description": "Whether children share the father's name is disputed: the patronymic account above against the Rwanda-Rundi practice of a name chosen per child. The benchmark models it as the varied parameter p (BENCHMARK_PROTOCOL.md §2.2). Proximity to Rwanda is not evidence (CONCEPT-IDEA.md §2.3)",
       "practice": "cultural",
-      "source": "Bigangara 1982 via University of Burundi (above), against Duchaj & Ntihirageza 2009; CONCEPT-IDEA.md §2.3",
-      "confidence": "disputed"
+      "source": "Bigangara 1982 via University of Burundi (above), against Duchaj & Ntihirageza 2009; CONCEPT-IDEA.md §2.3; Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, p. 171: the traditional system, in which each person has a name different from the father's, 'cohabite avec le système patronymique introduit par la colonisation et le christianisme'; citing Rodegem (1965): missionaries' attempt to impose the father's name on children 'fut un fiasco'",
+      "confidence": "disputed",
+      "note": "Simbananiye (2005) says both systems coexist, which supports keeping the varied parameter p rather than choosing one"
     },
     {
       "id": "structure-civil-code",
@@ -37,6 +38,20 @@
       "practice": "legal_document",
       "source": "Burundi, Code des personnes et de la famille (1993), Titre II 'Du nom', arts 11-14 (http://jafbase.fr/docAfrique/Burundi/Burundi-Code-civil.pdf), read 5 Nov 2026; BENCHMARK_PROTOCOL.md [B4]",
       "confidence": "high"
+    },
+    {
+      "id": "structure-mwene-filiation",
+      "description": "Descent is expressed with mwene: 'Gahungu mwene Bucumi' = Gahungu, son of Bucumi. In a name given as 'X mwene Y', Y is the father's name and mwene is not part of either name",
+      "practice": "cultural",
+      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, p. 171",
+      "confidence": "medium"
+    },
+    {
+      "id": "structure-birth-order-names",
+      "description": "Some names are set by birth order or circumstance: Nyandwi, Minani, Nyawenda, Bucumi (7th to 10th child), Karenzo (11th); twins Bukuru (elder) and Butoyi (younger); the child after twins Nkurikiye, Ciza or Congera. These names are common, so they distinguish people poorly; they are not, alone, evidence of birth order or kinship, and a father named Nyandwi cannot pass the name on meaningfully (one reason the patronymic system fits badly)",
+      "practice": "cultural",
+      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, pp. 171-172",
+      "confidence": "medium"
     }
   ],
   "order_rules": [
@@ -583,6 +598,16 @@
       "id": "origin-country-not-naming-language",
       "description": "Country of origin does not fix the naming language. Burundi has long-settled Kinyarwanda-speaking communities (refugees of 1959-64 and 1972-73, in Bujumbura, Bubanza, Muyinga, Ruyigi) and Swahili-speaking communities from eastern Congo in Bujumbura and the Rusizi plain; a person from Burundi may carry names spelled by Kinyarwanda or Swahili conventions. Try the rw-kiny and cd-swc-ln packs as well as bi-kirundi",
       "source": "Niyonkuru, L. (1987), 'Loan-words in Kirundi: a preliminary study', African Study Monographs 7: 81-87 (Kyoto University; copy via the user, read in full 9 Nov 2026), pp. 81-82 and 84: Kinyarwanda speakers arrived as refugees in 1959-1964 and 1972-1973 (Bujumbura, Bubanza, Muyinga, Ruyigi); 'Congolese' were 57.3% of the urban and semi-urban population of Usumbura in the 1950s and spoke Kingwana (Congo Swahili); immigrant groups from eastern Zaire along Lake Tanganyika and the Rusizi valley. Group names in the source are not carried into the pack (DR-1.7)"
+    },
+    {
+      "id": "mwene-read-as-name",
+      "description": "'X mwene Y' parsed as a three-part name. Split on mwene: X is the person, Y the father",
+      "source": "structure-mwene-filiation"
+    },
+    {
+      "id": "name-means-no-name",
+      "description": "Some real names mean 'nothing' or 'without a name' (Ntazina 'no name', Busabusa 'nothing', Ntakije 'nothing comes'), given to hide a child from misfortune. They must not be treated as a missing or placeholder name",
+      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, p. 171"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -642,5 +667,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.7.0"
+  "version": "0.8.0"
 }

@@ -1762,3 +1762,20 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 **Audit, still open (for the user to decide):** about 16 pack entries still list Wikipedia **alongside** another source (e.g. Kirundi transliteration with the Comparative Grammar; Lingala spelling with APiCS; the Chichewa r/l rule with Wikipedia and Wiktionary). Per the "Wikipedia is not a source" rule they should cite only the non-wiki source, or be marked `low` where Wikipedia is the only real support (the Chichewa entries look like that case).
 
 **Tests:** 133 pass; graph valid.
+
+## 2026-11-09 — Library search by Tavily (the user found nothing at NYU): Adekunle (2007), Simbananiye (2005)
+
+**Adekunle, J. O. (2007), *Culture and Customs of Rwanda* (Greenwood)**, chapter "Gender Roles, Marriage, and Family", read from an online copy. Its taboo section is "taken from" Kimenyi (1978), "An Ethnolinguistic Analysis of Kinyarwanda Kinship Terms" (note 19), and its in-law address passage cites **Kimenyi (1989), pp. 106–108** (note 22), so it is a route to Kimenyi's own findings:
+- A married woman may address her parents-in-law as "the father or mother of so-and-so", **using the name of the youngest child**, or by praise names, or by a name she creates. `order-teknonym` raised to **medium** (Rwanda-specific for in-laws).
+- **gutsinda:** a wife traditionally does not say her husband's or parents-in-law's names, nor her husband's siblings' and cousins' first names; "many aspects of the traditional culture, especially the taboos on women, are no longer applicable". New failure mode `wife-avoids-husband-name` (rw-kiny 0.6.0): a wife reporting a missing husband may not say his name; that is not a sign of a false claim.
+- The naming ceremony is dated to the eighth day here, against the seventh in Kimenyi (1978, p. 258). Not used; noted as a discrepancy.
+- Not covered: everyday use of the given name vs the Kinyarwanda name (`order-spoken-given-name` stays `low`).
+
+**Simbananiye, L. (2005), "Les noms de personnes au Burundi : un support du lien social", *Anthropologie et Sociétés* 29(1): 167–181** (peer-reviewed, open on Érudit; it draws on Ntahombaye 1983 and Rodegem 1965). Read in full. Nothing on forms of address. Used (bi-kirundi 0.8.0):
+- p. 171: the traditional system (a name different from the father's) **coexists** with the patronymic system brought by colonisation and Christianity; missionaries' attempt to impose the father's name was "un fiasco" (Rodegem 1965). Added to `structure-inheritance-disputed`; it supports keeping the varied parameter p.
+- p. 171: **mwene** marks descent ("Gahungu mwene Bucumi" = Gahungu, son of Bucumi). New structure and failure mode `mwene-read-as-name`.
+- pp. 171–172: birth-order and twin names (Nyandwi, Minani, Nyawenda, Bucumi, Karenzo; Bukuru/Butoyi; Nkurikiye, Ciza, Congera). Common names; not evidence of kinship on their own.
+- p. 171: protective names meaning "nothing" or "no name" (Ntazina, Busabusa, Ntakije): failure mode `name-means-no-name`.
+- Not used: the article's mentions of ethnic conflict (DR-1.7).
+
+**Ntahombaye (1983)** itself is not online; the AfricaMuseum (Tervuren) library holds it (call number NTAHOMBAYE-J62). **Tests:** 133 pass; graph valid.
