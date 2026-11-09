@@ -60,7 +60,7 @@
       "id": "order-surname-first-uppercase",
       "description": "In Kinyarwanda and French publications the Kinyarwanda name may come first, often in capitals (MUGISHA Jean); the capitals vary even within one publication",
       "practice": "database",
-      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'surnames before given names … also true elsewhere, e.g. in Rwanda – in Kinyarwanda as well as French publications'; 'often the surname is given (helpfully) all upper-case, though sometimes even that varies'; Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, art. 36(2): 'In administrative documents, the family name is placed first, otherwise, the document becomes invalid'",
+      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'surnames before given names … also true elsewhere, e.g. in Rwanda – in Kinyarwanda as well as French publications'; 'often the surname is given (helpfully) all upper-case, though sometimes even that varies'; Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, art. 36(2): 'In administrative documents, the family name is placed first, otherwise, the document becomes invalid'; NameBridge profile rw-nec-2026.1, from NEC Rwanda final district-council candidate lists (31 Oct 2026; 1,163 adults, four provinces): the most frequent first elements are Kinyarwanda names (nshimiyimana, uwamahoro, ingabire), the most frequent last elements Christian names (emmanuel, claude, rose)",
       "confidence": "high",
       "note": "Order (surname first) is now a legal rule for administrative documents (2024); the use of capitals comes from library practice (ALCASA) and varies"
     },
@@ -91,9 +91,9 @@
       ],
       "description": "Name-initial elements described as feminine. Used ONLY to keep generated names consistent with generated sex; never to infer anyone's sex (BENCHMARK_PROTOCOL.md C12)",
       "use": "generation_only",
-      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes",
-      "confidence": "medium",
-      "note": "None of the 40 most common names of 2024-2025 newborns uses these prefixes, and most of those names are given to both sexes (NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1): the prefixes mark older or traditional names, which matters when generating adults of the refugees' generation"
+      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes; NameBridge profile rw-nec-2026.1, from NEC Rwanda final district-council candidate lists (31 Oct 2026; 1,163 adults, four provinces): among first-position names seen 5+ times, those beginning nyira- and muka- are all borne by women (17 of 17)",
+      "confidence": "high",
+      "note": "None of the 40 most common names of 2024-2025 newborns uses these prefixes, and most of those names are given to both sexes (NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1): the prefixes mark older or traditional names, which matters when generating adults of the refugees' generation. Raised 9 Nov 2026: real adult data agree with Kimenyi (1978), on a small sample; still generation only, never inference"
     },
     {
       "id": "prefixes-masculine",
@@ -107,9 +107,9 @@
       ],
       "description": "Name-initial elements described as masculine. Same restriction: generation only, never inference",
       "use": "generation_only",
-      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes",
-      "confidence": "medium",
-      "note": "None of the 40 most common names of 2024-2025 newborns uses these prefixes, and most of those names are given to both sexes (NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1): the prefixes mark older or traditional names, which matters when generating adults of the refugees' generation"
+      "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes; NameBridge profile rw-nec-2026.1, from NEC Rwanda final district-council candidate lists (31 Oct 2026; 1,163 adults, four provinces): first-position names beginning munya- are all borne by men (5 of 5)",
+      "confidence": "high",
+      "note": "None of the 40 most common names of 2024-2025 newborns uses these prefixes, and most of those names are given to both sexes (NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1): the prefixes mark older or traditional names, which matters when generating adults of the refugees' generation. Raised 9 Nov 2026 on real adult data (small sample); still generation only, never inference"
     }
   ],
   "transliteration_rules": [
@@ -581,6 +581,11 @@
       "id": "kinyarwanda-names-unisex",
       "description": "Most common Kinyarwanda names are given to both girls and boys (Ishimwe, Irakoze, Igiraneza, Iradukunda, Ineza ...). Sex must never be inferred from a Kinyarwanda name, and a sex mismatch between two records is weak evidence only if the record itself is wrong",
       "source": "NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1"
+    },
+    {
+      "id": "compound-christian-name-split",
+      "description": "Compound Christian names are written as separate words, so their parts appear as separate elements: Jean-Marie Vianney, Jean Baptiste, Jean Bosco, Jean de Dieu ('vianney', 'baptiste', 'bosco' and 'dieu' are among the most frequent last elements). Compare joined, hyphenated and split forms, and do not treat 'Vianney' alone as a different person from 'Jean-Marie Vianney' without other evidence",
+      "source": "NameBridge profile rw-nec-2026.1, from NEC Rwanda final district-council candidate lists (31 Oct 2026; 1,163 adults, four provinces)"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -640,5 +645,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.11.0"
+  "version": "0.12.0"
 }

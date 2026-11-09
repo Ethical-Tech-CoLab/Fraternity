@@ -1,0 +1,875 @@
+{
+  "profile_id": "rw-nec-2026.1",
+  "version": "0.1.0",
+  "origin": "RW",
+  "confidence": "high",
+  "method": "Built from NEC final district-council candidate lists (31 Oct 2026) under DATA_RULES DR-1.2: text read in memory, no row printed, district and seat category not kept per person, only elements seen 5+ times; raw PDFs deleted in the same session (9 Nov 2026). Script: scripts/build_profile_nec.py",
+  "sources": [
+    {
+      "name": "National Electoral Commission (NEC) Rwanda, Urutonde ndakuka rw'abakandida ku mwanya w'umujyanama mu nama njyanama y'Akarere, Amajyaruguru",
+      "url": "https://www.nec.gov.rw/fileadmin/user_upload/NEC/News_Images/URUTONDE_NDAKUKA_RW_ABAKANDIDA_AMAJYARUGURU.pdf",
+      "sha256_16": "feef5927e6121bd1"
+    },
+    {
+      "name": "National Electoral Commission (NEC) Rwanda, Urutonde ndakuka rw'abakandida ku mwanya w'umujyanama mu nama njyanama y'Akarere, Amajyepfo",
+      "url": "https://www.nec.gov.rw/fileadmin/user_upload/NEC/News_Images/URUTONDE_NDAKUKA_RW_ABAKANDIDA_AMAJYEPFO.pdf",
+      "sha256_16": "b3473659bcb3b7e3"
+    },
+    {
+      "name": "National Electoral Commission (NEC) Rwanda, Urutonde ndakuka rw'abakandida ku mwanya w'umujyanama mu nama njyanama y'Akarere, Iburasirazuba",
+      "url": "https://www.nec.gov.rw/fileadmin/user_upload/NEC/News_Images/URUTONDE_NDAKUKA_RW_ABAKANDIDA_IBURASIRAZUBA.pdf",
+      "sha256_16": "3344b83ab7e2f268"
+    },
+    {
+      "name": "National Electoral Commission (NEC) Rwanda, Urutonde ndakuka rw'abakandida ku mwanya w'umujyanama mu nama njyanama y'Akarere, Iburengerazuba",
+      "url": "https://www.nec.gov.rw/fileadmin/user_upload/NEC/News_Images/URUTONDE_NDAKUKA_RW_ABAKANDIDA_IBURENGERAZUBA.pdf",
+      "sha256_16": "f793999d0bd94479"
+    }
+  ],
+  "population_note": "Adult candidates for district councils in four provinces (Kigali not included); no birth dates in the source, so no cohort breakdown. Candidates are more schooled and engaged than average; 30% seats are reserved for women",
+  "structure": {
+    "rows_parsed": 1163,
+    "rows_rejected_layout": 0,
+    "rows_rejected_malformed": 2,
+    "sex": {
+      "F": 533,
+      "M": 630
+    },
+    "names_per_person": {
+      "2": 892,
+      "3": 231,
+      "4": 35,
+      "5": 5
+    },
+    "by_province": {
+      "amajyaruguru": 240,
+      "amajyepfo": 338,
+      "iburasirazuba": 317,
+      "iburengerazuba": 268
+    }
+  },
+  "elements": {
+    "first_position": [
+      {
+        "element": "nshimiyimana",
+        "count": 15
+      },
+      {
+        "element": "uwamahoro",
+        "count": 14
+      },
+      {
+        "element": "ingabire",
+        "count": 14
+      },
+      {
+        "element": "uwera",
+        "count": 10
+      },
+      {
+        "element": "kayitesi",
+        "count": 9
+      },
+      {
+        "element": "umuhoza",
+        "count": 8
+      },
+      {
+        "element": "hakizimana",
+        "count": 8
+      },
+      {
+        "element": "habimana",
+        "count": 8
+      },
+      {
+        "element": "uwimana",
+        "count": 8
+      },
+      {
+        "element": "uwanyirigira",
+        "count": 7
+      },
+      {
+        "element": "mukeshimana",
+        "count": 7
+      },
+      {
+        "element": "nyiraneza",
+        "count": 7
+      },
+      {
+        "element": "ishimwe",
+        "count": 7
+      },
+      {
+        "element": "sibomana",
+        "count": 7
+      },
+      {
+        "element": "hategekimana",
+        "count": 7
+      },
+      {
+        "element": "murekatete",
+        "count": 7
+      },
+      {
+        "element": "byiringiro",
+        "count": 6
+      },
+      {
+        "element": "ndayambaje",
+        "count": 6
+      },
+      {
+        "element": "uwamariya",
+        "count": 6
+      },
+      {
+        "element": "tuyisenge",
+        "count": 6
+      },
+      {
+        "element": "byukusenge",
+        "count": 5
+      },
+      {
+        "element": "mukandayisenga",
+        "count": 5
+      },
+      {
+        "element": "nsengimana",
+        "count": 5
+      },
+      {
+        "element": "nirere",
+        "count": 5
+      },
+      {
+        "element": "habiyaremye",
+        "count": 5
+      },
+      {
+        "element": "nizeyimana",
+        "count": 5
+      },
+      {
+        "element": "mbarushimana",
+        "count": 5
+      },
+      {
+        "element": "mushimiyimana",
+        "count": 5
+      },
+      {
+        "element": "nsengiyumva",
+        "count": 5
+      },
+      {
+        "element": "tuyishime",
+        "count": 5
+      },
+      {
+        "element": "musabyimana",
+        "count": 5
+      },
+      {
+        "element": "mukamana",
+        "count": 5
+      },
+      {
+        "element": "munyaneza",
+        "count": 5
+      }
+    ],
+    "middle_position": [
+      {
+        "element": "jean",
+        "count": 105
+      },
+      {
+        "element": "marie",
+        "count": 69
+      },
+      {
+        "element": "de",
+        "count": 18
+      },
+      {
+        "element": "jeanne",
+        "count": 5
+      }
+    ],
+    "last_position": [
+      {
+        "element": "emmanuel",
+        "count": 29
+      },
+      {
+        "element": "vianney",
+        "count": 15
+      },
+      {
+        "element": "claude",
+        "count": 15
+      },
+      {
+        "element": "rose",
+        "count": 15
+      },
+      {
+        "element": "pierre",
+        "count": 14
+      },
+      {
+        "element": "dieu",
+        "count": 12
+      },
+      {
+        "element": "paul",
+        "count": 12
+      },
+      {
+        "element": "chantal",
+        "count": 12
+      },
+      {
+        "element": "innocent",
+        "count": 11
+      },
+      {
+        "element": "diane",
+        "count": 10
+      },
+      {
+        "element": "claudine",
+        "count": 10
+      },
+      {
+        "element": "baptiste",
+        "count": 9
+      },
+      {
+        "element": "eric",
+        "count": 9
+      },
+      {
+        "element": "bosco",
+        "count": 8
+      },
+      {
+        "element": "felix",
+        "count": 8
+      },
+      {
+        "element": "jacqueline",
+        "count": 8
+      },
+      {
+        "element": "pacifique",
+        "count": 7
+      },
+      {
+        "element": "aline",
+        "count": 7
+      },
+      {
+        "element": "christine",
+        "count": 7
+      },
+      {
+        "element": "clementine",
+        "count": 7
+      },
+      {
+        "element": "gerard",
+        "count": 7
+      },
+      {
+        "element": "damascene",
+        "count": 7
+      },
+      {
+        "element": "alice",
+        "count": 7
+      },
+      {
+        "element": "florence",
+        "count": 7
+      },
+      {
+        "element": "jeanne",
+        "count": 7
+      },
+      {
+        "element": "solange",
+        "count": 7
+      },
+      {
+        "element": "angelique",
+        "count": 7
+      },
+      {
+        "element": "olivier",
+        "count": 7
+      },
+      {
+        "element": "vestine",
+        "count": 6
+      },
+      {
+        "element": "jeannette",
+        "count": 6
+      },
+      {
+        "element": "alphonsine",
+        "count": 6
+      },
+      {
+        "element": "alexis",
+        "count": 6
+      },
+      {
+        "element": "anastase",
+        "count": 6
+      },
+      {
+        "element": "samuel",
+        "count": 6
+      },
+      {
+        "element": "david",
+        "count": 6
+      },
+      {
+        "element": "grace",
+        "count": 6
+      },
+      {
+        "element": "vincent",
+        "count": 6
+      },
+      {
+        "element": "mediatrice",
+        "count": 6
+      },
+      {
+        "element": "d'amour",
+        "count": 6
+      },
+      {
+        "element": "charles",
+        "count": 6
+      },
+      {
+        "element": "delphine",
+        "count": 5
+      },
+      {
+        "element": "eugenie",
+        "count": 5
+      },
+      {
+        "element": "marie",
+        "count": 5
+      },
+      {
+        "element": "janvier",
+        "count": 5
+      },
+      {
+        "element": "francoise",
+        "count": 5
+      },
+      {
+        "element": "odette",
+        "count": 5
+      },
+      {
+        "element": "theogene",
+        "count": 5
+      },
+      {
+        "element": "peter",
+        "count": 5
+      },
+      {
+        "element": "faustin",
+        "count": 5
+      },
+      {
+        "element": "pascal",
+        "count": 5
+      },
+      {
+        "element": "francine",
+        "count": 5
+      },
+      {
+        "element": "immaculée",
+        "count": 5
+      },
+      {
+        "element": "pauline",
+        "count": 5
+      },
+      {
+        "element": "gilbert",
+        "count": 5
+      },
+      {
+        "element": "francois",
+        "count": 5
+      },
+      {
+        "element": "josephine",
+        "count": 5
+      },
+      {
+        "element": "patrick",
+        "count": 5
+      },
+      {
+        "element": "fred",
+        "count": 5
+      },
+      {
+        "element": "louise",
+        "count": 5
+      }
+    ]
+  },
+  "elements_by_sex": {
+    "first_position": [
+      {
+        "element": "nshimiyimana",
+        "sex": "M",
+        "count": 15
+      },
+      {
+        "element": "ingabire",
+        "sex": "F",
+        "count": 14
+      },
+      {
+        "element": "uwamahoro",
+        "sex": "F",
+        "count": 12
+      },
+      {
+        "element": "uwera",
+        "sex": "F",
+        "count": 10
+      },
+      {
+        "element": "kayitesi",
+        "sex": "F",
+        "count": 9
+      },
+      {
+        "element": "hakizimana",
+        "sex": "M",
+        "count": 8
+      },
+      {
+        "element": "habimana",
+        "sex": "M",
+        "count": 8
+      },
+      {
+        "element": "uwanyirigira",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "umuhoza",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "mukeshimana",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "nyiraneza",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "ishimwe",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "sibomana",
+        "sex": "M",
+        "count": 7
+      },
+      {
+        "element": "hategekimana",
+        "sex": "M",
+        "count": 7
+      },
+      {
+        "element": "murekatete",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "byiringiro",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "ndayambaje",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "uwamariya",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "uwimana",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "mukandayisenga",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "nsengimana",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "nirere",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "habiyaremye",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "nizeyimana",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "tuyishime",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "mukamana",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "munyaneza",
+        "sex": "M",
+        "count": 5
+      }
+    ],
+    "last_position": [
+      {
+        "element": "emmanuel",
+        "sex": "M",
+        "count": 29
+      },
+      {
+        "element": "claude",
+        "sex": "M",
+        "count": 15
+      },
+      {
+        "element": "rose",
+        "sex": "F",
+        "count": 15
+      },
+      {
+        "element": "vianney",
+        "sex": "M",
+        "count": 14
+      },
+      {
+        "element": "pierre",
+        "sex": "M",
+        "count": 14
+      },
+      {
+        "element": "dieu",
+        "sex": "M",
+        "count": 12
+      },
+      {
+        "element": "paul",
+        "sex": "M",
+        "count": 12
+      },
+      {
+        "element": "chantal",
+        "sex": "F",
+        "count": 12
+      },
+      {
+        "element": "innocent",
+        "sex": "M",
+        "count": 11
+      },
+      {
+        "element": "diane",
+        "sex": "F",
+        "count": 10
+      },
+      {
+        "element": "claudine",
+        "sex": "F",
+        "count": 10
+      },
+      {
+        "element": "baptiste",
+        "sex": "M",
+        "count": 9
+      },
+      {
+        "element": "eric",
+        "sex": "M",
+        "count": 9
+      },
+      {
+        "element": "bosco",
+        "sex": "M",
+        "count": 8
+      },
+      {
+        "element": "felix",
+        "sex": "M",
+        "count": 8
+      },
+      {
+        "element": "jacqueline",
+        "sex": "F",
+        "count": 8
+      },
+      {
+        "element": "aline",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "christine",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "clementine",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "gerard",
+        "sex": "M",
+        "count": 7
+      },
+      {
+        "element": "damascene",
+        "sex": "M",
+        "count": 7
+      },
+      {
+        "element": "alice",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "florence",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "jeanne",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "solange",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "angelique",
+        "sex": "F",
+        "count": 7
+      },
+      {
+        "element": "olivier",
+        "sex": "M",
+        "count": 7
+      },
+      {
+        "element": "vestine",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "jeannette",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "alphonsine",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "alexis",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "anastase",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "samuel",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "pacifique",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "david",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "grace",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "vincent",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "mediatrice",
+        "sex": "F",
+        "count": 6
+      },
+      {
+        "element": "d'amour",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "charles",
+        "sex": "M",
+        "count": 6
+      },
+      {
+        "element": "delphine",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "eugenie",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "janvier",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "francoise",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "odette",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "theogene",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "peter",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "faustin",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "pascal",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "francine",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "immaculée",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "pauline",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "gilbert",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "francois",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "josephine",
+        "sex": "F",
+        "count": 5
+      },
+      {
+        "element": "patrick",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "fred",
+        "sex": "M",
+        "count": 5
+      },
+      {
+        "element": "louise",
+        "sex": "F",
+        "count": 5
+      }
+    ]
+  },
+  "never": "No ethnicity, clan or religion field or pattern (the source has none; C12)"
+}

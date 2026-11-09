@@ -1973,3 +1973,17 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 **Incident addendum:** while locating the files, a web search returned snippets of these lists, including the ethnicity column, into the session (search engines index the PDF text). Same public data; noted under the DR-5 entry's lesson: **no content searches on lists that hold sensitive columns**; locate such files by their known URL pattern instead.
 
 **Week 4 item 4 is complete:** DRC (published aggregates), Rwanda (NISR published tables, newborns), Burundi (CENI, adults; derived profile for children). **Tests:** 141 pass.
+
+## 2026-11-09 — Rwanda adult naming profile from NEC lists (raw, deleted same session)
+
+**User's request:** do for Rwanda what was done for Burundi, to cover the refugees' generation (the NISR profile covers only newborns).
+
+**Source:** National Electoral Commission (NEC), final lists of district-council candidates, published 31 Oct 2026, one PDF per province (North, South, East, West; Kigali not in this set). Located from the NEC news page by link, without content searches. Columns: district, seat category (Rusange / 30% women's seats), names, sex, approval mark; **no ethnicity and no date of birth**. Only headers and anonymised shapes were inspected before parsing.
+
+**Procedure:** `scripts/build_profile_nec.py`, in memory, no row printed, district and category not kept per person, elements seen 5+ times only; **PDFs deleted in the same session**. 1,163 rows parsed, 2 rejected (digital PDFs, not scans).
+
+**Profile** `data/profiles/rw-nec-2026.1.json`: 2 names 77%, 3 names 20%, 4+ 3%. Order: **Kinyarwanda name first, Christian name last** (most frequent first elements nshimiyimana, uwamahoro, ingabire; last elements emmanuel, claude, rose), matching Law 71/2024 art. 36(2). Only 2 newborn names (byiringiro, ishimwe) occur among adult elements: the generational shift seen in Burundi holds in Rwanda.
+
+**Pack changes (rw-kiny 0.12.0):** gendered prefixes → **high** (nyira-, muka- all women, 17/17; munya- all men, 5/5; small sample, agrees with Kimenyi 1978; still generation only, never inference); NEC evidence added to the surname-first order rule; new failure mode `compound-christian-name-split` (vianney, baptiste, bosco, dieu as separate elements).
+
+**Limits:** no birth years (no cohort split), four provinces, candidates (more schooled, engaged); 30% seats reserved for women affect the sex ratio. **Tests:** 141 pass.
