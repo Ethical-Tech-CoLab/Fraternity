@@ -36,7 +36,9 @@ Draft, 26 Oct 2026. These are the rules for data sharing, retention and deletion
 5. **Graph edges** carry a source, licence, confidence and `review_status` (§5.1A). LLM suggestions enter only as `proposed`.
 6. **No ethnicity, clan, tribe or religion** attributes anywhere in the graph or the schema (`THREAT_MODEL.md` §4.2).
 7. **Raw sources that contain such a field** (e.g. Burundi's CENI 2025 candidate lists, column "Ethnie"): the parser **drops the field on read**. It is never written to disk, counted, joined or used to stratify, and no raw copy with the field is kept beyond the download itself. The field-name guard in `namebridge.schema` covers French, Kirundi/Kinyarwanda and Swahili words (added 28 Oct 2026; gate G6).
-7. **Names a person chooses to give.** Intake records the names given, in any order, plus "other names used". It never presses for a "real" or close name (`NAME_CHANGE.md` rule 6).
+
+   **Inspecting such a file** (added 9 Nov 2026, after an incident; `RESEARCH_LOG.md`): never dump its text or rows to the terminal, to a file, or into an AI assistant's session, not even to check the layout. Read the column headers only, then select the needed columns in memory (the parser), and print at most the header names and counts. Never copy a real row, or a real person's name, into the repository as a layout example: describe the layout instead (DR-1.4). A plain text conversion (e.g. `pdftotext` to a file) counts as writing the field to disk.
+8. **Names a person chooses to give.** Intake records the names given, in any order, plus "other names used". It never presses for a "real" or close name (`NAME_CHANGE.md` rule 6).
 
 ## DR-2. Sharing
 

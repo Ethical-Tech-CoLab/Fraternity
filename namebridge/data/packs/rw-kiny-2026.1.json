@@ -19,17 +19,33 @@
     },
     {
       "id": "structure-father-element",
-      "description": "Some accounts describe an optional third name from the father's side, or siblings' names sharing a root; others say surnames are not inherited. Unresolved: the benchmark models it as the varied parameter q (BENCHMARK_PROTOCOL.md §2.2)",
+      "description": "The law allows both practices: a surname 'may be a family name shared by descendants of the same family, or any specific name, or both' (art. 2(p)). Some families use a shared family name (often from the father's side), others a name chosen per child. Which one a given family uses is not known, so the benchmark keeps the varied parameter q",
       "practice": "cultural",
-      "source": "The New Times, 'Rwanda's Naming Traditions Explained', 6 May 2026 (https://allafrica.com/stories/202605070011.html), against HRW 1999 (above); RESEARCH_LOG.md, 26 Oct 2026; Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), p. 258: the father names the child at the seventh-day ceremony (no inheritance of a name described)",
-      "confidence": "disputed"
+      "source": "Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, art. 2(p) definition of 'surname' and art. 36(2) ('the family name is placed first'); earlier accounts: The New Times, 'Rwanda's Naming Traditions Explained', 6 May 2026 (https://allafrica.com/stories/202605070011.html), against HRW 1999 (above); RESEARCH_LOG.md, 26 Oct 2026; Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), p. 258: the father names the child at the seventh-day ceremony (no inheritance of a name described)",
+      "confidence": "high",
+      "note": "Was 'disputed' (The New Times 2026 against HRW 1999). The 2024 law shows both are legal, so the accounts describe different families, not a contradiction. How common each practice is remains unknown"
     },
     {
       "id": "structure-law-71-2024",
-      "description": "A child may share one name element with a parent, but never all of them",
+      "description": "A child may share name elements with a parent or sibling, but cannot bear only all of the father's, mother's or a sibling's names (art. 39(1)); the parent freely chooses the child's name (art. 38); the legal name is the one on the birth record (art. 37)",
       "practice": "legal_document",
-      "source": "Rwanda, Law No 71/2024 governing persons and family, arts 38-39 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), as summarised in BENCHMARK_PROTOCOL.md §2.2 [B1]; article text to re-read before release",
-      "confidence": "medium"
+      "source": "Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, arts 37-39: 'A child cannot bear only all his or her father's, mother's or siblings' names'",
+      "confidence": "high",
+      "note": "Article text read in full; replaces the earlier summary"
+    },
+    {
+      "id": "structure-spouse-name-added",
+      "description": "Marriage does not change a name, but with both spouses' consent a spouse may add the other spouse's surname to his or her usual name, before the civil registrar (since the 2024 law). A married person may therefore appear with and without the spouse's surname",
+      "practice": "legal_document",
+      "source": "Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, art. 40(1)",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-religious-vow-name",
+      "description": "A name of religious vows (taken on entering a religious congregation) may be used if declared before the civil registrar; it is added to the usual name and can be cancelled if the vows are annulled",
+      "practice": "legal_document",
+      "source": "Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, arts 2(q), 40(2) and 41(5)",
+      "confidence": "high"
     }
   ],
   "order_rules": [
@@ -44,8 +60,9 @@
       "id": "order-surname-first-uppercase",
       "description": "In Kinyarwanda and French publications the Kinyarwanda name may come first, often in capitals (MUGISHA Jean); the capitals vary even within one publication",
       "practice": "database",
-      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'surnames before given names … also true elsewhere, e.g. in Rwanda – in Kinyarwanda as well as French publications'; 'often the surname is given (helpfully) all upper-case, though sometimes even that varies'",
-      "confidence": "medium"
+      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'surnames before given names … also true elsewhere, e.g. in Rwanda – in Kinyarwanda as well as French publications'; 'often the surname is given (helpfully) all upper-case, though sometimes even that varies'; Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, art. 36(2): 'In administrative documents, the family name is placed first, otherwise, the document becomes invalid'",
+      "confidence": "high",
+      "note": "Order (surname first) is now a legal rule for administrative documents (2024); the use of capitals comes from library practice (ALCASA) and varies"
     },
     {
       "id": "order-spoken-given-name",
@@ -492,10 +509,10 @@
     }
   ],
   "relationship_implications": {
-    "surname_agreement": "disputed",
+    "surname_agreement": "context-dependent",
     "surname_disagreement": "neutral",
-    "note": "Different Kinyarwanda names are expected among parents, children and siblings, so disagreement is no evidence against kinship. Agreement may be coincidence (common names) or the optional father element; accounts conflict (structure-father-element)",
-    "source": "HRW 1999; Law 71/2024 arts 38-39; The New Times, 6 May 2026"
+    "note": "Rwandan law allows a surname to be a family name shared by descendants, an individual name, or both (Law 71/2024 art. 2(p)). Where a family uses a shared name, agreement supports kinship; otherwise different names among parents, children and siblings are normal, so disagreement is no evidence against kinship. A child may share some, never only all, of a parent's names (art. 39). Which practice a family uses is not known (parameter q)",
+    "source": "Law 71/2024 arts 2(p), 36, 39; HRW 1999; The New Times, 6 May 2026"
   },
   "known_failure_modes": [
     {
@@ -547,6 +564,11 @@
       "id": "wife-avoids-husband-name",
       "description": "Traditionally a married Rwandan woman does not say the names of her husband or her parents-in-law (taboo gutsinda), and does not call her husband's brothers, sisters or cousins by their first names. A wife searching for a missing husband, or giving his relatives' names, may use a teknonym, a praise name or a kin term, or ask someone else to say the name. Intake must accept that, and the reporter's reluctance is not a sign of a false claim. Many such taboos are weaker today",
       "source": "Adekunle, J. O. (2007), Culture and Customs of Rwanda, Westport, CT: Greenwood Press, chapter 'Gender Roles, Marriage, and Family' (taboo passage, around pp. 103-105; notes 19 and 22 on p. 114); read 9 Nov 2026 from an online copy (https://e-ihuriro.rcsprwanda.org/wp-content/uploads/2023/07/Philosophy-Ethics-and-Rwanda-culture_-Julius-O.-Adekunle_Culture-and-Customs-of-Rwanda.pdf): a wife 'was prohibited from calling her husband's brothers, sisters, or cousins by their first names'; 'Under no circumstances would a woman call her parents-in-law by name. This taboo is called gutsinda (when women are not allowed to name their husbands)'; 'many aspects of the traditional culture, especially the taboos on women, are no longer applicable' (section taken from Kimenyi, A. (1978), 'An Ethnolinguistic Analysis of Kinyarwanda Kinship Terms', Sixth Annual Meeting of the California Linguistic Association)"
+    },
+    {
+      "id": "documents-under-former-name",
+      "description": "After a formal change of name (granted by the Minister, effective when recorded in the birth register), documents made under the former name remain valid and are only updated on request; one person can hold valid papers under two names. Matching must allow a recorded former name",
+      "source": "Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, arts 42-43: 'Documents made under the former name of a person are considered to be made under the new name'"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -606,5 +628,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.9.0"
+  "version": "0.10.0"
 }

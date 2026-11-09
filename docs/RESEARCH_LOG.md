@@ -1869,3 +1869,32 @@ Packs: rw-kiny 0.9.0, bi-kirundi 0.11.0. **Tests:** 135 pass.
 **Changes (bi-kirundi 0.12.0):** `cluster-pronunciation` → **`high`**, rewritten with the full list. **Correction:** mw is [mŋ], not "[my] or [mg]" as first recorded from the FSI synopsis. New listener confusion rw ~ gw (`medium`). The rw/sw/tw/mw/vy confusions keep `medium` under the writing-attestation policy, now with Kochetov as their pronunciation source.
 
 **Tests:** 135 pass.
+
+## 2026-11-09 — Incident (DR-5): CENI ethnicity column exposed while checking a layout
+
+**What happened:** to verify the name layout of a CENI 2025 candidate list (Bujumbura, deputies), Claude downloaded the PDF to `~/namebridge-ref/ceni/`, converted it to text on disk, and printed its first ~20 lines into the Claude Code session. Those lines include the list's **"Ethnie" column** for about ten candidates. This breaks DR-1.7 ("never written to disk"; drop on read).
+
+**Contain:** the PDF and the text file were deleted minutes later (`rm -rf ~/namebridge-ref/ceni`). Nothing was committed: no ethnicity value is in the repo, the packs or the graph (the commit that follows contains only the layout facts: column order, capitals).
+
+**Assess:** the data is public (published by CENI) and concerns adult political candidates, not refugees or minors. It remains in the transcript of this session (sent to the AI provider as part of the conversation). Harm judged low; the breach is of our own rule, not of a confidentiality duty.
+
+**Notify:** per DR-5 step 4, the user should inform the professor. The dataset is an official publication, so no authors' notification seems needed; the user decides.
+
+**Second finding, same incident:** a commit pushed on 9 Nov 2026 (since rewritten) put **one candidate's real full name**, copied from the list as a layout example, into a bi-kirundi source note and the graph (DR-1.1, DR-1.4). Removed, and **history rewritten** with the user's approval (DR-5 step 2): the two commits of this work were squashed into one that never contains the name, and pushed with `--force-with-lease`. GitHub may keep the old commit reachable by its hash for a while; asking GitHub support to purge it is optional. Given names copied from the same rows were also removed.
+
+**Learn:** new procedure in DR-1.7: inspect such files by column headers only, never dump text or rows to the terminal, a file or an AI session. DR-1 numbering fixed (two items were numbered 7).
+
+## 2026-11-09 — Batch 3 (part 1): Rwanda's Law 71/2024 read; CENI layout corrected
+
+**Rwanda, Law No 71/2024 governing persons and family** (Official Gazette n° Special of 30/07/2024), English text read (arts 2, 36–43):
+- art. 2(p): a **surname** "may be a family name shared by descendants of the same family, or any specific name, or both". This resolves the rw-kiny `structure-father-element` dispute (The New Times 2026 vs HRW 1999): both practices are legal, so the accounts describe different families. Entry rewritten, `high`; the benchmark keeps the varied parameter q. `relationship_implications.surname_agreement` changed from `disputed` to `context-dependent`.
+- art. 36(2): in administrative documents the **family name is placed first**, or the document is invalid. `order-surname-first-uppercase` → `high` (order now a legal rule; capitals remain library practice).
+- arts 37–39: legal name = birth record; parents choose freely; a child **cannot bear only all** of a parent's or sibling's names. `structure-law-71-2024` → `high`, article text replacing the summary.
+- art. 40: marriage does not change a name, but **a spouse may add the other's surname** before the civil registrar; a **religious vow name** may be added to the usual name. Two new structures (`high`).
+- arts 42–43: change of name by the Minister, effective when recorded in the birth register; **documents under the former name remain valid**. New failure mode `documents-under-former-name` (relevant to `NAME_CHANGE.md`).
+
+**CENI layout correction (bi-kirundi 0.13.0):** the candidate lists have separate **Nom** and **Prénoms** columns, **both entirely in capitals**. The earlier entries (surname in capitals, given names in lower case) were wrong; corrected and raised to `high`. The lists also confirm the structure Kirundi surname + Christian given name (`structure-kirundi-first-then-christian` → `high`); `structure-no-precolonial-family-name` → `high` with Simbananiye (2005) as a second source.
+
+`GATE_EXAMPLES.md` example 1 ("NSHIMIRIMANA Belyse") is an invented **case-database** record, not a CENI list, so it is left as is.
+
+Packs: rw-kiny 0.10.0, bi-kirundi 0.13.0. **Tests:** see commit.
