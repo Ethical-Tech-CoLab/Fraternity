@@ -30,33 +30,37 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 - a study of name change in Malawi;
 - **IRB review for anything involving contact with people** (native-speaker review in Jan–Mar 2027; phase 3 case data). This becomes a gate when that work is planned (`IRB_DETERMINATION.md`).
 
-**Today (28 Oct):** the professor closed G1, G2, G3, G5 and G7, and **week 3 is complete**, ahead of its 2–6 Nov slot. Next: week 4. Still open: G4 (default in use; decide before the first results in week 6).
+**Today (9 Nov):** weeks 1–4 are done (week 4's optional item aside) and **week 5 has started**, a week early. Open gates: **G4** (error costs, professor, by 23 Nov), **G8** (name-change notices, professor), **G9** (corpus size, professor, before the v0.1 release). Earlier: the professor closed G1, G2, G3, G5 and G7 on 28 Oct.
 
-### Next session (written 5 Nov 2026, end of session)
+### Open items from weeks 1–5 (updated 9 Nov 2026)
 
-**Open gaps (close first, per the user's rule):**
-1. ~~rw-kiny `order-spoken-given-name`~~ **Closed 9 Nov (user):** print-only sources not requested; the rule stays `low`. Earlier note: no primary source yet; waiting on Kimenyi (1989), *Kinyarwanda and Kirundi Names* (user searching NYU Libraries; table of contents or pages on forms of address are enough). **9 Nov:** teknonymy and name avoidance partly sourced from Fédry (2009) (rule `order-teknonym` at `low`, Africa-wide; two child failure modes); Kimenyi (1989) would also lift teknonymy to Rwanda-specific. For bi-kirundi: Ntahombaye (1983), *Des noms et des hommes*.
-1b. **9 Nov:** read Niyonkuru (1987) (history only; Usumbura source, naming language not fixed by country) and Nimbona & Simon (2022) (how Burundians pronounce French names: 5 sound rules in bi-kirundi). Open: ~16 entries still cite Wikipedia alongside a real source (`RESEARCH_LOG.md`, 9 Nov). Same day by Tavily: Adekunle (2007) (Rwanda teknonymy, gutsinda), Simbananiye (2005) (Burundi: mwene, birth-order names), Gangji (2012) (Swahili children: r→l, syllable deletion). Still to get by interlibrary loan: Kimenyi (1989) pp. 106–108 and forms of address; Ntahombaye (1983); Mioni (1975). Still no child-speech source for Kinyarwanda/Kirundi/Chichewa.
-2. Optional coverage: 16 secondary DRC towns in the RGC capitals list (Likasi, Mbanza-Ngungu, Basankusu, Bulungu …).
+**Done since the 5 Nov list:** the spoken-name gap closed by the user (stays `hypothesis`; print-only sources not requested); name normalisation (`namebridge.normalize`); naming profiles for the DRC, Rwanda (newborns and adults) and Burundi (adults); wikis removed as sources; confidence raised entry by entry (high 53 → 106 of 152) with the corrections this produced; Rwanda Law 71/2024 and the DRC Family Code read; the week 5 graph API, review workflow, source register, intake guide and 299 sourced name relationships.
 
-**Week 4 items still to do:**
-3. ✔ **Done 9 Nov:** `namebridge.normalize` (original kept; NFC, accent-preserving and folded forms, joined/split and particle variants, logged transform path). Standard library instead of ICU (Latin script only). Fixed a bug that dropped ɛ/ɔ/ŋ in place and cross-pack folding.
-4. Naming profiles from CongoNames and the NESA lists (DR-1: aggregates only, delete raw files). **9 Nov: DRC done** from the authors' published aggregates (no raw data; `data/profiles/cd-congonames-2026.1.json`). **Rwanda done** from NISR's published top-20 tables (2024, 2025; `rw-nisr-2026.1.json`). Copy-test change approved. **Burundi done** from CENI 2025 lists (raw, processed in memory and deleted the same session; `bi-ceni-2026.1.json`), validated against an aggregator (71% overlap); Rwanda adults from NEC 2026 lists (`rw-nec-2026.1.json`). Burundian children: no real data found, derived profile kept (`low`; results for that group flagged). **Item 4 complete.**
+**Still open, by owner:**
 
-**State:** graph valid; 132 tests pass; packs rw-kiny, bi-kirundi, cd-swc-ln; cross-pack Christian names (11 names, 7 languages); places (Burundi, Rwanda, DRC incl. RGC level 2 and 3) with the resolver `namebridge.resolve_place`.
+| # | Item | From | Owner | Note |
+| --- | --- | --- | --- | --- |
+| 1 | Confidence batch 4: Lingala and Congo Swahili entries (about 10) | week 4 | Claude | never started; the profiles took priority |
+| 2 | Kinyarwanda 2014 spelling reform: the letter-level changes (`rw-kiny` `orthography-2014` is `unknown`) | weeks 4–5 | Claude | also feeds week 5's real-pattern variants |
+| 3 | Replace the two flagged third-party sources (dokumen.pub, abisezerano.com) | week 4 | Claude | `data/register/sources.json` |
+| 4 | Non-biblical given names (Claude, Eric, Aline, Désiré …): other-language forms and nicknames (Jeannot) | week 4 | Claude | low priority: mostly written in French |
+| 5 | 16 secondary DRC towns from the RGC capitals list | week 4 | Claude | optional |
+| 6 | Children's pronunciation in Kinyarwanda, Kirundi, Chichewa | week 4 | Claude | only Swahili found (Gangji et al. 2015) |
+| 7 | Dzaleka literacy figure: 2017 socio-economic survey microdata, behind a login | week 4 | user (access request) | the benchmark varies the share of names written by ear meanwhile |
+| 8 | Muslim names (Hassan/Hasani, Fatuma/Fatima) | week 4 | — | **blocked** by G5 condition 3 (legal check: religion is sensitive data) |
+| 9 | Week 5: Onomaverse review; real-pattern variants (UN 1533 aliases kept outside the repo; 2014 forms); graph v0.1 release note and tag | week 5 | Claude; tag needs the user | G9 decides the release wording |
+| 10 | Gates G4, G8, G9 | — | professor | G4 by 23 Nov |
+| 11 | Data stewards, advisory group, Malawi name-change study | phase 0 | outside people | phase 3, not this semester |
 
-## Progress (as of 28 Oct 2026)
+**State (9 Nov):** graph valid; 174 tests pass; packs rw-kiny 0.12, bi-kirundi 0.15, cd-swc-ln 0.9; Christian names 62 concepts in 7 languages; 5 naming profiles; places for Burundi, Rwanda and the DRC; 299 sourced name relationships.
 
-**Weeks 1–3 are done ✔**, ahead of schedule. Phase 0 (weeks 1–2) was finished on 26 Oct and approved by the professor on 28 Oct. Week 3 (schemas, validators, regression suite, Kirundi spelling) was finished on 28 Oct, before its 2–6 Nov slot.
+## Progress (as of 9 Nov 2026)
 
-**Still open:**
+**Weeks 1–4 are done ✔**, ahead of schedule (week 4 on 9 Nov, its optional item aside); **week 5 started 9 Nov**. Phase 0 (weeks 1–2) was finished on 26 Oct and approved by the professor on 28 Oct. Week 3 (schemas, validators, regression suite, Kirundi spelling) was finished on 28 Oct, before its 2–6 Nov slot.
 
-- G4, the error costs (the 26 Oct default is in use; decide before week 6);
-- the gaps that need outside people: data stewards and an advisory group (`SCOPE.md` §8–9);
-- no study yet of name change among refugees in Malawi (`NAME_CHANGE.md`);
-- sound layer gaps: no source yet on children's pronunciation (`RESEARCH_LOG.md`, 28 Oct). Chichewa's r/l rule, c→ch and ŵ found 5 Nov; Chichewa forms of Christian names added.
+**Still open:** see "Open items from weeks 1–5" above.
 
-**Next:** week 4, first packs: `rw-kiny`, `bi-kirundi` and the DRC packs, the naming profiles from the public lists (allowed since G3 closed), ICU set-up, and the first pass of the sound layer.
+**Next:** finish week 5 (corpus, Onomaverse, real-pattern variants, v0.1 release) and the open items above; week 6 (benchmark) needs G4.
 
 **Done ahead of schedule** (◐ marks in weeks 3–7): CPIMS+ field list; the Burundi sibling question; naming-profile sources and method; CongoNames source review; real-pattern sources; intake-guide rules; CPIMS+ baseline algorithm.
 
@@ -84,12 +88,19 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | Week 3: schemas, validators, CPIMS+ allowlist, pack template, regression suite; review fixes | ✔ done 28 Oct | `namebridge/src/namebridge/schema/`; `SCHEMA.md` | `7bee067` + review fixes |
 | Kirundi spelling rules | ✔ done 28 Oct | `RESEARCH_LOG.md` | `a448e72` |
 | Sound layer (names told aloud): design and schema | ✔ done (extra) 28 Oct | `CONCEPT-IDEA.md` §5.4A; `namebridge.schema.pack` | `415917e` |
-| Week 4: `rw-kiny` pack v0.1.0 (structures, order, sound inventory, writer conventions, listener confusions) | ◐ done 5 Nov, ahead of 9–13 Nov | `namebridge/data/packs/rw-kiny-2026.1.json` | `a7f1b86` |
-| Week 4: `bi-kirundi` pack v0.1.0 (the four rw→rn rules and the ambiguous reverse; mission spellings as hypothesis; civil code arts 11–14 read) | ◐ done 5 Nov | `namebridge/data/packs/bi-kirundi-2026.1.json` | `b05ccbe` |
+| Week 4: `rw-kiny` pack v0.1.0 (structures, order, sound inventory, writer conventions, listener confusions) | ✔ done 5 Nov (v0.1.0); v0.12.0 on 9 Nov | `namebridge/data/packs/rw-kiny-2026.1.json` | `a7f1b86` … |
+| Week 4: `bi-kirundi` pack v0.1.0 (the four rw→rn rules and the ambiguous reverse; mission spellings as hypothesis; civil code arts 11–14 read) | ✔ done 5 Nov (v0.1.0); v0.15.0 on 9 Nov | `namebridge/data/packs/bi-kirundi-2026.1.json` | `b05ccbe` … |
 | Week 4: graph loader (packs → Rule and Language nodes; repeatable; nothing written if a pack is invalid) | ✔ done 5 Nov | `namebridge/src/namebridge/packs.py` | `6ae9cc3` |
 | Week 4: DRC pack `cd-swc-ln` v0.1.0 (Family Code arts 56–64 read; authenticité 1972–1997; Lingala spelling) | ✔ done 5 Nov | `namebridge/data/packs/cd-swc-ln-2026.1.json` | `43057ed` |
-| Week 4: Christian names across languages (8 names, 6 languages, Bible translations) and their loader | ◐ done 5 Nov | `namebridge/data/crosspack/`; `namebridge.crosspack` | `49b6f84`, `217ea06`, `4e07348` |
+| Week 4: Christian names across languages (8 names, 6 languages, Bible translations) and their loader | ✔ done 5 Nov; 62 concepts on 9 Nov | `namebridge/data/crosspack/`; `namebridge.crosspack` | `49b6f84` … `3de6a32` |
 | Week 4: place-name changes (Burundi, Rwanda, DRC) and three place relations in the schema | ✔ done 5 Nov | `namebridge/data/places/`; `namebridge.places`; `SCHEMA.md` | this commit |
+| Week 4: name normalisation (parallel forms, logged transform path); ɛ/ɔ/ŋ folding bug fixed | ✔ done 9 Nov | `namebridge.normalize` | `7339543` |
+| Week 4: naming profiles (DRC from published aggregates; Rwanda newborns NISR, adults NEC; Burundi adults CENI, children derived) | ✔ done 9 Nov | `namebridge/data/profiles/` | `b8b1e51` … `329259d` |
+| Week 4: confidence raised entry by entry from primary sources (high 53 → 106), wikis removed, corrections recorded | ✔ done 9 Nov (batch 4 open) | packs; `RESEARCH_LOG.md` | `fa32739` … `78591c7` |
+| Week 4: Rwanda Law 71/2024 and DRC Family Code read in full | ✔ done 9 Nov | packs | `e10aa72`, `78591c7` |
+| Incident (DR-5): CENI ethnicity column printed in a session; a real name committed and removed from history | ✔ handled 9 Nov | `RESEARCH_LOG.md`; `DATA_RULES.md` DR-1.7 | `e10aa72` |
+| Week 5: graph API, review workflow, source register, intake guide, ambiguous paths | ✔ done 9 Nov | `graph_api`, `review`, `data/register/`, `INTAKE_GUIDE.md` | `09dd7e2` … `3de6a32` |
+| Week 5: name relationships 45 → 299 (Bible translations, attested variants, negative constraints, name parts) | ◐ 9 Nov (G9) | `data/crosspack/`, `data/variants/` | `ab3a920` … `63edb64` |
 
 **Decided by the professor on 28 Oct:** scope approved (G1); governments and law enforcement are not users (G2); no NYU IRB review needed for the public lists (G3, option A); alleged perpetrators never searched for, and a restricted name-change layer allowed with conditions (G5); open source, no sale (G7).
 
@@ -116,7 +127,7 @@ Deliberate, because of the project's limits:
 | The decisive benchmark needs real error patterns (§9.1) | Synthetic data only | No partner, no lawful basis for real data yet; results are labelled preliminary |
 | Phase 0 sets up an advisory group, a linguistic review panel and named data stewards | Recorded as a gap | No outside people yet |
 | Two or three languages/scripts, with cross-script search central | Three Latin-script languages | The Great Lakes corridor; cross-script work is barely tested in this pilot |
-| 2,000–10,000 curated relationships (phase 1) | About 2,000 | Time |
+| 2,000–10,000 curated relationships (phase 1) | About 2,000 planned; projection 600–900 sourced (9 Nov) | Time, and only attested sources (no invented variants); gate G9 |
 | Phases 3–4 | After the semester, only with a partner | They need real cases |
 | §8 controls 10 (production security: encryption, tenant isolation, regional hosting, key separation, breach response, abuse testing) and 11 (per-region model governance, drift review) | Phases 3–4 | Only meaningful for a system running on real data |
 | Naming systems in §3 outside the corridor (Arabic, Chinese, Slavic …) | Future language packs | One bounded corridor first (§10 phase 0) |
@@ -137,8 +148,8 @@ Deferred "should have" items (§12): passport VIZ/MRZ field mapping, OCR-confide
 | 1 | 19–23 Oct | 0. Governance | Corridor, users, purposes, prohibited uses; repo skeleton | Scope document approved by the professor | ✔ done 26 Oct; approved 28 Oct |
 | 2 | 26–30 Oct | 0. Governance | Threat model, data-protection assessment (desk), benchmark protocol | Phase 0 exit criteria written | ✔ done 26 Oct |
 | 3 | 2–6 Nov | 1. Name corpus | Two-graph schema; language-pack template; CPIMS+ field mapping; Kinyarwanda and Kirundi research | Schema and validator in the repo | ✔ done 28 Oct (early) |
-| 4 | 9–13 Nov | 1. Name corpus | Curate the Kinyarwanda, Kirundi and DRC packs; ICU / CLDR set-up | First packs load into the graph | next |
-| 5 | 16–20 Nov | 1. Name corpus | Reach the pilot corpus; negative constraints; review workflow | Graph v0.1, every edge sourced | — |
+| 4 | 9–13 Nov | 1. Name corpus | Curate the Kinyarwanda, Kirundi and DRC packs; ICU / CLDR set-up | First packs load into the graph | ✔ done 9 Nov (optional item 2 open) |
+| 5 | 16–20 Nov | 1. Name corpus | Reach the pilot corpus; negative constraints; review workflow | Graph v0.1, every edge sourced | ◐ started 9 Nov (corpus 299, G9; release pending) |
 | 6 | 23–27 Nov | 2. Linkage MVP | Synthetic benchmark (light week: Thanksgiving) | Gold set of matches, non-matches and families | — |
 | 7 | 30 Nov–4 Dec | 2. Linkage MVP | Preserve-first ingestion; transliteration; blocking; deterministic and CPIMS+-style baselines | Baseline results on the benchmark | — |
 | 8 | 7–11 Dec | 2. Linkage MVP | Splink model plus graph features; calibration; evaluation | Results for every option tested | — |
@@ -192,12 +203,12 @@ Plan (all items done 26 Oct):
 
 ✔ **G3 closed 28 Oct (option A)** and **G6 closed 28 Oct**: the public lists may be downloaded and processed under `DATA_RULES.md` DR-1.
 
-- ◐ **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili). ✔ *`rw-kiny-2026.1`, `bi-kirundi-2026.1` and `cd-swc-ln-2026.1` (DRC) done 5 Nov* (sourced; pass the validator); all three **load into the graph** as 133 sourced Rule and Language nodes (`namebridge.packs`). **Remaining in week 4:** cross-pack data, ICU, naming profiles.
-- ◐ **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries). *Christian names done 5 Nov:* 11 names (incl. Mary, Joseph, Emmanuel) in fr, en, sw, rw, rn, ln and ny from Bible translations, 46 proposed cognate edges (`data/crosspack/`). *Places done 5 Nov:* 100 units, 76 sourced changes (Burundi 1962 and 2025, Rwanda 2006, DRC 1966–2015) as Region nodes with `renamed_to` / `merged_into` / `split_into` edges (`data/places/`). *Rwanda gaps closed 5 Nov:* towns modelled as `located_in` their new districts; Kinyarwanda province names from the provinces' official sites. *Gaps closed 5 Nov:* French and Kinyarwanda province names from the trilingual Organic Law 04/2010; Burundi's 42 communes from the 2023 law. *Burundi crosswalk built 5 Nov:* 119 old communes → 42 new, derived from official boundary data (hill points in old commune polygons, area-weighted; `scripts/burundi_crosswalk.py`), all `generated`/`proposed`. *Nyarusange resolved 5 Nov* (CENI 2010; OCHA, USAID, FAO). *Place resolver and Bujumbura's 13 urban communes of 2010 done 5 Nov* (`namebridge.resolve_place`); integrity tests on the place data; current towns placed; Kivu split. *Bandundu city → Kwilu (UNICEF, OCHA) 5 Nov. Place data free of Wikipedia 5 Nov.* *Gitarama → Muhanga sourced 5 Nov (MINEDUC, MININFRA).* **Remaining:** replace Wikipedia-only sources (user, 5 Nov: Wikipedia is not a source); DRC level-2 (164) and level-3 (519) units and the 25 provincial capitals done 5 Nov from the official RGC boundary data; non-biblical given names; names from other religions' texts wait for G5 condition 3.
+- ✔ **Packs:** first versions of `rw-kiny`, `bi-kirundi` and the DRC (nom + postnom + prénom; Congolese Swahili). ✔ *`rw-kiny-2026.1`, `bi-kirundi-2026.1` and `cd-swc-ln-2026.1` (DRC) done 5 Nov* (sourced; pass the validator); all three **load into the graph** as 133 sourced Rule and Language nodes (`namebridge.packs`). *Cross-pack data, ICU and naming profiles done 9 Nov.*
+- ✔ **Cross-pack data:** Christian names (Jean / John / Yohana …); places old and new (Burundi 2025, Rwanda 2006, DRC 2015; HDX boundaries). *Christian names done 5 Nov:* 11 names (incl. Mary, Joseph, Emmanuel) in fr, en, sw, rw, rn, ln and ny from Bible translations, 46 proposed cognate edges (`data/crosspack/`). *Places done 5 Nov:* 100 units, 76 sourced changes (Burundi 1962 and 2025, Rwanda 2006, DRC 1966–2015) as Region nodes with `renamed_to` / `merged_into` / `split_into` edges (`data/places/`). *Rwanda gaps closed 5 Nov:* towns modelled as `located_in` their new districts; Kinyarwanda province names from the provinces' official sites. *Gaps closed 5 Nov:* French and Kinyarwanda province names from the trilingual Organic Law 04/2010; Burundi's 42 communes from the 2023 law. *Burundi crosswalk built 5 Nov:* 119 old communes → 42 new, derived from official boundary data (hill points in old commune polygons, area-weighted; `scripts/burundi_crosswalk.py`), all `generated`/`proposed`. *Nyarusange resolved 5 Nov* (CENI 2010; OCHA, USAID, FAO). *Place resolver and Bujumbura's 13 urban communes of 2010 done 5 Nov* (`namebridge.resolve_place`); integrity tests on the place data; current towns placed; Kivu split. *Bandundu city → Kwilu (UNICEF, OCHA) 5 Nov. Place data free of Wikipedia 5 Nov.* *Gitarama → Muhanga sourced 5 Nov (MINEDUC, MININFRA).* *Wiki sources removed 9 Nov.* DRC level-2 (164) and level-3 (519) units and the 25 provincial capitals done 5 Nov from the official RGC boundary data; **Open (items 4 and 8 above):** non-biblical given names; names from other religions' texts wait for G5 condition 3. *9 Nov: 26 more biblical names by count alignment (statistical).*
 - ✔ **ICU / CLDR:** set up normalisation, transforms and transform-path logging (§5.4). *Done 9 Nov as `namebridge.normalize` (stdlib; `RESEARCH_LOG.md`).*
-- ◐ **Naming profiles (DRC, Rwanda):** sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). **Remaining:** build them locally from CongoNames and the NESA lists, then delete the raw lists (`DATA_RULES.md` DR-1). Burundi source decided 28 Oct (G6): NESA elements weighted by CENI 2025 frequencies, Kirundi spelling rules, Forebears as a check.
-- ◐ **Sound layer, first pass** (§5.4A, added 28 Oct): in each pack, the sound inventory (digraphs as single sounds), writing conventions for rn, rw, fr, en, sw and ny, and listener confusions, each with a source or marked `hypothesis`. *Schema ready 28 Oct* (`namebridge.schema.pack`). *Sources found 28 Oct:* how «sw», «mw», «rw», «tw», «vy» are actually pronounced ([skw], [mg], [rgw], [tkw], [z]; FSI Kirundi course and Nassenstein). Catholic vs Protestant spelling: only apostrophe and word-division rules documented so far (`RESEARCH_LOG.md`); Mioni (1975) full text needs NYU library access. Dzaleka literacy: no published figure (checked 28 Oct: RMS 2023 has no literacy question; the 2017 socio-economic survey has one, but only in microdata behind a login; its report says refugees were more educated than host communities); the benchmark keeps the share of names written by ear as a varied parameter.
-- **Done when:** the first packs load into the graph and pass the validator.
+- ✔ **Naming profiles (DRC, Rwanda, Burundi):** *done 9 Nov (see item 4 of the open list's history and `data/profiles/`).* sources identified on 26 Oct (CongoNames, CC BY 4.0, 8.05 M names; NESA 2024/25 lists); method fixed (`BENCHMARK_PROTOCOL.md` §2.4). *Built 9 Nov: DRC and Rwanda newborns from published aggregates (no raw data); Rwanda adults (NEC) and Burundi (CENI) from raw lists processed in memory and deleted the same session.* Burundi source decided 28 Oct (G6): NESA elements weighted by CENI 2025 frequencies, Kirundi spelling rules, Forebears as a check.
+- ✔ **Sound layer, first pass** (§5.4A, added 28 Oct): in each pack, the sound inventory (digraphs as single sounds), writing conventions for rn, rw, fr, en, sw and ny, and listener confusions, each with a source or marked `hypothesis`. *Schema ready 28 Oct* (`namebridge.schema.pack`). *Sources found 28 Oct:* how «sw», «mw», «rw», «tw», «vy» are actually pronounced ([skw], [mg], [rgw], [tkw], [z]; FSI Kirundi course and Nassenstein). Catholic vs Protestant spelling: only apostrophe and word-division rules documented so far (`RESEARCH_LOG.md`); Mioni (1975) not requested (print only; user, 9 Nov). *9 Nov: glide pronunciation sourced (Demolin 2016, Kochetov 2016, Myers 2006), French pronunciation of Burundians (Nimbona & Simon 2022), Swahili children (Gangji et al. 2015); open: children in Kinyarwanda, Kirundi, Chichewa (item 6).* Dzaleka literacy: no published figure (checked 28 Oct: RMS 2023 has no literacy question; the 2017 socio-economic survey has one, but only in microdata behind a login; its report says refugees were more educated than host communities); the benchmark keeps the share of names written by ear as a varied parameter.
+- **Done when:** the first packs load into the graph and pass the validator. ✔ *Met 5 Nov; week 4 complete 9 Nov.*
 
 ### Week 5 — 16–20 Nov: pilot corpus (phase 1)
 
