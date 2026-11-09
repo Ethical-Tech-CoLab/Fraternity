@@ -1,0 +1,2027 @@
+{
+  "profile_id": "cd-congonames-2026.1",
+  "version": "0.1.0",
+  "origin": "CD",
+  "method": "Built only from aggregate tables published by the corpus authors; no individual record was downloaded or read. Two published tables listing full names (normalized_duplicate_names, unusual_names) were deleted unread (DATA_RULES DR-1). Built 9 Nov 2026 by scripts/build_profile_congonames.py",
+  "sources": [
+    {
+      "name": "Tshabu Ngandu, B., Cansa Kayembe, A. & Mpyana Mwamba, M. (2026), 'CongoNames Corpus: A Large-Scale Labeled Dataset of Congolese Personal Names', Data 11(7): 169, doi:10.3390/data11070169 (MDPI, CC BY 4.0)",
+      "aggregates": "Published aggregate tables in the authors' repository, reports/name_analysis/*.csv (https://github.com/bernard-ng/drc-names-corpus, commit a38c6a421754027418f085c6d05227e6f3d40138); the repository itself declares no licence",
+      "underlying_data": "National secondary-school examination result lists (palmarès) 2008-2023, DRC Ministry of Education; 8,053,983 records, 12 provinces"
+    }
+  ],
+  "source_file_checksums_sha256_16": {
+    "data_quality_overview": "957b67ddc3c42e53",
+    "diversity_by_province": "2b2366723341214a",
+    "diversity_by_year": "c32a5f5d0ed887db",
+    "first_token_frequency": "20e4f47f2393e91c",
+    "first_token_frequency_female": "8a51c5a603d75d51",
+    "first_token_frequency_male": "129a7c14177d9145",
+    "last_token_frequency": "f81f41e0cba4030f",
+    "last_token_frequency_female": "69fd80ea1a60a98a",
+    "last_token_frequency_male": "57cb9ab4edd50137",
+    "letter_frequency_full_name": "e92557b4d1ec08f6",
+    "long_tail_overall": "955056f6dc0a7bd6",
+    "name_length_distribution": "35765a7b35e17352",
+    "name_morphology_flags": "38188251bae40d23",
+    "name_structure_summary": "b2d4cd5b5d33dc71",
+    "names_by_province": "67e01914e05b0329",
+    "names_by_year": "c40d05d8481ea886",
+    "names_overview": "427881d319b36d3f",
+    "probable_native_ngrams_2": "5493b738d9ded148",
+    "probable_native_ngrams_3": "14ca6a5ac361b373",
+    "probable_surname_ngrams_2": "f1c3e2ca060cf758",
+    "probable_surname_ngrams_3": "852392e58f26c4ec",
+    "region_overlap": "c20dda4d7997a6e1",
+    "token_count_distribution": "c0f7ad8c6d7602b9"
+  },
+  "confidence": "high",
+  "population_note": "Secondary-school exam candidates (mostly adolescents and young adults), 2008-2023; not representative of older adults, of people who did not reach the exam, or of refugees specifically",
+  "structure": {
+    "records": 8053983,
+    "unique_full_names": 6371942,
+    "singleton_share_of_unique_full_names": 0.7627,
+    "token_count_distribution": {
+      "empty": 129,
+      "1": 4997,
+      "2": 1421251,
+      "3": 6324763,
+      "4": 283016,
+      "5": 17072,
+      "6": 1161,
+      "7": 1478,
+      "8": 109,
+      "9": 6,
+      "10": 1
+    },
+    "chars": {
+      "mean_chars": 20.187472,
+      "median_chars": 21.0,
+      "p90_chars": 25.0,
+      "p95_chars": 26.0
+    },
+    "tokens": {
+      "mean_tokens": 2.86291,
+      "median_tokens": 3.0,
+      "p90_tokens": 3.0,
+      "p95_tokens": 3.0
+    },
+    "morphology_flags": {
+      "has_hyphen": {
+        "count": 66405,
+        "share": 0.008245
+      },
+      "has_apostrophe": {
+        "count": 34327,
+        "share": 0.004262
+      },
+      "has_particle": {
+        "count": 143323,
+        "share": 0.017795
+      },
+      "has_diacritics": {
+        "count": 7260,
+        "share": 0.000901
+      },
+      "non_alpha_heavy": {
+        "count": 198,
+        "share": 2.5e-05
+      }
+    },
+    "order_observed": "In the exam lists the first token is mostly a Bantu name (nom) and the last token mostly a Christian/French given name (prénom): order nom, postnom, prénom"
+  },
+  "elements": {
+    "first_token_top50": [
+      {
+        "element": "ilunga",
+        "count": 75206,
+        "m": 55377,
+        "f": 19829
+      },
+      {
+        "element": "ngoy",
+        "count": 58229,
+        "m": 43156,
+        "f": 15073
+      },
+      {
+        "element": "kasongo",
+        "count": 53821,
+        "m": 39450,
+        "f": 14371
+      },
+      {
+        "element": "ntumba",
+        "count": 37248,
+        "m": 17930,
+        "f": 19318
+      },
+      {
+        "element": "kambale",
+        "count": 35852,
+        "m": 35692,
+        "f": 160
+      },
+      {
+        "element": "mbuyi",
+        "count": 35662,
+        "m": 18260,
+        "f": 17402
+      },
+      {
+        "element": "kavira",
+        "count": 34841,
+        "m": 137,
+        "f": 34704
+      },
+      {
+        "element": "kasereka",
+        "count": 25418,
+        "m": 25297,
+        "f": 121
+      },
+      {
+        "element": "kazadi",
+        "count": 25305,
+        "m": 20598,
+        "f": 4707
+      },
+      {
+        "element": "banza",
+        "count": 24864,
+        "m": 17000,
+        "f": 7864
+      },
+      {
+        "element": "mutombo",
+        "count": 24639,
+        "m": 20975,
+        "f": 3664
+      },
+      {
+        "element": "muhindo",
+        "count": 23094,
+        "m": 22608,
+        "f": 486
+      },
+      {
+        "element": "kahindo",
+        "count": 21534,
+        "m": 547,
+        "f": 20987
+      },
+      {
+        "element": "kavugho",
+        "count": 21277,
+        "m": 81,
+        "f": 21196
+      },
+      {
+        "element": "mujinga",
+        "count": 20618,
+        "m": 3613,
+        "f": 17005
+      },
+      {
+        "element": "ngoyi",
+        "count": 20600,
+        "m": 15655,
+        "f": 4945
+      },
+      {
+        "element": "ngalula",
+        "count": 19943,
+        "m": 1449,
+        "f": 18494
+      },
+      {
+        "element": "kapinga",
+        "count": 19519,
+        "m": 2843,
+        "f": 16676
+      },
+      {
+        "element": "matondo",
+        "count": 19170,
+        "m": 9557,
+        "f": 9613
+      },
+      {
+        "element": "mumbere",
+        "count": 17905,
+        "m": 17854,
+        "f": 51
+      },
+      {
+        "element": "mputu",
+        "count": 17886,
+        "m": 9751,
+        "f": 8135
+      },
+      {
+        "element": "kakule",
+        "count": 17448,
+        "m": 17351,
+        "f": 97
+      },
+      {
+        "element": "kabeya",
+        "count": 17099,
+        "m": 15228,
+        "f": 1871
+      },
+      {
+        "element": "nzuzi",
+        "count": 16275,
+        "m": 7444,
+        "f": 8831
+      },
+      {
+        "element": "mwamba",
+        "count": 16052,
+        "m": 12479,
+        "f": 3573
+      },
+      {
+        "element": "masika",
+        "count": 15851,
+        "m": 229,
+        "f": 15622
+      },
+      {
+        "element": "mbombo",
+        "count": 15587,
+        "m": 3798,
+        "f": 11789
+      },
+      {
+        "element": "nkulu",
+        "count": 15523,
+        "m": 10659,
+        "f": 4864
+      },
+      {
+        "element": "nsimba",
+        "count": 15454,
+        "m": 7332,
+        "f": 8122
+      },
+      {
+        "element": "kabamba",
+        "count": 15422,
+        "m": 12603,
+        "f": 2819
+      },
+      {
+        "element": "mukendi",
+        "count": 14640,
+        "m": 13772,
+        "f": 868
+      },
+      {
+        "element": "bahati",
+        "count": 14361,
+        "m": 9956,
+        "f": 4405
+      },
+      {
+        "element": "ngoie",
+        "count": 14157,
+        "m": 5421,
+        "f": 8736
+      },
+      {
+        "element": "kayembe",
+        "count": 14104,
+        "m": 12309,
+        "f": 1795
+      },
+      {
+        "element": "kalenga",
+        "count": 14094,
+        "m": 8924,
+        "f": 5170
+      },
+      {
+        "element": "kahambu",
+        "count": 14090,
+        "m": 56,
+        "f": 14034
+      },
+      {
+        "element": "kalala",
+        "count": 13660,
+        "m": 12519,
+        "f": 1141
+      },
+      {
+        "element": "kabongo",
+        "count": 13402,
+        "m": 11868,
+        "f": 1534
+      },
+      {
+        "element": "kyungu",
+        "count": 12086,
+        "m": 8078,
+        "f": 4008
+      },
+      {
+        "element": "kanku",
+        "count": 11962,
+        "m": 6950,
+        "f": 5012
+      },
+      {
+        "element": "mulumba",
+        "count": 11545,
+        "m": 10824,
+        "f": 721
+      },
+      {
+        "element": "katembo",
+        "count": 11338,
+        "m": 10709,
+        "f": 629
+      },
+      {
+        "element": "muamba",
+        "count": 11265,
+        "m": 10566,
+        "f": 699
+      },
+      {
+        "element": "tshibangu",
+        "count": 11143,
+        "m": 10052,
+        "f": 1091
+      },
+      {
+        "element": "umba",
+        "count": 10610,
+        "m": 5559,
+        "f": 5051
+      },
+      {
+        "element": "furaha",
+        "count": 10255,
+        "m": 412,
+        "f": 9843
+      },
+      {
+        "element": "nlandu",
+        "count": 10144,
+        "m": 5327,
+        "f": 4817
+      },
+      {
+        "element": "neema",
+        "count": 9981,
+        "m": 366,
+        "f": 9615
+      },
+      {
+        "element": "mbala",
+        "count": 9939,
+        "m": 7099,
+        "f": 2840
+      },
+      {
+        "element": "monga",
+        "count": 9793,
+        "m": 6383,
+        "f": 3410
+      }
+    ],
+    "last_token_top50": [
+      {
+        "element": "jean",
+        "count": 117477,
+        "m": 116996,
+        "f": 481
+      },
+      {
+        "element": "joseph",
+        "count": 51895,
+        "m": 51626,
+        "f": 269
+      },
+      {
+        "element": "marie",
+        "count": 50889,
+        "m": 5003,
+        "f": 45886
+      },
+      {
+        "element": "esther",
+        "count": 49688,
+        "m": 470,
+        "f": 49218
+      },
+      {
+        "element": "grace",
+        "count": 43163,
+        "m": 18227,
+        "f": 24936
+      },
+      {
+        "element": "pierre",
+        "count": 42834,
+        "m": 42663,
+        "f": 171
+      },
+      {
+        "element": "dorcas",
+        "count": 41919,
+        "m": 455,
+        "f": 41464
+      },
+      {
+        "element": "david",
+        "count": 41599,
+        "m": 41400,
+        "f": 199
+      },
+      {
+        "element": "moise",
+        "count": 41202,
+        "m": 41001,
+        "f": 201
+      },
+      {
+        "element": "ruth",
+        "count": 40948,
+        "m": 350,
+        "f": 40598
+      },
+      {
+        "element": "sarah",
+        "count": 39587,
+        "m": 361,
+        "f": 39226
+      },
+      {
+        "element": "jonathan",
+        "count": 39508,
+        "m": 39241,
+        "f": 267
+      },
+      {
+        "element": "emmanuel",
+        "count": 39371,
+        "m": 39022,
+        "f": 349
+      },
+      {
+        "element": "patrick",
+        "count": 39117,
+        "m": 38937,
+        "f": 180
+      },
+      {
+        "element": "christian",
+        "count": 38045,
+        "m": 37712,
+        "f": 333
+      },
+      {
+        "element": "daniel",
+        "count": 36938,
+        "m": 36711,
+        "f": 227
+      },
+      {
+        "element": "joel",
+        "count": 36233,
+        "m": 32983,
+        "f": 3250
+      },
+      {
+        "element": "andre",
+        "count": 35166,
+        "m": 35044,
+        "f": 122
+      },
+      {
+        "element": "rachel",
+        "count": 33324,
+        "m": 467,
+        "f": 32857
+      },
+      {
+        "element": "justin",
+        "count": 32919,
+        "m": 32649,
+        "f": 270
+      },
+      {
+        "element": "jacques",
+        "count": 30787,
+        "m": 30477,
+        "f": 310
+      },
+      {
+        "element": "merveille",
+        "count": 30407,
+        "m": 4253,
+        "f": 26154
+      },
+      {
+        "element": "jeremie",
+        "count": 29558,
+        "m": 29387,
+        "f": 171
+      },
+      {
+        "element": "heritier",
+        "count": 29535,
+        "m": 29388,
+        "f": 147
+      },
+      {
+        "element": "naomie",
+        "count": 29399,
+        "m": 217,
+        "f": 29182
+      },
+      {
+        "element": "tresor",
+        "count": 29082,
+        "m": 28887,
+        "f": 195
+      },
+      {
+        "element": "paul",
+        "count": 28505,
+        "m": 28236,
+        "f": 269
+      },
+      {
+        "element": "michel",
+        "count": 28300,
+        "m": 28079,
+        "f": 221
+      },
+      {
+        "element": "junior",
+        "count": 27863,
+        "m": 27704,
+        "f": 159
+      },
+      {
+        "element": "samuel",
+        "count": 27349,
+        "m": 27186,
+        "f": 163
+      },
+      {
+        "element": "elie",
+        "count": 27113,
+        "m": 26409,
+        "f": 704
+      },
+      {
+        "element": "josue",
+        "count": 26861,
+        "m": 26661,
+        "f": 200
+      },
+      {
+        "element": "gloire",
+        "count": 26531,
+        "m": 22580,
+        "f": 3951
+      },
+      {
+        "element": "deborah",
+        "count": 26423,
+        "m": 159,
+        "f": 26264
+      },
+      {
+        "element": "francois",
+        "count": 26231,
+        "m": 25984,
+        "f": 247
+      },
+      {
+        "element": "gracia",
+        "count": 25266,
+        "m": 6062,
+        "f": 19204
+      },
+      {
+        "element": "divine",
+        "count": 24690,
+        "m": 211,
+        "f": 24479
+      },
+      {
+        "element": "albert",
+        "count": 24219,
+        "m": 24092,
+        "f": 127
+      },
+      {
+        "element": "augustin",
+        "count": 23522,
+        "m": 23363,
+        "f": 159
+      },
+      {
+        "element": "pascal",
+        "count": 22855,
+        "m": 22710,
+        "f": 145
+      },
+      {
+        "element": "gedeon",
+        "count": 21939,
+        "m": 21822,
+        "f": 117
+      },
+      {
+        "element": "benedicte",
+        "count": 21869,
+        "m": 446,
+        "f": 21423
+      },
+      {
+        "element": "rebecca",
+        "count": 20974,
+        "m": 174,
+        "f": 20800
+      },
+      {
+        "element": "fiston",
+        "count": 20967,
+        "m": 20889,
+        "f": 78
+      },
+      {
+        "element": "benjamin",
+        "count": 20036,
+        "m": 19908,
+        "f": 128
+      },
+      {
+        "element": "dieu",
+        "count": 20034,
+        "m": 19704,
+        "f": 330
+      },
+      {
+        "element": "alain",
+        "count": 19807,
+        "m": 19721,
+        "f": 86
+      },
+      {
+        "element": "isaac",
+        "count": 19719,
+        "m": 19615,
+        "f": 104
+      },
+      {
+        "element": "john",
+        "count": 19716,
+        "m": 19595,
+        "f": 121
+      },
+      {
+        "element": "therese",
+        "count": 19038,
+        "m": 173,
+        "f": 18865
+      }
+    ]
+  },
+  "ngrams": {
+    "probable_native_ngrams_2": [
+      {
+        "ngram": "ng",
+        "count": 2690439
+      },
+      {
+        "ngram": "ka",
+        "count": 2422068
+      },
+      {
+        "ngram": "mb",
+        "count": 2344782
+      },
+      {
+        "ngram": "an",
+        "count": 2264842
+      },
+      {
+        "ngram": "ba",
+        "count": 1961024
+      },
+      {
+        "ngram": "am",
+        "count": 1958668
+      },
+      {
+        "ngram": "ma",
+        "count": 1639772
+      },
+      {
+        "ngram": "nd",
+        "count": 1279949
+      },
+      {
+        "ngram": "mu",
+        "count": 1276863
+      },
+      {
+        "ngram": "al",
+        "count": 1263542
+      },
+      {
+        "ngram": "on",
+        "count": 1192067
+      },
+      {
+        "ngram": "ga",
+        "count": 1160857
+      },
+      {
+        "ngram": "ak",
+        "count": 1144522
+      },
+      {
+        "ngram": "la",
+        "count": 1143789
+      },
+      {
+        "ngram": "bo",
+        "count": 965702
+      },
+      {
+        "ngram": "ab",
+        "count": 943761
+      },
+      {
+        "ngram": "en",
+        "count": 936437
+      },
+      {
+        "ngram": "lu",
+        "count": 852635
+      },
+      {
+        "ngram": "om",
+        "count": 814223
+      },
+      {
+        "ngram": "um",
+        "count": 795585
+      },
+      {
+        "ngram": "in",
+        "count": 778682
+      },
+      {
+        "ngram": "un",
+        "count": 764521
+      },
+      {
+        "ngram": "go",
+        "count": 763927
+      },
+      {
+        "ngram": "as",
+        "count": 753672
+      },
+      {
+        "ngram": "bu",
+        "count": 713337
+      },
+      {
+        "ngram": "im",
+        "count": 706761
+      },
+      {
+        "ngram": "ki",
+        "count": 696841
+      },
+      {
+        "ngram": "lo",
+        "count": 692985
+      },
+      {
+        "ngram": "le",
+        "count": 675967
+      },
+      {
+        "ngram": "em",
+        "count": 674167
+      },
+      {
+        "ngram": "sh",
+        "count": 672621
+      },
+      {
+        "ngram": "di",
+        "count": 662605
+      },
+      {
+        "ngram": "wa",
+        "count": 648654
+      },
+      {
+        "ngram": "ya",
+        "count": 640816
+      },
+      {
+        "ngram": "sa",
+        "count": 632798
+      },
+      {
+        "ngram": "ko",
+        "count": 624769
+      },
+      {
+        "ngram": "uk",
+        "count": 617449
+      },
+      {
+        "ngram": "at",
+        "count": 610257
+      },
+      {
+        "ngram": "be",
+        "count": 582786
+      },
+      {
+        "ngram": "il",
+        "count": 580399
+      },
+      {
+        "ngram": "bi",
+        "count": 566120
+      },
+      {
+        "ngram": "ul",
+        "count": 557569
+      },
+      {
+        "ngram": "ol",
+        "count": 555792
+      },
+      {
+        "ngram": "el",
+        "count": 553457
+      },
+      {
+        "ngram": "hi",
+        "count": 551740
+      },
+      {
+        "ngram": "ok",
+        "count": 538218
+      },
+      {
+        "ngram": "ik",
+        "count": 520660
+      },
+      {
+        "ngram": "da",
+        "count": 519179
+      },
+      {
+        "ngram": "ku",
+        "count": 510563
+      },
+      {
+        "ngram": "ta",
+        "count": 505825
+      }
+    ],
+    "probable_native_ngrams_3": [
+      {
+        "ngram": "nga",
+        "count": 1076984
+      },
+      {
+        "ngram": "mba",
+        "count": 976232
+      },
+      {
+        "ngram": "ang",
+        "count": 785278
+      },
+      {
+        "ngram": "amb",
+        "count": 768402
+      },
+      {
+        "ngram": "ngo",
+        "count": 723730
+      },
+      {
+        "ngram": "aka",
+        "count": 593891
+      },
+      {
+        "ngram": "ong",
+        "count": 593060
+      },
+      {
+        "ngram": "ala",
+        "count": 483541
+      },
+      {
+        "ngram": "nda",
+        "count": 460683
+      },
+      {
+        "ngram": "mbo",
+        "count": 433059
+      },
+      {
+        "ngram": "ama",
+        "count": 432634
+      },
+      {
+        "ngram": "shi",
+        "count": 419388
+      },
+      {
+        "ngram": "eng",
+        "count": 417764
+      },
+      {
+        "ngram": "and",
+        "count": 400342
+      },
+      {
+        "ngram": "omb",
+        "count": 399507
+      },
+      {
+        "ngram": "umb",
+        "count": 396945
+      },
+      {
+        "ngram": "ung",
+        "count": 392900
+      },
+      {
+        "ngram": "tsh",
+        "count": 370097
+      },
+      {
+        "ngram": "amu",
+        "count": 366205
+      },
+      {
+        "ngram": "mbu",
+        "count": 342885
+      },
+      {
+        "ngram": "kab",
+        "count": 336717
+      },
+      {
+        "ngram": "ban",
+        "count": 331407
+      },
+      {
+        "ngram": "ngu",
+        "count": 329279
+      },
+      {
+        "ngram": "emb",
+        "count": 316620
+      },
+      {
+        "ngram": "aba",
+        "count": 306959
+      },
+      {
+        "ngram": "man",
+        "count": 298759
+      },
+      {
+        "ngram": "mbe",
+        "count": 291781
+      },
+      {
+        "ngram": "kan",
+        "count": 282485
+      },
+      {
+        "ngram": "kal",
+        "count": 280884
+      },
+      {
+        "ngram": "kas",
+        "count": 260673
+      },
+      {
+        "ngram": "ing",
+        "count": 257370
+      },
+      {
+        "ngram": "ndo",
+        "count": 256364
+      },
+      {
+        "ngram": "uka",
+        "count": 254282
+      },
+      {
+        "ngram": "kam",
+        "count": 253793
+      },
+      {
+        "ngram": "adi",
+        "count": 251684
+      },
+      {
+        "ngram": "ika",
+        "count": 246084
+      },
+      {
+        "ngram": "bam",
+        "count": 244945
+      },
+      {
+        "ngram": "nge",
+        "count": 241703
+      },
+      {
+        "ngram": "ond",
+        "count": 241479
+      },
+      {
+        "ngram": "alu",
+        "count": 232995
+      },
+      {
+        "ngram": "mbi",
+        "count": 224319
+      },
+      {
+        "ngram": "muk",
+        "count": 223240
+      },
+      {
+        "ngram": "olo",
+        "count": 222628
+      },
+      {
+        "ngram": "ele",
+        "count": 216386
+      },
+      {
+        "ngram": "ima",
+        "count": 215298
+      },
+      {
+        "ngram": "anz",
+        "count": 212410
+      },
+      {
+        "ngram": "imb",
+        "count": 203419
+      },
+      {
+        "ngram": "lam",
+        "count": 202212
+      },
+      {
+        "ngram": "end",
+        "count": 201661
+      },
+      {
+        "ngram": "eka",
+        "count": 200799
+      }
+    ],
+    "probable_surname_ngrams_2": [
+      {
+        "ngram": "an",
+        "count": 961970
+      },
+      {
+        "ngram": "in",
+        "count": 798644
+      },
+      {
+        "ngram": "el",
+        "count": 777156
+      },
+      {
+        "ngram": "ie",
+        "count": 754962
+      },
+      {
+        "ngram": "ne",
+        "count": 715335
+      },
+      {
+        "ngram": "er",
+        "count": 687128
+      },
+      {
+        "ngram": "ri",
+        "count": 679318
+      },
+      {
+        "ngram": "en",
+        "count": 505480
+      },
+      {
+        "ngram": "ar",
+        "count": 502520
+      },
+      {
+        "ngram": "is",
+        "count": 495471
+      },
+      {
+        "ngram": "ra",
+        "count": 467422
+      },
+      {
+        "ngram": "ch",
+        "count": 442118
+      },
+      {
+        "ngram": "re",
+        "count": 431506
+      },
+      {
+        "ngram": "ma",
+        "count": 412771
+      },
+      {
+        "ngram": "le",
+        "count": 410172
+      },
+      {
+        "ngram": "st",
+        "count": 408149
+      },
+      {
+        "ngram": "on",
+        "count": 400643
+      },
+      {
+        "ngram": "li",
+        "count": 383544
+      },
+      {
+        "ngram": "ic",
+        "count": 378600
+      },
+      {
+        "ngram": "se",
+        "count": 376482
+      },
+      {
+        "ngram": "ce",
+        "count": 371526
+      },
+      {
+        "ngram": "ti",
+        "count": 366977
+      },
+      {
+        "ngram": "he",
+        "count": 359936
+      },
+      {
+        "ngram": "or",
+        "count": 340595
+      },
+      {
+        "ngram": "es",
+        "count": 329446
+      },
+      {
+        "ngram": "la",
+        "count": 325693
+      },
+      {
+        "ngram": "th",
+        "count": 324570
+      },
+      {
+        "ngram": "ha",
+        "count": 314705
+      },
+      {
+        "ngram": "di",
+        "count": 311310
+      },
+      {
+        "ngram": "jo",
+        "count": 299381
+      },
+      {
+        "ngram": "na",
+        "count": 299123
+      },
+      {
+        "ngram": "be",
+        "count": 291759
+      },
+      {
+        "ngram": "al",
+        "count": 282061
+      },
+      {
+        "ngram": "te",
+        "count": 281270
+      },
+      {
+        "ngram": "ni",
+        "count": 277495
+      },
+      {
+        "ngram": "mi",
+        "count": 267335
+      },
+      {
+        "ngram": "je",
+        "count": 264871
+      },
+      {
+        "ngram": "ac",
+        "count": 262161
+      },
+      {
+        "ngram": "de",
+        "count": 261838
+      },
+      {
+        "ngram": "vi",
+        "count": 252877
+      },
+      {
+        "ngram": "at",
+        "count": 243227
+      },
+      {
+        "ngram": "ia",
+        "count": 241421
+      },
+      {
+        "ngram": "ph",
+        "count": 237061
+      },
+      {
+        "ngram": "me",
+        "count": 235230
+      },
+      {
+        "ngram": "ge",
+        "count": 222308
+      },
+      {
+        "ngram": "nc",
+        "count": 221261
+      },
+      {
+        "ngram": "sa",
+        "count": 213498
+      },
+      {
+        "ngram": "ea",
+        "count": 212026
+      },
+      {
+        "ngram": "lo",
+        "count": 204201
+      },
+      {
+        "ngram": "as",
+        "count": 204045
+      }
+    ],
+    "probable_surname_ngrams_3": [
+      {
+        "ngram": "ine",
+        "count": 364959
+      },
+      {
+        "ngram": "ris",
+        "count": 190542
+      },
+      {
+        "ngram": "ean",
+        "count": 183197
+      },
+      {
+        "ngram": "jea",
+        "count": 182725
+      },
+      {
+        "ngram": "tin",
+        "count": 181496
+      },
+      {
+        "ngram": "sti",
+        "count": 174469
+      },
+      {
+        "ngram": "ric",
+        "count": 165581
+      },
+      {
+        "ngram": "mar",
+        "count": 163844
+      },
+      {
+        "ngram": "cha",
+        "count": 160033
+      },
+      {
+        "ngram": "anc",
+        "count": 152924
+      },
+      {
+        "ngram": "ist",
+        "count": 151835
+      },
+      {
+        "ngram": "eli",
+        "count": 148463
+      },
+      {
+        "ngram": "rac",
+        "count": 135189
+      },
+      {
+        "ngram": "ari",
+        "count": 128969
+      },
+      {
+        "ngram": "chr",
+        "count": 125241
+      },
+      {
+        "ngram": "her",
+        "count": 124530
+      },
+      {
+        "ngram": "hri",
+        "count": 124320
+      },
+      {
+        "ngram": "tte",
+        "count": 122403
+      },
+      {
+        "ngram": "nce",
+        "count": 118233
+      },
+      {
+        "ngram": "lin",
+        "count": 117737
+      },
+      {
+        "ngram": "ien",
+        "count": 117704
+      },
+      {
+        "ngram": "jos",
+        "count": 115641
+      },
+      {
+        "ngram": "the",
+        "count": 114459
+      },
+      {
+        "ngram": "ier",
+        "count": 113016
+      },
+      {
+        "ngram": "che",
+        "count": 109918
+      },
+      {
+        "ngram": "lle",
+        "count": 109022
+      },
+      {
+        "ngram": "ose",
+        "count": 109021
+      },
+      {
+        "ngram": "ene",
+        "count": 108462
+      },
+      {
+        "ngram": "ber",
+        "count": 108410
+      },
+      {
+        "ngram": "ran",
+        "count": 107865
+      },
+      {
+        "ngram": "ett",
+        "count": 107131
+      },
+      {
+        "ngram": "han",
+        "count": 105728
+      },
+      {
+        "ngram": "ise",
+        "count": 103632
+      },
+      {
+        "ngram": "eph",
+        "count": 101756
+      },
+      {
+        "ngram": "ell",
+        "count": 100791
+      },
+      {
+        "ngram": "die",
+        "count": 98948
+      },
+      {
+        "ngram": "lie",
+        "count": 96567
+      },
+      {
+        "ngram": "ick",
+        "count": 95937
+      },
+      {
+        "ngram": "and",
+        "count": 95601
+      },
+      {
+        "ngram": "nne",
+        "count": 95333
+      },
+      {
+        "ngram": "ust",
+        "count": 93135
+      },
+      {
+        "ngram": "rie",
+        "count": 91870
+      },
+      {
+        "ngram": "ani",
+        "count": 90889
+      },
+      {
+        "ngram": "est",
+        "count": 89915
+      },
+      {
+        "ngram": "ben",
+        "count": 89222
+      },
+      {
+        "ngram": "nie",
+        "count": 88424
+      },
+      {
+        "ngram": "hel",
+        "count": 87967
+      },
+      {
+        "ngram": "ath",
+        "count": 85537
+      },
+      {
+        "ngram": "ich",
+        "count": 84279
+      },
+      {
+        "ngram": "gra",
+        "count": 84234
+      }
+    ]
+  },
+  "letters": {
+    "a": 22891736,
+    "e": 12916585,
+    "n": 12189629,
+    "i": 12098961,
+    "m": 9953667,
+    "o": 8910579,
+    "u": 8367521,
+    "l": 7420282,
+    "b": 6928657,
+    "k": 6460145,
+    "s": 5514645,
+    "t": 4711872,
+    "g": 4611956,
+    "d": 4202228,
+    "r": 4119285,
+    "h": 3069231,
+    "y": 2649339,
+    "c": 2129631,
+    "p": 1779674,
+    "w": 1706342,
+    "j": 1412657,
+    "z": 1358124,
+    "v": 974864,
+    "f": 880240,
+    "q": 90763,
+    "x": 73491
+  },
+  "by_province": [
+    {
+      "province": "autre",
+      "m": 1530087,
+      "f": 992423,
+      "total": 2522510,
+      "simple": 2018242,
+      "complex": 504268,
+      "unique_names": 2465765,
+      "unique_names_normalized": 2465551,
+      "m_ratio": 0.606573,
+      "f_ratio": 0.393427,
+      "simple_ratio": 0.800093,
+      "complex_ratio": 0.199907
+    },
+    {
+      "province": "bandundu",
+      "m": 496382,
+      "f": 305370,
+      "total": 801752,
+      "simple": 293673,
+      "complex": 508079,
+      "unique_names": 775347,
+      "unique_names_normalized": 775284,
+      "m_ratio": 0.619122,
+      "f_ratio": 0.380878,
+      "simple_ratio": 0.366289,
+      "complex_ratio": 0.633711
+    },
+    {
+      "province": "bas-congo",
+      "m": 169699,
+      "f": 122402,
+      "total": 292101,
+      "simple": 269494,
+      "complex": 22607,
+      "unique_names": 288681,
+      "unique_names_normalized": 288629,
+      "m_ratio": 0.58096,
+      "f_ratio": 0.41904,
+      "simple_ratio": 0.922606,
+      "complex_ratio": 0.077394
+    },
+    {
+      "province": "equateur",
+      "m": 265121,
+      "f": 108525,
+      "total": 373646,
+      "simple": 332519,
+      "complex": 41127,
+      "unique_names": 372464,
+      "unique_names_normalized": 372450,
+      "m_ratio": 0.709551,
+      "f_ratio": 0.290449,
+      "simple_ratio": 0.889931,
+      "complex_ratio": 0.110069
+    },
+    {
+      "province": "kasai-occidental",
+      "m": 320103,
+      "f": 117810,
+      "total": 437913,
+      "simple": 322189,
+      "complex": 115724,
+      "unique_names": 411429,
+      "unique_names_normalized": 411380,
+      "m_ratio": 0.730974,
+      "f_ratio": 0.269026,
+      "simple_ratio": 0.735737,
+      "complex_ratio": 0.264263
+    },
+    {
+      "province": "kasai-oriental",
+      "m": 277774,
+      "f": 120001,
+      "total": 397775,
+      "simple": 369505,
+      "complex": 28270,
+      "unique_names": 383110,
+      "unique_names_normalized": 383075,
+      "m_ratio": 0.698319,
+      "f_ratio": 0.301681,
+      "simple_ratio": 0.92893,
+      "complex_ratio": 0.07107
+    },
+    {
+      "province": "katanga",
+      "m": 543810,
+      "f": 302936,
+      "total": 846746,
+      "simple": 698197,
+      "complex": 148549,
+      "unique_names": 818704,
+      "unique_names_normalized": 818469,
+      "m_ratio": 0.642235,
+      "f_ratio": 0.357765,
+      "simple_ratio": 0.824565,
+      "complex_ratio": 0.175435
+    },
+    {
+      "province": "kinshasa",
+      "m": 570529,
+      "f": 594509,
+      "total": 1165038,
+      "simple": 1091330,
+      "complex": 73708,
+      "unique_names": 1142275,
+      "unique_names_normalized": 1142243,
+      "m_ratio": 0.489708,
+      "f_ratio": 0.510292,
+      "simple_ratio": 0.936733,
+      "complex_ratio": 0.063267
+    },
+    {
+      "province": "maniema",
+      "m": 97669,
+      "f": 31445,
+      "total": 129114,
+      "simple": 70018,
+      "complex": 59096,
+      "unique_names": 123260,
+      "unique_names_normalized": 123248,
+      "m_ratio": 0.756456,
+      "f_ratio": 0.243544,
+      "simple_ratio": 0.542296,
+      "complex_ratio": 0.457704
+    },
+    {
+      "province": "nord-kivu",
+      "m": 224967,
+      "f": 167826,
+      "total": 392793,
+      "simple": 351686,
+      "complex": 41107,
+      "unique_names": 386407,
+      "unique_names_normalized": 386372,
+      "m_ratio": 0.572737,
+      "f_ratio": 0.427263,
+      "simple_ratio": 0.895347,
+      "complex_ratio": 0.104653
+    },
+    {
+      "province": "orientale",
+      "m": 216564,
+      "f": 123588,
+      "total": 340152,
+      "simple": 293619,
+      "complex": 46533,
+      "unique_names": 338730,
+      "unique_names_normalized": 338716,
+      "m_ratio": 0.636668,
+      "f_ratio": 0.363332,
+      "simple_ratio": 0.863199,
+      "complex_ratio": 0.136801
+    },
+    {
+      "province": "sud-kivu",
+      "m": 222041,
+      "f": 132402,
+      "total": 354443,
+      "simple": 214291,
+      "complex": 140152,
+      "unique_names": 343664,
+      "unique_names_normalized": 343628,
+      "m_ratio": 0.626451,
+      "f_ratio": 0.373549,
+      "simple_ratio": 0.604585,
+      "complex_ratio": 0.395415
+    }
+  ],
+  "by_year": [
+    {
+      "year": 2008,
+      "m": 115278,
+      "f": 67798,
+      "total": 183076,
+      "simple": 168344,
+      "complex": 14732,
+      "unique_names": 164012,
+      "unique_names_normalized": 164010,
+      "m_ratio": 0.629673,
+      "f_ratio": 0.370327,
+      "simple_ratio": 0.919531,
+      "complex_ratio": 0.080469
+    },
+    {
+      "year": 2009,
+      "m": 171348,
+      "f": 84864,
+      "total": 256212,
+      "simple": 196286,
+      "complex": 59926,
+      "unique_names": 255294,
+      "unique_names_normalized": 255292,
+      "m_ratio": 0.668774,
+      "f_ratio": 0.331226,
+      "simple_ratio": 0.766108,
+      "complex_ratio": 0.233892
+    },
+    {
+      "year": 2010,
+      "m": 190608,
+      "f": 90928,
+      "total": 281536,
+      "simple": 211094,
+      "complex": 70442,
+      "unique_names": 280370,
+      "unique_names_normalized": 280366,
+      "m_ratio": 0.677029,
+      "f_ratio": 0.322971,
+      "simple_ratio": 0.749794,
+      "complex_ratio": 0.250206
+    },
+    {
+      "year": 2011,
+      "m": 216895,
+      "f": 107011,
+      "total": 323906,
+      "simple": 233558,
+      "complex": 90348,
+      "unique_names": 322315,
+      "unique_names_normalized": 322312,
+      "m_ratio": 0.669623,
+      "f_ratio": 0.330377,
+      "simple_ratio": 0.721067,
+      "complex_ratio": 0.278933
+    },
+    {
+      "year": 2012,
+      "m": 217107,
+      "f": 107783,
+      "total": 324890,
+      "simple": 246949,
+      "complex": 77941,
+      "unique_names": 319468,
+      "unique_names_normalized": 319463,
+      "m_ratio": 0.668248,
+      "f_ratio": 0.331752,
+      "simple_ratio": 0.7601,
+      "complex_ratio": 0.2399
+    },
+    {
+      "year": 2013,
+      "m": 176261,
+      "f": 94444,
+      "total": 270705,
+      "simple": 209403,
+      "complex": 61302,
+      "unique_names": 269618,
+      "unique_names_normalized": 269616,
+      "m_ratio": 0.651118,
+      "f_ratio": 0.348882,
+      "simple_ratio": 0.773547,
+      "complex_ratio": 0.226453
+    },
+    {
+      "year": 2014,
+      "m": 211911,
+      "f": 118152,
+      "total": 330063,
+      "simple": 254931,
+      "complex": 75132,
+      "unique_names": 328490,
+      "unique_names_normalized": 328488,
+      "m_ratio": 0.642032,
+      "f_ratio": 0.357968,
+      "simple_ratio": 0.772371,
+      "complex_ratio": 0.227629
+    },
+    {
+      "year": 2015,
+      "m": 456623,
+      "f": 273206,
+      "total": 729829,
+      "simple": 559523,
+      "complex": 170306,
+      "unique_names": 365306,
+      "unique_names_normalized": 365301,
+      "m_ratio": 0.625658,
+      "f_ratio": 0.374342,
+      "simple_ratio": 0.766649,
+      "complex_ratio": 0.233351
+    },
+    {
+      "year": 2016,
+      "m": 246542,
+      "f": 153597,
+      "total": 400139,
+      "simple": 318959,
+      "complex": 81180,
+      "unique_names": 398523,
+      "unique_names_normalized": 398515,
+      "m_ratio": 0.616141,
+      "f_ratio": 0.383859,
+      "simple_ratio": 0.797121,
+      "complex_ratio": 0.202879
+    },
+    {
+      "year": 2017,
+      "m": 252718,
+      "f": 160845,
+      "total": 413563,
+      "simple": 330470,
+      "complex": 83093,
+      "unique_names": 412049,
+      "unique_names_normalized": 412042,
+      "m_ratio": 0.611075,
+      "f_ratio": 0.388925,
+      "simple_ratio": 0.79908,
+      "complex_ratio": 0.20092
+    },
+    {
+      "year": 2018,
+      "m": 303193,
+      "f": 198776,
+      "total": 501969,
+      "simple": 406208,
+      "complex": 95761,
+      "unique_names": 499610,
+      "unique_names_normalized": 499599,
+      "m_ratio": 0.604007,
+      "f_ratio": 0.395993,
+      "simple_ratio": 0.809229,
+      "complex_ratio": 0.190771
+    },
+    {
+      "year": 2019,
+      "m": 311569,
+      "f": 204467,
+      "total": 516036,
+      "simple": 422718,
+      "complex": 93318,
+      "unique_names": 513885,
+      "unique_names_normalized": 513881,
+      "m_ratio": 0.603774,
+      "f_ratio": 0.396226,
+      "simple_ratio": 0.819164,
+      "complex_ratio": 0.180836
+    },
+    {
+      "year": 2020,
+      "m": 378949,
+      "f": 254505,
+      "total": 633454,
+      "simple": 521790,
+      "complex": 111664,
+      "unique_names": 629642,
+      "unique_names_normalized": 629626,
+      "m_ratio": 0.598227,
+      "f_ratio": 0.401773,
+      "simple_ratio": 0.823722,
+      "complex_ratio": 0.176278
+    },
+    {
+      "year": 2021,
+      "m": 563006,
+      "f": 393988,
+      "total": 956994,
+      "simple": 790433,
+      "complex": 166561,
+      "unique_names": 492166,
+      "unique_names_normalized": 492153,
+      "m_ratio": 0.588307,
+      "f_ratio": 0.411693,
+      "simple_ratio": 0.825954,
+      "complex_ratio": 0.174046
+    },
+    {
+      "year": 2022,
+      "m": 713479,
+      "f": 508719,
+      "total": 1222198,
+      "simple": 982911,
+      "complex": 239287,
+      "unique_names": 602653,
+      "unique_names_normalized": 602640,
+      "m_ratio": 0.583767,
+      "f_ratio": 0.416233,
+      "simple_ratio": 0.804216,
+      "complex_ratio": 0.195784
+    },
+    {
+      "year": 2023,
+      "m": 409259,
+      "f": 300154,
+      "total": 709413,
+      "simple": 471186,
+      "complex": 238227,
+      "unique_names": 691221,
+      "unique_names_normalized": 691159,
+      "m_ratio": 0.576898,
+      "f_ratio": 0.423102,
+      "simple_ratio": 0.664191,
+      "complex_ratio": 0.335809
+    }
+  ],
+  "diversity_by_province": [
+    {
+      "province": "autre",
+      "shannon": 14.705133,
+      "simpson": 1.0,
+      "effective_names": 2434209.624766
+    },
+    {
+      "province": "bandundu",
+      "shannon": 13.541098,
+      "simpson": 0.999999,
+      "effective_names": 760018.567764
+    },
+    {
+      "province": "bas-congo",
+      "shannon": 12.565027,
+      "simpson": 0.999996,
+      "effective_names": 286366.16786
+    },
+    {
+      "province": "equateur",
+      "shannon": 12.826454,
+      "simpson": 0.999997,
+      "effective_names": 371927.368612
+    },
+    {
+      "province": "kasai-occidental",
+      "shannon": 12.86769,
+      "simpson": 0.999997,
+      "effective_names": 387584.63197
+    },
+    {
+      "province": "kasai-oriental",
+      "shannon": 7.108713,
+      "simpson": -3e-06,
+      "effective_names": 1222.57368
+    },
+    {
+      "province": "katanga",
+      "shannon": 13.590232,
+      "simpson": 0.999999,
+      "effective_names": 798293.477282
+    },
+    {
+      "province": "kinshasa",
+      "shannon": 13.940399,
+      "simpson": 0.999999,
+      "effective_names": 1133021.567552
+    },
+    {
+      "province": "maniema",
+      "shannon": 11.687614,
+      "simpson": 0.999991,
+      "effective_names": 119087.469215
+    },
+    {
+      "province": "nord-kivu",
+      "shannon": 12.856276,
+      "simpson": 0.999997,
+      "effective_names": 383186.177337
+    },
+    {
+      "province": "orientale",
+      "shannon": 12.730974,
+      "simpson": 0.999997,
+      "effective_names": 338058.418909
+    },
+    {
+      "province": "sud-kivu",
+      "shannon": 12.724993,
+      "simpson": 0.999997,
+      "effective_names": 336042.637341
+    }
+  ],
+  "variant_pairs_observed": [
+    {
+      "forms": [
+        "ngoy",
+        "ngoyi",
+        "ngoie"
+      ],
+      "basis": "all three in the first-token top 50 (58,229 / 20,600 / 14,157)",
+      "status": "proposed"
+    },
+    {
+      "forms": [
+        "mwamba",
+        "muamba"
+      ],
+      "basis": "both in the first-token top 50 (16,052 / 11,265): w written w or u",
+      "status": "proposed"
+    }
+  ],
+  "never": "No ethnicity, clan, tribe or religion pattern; province, sex and year only (BENCHMARK_PROTOCOL.md §2.4; C12)"
+}

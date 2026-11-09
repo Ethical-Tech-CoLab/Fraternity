@@ -17,6 +17,10 @@ import re
 # Long stems match anywhere in a field name; short words only as whole words,
 # so "trace" and "ordinal" pass.
 _STEMS = re.compile(r"ethni|tribe|tribal|tribu|clan|religio|caste", re.IGNORECASE)
+# Ordinary words that contain a stem ("dis-tribu-tion", "at-tribu-te"): removed
+# before the stem search, so they no longer cause false positives (found 9 Nov
+# 2026, when a profile's "token_count_distribution" was rejected).
+_BENIGN = re.compile(r"distribut|attribut|contribut|retribut", re.IGNORECASE)
 _WORDS = {
     "race", "racial",
     "ubwoko", "ubwooko", "amoko",  # Kirundi/Kinyarwanda: race, tribe, clan, kind
@@ -28,7 +32,7 @@ _WORDS = {
 
 def _is_forbidden(key):
     key = str(key)
-    if _STEMS.search(key):
+    if _STEMS.search(_BENIGN.sub(" ", key)):
         return True
     words = re.sub(r"([a-z])([A-Z])", r"\1 \2", key).lower()
     return any(w in _WORDS for w in re.split(r"[^a-z]+", words))

@@ -1912,3 +1912,24 @@ Packs: rw-kiny 0.10.0, bi-kirundi 0.13.0. **Tests:** see commit.
 **Kept below high, with reasons:** rw-kiny gendered prefixes (Kimenyi 1978 only); `order-teknonym` (Rwanda-specific only for in-laws); bi-kirundi `order-aggregators-swap` (one observation of a non-authoritative site); mission spellings (`hypothesis`, Mioni not obtainable).
 
 Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 7, hypothesis 7, disputed 6, unknown 1. **Tests:** 135 pass.
+
+## 2026-11-09 — Week 4 item 4: DRC naming profile from published aggregates (no raw data)
+
+**Approach (safer than the plan):** the CongoNames corpus is not distributed as a dataset; reproducing it means crawling the DRC Ministry's exam-result PDFs (8 million names, mostly of minors). The authors, however, publish **aggregate tables** in their repository (`reports/name_analysis/*.csv`). The profile was built **from those aggregates only**: no individual record was downloaded or read. Two published tables that list **full names** (`normalized_duplicate_names`, `unusual_names`) were identified from their headers and **deleted unread** (DR-1). The repository declares no licence; the paper (MDPI *Data*) is CC BY 4.0, and the profile holds statistical facts with attribution.
+
+**Profile** `namebridge/data/profiles/cd-congonames-2026.1.json` (script `scripts/build_profile_congonames.py`; source commit and file checksums recorded): 8,053,983 records, 2008–2023, 12 provinces. Token count: 3 tokens 78.5%, 2 tokens 17.6%, 4 tokens 3.5%; median 21 characters; 76% of distinct full names occur once. Top-50 first and last tokens by sex (smallest count 9,793), n-grams, letters, province and year distributions. No ethnicity, clan or religion pattern.
+
+**Findings used in cd-swc-ln 0.9.0:**
+- New order rule (high): exam lists write **nom, postnom, prénom** (Bantu first tokens, Christian last tokens).
+- Attested variant sets among the 50 most frequent first tokens: **ngoy / ngoyi / ngoie** and **mwamba / muamba** (recorded as `proposed` variant pairs in the profile; evidence added to `lingala-spelling-vacillates`).
+- **tsh** is a top-50 trigram of the Bantu name parts (370,097): the batch-1 place-name finding holds for personal names.
+- New failure mode: compound given names split or joined ("dieu" is a frequent final token; interpretation of an aggregate).
+- Diacritics in only 0.09% of names: supports folding.
+
+**Limits:** exam candidates (adolescents and young adults), not older adults or refugees; only the top 50 elements per position are published, so rare-name slots will be filled by invented elements built from the n-grams (as planned). *dj*, *ou* and *gn* are not in the published top-50 n-grams, so nothing is concluded about them.
+
+**Bug found and fixed (guard):** the ethnicity field guard matched the stem "tribu" inside **dis-tribu-tion** and **at-tribu-te**, rejecting the profile's `token_count_distribution`. Benign words are now removed before the stem search; tests in both directions (`test_guard.py`), plus guard tests for profiles (`test_profiles.py`: sources, counts ≥ 5, single-token elements, no forbidden fields). **Tests:** 141 pass.
+
+**Open for the user (protocol change):** the copy test (BENCHMARK_PROTOCOL §2.4, DR-1.2 step 3) assumes the raw list is held; with aggregates only it cannot be run as written. Proposed replacement: since the generator recombines published top-frequency elements and invents rare ones, measure instead the share of generated full names built only from top-50 elements, and keep no list of real full names at all.
+
+**Still to do in item 4:** Rwanda (NESA lists) and Burundi (NESA elements weighted by CENI frequencies). No published aggregates are known for these; they would need local processing of raw lists under DR-1.

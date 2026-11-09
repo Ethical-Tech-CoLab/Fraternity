@@ -99,6 +99,13 @@
       "source": "Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term; the user's first-hand observation in Malawi (reported 9 Nov 2026): 'mama' and 'papa' were used by everyone to refer to a person, like 'senhora'/'senhor' (madam/sir) in Portuguese; the people there were mostly from the DRC, some from Rwanda; a Kenyan colleague of the user speaks the same way (second-hand); Wawire, G. (2025), Elementary Swahili I, Baylor University open textbook, Lesson 7 'Culture: Greeting Etiquette in East African Culture' (https://openbooks.library.baylor.edu/elementaryswahili1/chapter/culture-greeting-etiquette): 'Using formal titles like Mzee (elder) or Mama/Baba (mother/father) … is considered respectful'; 'rather than calling Juma's mother by her given name, one would respectfully address her as Mama Juma'",
       "confidence": "high",
       "note": "The paper describes Swahili generally; the user's observation in Malawi, among mostly Congolese refugees, supports the honorific use for Congolese speakers"
+    },
+    {
+      "id": "order-exam-lists-nom-first-prenom-last",
+      "description": "National exam result lists write nom, postnom, then prénom: the most frequent first tokens are Bantu names (ilunga, ngoy, kasongo) and the most frequent last tokens Christian/French given names (jean, joseph, marie). 78.5% of names have three tokens, 17.6% two, 3.5% four",
+      "practice": "legal_document",
+      "source": "NameBridge naming profile cd-congonames-2026.1 (data/profiles/), from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169, 8,053,983 DRC exam-list records 2008-2023: first-token and last-token top 50, token_count_distribution",
+      "confidence": "high"
     }
   ],
   "particles_and_morphemes": [],
@@ -114,7 +121,7 @@
     {
       "id": "lingala-spelling-vacillates",
       "description": "Lingala has no uniformly accepted spelling; the same writer varies. Semivowel y is written i, y or not at all; w as w, o, u or not at all; close-mid o as o or u; a word-initial prenasal written or not (sango / nsango)",
-      "source": "APiCS Online, survey chapter 60, Lingala (https://apics-online.info/surveys/60)",
+      "source": "APiCS Online, survey chapter 60, Lingala (https://apics-online.info/surveys/60); NameBridge naming profile cd-congonames-2026.1 (data/profiles/), from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169, 8,053,983 DRC exam-list records 2008-2023: attested variant sets in the 50 most frequent first tokens: ngoy / ngoyi / ngoie (58,229 / 20,600 / 14,157) and mwamba / muamba (16,052 / 11,265)",
       "confidence": "high"
     },
     {
@@ -284,9 +291,9 @@
         "tsh",
         "tch"
       ],
-      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48); NameBridge naming profile cd-congonames-2026.1 (data/profiles/), from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169, 8,053,983 DRC exam-list records 2008-2023: 'tsh' is among the 50 most frequent letter trigrams of the Bantu name parts (370,097 occurrences)",
       "confidence": "high",
-      "note": "The spelling correspondence is part of French orthography (sources above); In official DRC names the sound is written tsh (19 names: Tshikapa, Rutshuru, Mutshatsha) and tch only once (Tchomia): Belgian-era spelling. Expect tsh first, tch from French writers"
+      "note": "The spelling correspondence is part of French orthography (sources above); In official DRC names the sound is written tsh (19 names: Tshikapa, Rutshuru, Mutshatsha) and tch only once (Tchomia): Belgian-era spelling. Expect tsh first, tch from French writers. Confirmed in personal names, not only place names"
     },
     {
       "sound": "/tʃ/",
@@ -474,6 +481,11 @@
       "id": "name-element-added-later",
       "description": "A paternal element added after registration (art. 59) makes an older record shorter than a newer one; compare with and without the added element",
       "source": "structure-father-adds-element"
+    },
+    {
+      "id": "compound-prenom-split",
+      "description": "Compound given names may be written as one word or two: 'dieu' is the 46th most frequent final token (20,034 times), consistent with forms like Dieu Donné / Dieudonné. Compare joined and split forms. (Interpretation of an aggregate; the full names were not inspected)",
+      "source": "NameBridge naming profile cd-congonames-2026.1 (data/profiles/), from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169, 8,053,983 DRC exam-list records 2008-2023: last-token top 50"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -519,5 +531,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.8.0"
+  "version": "0.9.0"
 }
