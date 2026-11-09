@@ -65,3 +65,16 @@ Query the name graph (names only, never people): the typed paths from a name to 
 .venv/bin/python -m namebridge.graph_api "Yohana"
 .venv/bin/python -m namebridge.graph_api "Ishimwe" --min-confidence 0.3
 ```
+
+Review graph edges (people with a role only; decisions are kept in `data/reviews/reviews.jsonl` and re-applied on every reload):
+
+```sh
+.venv/bin/python -m namebridge.review queue --limit 20
+.venv/bin/python -m namebridge.review record <edge-id> reviewed --by "<name>" --role linguist --note "<reason>"
+```
+
+Rebuild the source and licence register after adding a source (a test fails if an edge cites an unregistered source):
+
+```sh
+.venv/bin/python scripts/build_source_register.py data/register/sources.json
+```

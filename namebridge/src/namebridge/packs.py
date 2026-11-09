@@ -56,6 +56,9 @@ def merge(graph_dir, owner_field, owners, new_nodes, new_edges=()):
             nodes.append(node)
             known.add(node["id"])
     edges.extend(new_edges)
+    # Review decisions live in an append-only log and survive every reload (namebridge.review).
+    from namebridge.review import apply_reviews, read_reviews
+    apply_reviews(edges, read_reviews(graph_dir))
 
     errors = validate_graph(nodes, edges)
     if errors:

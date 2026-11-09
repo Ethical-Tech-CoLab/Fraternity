@@ -26,3 +26,15 @@ def test_relation_needs_known_source_and_form():
          "relations": [{"from": "a", "to": "b", "relation_type": "not_equivalent_to", "source": "x", "regions": ["RW"]}]}
     errs = validate_dataset(d)
     assert any("unknown form" in e for e in errs) and any("known source" in e for e in errs)
+
+
+def test_every_edge_source_is_in_the_register():
+    # A new source must be registered (licence, use) before its edges enter the graph.
+    reg = json.loads((DATA.parent / "register" / "sources.json").read_text(encoding="utf-8"))
+    urls = {s["url"] for s in reg["sources"]}
+    graph = DATA.parent / "graph" / "edges.jsonl"
+    missing = set()
+    for line in graph.read_text(encoding="utf-8").splitlines():
+        e = json.loads(line)
+        missing |= {u for u in e["source_url"].split("; ") if u not in urls}
+    assert missing == set(), sorted(missing)[:5]

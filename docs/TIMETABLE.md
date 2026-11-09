@@ -203,7 +203,7 @@ Plan (all items done 26 Oct):
 
 - **Corpus:** aim for about 2,000 sourced relationships for the corridor (§10 says 2,000–10,000).
 - ◐ **Negative constraints** (`not_equivalent_to`) and ambiguous paths. *9 Nov: 7 negative constraints from NISR (`attested-variants-2026.1`); enforced by the graph API. Ambiguous paths: remaining.*
-- **Review workflow:** `proposed` → `reviewed` → `deprecated`; a source and licence register.
+- ✔ **Review workflow:** `proposed` → `reviewed` → `deprecated`; a source and licence register. *Done 9 Nov: `namebridge.review` (append-only log, replayed on reload) and `data/register/sources.json` (60 sources, 12 licences verified, 2 flagged). No review recorded yet: needs people with a role.*
 - ◐ **Candidate sources** (CongoNames reviewed 26 Oct: provenance = DRC state-exam lists 2008–2023; licence CC BY 4.0; real names, so aggregates only. **Remaining:** Onomaverse and Wikidata): review Onomaverse, Wikidata aliases (§7) and CongoNames (`SCOPE.md` §6; real names, so aggregate statistics only) for provenance, coverage and licence before using them.
 - ✔ **Graph API** (§12): given a name, return the typed paths to its variants, with confidence and source. *Done 9 Nov: `namebridge.graph_api` (negative constraints remove variants; deprecated edges ignored).*
 - ◐ **Real-pattern variants** (sources found 26 Oct: UN 1533 list, e.g. `KAKOLELE`/`KAKORERE`; 2014 spelling reform. **Remaining:** collect them): collect the sanctions-list aliases and the 2014 Kinyarwanda spelling forms (`BENCHMARK_PROTOCOL.md` §2.4). Variant pairs from the profiles enter the graph as `proposed` edges.

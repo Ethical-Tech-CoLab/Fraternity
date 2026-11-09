@@ -1,0 +1,793 @@
+{
+  "register": "NameBridge source and licence register",
+  "built": "by scripts/build_source_register.py",
+  "sources": [
+    {
+      "url": "http://harvestime.org/translations/chichewa/creative%20bible%20study%20fina%20copy.pdf",
+      "name": "Harvestime, Chichewa Bible study course ('Ukadaulo wa kasanthulidwe ka Baibulo')",
+      "language": "ny",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://abisezerano.com/wp-content/uploads/2018/06/bibiliya.pdf",
+      "name": "Bibiliya Yera (Kinyarwanda Bible), PDF",
+      "language": "rw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced",
+      "concern": "third-party copy of a copyrighted Bible; used only for names (facts); replace with the Bible Society of Rwanda's edition if a citable one is found"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/679903cd636f8db3c270713e/Rwanda_Toponymic_Factfile.pdf",
+      "name": "UK Government, Rwanda Toponymic Factfile (2025)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://bibleproject.com/rw",
+      "name": "BibleProject, Kinyarwanda book overviews",
+      "language": "rw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://breakingburundi.com/burundi-senate-approves-five-new-provincial-governors-after-major-administrative-reform",
+      "name": "Breaking Burundi, 'Senate approves five new provincial governors after major administrative reform', 2025",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "press",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://courses.shepherdsglobal.org/kiswahili/exploring-the-new-testament/lesson/2-mathayo-marko-na-luka-maisha-ya-kristo",
+      "name": "Shepherds Global Classroom, 'Mathayo, Marko, na Luka' (Swahili New Testament survey)",
+      "language": "sw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://data.humdata.org/dataset/cod-ab-bdi",
+      "name": "HDX cod-ab-bdi v02: Burundi administrative boundaries levels 0-4, Bureau de Centralisation de Géomatique (BCG), valid from 2026 (CC BY-IGO)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian data",
+      "licence": "CC BY-IGO",
+      "licence_verified": true,
+      "how_verified": "HDX dataset page, recorded when the boundaries were loaded (5 Nov 2026)",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://data.humdata.org/dataset/cod-ab-cod",
+      "name": "HDX cod-ab-cod: Democratic Republic of the Congo, subnational administrative boundaries, Référentiel Géographique Commun (RGC), v01 (valid from 2019), updated 2026 (CC BY-IGO)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian data",
+      "licence": "CC BY-IGO",
+      "licence_verified": true,
+      "how_verified": "HDX dataset page, recorded when the boundaries were loaded (5 Nov 2026)",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://doi.org/10.3390/data11070169",
+      "name": "NameBridge profile cd-congonames-2026.1, from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169 (8,053,983 DRC exam records)",
+      "language": "fr",
+      "datasets": [
+        "attested-variants-2026.1"
+      ],
+      "kind": "peer-reviewed publication",
+      "licence": "CC BY 4.0",
+      "licence_verified": true,
+      "how_verified": "MDPI Data article licence; the authors' repository declares no licence (RESEARCH_LOG 9 Nov 2026)",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://dokumen.pub/bibiliya-the-holy-bible-new-testament-in-kurundi-rundi-ikurundi.html",
+      "name": "Bibiliya, New Testament in Kirundi (dokumen.pub record; snippet only, page did not load)",
+      "language": "rn",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced",
+      "concern": "third-party host of a copyrighted book; used only for a book-list snippet; replace with a publisher or library source"
+    },
+    {
+      "url": "https://downloads.open.bible/text/sw/swONEN14/swONEN14_PDF.pdf",
+      "name": "Biblia Takatifu (Swahili), Open.Bible edition",
+      "language": "sw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://ebible.org/details.php?id=engwebp",
+      "name": "World English Bible (public domain), USFM edition from ebible.org",
+      "language": "en",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "public domain",
+      "licence_verified": true,
+      "how_verified": "copr.htm in the ebible.org USFM package, read 9 Nov 2026",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://ebible.org/details.php?id=fraLSG",
+      "name": "Louis Segond 1910 (public domain), USFM edition from ebible.org",
+      "language": "fr",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "public domain",
+      "licence_verified": true,
+      "how_verified": "copr.htm in the ebible.org USFM package, read 9 Nov 2026",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://ebible.org/details.php?id=lin",
+      "name": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org",
+      "language": "ln",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "CC BY-SA 4.0",
+      "licence_verified": true,
+      "how_verified": "copr.htm in the ebible.org USFM package, read 9 Nov 2026",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://ebible.org/details.php?id=nya",
+      "name": "Chichewa Bible (Biblica, Inc., 2002/2016, CC BY-SA 4.0), ebible.org",
+      "language": "ny",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "CC BY-SA 4.0",
+      "licence_verified": true,
+      "how_verified": "copr.htm in the ebible.org USFM package, read 9 Nov 2026",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://ebible.org/details.php?id=swhulb",
+      "name": "Swahili Unlocked Literal Bible (Door43 World Missions Community, CC BY-SA 4.0), ebible.org",
+      "language": "sw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "CC BY-SA 4.0",
+      "licence_verified": true,
+      "how_verified": "copr.htm in the ebible.org USFM package, read 9 Nov 2026",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://github.com/Ethical-Tech-CoLab/Fraternity/blob/main/namebridge/scripts/burundi_crosswalk.py",
+      "name": "NameBridge derived crosswalk: each new colline located by its point inside the old commune polygons, area-weighted (scripts/burundi_crosswalk.py), from bi-cod-ab-2026 and bi-geoboundaries-2007",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "NameBridge derived data",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://openknowledge.fao.org/server/api/core/bitstreams/cfd0a845-2a67-4fa2-ae06-8ec8ea874ce3/content",
+      "name": "FAO, Burundi livestock case study (May 2008), FAO Knowledge Repository",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://reliefweb.int/report/burundi/ocha-burundi-weekly-information-update-09-22-apr-2001",
+      "name": "OCHA Burundi Weekly Information Update, 09-22 Apr 2001 (ReliefWeb)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://reliefweb.int/report/burundi/usaid-field-report-burundi-dec-2005",
+      "name": "USAID Field Report Burundi, Dec 2005 (ReliefWeb)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://repository.kulib.kyoto-u.ac.jp/",
+      "name": "Niyonkuru, L. (1987), 'Loan-words in Kirundi: a preliminary study', African Study Monographs 7: 81-87 (Kyoto University; copy via the user, read in full 9 Nov 2026)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "peer-reviewed publication",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://rulers.org/cngkprov.html",
+      "name": "Rulers.org, 'Congo (Kinshasa) provinces'",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "reference site",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://rwandalii.org/akn/rw/act/ol/2005/29/eng@2005-12-31/source.pdf",
+      "name": "Organic Law No 29/2005 of 31/12/2005 determining the administrative entities of the Republic of Rwanda (RwandaLII, trilingual PDF)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government (legislation)",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://statistics.gov.rw/statistical-publications/vital-statistics",
+      "name": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)",
+      "language": "rw",
+      "datasets": [
+        "attested-variants-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://statoids.com/ubi.html",
+      "name": "Statoids, 'Burundi Provinces' (change history)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "reference site",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://statoids.com/ucd.html",
+      "name": "Statoids, 'Democratic Republic of Congo Provinces' (change history)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "reference site",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://statoids.com/urw.html",
+      "name": "Statoids, 'Rwanda Provinces' (change history)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "reference site",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://worldfactbookarchive.org/archive/field/BI/Administrative%20divisions",
+      "name": "CIA World Factbook, Burundi administrative divisions, 2024 and 2025 editions (via worldfactbookarchive.org)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government (US)",
+      "licence": "public domain",
+      "licence_verified": true,
+      "how_verified": "CIA World Factbook, a US government work",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.biblafrique.net/Lingala/Lingala.htm",
+      "name": "Biblafrique, Lingala Bible pages (New Testament book names with French equivalents)",
+      "language": "ln",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.bible.com/bible/1/LUK.1.27",
+      "name": "King James Version, Luke 1:27, via bible.com",
+      "language": "en",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "public domain",
+      "licence_verified": true,
+      "how_verified": "King James Version text",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.bible.com/bible/1068/LUK.1.27",
+      "name": "Buku Lopatulika (BLP-2018, Chichewa), Luka 1:27, via bible.com",
+      "language": "ny",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.bible.com/bible/1818/MAT.1.23",
+      "name": "Swahili Revised Union Version (SRUV), Mathayo 1:23, via bible.com (search snippet only)",
+      "language": "sw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.bible.com/versions/1-kjv-king-james-version",
+      "name": "King James Version, book list (bible.com) and Acts 13:9 ('Saul, (who also is called Paul,)')",
+      "language": "en",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "public domain",
+      "licence_verified": true,
+      "how_verified": "King James Version text",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.bible.com/versions/1068-blp-2018-buku-lopatulika",
+      "name": "Buku Lopatulika (Chichewa Bible), Bible Society of Malawi; 1922, revised 1966, 2014, 2018",
+      "language": "ny",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.biblegateway.com/passage/?search=Matthieu+1%3A18-25&version=LSG",
+      "name": "Louis Segond 1910 (public domain), Matthieu 1:18-25, via Bible Gateway",
+      "language": "fr",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "public domain",
+      "licence_verified": true,
+      "how_verified": "Louis Segond 1910 text",
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.biblegateway.com/passage?search=Mathayo+1&version=TKU%3BNKJV%3BESV%3BNIV",
+      "name": "Tafsiri ya Kusoma (TKU, Swahili), Mathayo 1, via Bible Gateway",
+      "language": "sw",
+      "datasets": [
+        "christian-names-2026.1"
+      ],
+      "kind": "religious text",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.ceniburundi.bi/wp-content/uploads/2011/02/Rapport_general_des_elections_de_2010.pdf",
+      "name": "CENI Burundi, Rapport général sur le processus électoral de 2010 (registration tables by province and commune)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government (electoral commission)",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.ceniburundi.bi/wp-content/uploads/2024/06/LOI-n%C2%B05-du-16-mars-2023DETERMINATION-ET-DELIMITATION-DES-PROVINCES-COMMUNES-ZONES-ET-QUARTIERS.pdf",
+      "name": "Burundi, Loi organique n°1/05 du 16 mars 2023 portant détermination et délimitation des provinces, des communes, des zones, des collines et/ou quartiers (scanned PDF published by CENI)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government (electoral commission)",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.crisisgroup.org/rpt/africa/democratic-republic-congo/239-katanga-tensions-drcs-mineral-heartland",
+      "name": "International Crisis Group, 'Katanga: Tensions in DRC's Mineral Heartland', Report 239",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "NGO report",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.easternprovince.gov.rw",
+      "name": "Eastern Province of Rwanda, official website (Intara y'Iburasirazuba)",
+      "language": "rw",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.geoboundaries.org/api/current/gbOpen/BDI/ADM2/",
+      "name": "geoBoundaries gbOpen BDI ADM1 and ADM2 (2007 boundaries: 18 provinces, 119 communes; source NYU Spatial Data Repository, Stanford University, Map Maker; public domain)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "open geodata",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/SPIU_Documents/ESMP/muhanga/MUHANGA_DISTRICT-_ESMP_FOR_CONSTRUCTION_OF_CLASSROOMS_AND_LATRINES_SUB-PROJECTS_UNDER_RWANDA_QBE-HCD_PROJECT.pdf",
+      "name": "MINEDUC, Muhanga District ESMP for construction of classrooms and latrines (Rwanda QBE-HCD project)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.mininfra.gov.rw/fileadmin/user_upload/Mininfra/Documents/Housing_and_Urban_Planning_Docs/ESIA_Final_Report-Muhanga_District.pdf",
+      "name": "MININFRA, Environmental and Social Impact Assessment report, Muhanga District (RUDP II phase 3)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.minubumwe.gov.rw/fileadmin/user_upload/MINUBUMWE/Archives/NURC_Archives/HISTORY_OF_RWANDA_ENGLISH_BOOK.pdf",
+      "name": "MINUBUMWE (Ministry of National Unity and Civic Engagement), History of Rwanda (English edition)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.musanze.gov.rw/akarere/menya-akarere",
+      "name": "Musanze District, official website (Akarere ka Musanze)",
+      "language": "rw",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.nationsonline.org/oneworld/map/rwanda_map.htm",
+      "name": "Nations Online Project, 'Administrative Map of Rwanda (provinces until 2006)'",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "reference site",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.newtimes.co.rw/article/10795/gitarama-roads-houses-to-be-named/amp",
+      "name": "The New Times (Kigali), 'Gitarama roads, houses to be named'",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "press",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.newtimes.co.rw/article/121774/Education/know-your-history-king-musinga-and-the-bitter-history-of-colonialism",
+      "name": "The New Times (Kigali), 'Know your history: King Musinga and the bitter history of colonialism'",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "press",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.northernprovince.gov.rw",
+      "name": "Northern Province of Rwanda, official website (Intara y'Amajyaruguru)",
+      "language": "rw",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.presidence.gov.bi/wp-content/uploads/2022/06/Communique-CM-15-JUIN-2022.pdf",
+      "name": "Présidence de la République du Burundi, Communiqué du Conseil des Ministres du 15 juin 2022 (draft of the 2023 reform)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.rema.gov.rw/fileadmin/user_upload/REMA/Publications/State_of_Environment___Atlas/Rwanda_State_of_Environment_Report_2017.pdf",
+      "name": "REMA (Rwanda Environment Management Authority), Rwanda State of Environment and Outlook Report 2017",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.rlrc.gov.rw/index.php?eID=dumpFile&t=f&f=74749&token=155203318fb157fc554e411cd10602d97eee1889",
+      "name": "Rwanda, Organic Law n°04/2010/OL of 2010 modifying and complementing Organic Law n°29/2005 (trilingual: Kinyarwanda, English, French), Rwanda Law Reform Commission",
+      "language": "rw",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.southernprovince.gov.rw",
+      "name": "Southern Province of Rwanda, official website (Intara y'Amajyepfo)",
+      "language": "rw",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.unicef.org/drcongo/media/6796/file/COD-2021-NMODA-KWILU.pdf",
+      "name": "UNICEF DRC, Rapport provincial: Province du Kwilu (MICS 2018 analysis), 2021",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian report",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.unocha.org/attachments/67e4a867-4b05-481b-a5d2-32d49167bae1/OCHA_DRC_Snapshot_incident_against_Hum_December%202025.pdf",
+      "name": "OCHA, Eastern DRC: Incidents against humanitarian workers (December 2025), map by territory",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian report",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.unocha.org/news/drc-year-survival",
+      "name": "OCHA, 'DRC: A Year of Survival'",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian report",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.unocha.org/publications/report/democratic-republic-congo/democratic-republic-congo-ituri-north-kivu-south-kivu-scale-response-report-reporting-period-july-november-2023",
+      "name": "OCHA, DRC: Ituri, North Kivu, South Kivu - Scale up Response Report (July-November 2023)",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian report",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.unocha.org/publications/report/democratic-republic-congo/rd-congo-situation-humanitaire-dans-la-province-du-sud-kivu-rapport-de-situation-4-21-avril-2026",
+      "name": "OCHA, RD Congo: Situation humanitaire dans la province du Sud-Kivu, rapport de situation #4 (21 avril 2026)",
+      "language": "fr",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "UN / humanitarian report",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.westernprovince.gov.rw",
+      "name": "Western Province of Rwanda, official website (Intara y'Iburengerazuba)",
+      "language": "rw",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "government",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
+      "url": "https://www.worldstatesmen.org/Congo-K_Provinces_1960-1966.html",
+      "name": "WorldStatesmen.org, 'Provinces of Congo (Kinshasa)', Katanga",
+      "language": "en",
+      "datasets": [
+        "places-2026.1"
+      ],
+      "kind": "reference site",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    }
+  ],
+  "summary": {
+    "sources": 60,
+    "licence_verified": 12,
+    "with_concern": 2
+  }
+}
