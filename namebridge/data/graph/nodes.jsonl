@@ -3,11 +3,20 @@
 {"code": "rn", "id": "lang:rn", "type": "Language"}
 {"code": "rw", "id": "lang:rw", "type": "Language"}
 {"code": "swc", "id": "lang:swc", "type": "Language"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:aharon", "label": "Aaron", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:amos", "label": "Amos", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:avraham", "label": "Abraham", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:barnabas", "label": "Barnabas", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:binyamin", "label": "Benjamin", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:daniel", "label": "Daniel", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:dawid", "label": "David", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:devorah", "label": "Deborah", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:elisha", "label": "Elisha", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:eliyahu", "label": "Elijah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:emmanouel", "label": "Emmanuel (Greek Emmanouēl)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ester", "label": "Esther", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ezra", "label": "Ezra", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:gidon", "label": "Gideon", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:habaqquq", "label": "Habakkuk", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:haggai", "label": "Haggai", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:hoshea", "label": "Hosea", "type": "NameConcept"}
@@ -16,27 +25,43 @@
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ioseph", "label": "Joseph (Greek Iōsēph)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ioudas", "label": "Jude (Greek Ioudas)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:iyyov", "label": "Job", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:kornelios", "label": "Cornelius", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:lazaros", "label": "Lazarus", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:loukas", "label": "Luke (Greek Loukas)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:malakhi", "label": "Malachi", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:maria", "label": "Mary (Greek Maria / Mariam)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:markos", "label": "Mark (Greek Markos)", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:martha", "label": "Martha", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:matthaios", "label": "Matthew (Greek Matthaios)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:mikhah", "label": "Micah", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:moshe", "label": "Moses", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:nahum", "label": "Nahum", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:naomi", "label": "Naomi", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:nehemyah", "label": "Nehemiah", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:noah", "label": "Noah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:ovadyah", "label": "Obadiah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:paulos", "label": "Paul (Greek Paulos)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:petros", "label": "Peter (Greek Petros)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:philemon", "label": "Philemon", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:rahel", "label": "Rachel", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:rivqah", "label": "Rebekah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:rut", "label": "Ruth", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:sarah", "label": "Sarah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:shemuel", "label": "Samuel", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:shimshon", "label": "Samson", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:shlomo", "label": "Solomon", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:silas", "label": "Silas", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:stephanos", "label": "Stephen", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:timotheos", "label": "Timothy", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:titos", "label": "Titus", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:tsefanyah", "label": "Zephaniah", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yaakov", "label": "Jacob (Hebrew Ya'aqov; distinct from the concept iakobos/James)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yehezkel", "label": "Ezekiel", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yehonatan", "label": "Jonathan", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yehoshua", "label": "Joshua (Hebrew Yehoshua)", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yeshayahu", "label": "Isaiah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yirmeyahu", "label": "Jeremiah", "type": "NameConcept"}
+{"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yitshaq", "label": "Isaac", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yoel", "label": "Joel", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yonah", "label": "Jonah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:zekharyah", "label": "Zechariah", "type": "NameConcept"}
@@ -55,12 +80,38 @@
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ngoyi", "languages": ["und"], "script": "Latn", "text": "Ngoyi", "type": "NameForm"}
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:nishimwe", "languages": ["rw"], "script": "Latn", "text": "Nishimwe", "type": "NameForm"}
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:uwineza", "languages": ["rw"], "script": "Latn", "text": "Uwineza", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:aharon:aaron", "languages": ["fr", "en"], "script": "Latn", "text": "Aaron", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:aharon:aaroni", "languages": ["ny"], "script": "Latn", "text": "Aaroni", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:aharon:aroni", "languages": ["sw", "rw"], "script": "Latn", "text": "Aroni", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:amos:amos", "languages": ["fr", "en"], "script": "Latn", "text": "Amos", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:amos:amosi", "languages": ["sw", "ln", "ny", "rw"], "script": "Latn", "text": "Amosi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:avraham:abraham", "languages": ["fr", "sw", "en"], "script": "Latn", "text": "Abraham", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:avraham:abrahamu", "languages": ["ny"], "script": "Latn", "text": "Abrahamu", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:avraham:abrayami", "languages": ["ln"], "script": "Latn", "text": "Abrayami", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:avraham:aburahamu", "languages": ["rw"], "script": "Latn", "text": "Aburahamu", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:barnabas:barinaba", "languages": ["rw"], "script": "Latn", "text": "Barinaba", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:barnabas:barnaba", "languages": ["sw"], "script": "Latn", "text": "Barnaba", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:barnabas:barnabas", "languages": ["fr", "en"], "script": "Latn", "text": "Barnabas", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:binyamin:benjame", "languages": ["ln"], "script": "Latn", "text": "Benjame", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:binyamin:benjamin", "languages": ["fr", "en"], "script": "Latn", "text": "Benjamin", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:binyamin:benjamini", "languages": ["sw", "ny"], "script": "Latn", "text": "Benjamini", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:binyamin:benyamini", "languages": ["rw"], "script": "Latn", "text": "Benyamini", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:daniel:daniel", "languages": ["fr", "en"], "script": "Latn", "text": "Daniel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:daniel:daniele", "languages": ["ln"], "script": "Latn", "text": "Daniele", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:daniel:danieli", "languages": ["sw", "ny"], "script": "Latn", "text": "Danieli", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:daniel:daniyeli", "languages": ["rw"], "script": "Latn", "text": "Daniyeli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:dawid:daudi", "languages": ["sw"], "script": "Latn", "text": "Daudi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:dawid:david", "languages": ["fr", "en"], "script": "Latn", "text": "David", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:dawid:davide", "languages": ["ny"], "script": "Latn", "text": "Davide", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:dawid:davidi", "languages": ["ln"], "script": "Latn", "text": "Davidi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:devorah:debora", "languages": ["sw", "ln", "rw"], "script": "Latn", "text": "Debora", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:devorah:debora-54584a", "languages": ["fr"], "script": "Latn", "text": "Débora", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:devorah:deborah", "languages": ["en"], "script": "Latn", "text": "Deborah", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:elisha:elisa", "languages": ["rw"], "script": "Latn", "text": "Elisa", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:elisha:elisha", "languages": ["en"], "script": "Latn", "text": "Elisha", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:eliyahu:elie", "languages": ["fr"], "script": "Latn", "text": "Élie", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:eliyahu:elijah", "languages": ["en"], "script": "Latn", "text": "Elijah", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:eliyahu:eliya", "languages": ["sw", "rw"], "script": "Latn", "text": "Eliya", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:emanueli", "languages": ["sw"], "script": "Latn", "text": "Emanueli", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:emmanuel", "languages": ["fr"], "script": "Latn", "text": "Emmanuel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:emmanouel:imanueli", "languages": ["sw"], "script": "Latn", "text": "Imanueli", "type": "NameForm"}
@@ -76,6 +127,10 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ezra:ezara", "languages": ["ny"], "script": "Latn", "text": "Ezara", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ezra:ezira", "languages": ["rw"], "script": "Latn", "text": "Ezira", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ezra:ezra", "languages": ["en", "sw"], "script": "Latn", "text": "Ezra", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:gidon:gedeon", "languages": ["fr"], "script": "Latn", "text": "Gédéon", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:gidon:gideon", "languages": ["en"], "script": "Latn", "text": "Gideon", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:gidon:gideoni", "languages": ["sw"], "script": "Latn", "text": "Gideoni", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:gidon:gideyoni", "languages": ["rw"], "script": "Latn", "text": "Gideyoni", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:habaqquq:abakuki", "languages": ["ln"], "script": "Latn", "text": "Abakuki", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:habaqquq:habacuc", "languages": ["fr"], "script": "Latn", "text": "Habacuc", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:habaqquq:habakkuk", "languages": ["en"], "script": "Latn", "text": "Habakkuk", "type": "NameForm"}
@@ -101,6 +156,7 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:yohana", "languages": ["sw", "rw", "rn"], "script": "Latn", "text": "Yohana", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:yohane", "languages": ["ny"], "script": "Latn", "text": "Yohane", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:joseph", "languages": ["fr", "en"], "script": "Latn", "text": "Joseph", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:jozefi", "languages": ["ln"], "script": "Latn", "text": "Jozefi", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:yosefe", "languages": ["ny"], "script": "Latn", "text": "Yosefe", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:yosefu", "languages": ["rw"], "script": "Latn", "text": "Yosefu", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ioseph:yusufu", "languages": ["sw"], "script": "Latn", "text": "Yusufu", "type": "NameForm"}
@@ -111,6 +167,14 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iyyov:job", "languages": ["fr", "en"], "script": "Latn", "text": "Job", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iyyov:yobo", "languages": ["ln"], "script": "Latn", "text": "Yobo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iyyov:yobu", "languages": ["ny", "rw"], "script": "Latn", "text": "Yobu", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:kornelios:corneille", "languages": ["fr"], "script": "Latn", "text": "Corneille", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:kornelios:cornelius", "languages": ["en"], "script": "Latn", "text": "Cornelius", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:kornelios:kornelio", "languages": ["sw"], "script": "Latn", "text": "Kornelio", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:kornelios:korneliyo", "languages": ["ny"], "script": "Latn", "text": "Korneliyo", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:kornelios:koruneliyo", "languages": ["rw"], "script": "Latn", "text": "Koruneliyo", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:lazaros:lazare", "languages": ["fr"], "script": "Latn", "text": "Lazare", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:lazaros:lazaro", "languages": ["rw"], "script": "Latn", "text": "Lazaro", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:lazaros:lazarus", "languages": ["en"], "script": "Latn", "text": "Lazarus", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:loukas:luc", "languages": ["fr"], "script": "Latn", "text": "Luc", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:loukas:luka", "languages": ["sw", "rn", "ln", "ny", "rw"], "script": "Latn", "text": "Luka", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:loukas:luke", "languages": ["en"], "script": "Latn", "text": "Luke", "type": "NameForm"}
@@ -128,6 +192,10 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:markos:mariko", "languages": ["rw", "rn"], "script": "Latn", "text": "Mariko", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:markos:mark", "languages": ["en"], "script": "Latn", "text": "Mark", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:markos:marko", "languages": ["sw", "ln", "ny"], "script": "Latn", "text": "Marko", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:martha:marita", "languages": ["ny", "rw"], "script": "Latn", "text": "Marita", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:martha:marte", "languages": ["ln"], "script": "Latn", "text": "Marte", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:martha:martha", "languages": ["sw", "en"], "script": "Latn", "text": "Martha", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:martha:marthe", "languages": ["fr"], "script": "Latn", "text": "Marthe", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:matthaios:matai", "languages": ["ln"], "script": "Latn", "text": "Matai", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:matthaios:matayo", "languages": ["rw", "rn", "ln"], "script": "Latn", "text": "Matayo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:matthaios:mateyu", "languages": ["ny"], "script": "Latn", "text": "Mateyu", "type": "NameForm"}
@@ -138,14 +206,26 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:mikhah:michee", "languages": ["fr"], "script": "Latn", "text": "Michée", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:mikhah:mika", "languages": ["sw", "ny", "rw"], "script": "Latn", "text": "Mika", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:mikhah:mishe", "languages": ["ln"], "script": "Latn", "text": "Mishe", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:moshe:moise", "languages": ["fr"], "script": "Latn", "text": "Moïse", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:moshe:mose", "languages": ["ny", "rw"], "script": "Latn", "text": "Mose", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:moshe:moses", "languages": ["en"], "script": "Latn", "text": "Moses", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:moshe:moyize", "languages": ["ln"], "script": "Latn", "text": "Moyize", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:moshe:musa", "languages": ["sw"], "script": "Latn", "text": "Musa", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nahum:nahum", "languages": ["fr", "en"], "script": "Latn", "text": "Nahum", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nahum:nahumu", "languages": ["sw", "ny", "rw"], "script": "Latn", "text": "Nahumu", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nahum:naumi", "languages": ["ln"], "script": "Latn", "text": "Naumi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:naomi:naomi", "languages": ["fr", "sw", "ln", "ny", "en"], "script": "Latn", "text": "Naomi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:naomi:nawomi", "languages": ["rw"], "script": "Latn", "text": "Nawomi", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nehemyah:nehemia", "languages": ["sw"], "script": "Latn", "text": "Nehemia", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nehemyah:nehemiah", "languages": ["en"], "script": "Latn", "text": "Nehemiah", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nehemyah:nehemie", "languages": ["fr"], "script": "Latn", "text": "Néhémie", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nehemyah:nehemiya", "languages": ["ny", "rw"], "script": "Latn", "text": "Nehemiya", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:nehemyah:neyemi", "languages": ["ln"], "script": "Latn", "text": "Neyemi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:noah:noa", "languages": ["ln"], "script": "Latn", "text": "Noa", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:noah:noah", "languages": ["en"], "script": "Latn", "text": "Noah", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:noah:noe", "languages": ["fr"], "script": "Latn", "text": "Noé", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:noah:nowa", "languages": ["ny", "rw"], "script": "Latn", "text": "Nowa", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:noah:nuhu", "languages": ["sw"], "script": "Latn", "text": "Nuhu", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ovadyah:abdias", "languages": ["fr"], "script": "Latn", "text": "Abdias", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ovadyah:abidiasi", "languages": ["ln"], "script": "Latn", "text": "Abidiasi", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:ovadyah:obadia", "languages": ["sw"], "script": "Latn", "text": "Obadia", "type": "NameForm"}
@@ -163,14 +243,34 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:philemon:filemoni", "languages": ["sw", "ny", "rw"], "script": "Latn", "text": "Filemoni", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:philemon:philemon", "languages": ["en"], "script": "Latn", "text": "Philemon", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:philemon:philemon-e66b94", "languages": ["fr"], "script": "Latn", "text": "Philémon", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rahel:rachel", "languages": ["fr", "en"], "script": "Latn", "text": "Rachel", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rahel:raheli", "languages": ["sw"], "script": "Latn", "text": "Raheli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rahel:rakele", "languages": ["ny"], "script": "Latn", "text": "Rakele", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rahel:rasheli", "languages": ["ln", "rw"], "script": "Latn", "text": "Rasheli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rivqah:rebecca", "languages": ["fr"], "script": "Latn", "text": "Rebecca", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rivqah:rebeka", "languages": ["sw", "ln", "ny", "rw"], "script": "Latn", "text": "Rebeka", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rivqah:rebekah", "languages": ["en"], "script": "Latn", "text": "Rebekah", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rut:rite", "languages": ["ln"], "script": "Latn", "text": "Rite", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rut:rusi", "languages": ["rw"], "script": "Latn", "text": "Rusi", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rut:rute", "languages": ["ny"], "script": "Latn", "text": "Rute", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:rut:ruth", "languages": ["fr", "en", "sw"], "script": "Latn", "text": "Ruth", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:sarah:sara", "languages": ["fr", "sw", "ln", "ny", "rw"], "script": "Latn", "text": "Sara", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:sarah:sarah", "languages": ["en"], "script": "Latn", "text": "Sarah", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shemuel:samuel", "languages": ["fr", "en"], "script": "Latn", "text": "Samuel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shemuel:samuele", "languages": ["ln"], "script": "Latn", "text": "Samuele", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shemuel:samueli", "languages": ["ny"], "script": "Latn", "text": "Samueli", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shemuel:samweli", "languages": ["sw", "rw"], "script": "Latn", "text": "Samweli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shimshon:samson", "languages": ["fr", "en"], "script": "Latn", "text": "Samson", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shimshon:samusoni", "languages": ["rw"], "script": "Latn", "text": "Samusoni", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shlomo:salomo", "languages": ["ln", "rw"], "script": "Latn", "text": "Salomo", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shlomo:salomon", "languages": ["fr"], "script": "Latn", "text": "Salomon", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shlomo:solomon", "languages": ["en"], "script": "Latn", "text": "Solomon", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shlomo:solomoni", "languages": ["ny"], "script": "Latn", "text": "Solomoni", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:shlomo:sulemani", "languages": ["sw"], "script": "Latn", "text": "Sulemani", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:silas:sila", "languages": ["rw"], "script": "Latn", "text": "Sila", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:silas:silas", "languages": ["en"], "script": "Latn", "text": "Silas", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:stephanos:sitefano", "languages": ["rw"], "script": "Latn", "text": "Sitefano", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:stephanos:stephen", "languages": ["en"], "script": "Latn", "text": "Stephen", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:timotheos:timote", "languages": ["ln"], "script": "Latn", "text": "Timote", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:timotheos:timoteyo", "languages": ["ny", "rw"], "script": "Latn", "text": "Timoteyo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:timotheos:timothee", "languages": ["fr"], "script": "Latn", "text": "Timothée", "type": "NameForm"}
@@ -184,10 +284,17 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:tsefanyah:sophonie", "languages": ["fr"], "script": "Latn", "text": "Sophonie", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:tsefanyah:zefaniya", "languages": ["ny", "rw"], "script": "Latn", "text": "Zefaniya", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:tsefanyah:zephaniah", "languages": ["en"], "script": "Latn", "text": "Zephaniah", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yaakov:jacob", "languages": ["fr", "en"], "script": "Latn", "text": "Jacob", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yaakov:jakobi", "languages": ["ln"], "script": "Latn", "text": "Jakobi", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yaakov:yakobo", "languages": ["sw", "ny", "rw"], "script": "Latn", "text": "Yakobo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehezkel:ezechiel", "languages": ["fr"], "script": "Latn", "text": "Ézéchiel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehezkel:ezekiel", "languages": ["en"], "script": "Latn", "text": "Ezekiel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehezkel:ezekieli", "languages": ["sw", "ln", "ny"], "script": "Latn", "text": "Ezekieli", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehezkel:ezekiyeli", "languages": ["rw"], "script": "Latn", "text": "Ezekiyeli", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehonatan:jonatan", "languages": ["ln"], "script": "Latn", "text": "Jonatan", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehonatan:jonathan", "languages": ["fr", "en"], "script": "Latn", "text": "Jonathan", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehonatan:yonatani", "languages": ["ny", "rw"], "script": "Latn", "text": "Yonatani", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehonatan:yonathani", "languages": ["sw"], "script": "Latn", "text": "Yonathani", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehoshua:joshua", "languages": ["en"], "script": "Latn", "text": "Joshua", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehoshua:josue", "languages": ["fr"], "script": "Latn", "text": "Josué", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yehoshua:jozue", "languages": ["ln"], "script": "Latn", "text": "Jozue", "type": "NameForm"}
@@ -204,6 +311,10 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yirmeyahu:jeremie", "languages": ["fr"], "script": "Latn", "text": "Jérémie", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yirmeyahu:yeremia", "languages": ["sw"], "script": "Latn", "text": "Yeremia", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yirmeyahu:yeremiya", "languages": ["ny", "rw"], "script": "Latn", "text": "Yeremiya", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yitshaq:isaac", "languages": ["fr", "en"], "script": "Latn", "text": "Isaac", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yitshaq:isaka", "languages": ["sw", "rw"], "script": "Latn", "text": "Isaka", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yitshaq:isake", "languages": ["ny"], "script": "Latn", "text": "Isake", "type": "NameForm"}
+{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yitshaq:izaki", "languages": ["ln"], "script": "Latn", "text": "Izaki", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yoel:joel", "languages": ["en"], "script": "Latn", "text": "Joel", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yoel:joel-0f2be1", "languages": ["fr"], "script": "Latn", "text": "Joël", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:yoel:joeli", "languages": ["sw", "ln"], "script": "Latn", "text": "Joeli", "type": "NameForm"}

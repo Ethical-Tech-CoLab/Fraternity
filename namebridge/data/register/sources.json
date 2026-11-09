@@ -162,7 +162,7 @@
     },
     {
       "url": "https://ebible.org/details.php?id=fraLSG",
-      "name": "Louis Segond 1910 (public domain), USFM edition from ebible.org",
+      "name": "Louis Segond 1910 (public domain), ebible.org",
       "language": "fr",
       "datasets": [
         "christian-names-2026.1"
@@ -175,7 +175,7 @@
     },
     {
       "url": "https://ebible.org/details.php?id=lin",
-      "name": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org",
+      "name": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org",
       "language": "ln",
       "datasets": [
         "christian-names-2026.1"
@@ -188,7 +188,7 @@
     },
     {
       "url": "https://ebible.org/details.php?id=nya",
-      "name": "Chichewa Bible (Biblica, Inc., 2002/2016, CC BY-SA 4.0), ebible.org",
+      "name": "Chichewa Bible (Biblica, CC BY-SA 4.0), ebible.org",
       "language": "ny",
       "datasets": [
         "christian-names-2026.1"
@@ -201,7 +201,7 @@
     },
     {
       "url": "https://ebible.org/details.php?id=swhulb",
-      "name": "Swahili Unlocked Literal Bible (Door43 World Missions Community, CC BY-SA 4.0), ebible.org",
+      "name": "Swahili Unlocked Literal Bible (Door43, CC BY-SA 4.0), ebible.org",
       "language": "sw",
       "datasets": [
         "christian-names-2026.1"

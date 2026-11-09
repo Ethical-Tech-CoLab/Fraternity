@@ -1,6 +1,6 @@
 {
   "dataset_id": "christian-names-2026.1",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "Christian given names across the corridor's languages, from Bible translations: each translation fixes the form of a biblical name in its language. A form in a Bible does not show that a person named Jean is recorded as Yohana by a Swahili writer; that is the hypothesis these edges let the matcher test, at low weight (CONCEPT-IDEA.md §3: cognates are for query expansion, not automatic equivalence).",
   "regions": [
     "CD",
@@ -140,6 +140,36 @@
       "locator": "running header (USFM \\h) of each book named after a person",
       "language": "ny",
       "note": "only individual names are taken (facts), not text"
+    },
+    "ebible-fr-lsg-align": {
+      "name": "Louis Segond 1910 (public domain), ebible.org",
+      "url": "https://ebible.org/details.php?id=fraLSG",
+      "language": "fr",
+      "locator": "count alignment with the World English Bible in passages where the person is the main character (scripts/align_bible_names.py): similar count (+-40%) and similar spelling (Jaro-Winkler >= 0.6); statistical, pre-screened, not reviewed"
+    },
+    "ebible-sw-ulb-align": {
+      "name": "Swahili Unlocked Literal Bible (Door43, CC BY-SA 4.0), ebible.org",
+      "url": "https://ebible.org/details.php?id=swhulb",
+      "language": "sw",
+      "locator": "count alignment with the World English Bible in passages where the person is the main character (scripts/align_bible_names.py): similar count (+-40%) and similar spelling (Jaro-Winkler >= 0.6); statistical, pre-screened, not reviewed"
+    },
+    "ebible-ln-biblica-align": {
+      "name": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org",
+      "url": "https://ebible.org/details.php?id=lin",
+      "language": "ln",
+      "locator": "count alignment with the World English Bible in passages where the person is the main character (scripts/align_bible_names.py): similar count (+-40%) and similar spelling (Jaro-Winkler >= 0.6); statistical, pre-screened, not reviewed"
+    },
+    "ebible-ny-biblica-align": {
+      "name": "Chichewa Bible (Biblica, CC BY-SA 4.0), ebible.org",
+      "url": "https://ebible.org/details.php?id=nya",
+      "language": "ny",
+      "locator": "count alignment with the World English Bible in passages where the person is the main character (scripts/align_bible_names.py): similar count (+-40%) and similar spelling (Jaro-Winkler >= 0.6); statistical, pre-screened, not reviewed"
+    },
+    "rw-bibiliya-yera-align": {
+      "name": "Bibiliya Yera (Kinyarwanda Bible), PDF",
+      "url": "https://abisezerano.com/wp-content/uploads/2018/06/bibiliya.pdf",
+      "language": "rw",
+      "locator": "count alignment with the World English Bible in passages where the person is the main character (scripts/align_bible_names.py): similar count (+-40%) and similar spelling (Jaro-Winkler >= 0.6); statistical, pre-screened, not reviewed"
     }
   },
   "concepts": [
@@ -693,6 +723,16 @@
           "sources": [
             "ny-blp-lk1"
           ]
+        },
+        {
+          "text": "Jozefi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "204 occurrences vs 153 for 'Joseph' in [['GEN', 37, 50]]; similarity 0.858"
         }
       ]
     },
@@ -1982,6 +2022,1376 @@
           "sources": [
             "rw-bibiliya-yera"
           ]
+        }
+      ]
+    },
+    {
+      "id": "moshe",
+      "label": "Moses",
+      "forms": [
+        {
+          "text": "Moïse",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "306 occurrences vs 290 for 'Moses' in [['EXO', 3, 40]]; similarity 0.893"
+        },
+        {
+          "text": "Musa",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "304 occurrences vs 290 for 'Moses' in [['EXO', 3, 40]]; similarity 0.67"
+        },
+        {
+          "text": "Moyize",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "340 occurrences vs 290 for 'Moses' in [['EXO', 3, 40]]; similarity 0.76"
+        },
+        {
+          "text": "Mose",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "315 occurrences vs 290 for 'Moses' in [['EXO', 3, 40]]; similarity 0.96"
+        },
+        {
+          "text": "Mose",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "305 occurrences vs 290 for 'Moses' in [['EXO', 3, 40]]; similarity 0.96"
+        },
+        {
+          "text": "Moses",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "dawid",
+      "label": "David",
+      "forms": [
+        {
+          "text": "David",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "297 occurrences vs 291 for 'David' in [['1SA', 16, 31]]; similarity 1.0"
+        },
+        {
+          "text": "Daudi",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "303 occurrences vs 291 for 'David' in [['1SA', 16, 31]]; similarity 0.827"
+        },
+        {
+          "text": "Davidi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "340 occurrences vs 291 for 'David' in [['1SA', 16, 31]]; similarity 0.967"
+        },
+        {
+          "text": "Davide",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "312 occurrences vs 291 for 'David' in [['1SA', 16, 31]]; similarity 0.967"
+        },
+        {
+          "text": "David",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "avraham",
+      "label": "Abraham",
+      "forms": [
+        {
+          "text": "Abraham",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "119 occurrences vs 111 for 'Abraham' in [['GEN', 17, 25]]; similarity 1.0"
+        },
+        {
+          "text": "Abraham",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "109 occurrences vs 111 for 'Abraham' in [['GEN', 17, 25]]; similarity 1.0"
+        },
+        {
+          "text": "Abrayami",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "137 occurrences vs 111 for 'Abraham' in [['GEN', 17, 25]]; similarity 0.921"
+        },
+        {
+          "text": "Abrahamu",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "133 occurrences vs 111 for 'Abraham' in [['GEN', 17, 25]]; similarity 0.975"
+        },
+        {
+          "text": "Aburahamu",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "118 occurrences vs 111 for 'Abraham' in [['GEN', 17, 25]]; similarity 0.941"
+        },
+        {
+          "text": "Abraham",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "sarah",
+      "label": "Sarah",
+      "forms": [
+        {
+          "text": "Sara",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "33 occurrences vs 32 for 'Sarah' in [['GEN', 17, 23]]; similarity 0.96"
+        },
+        {
+          "text": "Sara",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "32 occurrences vs 32 for 'Sarah' in [['GEN', 17, 23]]; similarity 0.96"
+        },
+        {
+          "text": "Sara",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "32 occurrences vs 32 for 'Sarah' in [['GEN', 17, 23]]; similarity 0.96"
+        },
+        {
+          "text": "Sara",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "29 occurrences vs 32 for 'Sarah' in [['GEN', 17, 23]]; similarity 0.96"
+        },
+        {
+          "text": "Sara",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "38 occurrences vs 32 for 'Sarah' in [['GEN', 17, 23]]; similarity 0.96"
+        },
+        {
+          "text": "Sarah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "yitshaq",
+      "label": "Isaac",
+      "forms": [
+        {
+          "text": "Isaac",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "62 occurrences vs 53 for 'Isaac' in [['GEN', 24, 28]]; similarity 1.0"
+        },
+        {
+          "text": "Isaka",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "64 occurrences vs 53 for 'Isaac' in [['GEN', 24, 28]]; similarity 0.953"
+        },
+        {
+          "text": "Izaki",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "68 occurrences vs 53 for 'Isaac' in [['GEN', 24, 28]]; similarity 0.76"
+        },
+        {
+          "text": "Isake",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "67 occurrences vs 53 for 'Isaac' in [['GEN', 24, 28]]; similarity 0.907"
+        },
+        {
+          "text": "Isaka",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "58 occurrences vs 53 for 'Isaac' in [['GEN', 24, 28]]; similarity 0.953"
+        },
+        {
+          "text": "Isaac",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "rivqah",
+      "label": "Rebekah",
+      "forms": [
+        {
+          "text": "Rebecca",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "26 occurrences vs 25 for 'Rebekah' in [['GEN', 24, 27]]; similarity 0.943"
+        },
+        {
+          "text": "Rebeka",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "27 occurrences vs 25 for 'Rebekah' in [['GEN', 24, 27]]; similarity 0.971"
+        },
+        {
+          "text": "Rebeka",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "33 occurrences vs 25 for 'Rebekah' in [['GEN', 24, 27]]; similarity 0.971"
+        },
+        {
+          "text": "Rebeka",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "32 occurrences vs 25 for 'Rebekah' in [['GEN', 24, 27]]; similarity 0.971"
+        },
+        {
+          "text": "Rebeka",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "27 occurrences vs 25 for 'Rebekah' in [['GEN', 24, 27]]; similarity 0.971"
+        },
+        {
+          "text": "Rebekah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "yaakov",
+      "label": "Jacob (Hebrew Ya'aqov; distinct from the concept iakobos/James)",
+      "forms": [
+        {
+          "text": "Jacob",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "134 occurrences vs 124 for 'Jacob' in [['GEN', 28, 35]]; similarity 1.0"
+        },
+        {
+          "text": "Yakobo",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "138 occurrences vs 124 for 'Jacob' in [['GEN', 28, 35]]; similarity 0.967"
+        },
+        {
+          "text": "Jakobi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "159 occurrences vs 124 for 'Jacob' in [['GEN', 28, 35]]; similarity 0.967"
+        },
+        {
+          "text": "Yakobo",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "154 occurrences vs 124 for 'Jacob' in [['GEN', 28, 35]]; similarity 0.967"
+        },
+        {
+          "text": "Yakobo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "132 occurrences vs 124 for 'Jacob' in [['GEN', 28, 35]]; similarity 0.967"
+        },
+        {
+          "text": "Jacob",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "rahel",
+      "label": "Rachel",
+      "forms": [
+        {
+          "text": "Rachel",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "31 occurrences vs 32 for 'Rachel' in [['GEN', 29, 31]]; similarity 1.0"
+        },
+        {
+          "text": "Raheli",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "32 occurrences vs 32 for 'Rachel' in [['GEN', 29, 31]]; similarity 0.911"
+        },
+        {
+          "text": "Rasheli",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "36 occurrences vs 32 for 'Rachel' in [['GEN', 29, 31]]; similarity 0.879"
+        },
+        {
+          "text": "Rakele",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "40 occurrences vs 32 for 'Rachel' in [['GEN', 29, 31]]; similarity 0.922"
+        },
+        {
+          "text": "Rasheli",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "35 occurrences vs 32 for 'Rachel' in [['GEN', 29, 31]]; similarity 0.879"
+        },
+        {
+          "text": "Rachel",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "binyamin",
+      "label": "Benjamin",
+      "forms": [
+        {
+          "text": "Benjamin",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "13 occurrences vs 12 for 'Benjamin' in [['GEN', 42, 45]]; similarity 1.0"
+        },
+        {
+          "text": "Benjamini",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "13 occurrences vs 12 for 'Benjamin' in [['GEN', 42, 45]]; similarity 0.978"
+        },
+        {
+          "text": "Benjame",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "15 occurrences vs 12 for 'Benjamin' in [['GEN', 42, 45]]; similarity 0.921"
+        },
+        {
+          "text": "Benjamini",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "12 occurrences vs 12 for 'Benjamin' in [['GEN', 42, 45]]; similarity 0.978"
+        },
+        {
+          "text": "Benyamini",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "16 occurrences vs 12 for 'Benjamin' in [['GEN', 42, 45]]; similarity 0.978"
+        },
+        {
+          "text": "Benjamin",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "noah",
+      "label": "Noah",
+      "forms": [
+        {
+          "text": "Noé",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "37 occurrences vs 35 for 'Noah' in [['GEN', 6, 9]]; similarity 0.778"
+        },
+        {
+          "text": "Nuhu",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "35 occurrences vs 35 for 'Noah' in [['GEN', 6, 9]]; similarity 0.7"
+        },
+        {
+          "text": "Noa",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "43 occurrences vs 35 for 'Noah' in [['GEN', 6, 9]]; similarity 0.942"
+        },
+        {
+          "text": "Nowa",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "39 occurrences vs 35 for 'Noah' in [['GEN', 6, 9]]; similarity 0.867"
+        },
+        {
+          "text": "Nowa",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "35 occurrences vs 35 for 'Noah' in [['GEN', 6, 9]]; similarity 0.867"
+        },
+        {
+          "text": "Noah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "gidon",
+      "label": "Gideon",
+      "forms": [
+        {
+          "text": "Gédéon",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "53 occurrences vs 39 for 'Gideon' in [['JDG', 6, 8]]; similarity 0.84"
+        },
+        {
+          "text": "Gideoni",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "51 occurrences vs 39 for 'Gideon' in [['JDG', 6, 8]]; similarity 0.971"
+        },
+        {
+          "text": "Gideyoni",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "53 occurrences vs 39 for 'Gideon' in [['JDG', 6, 8]]; similarity 0.95"
+        },
+        {
+          "text": "Gideon",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "devorah",
+      "label": "Deborah",
+      "forms": [
+        {
+          "text": "Débora",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "11 occurrences vs 9 for 'Deborah' in [['JDG', 4, 5]]; similarity 0.971"
+        },
+        {
+          "text": "Debora",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "9 occurrences vs 9 for 'Deborah' in [['JDG', 4, 5]]; similarity 0.971"
+        },
+        {
+          "text": "Debora",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "12 occurrences vs 9 for 'Deborah' in [['JDG', 4, 5]]; similarity 0.971"
+        },
+        {
+          "text": "Debora",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "11 occurrences vs 9 for 'Deborah' in [['JDG', 4, 5]]; similarity 0.971"
+        },
+        {
+          "text": "Deborah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "shimshon",
+      "label": "Samson",
+      "forms": [
+        {
+          "text": "Samson",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "46 occurrences vs 38 for 'Samson' in [['JDG', 13, 16]]; similarity 1.0"
+        },
+        {
+          "text": "Samusoni",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "48 occurrences vs 38 for 'Samson' in [['JDG', 13, 16]]; similarity 0.942"
+        },
+        {
+          "text": "Samson",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "eliyahu",
+      "label": "Elijah",
+      "forms": [
+        {
+          "text": "Élie",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "81 occurrences vs 59 for 'Elijah' in [['1KI', 17, 19], ['2KI', 1, 2]]; similarity 0.825"
+        },
+        {
+          "text": "Eliya",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "81 occurrences vs 59 for 'Elijah' in [['1KI', 17, 19], ['2KI', 1, 2]]; similarity 0.967"
+        },
+        {
+          "text": "Eliya",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "75 occurrences vs 59 for 'Elijah' in [['1KI', 17, 19], ['2KI', 1, 2]]; similarity 0.967"
+        },
+        {
+          "text": "Elijah",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "elisha",
+      "label": "Elisha",
+      "forms": [
+        {
+          "text": "Elisa",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "63 occurrences vs 48 for 'Elisha' in [['2KI', 2, 8]]; similarity 0.967"
+        },
+        {
+          "text": "Elisha",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "shlomo",
+      "label": "Solomon",
+      "forms": [
+        {
+          "text": "Salomon",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "170 occurrences vs 153 for 'Solomon' in [['1KI', 1, 11]]; similarity 0.814"
+        },
+        {
+          "text": "Sulemani",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "162 occurrences vs 153 for 'Solomon' in [['1KI', 1, 11]]; similarity 0.721"
+        },
+        {
+          "text": "Salomo",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "187 occurrences vs 153 for 'Solomon' in [['1KI', 1, 11]]; similarity 0.744"
+        },
+        {
+          "text": "Solomoni",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "173 occurrences vs 153 for 'Solomon' in [['1KI', 1, 11]]; similarity 0.975"
+        },
+        {
+          "text": "Salomo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "174 occurrences vs 153 for 'Solomon' in [['1KI', 1, 11]]; similarity 0.744"
+        },
+        {
+          "text": "Solomon",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "yehonatan",
+      "label": "Jonathan",
+      "forms": [
+        {
+          "text": "Jonathan",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "64 occurrences vs 65 for 'Jonathan' in [['1SA', 14, 14], ['1SA', 18, 20]]; similarity 1.0"
+        },
+        {
+          "text": "Yonathani",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "64 occurrences vs 65 for 'Jonathan' in [['1SA', 14, 14], ['1SA', 18, 20]]; similarity 0.975"
+        },
+        {
+          "text": "Jonatan",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "70 occurrences vs 65 for 'Jonathan' in [['1SA', 14, 14], ['1SA', 18, 20]]; similarity 1.0"
+        },
+        {
+          "text": "Yonatani",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "64 occurrences vs 65 for 'Jonathan' in [['1SA', 14, 14], ['1SA', 18, 20]]; similarity 0.975"
+        },
+        {
+          "text": "Yonatani",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "68 occurrences vs 65 for 'Jonathan' in [['1SA', 14, 14], ['1SA', 18, 20]]; similarity 0.975"
+        },
+        {
+          "text": "Jonathan",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "naomi",
+      "label": "Naomi",
+      "forms": [
+        {
+          "text": "Naomi",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "27 occurrences vs 23 for 'Naomi' in [['RUT', 1, 4]]; similarity 1.0"
+        },
+        {
+          "text": "Naomi",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "27 occurrences vs 23 for 'Naomi' in [['RUT', 1, 4]]; similarity 1.0"
+        },
+        {
+          "text": "Naomi",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "32 occurrences vs 23 for 'Naomi' in [['RUT', 1, 4]]; similarity 1.0"
+        },
+        {
+          "text": "Naomi",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "29 occurrences vs 23 for 'Naomi' in [['RUT', 1, 4]]; similarity 1.0"
+        },
+        {
+          "text": "Nawomi",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "21 occurrences vs 23 for 'Naomi' in [['RUT', 1, 4]]; similarity 0.956"
+        },
+        {
+          "text": "Naomi",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "aharon",
+      "label": "Aaron",
+      "forms": [
+        {
+          "text": "Aaron",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "43 occurrences vs 34 for 'Aaron' in [['LEV', 8, 10]]; similarity 1.0"
+        },
+        {
+          "text": "Aroni",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "37 occurrences vs 34 for 'Aaron' in [['LEV', 8, 10]]; similarity 0.88"
+        },
+        {
+          "text": "Aaroni",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "41 occurrences vs 34 for 'Aaron' in [['LEV', 8, 10]]; similarity 0.967"
+        },
+        {
+          "text": "Aroni",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "36 occurrences vs 34 for 'Aaron' in [['LEV', 8, 10]]; similarity 0.88"
+        },
+        {
+          "text": "Aaron",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "stephanos",
+      "label": "Stephen",
+      "forms": [
+        {
+          "text": "Sitefano",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "5 occurrences vs 4 for 'Stephen' in [['ACT', 6, 7]]; similarity 0.838"
+        },
+        {
+          "text": "Stephen",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "barnabas",
+      "label": "Barnabas",
+      "forms": [
+        {
+          "text": "Barnabas",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "28 occurrences vs 22 for 'Barnabas' in [['ACT', 11, 15]]; similarity 1.0"
+        },
+        {
+          "text": "Barnaba",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "27 occurrences vs 22 for 'Barnabas' in [['ACT', 11, 15]]; similarity 0.975"
+        },
+        {
+          "text": "Barinaba",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "23 occurrences vs 22 for 'Barnabas' in [['ACT', 11, 15]]; similarity 0.942"
+        },
+        {
+          "text": "Barnabas",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "silas",
+      "label": "Silas",
+      "forms": [
+        {
+          "text": "Sila",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "13 occurrences vs 12 for 'Silas' in [['ACT', 15, 17]]; similarity 0.96"
+        },
+        {
+          "text": "Silas",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "lazaros",
+      "label": "Lazarus",
+      "forms": [
+        {
+          "text": "Lazare",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "14 occurrences vs 11 for 'Lazarus' in [['JHN', 11, 12]]; similarity 0.91"
+        },
+        {
+          "text": "Lazaro",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "14 occurrences vs 11 for 'Lazarus' in [['JHN', 11, 12]]; similarity 0.91"
+        },
+        {
+          "text": "Lazarus",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "martha",
+      "label": "Martha",
+      "forms": [
+        {
+          "text": "Marthe",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "14 occurrences vs 13 for 'Martha' in [['LUK', 10, 10], ['JHN', 11, 12]]; similarity 0.92"
+        },
+        {
+          "text": "Martha",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "13 occurrences vs 13 for 'Martha' in [['LUK', 10, 10], ['JHN', 11, 12]]; similarity 1.0"
+        },
+        {
+          "text": "Marte",
+          "lang": "ln",
+          "sources": [
+            "ebible-ln-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "17 occurrences vs 13 for 'Martha' in [['LUK', 10, 10], ['JHN', 11, 12]]; similarity 0.92"
+        },
+        {
+          "text": "Marita",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "15 occurrences vs 13 for 'Martha' in [['LUK', 10, 10], ['JHN', 11, 12]]; similarity 0.961"
+        },
+        {
+          "text": "Marita",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "14 occurrences vs 13 for 'Martha' in [['LUK', 10, 10], ['JHN', 11, 12]]; similarity 0.961"
+        },
+        {
+          "text": "Martha",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
+        }
+      ]
+    },
+    {
+      "id": "kornelios",
+      "label": "Cornelius",
+      "forms": [
+        {
+          "text": "Corneille",
+          "lang": "fr",
+          "sources": [
+            "ebible-fr-lsg-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "10 occurrences vs 9 for 'Cornelius' in [['ACT', 10, 10]]; similarity 0.883"
+        },
+        {
+          "text": "Kornelio",
+          "lang": "sw",
+          "sources": [
+            "ebible-sw-ulb-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "11 occurrences vs 9 for 'Cornelius' in [['ACT', 10, 10]]; similarity 0.931"
+        },
+        {
+          "text": "Korneliyo",
+          "lang": "ny",
+          "sources": [
+            "ebible-ny-biblica-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "11 occurrences vs 9 for 'Cornelius' in [['ACT', 10, 10]]; similarity 0.911"
+        },
+        {
+          "text": "Koruneliyo",
+          "lang": "rw",
+          "sources": [
+            "rw-bibiliya-yera-align"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "9 occurrences vs 9 for 'Cornelius' in [['ACT', 10, 10]]; similarity 0.854"
+        },
+        {
+          "text": "Cornelius",
+          "lang": "en",
+          "sources": [
+            "ebible-en-web"
+          ],
+          "basis": "statistical",
+          "confidence": 0.4,
+          "evidence": "English reference form used for the alignment"
         }
       ]
     }

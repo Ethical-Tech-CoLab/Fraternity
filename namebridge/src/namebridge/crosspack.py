@@ -58,9 +58,13 @@ def dataset_to_graph(data):
         # (Yohana is the Swahili, Kinyarwanda and Kirundi form of John).
         by_text = {}
         for form in concept["forms"]:
-            entry = by_text.setdefault(form["text"], {"langs": [], "sources": []})
+            entry = by_text.setdefault(form["text"], {"langs": [], "sources": [], "bases": [], "confs": []})
             entry["langs"].append(form["lang"])
             entry["sources"].extend(s for s in form["sources"] if s not in entry["sources"])
+            # A form may carry its own basis and confidence (e.g. statistical alignment);
+            # merged forms keep the strongest: attested wins over statistical.
+            entry["bases"].append(form.get("basis", "attested"))
+            entry["confs"].append(float(form.get("confidence", data["confidence"])))
         # Forms that differ only by accents (Joël / Joel) fold to the same slug; they stay
         # separate nodes, the later ones (in text order) with a short stable suffix.
         used = {}
@@ -84,8 +88,8 @@ def dataset_to_graph(data):
                 "source_language": refs[0]["language"],
                 "applicable_languages": entry["langs"],
                 "applicable_regions": data["regions"],
-                "confidence": data["confidence"],
-                "confidence_basis": "attested",
+                "confidence": max(entry["confs"]),
+                "confidence_basis": "attested" if "attested" in entry["bases"] else entry["bases"][0],
                 "reversible": True,
                 "review_status": "proposed",
                 "license": LICENSE,
