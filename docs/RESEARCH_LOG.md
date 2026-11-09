@@ -1959,3 +1959,17 @@ Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 
 **Cross-check (G6: aggregator as a check only):** Forebears.io, top 48 Burundian surnames (read 9 Nov; only overlap figures stored, the table is not copied). **3 of 34** distinct derived names are in it (irakoze, kwizera, mugisha): **8.8%**. The derived profile misses the most frequent names of the older population (theophoric *-imana* names, Nda-/Ni- forms such as Nkurunziza, Ndayishimiye, Manirakiza). This quantifies the generational bias already noted: newborns of 2024–2025 are not the refugees' generation. The aggregator also lists Christian names as surnames (Jean, Eric, Innocent), consistent with `order-aggregators-swap`.
 
 **Consequence:** real Burundian frequencies are needed → option (ii), CENI 2025 lists under DR-1 (next).
+
+## 2026-11-09 — Burundi option (ii): naming profile from CENI 2025 lists (raw, deleted same session)
+
+**User's decision:** process the raw CENI lists in one session, delete them immediately, and use the new copy test (BENCHMARK_PROTOCOL §2.4 updated: the original copy test is dropped for raw-list profiles).
+
+**Procedure (DR-1.2, DR-1.7):** the five 2025 deputy-candidate lists (Bujumbura, Butanyerera, Buhumuza, Burunga, Gitega; checksums in the profile) were downloaded to `~/namebridge-ref/ceni/`. The parser (`scripts/build_profile_ceni.py`) reads the text **in memory**, matches the ethnicity column as an anonymous token that is **never stored, counted or printed**, does not keep residence, and **prints no row**. Before writing it, the row layout was checked only through anonymised shapes (letters → A, digits → 9). Rows containing any 1–2-letter token were dropped unseen (a shifted row could carry the ethnicity code into a name field). **The PDFs were deleted in the same session.**
+
+**Profile** `data/profiles/bi-ceni-2026.1.json`: 2,294 rows parsed, 184 rejected as malformed (scan errors), 61 dropped by the short-token safeguard. Births mostly 1960s–1990s (the refugees' generation). 96 noms and 123 prénoms seen 5+ times, by sex and (noms) by birth decade. 93% of candidates have a single given name. Population caveat: party candidates (more urban, schooled, male).
+
+**Validation:** 34 of the 48 most frequent CENI noms (71%) are in the Forebears top list; the derived profile reached 8.8%. Two independent sources agree on adult Burundian names. `bi-derived-2026.1` lowered to `low` and kept only for recently born children.
+
+**Incident addendum:** while locating the files, a web search returned snippets of these lists, including the ethnicity column, into the session (search engines index the PDF text). Same public data; noted under the DR-5 entry's lesson: **no content searches on lists that hold sensitive columns**; locate such files by their known URL pattern instead.
+
+**Week 4 item 4 is complete:** DRC (published aggregates), Rwanda (NISR published tables, newborns), Burundi (CENI, adults; derived profile for children). **Tests:** 141 pass.

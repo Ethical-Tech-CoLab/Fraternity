@@ -2,7 +2,7 @@
   "profile_id": "bi-derived-2026.1",
   "version": "0.1.0",
   "origin": "BI",
-  "confidence": "medium",
+  "confidence": "low",
   "method": "DERIVED, not observed: the Kinyarwanda names of profile rw-nisr-2026.1 converted to Kirundi spelling with the bi-kirundi rw->rn rules (rw-to-rn-shy, rw-to-rn-cy, rw-to-rn-jy, rw-to-rn-by). Counts are the Rwandan counts, kept only as relative weights. Built 9 Nov 2026 by scripts/build_profile_bi_derived.py",
   "sources": [
     {
@@ -544,5 +544,6 @@
     "share_of_derived_found": 0.088,
     "reading": "Low overlap: the derived profile (names of 2024-2025 newborns) misses the most frequent names of the older population (theophoric -imana and Nda-/Ni- forms). Expected from the generational gap; it confirms the known bias and supports option (ii) for real Burundian frequencies. The aggregator also lists Christian names as surnames (Jean, Eric, Innocent), see bi-kirundi order-aggregators-swap",
     "stored": "only overlap figures and the common names; the aggregator's table is not copied"
-  }
+  },
+  "superseded_for_adults_by": "bi-ceni-2026.1 (real adult frequencies, 9 Nov 2026); keep for recently born children only"
 }
