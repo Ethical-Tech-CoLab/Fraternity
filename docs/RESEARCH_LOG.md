@@ -1797,3 +1797,9 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 ## 2026-11-09 — Gangji, Pascoe & Smouse (2015), published version, read in full
 
 Copy obtained by the user through NYU. Same data as the thesis. Changes (cd-swc-ln 0.5.1): the published article is now the primary citation; **`child-r-to-l` lowered to `low`**, because the authors state that "much of the evidence for lateralization comes from the production of /lɛdiɔ/ for redio" (one word); weak syllable deletion is described as "the second most frequent process" (ages 3;0–5;6). The authors also caution that all 24 children spoke English as a second language and that their full language profiles were not recorded. **Tests:** 133 pass.
+
+## 2026-11-09 — Field observation located (Malawi); print-only sources dropped
+
+**Correction of the earlier entry today ("Mama X" has two readings):** the user's observation was made **in Malawi**, not in the Great Lakes: everyone used *mama* and *papa* to refer to a person, as Portuguese uses *senhora*/*senhor*. The people there were mostly from the DRC, some from Rwanda. A Kenyan colleague of the user speaks the same way (second-hand). Source wording corrected in rw-kiny 0.6.2 and added to cd-swc-ln 0.5.2 (`order-mama-x`), where it supports the honorific reading for Congolese speakers.
+
+**User's decision:** Kimenyi (1989), Ntahombaye (1983) and Mioni (1975) exist only in print and will **not** be requested; their key content already arrived second-hand (Adekunle 2007 citing Kimenyi pp. 106–108; Simbananiye 2005 drawing on Ntahombaye). `order-spoken-given-name` stays `low`; Catholic vs Protestant Kirundi spelling stays undocumented. Item 1 of the next-session list is closed.
