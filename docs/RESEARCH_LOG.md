@@ -1779,3 +1779,17 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 - Not used: the article's mentions of ethnic conflict (DR-1.7).
 
 **Ntahombaye (1983)** itself is not online; the AfricaMuseum (Tervuren) library holds it (call number NTAHOMBAYE-J62). **Tests:** 133 pass; graph valid.
+
+## 2026-11-09 — Children's speech (Swahili) and the remaining library gaps
+
+**Gangji, N. (2012), *Phonological development in Swahili*, MSc thesis, University of Cape Town (open access, hdl 11427/2916)**; published as Gangji, Pascoe & Smouse (2015), *IJLCD* 50(2): 151–164. 24 children aged 3;0–5;11 in Dar es Salaam, single words named from pictures. Read §4.3 and Figure 3. **First source on children's pronunciation** (gap open since 28 Oct). Added to cd-swc-ln 0.5.0:
+- `child-r-to-l` (medium): the most widespread pattern at every age (redio → ledio, lori → loli); r acquired last (by ~6).
+- `child-weak-syllable-deletion` (medium): words of 3+ syllables lose unstressed syllables up to ~5;5 (themanini → nini). For names: a young child may give only the end of a long name.
+- `child-initial-consonant-deletion` (low; nanasi → anasi), `child-cluster-reduction` (low; mwamvuli → mavuli, ages 3–4).
+- Limits: coastal Tanzanian Swahili, children with English as a second language, n = 24. **Still no source for Kinyarwanda, Kirundi or Chichewa-speaking children**; name examples in Kirundi are marked derived and untested.
+
+**Nassenstein (2019)**, *Modern Africa* 7(1) (already cited 28 Oct), re-read for mission spelling: it documents the rw/mw/tw choices and the Kinyarwanda *by* vs Kirundi *vy* split, but **not Catholic vs Protestant differences**. One addition: in at least one Kinyarwanda variety of eastern DRC, *bw* is written *bg* (p. 27, note 14; fieldwork statements), rw-kiny listener confusion at `low`. Also quoted there: van der Burgt (1917) says Germans, English and Dutch wrote *Warundi*, the French *Barundi* (writer-language effect on the prefix).
+
+**Searched, not available online:** Ntahombaye (1983) (held by the AfricaMuseum library, Tervuren); Kimenyi (1989); Mioni (1975, 1970). These need interlibrary loan.
+
+**Tests:** 133 pass; graph valid.

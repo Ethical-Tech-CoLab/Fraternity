@@ -480,6 +480,16 @@
       "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
       "source": "No source yet; listed so the matcher can test it at low weight",
       "confidence": "hypothesis"
+    },
+    {
+      "sounds": [
+        "/bw/",
+        "/bg/"
+      ],
+      "listener": "writer of another Kinyarwanda variety",
+      "note": "standard 'bw' is said with a velar stop [bg(w)]; in at least one Kinyarwanda variety of eastern DRC it is written 'bg'. Treat bg and bw as possible spellings of one sound",
+      "source": "Nassenstein, N. (2019), 'Kinyarwanda and Kirundi: on colonial divisions, discourses of national belonging, and language boundaries', Modern Africa 7(1): 11-40 (https://doi.org/10.26806/modafr.v7i1.264), p. 27 and note 14 (speakers' statements in fieldwork)",
+      "confidence": "low"
     }
   ],
   "relationship_implications": {
@@ -597,5 +607,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.6.0"
+  "version": "0.6.1"
 }
