@@ -1859,3 +1859,13 @@ Packs: bi-kirundi 0.9.0, cd-swc-ln 0.6.0, rw-kiny 0.7.0. **Tests:** 135 pass; gr
 **Kept at `medium`, with reasons:** rw/tw/sw/mw/vy confusions (pronunciation sourced, spellings like *rgw* not yet attested; the naming profiles will test this); Nimbona & Simon and Gangji rules (one study each); Kirundi o→w (one source); shy (scholars differ). **Waiting:** Kochetov (2016), *Glossa* 1(1): 1–31, on Kirundi consonant + glide sequences (site blocks scripts; the user will download it).
 
 Packs: rw-kiny 0.9.0, bi-kirundi 0.11.0. **Tests:** 135 pass.
+
+## 2026-11-09 — Batch 2 (part 2): Kochetov (2016) read in full
+
+**Source:** Kochetov, A. (2016), "Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi", *Glossa* 1(1): 14, 1–31, doi:10.5334/gjgl.32 (open access; downloaded by the user because the site blocks scripts). Data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis.
+
+**Findings (examples (4) and (28)):** tw [tkw], sw [skw], dw [dgw], bw [bg], pw [pk], fw [fk], mw [mŋ], nw [nŋw]; rw [ɾgw] or **[gw] with the r deleted** (*kurwaara* [kugwaːra]); b+y [vzɟ] (*vy* contains a z); m+y [mɲ]; the rhotic varies [r~ɾ~ɽ~l].
+
+**Changes (bi-kirundi 0.12.0):** `cluster-pronunciation` → **`high`**, rewritten with the full list. **Correction:** mw is [mŋ], not "[my] or [mg]" as first recorded from the FSI synopsis. New listener confusion rw ~ gw (`medium`). The rw/sw/tw/mw/vy confusions keep `medium` under the writing-attestation policy, now with Kochetov as their pronunciation source.
+
+**Tests:** 135 pass.

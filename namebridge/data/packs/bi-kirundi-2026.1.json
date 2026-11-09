@@ -145,9 +145,10 @@
     },
     {
       "id": "cluster-pronunciation",
-      "description": "Written clusters are pronounced differently from their letters: sw often [skw], mw [my] or [mg], rw [rgw], tw [tkw]; vy may contain a [z] sound",
-      "source": "FSI, Kirundi Basic Course, pronunciation synopsis (based on Meeussen 1959) (https://fsi-languages.yojik.eu/languages/FSI/Kirundi/Basic/FSI%20-%20Kirundi%20Basic%20Course%20-%20Student%20Text.pdf); Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026)",
-      "confidence": "medium"
+      "description": "Written consonant + w and consonant + y clusters are pronounced with a stop or nasal that the spelling does not show: tw [tkw], sw [skw], dw [dgw], bw [bg], pw [pk], fw [fk], mw [mŋ], nw [nŋw], rw [ɾgw] or, with the r dropped, [gw]; by/vy [vzɟ] (the vy of vyiza contains a z), my [mɲ]. Spelling follows the letters, speech does not",
+      "source": "FSI, Kirundi Basic Course, pronunciation synopsis (based on Meeussen 1959) (https://fsi-languages.yojik.eu/languages/FSI/Kirundi/Basic/FSI%20-%20Kirundi%20Basic%20Course%20-%20Student%20Text.pdf); Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026); Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013), examples (4) and (28) and notes 4, 14",
+      "confidence": "high",
+      "note": "Raised 9 Nov 2026: Kochetov (2016) confirms each cluster with five earlier descriptions, a speaker and acoustic data. Correction: mw is [mŋ], not [my] as first recorded from the FSI synopsis"
     },
     {
       "id": "o-to-w-unwritten",
@@ -468,8 +469,8 @@
         "/rgw/"
       ],
       "listener": "non-Kirundi writer",
-      "note": "written rw is said [rgw]; a writer who does not know the spelling may write rgw",
-      "source": "FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not",
+      "note": "written rw is said [rgw]; a writer who does not know the spelling may write rgw. Pronunciation confirmed by Kochetov (2016); kept medium until a variant spelling (e.g. rgw, skw, vz) is attested in writing",
+      "source": "FSI Kirundi Basic Course; Nassenstein (RESEARCH_LOG.md, 28 Oct 2026). Pronunciation is sourced; how listeners write it is not; Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013)",
       "confidence": "medium"
     },
     {
@@ -478,8 +479,8 @@
         "/skw/"
       ],
       "listener": "non-Kirundi writer",
-      "note": "written sw is often said [skw]",
-      "source": "As above",
+      "note": "written sw is often said [skw]. Pronunciation confirmed by Kochetov (2016); kept medium until a variant spelling (e.g. rgw, skw, vz) is attested in writing",
+      "source": "FSI Kirundi Basic Course; Nassenstein (2019); Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013)",
       "confidence": "medium"
     },
     {
@@ -488,18 +489,18 @@
         "/tkw/"
       ],
       "listener": "non-Kirundi writer",
-      "note": "written tw is said [tkw]",
-      "source": "As above",
+      "note": "written tw is said [tkw]. Pronunciation confirmed by Kochetov (2016); kept medium until a variant spelling (e.g. rgw, skw, vz) is attested in writing",
+      "source": "FSI Kirundi Basic Course; Nassenstein (2019); Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013)",
       "confidence": "medium"
     },
     {
       "sounds": [
         "/mw/",
-        "/mg/"
+        "/mŋ/"
       ],
       "listener": "non-Kirundi writer",
-      "note": "written mw is said [my] or [mg]",
-      "source": "As above",
+      "note": "written mw is said [mŋ]; may be heard as m + ng or mg. Pronunciation confirmed by Kochetov (2016); kept medium until a variant spelling (e.g. rgw, skw, vz) is attested in writing",
+      "source": "FSI Kirundi Basic Course; Nassenstein (2019); Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013)",
       "confidence": "medium"
     },
     {
@@ -508,8 +509,8 @@
         "/vz/"
       ],
       "listener": "non-Kirundi writer",
-      "note": "vy may contain a [z] sound; may be written vz, z or vi",
-      "source": "FSI Kirundi Basic Course, pronunciation synopsis",
+      "note": "vy may contain a [z] sound; may be written vz, z or vi. Pronunciation confirmed by Kochetov (2016); kept medium until a variant spelling (e.g. rgw, skw, vz) is attested in writing",
+      "source": "FSI Kirundi Basic Course, pronunciation synopsis; Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013)",
       "confidence": "medium"
     },
     {
@@ -551,6 +552,16 @@
       "listener": "any",
       "note": "French ui said [wi] (huit [wit], 12/12)",
       "source": "Nimbona, G. & Simon, A. C. (2022), 'La prononciation du français au Burundi: influence du français de Belgique et du kirundi', Journal of Language Contact 15: 481-511 (https://doi.org/10.1163/19552629-15030002), read in full 9 Nov 2026 (copy via the user), §5.3",
+      "confidence": "medium"
+    },
+    {
+      "sounds": [
+        "/rw/",
+        "/gw/"
+      ],
+      "listener": "any",
+      "note": "rw may be said [gw] with the r dropped (kurwaara [kugwaːra]); a name beginning Rw- may be heard as Gw-. Kept medium until attested in writing",
+      "source": "Kochetov, A. (2016), 'Palatalization and glide strengthening as competing repair strategies: evidence from Kirundi', Glossa 1(1): 14, 1-31 (https://doi.org/10.5334/gjgl.32), read in full 9 Nov 2026 (copy via the user): data from Ntihirageza (1993), Broselow & Niyondagara (1990) and Meeussen (1959), cross-checked with Cox (1969) and Rodegem (1970), confirmed with a Kirundi speaker from Bujumbura and by acoustic analysis (Kochetov et al. 2013), example (28b) /ku-rwaar-a/ [kuɾgwaːra]~[kugwaːra], /ku-gur-w-a/ [kuguɾgwa]~[kugugwa]",
       "confidence": "medium"
     }
   ],
@@ -674,5 +685,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.11.0"
+  "version": "0.12.0"
 }
