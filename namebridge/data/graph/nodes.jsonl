@@ -40,6 +40,21 @@
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yoel", "label": "Joel", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:yonah", "label": "Jonah", "type": "NameConcept"}
 {"dataset_id": "christian-names-2026.1", "id": "nc:christian-names-2026.1:zekharyah", "label": "Zechariah", "type": "NameConcept"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:aganze", "languages": ["rw"], "script": "Latn", "text": "Aganze", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ashimwe", "languages": ["rw"], "script": "Latn", "text": "Ashimwe", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:iganze", "languages": ["rw"], "script": "Latn", "text": "Iganze", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:impano", "languages": ["rw"], "script": "Latn", "text": "Impano", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ineza", "languages": ["rw"], "script": "Latn", "text": "Ineza", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:inezayimana", "languages": ["rw"], "script": "Latn", "text": "Inezayimana", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ishimwe", "languages": ["rw"], "script": "Latn", "text": "Ishimwe", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:mpano", "languages": ["rw"], "script": "Latn", "text": "Mpano", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:muamba", "languages": ["und"], "script": "Latn", "text": "Muamba", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:mwamba", "languages": ["und"], "script": "Latn", "text": "Mwamba", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ngoie", "languages": ["und"], "script": "Latn", "text": "Ngoie", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ngoy", "languages": ["und"], "script": "Latn", "text": "Ngoy", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ngoyi", "languages": ["und"], "script": "Latn", "text": "Ngoyi", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:nishimwe", "languages": ["rw"], "script": "Latn", "text": "Nishimwe", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:uwineza", "languages": ["rw"], "script": "Latn", "text": "Uwineza", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:amos:amos", "languages": ["fr", "en"], "script": "Latn", "text": "Amos", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:amos:amosi", "languages": ["sw", "ln", "ny", "rw"], "script": "Latn", "text": "Amosi", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:daniel:daniel", "languages": ["fr", "en"], "script": "Latn", "text": "Daniel", "type": "NameForm"}

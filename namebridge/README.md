@@ -42,6 +42,7 @@ Load the packs into the graph (re-run after changing a pack):
 .venv/bin/python -m namebridge.packs data/packs/*.json
 .venv/bin/python -m namebridge.crosspack data/crosspack/*.json
 .venv/bin/python -m namebridge.places data/places/*.json
+.venv/bin/python -m namebridge.variants data/variants/*.json
 ```
 
 Resolve a place name both ways in time (old → new, new → old), with the path that explains each candidate:
