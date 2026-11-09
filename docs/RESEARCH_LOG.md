@@ -1726,3 +1726,19 @@ Copyrighted: summarised, not reproduced. Neither covers forms of address or tekn
 **Changes:** rw-kiny 0.5.1: new failure mode `mama-x-two-readings` (search X both as the adult's own given name and as a child's name; "Mama" alone does not show parenthood), `order-teknonym` and `child-avoids-parent-name` reworded; source = the user's field observation plus the Swahili paper. cd-swc-ln 0.4.0: new rule `order-mama-x` (medium; Swahili in general, not Congo Swahili specifically) and the same failure mode. **Tests:** 132 pass; graph valid.
 
 **Benchmark implication (week 6):** generated oral reports should include "Mama/Papa + own given name" and "Mama/Papa + child's name", so recall is measured on both readings.
+
+## 2026-11-09 — Niyonkuru (1987) read in full
+
+**Source:** Niyonkuru, L., "Loan-words in Kirundi: a preliminary study", *African Study Monographs* 7: 81–87, **March 1987** (earlier entries in this log cite it as 1985; the printed date is 1987, received 3 Feb 1986). Copy obtained by the user; kept in `~/namebridge-ref`. Summarised, not reproduced.
+
+**What it is:** a historical and sociolinguistic sketch of the contacts that shaped Kirundi (Swahili trade, German and Belgian rule, missions, migrant labour to Buganda). **It contains no list of loan-words and no sound-adaptation rules**, so it does not serve the sound layer, despite its title.
+
+**Used:**
+- p. 82: "Usumbura" is the Swahili rendering of Bujumbura; p. 83: "Urundi" is Kiswahili for Burundi, and the region of Bujumbura is "Uzige, or Buzige in Kirundi". A scholarly second source for the Usumbura → Bujumbura rename (places 0.13.1; until now Statoids only) and more examples for the bi-kirundi Swahili-prefix failure mode (Bu- → U-).
+- pp. 81–82, 84: Kinyarwanda-speaking refugees settled in Burundi in 1959–64 and 1972–73 (Bujumbura, Bubanza, Muyinga, Ruyigi); people from eastern Congo were 57.3% of Usumbura's urban population in the 1950s and spoke Kingwana (Congo Swahili). New bi-kirundi failure mode `origin-country-not-naming-language` (bi-kirundi 0.6.0): a person from Burundi may carry Kinyarwanda- or Swahili-spelled names, so all three packs should be tried.
+
+**Not used:** the article's description of ethnic groups and of a Muslim community (DR-1.7; packs hold no ethnicity or religion); the Kirundi names for neighbouring groups (ethnonyms).
+
+**Correction made during this work:** a DOI was first written for this source from memory without checking; it was replaced before commit by the repository's home page, with a note that the exact record URL was not recorded.
+
+**Tests:** 132 pass; graph valid.

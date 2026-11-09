@@ -1,6 +1,6 @@
 {
   "dataset_id": "places-2026.1",
-  "version": "0.13.0",
+  "version": "0.13.1",
   "description": "Province and town names that changed in the corridor (Burundi 1962 and 2025, Rwanda 2006, DRC 1966-2015). Each change joins two Region nodes, old to new: renamed_to (same unit, new name), merged_into (the old unit is now part of a larger one; partial when only part of it went there), split_into (the old unit was divided); located_in (containment, not a change: Rwandan towns mostly kept their names in 2006 while their districts got new ones). Units carry other_names (Kinyarwanda names, colonial names, old spellings). Records and memories use old and new names side by side. continues_as: the same name carried on at another level (Bujumbura's 2010 urban communes are zones or quarters today).",
   "confidence": 0.9,
   "sources": {
@@ -231,6 +231,12 @@
       "url": "https://data.humdata.org/dataset/cod-ab-cod",
       "locator": "cod_admin_boundaries.xlsx, sheet cod_admin2 (164 level-2 units: territories and cities, no type column), with province (adm1); sheet cod_admin3 (519 level-3 units: communes, sectors, chiefdoms) with their level-2 unit; sheet cod_admincapitals (provincial capitals, adm_p_lvl 1)",
       "language": "fr"
+    },
+    "bi-niyonkuru-1987": {
+      "name": "Niyonkuru, L. (1987), 'Loan-words in Kirundi: a preliminary study', African Study Monographs 7: 81-87 (Kyoto University; copy via the user, read in full 9 Nov 2026)",
+      "url": "https://repository.kulib.kyoto-u.ac.jp/",
+      "locator": "African Study Monographs 7 (March 1987), in Kyoto University's repository (KURENAI); exact record URL not recorded. p. 82: '\"Usumbura\" - Swahili rendition for Bujumbura'; p. 83: Uzige, 'or Buzige in Kirundi', the region where Bujumbura is; '\"Urundi\" (Kiswahili for Burundi)'",
+      "language": "en"
     }
   },
   "units": [
@@ -9083,8 +9089,10 @@
       "relation": "renamed_to",
       "year": 1962,
       "sources": [
-        "bi-statoids"
-      ]
+        "bi-statoids",
+        "bi-niyonkuru-1987"
+      ],
+      "note": "Usumbura is the Swahili rendering of Bujumbura (Bu- -> U-), the same prefix change as Urundi/Burundi"
     },
     {
       "from": "BI:province:kitega@1960-1962",
