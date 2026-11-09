@@ -237,9 +237,9 @@
         "ou",
         "w"
       ],
-      "note": "Mwamba / Mouamba",
-      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana",
-      "confidence": "medium"
+      "note": "Mwamba / Mouamba. The spelling correspondence is part of French orthography (sources above); Official DRC names write w (63 names); ou appears almost only in colonial-era names (Luluabourg, Kivou). ou is a French writer's or an old spelling",
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high"
     },
     {
       "sound": "/s/",
@@ -248,9 +248,9 @@
         "s",
         "ss"
       ],
-      "note": "double s between vowels, French-influenced",
-      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 329: 'An s between two vowels is pronounced z', hence ss for /s/ between vowels (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf); APiCS Online, survey 60, Lingala (French spellings in Lingala)",
-      "confidence": "medium"
+      "note": "double s between vowels, French-influenced. The spelling correspondence is part of French orthography (sources above)",
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 329: 'An s between two vowels is pronounced z', hence ss for /s/ between vowels (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf); APiCS Online, survey 60, Lingala (French spellings in Lingala); Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high"
     },
     {
       "sound": "/ʃ/",
@@ -258,17 +258,20 @@
       "spellings": [
         "ch"
       ],
-      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
-      "confidence": "medium"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf); Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high",
+      "note": "The spelling correspondence is part of French orthography (sources above); Official DRC names write sh (16: Kinshasa, Kipushi), ch only twice (Oicha/Oïcha). ch is a French writer's spelling"
     },
     {
       "sound": "/tʃ/",
       "writer_language": "fr",
       "spellings": [
+        "tsh",
         "tch"
       ],
-      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'",
-      "confidence": "medium"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high",
+      "note": "The spelling correspondence is part of French orthography (sources above); In official DRC names the sound is written tsh (19 names: Tshikapa, Rutshuru, Mutshatsha) and tch only once (Tchomia): Belgian-era spelling. Expect tsh first, tch from French writers"
     },
     {
       "sound": "/tʃ/",
@@ -325,6 +328,17 @@
       "note": "Chichewa Board spelling writes ch (and tch when aspirated), never c alone, so a Malawian clerk may write a c-name as ch (Ciza as Chiza); that clerks do so with refugees' names is a hypothesis",
       "source": "Peace Corps Malawi, 'An Introduction to the Chichewa Language' ('The letter C always carries an H'; no Q or X) (https://files.peacecorps.gov/multimedia/audio/languagelessons/malawi/MW_Chichewa_Language_Lessons.pdf), read 5 Nov 2026; Downing, L. J. & Mtenje, A. (2017), The Phonology of Chichewa, Oxford University Press, ch. 1, note 2 (publisher preview, https://api.pageplace.de/preview/DT0400.9780191037733_A30389705/preview-9780191037733_A30389705.pdf), read 9 Nov 2026: the Chichewa Board's convention writes the unaspirated affricate as ch and the aspirated one as tch; earlier work (Watkins 1937) and some linguists write c",
       "confidence": "high"
+    },
+    {
+      "sound": "/dʒ/",
+      "writer_language": "fr",
+      "spellings": [
+        "dj",
+        "j"
+      ],
+      "source": "Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48): dj in 16 DRC names (Djolu, Budjala, Bosondjo), j in 11 (Kisanji, Kajiji)",
+      "confidence": "high",
+      "note": "French writing uses dj for this sound (French j is /ʒ/); Congolese names occur both ways, so Djuma/Juma-type pairs are one name"
     }
   ],
   "listener_confusions": [
@@ -480,5 +494,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.6.0"
+  "version": "0.7.0"
 }

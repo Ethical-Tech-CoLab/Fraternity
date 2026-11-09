@@ -313,8 +313,9 @@
         "ou",
         "w"
       ],
-      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana",
-      "confidence": "medium"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Adamaoua' for Adamawa, 'Haoussa' for Hausa/Hawsa, 'Tchouana' for Tswana; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high",
+      "note": "The spelling correspondence is part of French orthography (sources above); No ou, ch, tch, gn or dj in 149 official Burundian place names: French-style spellings appear only in colonial forms and in names written by French speakers"
     },
     {
       "sound": "/ʃ/",
@@ -322,8 +323,9 @@
       "spellings": [
         "ch"
       ],
-      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf)",
-      "confidence": "medium"
+      "source": "FSI, Introduction to French Phonology, Student Text (Salazar), p. 253, 'Pronunciation of written ch' (drills: chance, machine, chemin; the sound is taught by audio, not described in print) (https://fsi-languages.yojik.eu/languages/FSI/French/Fsi-FrenchPhonology-StudentText.pdf); Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high",
+      "note": "The spelling correspondence is part of French orthography (sources above); Official Burundian names write sh (7: Gihosha, Kanyosha), never ch"
     },
     {
       "sound": "/ʃ/",
@@ -349,8 +351,9 @@
       "spellings": [
         "tch"
       ],
-      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'",
-      "confidence": "medium"
+      "source": "Cornevin, R. (1984), 'The standardization of the spelling of African names: toponyms and ethnonyms', in UNESCO, African ethnonyms and toponyms (General History of Africa: Studies and Documents 6), pp. 68-79 (https://unesdoc.unesco.org/ark:/48223/pf0000059805): French 'Tchouana' for Tswana (tch for an affricate); 'j and c(h) are usually given values close to their English value in anglophone countries, but not normally in francophone countries'; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high",
+      "note": "The spelling correspondence is part of French orthography (sources above); No tch or tsh in official Burundian names (they write c: Cibitoke, Cankuzo)"
     },
     {
       "sound": "/tʃ/",
@@ -377,9 +380,9 @@
         "c",
         "cy"
       ],
-      "note": "a Kinyarwanda writer may write cy where Kirundi has c (reverse of rule rw-to-rn-cy)",
+      "note": "a Kinyarwanda writer may write cy where Kirundi has c (reverse of rule rw-to-rn-cy). Orthographic correspondence stated in a published comparative grammar (Table 1)",
       "source": "Comparative Grammar (2007), Table 1",
-      "confidence": "medium"
+      "confidence": "high"
     },
     {
       "sound": "/ʒ/",
@@ -409,8 +412,9 @@
         "gn",
         "ny"
       ],
-      "source": "FSI, Swahili Basic Course, p. xi: ny 'as in Spanish cañon, Portuguese nenhum, French gagner' (a palatal nasal), so French writes the sound gn",
-      "confidence": "medium"
+      "source": "FSI, Swahili Basic Course, p. xi: ny 'as in Spanish cañon, Portuguese nenhum, French gagner' (a palatal nasal), so French writes the sound gn; Official place names counted 9 Nov 2026 in places-2026.1 (DRC: HDX cod-ab-cod Référentiel Géographique Commun and older sources, 588 names; Burundi 149; Rwanda 48)",
+      "confidence": "high",
+      "note": "The spelling correspondence is part of French orthography (sources above); gn appears in none of 785 official place names of the three countries (ny: 33); a French writer by ear may still write gn"
     },
     {
       "sound": "/ɲ/",
@@ -670,5 +674,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.9.0"
+  "version": "0.10.0"
 }

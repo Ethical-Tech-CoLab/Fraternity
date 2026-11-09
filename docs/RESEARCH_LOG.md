@@ -1826,3 +1826,21 @@ Per the rule "Wikipedia is not a source" (5 Nov), the user decided to remove eve
 **Chichewa c → ch (3 entries, `medium` → `high`):** Downing, L. J. & Mtenje, A. (2017), *The Phonology of Chichewa* (Oxford University Press), ch. 1 note 2 (publisher preview): the Chichewa Board writes the plain affricate **ch** and the aspirated one **tch**; Watkins (1937) and some linguists write c. Added *tch* as a spelling. Peace Corps Malawi kept as a second source.
 
 Packs: bi-kirundi 0.9.0, cd-swc-ln 0.6.0, rw-kiny 0.7.0. **Tests:** 135 pass; graph valid.
+
+## 2026-11-09 — Batch 1: how French writers spell African sounds
+
+**New evidence from our own official data:** spelling patterns counted in the official place names already in `places-2026.1` (DRC 588 names, mainly the RGC; Burundi 149; Rwanda 48):
+
+| Pattern | DRC | Burundi | Rwanda |
+|---|---|---|---|
+| tsh / tch | **19** / 1 | 0 / 0 | 0 / 0 |
+| sh / ch | 16 / 2 | 7 / 0 | 1 / 0 |
+| dj / j | **16** / 11 | 0 / 4 | 0 / 4 |
+| w / ou | 63 / 4 (colonial: Luluabourg, Kivou) | 13 / 0 | — |
+| ny / gn | 13 / **0** | 17 / 0 | 3 / 0 |
+
+**Findings:** (1) in the DRC the sound /tʃ/ is written **tsh** (Belgian-era spelling), not the French *tch* the packs assumed; *tsh* added first. (2) **dj** for /dʒ/ is common in DRC names (Djolu, Budjala), a convention missing from the packs; added to cd-swc-ln (Djuma/Juma-type pairs are one name). (3) *ou* for /w/ survives mainly in colonial-era names. (4) *gn* for /ɲ/ is unattested in all 785 names: a French writer by ear may use it, but official names do not. (5) Burundian and Rwandan official names contain **no** French-style spellings.
+
+**Confidence:** the French spelling correspondences (ou, ch, tch, gn, ss) are facts of French orthography (Cornevin 1984; FSI French phonology) now backed by the official data on where they occur: **13 entries raised to `high`**, with prevalence in the notes. The Kinyarwanda c/cy correspondence (Comparative Grammar, Table 1) raised to `high`. **Kept at `medium`:** the Swahili writer's *j* for /ʒ/ (2 entries): Swahili lacks /ʒ/ (FSI), but that a Swahili writer writes it *j* is an inference.
+
+**Next evidence step:** the naming profiles (CongoNames, NESA) will measure these spellings in **personal** names, which is the stronger test. Packs: bi-kirundi 0.10.0, cd-swc-ln 0.7.0, rw-kiny 0.8.0. Totals now: high 73, medium 58, low 8, hypothesis 7, disputed 7, unknown 1. **Tests:** 135 pass.
