@@ -92,7 +92,8 @@
       "description": "Name-initial elements described as feminine. Used ONLY to keep generated names consistent with generated sex; never to infer anyone's sex (BENCHMARK_PROTOCOL.md C12)",
       "use": "generation_only",
       "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes",
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "None of the 40 most common names of 2024-2025 newborns uses these prefixes, and most of those names are given to both sexes (NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1): the prefixes mark older or traditional names, which matters when generating adults of the refugees' generation"
     },
     {
       "id": "prefixes-masculine",
@@ -107,7 +108,8 @@
       "description": "Name-initial elements described as masculine. Same restriction: generation only, never inference",
       "use": "generation_only",
       "source": "Kimenyi, A. (1978), 'Aspects of Naming in Kinyarwanda', Anthropological Linguistics 20(6): 258-271 (https://www.jstor.org/stable/30027411), read in full 5 Nov 2026 (copy via NYU Libraries), pp. 261-262: names formed with nyira-, mukaa- and kaa- are feminine; nya-, munya-, see-, nyiri-, rwaa-, ki- are possessive name-forming morphemes",
-      "confidence": "medium"
+      "confidence": "medium",
+      "note": "None of the 40 most common names of 2024-2025 newborns uses these prefixes, and most of those names are given to both sexes (NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1): the prefixes mark older or traditional names, which matters when generating adults of the refugees' generation"
     }
   ],
   "transliteration_rules": [
@@ -569,6 +571,16 @@
       "id": "documents-under-former-name",
       "description": "After a formal change of name (granted by the Minister, effective when recorded in the birth register), documents made under the former name remain valid and are only updated on request; one person can hold valid papers under two names. Matching must allow a recorded former name",
       "source": "Rwanda, Law No 71/2024 of 26/06/2024 governing persons and family, Official Gazette n° Special of 30/07/2024 (https://www.minijust.gov.rw/fileadmin/user_upload/Minijust/Publications/Laws/OG_n___Special_of_30.07.2024_Abantu_n_umuryango.pdf), English text read 9 Nov 2026, arts 42-43: 'Documents made under the former name of a person are considered to be made under the new name'"
+    },
+    {
+      "id": "same-root-different-names",
+      "description": "Names sharing a root are distinct names given independently, not spelling variants: Ishimwe / Ashimwe / Nishimwe, Iganze / Aganze, Mpano / Impano, Ineza / Inezayimana / Uwineza (all among the most common names of 2024-2025). Edit-distance similarity must not merge them into one identity; treat them as different names that may be confused",
+      "source": "NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1"
+    },
+    {
+      "id": "kinyarwanda-names-unisex",
+      "description": "Most common Kinyarwanda names are given to both girls and boys (Ishimwe, Irakoze, Igiraneza, Iradukunda, Ineza ...). Sex must never be inferred from a Kinyarwanda name, and a sex mismatch between two records is weak evidence only if the record itself is wrong",
+      "source": "NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system); NameBridge profile rw-nisr-2026.1"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -628,5 +640,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.10.0"
+  "version": "0.11.0"
 }

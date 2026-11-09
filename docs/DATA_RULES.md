@@ -25,6 +25,8 @@ Draft, 26 Oct 2026. These are the rules for data sharing, retention and deletion
 
    Never full names, rows, or exam IDs.
 
+   **Published aggregates first** (decided 9 Nov 2026): where the authors of a list publish aggregate tables (e.g. CongoNames), the profile is built from those alone and no raw list is downloaded. Tables in such releases that list full names are deleted unread. The raw-list procedure below applies only when no adequate aggregates exist.
+
    **Study, keep the profile, delete** (decided 26 Oct 2026):
    1. Download the public list into `~/namebridge-ref/<source>/`. That is outside the repo and outside iCloud Drive (`~/Desktop` and `~/Documents` may be synced). The disk is encrypted with FileVault (checked 26 Oct 2026); optionally, use an encrypted disk image as well.
    2. Build the **naming profile** locally (`BENCHMARK_PROTOCOL.md` §2.4): only elements seen 5 or more times; no pattern linking names to ethnicity, clan, tribe or religion.

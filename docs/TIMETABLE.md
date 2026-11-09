@@ -40,7 +40,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 
 **Week 4 items still to do:**
 3. ICU / CLDR set-up: Unicode NFC, folding (accents, ŵ, ɛ/ɔ, tone marks, hyphens, prefixes), transform-path logging (§5.4). `namebridge.resolve_place.fold` is a first, place-only version.
-4. Naming profiles from CongoNames and the NESA lists (DR-1: aggregates only, delete raw files). **9 Nov: DRC done** from the authors' published aggregates (no raw data; `data/profiles/cd-congonames-2026.1.json`). Rwanda and Burundi still to do; copy-test change pending the user (`RESEARCH_LOG.md`, 9 Nov).
+4. Naming profiles from CongoNames and the NESA lists (DR-1: aggregates only, delete raw files). **9 Nov: DRC done** from the authors' published aggregates (no raw data; `data/profiles/cd-congonames-2026.1.json`). **Rwanda done** from NISR's published top-20 tables (2024, 2025; `rw-nisr-2026.1.json`). Copy-test change approved. Burundi: no published aggregates; decision pending (`RESEARCH_LOG.md`, 9 Nov).
 
 **State:** graph valid; 132 tests pass; packs rw-kiny, bi-kirundi, cd-swc-ln; cross-pack Christian names (11 names, 7 languages); places (Burundi, Rwanda, DRC incl. RGC level 2 and 3) with the resolver `namebridge.resolve_place`.
 
