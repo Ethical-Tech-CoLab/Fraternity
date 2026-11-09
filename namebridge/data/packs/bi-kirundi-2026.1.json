@@ -43,15 +43,23 @@
       "id": "structure-mwene-filiation",
       "description": "Descent is expressed with mwene: 'Gahungu mwene Bucumi' = Gahungu, son of Bucumi. In a name given as 'X mwene Y', Y is the father's name and mwene is not part of either name",
       "practice": "cultural",
-      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, p. 171",
-      "confidence": "medium"
+      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, p. 171; Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary (https://www.matana.de/kirundi.pdf), English-Kirundi part, read 9 Nov 2026: 'child (of) mwene', 'son (of) mwene'",
+      "confidence": "high"
     },
     {
       "id": "structure-birth-order-names",
-      "description": "Some names are set by birth order or circumstance: Nyandwi, Minani, Nyawenda, Bucumi (7th to 10th child), Karenzo (11th); twins Bukuru (elder) and Butoyi (younger); the child after twins Nkurikiye, Ciza or Congera. These names are common, so they distinguish people poorly; they are not, alone, evidence of birth order or kinship, and a father named Nyandwi cannot pass the name on meaningfully (one reason the patronymic system fits badly)",
+      "description": "Some names are set by birth order or circumstance: Nyandwi, Minani, Nyawenda or Nyabenda, Bucumi (7th to 10th child), Karenzo (11th); twins Bukuru (elder) and Butoyi (younger); the child after twins Nkurikiye, Ciza or Congera. These names are common, so they distinguish people poorly; they are not, alone, evidence of birth order or kinship, and a father named Nyandwi cannot pass the name on meaningfully (one reason the patronymic system fits badly)",
       "practice": "cultural",
-      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, pp. 171-172",
-      "confidence": "medium"
+      "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, pp. 171-172; University of Burundi repository, 'Sociocultural prerequisites for understanding the Rundi nomenclature' (https://repository.ub.edu.bi/bitstreams/c2369042-37ce-4c26-8692-fdefc04a65d1/download; read 5 Nov 2026; server unreachable 9 Nov, passage confirmed from the search index): 'Nyandwi, the seventh child; Minani, the eighth child; Nyabenda, the ninth child'",
+      "confidence": "high",
+      "note": "Two independent sources; they spell the ninth-child name differently (Nyawenda in Simbananiye 2005, Nyabenda in the University of Burundi paper), so the pair is recorded as variants"
+    },
+    {
+      "id": "structure-twin-parent-titles",
+      "description": "Parents of twins are called by a title: Nyirababiri ('mother of twins') and Sebabiri ('father of twins'). A parent reported under such a title is being named by a status, not by a personal name",
+      "practice": "cultural",
+      "source": "Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary (https://www.matana.de/kirundi.pdf), English-Kirundi part, read 9 Nov 2026: 'nyirababiri (ba-) mother of twins', 'sēbabiri (ba-) father of twins'",
+      "confidence": "high"
     }
   ],
   "order_rules": [
@@ -627,6 +635,11 @@
       "id": "name-means-no-name",
       "description": "Some real names mean 'nothing' or 'without a name' (Ntazina 'no name', Busabusa 'nothing', Ntakije 'nothing comes'), given to hide a child from misfortune. They must not be treated as a missing or placeholder name",
       "source": "Simbananiye, L. (2005), 'Les noms de personnes au Burundi: un support du lien social', Anthropologie et Sociétés 29(1): 167-181 (https://www.erudit.org/fr/revues/as/2005-v29-n1-as993/011745ar.pdf), read in full 9 Nov 2026, p. 171"
+    },
+    {
+      "id": "title-read-as-name",
+      "description": "A parent reported as Nyirababiri or Sebabiri (mother/father of twins) is named by a title shared by every parent of twins; it must not be matched as a personal name",
+      "source": "structure-twin-parent-titles"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -686,5 +699,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.13.0"
+  "version": "0.14.0"
 }

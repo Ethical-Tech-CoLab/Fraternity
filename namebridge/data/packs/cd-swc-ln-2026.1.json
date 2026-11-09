@@ -44,8 +44,22 @@
       "id": "structure-dual-origin",
       "description": "Modern Congolese names combine locally rooted Bantu elements with Christian or French-origin elements",
       "practice": "cultural",
-      "source": "Tshabu Ngandu et al. (2026), 'CongoNames Corpus', Data 11(7):169, abstract via the corpus repository (https://github.com/bernard-ng/drc-names-corpus), read 5 Nov 2026",
-      "confidence": "medium"
+      "source": "Tshabu Ngandu et al. (2026), 'CongoNames Corpus', Data 11(7):169, abstract via the corpus repository (https://github.com/bernard-ng/drc-names-corpus), read 5 Nov 2026; Radio-Canada (Mata, F., 2020), 'Pourquoi des Congolais portent-ils des postnoms?' (https://ici.radio-canada.ca/nouvelle/1522957/postnom-nom-prenom-zaire-congo-kongo-mobutu-authenticite): Christian given names banned under authenticité and re-adopted after 1990 while keeping the postnom; DRC, Loi n° 87-010 du 1er août 1987 portant Code de la famille, as amended by Loi n° 16/008 du 15 juillet 2016 (consolidated text, https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf), read 9 Nov 2026, art. 58 (names drawn from Congolese cultural heritage)",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-foundling-name",
+      "description": "A child whose father and mother are both unknown is given a name by the civil registrar in the birth record; anyone with a material or moral interest may ask the children's court to change it until the child is five. A child of unknown father whose mother died in childbirth gets a name from the mother's family. A separated child may therefore be registered under an assigned name unrelated to the family's names",
+      "practice": "legal_document",
+      "source": "DRC, Loi n° 87-010 du 1er août 1987 portant Code de la famille, as amended by Loi n° 16/008 du 15 juillet 2016 (consolidated text, https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf), read 9 Nov 2026, art. 60",
+      "confidence": "high"
+    },
+    {
+      "id": "structure-father-adds-element",
+      "description": "When paternity is established after maternity, the father may add a name element of his choice to the child's name (with the child's consent if over 15); a child's name can therefore grow after birth registration",
+      "practice": "legal_document",
+      "source": "DRC, Loi n° 87-010 du 1er août 1987 portant Code de la famille, as amended by Loi n° 16/008 du 15 juillet 2016 (consolidated text, https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf), read 9 Nov 2026, art. 59",
+      "confidence": "high"
     }
   ],
   "order_rules": [
@@ -67,22 +81,23 @@
       "id": "order-foreign-forms",
       "description": "Forms with first/last fields (UNHCR, other countries) do not follow the declared order: the postnom is dropped, or nom and postnom are swapped (Mutombo Kalala Pierre / Pierre Mutombo)",
       "practice": "database",
-      "source": "SCOPE.md §1 (DRC); BENCHMARK_PROTOCOL.md §2.3; ICC, Annex 1, 'The issue of names used to identify citizens of the DRC' (SCOPE.md [S9])",
-      "confidence": "medium"
+      "source": "SCOPE.md §1 (DRC); BENCHMARK_PROTOCOL.md §2.3; ICC, Annex 1, 'The issue of names used to identify citizens of the DRC' (SCOPE.md [S9]); DRC, Loi n° 87-010 du 1er août 1987 portant Code de la famille, as amended by Loi n° 16/008 du 15 juillet 2016 (consolidated text, https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf), read 9 Nov 2026, arts 56 and 64: the declared order and spelling are immutable in civil records, so a swapped or shortened form on a foreign form is a recording artefact, not a new name",
+      "confidence": "high"
     },
     {
       "id": "order-no-traditional-surname",
       "description": "Central African (Congolese) names did not traditionally include a surname; that has been changing, but should not be assumed. Library practice establishes such names in direct order",
       "practice": "database",
-      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'Central African names (Congolese etc.) did not traditionally include a surname … These names are often established in direct order'",
-      "confidence": "medium"
+      "source": "Africana Librarians Council (ALCASA), Africana Cataloging Guidelines, '4c. Name Order' (https://africanalibrarians.wixsite.com/alcasa/6-name-order), read 5 Nov 2026: 'Central African names (Congolese etc.) did not traditionally include a surname … These names are often established in direct order'; DRC, Loi n° 87-010 du 1er août 1987 portant Code de la famille, as amended by Loi n° 16/008 du 15 juillet 2016 (consolidated text, https://www.leganet.be/Legislation/Code%20de%20la%20famille/CDF.2017.pdf), read 9 Nov 2026, arts 56, 57 and 61: the legal name is prénom + nom + postnom; family members who share a nom must add different elements, and a parent who passes on a name must add at least one element of the child's own",
+      "confidence": "high",
+      "note": "The law shows why a shared family surname cannot be assumed: even a transmitted name must be made individual"
     },
     {
       "id": "order-mama-x",
       "description": "Swahili 'mama X' / 'baba X' has two readings: respectful address with the person's own name ('Mrs. X') or a teknonym after a child ('X's mother'). Any adult woman may be addressed as 'mama'",
       "practice": "cultural",
-      "source": "Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term; the user's first-hand observation in Malawi (reported 9 Nov 2026): 'mama' and 'papa' were used by everyone to refer to a person, like 'senhora'/'senhor' (madam/sir) in Portuguese; the people there were mostly from the DRC, some from Rwanda; a Kenyan colleague of the user speaks the same way (second-hand)",
-      "confidence": "medium",
+      "source": "Kraska-Szlenk, I. (2018), 'Kinship metaphors in Swahili language and culture', University of Warsaw (https://bibliotekanauki.pl/articles/462487.pdf), read 9 Nov 2026, Table 1: 'mama X' = teknonym 'X's mother' (familiar) AND 'mama X' = 'Mrs. X' (honorific); 'any adult woman can be addressed or referred to as mama', also with her own name; baba is the mirror term; the user's first-hand observation in Malawi (reported 9 Nov 2026): 'mama' and 'papa' were used by everyone to refer to a person, like 'senhora'/'senhor' (madam/sir) in Portuguese; the people there were mostly from the DRC, some from Rwanda; a Kenyan colleague of the user speaks the same way (second-hand); Wawire, G. (2025), Elementary Swahili I, Baylor University open textbook, Lesson 7 'Culture: Greeting Etiquette in East African Culture' (https://openbooks.library.baylor.edu/elementaryswahili1/chapter/culture-greeting-etiquette): 'Using formal titles like Mzee (elder) or Mama/Baba (mother/father) … is considered respectful'; 'rather than calling Juma's mother by her given name, one would respectfully address her as Mama Juma'",
+      "confidence": "high",
       "note": "The paper describes Swahili generally; the user's observation in Malawi, among mostly Congolese refugees, supports the honorific use for Congolese speakers"
     }
   ],
@@ -449,6 +464,16 @@
       "id": "mama-x-two-readings",
       "description": "'Mama X' / 'Papa X' is ambiguous: X may be the person's OWN name (respectful address, like 'Mrs. X') or the name of their CHILD (teknonym, 'X's mother'). Search both readings: X as a given name of the sought adult, and X as a child of the sought adult. 'Mama'/'Papa' alone does not show that the person is anyone's parent",
       "source": "order-mama-x; the user's first-hand observation in Malawi (reported 9 Nov 2026): 'mama' and 'papa' were used by everyone to refer to a person, like 'senhora'/'senhor' (madam/sir) in Portuguese; the people there were mostly from the DRC, some from Rwanda; a Kenyan colleague of the user speaks the same way (second-hand)"
+    },
+    {
+      "id": "assigned-foundling-name",
+      "description": "A child registered without known parents carries a registrar-assigned name (art. 60) that may share nothing with the family's names, and may have been changed before age five. For such children, matching must rest on non-name evidence and the child's own account, not on name similarity",
+      "source": "structure-foundling-name"
+    },
+    {
+      "id": "name-element-added-later",
+      "description": "A paternal element added after registration (art. 59) makes an older record shorter than a newer one; compare with and without the added element",
+      "source": "structure-father-adds-element"
     }
   ],
   "protected_or_sensitive_forms": [
@@ -494,5 +519,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.7.0"
+  "version": "0.8.0"
 }

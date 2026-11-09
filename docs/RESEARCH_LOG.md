@@ -1878,7 +1878,7 @@ Packs: rw-kiny 0.9.0, bi-kirundi 0.11.0. **Tests:** 135 pass.
 
 **Assess:** the data is public (published by CENI) and concerns adult political candidates, not refugees or minors. It remains in the transcript of this session (sent to the AI provider as part of the conversation). Harm judged low; the breach is of our own rule, not of a confidentiality duty.
 
-**Notify:** per DR-5 step 4, the user should inform the professor. The dataset is an official publication, so no authors' notification seems needed; the user decides.
+**Notify:** DR-5 step 4 (inform the professor) **waived by the user** on 9 Nov 2026: nobody accessed the exposed commit in the hour it was public, the data was a public official list, and the history has been rewritten. No GitHub purge requested.
 
 **Second finding, same incident:** a commit pushed on 9 Nov 2026 (since rewritten) put **one candidate's real full name**, copied from the list as a layout example, into a bi-kirundi source note and the graph (DR-1.1, DR-1.4). Removed, and **history rewritten** with the user's approval (DR-5 step 2): the two commits of this work were squashed into one that never contains the name, and pushed with `--force-with-lease`. GitHub may keep the old commit reachable by its hash for a while; asking GitHub support to purge it is optional. Given names copied from the same rows were also removed.
 
@@ -1898,3 +1898,17 @@ Packs: rw-kiny 0.9.0, bi-kirundi 0.11.0. **Tests:** 135 pass.
 `GATE_EXAMPLES.md` example 1 ("NSHIMIRIMANA Belyse") is an invented **case-database** record, not a CENI list, so it is left as is.
 
 Packs: rw-kiny 0.10.0, bi-kirundi 0.13.0. **Tests:** see commit.
+
+## 2026-11-09 — Batch 3 (part 2): Kirundi dictionary, DRC Family Code, Swahili textbook
+
+**Cox (1969, rev. 2023), Kirundi-English dictionary:** "child (of) mwene", "son (of) mwene" → `structure-mwene-filiation` **high** (second source after Simbananiye). New: **Nyirababiri** "mother of twins", **Sebabiri** "father of twins": titles, not names (new structure + failure mode `title-read-as-name`).
+
+**Birth-order names:** second source, the University of Burundi paper already cited for bi-kirundi (server unreachable today; passage confirmed from the search index): "Nyandwi, the seventh child; Minani, the eighth child; Nyabenda, the ninth child". It spells the ninth-child name **Nyabenda**, Simbananiye **Nyawenda**: both recorded as variants; entry → **high**.
+
+**DRC Family Code** (Loi 87-010 of 1987, amended by Loi 16/008 of 2016; consolidated text on Leganet), arts 56–67 read directly. The pack already held arts 56, 57, 62 and 63–64 at `high`. New: **art. 60**, a child with no known parents gets a **registrar-assigned name**, changeable until age five (structure + failure mode `assigned-foundling-name`: for such children matching must rest on non-name evidence); **art. 59**, a father recognised later may **add** an element (failure mode `name-element-added-later`). Arts 56/57/61/64 back `order-no-traditional-surname` and `order-foreign-forms` → **high**. Art. 66 confirms that court name changes are published in the *Journal officiel* (the subject of gate G8).
+
+**Also:** `structure-dual-origin` → high (Radio-Canada 2020 on authenticité, plus art. 58); `order-mama-x` → high with a second academic source (Wawire 2025, Baylor University open Swahili textbook: Mama/Baba as respectful titles, and "Mama Juma" for Juma's mother).
+
+**Kept below high, with reasons:** rw-kiny gendered prefixes (Kimenyi 1978 only); `order-teknonym` (Rwanda-specific only for in-laws); bi-kirundi `order-aggregators-swap` (one observation of a non-authoritative site); mission spellings (`hypothesis`, Mioni not obtainable).
+
+Packs: bi-kirundi 0.14.0, cd-swc-ln 0.8.0. Totals: **high 106**, medium 32, low 7, hypothesis 7, disputed 6, unknown 1. **Tests:** 135 pass.
