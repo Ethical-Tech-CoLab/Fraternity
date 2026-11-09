@@ -105,8 +105,8 @@
     {
       "id": "r-l-one-sound",
       "description": "[r] and [l] are one sound. Spelling uses r, except l in proper nouns that already used it and unintegrated loanwords (Kigali, Kamali). A name may be written with either letter",
-      "source": "'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (http://www.ijlrhss.com/paper/volume-3-issue-3/3-HSS-598.pdf)",
-      "confidence": "medium",
+      "source": "'Phonological Aspects of Loanword Adaptation in Kinyarwanda', IJLRHSS 3(3) (http://www.ijlrhss.com/paper/volume-3-issue-3/3-HSS-598.pdf); Myers, S. (2006), 'Kinyarwanda: Introduction', Phonology: case studies, University of Texas at Austin (https://www.laits.utexas.edu/phonology/kinyarwanda/index.html), consonant table: one tap ɾ and no l; affricates pf, ts, ʧ; UN Security Council 1533 list aliases (KAKOLELE / KAKORERE; BENCHMARK_PROTOCOL.md [B12]): r/l alternation attested in writing",
+      "confidence": "high",
       "note": "Wikibooks removed as a source (9 Nov 2026); the remaining source is one article in IJLRHSS, a journal of uncertain review standards. The Kirundi r/l rule (bi-kirundi r-l-one-sound) has stronger sources (Cox dictionary, official place names)"
     },
     {
@@ -118,15 +118,15 @@
     {
       "id": "glide-strengthening",
       "description": "Written glide clusters are pronounced with a stop: rw [ɾɡw], sw [skw], tw [tkw], bw [bɡ], mw [mŋ], by [bɟ], ry [ɾɟ], py [pc], ty [tc]. Spelling follows the letters, speech does not",
-      "source": "FSI Kirundi Basic Course, pronunciation synopsis; Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: phonetic transcription by a Rwandan linguist renders rya as [rgya] and rw'indimi as [rgwiindimi]; Nassenstein, N. (2019), Modern Africa 7(1): 11-40, p. 27 (mw for [mg], rw for [rgw], tw for [tkw])",
-      "confidence": "medium",
-      "note": "after removing Wikipedia, rw, ry, mw, tw and bw keep published support (Rusanganwa 2006; Nassenstein 2019); sw, by, py, ty rest on the FSI synopsis only"
+      "source": "FSI Kirundi Basic Course, pronunciation synopsis; Nassenstein, Modern Africa (RESEARCH_LOG.md, 28 Oct 2026); Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: phonetic transcription by a Rwandan linguist renders rya as [rgya] and rw'indimi as [rgwiindimi]; Nassenstein, N. (2019), Modern Africa 7(1): 11-40, p. 27 (mw for [mg], rw for [rgw], tw for [tkw]); Demolin, D. (2016), 'Clicks, stop bursts, vocoids and the timing of articulatory gestures in Kinyarwanda', Studies in African Linguistics 45(1&2), Table 1 (Jouannet 1983 transcriptions against Coupez et al. 2005 spellings; acoustic data from seven speakers), read 9 Nov 2026: written -bwá 'dog' = [ímbgá]; -rwáara = [índgwâɾà]; -nwa = [ùmùnŋwà]; -hweempwe with mp = [m̥h]",
+      "confidence": "high",
+      "note": "after removing Wikipedia, rw, ry, mw, tw and bw keep published support (Rusanganwa 2006; Nassenstein 2019); sw, by, py, ty rest on the FSI synopsis only. Raised 9 Nov 2026: four published sources agree (Rusanganwa 2006, Nassenstein 2019, Demolin 2016, FSI)"
     },
     {
       "id": "mp-is-mh",
       "description": "After m, the letter p stands for an aspirated [h]: impamvu [imhamvu]",
-      "source": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007) (https://www.matana.de/kirundi_kinyarwanda.pdf), §2 (compensatory lengthening): /mp'aamafaraanga/ 'Give me some money!' < /n-h-a ama-faraanga/: written mp stands for n + h",
-      "confidence": "medium"
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007) (https://www.matana.de/kirundi_kinyarwanda.pdf), §2 (compensatory lengthening): /mp'aamafaraanga/ 'Give me some money!' < /n-h-a ama-faraanga/: written mp stands for n + h; Demolin, D. (2016), 'Clicks, stop bursts, vocoids and the timing of articulatory gestures in Kinyarwanda', Studies in African Linguistics 45(1&2), Table 1 (Jouannet 1983 transcriptions against Coupez et al. 2005 spellings; acoustic data from seven speakers), read 9 Nov 2026: written -bwá 'dog' = [ímbgá]; -rwáara = [índgwâɾà]; -nwa = [ùmùnŋwà]; -hweempwe with mp = [m̥h]",
+      "confidence": "high"
     },
     {
       "id": "chichewa-w-circumflex",
@@ -168,8 +168,8 @@
         "c"
       ],
       "note": "single letter c is an affricate",
-      "source": "Comparative Grammar (2007), Table 25",
-      "confidence": "medium"
+      "source": "Comparative Grammar (2007), Table 25; Myers, S. (2006), 'Kinyarwanda: Introduction', Phonology: case studies, University of Texas at Austin (https://www.laits.utexas.edu/phonology/kinyarwanda/index.html), consonant table: one tap ɾ and no l; affricates pf, ts, ʧ",
+      "confidence": "high"
     },
     {
       "symbol": "/ʒ/",
@@ -204,8 +204,8 @@
         "pf"
       ],
       "note": "one sound",
-      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984)",
-      "confidence": "medium"
+      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984); Myers, S. (2006), 'Kinyarwanda: Introduction', Phonology: case studies, University of Texas at Austin (https://www.laits.utexas.edu/phonology/kinyarwanda/index.html), consonant table: one tap ɾ and no l; affricates pf, ts, ʧ",
+      "confidence": "high"
     },
     {
       "symbol": "/ts/",
@@ -213,8 +213,8 @@
         "ts"
       ],
       "note": "one sound",
-      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984)",
-      "confidence": "medium"
+      "source": "Comparative Grammar (2007), Tables 25-26; Rusanganwa, J. (2006), 'Rwanda: Language Situation', in K. Brown (ed.), Encyclopedia of Language & Linguistics, 2nd ed., Elsevier, pp. 715-716: shy, jy, mf, pf, ts treated as units by Rwandan linguists (Gerla 1980, Kimenyi 1983, Jouannet 1984); Myers, S. (2006), 'Kinyarwanda: Introduction', Phonology: case studies, University of Texas at Austin (https://www.laits.utexas.edu/phonology/kinyarwanda/index.html), consonant table: one tap ɾ and no l; affricates pf, ts, ʧ",
+      "confidence": "high"
     },
     {
       "symbol": "/ɲ/",
@@ -232,8 +232,8 @@
         "l"
       ],
       "note": "one liquid; see phonetic_rules r-l-one-sound. Wikibooks removed as a source (9 Nov 2026); the remaining source is one article in IJLRHSS, a journal of uncertain review standards. The Kirundi r/l rule (bi-kirundi r-l-one-sound) has stronger sources (Cox dictionary, official place names)",
-      "source": "IJLRHSS 3(3)",
-      "confidence": "medium"
+      "source": "IJLRHSS 3(3); Myers, S. (2006), 'Kinyarwanda: Introduction', Phonology: case studies, University of Texas at Austin (https://www.laits.utexas.edu/phonology/kinyarwanda/index.html), consonant table: one tap ɾ and no l; affricates pf, ts, ʧ",
+      "confidence": "high"
     },
     {
       "symbol": "/ŋ/",
@@ -260,8 +260,8 @@
         "ns"
       ],
       "note": "each read as one unit, not letter by letter",
-      "source": "Comparative Grammar (2007), ch. 2 (CONCEPT-IDEA.md §5.4A; RESEARCH_LOG.md [P1]); van de Vijver, R., Uwambayinema, E. & Chuang, Y.-Y. (2024), 'Comprehension and production of Kinyarwanda verbs in the Discriminative Lexicon', Linguistics 62(1): 79-119 (doi:10.1515/ling-2021-0164), §2 Kinyarwanda phonotactics (prenasalised consonants incl. mf, mv, ns; after Walker et al. 2008)",
-      "confidence": "medium"
+      "source": "Comparative Grammar (2007), ch. 2 (CONCEPT-IDEA.md §5.4A; RESEARCH_LOG.md [P1]); van de Vijver, R., Uwambayinema, E. & Chuang, Y.-Y. (2024), 'Comprehension and production of Kinyarwanda verbs in the Discriminative Lexicon', Linguistics 62(1): 79-119 (doi:10.1515/ling-2021-0164), §2 Kinyarwanda phonotactics (prenasalised consonants incl. mf, mv, ns; after Walker et al. 2008); Demolin, D. (2016), 'Clicks, stop bursts, vocoids and the timing of articulatory gestures in Kinyarwanda', Studies in African Linguistics 45(1&2), Table 1 (Jouannet 1983 transcriptions against Coupez et al. 2005 spellings; acoustic data from seven speakers), read 9 Nov 2026: written -bwá 'dog' = [ímbgá]; -rwáara = [índgwâɾà]; -nwa = [ùmùnŋwà]; -hweempwe with mp = [m̥h]",
+      "confidence": "high"
     }
   ],
   "spelling_conventions": [
@@ -406,9 +406,9 @@
         "/l/"
       ],
       "listener": "any",
-      "note": "one sound in Kinyarwanda; heard and written either way (Kigali / Kigari; KAKOLELE / KAKORERE in UN 1533 aliases)",
-      "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 entries (BENCHMARK_PROTOCOL.md [B12])",
-      "confidence": "medium"
+      "note": "one sound in Kinyarwanda; heard and written either way (Kigali / Kigari; KAKOLELE / KAKORERE in UN 1533 aliases). attested in writing in UN 1533 aliases",
+      "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 entries (BENCHMARK_PROTOCOL.md [B12]); Myers, S. (2006), 'Kinyarwanda: Introduction', Phonology: case studies, University of Texas at Austin (https://www.laits.utexas.edu/phonology/kinyarwanda/index.html), consonant table: one tap ɾ and no l; affricates pf, ts, ʧ",
+      "confidence": "high"
     },
     {
       "sounds": [
@@ -446,9 +446,9 @@
         "/bɡ/"
       ],
       "listener": "non-Kinyarwanda writer",
-      "note": "written bw is said [bɡ]",
-      "source": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007) (https://www.matana.de/kirundi_kinyarwanda.pdf), §2.5.12 (back vowels u, o become w or a velarized consonant: bw, kw, tw); FSI Kirundi Basic Course, pronunciation synopsis (mw [mg], rw [rgw], tw [tkw])",
-      "confidence": "medium"
+      "note": "written bw is said [bɡ]. Pronunciation [bg] in four sources; the spelling bg is attested in writing (Nassenstein 2019)",
+      "source": "Kinyarwanda and Kirundi Comparative Grammar (Zorc & Nibagwire, Dunwoody Press, 2007) (https://www.matana.de/kirundi_kinyarwanda.pdf), §2.5.12 (back vowels u, o become w or a velarized consonant: bw, kw, tw); FSI Kirundi Basic Course, pronunciation synopsis (mw [mg], rw [rgw], tw [tkw]); Demolin, D. (2016), 'Clicks, stop bursts, vocoids and the timing of articulatory gestures in Kinyarwanda', Studies in African Linguistics 45(1&2), Table 1 (Jouannet 1983 transcriptions against Coupez et al. 2005 spellings; acoustic data from seven speakers), read 9 Nov 2026: written -bwá 'dog' = [ímbgá]; -rwáara = [índgwâɾà]; -nwa = [ùmùnŋwà]; -hweempwe with mp = [m̥h]; Nassenstein (2019), p. 27 note 14: written 'bg' in at least one Kinyarwanda variety of eastern DRC",
+      "confidence": "high"
     },
     {
       "sounds": [
@@ -489,16 +489,6 @@
       "note": "the nasal of a prenasalised stop may be dropped or added (mb/b, nd/d)",
       "source": "No source yet; listed so the matcher can test it at low weight",
       "confidence": "hypothesis"
-    },
-    {
-      "sounds": [
-        "/bw/",
-        "/bg/"
-      ],
-      "listener": "writer of another Kinyarwanda variety",
-      "note": "standard 'bw' is said with a velar stop [bg(w)]; in at least one Kinyarwanda variety of eastern DRC it is written 'bg'. Treat bg and bw as possible spellings of one sound",
-      "source": "Nassenstein, N. (2019), 'Kinyarwanda and Kirundi: on colonial divisions, discourses of national belonging, and language boundaries', Modern Africa 7(1): 11-40 (https://doi.org/10.26806/modafr.v7i1.264), p. 27 and note 14 (speakers' statements in fieldwork)",
-      "confidence": "low"
     }
   ],
   "relationship_implications": {
@@ -616,5 +606,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.8.0"
+  "version": "0.9.0"
 }

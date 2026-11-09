@@ -285,8 +285,8 @@
         "l"
       ],
       "note": "one liquid; see phonetic_rules r-l-one-sound",
-      "source": "IJLRHSS 3(3); CONCEPT-IDEA.md §5.4A",
-      "confidence": "medium"
+      "source": "IJLRHSS 3(3); CONCEPT-IDEA.md §5.4A; Nimbona, G. & Simon, A. C. (2022), Journal of Language Contact 15: 481-511, §3.2: 'La consonne /l/ n'existe pas en kirundi' (ishule 'école' also said ishuri); prenasalised consonants are single units at the start of a syllable (/mb/ in Bujumbura, /nd/ in Burundi); Cox, E. E. (1969, rev. 2023), Kirundi-English dictionary: 'school: ishūri, ishūli, ishure, ishule' (bi-kirundi r-l-one-sound)",
+      "confidence": "high"
     },
     {
       "symbol": "prenasalised stops",
@@ -301,8 +301,8 @@
         "nz"
       ],
       "note": "each read as one unit; ng is not a separate phoneme for any Kirundi source",
-      "source": "Comparative Grammar (2007), ch. 2 and Table 27",
-      "confidence": "medium"
+      "source": "Comparative Grammar (2007), ch. 2 and Table 27; Nimbona, G. & Simon, A. C. (2022), Journal of Language Contact 15: 481-511, §3.2: 'La consonne /l/ n'existe pas en kirundi' (ishule 'école' also said ishuri); prenasalised consonants are single units at the start of a syllable (/mb/ in Bujumbura, /nd/ in Burundi)",
+      "confidence": "high"
     }
   ],
   "spelling_conventions": [
@@ -458,9 +458,9 @@
         "/l/"
       ],
       "listener": "any",
-      "note": "one sound in Rwanda-Rundi; heard and written either way",
-      "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 aliases (BENCHMARK_PROTOCOL.md [B12])",
-      "confidence": "medium"
+      "note": "one sound in Rwanda-Rundi; heard and written either way. attested in writing (Cox: four spellings of one word; UN 1533 aliases; ISALE/Isare in official commune names)",
+      "source": "IJLRHSS 3(3); UN Security Council Consolidated List, 1533 aliases (BENCHMARK_PROTOCOL.md [B12]); Nimbona, G. & Simon, A. C. (2022), Journal of Language Contact 15: 481-511, §3.2: 'La consonne /l/ n'existe pas en kirundi' (ishule 'école' also said ishuri); prenasalised consonants are single units at the start of a syllable (/mb/ in Bujumbura, /nd/ in Burundi); Cox, E. E. (1969, rev. 2023), Kirundi-English dictionary: 'school: ishūri, ishūli, ishure, ishule' (bi-kirundi r-l-one-sound)",
+      "confidence": "high"
     },
     {
       "sounds": [
@@ -528,9 +528,9 @@
         "/r/"
       ],
       "listener": "any",
-      "note": "an n before r added or dropped in writing: the commune Nyarusange (CENI 2010; OCHA 2001; USAID 2005; FAO 2008) appears as Nyanrusange in boundary data",
-      "source": "CENI 2010 general election report (NYARUSANGE) against geoBoundaries BDI ADM2 (Nyanrusang[e]); RESEARCH_LOG.md, 5 Nov 2026",
-      "confidence": "medium"
+      "note": "an n before r added or dropped in writing: the commune Nyarusange (CENI 2010; OCHA 2001; USAID 2005; FAO 2008) appears as Nyanrusange in boundary data. the same n insertion attested in two official sources (Burundi and DRC)",
+      "source": "CENI 2010 general election report (NYARUSANGE) against geoBoundaries BDI ADM2 (Nyanrusang[e]); RESEARCH_LOG.md, 5 Nov 2026; OCHA, Eastern DRC incidents map (Dec 2025): 'Nyirangongo' for Nyiragongo (places-2026.1)",
+      "confidence": "high"
     },
     {
       "sounds": [
@@ -674,5 +674,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.10.0"
+  "version": "0.11.0"
 }

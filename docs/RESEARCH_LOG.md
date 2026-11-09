@@ -1844,3 +1844,18 @@ Packs: bi-kirundi 0.9.0, cd-swc-ln 0.6.0, rw-kiny 0.7.0. **Tests:** 135 pass; gr
 **Confidence:** the French spelling correspondences (ou, ch, tch, gn, ss) are facts of French orthography (Cornevin 1984; FSI French phonology) now backed by the official data on where they occur: **13 entries raised to `high`**, with prevalence in the notes. The Kinyarwanda c/cy correspondence (Comparative Grammar, Table 1) raised to `high`. **Kept at `medium`:** the Swahili writer's *j* for /ʒ/ (2 entries): Swahili lacks /ʒ/ (FSI), but that a Swahili writer writes it *j* is an inference.
 
 **Next evidence step:** the naming profiles (CongoNames, NESA) will measure these spellings in **personal** names, which is the stronger test. Packs: bi-kirundi 0.10.0, cd-swc-ln 0.7.0, rw-kiny 0.8.0. Totals now: high 73, medium 58, low 8, hypothesis 7, disputed 7, unknown 1. **Tests:** 135 pass.
+
+## 2026-11-09 — Batch 2 (part 1): glides, prenasals, r/l
+
+**New sources:**
+- **Demolin, D. (2016)**, "Clicks, stop bursts, vocoids and the timing of articulatory gestures in Kinyarwanda", *Studies in African Linguistics* 45(1&2), Table 1: Jouannet's (1983) phonetic transcriptions against Coupez et al. (2005) spellings, with acoustic data from seven speakers. Written *-bwá* "dog" = [ímbgá]; *-rwáara* = [índgwâɾà]; *-nwa* = [ùmùnŋwà]; written *mp* (*-hweempwe*) = [m̥h].
+- **Myers, S. (2006)**, "Kinyarwanda: Introduction", *Phonology: case studies*, UT Austin: consonant table with one tap ɾ and **no l**; affricates pf, ts, ʧ.
+- **Nimbona & Simon (2022)** §3.2 (already read): "La consonne /l/ n'existe pas en kirundi"; prenasals are single syllable-initial units.
+
+**Policy for listener confusions:** raised to `high` only when the confusion is **attested in writing**, not just in pronunciation.
+
+**Raised to `high` (14):** rw-kiny glide strengthening (four sources), mp = [mh], r/l rule, phonemes /ɾ/ /tʃ/ /pf/ /ts/, prenasals, r/l confusion (UN 1533 aliases), bw/bg confusion (pronunciation in four sources; *bg* attested in writing by Nassenstein; the two bw/bg entries merged). bi-kirundi /ɾ/, prenasals, r/l confusion (Cox's four spellings, ISALE/Isare), nr/r confusion (Nyarusange/Nyanrusange and Nyiragongo/Nyirangongo in official sources).
+
+**Kept at `medium`, with reasons:** rw/tw/sw/mw/vy confusions (pronunciation sourced, spellings like *rgw* not yet attested; the naming profiles will test this); Nimbona & Simon and Gangji rules (one study each); Kirundi o→w (one source); shy (scholars differ). **Waiting:** Kochetov (2016), *Glossa* 1(1): 1–31, on Kirundi consonant + glide sequences (site blocks scripts; the user will download it).
+
+Packs: rw-kiny 0.9.0, bi-kirundi 0.11.0. **Tests:** 135 pass.
