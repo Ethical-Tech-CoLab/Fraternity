@@ -58,3 +58,10 @@ Resolve a place name both ways in time (old → new, new → old), with the path
 
 - Code: [Apache-2.0](LICENSE)
 - Name graph and packs (`data/`): [CC BY 4.0](data/LICENSE)
+
+Query the name graph (names only, never people): the typed paths from a name to its variants, with confidence, sources and review status; negative constraints remove a variant and are reported:
+
+```sh
+.venv/bin/python -m namebridge.graph_api "Yohana"
+.venv/bin/python -m namebridge.graph_api "Ishimwe" --min-confidence 0.3
+```

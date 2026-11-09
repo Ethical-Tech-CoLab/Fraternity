@@ -202,10 +202,10 @@ Plan (all items done 26 Oct):
 ### Week 5 — 16–20 Nov: pilot corpus (phase 1)
 
 - **Corpus:** aim for about 2,000 sourced relationships for the corridor (§10 says 2,000–10,000).
-- **Negative constraints** (`not_equivalent_to`) and ambiguous paths.
+- ◐ **Negative constraints** (`not_equivalent_to`) and ambiguous paths. *9 Nov: 7 negative constraints from NISR (`attested-variants-2026.1`); enforced by the graph API. Ambiguous paths: remaining.*
 - **Review workflow:** `proposed` → `reviewed` → `deprecated`; a source and licence register.
 - ◐ **Candidate sources** (CongoNames reviewed 26 Oct: provenance = DRC state-exam lists 2008–2023; licence CC BY 4.0; real names, so aggregates only. **Remaining:** Onomaverse and Wikidata): review Onomaverse, Wikidata aliases (§7) and CongoNames (`SCOPE.md` §6; real names, so aggregate statistics only) for provenance, coverage and licence before using them.
-- **Graph API** (§12): given a name, return the typed paths to its variants, with confidence and source.
+- ✔ **Graph API** (§12): given a name, return the typed paths to its variants, with confidence and source. *Done 9 Nov: `namebridge.graph_api` (negative constraints remove variants; deprecated edges ignored).*
 - ◐ **Real-pattern variants** (sources found 26 Oct: UN 1533 list, e.g. `KAKOLELE`/`KAKORERE`; 2014 spelling reform. **Remaining:** collect them): collect the sanctions-list aliases and the 2014 Kinyarwanda spelling forms (`BENCHMARK_PROTOCOL.md` §2.4). Variant pairs from the profiles enter the graph as `proposed` edges.
 - ◐ **Intake guide** derived from the packs (§2.2; final phase in §10): which names and relationship evidence to record; never ethnicity or clan. *Rules already written 26 Oct:* the fields to record in `DPIA.md` (d), and the names a person chooses to give in `NAME_CHANGE.md` rule 6 and `DATA_RULES.md` DR-1.7. **Remaining:** the guide itself.
 - **Done when:** graph v0.1 is versioned, every edge is sourced and has a confidence level (phase 1 exit), and the graph API answers queries.
