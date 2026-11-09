@@ -79,7 +79,27 @@
       "confidence": "low"
     }
   ],
-  "particles_and_morphemes": [],
+  "particles_and_morphemes": [
+    {
+      "id": "root-hungu-masculine",
+      "description": "Names built on the root -hungu 'boy' (Gahungu, Buhungu) are boys' names. Used ONLY to keep generated names consistent with generated sex; never to infer anyone's sex (BENCHMARK_PROTOCOL.md C12)",
+      "forms": [
+        "-hungu"
+      ],
+      "source": "Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary (https://www.matana.de/kirundi.pdf): umuhūngu 'boy, son', umukōbwa 'girl'; Simbananiye, L. (2005), Anthropologie et Sociétés 29(1): 167-181, p. 171: 'Le nom de Gahungu (petit garçon) ne peut être transmis à une fille'; profile bi-ceni-2026.1: noms containing -hungu seen 5+ times are all borne by men (9 of 9); pointer: University of Burundi study (2025) as reported by FunTimes Magazine (Gahungu/Buhungu boys, Gakobwa/Kigeme girls)",
+      "confidence": "high"
+    },
+    {
+      "id": "root-kobwa-feminine",
+      "description": "Names built on the root -kobwa 'girl' (Gakobwa) are girls' names. Same restriction: generation only, never inference",
+      "forms": [
+        "-kobwa"
+      ],
+      "source": "Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary (https://www.matana.de/kirundi.pdf): umuhūngu 'boy, son', umukōbwa 'girl'; pointer: University of Burundi study (2025) as reported by FunTimes Magazine (Gahungu/Buhungu boys, Gakobwa/Kigeme girls)",
+      "confidence": "medium",
+      "note": "The word meaning is certain (dictionary); its use in names comes from a second-hand report and no such name reached 5 occurrences in the CENI lists. Kigeme, also reported as a girls' name, has no primary source and is not included"
+    }
+  ],
   "transliteration_rules": [
     {
       "id": "rw-to-rn-cy",
@@ -699,5 +719,5 @@
     }
   ],
   "reviewers": [],
-  "version": "0.14.0"
+  "version": "0.15.0"
 }
