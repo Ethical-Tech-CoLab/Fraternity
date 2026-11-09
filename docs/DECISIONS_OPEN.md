@@ -6,7 +6,7 @@ Four questions only the professor can settle. Everything already decided has bee
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
-| **G9** Size of the name corpus | Wording of the first public release (graph v0.1) | **20 Nov** | Release with the count stated |
+| **G9** Size of the name corpus | When graph v0.1 is released, and with what | **20 Nov** | Release in week 5 with the count stated |
 | **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov** (blocks week 6) | The ratios set on 26 Oct |
 | **Reviewers** for the name graph | Whether any edge can move past "proposed" | before release | Everything stays "proposed" |
 | **Legal check** for Muslim names | Whether those names enter the graph | no deadline | Left out of v0.1 |
@@ -29,10 +29,11 @@ The gap between edges and pairs comes from the design: the forms of one name are
 
 The gap comes from a deliberate rule: we add only relationships that a source attests (Bible translations, official name lists, published studies), never variants we invent ourselves, because invented variants produce false matches. Spelling variants are still handled, but by the matcher at search time, not stored in the graph.
 
-> **Is a smaller, fully sourced corpus acceptable for this semester?**
+> **Is a smaller, fully sourced corpus acceptable for this semester, and when should graph v0.1 be released?**
 
-- **Accept it for the semester** *(default in use)*: release graph v0.1 with the real count, state the shortfall against §10, keep adding sourced relationships in later weeks.
-- **Extend phase 1**: spend more weeks on the corpus before the benchmark; the rest of the timetable moves later.
+- **Keep researching in parallel, release v0.1 in week 9** *(student's proposal, recommended)*: we are about a week ahead of schedule, and the benchmark (week 6) is built from the naming profiles and the pack rules, not from the size of the graph. Corpus research can therefore continue alongside weeks 6–9 and the release moves to week 9, where the timetable already has "release v0.1". Nothing is delayed and the work still ends this semester. Realistic result by 18 Dec: about 900–1,100 edges (≈1,500 linked pairs); **with Muslim names** (see the legal check below) it could pass 2,000 linked pairs. The limit is sources, not time.
+- **Accept it now** *(default in use)*: release v0.1 in week 5 with the current count and state the shortfall against §10.
+- **Extend phase 1**: spend more weeks on the corpus before the benchmark; the rest of the timetable moves later, possibly past the semester.
 
 The exit criterion for phase 1, "every edge sourced and confidence-scored", is met either way.
 
