@@ -74,7 +74,9 @@ for tid, (lang, src, name, url) in TRANSLATIONS.items():
         bid, h = re.search(r"\\id\s+(\w{3})", head), re.search(r"\\h\s+(.+)", head)
         if bid and h and bid.group(1) in BOOKS:
             cid, label = BOOKS[bid.group(1)]
-            text = re.sub(r"^\d\s*", "", h.group(1).strip()).title()
+            text = re.sub(r"^\d\s*", "", h.group(1).strip())
+            # Some headers are book titles, not names ("Waraka wa Yakobo" = Letter of James).
+            text = re.sub(r"^(waraka wa|barua ya|kitabu cha|lettre de|épître de|epistle of|book of)\s+", "", text, flags=re.I).title()
             add(cid, label, text, lang, src)
 data["sources"]["rw-bibiliya-yera"]["locator"] = (data["sources"]["rw-bibiliya-yera"].get("locator", "") +
     "; first-chapter headings of each book named after a person (read 9 Nov 2026); Timoteyo from Ibyakozwe 16:1").strip("; ")

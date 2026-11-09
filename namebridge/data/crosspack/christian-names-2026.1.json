@@ -1,6 +1,6 @@
 {
   "dataset_id": "christian-names-2026.1",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Christian given names across the corridor's languages, from Bible translations: each translation fixes the form of a biblical name in its language. A form in a Bible does not show that a person named Jean is recorded as Yohana by a Swahili writer; that is the hypothesis these edges let the matcher test, at low weight (CONCEPT-IDEA.md §3: cognates are for query expansion, not automatic equivalence).",
   "regions": [
     "CD",
@@ -501,7 +501,8 @@
           "text": "Yakobo",
           "lang": "sw",
           "sources": [
-            "sw-biblia"
+            "sw-biblia",
+            "ebible-sw-ulb"
           ]
         },
         {
@@ -524,13 +525,6 @@
           "lang": "en",
           "sources": [
             "ebible-en-web"
-          ]
-        },
-        {
-          "text": "Waraka Wa Yakobo",
-          "lang": "sw",
-          "sources": [
-            "ebible-sw-ulb"
           ]
         },
         {

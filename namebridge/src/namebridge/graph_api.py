@@ -10,6 +10,9 @@ This queries NAMES, never people: the public graph holds general naming knowledg
   review status and source. Path confidence is the product of step confidences (conservative).
 - not_equivalent_to edges are negative constraints: a variant they touch is removed and the
   constraint is reported. commonly_confused_with is reported separately, never as a variant.
+- Ambiguous paths: when the query matches forms of more than one concept (Yakobo: James or
+  Jacob), `ambiguous_between` lists the concepts and each variant names the concept it came
+  through, so alternatives are not read as variants of each other.
 - Deprecated edges are ignored. Nothing here confirms an identity (§5.6).
 
 Run: python -m namebridge.graph_api "Yohana" [--graph data/graph] [--min-confidence 0.2]
@@ -84,16 +87,29 @@ class NameGraph:
         for s in starts:
             for other, e in self.negative[s]:
                 blocked[other] = e
+        # Ambiguous paths: the query matches forms of more than one concept (Swahili "Yakobo" is
+        # both James/Jacques and Jacob). Each variant then says which concept it came through.
+        concept_of = {}
+        for s in starts:
+            for nxt, e in self.adj[s]:
+                if self.nodes[nxt]["type"] == "NameConcept":
+                    concept_of[s] = self.nodes[nxt]["label"]
+        ambiguous = sorted(set(concept_of.values())) if len(set(concept_of.values())) > 1 else []
         results = []
         for nid, (conf, path) in best.items():
             n = self.nodes[nid]
             if nid in starts or n["type"] != "NameForm" or nid in blocked:
                 continue
-            results.append({"form": n["text"], "languages": n.get("languages", []), "node": nid, "path_confidence": round(conf, 4), "path": path})
+            item = {"form": n["text"], "languages": n.get("languages", []), "node": nid, "path_confidence": round(conf, 4), "path": path}
+            if ambiguous:
+                via = [self.nodes[st["to"]]["label"] for st in path if self.nodes[st["to"]]["type"] == "NameConcept"]
+                item["via_concept"] = via[0] if via else None
+            results.append(item)
         results.sort(key=lambda r: (-r["path_confidence"], r["form"]))
         return {
             "query": {"original": query["original"], "folded": query["folded"], "transform_path": query["path"]},
             "matched_forms": [{"node": s, "form": self.nodes[s]["text"], "languages": self.nodes[s].get("languages", [])} for s in starts],
+            "ambiguous_between": ambiguous,
             "variants": results,
             "not_equivalent": [{"form": self.nodes[o]["text"], "node": o, **self._step(s, o, e)} for s in starts for o, e in self.negative[s]],
             "commonly_confused_with": [{"form": self.nodes[o]["text"], "node": o, **self._step(s, o, e)} for s in starts for o, e in self.confused[s]],

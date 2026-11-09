@@ -70,3 +70,14 @@ def test_min_confidence_prunes_long_paths(tmp_path):
 def test_unknown_name_returns_empty_with_note():
     r = NameGraph(REPO_GRAPH).variants("Zzzqx")
     assert r["matched_forms"] == [] and r["variants"] == [] and "never confirmation" in r["note"]
+
+
+def test_repo_graph_ambiguous_form_is_flagged_with_concepts():
+    r = NameGraph(REPO_GRAPH).variants("Yakobo")
+    assert len(r["ambiguous_between"]) == 2
+    via = {v["form"]: v["via_concept"] for v in r["variants"]}
+    assert via.get("Jacques") and via.get("Jacob") and via["Jacques"] != via["Jacob"]
+
+
+def test_unambiguous_query_has_no_flag():
+    assert NameGraph(REPO_GRAPH).variants("Yohana")["ambiguous_between"] == []

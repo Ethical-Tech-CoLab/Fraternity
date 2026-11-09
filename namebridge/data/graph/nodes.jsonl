@@ -154,7 +154,6 @@
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:jacques", "languages": ["fr"], "script": "Latn", "text": "Jacques", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:jake", "languages": ["ln"], "script": "Latn", "text": "Jake", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:james", "languages": ["en"], "script": "Latn", "text": "James", "type": "NameForm"}
-{"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:waraka-wa-yakobo", "languages": ["sw"], "script": "Latn", "text": "Waraka Wa Yakobo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iakobos:yakobo", "languages": ["sw", "ln", "ny", "rw"], "script": "Latn", "text": "Yakobo", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:jean", "languages": ["fr"], "script": "Latn", "text": "Jean", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:iohannes:john", "languages": ["en"], "script": "Latn", "text": "John", "type": "NameForm"}

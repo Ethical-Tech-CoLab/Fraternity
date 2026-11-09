@@ -67,3 +67,14 @@ def test_forms_differing_only_by_accents_stay_separate():
     forms = [n for n in nodes if n["type"] == "NameForm"]
     assert sorted(n["text"] for n in forms) == ["Joel", "Joël"]
     assert len({n["id"] for n in forms}) == 2 and len({e["id"] for e in edges}) == 2
+
+
+def test_christian_name_forms_are_names_not_book_titles():
+    # Regression (9 Nov 2026): the Swahili header "Waraka wa Yakobo" (Letter of James) was taken as a name.
+    import json
+    from pathlib import Path
+    data = json.loads((Path(__file__).resolve().parents[1] / "data" / "crosspack" / "christian-names-2026.1.json").read_text(encoding="utf-8"))
+    title_words = {"waraka", "barua", "kitabu", "lettre", "épître", "epistle", "book", "livre", "evanjelio", "injili"}
+    bad = [f["text"] for c in data["concepts"] for f in c["forms"]
+           if len(f["text"].split()) > 2 or title_words & {w.lower() for w in f["text"].split()}]
+    assert bad == []
