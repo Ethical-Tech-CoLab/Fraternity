@@ -45,6 +45,13 @@ Load the packs into the graph (re-run after changing a pack):
 .venv/bin/python -m namebridge.variants data/variants/*.json
 ```
 
+Generate the synthetic benchmark world (week 6; invented people only, written to `build/benchmark/`, not committed; same seed, same world):
+
+```sh
+.venv/bin/python -m namebridge.benchmark.world            # default size and seed from data/benchmark/params-2026.1.json
+.venv/bin/python -m namebridge.benchmark.world --people 3000 --seed 7 --out /tmp/small
+```
+
 Resolve a place name both ways in time (old → new, new → old), with the path that explains each candidate:
 
 ```sh

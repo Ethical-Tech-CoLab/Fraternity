@@ -1,0 +1,153 @@
+{
+  "params_id": "benchmark-params-2026.1",
+  "version": "0.1.0",
+  "description": "Generator parameters for the synthetic benchmark (BENCHMARK_PROTOCOL.md §2). Every parameter has a value, a source and a confidence level (§2.4). 'varied' parameters are swept in the sensitivity runs over 'range'; 'value' is the default run. Parameters without a source are marked confidence 'none' and are always varied.",
+  "reference_year": 2026,
+  "seed": 20261123,
+  "params": {
+    "people": {
+      "value": 31200,
+      "source": "Derived, not chosen (BENCHMARK_PROTOCOL.md §2.1): sample_size.minimum_people() with the generated world's REALISED minor share (44.4%) and family size (3.49 people, design effect 1.75) gives 31,104 (binding: minors' precision >= 0.999), rounded up. The 26 Oct assumptions (50% minors, 3 per family) gave 25,300 -> 26,000. The generator re-checks its own size on every run (summary.size_check). Gate G4 open: recalculated once the tolerances are agreed",
+      "confidence": "medium"
+    },
+    "origin_shares": {
+      "value": {
+        "CD": 0.3334,
+        "BI": 0.3333,
+        "RW": 0.3333
+      },
+      "source": "BENCHMARK_PROTOCOL.md §2.1: equal thirds so every origin reaches its slice minimum; results re-weighted to Dzaleka's mix afterwards",
+      "confidence": "design"
+    },
+    "two_parent_share": {
+      "value": 0.6,
+      "range": [
+        0.4,
+        0.8
+      ],
+      "varied": true,
+      "source": "none found; women and children are 93% of Dzaleka's population (situation research), so many households have one parent present",
+      "confidence": "none"
+    },
+    "children_per_family": {
+      "value": {
+        "1": 0.3,
+        "2": 0.3,
+        "3": 0.2,
+        "4": 0.12,
+        "5": 0.08
+      },
+      "source": "none found for Dzaleka; chosen so that families average about 3 people and about half of all people are under 18 (BENCHMARK_PROTOCOL.md §2.1). The realised shares are reported by the generator",
+      "confidence": "none"
+    },
+    "mother_age_at_first_child": {
+      "value": [
+        18,
+        26
+      ],
+      "source": "none found for the corridor; uniform range chosen for plausibility",
+      "confidence": "none"
+    },
+    "birth_spacing_years": {
+      "value": [
+        2,
+        4
+      ],
+      "source": "none found for the corridor; uniform range chosen for plausibility",
+      "confidence": "none"
+    },
+    "parent_birth_years": {
+      "value": [
+        1990,
+        2004
+      ],
+      "source": "Tuned 16 Nov 2026 with older_household_share so that minors are close to half (realised 44.5%) and people aged 50+ are a real slice (6.7%); BENCHMARK_PROTOCOL.md §2.1. No corridor source",
+      "confidence": "none"
+    },
+    "rw_father_element_q": {
+      "value": 0.3,
+      "range": [
+        0.0,
+        0.7
+      ],
+      "varied": true,
+      "source": "Conflicting: HRW 1999 (most Rwandans do not share a family name) vs The New Times, 6 May 2026 (children traditionally take the father's surname); BENCHMARK_PROTOCOL.md §2.2",
+      "confidence": "low"
+    },
+    "bi_son_father_name_p": {
+      "value": 0.2,
+      "range": [
+        0.0,
+        0.5
+      ],
+      "varied": true,
+      "source": "Disputed patronymic practice: Univ. of Burundi / Bigangara (1982) [B5]; BENCHMARK_PROTOCOL.md §2.2",
+      "confidence": "low"
+    },
+    "cd_parent_nom_t": {
+      "value": 0.3,
+      "range": [
+        0.1,
+        0.6
+      ],
+      "varied": true,
+      "source": "DRC Family Code arts 56-62 allow passing a parent's nom with at least one different element; how often is unknown",
+      "confidence": "none"
+    },
+    "rw_names_per_person": {
+      "value": {
+        "2": 892,
+        "3": 231,
+        "4": 35,
+        "5": 5
+      },
+      "source": "Profile rw-nec-2026.1, structure.names_per_person (NEC district council candidates)",
+      "confidence": "high"
+    },
+    "bi_prenom_tokens": {
+      "value": {
+        "1": 2132,
+        "2": 159,
+        "3": 3
+      },
+      "source": "Profile bi-ceni-2026.1, structure.number_of_prenom_tokens",
+      "confidence": "high"
+    },
+    "cd_token_count": {
+      "value": {
+        "2": 1421251,
+        "3": 6324763,
+        "4": 283016
+      },
+      "source": "Profile cd-congonames-2026.1, structure.token_count_distribution (5+ tokens, 0.25%, folded into 4)",
+      "confidence": "high"
+    },
+    "young_child_birth_year": {
+      "value": 2020,
+      "source": "Children born from this year draw their Kinyarwanda/Kirundi name from the newborn profiles (rw-nisr-2026.1; bi-derived-2026.1, low confidence), older people from the adult profiles",
+      "confidence": "medium"
+    },
+    "older_household_share": {
+      "value": 0.15,
+      "range": [
+        0.1,
+        0.3
+      ],
+      "varied": true,
+      "source": "none found; added (16 Nov 2026) so that older adults, who have lower literacy and are more often written by ear (RESEARCH_LOG.md, 28 Oct), form a real slice",
+      "confidence": "none"
+    },
+    "older_parent_birth_years": {
+      "value": [
+        1950,
+        1983
+      ],
+      "source": "CENI 2025 profile birth decades start in the 1940s-1950s; range for older households",
+      "confidence": "low"
+    }
+  },
+  "invention": {
+    "rule": "A slot whose element is not drawn from a profile's listed (5+ times) elements is filled with an INVENTED element: a character-trigram chain trained on that slot's listed elements, rejected if it equals a listed element. The invention share per slot is the profile's uncovered share: 1 - (sum of listed counts / records). Christian given names are a closed set and are never invented: their uncovered share is drawn from the corridor-wide pool of listed Christian names of the same sex (all three profiles).",
+    "source": "BENCHMARK_PROTOCOL.md §2.4, 'Generation by recombination'"
+  }
+}

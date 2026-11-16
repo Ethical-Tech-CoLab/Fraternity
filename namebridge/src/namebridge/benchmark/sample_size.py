@@ -76,14 +76,22 @@ def pairs_for_gap(best=GAP_BEST_FNR, ratio=GAP_RATIO, power=GAP_POWER, alpha=0.0
     return ceil(top**2 / (worse - best) ** 2)
 
 
-def minimum_people():
-    """Total invented people needed, and the binding constraint."""
-    gap_persons_per_slice = ceil(pairs_for_gap() * DESIGN_EFFECT / TRUE_PAIRS_PER_PERSON)
+def design_effect(family_size, icc=0.3):
+    """Kish design effect for records clustered in families: 1 + (m - 1) * ICC."""
+    return 1 + (family_size - 1) * icc
+
+
+def minimum_people(minor_share=MINOR_SHARE, deff=DESIGN_EFFECT):
+    """Total invented people needed, and the binding constraint.
+
+    Defaults are the 26 Oct design assumptions; pass a generated world's realised minor share
+    and design_effect(people per family) to check that world's size."""
+    gap_persons_per_slice = ceil(pairs_for_gap() * deff / TRUE_PAIRS_PER_PERSON)
     by_fairness = gap_persons_per_slice * KEY_SLICES / TEST_SHARE
 
-    minor_pairs = pairs_for_error_bound(MINOR_MAX_FALSE_MATCH) * DESIGN_EFFECT
+    minor_pairs = pairs_for_error_bound(MINOR_MAX_FALSE_MATCH) * deff
     minor_test_persons = ceil(minor_pairs / TRUE_PAIRS_PER_PERSON)
-    by_minor_precision = minor_test_persons / MINOR_SHARE / TEST_SHARE
+    by_minor_precision = minor_test_persons / minor_share / TEST_SHARE
 
     total = ceil(max(by_fairness, by_minor_precision))
     binding = "minor precision" if by_minor_precision >= by_fairness else "fairness slices"

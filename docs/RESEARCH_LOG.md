@@ -2168,3 +2168,20 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Files touched:** `namebridge/data/variants/attested-variants-2026.1.json` (0.3.0; source `ceni-morphology`), graph rebuilt (1,655 edges, valid), `namebridge/data/register/sources.json` rebuilt (65 sources). The 16 Nov review sample is unchanged (drawn before this edge). 175 tests pass.
 
 **Also 16 Nov:** Muslim names (legal check): the professor will answer after more research. Default unchanged: left out of v0.1.
+
+## 2026-11-16 — Week 6 step 1: the synthetic world (people, families, names)
+
+**Gate:** G4 open (soft): working on the 26 Oct default targets; only the final freeze of test and holdout waits for G4. The user chose to start week 6 on 16 Nov.
+
+**Built:** `namebridge.benchmark.world` and `data/benchmark/params-2026.1.json` (every parameter with value, source, confidence; unsourced ones marked `none` and varied).
+- **Names by origin** (§2.2): RW Kinyarwanda name first + Christian name(s) (NEC structure; children born 2020+ from NISR); BI Kirundi nom + prénom(s) (CENI; children 2020+ from the derived profile, low confidence); CD nom + postnom + prénom (CongoNames token counts). Inheritance with the varied parameters q (RW father's element), p (BI son receives father's name), t (CD parent's nom; siblings sharing a nom get different postnoms). A child never repeats all of a parent's elements.
+- **Invention** (§2.4): each slot draws a profile element with probability = the profile's coverage (listed counts / records), else invents an element from the slot's character trigrams (never equal to a listed element). Coverage is low where the profiles are top-50 lists: CD noms 13%, RW Kinyarwanda names 20%, BI Kirundi names 55%; so about 70–87% of those elements are invented. **Christian names are never invented**: uncovered slots draw from the corridor-wide pool of the same sex. Rwanda's middle names follow sex (Marie/Jeanne vs Jean; "de" dropped), after a first run produced "Jean" for a woman.
+- **Families:** tuned so minors are close to half (44.4%) while older adults remain a real slice (6.7% aged 50+, via 15% older households); 3.49 people per family.
+
+**Finding:** with the realised values, the protocol's own size rule needs **31,104** people, not 25,300 (design effect 1.75 instead of 1.6; fewer minors). Default raised to **31,200**; the generator now re-checks its size on every run (`summary.size_check`). Recorded in `BENCHMARK_PROTOCOL.md` §2.1. `sample_size.minimum_people()` takes the realised minor share and design effect.
+
+**Output:** `build/benchmark/` (people.jsonl, families.jsonl, manifest.json), git-ignored; reproducible from the seed. Generation of 31,200 people takes about 1.5 s. **Tests:** 185 pass (8 new for the world).
+
+**Limits:** family structure, spacing and older-household share have no corridor source; invented elements resemble only the top-50 elements they are trained on (the fidelity test, step 4, will measure this against the profile n-grams).
+
+**Next (week 6):** step 2 records and error injection; step 3 gold labels, queries (incl. U4 adversarial searches), splits, reciprocal pairs; step 4 realism checks; step 5 the 300-pair sample for the user.
