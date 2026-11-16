@@ -93,7 +93,7 @@ Following the atlas's three severities, each tolerance is tested at a strict, a 
 2. Do you agree that irreversible outcomes (U1, U4) get **zero-by-design rules**, with thresholds only as a check?
 3. Which level for U2, U3 and U5: strict, middle or loose?
 4. Should every target hold on the **worst slice**? This is fairer, but it costs a larger benchmark.
-5. Who counts as a child: under 18 at the search, or at separation (G4 question 4)?
+5. ~~Who counts as a child?~~ **Decided 16 Nov: under 18 at the time of the search** (the default).
 
 ## Limits
 

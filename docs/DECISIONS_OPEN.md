@@ -2,12 +2,11 @@
 
 *NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026, updated 16 Nov 2026, from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
 
-Three questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
+Two questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
 | **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov** (blocks week 6) | The ratios set on 26 Oct |
-| **Reviewers** for the name graph | Whether any edge can move past "proposed" | before release | Everything stays "proposed" |
 | **Legal check** for Muslim names | Whether those names enter the graph | no deadline | Left out of v0.1 |
 
 ---
@@ -33,6 +32,8 @@ The professor did not set numbers. The professor asked us to study the professor
 | U3 | recall@20 ≥ 0.95 overall and ≥ 0.90 on the worst slice |
 | U4 | Zero by design; adversarial searches in the benchmark must all be refused |
 | U5 | ≤ 20 candidates per search; ≥ half of "strong evidence" flags true |
+
+*Decided 16 Nov: a child is anyone **under 18 at the time of the search** (former question 4).*
 
 > **For the professor: are these the right outcomes, and which level (strict, middle, loose) is acceptable for each?** Five questions are listed in `G4_REVERSE_STRESS.md` §7. The benchmark size (26,000 today) is recalculated from the answer, and will grow if targets apply to the worst slice.
 
@@ -64,25 +65,6 @@ The professor did not set numbers. The professor asked us to study the professor
 - **Make it stricter**: fewer wrong contacts, more missed reunions.
 
 *Example.* NDAYISENGA Jean-Paul (born 1984, Muyinga) and NDAYISENGA Paul (born 1985, Muyinga) are different men. A sister searches for "Jean-Paul, my brother, about 40".
-
-### 4. Who counts as a child?
-
-- **Under 18 at the time of the search** *(default in use)*.
-- **Under 18 at the time of separation**: covers adults who were separated as children and may not remember their family's names well.
-
----
-
-## Reviewers — Who can review the name graph? (before release)
-
-Every relationship in the graph is marked **proposed** until a person with a stated role reviews it (linguist, community expert, investigator or data steward). The review tool is built, and each decision is logged with a name, role and reason. Nothing has been reviewed yet: the rules forbid a script or an AI assistant from doing it.
-
-> **Who reviews this semester, and in which role?**
-
-- **The student as investigator**: reviews a sample of edges this semester.
-- **A linguist the professor knows**: for Kinyarwanda, Kirundi or Lingala. Contact with people may need ethics review first.
-- **Nobody this semester** *(default if undecided)*: v0.1 ships with every edge "proposed", and says so.
-
-One concrete question a linguist could answer: are *Ntakarutimana* and *Ntakirutimana*, both common in Burundi, two forms of one name? No source says so, so they are not linked.
 
 ---
 

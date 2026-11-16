@@ -2138,3 +2138,12 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Files touched:** `docs/G4_REVERSE_STRESS.md` (new), `docs/DECISIONS_OPEN.md`, `docs/TIMETABLE.md`.
 
 **Open:** professor's choice of outcomes and levels (§7 of the paper); benchmark size recalculated per slice in week 6; no data on human verification failure in the corridor.
+
+## 2026-11-16 — Professor decisions: who counts as a child; who reviews the graph
+
+**Source:** the user's report of the conversation with the professor.
+
+- **G4 question 4:** a child is anyone **under 18 at the time of the search** (the default). The benchmark's minors' slice is unchanged. G4 itself stays open (tolerances).
+- **Reviewers:** the student reviews a **sample** of edges this semester, as `investigator`. Since the student is not a native speaker, an investigator review is a **source check** (both forms in the source, the relation supported, the licence right), not a linguistic judgment; procedure in `DATA_RULES.md` DR-1.5. New command `python -m namebridge.review sample` (stratified, fixed seed 20261116, generated and place edges excluded). Drawn once: 74 edges (attested variants 11 + 3, whole strata; Christian names 30 attested of 160, 30 statistical of 286), saved to `namebridge/data/reviews/sample-2026-11-16.json`. Zero errors in 30 → stratum error < 9.5% at 95% confidence; any error → 30 more from that stratum. A linguist review stays open for after the semester.
+
+**Files touched:** `namebridge/src/namebridge/review.py`, `namebridge/tests/test_review.py` (175 tests pass), `docs/DATA_RULES.md`, `docs/DECISIONS_OPEN.md`, `docs/G4_REVERSE_STRESS.md`, `docs/TIMETABLE.md`.

@@ -3,7 +3,7 @@ import shutil
 from pathlib import Path
 
 from namebridge.graph_api import NameGraph
-from namebridge.review import queue, read_reviews, record
+from namebridge.review import queue, read_reviews, record, sample
 from namebridge.variants import load as load_variants
 
 REPO = Path(__file__).resolve().parents[1]
@@ -61,3 +61,16 @@ def test_generated_edge_cannot_be_reviewed(tmp_path):
     edges[0]["confidence_basis"] = "generated"
     (g / "edges.jsonl").write_text("\n".join(json.dumps(e) for e in edges), encoding="utf-8")
     assert any("generated" in e for e in record(g, _d(decision="reviewed", edge=edges[0]["id"])))
+
+
+def test_sample_is_stratified_reproducible_and_skips_reviewed(tmp_path):
+    g = _graph(tmp_path)
+    a, b = sample(g, per_stratum=2), sample(g, per_stratum=2)
+    assert a == b and a  # same seed, same sample
+    assert all(s["sampled"] == min(2, s["population"]) for s in a)
+    assert all(0 < s["error_bound_if_none_wrong_95"] < 1 for s in a)
+    whole = sample(g, per_stratum=1000)
+    ids = [x["edge"] for s in whole for x in s["edges"]]
+    assert EDGE in ids
+    assert record(g, _d(decision="reviewed", role="investigator")) == []
+    assert EDGE not in [x["edge"] for s in sample(g, per_stratum=1000) for x in s["edges"]]

@@ -15,11 +15,13 @@ ignored by the graph API.
 
 Run:
   python -m namebridge.review queue [--dataset <id>] [--limit 20]
+  python -m namebridge.review sample [--per-stratum 30] [--seed 20261116]
   python -m namebridge.review record <edge-id> reviewed|deprecated --by <name> --role <role> --note "<reason>"
 """
 
 import datetime
 import json
+import random
 import sys
 from pathlib import Path
 
@@ -103,12 +105,45 @@ def queue(graph_dir, dataset=None, limit=20):
              "basis": e["confidence_basis"], "source": e["source_name"][:120]} for e in edges[:limit]], len(edges)
 
 
+NAME_DATASETS_EXCLUDED = ("places-",)  # the reviewer decision of 16 Nov covers name edges only
+
+
+def sample(graph_dir, per_stratum=30, seed=20261116):
+    """Stratified random sample of proposed name edges for an investigator's source check.
+
+    Strata are (dataset, confidence basis); generated edges are left out because they cannot be
+    reviewed, and place edges are left out because the decision covers the name graph. A stratum
+    smaller than `per_stratum` is taken whole. The seed makes the sample reproducible, so it is
+    drawn once and cannot be re-drawn until it looks good. If none of n sampled edges in a
+    stratum is wrong, the stratum's error rate is below 1 - 0.05**(1/n) with 95% confidence
+    (n = 30: below 9.5%; n = 59: below 5%).
+    """
+    strata = {}
+    for e in read_jsonl(Path(graph_dir) / "edges.jsonl"):
+        ds = e.get("dataset_id") or ""
+        if e["review_status"] != "proposed" or e["confidence_basis"] == "generated" or ds.startswith(NAME_DATASETS_EXCLUDED):
+            continue
+        strata.setdefault((ds, e["confidence_basis"]), []).append(e)
+    rng, out = random.Random(seed), []
+    for key in sorted(strata):
+        edges = sorted(strata[key], key=lambda e: e["id"])
+        picked = edges if len(edges) <= per_stratum else rng.sample(edges, per_stratum)
+        bound = round(1 - 0.05 ** (1 / len(picked)), 3)
+        out.append({"dataset": key[0], "basis": key[1], "population": len(edges), "sampled": len(picked),
+                    "error_bound_if_none_wrong_95": bound,
+                    "edges": [{"edge": e["id"], "relation": e["relation_type"], "from": e["from"], "to": e["to"],
+                               "source": e["source_name"][:160]} for e in sorted(picked, key=lambda e: e["id"])]})
+    return out
+
+
 if __name__ == "__main__":
     args, graph = sys.argv[1:], "data/graph"
     opt = lambda flag, default=None: args[args.index(flag) + 1] if flag in args else default
     if args[:1] == ["queue"]:
         items, total = queue(graph, opt("--dataset"), int(opt("--limit", 20)))
         print(json.dumps({"proposed_total": total, "shown": items}, ensure_ascii=False, indent=2))
+    elif args[:1] == ["sample"]:
+        print(json.dumps(sample(graph, int(opt("--per-stratum", 30)), int(opt("--seed", 20261116))), ensure_ascii=False, indent=2))
     elif args[:1] == ["record"] and len(args) >= 3:
         d = {"edge": args[1], "decision": args[2], "reviewer": opt("--by"), "reviewer_role": opt("--role"),
              "date": datetime.date.today().isoformat(), "note": opt("--note", "")}

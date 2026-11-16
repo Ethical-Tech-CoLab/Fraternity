@@ -1,0 +1,556 @@
+[
+  {
+    "dataset": "attested-variants-2026.1",
+    "basis": "attested",
+    "population": 11,
+    "sampled": 11,
+    "error_bound_if_none_wrong_95": 0.238,
+    "edges": [
+      {
+        "edge": "e:attested-variants-2026.1:aganze:not_equivalent_to:iganze",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:aganze",
+        "to": "nf:attested-variants-2026.1:iganze",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:ashimwe:not_equivalent_to:ishimwe",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:ashimwe",
+        "to": "nf:attested-variants-2026.1:ishimwe",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:claudine:not_equivalent_to:claude",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:claudine",
+        "to": "nf:attested-variants-2026.1:claude",
+        "source": "NameBridge naming profiles, counts by sex: cd-congonames-2026.1 (François 25,984 M / 247 F; Justin 32,649 M / 270 F; Jean 116,996 M / 481 F), bi-ceni-2026.1 (Ju"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:francoise:not_equivalent_to:francois",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:francoise",
+        "to": "nf:attested-variants-2026.1:francois",
+        "source": "NameBridge naming profiles, counts by sex: cd-congonames-2026.1 (François 25,984 M / 247 F; Justin 32,649 M / 270 F; Jean 116,996 M / 481 F), bi-ceni-2026.1 (Ju"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:impano:not_equivalent_to:mpano",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:impano",
+        "to": "nf:attested-variants-2026.1:mpano",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:inezayimana:not_equivalent_to:ineza",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:inezayimana",
+        "to": "nf:attested-variants-2026.1:ineza",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:jeanne:not_equivalent_to:jean-fr",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:jeanne",
+        "to": "nf:attested-variants-2026.1:jean-fr",
+        "source": "NameBridge naming profiles, counts by sex: cd-congonames-2026.1 (François 25,984 M / 247 F; Justin 32,649 M / 270 F; Jean 116,996 M / 481 F), bi-ceni-2026.1 (Ju"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:justine:not_equivalent_to:justin",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:justine",
+        "to": "nf:attested-variants-2026.1:justin",
+        "source": "NameBridge naming profiles, counts by sex: cd-congonames-2026.1 (François 25,984 M / 247 F; Justin 32,649 M / 270 F; Jean 116,996 M / 481 F), bi-ceni-2026.1 (Ju"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:nishimwe:not_equivalent_to:ashimwe",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:nishimwe",
+        "to": "nf:attested-variants-2026.1:ashimwe",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:nishimwe:not_equivalent_to:ishimwe",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:nishimwe",
+        "to": "nf:attested-variants-2026.1:ishimwe",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:uwineza:not_equivalent_to:ineza",
+        "relation": "not_equivalent_to",
+        "from": "nf:attested-variants-2026.1:uwineza",
+        "to": "nf:attested-variants-2026.1:ineza",
+        "source": "NameBridge profile rw-nisr-2026.1, from NISR, Rwanda Vital Statistics Reports 2024 and 2025, annex 'Top 20 most preferred babies' surnames by sex' (CRVS system)"
+      }
+    ]
+  },
+  {
+    "dataset": "attested-variants-2026.1",
+    "basis": "statistical",
+    "population": 3,
+    "sampled": 3,
+    "error_bound_if_none_wrong_95": 0.632,
+    "edges": [
+      {
+        "edge": "e:attested-variants-2026.1:muamba:orthographic_variant_of:mwamba",
+        "relation": "orthographic_variant_of",
+        "from": "nf:attested-variants-2026.1:muamba",
+        "to": "nf:attested-variants-2026.1:mwamba",
+        "source": "NameBridge profile cd-congonames-2026.1, from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169 (8,053,983 DRC exam re"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:ngoie:orthographic_variant_of:ngoyi",
+        "relation": "orthographic_variant_of",
+        "from": "nf:attested-variants-2026.1:ngoie",
+        "to": "nf:attested-variants-2026.1:ngoyi",
+        "source": "NameBridge profile cd-congonames-2026.1, from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169 (8,053,983 DRC exam re"
+      },
+      {
+        "edge": "e:attested-variants-2026.1:ngoyi:orthographic_variant_of:ngoy",
+        "relation": "orthographic_variant_of",
+        "from": "nf:attested-variants-2026.1:ngoyi",
+        "to": "nf:attested-variants-2026.1:ngoy",
+        "source": "NameBridge profile cd-congonames-2026.1, from the published aggregates of Tshabu Ngandu et al. (2026), CongoNames Corpus, Data 11(7): 169 (8,053,983 DRC exam re"
+      }
+    ]
+  },
+  {
+    "dataset": "christian-names-2026.1",
+    "basis": "attested",
+    "population": 160,
+    "sampled": 30,
+    "error_bound_if_none_wrong_95": 0.095,
+    "edges": [
+      {
+        "edge": "e:christian-names-2026.1:amos:amosi",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:amos:amosi",
+        "to": "nc:christian-names-2026.1:amos",
+        "source": "Swahili Unlocked Literal Bible (Door43 World Missions Community, CC BY-SA 4.0), ebible.org; Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org; Chich"
+      },
+      {
+        "edge": "e:christian-names-2026.1:daniel:daniele",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:daniel:daniele",
+        "to": "nc:christian-names-2026.1:daniel",
+        "source": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:emmanouel:imanweli",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:emmanouel:imanweli",
+        "to": "nc:christian-names-2026.1:emmanouel",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:hoshea:hosea",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:hoshea:hosea",
+        "to": "nc:christian-names-2026.1:hoshea",
+        "source": "World English Bible (public domain), USFM edition from ebible.org; Swahili Unlocked Literal Bible (Door43 World Missions Community, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:ioseph:yusufu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:ioseph:yusufu",
+        "to": "nc:christian-names-2026.1:ioseph",
+        "source": "Tafsiri ya Kusoma (TKU, Swahili), Mathayo 1, via Bible Gateway"
+      },
+      {
+        "edge": "e:christian-names-2026.1:ioudas:jide",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:ioudas:jide",
+        "to": "nc:christian-names-2026.1:ioudas",
+        "source": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:iyyov:job",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:iyyov:job",
+        "to": "nc:christian-names-2026.1:iyyov",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:iyyov:yobo",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:iyyov:yobo",
+        "to": "nc:christian-names-2026.1:iyyov",
+        "source": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:iyyov:yobu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:iyyov:yobu",
+        "to": "nc:christian-names-2026.1:iyyov",
+        "source": "Chichewa Bible (Biblica, Inc., 2002/2016, CC BY-SA 4.0), ebible.org; Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:loukas:luke",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:loukas:luke",
+        "to": "nc:christian-names-2026.1:loukas",
+        "source": "King James Version, book list (bible.com) and Acts 13:9 ('Saul, (who also is called Paul,)'); World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:malakhi:malachi",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:malakhi:malachi",
+        "to": "nc:christian-names-2026.1:malakhi",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:maria:maria",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:maria:maria",
+        "to": "nc:christian-names-2026.1:maria",
+        "source": "Buku Lopatulika (BLP-2018, Chichewa), Luka 1:27, via bible.com"
+      },
+      {
+        "edge": "e:christian-names-2026.1:maria:mariya",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:maria:mariya",
+        "to": "nc:christian-names-2026.1:maria",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:nahum:nahum",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:nahum:nahum",
+        "to": "nc:christian-names-2026.1:nahum",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:nehemyah:nehemiah",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:nehemyah:nehemiah",
+        "to": "nc:christian-names-2026.1:nehemyah",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:ovadyah:abidiasi",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:ovadyah:abidiasi",
+        "to": "nc:christian-names-2026.1:ovadyah",
+        "source": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:ovadyah:obadiah",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:ovadyah:obadiah",
+        "to": "nc:christian-names-2026.1:ovadyah",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:philemon:filemo",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:philemon:filemo",
+        "to": "nc:christian-names-2026.1:philemon",
+        "source": "Lingala Bible (Biblica, Inc., 2020, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:shemuel:samuel",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:shemuel:samuel",
+        "to": "nc:christian-names-2026.1:shemuel",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:timotheos:timothee",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:timotheos:timothee",
+        "to": "nc:christian-names-2026.1:timotheos",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:timotheos:timothy",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:timotheos:timothy",
+        "to": "nc:christian-names-2026.1:timotheos",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yehezkel:ezechiel",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yehezkel:ezechiel",
+        "to": "nc:christian-names-2026.1:yehezkel",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yehezkel:ezekiel",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yehezkel:ezekiel",
+        "to": "nc:christian-names-2026.1:yehezkel",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yehoshua:josue",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yehoshua:josue",
+        "to": "nc:christian-names-2026.1:yehoshua",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yeshayahu:yesaya",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yeshayahu:yesaya",
+        "to": "nc:christian-names-2026.1:yeshayahu",
+        "source": "Chichewa Bible (Biblica, Inc., 2002/2016, CC BY-SA 4.0), ebible.org; Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yirmeyahu:yeremiya",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yirmeyahu:yeremiya",
+        "to": "nc:christian-names-2026.1:yirmeyahu",
+        "source": "Chichewa Bible (Biblica, Inc., 2002/2016, CC BY-SA 4.0), ebible.org; Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yoel:joel",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yoel:joel",
+        "to": "nc:christian-names-2026.1:yoel",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yonah:jonas",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yonah:jonas",
+        "to": "nc:christian-names-2026.1:yonah",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:zekharyah:zacharie",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:zekharyah:zacharie",
+        "to": "nc:christian-names-2026.1:zekharyah",
+        "source": "Louis Segond 1910 (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:zekharyah:zechariah",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:zekharyah:zechariah",
+        "to": "nc:christian-names-2026.1:zekharyah",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      }
+    ]
+  },
+  {
+    "dataset": "christian-names-2026.1",
+    "basis": "statistical",
+    "population": 286,
+    "sampled": 30,
+    "error_bound_if_none_wrong_95": 0.095,
+    "edges": [
+      {
+        "edge": "e:christian-names-2026.1:adam:adamu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:adam:adamu",
+        "to": "nc:christian-names-2026.1:adam",
+        "source": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org; Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:aharon:aaron",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:aharon:aaron",
+        "to": "nc:christian-names-2026.1:aharon",
+        "source": "Louis Segond 1910 (public domain), ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:aharon:aaroni",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:aharon:aaroni",
+        "to": "nc:christian-names-2026.1:aharon",
+        "source": "Chichewa Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:avshalom:absalom",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:avshalom:absalom",
+        "to": "nc:christian-names-2026.1:avshalom",
+        "source": "Louis Segond 1910 (public domain), ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:devorah:debora-54584a",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:devorah:debora-54584a",
+        "to": "nc:christian-names-2026.1:devorah",
+        "source": "Louis Segond 1910 (public domain), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:dinah:dinah",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:dinah:dinah",
+        "to": "nc:christian-names-2026.1:dinah",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:efrayim:efereimu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:efrayim:efereimu",
+        "to": "nc:christian-names-2026.1:efrayim",
+        "source": "Chichewa Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:elisha:elisa",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:elisha:elisa",
+        "to": "nc:christian-names-2026.1:elisha",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:esav:esawu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:esav:esawu",
+        "to": "nc:christian-names-2026.1:esav",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:felix:felikisi",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:felix:felikisi",
+        "to": "nc:christian-names-2026.1:felix",
+        "source": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:golyat:goliath",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:golyat:goliath",
+        "to": "nc:christian-names-2026.1:golyat",
+        "source": "Louis Segond 1910 (public domain), ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:golyat:goliyati",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:golyat:goliyati",
+        "to": "nc:christian-names-2026.1:golyat",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:hannah:hannah",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:hannah:hannah",
+        "to": "nc:christian-names-2026.1:hannah",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:hevel:abeli",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:hevel:abeli",
+        "to": "nc:christian-names-2026.1:hevel",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:hizqiyahu:ezechias",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:hizqiyahu:ezechias",
+        "to": "nc:christian-names-2026.1:hizqiyahu",
+        "source": "Louis Segond 1910 (public domain), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:kornelios:corneille",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:kornelios:corneille",
+        "to": "nc:christian-names-2026.1:kornelios",
+        "source": "Louis Segond 1910 (public domain), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:kornelios:korneliyo",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:kornelios:korneliyo",
+        "to": "nc:christian-names-2026.1:kornelios",
+        "source": "Chichewa Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:lavan:labani",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:lavan:labani",
+        "to": "nc:christian-names-2026.1:lavan",
+        "source": "Swahili Unlocked Literal Bible (Door43, CC BY-SA 4.0), ebible.org; Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org; Chichewa Bible (Biblica, CC BY-SA 4.0), eb"
+      },
+      {
+        "edge": "e:christian-names-2026.1:miryam:miriyamu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:miryam:miriyamu",
+        "to": "nc:christian-names-2026.1:miryam",
+        "source": "Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:natan:natan",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:natan:natan",
+        "to": "nc:christian-names-2026.1:natan",
+        "source": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:qayin:kayina",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:qayin:kayina",
+        "to": "nc:christian-names-2026.1:qayin",
+        "source": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:rahav:rahab",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:rahav:rahab",
+        "to": "nc:christian-names-2026.1:rahav",
+        "source": "Louis Segond 1910 (public domain), ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:rahav:rahabu",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:rahav:rahabu",
+        "to": "nc:christian-names-2026.1:rahav",
+        "source": "Swahili Unlocked Literal Bible (Door43, CC BY-SA 4.0), ebible.org; Bibiliya Yera (Kinyarwanda Bible), PDF"
+      },
+      {
+        "edge": "e:christian-names-2026.1:reuven:ribeni",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:reuven:ribeni",
+        "to": "nc:christian-names-2026.1:reuven",
+        "source": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:rivqah:rebecca",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:rivqah:rebecca",
+        "to": "nc:christian-names-2026.1:rivqah",
+        "source": "Louis Segond 1910 (public domain), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:shlomo:solomon",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:shlomo:solomon",
+        "to": "nc:christian-names-2026.1:shlomo",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yarovam:jeroboam",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yarovam:jeroboam",
+        "to": "nc:christian-names-2026.1:yarovam",
+        "source": "World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yehonatan:jonathan",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yehonatan:jonathan",
+        "to": "nc:christian-names-2026.1:yehonatan",
+        "source": "Louis Segond 1910 (public domain), ebible.org; World English Bible (public domain), USFM edition from ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:yoav:joabi",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:yoav:joabi",
+        "to": "nc:christian-names-2026.1:yoav",
+        "source": "Lingala Bible (Biblica, CC BY-SA 4.0), ebible.org"
+      },
+      {
+        "edge": "e:christian-names-2026.1:zakchaios:zakayo",
+        "relation": "historical_cognate_of",
+        "from": "nf:christian-names-2026.1:zakchaios:zakayo",
+        "to": "nc:christian-names-2026.1:zakchaios",
+        "source": "Swahili Unlocked Literal Bible (Door43, CC BY-SA 4.0), ebible.org; Bibiliya Yera (Kinyarwanda Bible), PDF"
+      }
+    ]
+  }
+]

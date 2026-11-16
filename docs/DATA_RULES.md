@@ -36,6 +36,13 @@ Draft, 26 Oct 2026. These are the rules for data sharing, retention and deletion
 3. **Synthetic records** recombine elements following the naming profiles, and invent elements for rare-name slots. A generated full name is never paired with real attributes (a real date of birth, a real school list, real relatives).
 4. **Examples in docs and tests** use invented names, or names already used as public examples in the sources (e.g. MUGISHA Jean [R3]). Never a living private person's name.
 5. **Graph edges** carry a source, licence, confidence and `review_status` (§5.1A). LLM suggestions enter only as `proposed`.
+
+   **Investigator review** (decided 16 Nov 2026 with the professor: the student reviews a sample of edges this semester, in the role `investigator`). The student is not a native speaker, so an investigator review is a **source check**, not a linguistic judgment:
+   1. The sample is drawn once, before any review, by `python -m namebridge.review sample` (stratified by dataset and confidence basis, 30 per stratum or the whole stratum, fixed seed). It is kept as `namebridge/data/reviews/sample-2026-11-16.json` and is not re-drawn.
+   2. For each edge: open the cited source; check that **both forms appear in it**, that the source supports **this relation** (for verse-aligned edges, the same verse in both translations names the same person), and that the licence is right.
+   3. Record `reviewed` if all three hold, `deprecated` with the reason if not (`python -m namebridge.review record … --role investigator`). An unclear case stays `proposed` with a note.
+   4. Results are reported per stratum: if no edge in a stratum of n sampled edges is wrong, its error rate is below 1 − 0.05^(1/n) with 95% confidence (n = 30: below 9.5%). **If any edge in a stratum is wrong**, a further 30 from that stratum are drawn with the next seed, and the release note states the error found.
+   5. Only the sampled edges change status. The rest stay `proposed`, and the v0.1 release note says what "reviewed (investigator)" means: source checked, linguistic review still pending. Generated edges and place edges are not in this review.
 6. **No ethnicity, clan, tribe or religion** attributes anywhere in the graph or the schema (`THREAT_MODEL.md` §4.2).
 7. **Raw sources that contain such a field** (e.g. Burundi's CENI 2025 candidate lists, column "Ethnie"): the parser **drops the field on read**. It is never written to disk, counted, joined or used to stratify, and no raw copy with the field is kept beyond the download itself. The field-name guard in `namebridge.schema` covers French, Kirundi/Kinyarwanda and Swahili words (added 28 Oct 2026; gate G6).
 
