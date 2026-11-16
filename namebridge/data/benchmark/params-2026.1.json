@@ -588,5 +588,57 @@
   "invention": {
     "rule": "A slot whose element is not drawn from a profile's listed (5+ times) elements is filled with an INVENTED element: a character-trigram chain trained on that slot's listed elements, rejected if it equals a listed element. The invention share per slot is the profile's uncovered share: 1 - (sum of listed counts / records). Christian given names are a closed set and are never invented: their uncovered share is drawn from the corridor-wide pool of listed Christian names of the same sex (all three profiles).",
     "source": "BENCHMARK_PROTOCOL.md §2.4, 'Generation by recombination'"
+  },
+  "realism_limits": {
+    "fixed_on": "2026-11-16, committed before the first comparison was run (BENCHMARK_PROTOCOL.md §2.4 test 1)",
+    "measure": "Jensen-Shannon divergence, base 2 (0 = identical, 1 = disjoint), between normalised distributions over the categories the profile lists",
+    "why_these_limits": "No standard limit exists for synthetic name data. Two tiers: checks against independent evidence (corpus-wide n-grams the generator never saw) get 0.10; checks that hold by construction (the generator samples these very distributions) get 0.02 and only test the implementation. Chosen by Claude, to be confirmed by the user",
+    "checks": {
+      "F1_cd_native_trigrams": {
+        "limit": 0.1,
+        "kind": "independent",
+        "compare": "trigrams of synthetic DRC nom/postnom elements vs cd-congonames probable_native_ngrams_3 (top 50, corpus-wide)"
+      },
+      "F2_cd_native_bigrams": {
+        "limit": 0.1,
+        "kind": "independent",
+        "compare": "bigrams of synthetic DRC nom/postnom vs probable_native_ngrams_2"
+      },
+      "F3_cd_given_trigrams": {
+        "limit": 0.1,
+        "kind": "independent",
+        "compare": "trigrams of synthetic DRC Christian names vs probable_surname_ngrams_3 (the corpus authors' label for the French-name tokens)"
+      },
+      "F4_cd_length": {
+        "limit_chars": 2.0,
+        "kind": "independent",
+        "compare": "mean and p90 characters of synthetic DRC full names vs the corpus (20.19, 25)"
+      },
+      "F5_cd_token_count": {
+        "limit": 0.02,
+        "kind": "by_construction",
+        "compare": "2/3/4+ tokens vs token_count_distribution"
+      },
+      "F6_listed_element_frequencies": {
+        "limit": 0.02,
+        "kind": "by_construction",
+        "compare": "for each slot, frequencies of profile-drawn elements vs the profile counts (restricted to listed elements)"
+      },
+      "F7_provinces": {
+        "limit": 0.02,
+        "kind": "by_construction",
+        "compare": "province of origin per origin vs the profile"
+      },
+      "F8_structure": {
+        "limit": 0.02,
+        "kind": "by_construction",
+        "compare": "BI prénom-token count; RW names per person (4-5 folded into 3)"
+      },
+      "F9_invented_trigrams": {
+        "limit": 0.1,
+        "kind": "partly_circular",
+        "compare": "trigrams of invented RW/BI elements vs the listed elements they were trained on (detects drift only)"
+      }
+    }
   }
 }
