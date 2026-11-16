@@ -50,7 +50,14 @@ class Pool:
 class Inventor:
     """Character-trigram chain over one slot's listed elements; never returns a listed element."""
 
-    def __init__(self, elements):
+    def __init__(self, elements, letter_transitions=None, blend=1.0):
+        """`letter_transitions` (from, to, count) over a whole corpus and `blend` = weight of the
+        element chain: P(c | ab) = blend * P_elements(c | ab) + (1 - blend) * P_corpus(c | b).
+        Start and end of a name always come from the element chain (the corpus table has none)."""
+        self.blend = blend
+        self.letters = defaultdict(dict)
+        for f, to, c in letter_transitions or ():
+            self.letters[f][to] = c
         self.listed = {e for e, _ in elements}
         self.next = defaultdict(Counter)
         lengths = []
@@ -61,11 +68,27 @@ class Inventor:
                 self.next[s[i:i + 2]][s[i + 2]] += w
         self.min_len, self.max_len = max(3, min(lengths)), max(lengths)
 
+    def _options(self, s):
+        el = self.next.get(s[-2:], {})
+        corpus = self.letters.get(s[-1]) if s[-1] != "^" else None
+        if not corpus or self.blend >= 1.0:
+            return el
+        total_el = sum(el.values())
+        end = el.get("$", 0) / total_el if total_el else 0.0
+        inner = {c: w / (total_el - el.get("$", 0)) for c, w in el.items() if c != "$"} if total_el - el.get("$", 0) else {}
+        total_c = sum(corpus.values())
+        mixed = {c: self.blend * inner.get(c, 0) + (1 - self.blend) * corpus.get(c, 0) / total_c
+                 for c in sorted(set(inner) | set(corpus))}  # sorted: set order varies between processes
+        out = {c: (1 - end) * w for c, w in mixed.items()}
+        if end:
+            out["$"] = end
+        return out
+
     def invent(self, rng, tries=200):
         for _ in range(tries):
             s = "^^"
             while len(s) < self.max_len + 3:
-                options = self.next.get(s[-2:])
+                options = self._options(s)
                 if not options:
                     break
                 ch = rng.choices(list(options), list(options.values()))[0]
@@ -137,14 +160,19 @@ def build_pools():
     return pools
 
 
-def build_inventors(pools):
+def build_inventors(pools, cd_blend=1.0):
     inv = {}
     for (origin, slot, sex), pool in pools.items():
         if slot in ("christian", "middle") or origin == "ALL":
             continue
         key = (origin, slot.replace("_young", ""))
         inv.setdefault(key, []).extend(pool.items)
-    return {k: Inventor(v) for k, v in inv.items()}
+    out = {k: Inventor(v) for k, v in inv.items()}
+    # DRC noms: the profile lists only the top 50, so invented noms also follow the corpus-wide
+    # letter transitions (week 6 realism, F1 failed with the top 50 alone; RESEARCH_LOG 16 Nov 2026)
+    trans = [(r["from"], r["to"], r["count"]) for r in _load("cd-congonames-2026.1.json")["native_letter_transitions"]]
+    out["CD", "nom"] = Inventor(inv["CD", "nom"], trans, cd_blend)
+    return out
 
 
 class World:
@@ -156,7 +184,7 @@ class World:
         self.target = self.p["people"]["value"] if people is None else people
         self.rng = random.Random(self.seed)
         self.pools = build_pools()
-        self.inventors = build_inventors(self.pools)
+        self.inventors = build_inventors(self.pools, self.p["cd_invention_blend"]["value"])
         self.people, self.families, self.by_id = [], [], {}
         self.provinces = self._provinces()
         self.lookalike_swaps = _lookalike_swaps()

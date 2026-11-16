@@ -13,6 +13,7 @@ Only numbers leave this module. Run: python -m namebridge.benchmark.realism [--p
 """
 
 import json
+import random
 import sys
 from collections import Counter
 from math import log2
@@ -22,7 +23,7 @@ from namebridge.benchmark.world import PARAMS, World, _load, full_name
 
 def jsd(p, q):
     """Jensen-Shannon divergence (base 2) between two count dicts, over the union of keys."""
-    keys = set(p) | set(q)
+    keys = sorted(set(p) | set(q))
     sp, sq = sum(p.values()) or 1, sum(q.values()) or 1
     P = {k: p.get(k, 0) / sp for k in keys}
     Q = {k: q.get(k, 0) / sq for k in keys}
@@ -43,6 +44,28 @@ def ngrams(words, n, only=None):
 
 def _restrict(counts, keys):
     return {k: counts.get(k, 0) for k in keys}
+
+
+def noise_range(ref, n, draws=200, seed=7):
+    """95th percentile of the divergence a perfect sampler shows with n draws from `ref`."""
+    if n == 0:
+        return 0.0
+    rng = random.Random(seed)
+    keys, weights = list(ref), list(ref.values())
+    sims = sorted(jsd(Counter(rng.choices(keys, weights, k=n)), ref) for _ in range(draws))
+    return sims[int(0.95 * draws) - 1]
+
+
+def extra_evidence(world):
+    """Not pre-registered, reported without pass/fail: DRC 4- and 5-grams, which nothing is trained on."""
+    cd = _load("cd-congonames-2026.1.json")
+    native = [e["text"] for p in world.people if p["origin"] == "CD" and "lookalike_of" not in p
+              for e in p["name"] if e["slot"] in ("nom", "postnom")]
+    out = {}
+    for n in (4, 5):
+        ref = {r["ngram"]: r["count"] for r in cd["ngrams"][f"probable_native_ngrams_{n}"]}
+        out[f"cd_native_{n}grams_jsd"] = round(jsd(ngrams(native, n, set(ref)), ref), 4)
+    return out
 
 
 def fidelity(world, limits):
@@ -78,7 +101,7 @@ def fidelity(world, limits):
             ref_tok[min(4, int(k))] += v
     put("F5_cd_token_count", jsd(tok, ref_tok), limits["F5_cd_token_count"]["limit"], "by_construction")
 
-    worst, details = 0.0, {}
+    worst, details, within_chance = 0.0, {}, True
     for (origin, slot, sex), pool in world.pools.items():
         if origin == "ALL" or sex is None:
             continue
@@ -91,10 +114,16 @@ def fidelity(world, limits):
         for e, w in pool.items:  # the newborn lists repeat names (two years; INEZA twice in 2024): sum them
             ref[e] += w
         value = jsd(_restrict(drawn, ref), ref)
-        details[f"{origin}/{slot}/{sex}"] = round(value, 4)
+        null95 = noise_range(ref, sum(drawn.values()))
+        details[f"{origin}/{slot}/{sex}"] = {"value": round(value, 4), "chance_95": round(null95, 4),
+                                             "n": sum(drawn.values())}
         worst = max(worst, value)
+        within_chance = within_chance and value <= max(null95, limits["F6_listed_element_frequencies"]["limit"])
     put("F6_listed_element_frequencies", worst, limits["F6_listed_element_frequencies"]["limit"], "by_construction",
         {"per_pool": details})
+    # amendment 2 (user, 16 Nov 2026): a by-construction check passes inside the range chance produces
+    res["F6_listed_element_frequencies"].update(pass_fixed_limit=res["F6_listed_element_frequencies"]["pass"],
+                                                pass_within_chance=within_chance, **{"pass": within_chance})
 
     worst, details = 0.0, {}
     for origin, ref in world.provinces.items():
@@ -153,8 +182,10 @@ def run(params, people=None):
     world = World(params, people=people).generate()
     limits = params["realism_limits"]["checks"]
     fid = fidelity(world, limits)
-    return {"limits_fixed_on": params["realism_limits"]["fixed_on"], "fidelity": fid,
-            "all_pass": all(v["pass"] for v in fid.values()), "copy_test": copy_test(world)}
+    return {"limits_fixed_on": params["realism_limits"]["fixed_on"],
+            "amendments": params["realism_limits"].get("amendments", []), "fidelity": fid,
+            "all_pass": all(v["pass"] for v in fid.values()), "extra_evidence": extra_evidence(world),
+            "copy_test": copy_test(world)}
 
 
 def main(argv):

@@ -2247,3 +2247,21 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Decision for the user** (options in the session, 16 Nov): (a) look for a larger published DRC element table (CongoNames authors) and regenerate; (b) train the DRC chain on the corpus trigrams too, and say F1 is no longer independent; (c) accept and report F1/F2 as a known limitation. For F6: evaluate by-construction checks against their noise range instead of a fixed 0.02, reported as a post-hoc change with both numbers. Until decided, the test set is not frozen (it waits for G4 anyway).
 
 **Files:** `namebridge/src/namebridge/benchmark/realism.py`, `namebridge/tests/test_benchmark_realism.py` (207 tests pass).
+
+## 2026-11-16 — Week 6 step 4 resolved: more DRC data; all nine realism checks pass
+
+**User's decisions** (on the options above): (1) look for more DRC data; (2) judge the by-construction checks against chance.
+
+**More data:** the CongoNames repository (commit `a38c6a4`, the same one the profile was built from; file list read via the GitHub API, nothing row-level downloaded) has no element table beyond the top 50, but publishes a **letter-transition matrix over all Bantu-name tokens** (`probable_native_transition_matrix.csv`: 660 letter pairs with counts, from 8M records) and the top-50 **4- and 5-gram** tables. They are letter aggregates with no names (DR-1), now in `cd-congonames-2026.1` via `scripts/build_profile_congonames.py` (only additions; nothing existing changed).
+
+**Generator correction:** invented DRC noms now draw each letter from a blend: 0.3 × the top-50 element chain (which keeps name starts, ends and shapes) + 0.7 × the corpus letter transitions (`cd_invention_blend`, chosen from 1.0/0.7/0.5/0.3/0.1 as the lowest 4/5-gram divergence: 0.093/0.138 vs 0.234/0.286 before). Example invented noms: nzamba, kango, munzadi, kiaya, mondo.
+
+**Amendments recorded next to the limits (limits not changed):** F2 is no longer independent (trained on letter pairs); F6 passes inside the 95% range a perfect sampler shows at the same sample size (200 simulations per pool); both F6 verdicts are reported.
+
+**Results** (default world): F1 0.052, F2 0.026, F3 0.045, F4 0.41 chars, F5 0.000, F6 0.023 (every pool within chance; fixed limit alone: fail), F7 0.001, F8 0.000, F9 0.022: **all pass**. Extra evidence (not pre-registered, nothing trained on it): DRC 4-grams 0.102, 5-grams 0.126 (were 0.234/0.286 for invented words before). Copy test: DRC homonyms fell to 0.5% of people; RW 32%, BI 36% (few listed elements).
+
+**Bug found on the way: results changed between processes.** The blend code iterated a Python set, whose order depends on PYTHONHASHSEED, so the same seed gave different worlds in different processes; the earlier determinism test ran in one process and could not see it. Fixed (sorted); new test builds the world in three processes with different hash seeds. Realism output is now byte-identical across processes.
+
+**Knock-on:** the new world left BI/child at 399 test queries (< 414) and the build stopped as designed; `q_sought_share` 0.5 → 0.55 (smallest slice now 460; 19,746 queries). The error scale was re-calibrated (0.57 gave 21.1%): 0.6 → 22.1% (0.16 → 9.8%, 1.35 → 35.1%). Size check still passes (31,206 people, 31,016 needed). **Tests:** 208 pass.
+
+**Next:** step 5, the 300-pair human check (the user).

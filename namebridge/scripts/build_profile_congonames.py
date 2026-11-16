@@ -37,7 +37,9 @@ profile={
  "elements":{
    "first_token_top50":[{"element":r['first_token'],"count":int(r['count']),"m":int(r['m']),"f":int(r['f'])} for r in first],
    "last_token_top50":[{"element":r['last_token'],"count":int(r['count']),"m":int(r['m']),"f":int(r['f'])} for r in last]},
- "ngrams":{f:[{"ngram":r['ngram'],"count":int(r['count'])} for r in rows(f)] for f in ('probable_native_ngrams_2','probable_native_ngrams_3','probable_surname_ngrams_2','probable_surname_ngrams_3')},
+ "ngrams":{f:[{"ngram":r['ngram'],"count":int(r['count'])} for r in rows(f)] for f in ('probable_native_ngrams_2','probable_native_ngrams_3','probable_native_ngrams_4','probable_native_ngrams_5','probable_surname_ngrams_2','probable_surname_ngrams_3')},
+ # added 16 Nov 2026 (week 6 realism): letter-pair transitions over ALL Bantu-name tokens (letters only, no names)
+ "native_letter_transitions":[{"from":r['from_letter'],"to":r['to_letter'],"count":int(r['count'])} for r in rows('probable_native_transition_matrix')],
  "letters":{r['letter']:int(r['count']) for r in rows('letter_frequency_full_name')},
  "by_province":[{k:num(v) for k,v in r.items()} for r in rows('names_by_province')],
  "by_year":[{k:num(v) for k,v in r.items()} for r in rows('names_by_year')],

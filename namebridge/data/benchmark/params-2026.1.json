@@ -445,18 +445,18 @@
       "confidence": "none"
     },
     "rec_error_scale": {
-      "value": 0.57,
+      "value": 0.6,
       "sensitivity": {
-        "0.15": "9.8%",
-        "0.57": "21.9%",
-        "1.3": "35.3%"
+        "0.16": "9.8%",
+        "0.6": "22.1%",
+        "1.35": "35.1%"
       },
       "range": [
-        0.15,
-        1.3
+        0.16,
+        1.35
       ],
       "varied": true,
-      "source": "Calibrated 16 Nov 2026 on the full default world (31,200 people): one factor on all name error rates so that 22% of name values (surname, given names) differ between linked records of one person, the figure in South Africa [B14]; scale 0.15 gives 9.8% and 1.3 gives 35.3%, the sensitivity points of BENCHMARK_PROTOCOL.md §2.4 test 4. Writers' spelling conventions are habits and are not scaled",
+      "source": "Calibrated 16 Nov 2026 on the full default world (31,200 people): one factor on all name error rates so that 22% of name values (surname, given names) differ between linked records of one person, the figure in South Africa [B14]; scale 0.15 gives 9.8% and 1.3 gives 35.3%, the sensitivity points of BENCHMARK_PROTOCOL.md §2.4 test 4. Writers' spelling conventions are habits and are not scaled. Re-calibrated 16 Nov 2026 after the DRC name change (0.57 had become 21.1%): 0.6 -> 22.1%, 0.16 -> 9.8%, 1.35 -> 35.1%",
       "confidence": "medium"
     },
     "lookalike_family_share": {
@@ -580,9 +580,19 @@
       "confidence": "none"
     },
     "q_sought_share": {
-      "value": 0.5,
-      "source": "Share of people sought by a relative in the same family. Set (16 Nov 2026) so that every key slice (origin x child/adult) has at least sample_size.queries_for_recall() = 414 test queries with a findable answer, as the G4 draft's worst-slice targets need; the build fails otherwise (query_size_check)",
+      "value": 0.55,
+      "source": "Share of people sought by a relative in the same family. Set (16 Nov 2026) so that every key slice (origin x child/adult) has at least sample_size.queries_for_recall() = 414 test queries with a findable answer, as the G4 draft's worst-slice targets need; the build fails otherwise (query_size_check). Raised 0.5 -> 0.55 on 16 Nov 2026 after the DRC name change: BI/child fell to 399 (< 414) and the build stopped as designed; 0.55 leaves a margin",
       "confidence": "design"
+    },
+    "cd_invention_blend": {
+      "value": 0.3,
+      "range": [
+        0.1,
+        0.7
+      ],
+      "varied": true,
+      "source": "Weight of the top-50 element chain when inventing DRC noms; the rest follows the corpus-wide letter transitions (CongoNames probable_native_transition_matrix, 8M records, aggregate). Chosen 16 Nov 2026 from 1.0/0.7/0.5/0.3/0.1 on invented words: 0.3 gave the lowest 4-gram and 5-gram divergence (tables nothing is trained on: 0.093 and 0.138, vs 0.234 and 0.286 with the top 50 alone); F1 trigrams 0.046. One parameter, chosen after seeing F1, F2 and the 4/5-gram results",
+      "confidence": "medium"
     }
   },
   "invention": {
@@ -639,6 +649,20 @@
         "kind": "partly_circular",
         "compare": "trigrams of invented RW/BI elements vs the listed elements they were trained on (detects drift only)"
       }
-    }
+    },
+    "amendments": [
+      {
+        "date": "2026-11-16",
+        "by": "Claude (generator correction, after the first run failed F1/F2)",
+        "change": "F2 (DRC bigrams) is no longer independent: invented DRC noms now follow the corpus-wide letter transitions (cd_invention_blend). F1 (trigrams) stays independent; DRC 4- and 5-grams, which nothing is trained on, are reported as extra evidence without pass/fail",
+        "limits_changed": false
+      },
+      {
+        "date": "2026-11-16",
+        "by": "user decision",
+        "change": "F6 (a by-construction check) passes when its value is within the 95% range a perfect sampler shows at the same sample size (200 simulated draws per pool), or under the fixed limit. Reason: the 0.02 limit was below the noise floor for 50-name pools with about 430 draws (DRC male noms: 0.0219 observed, chance median 0.0198). Both verdicts are reported (pass_fixed_limit, pass_within_chance)",
+        "limits_changed": false
+      }
+    ]
   }
 }

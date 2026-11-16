@@ -109,3 +109,17 @@ def test_lookalikes_are_different_people_that_look_alike(world):
         assert abs(p["birth_year"] - src["birth_year"]) <= 2
         diff = [(a["text"], b["text"]) for a, b in zip(p["name"], src["name"]) if a["text"] != b["text"]]
         assert len(diff) <= 1  # the same name, or one attested step away
+
+
+def test_same_seed_same_world_across_processes():
+    """Set iteration order changes with PYTHONHASHSEED; no random draw may depend on it."""
+    import hashlib
+    import os
+    import subprocess
+    import sys
+    code = ("import json,hashlib;from namebridge.benchmark.world import World,PARAMS;"
+            "w=World(json.loads(PARAMS.read_text()),people=1500).generate();"
+            "print(hashlib.sha256(json.dumps(w.people,sort_keys=True).encode()).hexdigest())")
+    outs = {subprocess.run([sys.executable, "-c", code], capture_output=True, text=True, check=True,
+                           env={**os.environ, "PYTHONHASHSEED": seed}).stdout for seed in ("1", "2", "3")}
+    assert len(outs) == 1
