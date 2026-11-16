@@ -16,29 +16,25 @@ Three questions only the professor can settle. Everything already decided has be
 
 NameBridge makes two kinds of mistake: it can **miss** the right person, or it can **show the wrong one**. How we weigh them sets the match thresholds and the size of the test set (26,000 invented people is calculated from these targets). The benchmark in week 6 cannot be built until this is settled.
 
-### Method agreed on 16 Nov: reverse stress testing
+### Method asked for on 16 Nov: reverse stress testing
 
-The professor asked that the targets come from **reverse stress testing**, the method in the professor's teaching atlas (github.com/Ethical-Tech-CoLab/reverse-stress). Because NameBridge deals with people's lives, the targets are not picked as ratios. We start from the outcomes that must not happen, agree how much of each is acceptable, and then work backward to the error rates and thresholds that keep every outcome inside that limit. The atlas's own steps are: define what must not fail (its owner, unit, tolerance and time horizon); find which combinations of upstream conditions produce it; then forward-test the controls. A reverse stress test finds **failure paths worth fixing**. It does not predict how likely they are.
+The professor did not set numbers. The professor asked us to study the professor's reverse stress testing atlas (github.com/Ethical-Tech-CoLab/reverse-stress) and work out from it what could count as **acceptable**, because NameBridge deals with people's lives. The analysis is in **`G4_REVERSE_STRESS.md`**. In short:
 
-**Step 1: what must not fail.** The critical function is that *a separated person is found by their family, and nobody is put at risk on the way*. Candidate unacceptable outcomes, to agree with the professor (each needs a tolerance, e.g. "at most N per 10,000 searches", or "zero by design"):
+- **Start from what must not happen**, not from a ratio. Five outcomes: U1 a child handed to the wrong adult; U2 a location reaching a non-relative; U3 a silent missed reunion; U4 a person who changed their name exposed; U5 a review queue too long to check.
+- **Harms that cannot be undone (U1, U4) get rules, not thresholds**: a step that cannot be skipped. Thresholds only check that the rule holds.
+- **Safeguards are not independent**: a confident wrong match makes the human check more likely to pass it, so later checks get credit only for evidence the matcher did not use.
+- **The same score means less in a bigger database**: DNA identification of missing persons sets its threshold after accounting for how many people are missing (ICMP reports a match at ≥ 99.95%). Targets must state the pool size.
+- **Queue length is a safety limit**: clinicians override 49–96% of safety alerts when most are noise.
 
-| # | Unacceptable outcome | Which error causes it | Tolerance (to decide) |
-| --- | --- | --- | --- |
-| U1 | A **child is handed to the wrong adult** | False confirmation, minor | Proposed: **zero by design**. No child is confirmed on names, age and place alone; a non-name check is required (question 2 below) |
-| U2 | A person's **location or contact reaches someone who is not their family** | False confirmation, adult | ? per 10,000 confirmations; consent comes before any location is shared, so this outcome needs a false match *and* a failed consent step |
-| U3 | A relative who **is in the data is never shown** to the searcher (a silent missed reunion) | Missed at retrieval | ? per 100 searches |
-| U4 | A person who **changed their name for safety** is exposed by a search | Search used against `NAME_CHANGE.md` | Zero by design (rules 5–7, SCOPE §4) |
-| U5 | The **review queue is so long** that caseworkers stop checking and accept the first candidate | Too many wrong candidates | ? candidates per search a caseworker can really check |
+| # | Draft tolerance (middle level; strict and loose levels also tested) |
+| --- | --- |
+| U1 | Zero by design: no minor reaches "strong evidence" without a non-name check; model precision ≥ 0.999 on the worst slice |
+| U2 | Adult precision ≥ 0.99 on the worst slice; location only after consent |
+| U3 | recall@20 ≥ 0.95 overall and ≥ 0.90 on the worst slice |
+| U4 | Zero by design; adversarial searches in the benchmark must all be refused |
+| U5 | ≤ 20 candidates per search; ≥ half of "strong evidence" flags true |
 
-**Step 2: work backward.** For each outcome, search the synthetic world (week 6) for the conditions that most plausibly produce it, instead of reporting only an average. Candidates already in the benchmark: two different people with the same name in neighbouring provinces (the Eloi example below); children's ages estimated; a name written by ear; a given name changed in exile; only a given name and a province remembered (the Belyse example). The result is a list of **failure paths**, each with the slice of records where it happens.
-
-**Step 3: set the controls.** Choose thresholds, rules and queue limits so that each outcome stays within its tolerance **on its worst slice**, not just on average. The current ratios (table below) become a starting point to test, not the answer.
-
-**Step 4: forward test.** Run the failure paths found in step 2 through the pipeline and check that the controls hold, including weeks 7–8 baselines.
-
-> **The question for the professor and the student: which tolerance is acceptable for each outcome?** Everything else follows from it, including the benchmark size (26,000 people today, derived from the ratios; it is recalculated from the tolerances).
-
-Limits: the atlas is teaching material, and its examples are supply chains, not people. Here, the method is used to choose the targets and the tests. All data stay synthetic.
+> **For the professor: are these the right outcomes, and which level (strict, middle, loose) is acceptable for each?** Five questions are listed in `G4_REVERSE_STRESS.md` §7. The benchmark size (26,000 today) is recalculated from the answer, and will grow if targets apply to the worst slice.
 
 ### The default ratios (in use until the tolerances are agreed)
 

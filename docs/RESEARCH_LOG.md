@@ -2121,3 +2121,20 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Files touched:** `docs/TIMETABLE.md`, `docs/DECISIONS_OPEN.md`, `docs/BENCHMARK_PROTOCOL.md`.
 
 **Open:** the tolerance for each outcome (professor and student); the sample size recalculated from them; G4 deadline still 23 Nov (week 6).
+
+## 2026-11-16 — G4: what is "acceptable", worked out by reverse stress testing
+
+**Correction to the entry above (user):** the professor gave no numbers. The professor asked us to study the atlas and elaborate what could be considered acceptable.
+
+**Sources consulted:**
+- Resilience Atlas (professor), README and `data.js` (35 concepts, engineering questions, limitations) — read 16 Nov. Used: critical function, outcome of concern at three severities, back-propagation through tiers, hidden concentration, reverse→forward loop, plan/absorb/recover/adapt.
+- ICMP, "Large scale DNA identification" (FSI: Genetics 38, 2019) and *DNA Reports* — posterior ≥ 99.95% for a match report; three report bands; a match report is not an identification; "requisite prior". Search extracts only.
+- "Use of prior odds for missing persons identifications" (Investigative Genetics 2011, PMC3146928) — threshold "set by policy"; posterior falls as the number of missing grows (Table 1). Read.
+- van der Sijs et al. 2006 (JAMIA, PMID 16357358) — 49–96% of drug-safety alerts overridden. Abstract.
+- Inter-Agency Guiding Principles on UASC (2004) — verification definition, from search extracts (ICRC and IOM PDFs would not fetch).
+
+**Findings:** irreversible outcomes need rules, not thresholds; safeguards share evidence so their failure rates cannot be multiplied; precision depends on database size, so every target names a pool size; queue length limits recall. Draft tolerances at strict/middle/loose levels, all on the worst slice.
+
+**Files touched:** `docs/G4_REVERSE_STRESS.md` (new), `docs/DECISIONS_OPEN.md`, `docs/TIMETABLE.md`.
+
+**Open:** professor's choice of outcomes and levels (§7 of the paper); benchmark size recalculated per slice in week 6; no data on human verification failure in the corridor.
