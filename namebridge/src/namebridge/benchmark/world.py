@@ -148,7 +148,8 @@ def build_inventors(pools):
 
 
 class World:
-    def __init__(self, params, seed=None, people=None):
+    def __init__(self, params, seed=None, people=None, prefix=""):
+        self.prefix = prefix  # e.g. "h" for the temporal holdout, so ids never collide
         self.p = params["params"]
         self.year = params["reference_year"]
         self.seed = params["seed"] if seed is None else seed
@@ -156,8 +157,9 @@ class World:
         self.rng = random.Random(self.seed)
         self.pools = build_pools()
         self.inventors = build_inventors(self.pools)
-        self.people, self.families = [], []
+        self.people, self.families, self.by_id = [], [], {}
         self.provinces = self._provinces()
+        self.lookalike_swaps = _lookalike_swaps()
 
     # --- names -------------------------------------------------------------------------------
     def _element(self, origin, slot, sex):
@@ -239,19 +241,56 @@ class World:
         }
 
     def _person(self, family, origin, sex, birth_year, role, **kin):
-        pid = f"p{len(self.people) + 1:06d}"
+        pid = f"{self.prefix}p{len(self.people) + 1:06d}"
         person = {"id": pid, "family": family["id"], "origin": origin, "sex": sex, "birth_year": birth_year,
                   "role": role, "minor": self.year - birth_year < 18,
                   "name": self.name(origin, sex, birth_year, **kin)}
         self.people.append(person)
+        self.by_id[pid] = person
         family["members"].append(pid)
         return person
 
+    def lookalike_family(self):
+        """Hard negatives (§2.3): a different family built to look like an existing one.
+
+        Each member mirrors a source member: same origin and province, birth year within 2,
+        and either the SAME name (homonyms: the Eloi example in DECISIONS_OPEN.md) or a name
+        one attested step away, from the negative constraints in attested-variants (Ishimwe /
+        Nishimwe, Jean / Jeanne...). A sex-marked swap flips the mirror's sex to match."""
+        src = self.rng.choice([f for f in self.families if not f.get("lookalike_of")])
+        members = [self.by_id[m] for m in src["members"]]
+        fam = {"id": f"{self.prefix}f{len(self.families) + 1:05d}", "origin": src["origin"],
+               "province_of_origin": src["province_of_origin"], "members": [], "lookalike_of": src["id"],
+               "mother": None, "father": None, "older_household": src.get("older_household", False)}
+        self.families.append(fam)
+        for m in members:
+            sex, name = m["sex"], [dict(e) for e in m["name"]]
+            if self.rng.random() < self.p["lookalike_near_share"]["value"]:
+                for i, e in enumerate(name):
+                    swap = self.lookalike_swaps.get(e["text"])
+                    if swap:
+                        name[i] = dict(e, text=swap[0], basis="lookalike")
+                        if swap[1]:
+                            sex = swap[1]
+                        break
+            year = min(self.year, m["birth_year"] + self.rng.randint(-2, 2))
+            pid = f"{self.prefix}p{len(self.people) + 1:06d}"
+            person = {"id": pid, "family": fam["id"], "origin": m["origin"], "sex": sex, "birth_year": year,
+                      "role": m["role"], "minor": self.year - year < 18, "name": name, "lookalike_of": m["id"]}
+            self.people.append(person)
+            self.by_id[pid] = person
+            fam["members"].append(pid)
+            if m["role"] in ("mother", "father") and sex == m["sex"]:
+                fam[m["role"]] = pid
+        return fam
+
     def family(self):
+        if self.families and self.rng.random() < self.p["lookalike_family_share"]["value"]:
+            return self.lookalike_family()
         origins = self.p["origin_shares"]["value"]
         origin = self.rng.choices(list(origins), list(origins.values()))[0]
         prov = self.provinces[origin]
-        fam = {"id": f"f{len(self.families) + 1:05d}", "origin": origin,
+        fam = {"id": f"{self.prefix}f{len(self.families) + 1:05d}", "origin": origin,
                "province_of_origin": self.rng.choices(list(prov), list(prov.values()))[0], "members": []}
         self.families.append(fam)
         older = self.rng.random() < self.p["older_household_share"]["value"]
@@ -291,11 +330,12 @@ class World:
     # --- report --------------------------------------------------------------------------------
     def summary(self):
         n = len(self.people)
-        basis = Counter((p["origin"], e["slot"], e["basis"]) for p in self.people for e in p["name"])
+        basis = Counter((p["origin"], e["slot"], e["basis"]) for p in self.people for e in p["name"] if "lookalike_of" not in p)
         slots = Counter((o, s) for o, s, _ in basis.elements())
         return {
             "people": n, "families": len(self.families),
             "people_per_family": round(n / len(self.families), 2),
+            "lookalike_people": sum("lookalike_of" in p for p in self.people),
             "minor_share": round(sum(p["minor"] for p in self.people) / n, 3),
             "age_bands": dict(sorted(Counter(min(70, (self.year - p["birth_year"]) // 10 * 10) for p in self.people).items())),
             "origin_counts": dict(Counter(p["origin"] for p in self.people)),
@@ -303,6 +343,24 @@ class World:
             "size_check": self.size_check(),
             "element_basis_share": {f"{o}/{s}/{b}": round(c / slots[o, s], 3) for (o, s, b), c in sorted(basis.items())},
         }
+
+
+def _lookalike_swaps():
+    """Element -> (other element, sex of the other or None), from the attested negative constraints."""
+    data = json.loads((ROOT / "data" / "variants" / "attested-variants-2026.1.json").read_text(encoding="utf-8"))
+    forms = {f["id"]: f["text"].lower() for f in data["forms"]}
+    sexed = {"françoise": "F", "francoise": "F", "justine": "F", "jeanne": "F", "claudine": "F",
+             "françois": "M", "francois": "M", "justin": "M", "jean": "M", "claude": "M"}
+    swaps = {}
+    for r in data["relations"]:
+        if r["relation_type"] == "not_equivalent_to":
+            a, b = forms[r["from"]], forms[r["to"]]
+            swaps.setdefault(a, (b, sexed.get(b)))
+            swaps.setdefault(b, (a, sexed.get(a)))
+    for a, b in (("francoise", "francois"),):  # profiles are folded (no cedilla)
+        swaps.setdefault(a, (b, "M"))
+        swaps.setdefault(b, (a, "F"))
+    return swaps
 
 
 def full_name(person):

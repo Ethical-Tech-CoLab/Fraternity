@@ -97,3 +97,15 @@ def test_default_world_passes_its_own_size_check():
     w = World(json.loads(PARAMS.read_text(encoding="utf-8"))).generate()
     check = w.size_check()
     assert check["ok"], check
+
+
+def test_lookalikes_are_different_people_that_look_alike(world):
+    by_id = {p["id"]: p for p in world.people}
+    looks = [p for p in world.people if "lookalike_of" in p]
+    assert looks
+    for p in looks:
+        src = by_id[p["lookalike_of"]]
+        assert p["family"] != src["family"] and p["origin"] == src["origin"]
+        assert abs(p["birth_year"] - src["birth_year"]) <= 2
+        diff = [(a["text"], b["text"]) for a, b in zip(p["name"], src["name"]) if a["text"] != b["text"]]
+        assert len(diff) <= 1  # the same name, or one attested step away

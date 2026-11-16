@@ -381,7 +381,7 @@ class Recorder:
     def generate(self):
         self.families = {f["id"]: f for f in self.world.families}
         for fam in self.world.families:
-            if fam["origin"] == "CD" and fam["father"]:
+            if fam["origin"] == "CD" and fam["father"] and fam["mother"]:
                 self.people[fam["mother"]]["husband_nom"] = self.people[fam["father"]]["name"][0]["text"]
         shares = self.p["rec_source_shares"]["value"]
         for person in self.world.people:

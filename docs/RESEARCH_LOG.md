@@ -2202,3 +2202,19 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Limits:** source shares, writer languages and most rates have no corridor source; the sound layer models only what the packs hold (e.g. no Lingala-writer conventions); child speech rules (cd pack) are kept for step 3, where children report on relatives.
 
 **Next:** step 3, gold labels, queries (one-sided, reciprocal, child reports, U4 adversarial searches, sought people with no record), family splits and the temporal holdout.
+
+## 2026-11-16 — Week 6 step 3: queries, gold labels, splits, holdout
+
+**Built:** `namebridge.benchmark.queries` (full build), look-alike families in `world.py`, 14 new `q_*`/`lookalike_*`/`holdout_share` parameters.
+
+- **Look-alike families** (hard negatives, §2.3): 4% of families mirror an existing family (same origin and province, birth years within 2), with the same names (homonyms, the Eloi example) or one attested step away from the negative constraints (Ishimwe/Nishimwe, Jean/Jeanne with the sex flipped). 1,286 such people.
+- **Queries:** tracing requests written by a caseworker (by ear, the same pack rules as records). The searcher may remember only the given name or the surname; children under 12 say "Mama X"/"Papa X", may confuse relations, and (DRC only, where the pack holds Gangji et al. 2015) show young-child pronunciation. Reciprocal pairs, some by the same clerk. Not-present sought people lose all public records. Name-change cases are labelled for protected routing. 400 U4 searches labelled "refuse", each with the rule it breaks.
+- **Bug found and fixed while writing:** answers were set when a query was written, so a person marked "not present" later could still be the "found" answer of an earlier (reciprocal) query. Answers are now set after all absences are decided; a test checks it.
+- **Per-slice size:** with one query per family, each key slice had about 150 findable test queries; the G4 draft's worst-slice targets need 414 (`queries_for_recall`). Now each person is sought with probability 0.5: test slices hold 455–556; the build fails if any slice falls below 414 (`query_size_check`).
+- **Output** (default build, 9 s, 67 MB, git-ignored): 31,201 people, 89,281 records, 18,005 queries (14,711 findable, 2,469 not present, 425 name change, 400 refuse; 5,055 child reports; 639 same-clerk reciprocal pairs); holdout 3,122 people. Same seed, same SHA-256 for every file (tested).
+
+**Tests:** 204 pass (8 new for queries, 1 for look-alikes).
+
+**Limits:** query parameters have no corridor source (varied); the Kinyarwanda/Kirundi/Chichewa child-speech gap stays (TIMETABLE open item 6); U4 searches test the policy layer, not matching.
+
+**Next:** step 4 realism checks (fidelity test with a limit fixed before comparing; copy test); step 5 the 300-pair sample for the user.
