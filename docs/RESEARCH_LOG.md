@@ -2185,3 +2185,20 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Limits:** family structure, spacing and older-household share have no corridor source; invented elements resemble only the top-50 elements they are trained on (the fidelity test, step 4, will measure this against the profile n-grams).
 
 **Next (week 6):** step 2 records and error injection; step 3 gold labels, queries (incl. U4 adversarial searches), splits, reciprocal pairs; step 4 realism checks; step 5 the 300-pair sample for the user.
+
+## 2026-11-16 — Week 6 step 2: records and errors
+
+**Built:** `namebridge.benchmark.records`; 30 new `rec_*` parameters in `data/benchmark/params-2026.1.json`, each with a source or marked `none` (most rates have no source and are varied).
+
+- **Sources** (§2.3): registration form, camp distribution list, tracing request, school list (ages 6–24), passport MRZ (adults, never by ear). About 3 records per person (2.85 realised), 88,800 records for 31,200 people.
+- **Who writes:** literacy by origin, sex and youth from UNESCO 2022 (log, 28 Oct; Rwanda secondary only), ×0.6 for people 50+ (varied), none under 15; literate people are still typed by ear 30% of the time (varied). Result: 71% of records written by ear.
+- **By ear:** the writer's language (English, Chichewa, French, Swahili, Kinyarwanda; shares by source, unsourced) applies the packs' `spelling_conventions` (sh→ch, c→tch/ch, ny→gn, w→ou, s→ss, the Chichewa r/l rule) and `listener_confusions` (r/l, rw→rgw, sw→skw, tw→tkw, bw→bg, vy→vz, mb→b, mp→p, o/u, final m/n), weighted by the entry's confidence; French-form names get the silent-h, double-letter, final-vowel and i→y rules. **Every change is logged with its pack entry**, and a test checks that each entry exists. Two fidelity bugs found by tests and fixed: the i→y rule was applied to DRC names, whose pack has no such entry; the French double-letter convention fired for non-French writers.
+- **Other errors:** Christian names in the writer's language from the crosspack (Jean → John/Yohana; attested forms only), DRC postnom dropped or swapped, married name added (DRC art. 62), typos, OCR on lists, given-name-first order by source, missing sex/age/place, child ages estimated, adult ages heaped on 5, other-period province names from `places-2026.1` (merged, split, renamed), false claimed nationality, a person's own free-variation spelling, and adopted names in exile (adults; step 1 given name 2.1%, step 2 surname too 0.9%; used in exile records only).
+- **Adopted given names** are another given name from the corridor pool: which names people actually adopt (often Muslim names) waits for the professor's legal check, so only the mechanism is tested.
+- **Calibration:** measured as in [B14] (name values differing between linked records of one person); `rec_error_scale` 0.57 → 21.9% on the full world (0.15 → 9.8%, 1.3 → 35.3% for the sensitivity runs).
+
+**Output:** `build/benchmark/records.jsonl` (+ `records_manifest.json`), git-ignored; the gold person id is still on each record (moved to separate gold files in step 3). **Tests:** 195 pass (10 new).
+
+**Limits:** source shares, writer languages and most rates have no corridor source; the sound layer models only what the packs hold (e.g. no Lingala-writer conventions); child speech rules (cd pack) are kept for step 3, where children report on relatives.
+
+**Next:** step 3, gold labels, queries (one-sided, reciprocal, child reports, U4 adversarial searches, sought people with no record), family splits and the temporal holdout.

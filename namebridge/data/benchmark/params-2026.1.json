@@ -144,6 +144,320 @@
       ],
       "source": "CENI 2025 profile birth decades start in the 1940s-1950s; range for older households",
       "confidence": "low"
+    },
+    "rec_records_per_person": {
+      "value": {
+        "1": 0.15,
+        "2": 0.25,
+        "3": 0.3,
+        "4": 0.2,
+        "5": 0.1
+      },
+      "source": "BENCHMARK_PROTOCOL.md §2.1: about 3 records per person, spread unevenly across sources",
+      "confidence": "design"
+    },
+    "rec_source_shares": {
+      "value": {
+        "registration": 0.35,
+        "distribution_list": 0.3,
+        "tracing_request": 0.15,
+        "school_list": 0.17,
+        "passport_mrz": 0.03
+      },
+      "source": "BENCHMARK_PROTOCOL.md §2.3 lists the sources (MRZ rare); shares: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_years": {
+      "value": [
+        2014,
+        2026
+      ],
+      "source": "Record dates spread over the period of the current Dzaleka population's arrivals; none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_writer_language": {
+      "value": {
+        "registration": {
+          "en": 0.45,
+          "ny": 0.45,
+          "fr": 0.1
+        },
+        "distribution_list": {
+          "ny": 0.6,
+          "en": 0.4
+        },
+        "tracing_request": {
+          "sw": 0.35,
+          "fr": 0.35,
+          "en": 0.15,
+          "rw": 0.15
+        },
+        "school_list": {
+          "en": 0.5,
+          "ny": 0.5
+        },
+        "passport_mrz": {
+          "fr": 1.0
+        }
+      },
+      "source": "Writer languages from CONCEPT-IDEA §5.4A (clerks, caseworkers, interpreters in Malawi: English, Chichewa; interpreters: Swahili, French, Kinyarwanda); shares: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_writers_per_source": {
+      "value": 12,
+      "source": "Number of distinct clerks per source and language, so shared-writer pairs occur (CONCEPT-IDEA §5.5A); none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_literacy": {
+      "value": {
+        "BI": {
+          "F": 0.694,
+          "M": 0.818,
+          "youth": 0.936
+        },
+        "CD": {
+          "F": 0.717,
+          "M": 0.896,
+          "youth": 0.881
+        },
+        "RW": {
+          "F": 0.68,
+          "M": 0.73
+        }
+      },
+      "source": "UNESCO UIS adult literacy 2022 by sex and youth 15-24 (RESEARCH_LOG.md, 28 Oct 2026). Rwanda from secondary sources only (to confirm). Conflicts kept in the log (DRC 68.5% in another series); no Dzaleka figure exists",
+      "confidence": "medium"
+    },
+    "rec_older_literacy_factor": {
+      "value": 0.6,
+      "range": [
+        0.4,
+        0.8
+      ],
+      "varied": true,
+      "source": "Burundi adult literacy was 37% in 1990 (RESEARCH_LOG.md, 28 Oct), so people aged 50+ are far less literate than the 2022 average; factor chosen, varied",
+      "confidence": "low"
+    },
+    "rec_by_ear_if_literate": {
+      "value": 0.3,
+      "range": [
+        0.1,
+        0.5
+      ],
+      "varied": true,
+      "source": "Even literate people usually have their name typed by a clerk (RESEARCH_LOG.md, 28 Oct); share typed without seeing a written form: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_convention_rate": {
+      "value": 0.6,
+      "range": [
+        0.3,
+        0.9
+      ],
+      "varied": true,
+      "source": "Probability that a writer applies their own language's spelling for a sound (pack spelling_conventions); none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_confusion_rate": {
+      "value": 0.25,
+      "range": [
+        0.1,
+        0.5
+      ],
+      "varied": true,
+      "source": "Base probability of a listener confusion per occurrence, weighted by the pack entry's confidence (high 1, medium 0.5, low/hypothesis 0.25); none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_foreign_name_rate": {
+      "value": 0.15,
+      "range": [
+        0.05,
+        0.3
+      ],
+      "varied": true,
+      "source": "French-form names written by others: silent h, double letters, final vowel (pack rules); none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_christian_language_rate": {
+      "value": 0.25,
+      "range": [
+        0.1,
+        0.5
+      ],
+      "varied": true,
+      "source": "Christian name written in the writer's language (crosspack attested forms, e.g. Jean -> John / Yohana); none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_free_variation_person": {
+      "value": 0.08,
+      "range": [
+        0.0,
+        0.2
+      ],
+      "varied": true,
+      "source": "User's observation, 9 Nov 2026: families add, change or double letters because they like how it looks (BENCHMARK_PROTOCOL.md §2.3); no source on how often",
+      "confidence": "none"
+    },
+    "rec_typo_rate": {
+      "value": 0.05,
+      "range": [
+        0.02,
+        0.1
+      ],
+      "varied": true,
+      "source": "GeCo-style typing errors [B8]; none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_ocr_rate": {
+      "value": 0.05,
+      "range": [
+        0.0,
+        0.15
+      ],
+      "varied": true,
+      "source": "OCR errors on printed or scanned lists [B8]; none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_postnom_dropped": {
+      "value": 0.2,
+      "range": [
+        0.1,
+        0.4
+      ],
+      "varied": true,
+      "source": "DRC postnom often dropped outside civil records (BENCHMARK_PROTOCOL.md §2.3); CongoNames: 18% of exam records have 2 tokens; per-record rate: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "low"
+    },
+    "rec_nom_postnom_swapped": {
+      "value": 0.05,
+      "range": [
+        0.0,
+        0.15
+      ],
+      "varied": true,
+      "source": "BENCHMARK_PROTOCOL.md §2.3; none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_married_name_added": {
+      "value": 0.2,
+      "range": [
+        0.0,
+        0.4
+      ],
+      "varied": true,
+      "source": "DRC Family Code art. 62: a married woman may add her husband's name; how often: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "low"
+    },
+    "rec_given_first": {
+      "value": {
+        "registration": 0.4,
+        "distribution_list": 0.3,
+        "tracing_request": 0.6,
+        "school_list": 0.3,
+        "passport_mrz": 0.0
+      },
+      "source": "Local records write the surname first (Rwanda, Burundi, DRC exam lists; packs order_rules); English/French forms often put the given name first; shares: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_missing_sex": {
+      "value": 0.03,
+      "source": "none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_missing_age": {
+      "value": 0.05,
+      "source": "none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_child_age_estimated": {
+      "value": 0.4,
+      "range": [
+        0.2,
+        0.6
+      ],
+      "varied": true,
+      "source": "Children's ages are often estimated (GATE_EXAMPLES.md; 'about 10'); none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_age_heaping": {
+      "value": 0.3,
+      "range": [
+        0.1,
+        0.5
+      ],
+      "varied": true,
+      "source": "Age heaping on multiples of 5 (BENCHMARK_PROTOCOL.md §2.3); 14% of dates of birth differ between linked records in South Africa [B14]",
+      "confidence": "low"
+    },
+    "rec_missing_place": {
+      "value": 0.1,
+      "source": "none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_place_other_period": {
+      "value": 0.3,
+      "range": [
+        0.1,
+        0.5
+      ],
+      "varied": true,
+      "source": "Places renamed over time (Burundi 2025, Rwanda 2006, DRC 2015; places-2026.1): share of records giving the other period's name: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_false_nationality": {
+      "value": 0.02,
+      "range": [
+        0.0,
+        0.05
+      ],
+      "varied": true,
+      "source": "A false claimed nationality at a low rate (Duchaj & Ntihirageza 2009; NAME_CHANGE.md) [B18]; rate: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "low"
+    },
+    "rec_name_change_s1": {
+      "value": 0.05,
+      "range": [
+        0.02,
+        0.15
+      ],
+      "varied": true,
+      "source": "NAME_CHANGE.md step 1 (given name replaced in exile; Duchaj & Ntihirageza 2009, Daley 2018); rate: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "low"
+    },
+    "rec_name_change_s2": {
+      "value": 0.015,
+      "range": [
+        0.0,
+        0.05
+      ],
+      "varied": true,
+      "source": "NAME_CHANGE.md step 2 (surname also replaced), s2 < s1; rate: none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "low"
+    },
+    "rec_adopted_name_used": {
+      "value": 0.7,
+      "range": [
+        0.5,
+        1.0
+      ],
+      "varied": true,
+      "source": "Share of exile records (registration, distribution, school) that use the adopted name once it exists; none found; plausible value, always varied in the sensitivity runs",
+      "confidence": "none"
+    },
+    "rec_error_scale": {
+      "value": 0.57,
+      "sensitivity": {
+        "0.15": "9.8%",
+        "0.57": "21.9%",
+        "1.3": "35.3%"
+      },
+      "range": [
+        0.15,
+        1.3
+      ],
+      "varied": true,
+      "source": "Calibrated 16 Nov 2026 on the full default world (31,200 people): one factor on all name error rates so that 22% of name values (surname, given names) differ between linked records of one person, the figure in South Africa [B14]; scale 0.15 gives 9.8% and 1.3 gives 35.3%, the sensitivity points of BENCHMARK_PROTOCOL.md §2.4 test 4. Writers' spelling conventions are habits and are not scaled",
+      "confidence": "medium"
     }
   },
   "invention": {

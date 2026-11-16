@@ -50,6 +50,7 @@ Generate the synthetic benchmark world (week 6; invented people only, written to
 ```sh
 .venv/bin/python -m namebridge.benchmark.world            # default size and seed from data/benchmark/params-2026.1.json
 .venv/bin/python -m namebridge.benchmark.world --people 3000 --seed 7 --out /tmp/small
+.venv/bin/python -m namebridge.benchmark.records          # records with errors for the same world (records.jsonl)
 ```
 
 Resolve a place name both ways in time (old → new, new → old), with the path that explains each candidate:
