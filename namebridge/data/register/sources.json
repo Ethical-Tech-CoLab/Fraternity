@@ -590,6 +590,19 @@
       "use": "facts only (names, dates, relations and short locators); no text reproduced"
     },
     {
+      "url": "https://www.matana.de/kirundi_kinyarwanda.pdf",
+      "name": "NameBridge profile bi-ceni-2026.1 (CENI Burundi 2025 candidate lists, aggregates only), with Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary, and Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007)",
+      "language": "rn",
+      "datasets": [
+        "attested-variants-2026.1"
+      ],
+      "kind": "other",
+      "licence": "not stated",
+      "licence_verified": false,
+      "how_verified": null,
+      "use": "facts only (names, dates, relations and short locators); no text reproduced"
+    },
+    {
       "url": "https://www.mineduc.gov.rw/fileadmin/user_upload/Mineduc/SPIU_Documents/ESMP/muhanga/MUHANGA_DISTRICT-_ESMP_FOR_CONSTRUCTION_OF_CLASSROOMS_AND_LATRINES_SUB-PROJECTS_UNDER_RWANDA_QBE-HCD_PROJECT.pdf",
       "name": "MINEDUC, Muhanga District ESMP for construction of classrooms and latrines (Rwanda QBE-HCD project)",
       "language": "en",
@@ -838,7 +851,7 @@
     }
   ],
   "summary": {
-    "sources": 64,
+    "sources": 65,
     "licence_verified": 12,
     "with_concern": 2
   }

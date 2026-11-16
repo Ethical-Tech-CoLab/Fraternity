@@ -2147,3 +2147,24 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 - **Reviewers:** the student reviews a **sample** of edges this semester, as `investigator`. Since the student is not a native speaker, an investigator review is a **source check** (both forms in the source, the relation supported, the licence right), not a linguistic judgment; procedure in `DATA_RULES.md` DR-1.5. New command `python -m namebridge.review sample` (stratified, fixed seed 20261116, generated and place edges excluded). Drawn once: 74 edges (attested variants 11 + 3, whole strata; Christian names 30 attested of 160, 30 statistical of 286), saved to `namebridge/data/reviews/sample-2026-11-16.json`. Zero errors in 30 → stratum error < 9.5% at 95% confidence; any error → 30 more from that stratum. A linguist review stays open for after the semester.
 
 **Files touched:** `namebridge/src/namebridge/review.py`, `namebridge/tests/test_review.py` (175 tests pass), `docs/DATA_RULES.md`, `docs/DECISIONS_OPEN.md`, `docs/G4_REVERSE_STRESS.md`, `docs/TIMETABLE.md`.
+
+## 2026-11-16 — Ntakarutimana and Ntakirutimana: one name or two? (user's request)
+
+**Question** (from `DECISIONS_OPEN.md`, earlier put to a linguist; noted 9 Nov, line "Noted, not added"): are these two forms of one name?
+
+**Sources consulted:**
+- Cox, E. E. (1969, rev. M. Philipps 2023), *Kirundi-English dictionary* (local copy, `~/namebridge-ref/cox`): *nta* "1. no, 2. none"; *ku-ruta* "to surpass, to be better"; *iki-ntu (ibi-)* "thing, item" (class 7); *aka-ntu (utu-)* "little thing (from ikintu)" (class 12). Read 16 Nov.
+- *Kinyarwanda and Kirundi Comparative Grammar* (Dunwoody Press, 2007), §3.2.7 and the quotation of Kimenyi (1980: 4) in ch. 3, via Tavily extract: classes 12/13 (*aka-/utu-*, both languages) are "primarily a derivational class"; nouns given these affixes acquire a diminutive meaning. Read 16 Nov.
+- NameBridge profile `bi-ceni-2026.1` (aggregates of the CENI 2025 lists): *ntakarutimana* 10, *ntakirutimana* 5, as separate elements.
+- *A Context-Based Approach to the Study of Names* (Kirundi names study with bearer interviews, researchpublish.com, PDF; author and year not read from the extract): two bearers of *Ntakarutimana* (Gitega, Mwaro) gloss it "Nothing is superior to God" and "God is so big and powerful". The study's informant list contains real people's names: **not recorded here** (DR-1.4).
+- Pointers only, not used as sources: names.org and a university news item gloss *Ntakirutimana* "nothing is greater than God"; a wiki lists both as one surname (not a source, see the 5 Nov rule).
+
+**Findings:**
+- Structure: **Nta-ki-rut-Imana** = no + class 7 prefix (*ikintu* "thing") + surpass + God: "nothing surpasses God". **Nta-ka-rut-Imana** = the same with the class 12 prefix (*akantu* "little thing"): literally "no little thing surpasses God". The literal gloss of the *ka-* form is our analysis from the two grammar sources `[analysis, not attested as a gloss]`; bearers give both names the same meaning.
+- So they are **two names built the same way, differing in a grammatical prefix**, not spellings of one name. Both are registered separately in Burundi (CENI). No source shows one person's name written both ways.
+- **Recorded as** a flagged pair (`not_equivalent_to`, confidence 0.7, `proposed`), the same treatment as *Ishimwe/Nishimwe*: the graph API returns each under `also_check` ("different name that looks alike: keep as a candidate"), so neither is ever hidden. They are also one letter apart, so the any-one-edit retrieval rule finds them, and both already share the *imana* morpheme edge.
+- **What a linguist could still settle:** whether speakers treat the *ka-* form as an emphatic or diminutive variant of the same name (which would argue for an equivalence edge), and whether clerks or listeners swap the two (which would add `commonly_confused_with`). Until then the flag is the safe choice: it keeps both candidates and asks for other evidence.
+
+**Files touched:** `namebridge/data/variants/attested-variants-2026.1.json` (0.3.0; source `ceni-morphology`), graph rebuilt (1,655 edges, valid), `namebridge/data/register/sources.json` rebuilt (65 sources). The 16 Nov review sample is unchanged (drawn before this edge). 175 tests pass.
+
+**Also 16 Nov:** Muslim names (legal check): the professor will answer after more research. Default unchanged: left out of v0.1.

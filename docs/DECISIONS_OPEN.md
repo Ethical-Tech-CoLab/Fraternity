@@ -7,7 +7,7 @@ Two questions only the professor can settle. Everything already decided has been
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
 | **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov** (blocks week 6) | The ratios set on 26 Oct |
-| **Legal check** for Muslim names | Whether those names enter the graph | no deadline | Left out of v0.1 |
+| **Legal check** for Muslim names | Whether those names enter the graph | no deadline (professor researching, 16 Nov) | Left out of v0.1 |
 
 ---
 
@@ -69,6 +69,8 @@ The professor did not set numbers. The professor asked us to study the professor
 ---
 
 ## Legal check — May Muslim names enter the graph? (no deadline)
+
+*16 Nov 2026: the professor will answer later, after researching it further.*
 
 Many people in the corridor carry Muslim names (Hassan / Hasani, Fatuma / Fatima, Juma). A list of such names can reveal religion, which is sensitive data under Malawi's Data Protection Act. When the professor allowed the restricted name-change layer (G5), one condition was a legal check before religion-linked names are used.
 

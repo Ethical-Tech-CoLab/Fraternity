@@ -144,6 +144,8 @@
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ngoy", "languages": ["und"], "script": "Latn", "text": "Ngoy", "type": "NameForm"}
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ngoyi", "languages": ["und"], "script": "Latn", "text": "Ngoyi", "type": "NameForm"}
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:nishimwe", "languages": ["rw"], "script": "Latn", "text": "Nishimwe", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ntakarutimana", "languages": ["rn"], "script": "Latn", "text": "Ntakarutimana", "type": "NameForm"}
+{"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:ntakirutimana", "languages": ["rn"], "script": "Latn", "text": "Ntakirutimana", "type": "NameForm"}
 {"dataset_id": "attested-variants-2026.1", "id": "nf:attested-variants-2026.1:uwineza", "languages": ["rw"], "script": "Latn", "text": "Uwineza", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:adam:adam", "languages": ["fr", "en"], "script": "Latn", "text": "Adam", "type": "NameForm"}
 {"dataset_id": "christian-names-2026.1", "id": "nf:christian-names-2026.1:adam:adamu", "languages": ["ln", "rw"], "script": "Latn", "text": "Adamu", "type": "NameForm"}

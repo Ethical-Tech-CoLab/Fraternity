@@ -1,6 +1,6 @@
 {
   "dataset_id": "attested-variants-2026.1",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Language 'und' (undetermined) is used where the source gives a country but no language. Relationships between personal-name forms attested in real aggregate data (naming profiles), never invented: spelling variants that co-occur as frequent forms, and negative constraints between names that are registered as distinct. All edges are proposed until a human reviewer with a role reviews them.",
   "sources": {
     "congonames-profile": {
@@ -20,6 +20,12 @@
       "url": "https://github.com/Ethical-Tech-CoLab/Fraternity/tree/main/namebridge/data/profiles",
       "locator": "elements and elements_by_sex",
       "language": "fr"
+    },
+    "ceni-morphology": {
+      "name": "NameBridge profile bi-ceni-2026.1 (CENI Burundi 2025 candidate lists, aggregates only), with Cox, E. E. (1969, rev. M. Philipps 2023), Kirundi-English dictionary, and Kinyarwanda and Kirundi Comparative Grammar (Dunwoody Press, 2007)",
+      "url": "https://www.matana.de/kirundi_kinyarwanda.pdf",
+      "locator": "bi-ceni-2026.1 elements/nom: ntakarutimana 10, ntakirutimana 5 (separate entries); Cox: nta 'no, none', ku-ruta 'to surpass', iki-ntu 'thing' (class 7), aka-ntu 'little thing (from ikintu)' (class 12); Comparative Grammar §3.2.7: classes 12/13 are a derivational diminutive class. Nta-ki-rut-Imana and Nta-ka-rut-Imana differ in the class prefix, not in spelling",
+      "language": "rn"
     }
   },
   "forms": [
@@ -137,6 +143,16 @@
       "id": "claudine",
       "text": "Claudine",
       "lang": "fr"
+    },
+    {
+      "id": "ntakirutimana",
+      "text": "Ntakirutimana",
+      "lang": "rn"
+    },
+    {
+      "id": "ntakarutimana",
+      "text": "Ntakarutimana",
+      "lang": "rn"
     }
   ],
   "relations": [
@@ -309,6 +325,17 @@
         "RW"
       ],
       "note": "masculine and feminine forms given to different sexes; different names"
+    },
+    {
+      "from": "ntakarutimana",
+      "to": "ntakirutimana",
+      "relation_type": "not_equivalent_to",
+      "source": "ceni-morphology",
+      "confidence": 0.7,
+      "confidence_basis": "attested",
+      "regions": [
+        "BI"
+      ]
     }
   ]
 }

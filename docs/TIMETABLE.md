@@ -49,7 +49,7 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | 5 | ~~16 secondary DRC towns~~ | week 4 | user + Claude | ✔ 9 Nov: added by pcode; 14 Kivu territories given their missing pcodes |
 | 6 | ~~Children's pronunciation in Kinyarwanda, Kirundi, Chichewa~~ | week 4 | Claude | ✔ 9 Nov: none exists (McLeod 2024 index lists only Swahili); varied parameter in the benchmark |
 | 7 | Dzaleka literacy figure: 2017 socio-economic survey microdata, behind a login | week 4 | user (access request) | the benchmark varies the share of names written by ear meanwhile |
-| 8 | Muslim names (Hassan/Hasani, Fatuma/Fatima) | week 4 | — | **blocked** by G5 condition 3 (legal check: religion is sensitive data) |
+| 8 | Muslim names (Hassan/Hasani, Fatuma/Fatima) | week 4 | — | **blocked** by G5 condition 3 (legal check: religion is sensitive data); 16 Nov: the professor will answer after more research |
 | 9 | Week 5: Onomaverse review; real-pattern variants (UN 1533 aliases kept outside the repo; 2014 forms); graph v0.1 release note and tag | week 5 | Claude; tag needs the user | G9 closed 16 Nov: release note and tag move to week 9 |
 | 10 | Gates G4, G9 (G8 overridden by the user 9 Nov) | — | professor | G4 by 23 Nov |
 | 12 | Investigator review of the 74-edge sample (decided 16 Nov) | week 5 | user | `namebridge/data/reviews/sample-2026-11-16.json`; procedure `DATA_RULES.md` DR-1.5; before the week 9 release |
