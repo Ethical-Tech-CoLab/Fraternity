@@ -162,6 +162,8 @@ Every metric is reported for each of these slices, never only as a global averag
 
 The cost of each kind of error depends on the step (decided 26 Oct 2026; to confirm with the professor):
 
+> **16 Nov 2026 (professor, gate G4 still open):** the targets will be set by **reverse stress testing**: agree first which outcomes are unacceptable and the tolerance for each, then derive the thresholds that keep every outcome within tolerance on its worst slice. The ratios below are the default until then; the sample size (§2.1, 26,000) is recalculated from the agreed tolerances. Framing: `DECISIONS_OPEN.md` (G4).
+
 | Step | Worse error | Proposed ratio | How the threshold is set (on dev) |
 | --- | --- | --- | --- |
 | **Retrieval** (who enters the candidate list) | **Missed candidate** (the person is never seen by a human) | Missed : false = **10 : 1** | Highest threshold that keeps **recall@20 ≥ 0.95** |

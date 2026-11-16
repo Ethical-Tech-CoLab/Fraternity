@@ -1,49 +1,46 @@
 # Decisions Making: decisions still open
 
-*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026 from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
+*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026, updated 16 Nov 2026, from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
 
-Four questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
+Three questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
-| **G9** Size of the name corpus | When graph v0.1 is released, and with what | **20 Nov** | Release in week 5 with the count stated |
 | **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov** (blocks week 6) | The ratios set on 26 Oct |
 | **Reviewers** for the name graph | Whether any edge can move past "proposed" | before release | Everything stays "proposed" |
 | **Legal check** for Muslim names | Whether those names enter the graph | no deadline | Left out of v0.1 |
 
 ---
 
-## G9 — How big must the name corpus be? (by 20 Nov)
-
-The concept paper (§10, phase 1) asks for **2,000–10,000** sourced relationships between names. What the graph holds today depends on how relationships are counted:
-
-| Measure | Today |
-| --- | --- |
-| Name edges stored in the graph | **502** |
-| Pairs of name forms linked as the same name | **731** |
-| Pairs flagged as different names that look alike | 11 |
-| Pairs that share a sourced name part (e.g. both end in *-imana*, "God") | 367 |
-| Rules in the language packs that apply to any name (final vowel, silent *h*, r/l …) | 180 |
-
-The gap between edges and pairs comes from the design: the forms of one name are stored around a shared concept, so the 7 forms of John (Jean, John, Yohana, Yoane, Yohane …) are 7 edges but 21 linked pairs. With sourced material only, the semester projection is about **800–1,000 edges** (roughly **1,200–1,500 linked pairs**).
-
-The gap comes from a deliberate rule: we add only relationships that a source attests (Bible translations, official name lists, published studies), never variants we invent ourselves, because invented variants produce false matches. Spelling variants are still handled, but by the matcher at search time, not stored in the graph.
-
-> **Is a smaller, fully sourced corpus acceptable for this semester, and when should graph v0.1 be released?**
-
-- **Keep researching in parallel, release v0.1 in week 9** *(student's proposal, recommended)*: we are about a week ahead of schedule, and the benchmark (week 6) is built from the naming profiles and the pack rules, not from the size of the graph. Corpus research can therefore continue alongside weeks 6–9 and the release moves to week 9, where the timetable already has "release v0.1". Nothing is delayed and the work still ends this semester. Realistic result by 18 Dec: about 900–1,100 edges (≈1,500 linked pairs); **with Muslim names** (see the legal check below) it could pass 2,000 linked pairs. The limit is sources, not time.
-- **Accept it now** *(default in use)*: release v0.1 in week 5 with the current count and state the shortfall against §10.
-- **Extend phase 1**: spend more weeks on the corpus before the benchmark; the rest of the timetable moves later, possibly past the semester.
-
-The exit criterion for phase 1, "every edge sourced and confidence-scored", is met either way.
-
-**Why the edge count understates coverage** (analysis of 9 Nov): spelling variation (a final vowel added, a silent *h*, a doubled letter, *y* for *i*, and letters families add freely because they like them) is handled by **general rules** in the language packs and by tolerating any one-letter change at search time, not by storing every pair. The graph's own value lies in what similarity cannot do: linking forms that look different (Jean / Yohana) and **flagging** forms that look alike but are different names (François / Françoise, Justin / Justine, Ishimwe / Nishimwe). Flagged names stay on the candidate list, because a relative may not remember the spelling; the flag tells the caseworker to confirm with other evidence (age, place, relatives).
-
----
-
 ## G4 — How much worse is one kind of error than the other? (by 23 Nov)
 
 NameBridge makes two kinds of mistake: it can **miss** the right person, or it can **show the wrong one**. How we weigh them sets the match thresholds and the size of the test set (26,000 invented people is calculated from these targets). The benchmark in week 6 cannot be built until this is settled.
+
+### Method agreed on 16 Nov: reverse stress testing
+
+The professor asked that the targets come from **reverse stress testing**, the method in the professor's teaching atlas (github.com/Ethical-Tech-CoLab/reverse-stress). Because NameBridge deals with people's lives, the targets are not picked as ratios. We start from the outcomes that must not happen, agree how much of each is acceptable, and then work backward to the error rates and thresholds that keep every outcome inside that limit. The atlas's own steps are: define what must not fail (its owner, unit, tolerance and time horizon); find which combinations of upstream conditions produce it; then forward-test the controls. A reverse stress test finds **failure paths worth fixing**. It does not predict how likely they are.
+
+**Step 1: what must not fail.** The critical function is that *a separated person is found by their family, and nobody is put at risk on the way*. Candidate unacceptable outcomes, to agree with the professor (each needs a tolerance, e.g. "at most N per 10,000 searches", or "zero by design"):
+
+| # | Unacceptable outcome | Which error causes it | Tolerance (to decide) |
+| --- | --- | --- | --- |
+| U1 | A **child is handed to the wrong adult** | False confirmation, minor | Proposed: **zero by design**. No child is confirmed on names, age and place alone; a non-name check is required (question 2 below) |
+| U2 | A person's **location or contact reaches someone who is not their family** | False confirmation, adult | ? per 10,000 confirmations; consent comes before any location is shared, so this outcome needs a false match *and* a failed consent step |
+| U3 | A relative who **is in the data is never shown** to the searcher (a silent missed reunion) | Missed at retrieval | ? per 100 searches |
+| U4 | A person who **changed their name for safety** is exposed by a search | Search used against `NAME_CHANGE.md` | Zero by design (rules 5–7, SCOPE §4) |
+| U5 | The **review queue is so long** that caseworkers stop checking and accept the first candidate | Too many wrong candidates | ? candidates per search a caseworker can really check |
+
+**Step 2: work backward.** For each outcome, search the synthetic world (week 6) for the conditions that most plausibly produce it, instead of reporting only an average. Candidates already in the benchmark: two different people with the same name in neighbouring provinces (the Eloi example below); children's ages estimated; a name written by ear; a given name changed in exile; only a given name and a province remembered (the Belyse example). The result is a list of **failure paths**, each with the slice of records where it happens.
+
+**Step 3: set the controls.** Choose thresholds, rules and queue limits so that each outcome stays within its tolerance **on its worst slice**, not just on average. The current ratios (table below) become a starting point to test, not the answer.
+
+**Step 4: forward test.** Run the failure paths found in step 2 through the pipeline and check that the controls hold, including weeks 7–8 baselines.
+
+> **The question for the professor and the student: which tolerance is acceptable for each outcome?** Everything else follows from it, including the benchmark size (26,000 people today, derived from the ratios; it is recalculated from the tolerances).
+
+Limits: the atlas is teaching material, and its examples are supply chains, not people. Here, the method is used to choose the targets and the tests. All data stay synthetic.
+
+### The default ratios (in use until the tolerances are agreed)
 
 | Step | Default ratio | Target | In plain words |
 | --- | --- | --- | --- |
