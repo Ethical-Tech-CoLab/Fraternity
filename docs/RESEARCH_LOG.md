@@ -2218,3 +2218,32 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Limits:** query parameters have no corridor source (varied); the Kinyarwanda/Kirundi/Chichewa child-speech gap stays (TIMETABLE open item 6); U4 searches test the policy layer, not matching.
 
 **Next:** step 4 realism checks (fidelity test with a limit fixed before comparing; copy test); step 5 the 300-pair sample for the user.
+
+## 2026-11-16 — Week 6 step 4: realism checks (fidelity test fails on DRC letter patterns)
+
+**Pre-registration:** the nine checks and their limits were committed before any comparison was run (commit `4614adc`, `data/benchmark/params-2026.1.json` `realism_limits`): Jensen–Shannon divergence ≤ 0.10 for checks against independent evidence, ≤ 0.02 for checks that hold by construction, ±2 characters for length.
+
+**Results** (default world, 31,200 people):
+
+| Check | Value | Limit | |
+| --- | --- | --- | --- |
+| F1 DRC Bantu-name trigrams vs corpus (independent) | 0.164 | 0.10 | **fail** |
+| F2 DRC Bantu-name bigrams vs corpus (independent) | 0.118 | 0.10 | **fail** |
+| F3 DRC given-name trigrams vs corpus (independent) | 0.041 | 0.10 | pass |
+| F4 DRC full-name length (independent) | mean 20.15 vs 20.19; p90 25 vs 25 | ±2 | pass |
+| F5 DRC token count | 0.000 | 0.02 | pass |
+| F6 listed-element frequencies | 0.022 | 0.02 | **fail (marginal)** |
+| F7 provinces | 0.001 | 0.02 | pass |
+| F8 structure | 0.000 | 0.02 | pass |
+| F9 invented RW/BI trigrams vs training (drift) | 0.023 | 0.10 | pass |
+
+**Diagnosis:**
+- **F6, first run 0.064: a bug in the check, fixed.** The newborn lists repeat names (two years; INEZA twice in 2024), and the check's reference kept only the last count. The generator was right (repeated entries add their weights). After the fix every pool sits inside its sampling-noise range (200 simulated draws per pool); the worst, DRC male noms, is 0.0219 against a noise median of 0.0198 for 432 draws over 50 names. **The 0.02 limit is below the noise floor at this sample size**: Claude's error in setting it.
+- **F1/F2: a data limit, not a generator bug.** The real top-50 DRC names are themselves 0.141 (each once) to 0.168 (by count) from the corpus trigrams. The DRC profile holds only the top 50 names (13% coverage), so 87% of noms are invented from those 50, and no training scheme reached 0.10: count, square-root, log or uniform weights gave 0.143–0.167; steering the chain with the corpus bigrams brought F2 to 0.096 but left F1 at 0.16 and would have made F2 circular, so it was reverted.
+- **Not done:** the limits were not moved and the failing checks were not reclassified. The protocol says to correct the generator; with the data held, it cannot be corrected further.
+
+**Copy test** (no threshold; protocol §2.4 test 2): full names made only of listed elements RW 27.8%, BI 48.9%, CD 7.8%; invented element rate RW 32%, BI 25%, CD 51%. **Synthetic full names shared by 2+ people:** RW 34%, BI 37%, CD 2%: the RW/BI profiles hold few elements, so homonyms are common. That makes RW/BI harder for matching, and no source gives the real homonym rate.
+
+**Decision for the user** (options in the session, 16 Nov): (a) look for a larger published DRC element table (CongoNames authors) and regenerate; (b) train the DRC chain on the corpus trigrams too, and say F1 is no longer independent; (c) accept and report F1/F2 as a known limitation. For F6: evaluate by-construction checks against their noise range instead of a fixed 0.02, reported as a post-hoc change with both numbers. Until decided, the test set is not frozen (it waits for G4 anyway).
+
+**Files:** `namebridge/src/namebridge/benchmark/realism.py`, `namebridge/tests/test_benchmark_realism.py` (207 tests pass).
