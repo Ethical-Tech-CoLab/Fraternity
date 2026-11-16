@@ -2265,3 +2265,13 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Knock-on:** the new world left BI/child at 399 test queries (< 414) and the build stopped as designed; `q_sought_share` 0.5 → 0.55 (smallest slice now 460; 19,746 queries). The error scale was re-calibrated (0.57 gave 21.1%): 0.6 → 22.1% (0.16 → 9.8%, 1.35 → 35.1%). Size check still passes (31,206 people, 31,016 needed). **Tests:** 208 pass.
 
 **Next:** step 5, the 300-pair human check (the user).
+
+## 2026-11-16 — Week 6 step 5: the 300-pair human check is ready
+
+**Built:** `namebridge.benchmark.human_check` (sample, page, comparison) and `human_check_page.html` (template).
+- **Sample:** 300 pairs drawn with a fixed seed from the **dev** split only (never test or holdout): 110 same-person record pairs, 30 tracing request vs the sought person's record, 50 relatives, 60 look-alikes, 50 different families of one origin sharing a name element (140 "same", 160 "different"); shuffled.
+- **What the reviewer sees:** only what a caseworker would (source, year, name, sex, age, province, claimed nationality; for a request, the relationship and whether a child told it). Internal fields (who wrote the name, how, the clerk's language, error logs) are hidden because they would give the answer away; a test checks the page holds no answers.
+- **Page:** a private claude.ai page (https://claude.ai/artifact/HjJQGLYxYtNcxdeu5VYgCv) with answers saved in its database (only the owner writes): same / different / can't tell, a "looks unrealistic" flag and a note per pair. The key stays local (`build/benchmark/human_check/key.jsonl`, git-ignored).
+- **Comparison:** export the answers (`ArtifactData list` with `out_dir`) and run `python -m namebridge.benchmark.human_check --compare <dir>`: agreement per stratum when decided, "can't tell" counts, and every disagreement or unrealistic flag listed for review.
+
+**Tests:** 211 pass (3 new).
