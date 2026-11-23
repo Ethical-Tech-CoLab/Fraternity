@@ -107,8 +107,8 @@ If you choose to go ahead anyway, record it as an **override** in `RESEARCH_LOG.
 | Week 6 step 5: 300-pair human check (sample from dev, review page, comparison) | ✔ done 23 Nov (300 answered); finding: look-alike pairs 12.5% agreement, labels not verifiable from the records (`RESEARCH_LOG.md`) | `namebridge/src/namebridge/benchmark/human_check.py` | this commit |
 | Week 6 step 4: realism checks (fidelity test against pre-registered limits; copy test) | ✔ 16 Nov: 9/9 pass after one generator correction | `namebridge/src/namebridge/benchmark/realism.py` | this commit |
 | Week 6 step 3: queries, gold labels, splits, temporal holdout, look-alike families (hard negatives), per-slice query size check | ✔ frozen 23 Nov (G4 default, override in `RESEARCH_LOG.md`; record `namebridge/data/benchmark/FREEZE.json`) | `namebridge/src/namebridge/benchmark/queries.py` | this commit |
-| Week 6 step 2: records and errors (5 sources, writers by language, by-ear pack conventions and listener confusions, crosspack Christian forms, CD postnom/married name, age, places, adopted names; calibrated) | ◐ 16 Nov (G4 default) | `namebridge/src/namebridge/benchmark/records.py` | this commit |
-| Week 6 step 1: synthetic world (people, families, names by origin; invention from profile patterns; size self-check) | ◐ 16 Nov (G4 default) | `namebridge/src/namebridge/benchmark/world.py`, `data/benchmark/` | this commit |
+| Week 6 step 2: records and errors (5 sources, writers by language, by-ear pack conventions and listener confusions, crosspack Christian forms, CD postnom/married name, age, places, adopted names; calibrated) | ✔ frozen 23 Nov (G4 default) | `namebridge/src/namebridge/benchmark/records.py` | this commit |
+| Week 6 step 1: synthetic world (people, families, names by origin; invention from profile patterns; size self-check) | ✔ frozen 23 Nov (G4 default) | `namebridge/src/namebridge/benchmark/world.py`, `data/benchmark/` | this commit |
 | Week 5: name relationships 45 → 299 (Bible translations, attested variants, negative constraints, name parts) | ◐ 9 Nov (G9) | `data/crosspack/`, `data/variants/` | `ab3a920` … `63edb64` |
 
 **Decided by the professor on 28 Oct:** scope approved (G1); governments and law enforcement are not users (G2); no NYU IRB review needed for the public lists (G3, option A); alleged perpetrators never searched for, and a restricted name-change layer allowed with conditions (G5); open source, no sale (G7).
@@ -242,6 +242,26 @@ Plan (all items done 26 Oct):
 - **Reciprocal pairs** (`CONCEPT-IDEA.md` §5.5A, user's proposal 5 Nov): some sought people also search for the searcher; share *r* varied; some pairs written by the same clerk.
 - **Oral-report errors** (§5.4A): names generated as heard and written down by a caseworker with another language's spelling habits, using each pack's conventions and confusions.
 - **Done when:** the gold set passes the realism checks, and a sample of 300 pairs has had a human check.
+
+**Checks for week 6 (status on 23 Nov 2026)**
+
+| # | Check | Result | Where |
+| --- | --- | --- | --- |
+| C1 | Fidelity test (9 pre-registered limits) on the frozen world | ✔ 9/9 pass under the rule in force at freeze (commit `63a40e9`) | `realism.py`; `params-2026.1.json` |
+| C2 | Copy test (how often a synthetic name is shared) | ✔ reported (RW 32%, BI 36% of homonyms in the 16 Nov run) | `realism.py` |
+| C3 | Size check: people needed for the targets at 26 Oct ratios | ✔ 31,206 people, 31,016 needed, binding: minor precision | `world.py`; `manifest.json` |
+| C4 | Query size check: at least 414 findable test queries per key slice | ✔ passes | `queries.py`; `manifest.json` |
+| C5 | Reproducibility: rebuild from the frozen commit gives identical file hashes | ✔ 15 of 15 hashes identical (23 Nov) | `FREEZE.json` |
+| C6 | Test suite | ✔ 211 pass (23 Nov) | `namebridge/tests` |
+| C7 | Human check on 300 pairs (dev split) | ✔ done 23 Nov. Agreement with the gold: same person 99%, relatives 98%, request vs record 100%, shared element 90%, **look-alikes 12.5%** | `comparison.json` (local) |
+| C8 | Unrealistic flags from the reviewer | ✔ none of the 300 pairs flagged | `comparison.json` |
+| C9 | Look-alike labels: reporting rule | ✔ decided by the user 23 Nov: separate stratum, "not verifiable from the record", not counted as correct or wrong (`BENCHMARK_PROTOCOL.md` §5). **For the professor to confirm** (`DECISIONS_OPEN.md`) | `BENCHMARK_PROTOCOL.md` §5 |
+| C10 | Soft-gate override (G4, freeze on the 26 Oct ratios) | ✔ recorded 23 Nov, with what may need redoing | `RESEARCH_LOG.md` |
+| C11 | Open: the professor's answer on G4 (the tolerances and the size) | ⏳ open; a change means regenerating and re-freezing the test and holdout | `DECISIONS_OPEN.md` |
+| C12 | Not applied: the look-alike redesign and the F6 band amendment | ⏸ stashed (`git stash`), not applied: applying them needs the 300 pairs answered again | `RESEARCH_LOG.md` (23 Nov) |
+
+**Done-when, read literally:** the gold set passes the realism checks (C1) and the 300-pair human check is done (C7). The human check did not agree with the gold on the look-alike pairs (C7, C9), so the benchmark is reported with that limit stated.
+
 
 ### Week 7 — 30 Nov–4 Dec: pipeline (phase 2)
 
