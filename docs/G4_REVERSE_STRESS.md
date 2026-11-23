@@ -79,6 +79,41 @@ Following the atlas's three severities, each tolerance is tested at a strict, a 
 
 **Benchmark size.** Today's 26,000 invented people comes from the minors' precision of 0.999 measured on the **average** (`namebridge/src/namebridge/benchmark/sample_size.py`). Targets on the worst slice need enough minors **within each slice**, so the size will go up. The size is recalculated in week 6 once the tolerances are agreed.
 
+## 5A. What each level means in cases (analysis, 23 Nov 2026)
+
+The atlas gives the method, not the levels. So the levels are compared here by their consequences, in counts a caseworker can picture. The arithmetic is exact; the rates are targets, not measurements. "Pool" is the number of people a search is compared with.
+
+**Recall (U3): misses per 10,000 searches for people who are in the data**
+
+| Level | Misses per 10,000 | Reading |
+| --- | --- | --- |
+| 0.90 (loose) | 1,000 | 1 search in 10 silently fails |
+| 0.95 (middle) | 500 | 1 in 20 |
+| 0.98 (strict) | 200 | 1 in 50 |
+
+**Adult and minor confirmation (U2, U1): wrong "strong evidence" pairs per 1,000 flagged pairs**
+
+| Level | Wrong per 1,000 flags | Reading |
+| --- | --- | --- |
+| 0.98 (loose, adults) | 20 | 1 in 50 flags is two different people |
+| 0.99 (middle, adults) | 10 | 1 in 100 |
+| 0.999 (middle, minors) | 1 | 1 in 1,000 |
+| 0.9995 (strict, minors, ICMP level) | 0.5 | 1 in 2,000 |
+
+For minors, even the strict level leaves a non-zero rate, which is why U1 stays a **zero-by-design rule** (§4.1) and the number is only a check on that rule.
+
+**Pool size (U5 and every precision target).** A false candidate happens per comparison. So the number of false candidates per search grows with the pool, even when the per-comparison rate is fixed:
+
+- false candidates per search ≈ *e* × pool size, where *e* is the per-comparison false-match rate;
+- at the benchmark pool (31,206 people), a rate of 10⁻⁴ gives about 3 false candidates per search; at 10× the pool, about 31; at 100×, about 312;
+- to keep the review list at **20 candidates** (U5), *e* must be at most **6.4 × 10⁻⁴** at 1×, **6.4 × 10⁻⁵** at 10×, and **6.4 × 10⁻⁶** at 100×.
+
+So the U5 limit is a **pool-size limit**, not a fixed threshold: the same matcher that passes at 1× floods the queue at 100×. This is the strongest reason to state every target at a stated pool size (§4.3).
+
+**What the team can and cannot measure now.** The look-alike results (12.5% agreement with the human reviewer, 23 Nov) show that the benchmark's "different people" labels for near-identical pairs cannot be trusted. Precision on those pairs cannot be used to pick a level until the labels are fixed or reported as "not verifiable" (`BENCHMARK_PROTOCOL.md` §5). The levels above are therefore chosen on cases and counts, and checked on the benchmark only where its labels are sound.
+
+**Recommendation (for the professor to decide):** middle level for U2, U3 and U5, with the stricter U1 rule as in §5, and every target stated at 1×, 10× and 100× the pool. The middle level keeps the review queue within what a caseworker can check, and the strict level for recall (0.98) would double the review load for a modest gain in missed reunions. This is a judgment about trade-offs, which the atlas says must be made explicitly and by the people who own the decision, not by the analyst.
+
 ## 6. How the benchmark becomes a reverse stress test (week 6 onward)
 
 1. **Fix the outcome** (e.g. U1: a false "strong evidence" pair with a minor).
