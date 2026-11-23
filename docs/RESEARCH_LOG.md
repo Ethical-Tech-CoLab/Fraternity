@@ -2283,3 +2283,20 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Built:** test and holdout frozen. Rebuilt from commit `56b8f62` in a scratch folder: all 15 file hashes identical. Record in `namebridge/data/benchmark/FREEZE.json` (seed, params, generator modules, file hashes). Generated data stays out of git (`build/`).
 **What may need redoing:** if the professor changes the tolerances or the error-cost ratios, the size changes (31,206 people now; 31,016 needed for the 26 Oct default). Then the test and holdout are regenerated under a new seed or size, and a new freeze record is written. Results on the current freeze would not carry over.
 **Not yet done:** step 5 (human check, 33 of 300 pairs answered on 23 Nov).
+
+## 2026-11-23 — Week 6 step 5: human check finished (300 pairs); finding on look-alike pairs
+
+**Done:** the user answered all 300 pairs on the review page (dev split). Answers exported to `namebridge/build/benchmark/human_check/export/`; comparison in `comparison.json` (local, git-ignored).
+
+**Agreement (reviewer vs gold, decided answers):** all 80.3% (228 agree, 56 disagree, 16 "can't tell"); same person 99.1% (105/106); relatives 98%; request vs record 100%; shared element 89.6%; **look-alikes 12.5% (7 agree, 49 disagree, 4 "can't tell")**. No pair flagged as unrealistic.
+
+**What the look-alike disagreements show:** in the 60 look-alike pairs (gold "different"), 56 share the same name, 55 the same sex, 58 the same claimed origin, 33 the same province and 33 birth years within one year. The reviewer, who sees only what a caseworker sees, reads most as the same person. The gold label depends on information the record does not carry (the hidden person ids). So the "different" label for these pairs cannot be checked from the records, and a system that matches them would be marked wrong on evidence no one can see.
+
+**Status:** step 5 is done as a check. It does not pass for the look-alike stratum. The frozen test and holdout (23 Nov, `FREEZE.json`) contain these pairs, so the fix needs a decision, not a quiet edit.
+
+**Options for the user (and the professor, if it changes the protocol):**
+1. Make look-alike pairs differ on at least one field a caseworker can see (e.g., a different birth year beyond one year, or a different province), then regenerate and re-freeze.
+2. Mark look-alike pairs with "undecidable from the record" and report them as a separate stratum, without counting them as correct or wrong.
+3. Keep as is and state in the report that the hard-negative gold labels are not verifiable from the records.
+
+**Not changed:** the frozen sets and the freeze record. No generator change yet.
