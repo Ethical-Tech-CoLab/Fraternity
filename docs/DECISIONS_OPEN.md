@@ -103,7 +103,7 @@ The Dzaleka-era inter-agency SOP (CPSS, 2019) says: "IF IN DOUBT STOP!! AND CONF
 
 Many people in the corridor carry Muslim names (Hassan / Hasani, Fatuma / Fatima, Juma). A list of such names can reveal religion, which is sensitive data under Malawi's Data Protection Act. When the professor allowed the restricted name-change layer (G5), one condition was a legal check before religion-linked names are used.
 
-*Deadline (proposed 23 Nov): a decision by 7 Dec lets the check finish before the v0.1 release (14–18 Dec). Otherwise the names stay out, and the release note says so.*
+*Proposed deadline: a decision by 7 Dec lets the check finish before the v0.1 release (14–18 Dec). Otherwise the names stay out, and the release note says so.*
 
 > **Who does that legal check, and when?**
 
