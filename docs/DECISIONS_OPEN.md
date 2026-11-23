@@ -1,14 +1,15 @@
 # Decisions Making: decisions still open
 
-*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026, updated 16 Nov and 23 Nov 2026, from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
+*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026, updated 16 Nov and 23 Nov 2026 (status of G4, deadlines, "when in doubt, stop"), from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
 
-Three questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
+Four questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
-| **G4** Cost of errors | Benchmark size and match thresholds | **Closed for now (23 Nov)**: the team keeps the 26 Oct ratios; a later change means regenerating and re-freezing the benchmark (`RESEARCH_LOG.md`) | The ratios set on 26 Oct (in use) |
-| **Look-alike pairs** (new, 23 Nov) | How the hard-negative pairs are reported | Before the week 8 results | Separate stratum, "not verifiable from the record", not counted as correct or wrong (`BENCHMARK_PROTOCOL.md` §5) |
-| **Legal check** for Muslim names | Whether those names enter the graph | no deadline (professor researching, 16 Nov) | Left out of v0.1 |
+| **G4** Cost of errors | Benchmark size and match thresholds | **Kept by the team (23 Nov), not yet approved by you.** The 26 Oct ratios stay. A later change means regenerating and re-freezing the benchmark (`RESEARCH_LOG.md`). No hard deadline | The ratios set on 26 Oct (in use) |
+| **Look-alike pairs** (new, 23 Nov) | How the hard-negative pairs are reported | **Before the week 8 results (7–11 Dec)** | Separate stratum, "not verifiable from the record", not counted as correct or wrong (`BENCHMARK_PROTOCOL.md` §5) |
+| **Legal check** for Muslim names | Whether those names enter the graph | **Proposed: 7 Dec** (start of week 8). The v0.1 release is 14–18 Dec. No answer by then means they stay out | Left out of v0.1 |
+| **"When in doubt, stop"** (new, 23 Nov) | Whether the rule is the basis for every match decision | Before the week 8 linkage evaluation (7–11 Dec) | Implemented in `decision.py`: any status other than strong evidence stops for a person; a child is never confirmed on names alone. Thresholds stay as the G4 owner sets them |
 
 ---
 
@@ -35,6 +36,8 @@ The professor did not set numbers. The professor asked us to study the professor
 | U5 | ≤ 20 candidates per search; ≥ half of "strong evidence" flags true |
 
 *Decided 16 Nov: a child is anyone **under 18 at the time of the search** (former question 4).*
+
+*Status (23 Nov): the team kept the 26 Oct ratios, by its own decision. The atlas defines no acceptable levels: it says they must be agreed with the owner (`G4_REVERSE_STRESS.md` §5B). Your answer is still needed, but no date blocks the work.*
 
 > **For the professor: are these the right outcomes, and which level (strict, middle, loose) is acceptable for each?** Five questions are listed in `G4_REVERSE_STRESS.md` §7. The benchmark size (26,000 today) is recalculated from the answer, and will grow if targets apply to the worst slice.
 
@@ -83,11 +86,24 @@ We tried a fix that would make look-alikes differ on a visible field. It changes
 
 ---
 
+## "When in doubt, stop" — is this the rule for every match decision? (new, 23 Nov)
+
+The Dzaleka-era inter-agency SOP (CPSS, 2019) says: "IF IN DOUBT STOP!! AND CONFIRM MISSING DETAILS", and a positive match must be proved "beyond any reasonable doubt". The ICRC guide makes a family-relationship check mandatory before reunification. The team has implemented this as a rule (`namebridge/src/namebridge/decision.py`):
+
+- Every candidate gets one status: conflict, insufficient evidence, ambiguous (a better or nearly equal candidate exists), needs an independent check (a child), possible, or strong evidence.
+- Only "strong evidence" is not a stop, and even that is a recommendation: a person confirms.
+- A child is never confirmed on names alone.
+- The thresholds are inputs with no default, so the owner of G4 must set them.
+
+> **For you: is this the rule for the linkage in weeks 7–9? Are there cases where it should be stricter or looser?**
+
 ## Legal check — May Muslim names enter the graph? (no deadline)
 
 *16 Nov 2026: the professor will answer later, after researching it further.*
 
 Many people in the corridor carry Muslim names (Hassan / Hasani, Fatuma / Fatima, Juma). A list of such names can reveal religion, which is sensitive data under Malawi's Data Protection Act. When the professor allowed the restricted name-change layer (G5), one condition was a legal check before religion-linked names are used.
+
+*Deadline (proposed 23 Nov): a decision by 7 Dec lets the check finish before the v0.1 release (14–18 Dec). Otherwise the names stay out, and the release note says so.*
 
 > **Who does that legal check, and when?**
 
