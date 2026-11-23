@@ -2316,3 +2316,10 @@ Look-alike pairs are reported as a separate stratum marked "not verifiable from 
 
 **Decision (user):** the G4 levels stay as decided on 26 Oct 2026 (the default ratios). The search of family-tracing and missing-persons bodies (`G4_REVERSE_STRESS.md` §5B) found no numeric criteria for name matching, so there is no external reference to adopt. If the levels change later, the benchmark is regenerated and re-frozen, with a new `FREEZE.json` and a note here.
 **Basis:** the procedural rules found in §5B (verification by several independent checks; "if in doubt, stop"; no child handed over on a single match) remain in force regardless of the numbers.
+
+## 2026-11-23 — "When in doubt, stop" implemented as a decision rule
+
+**Source:** Dzaleka-era inter-agency FTR SOP (CPSS, 2019): "IF IN DOUBT STOP!!"; a positive match "beyond any reasonable doubt" (`G4_REVERSE_STRESS.md` §5B). Requested by the user, 23 Nov.
+**Built:** `namebridge/src/namebridge/decision.py` (`decide`). Every candidate gets one status, and any status other than `strong_evidence` stops the process: `conflict`, `insufficient_evidence`, `ambiguous` (best other candidate within the margin, or a better candidate exists), `needs_independent_check` (a child is never confirmed on names alone), `possible`. The function recommends; a person confirms. The thresholds are required inputs with no defaults, so the G4 owner sets them.
+**Tests:** `tests/test_decision.py` (11). Full suite: 222 pass.
+**Not done:** no thresholds set in code (G4 kept as decided on 26 Oct, applied by the caller). The function is not yet wired to a matcher, because the person matcher is a week 7–8 task.
