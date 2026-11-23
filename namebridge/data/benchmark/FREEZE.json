@@ -1,0 +1,35 @@
+{
+  "frozen_on": "2026-11-23",
+  "gate_status": "G4 open (soft gate); frozen on the 26 Oct default ratios, as the timetable allows; may need redoing if G4 changes the targets",
+  "code_commit": "56b8f6251a49ae1d90b4e601ff2254146c3b7590",
+  "params": "params-2026.1.json",
+  "seed": 20261123,
+  "generator": [
+    "namebridge.benchmark.world",
+    "namebridge.benchmark.records",
+    "namebridge.benchmark.queries"
+  ],
+  "rebuild_check": "rebuilt from the same commit in a scratch folder: all 15 file hashes identical",
+  "sizes": {
+    "people": 31206,
+    "needed": 31016,
+    "query_size_check_ok": true
+  },
+  "frozen_files_sha256": {
+    "public/records.jsonl": "077d93fcb83f6e54f799dae5a0ef2c5f6461b87fedc1f73c7d2a32575ae9fa30",
+    "public/queries.jsonl": "44ec13d8152d4bcd8bdfe1f5ce0da781e0cd22c8f2ad2aa610dfa07bfb6736fe",
+    "gold/records.jsonl": "4a1be5f6575ed1e029cdcaed31e3d0e6f81348c27d8292421e680aa05a707581",
+    "gold/queries.jsonl": "d5e7592be0c26c35de1e502c442a334ba3c4a2660161ca461428a9ca305194a2",
+    "gold/people.jsonl": "d49c416ecd2f8592a9a4137a988fa5818de58a0ee034fa927605e114d6373dbc",
+    "gold/relations.jsonl": "228b77cfce073373f17285c04657ab434f4120aec80d00b626dc2d40f603ddd1",
+    "gold/hard_negatives.jsonl": "19eee0224e67448ed2ac63edf5657772af7cbcb24aa5ce610cf4ee1f0208f354",
+    "gold/splits.jsonl": "b0a5164bdecd22faf246a5725e300570e7f6675a0fad758de0283b255c5e1e3b",
+    "holdout/public/records.jsonl": "a30c08c7e2e69e9dcf71697c80479335dc1926dc19dc4671a146b5200691d5d7",
+    "holdout/public/queries.jsonl": "1c8a9d5563bc8b7e4092cc216c2c35cdc1fdf6e0d5d13c764bef52a1c2a9ae4a",
+    "holdout/gold/records.jsonl": "19162794d674157299bfcde2975354d075f887786c95947ad8001d11a4959385",
+    "holdout/gold/queries.jsonl": "b90a862adf269348b388ce24a760dcbfd9aea1d04020808e207ef231468b8b59",
+    "holdout/gold/people.jsonl": "0d9fa655c969662941eff20e1c773558cef2b221ccf4403a64ca5741ecbb6d29",
+    "holdout/gold/relations.jsonl": "b759202d0e2637308ae55312c5889f7b8796782796ddf4f6acb72bc05af62287",
+    "holdout/gold/hard_negatives.jsonl": "8686816d5ca72ffef8f058ebf77b94e53e0bdc55ece3f703be554bb36254ab10"
+  }
+}

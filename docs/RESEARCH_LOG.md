@@ -2275,3 +2275,11 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 - **Comparison:** export the answers (`ArtifactData list` with `out_dir`) and run `python -m namebridge.benchmark.human_check --compare <dir>`: agreement per stratum when decided, "can't tell" counts, and every disagreement or unrealistic flag listed for review.
 
 **Tests:** 211 pass (3 new).
+
+## 2026-11-23 — Week 6 freeze: override of soft gate G4 (user)
+
+**Gate:** G4 (error costs and targets), soft (⚠), still open with the professor (due 23 Nov).
+**Decision:** the user chose to freeze the benchmark now on the default (the ratios of 26 Oct), as `CLAUDE.md` allows for a soft gate.
+**Built:** test and holdout frozen. Rebuilt from commit `56b8f62` in a scratch folder: all 15 file hashes identical. Record in `namebridge/data/benchmark/FREEZE.json` (seed, params, generator modules, file hashes). Generated data stays out of git (`build/`).
+**What may need redoing:** if the professor changes the tolerances or the error-cost ratios, the size changes (31,206 people now; 31,016 needed for the 26 Oct default). Then the test and holdout are regenerated under a new seed or size, and a new freeze record is written. Results on the current freeze would not carry over.
+**Not yet done:** step 5 (human check, 33 of 300 pairs answered on 23 Nov).
