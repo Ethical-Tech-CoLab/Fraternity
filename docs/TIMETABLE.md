@@ -257,7 +257,7 @@ Plan (all items done 26 Oct):
 | C8 | Unrealistic flags from the reviewer | ✔ none of the 300 pairs flagged | `comparison.json` |
 | C9 | Look-alike labels: reporting rule | ✔ decided by the user 23 Nov: separate stratum, "not verifiable from the record", not counted as correct or wrong (`BENCHMARK_PROTOCOL.md` §5). **For the professor to confirm** (`DECISIONS_OPEN.md`) | `BENCHMARK_PROTOCOL.md` §5 |
 | C10 | Soft-gate override (G4, freeze on the 26 Oct ratios) | ✔ recorded 23 Nov, with what may need redoing | `RESEARCH_LOG.md` |
-| C11 | Open: the professor's answer on G4 (the tolerances and the size) | ⏳ open; a change means regenerating and re-freezing the test and holdout | `DECISIONS_OPEN.md` |
+| C11 | G4 levels | ✔ kept as decided on 26 Oct (user, 23 Nov); no numeric reference found in the family-tracing field. A change later means regenerating and re-freezing the test and holdout | `RESEARCH_LOG.md` (23 Nov); `G4_REVERSE_STRESS.md` §5B |
 | C12 | Not applied: the look-alike redesign and the F6 band amendment | ⏸ stashed (`git stash`), not applied: applying them needs the 300 pairs answered again | `RESEARCH_LOG.md` (23 Nov) |
 
 **Done-when, read literally:** the gold set passes the realism checks (C1) and the 300-pair human check is done (C7). The human check did not agree with the gold on the look-alike pairs (C7, C9), so the benchmark is reported with that limit stated.

@@ -2311,3 +2311,8 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 ## 2026-11-23 — Look-alike pairs: reporting rule (user decision, option 1)
 
 Look-alike pairs are reported as a separate stratum marked "not verifiable from the record", and are not counted as correct or wrong in the headline metrics (`BENCHMARK_PROTOCOL.md` §5). The frozen sets are unchanged (commit 63a40e9). No new human answers are needed.
+
+## 2026-11-23 — G4 kept as decided on 26 Oct (user decision)
+
+**Decision (user):** the G4 levels stay as decided on 26 Oct 2026 (the default ratios). The search of family-tracing and missing-persons bodies (`G4_REVERSE_STRESS.md` §5B) found no numeric criteria for name matching, so there is no external reference to adopt. If the levels change later, the benchmark is regenerated and re-frozen, with a new `FREEZE.json` and a note here.
+**Basis:** the procedural rules found in §5B (verification by several independent checks; "if in doubt, stop"; no child handed over on a single match) remain in force regardless of the numbers.

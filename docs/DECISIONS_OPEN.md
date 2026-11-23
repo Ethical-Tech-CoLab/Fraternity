@@ -6,7 +6,7 @@ Three questions only the professor can settle. Everything already decided has be
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
-| **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov (passed)**: the benchmark was frozen on 23 Nov on the 26 Oct ratios, as a soft-gate override (`RESEARCH_LOG.md`) | The ratios set on 26 Oct (in use) |
+| **G4** Cost of errors | Benchmark size and match thresholds | **Closed for now (23 Nov)**: the team keeps the 26 Oct ratios; a later change means regenerating and re-freezing the benchmark (`RESEARCH_LOG.md`) | The ratios set on 26 Oct (in use) |
 | **Look-alike pairs** (new, 23 Nov) | How the hard-negative pairs are reported | Before the week 8 results | Separate stratum, "not verifiable from the record", not counted as correct or wrong (`BENCHMARK_PROTOCOL.md` §5) |
 | **Legal check** for Muslim names | Whether those names enter the graph | no deadline (professor researching, 16 Nov) | Left out of v0.1 |
 
