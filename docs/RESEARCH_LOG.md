@@ -2307,3 +2307,7 @@ Guard test `test_intake_guide.py`: every pack rule cited in the guide (27 ids) m
 **Consequence:** the look-alike redesign (visible difference for hard negatives; F6 band amendment, 99.5% per pool, 2,000 draws) changes the sample, so it cannot go ahead without a new human check. It is stashed (`git stash`, "lookalike redesign (option 1) + F6 band amendment") and not applied.
 **Current state:** the frozen test and holdout (`FREEZE.json`, commit 63a40e9) and the 300 answers stand as they are. Under the original F6 rule the frozen world passed all 9 checks.
 **Open issue:** look-alike gold labels are not verifiable from the records (12.5% agreement on 60 pairs). Options that need no new answers: report look-alikes as a separate stratum, marked "not verifiable from the record", in the benchmark report; or leave as a documented limit.
+
+## 2026-11-23 — Look-alike pairs: reporting rule (user decision, option 1)
+
+Look-alike pairs are reported as a separate stratum marked "not verifiable from the record", and are not counted as correct or wrong in the headline metrics (`BENCHMARK_PROTOCOL.md` §5). The frozen sets are unchanged (commit 63a40e9). No new human answers are needed.

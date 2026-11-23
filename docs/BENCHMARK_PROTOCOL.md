@@ -148,6 +148,8 @@ The generator never copies a real full name. It **recombines** common elements f
 
 **Uncertainty:** 95% intervals by bootstrap **over families**, not over pairs.
 
+**Look-alike pairs (decided 23 Nov 2026):** the hard negatives built to look like another family (`hard_negatives.jsonl`, kind `lookalike`) are reported as a **separate stratum, marked "not verifiable from the record"**. Their gold label ("different people") depends on hidden person ids, and the human check agreed with it on 12.5% of decided pairs (`RESEARCH_LOG.md`, 23 Nov). These pairs are **not** counted as correct or wrong in the headline metrics above. Every other stratum is reported as before, and the look-alike stratum is shown next to them, with its own counts.
+
 ## 6. Fairness slices
 
 Every metric is reported for each of these slices, never only as a global average (§9.3):
