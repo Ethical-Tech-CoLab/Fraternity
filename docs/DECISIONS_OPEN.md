@@ -1,12 +1,13 @@
 # Decisions Making: decisions still open
 
-*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026, updated 16 Nov 2026, from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
+*NameBridge · NYU independent study · meeting brief. Prepared 9 Nov 2026, updated 16 Nov and 23 Nov 2026, from the gates table in `TIMETABLE.md` and `GATE_EXAMPLES.md`.*
 
-Two questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
+Three questions only the professor can settle. Everything already decided has been left out. Each item says what is being decided, why it matters, the options, and what we do if nothing changes. **All people in the examples are invented.** When a decision is made, it is recorded in `TIMETABLE.md` and removed from this page.
 
 | Decision | What it changes | Needed by | Default if undecided |
 | --- | --- | --- | --- |
-| **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov** (blocks week 6) | The ratios set on 26 Oct |
+| **G4** Cost of errors | Benchmark size and match thresholds | **23 Nov (passed)**: the benchmark was frozen on 23 Nov on the 26 Oct ratios, as a soft-gate override (`RESEARCH_LOG.md`) | The ratios set on 26 Oct (in use) |
+| **Look-alike pairs** (new, 23 Nov) | How the hard-negative pairs are reported | Before the week 8 results | Separate stratum, "not verifiable from the record", not counted as correct or wrong (`BENCHMARK_PROTOCOL.md` §5) |
 | **Legal check** for Muslim names | Whether those names enter the graph | no deadline (professor researching, 16 Nov) | Left out of v0.1 |
 
 ---
@@ -65,6 +66,20 @@ The professor did not set numbers. The professor asked us to study the professor
 - **Make it stricter**: fewer wrong contacts, more missed reunions.
 
 *Example.* NDAYISENGA Jean-Paul (born 1984, Muyinga) and NDAYISENGA Paul (born 1985, Muyinga) are different men. A sister searches for "Jean-Paul, my brother, about 40".
+
+---
+
+## Look-alike pairs — how do we report them? (new, 23 Nov)
+
+Hard negatives are pairs built to look like another family: same origin, same or similar name, birth years close. Their gold label is "different people". In the human check (300 pairs, dev split), the reviewer agreed with that label on **12.5%** of the decided look-alike pairs (7 agree, 49 disagree). Across the 60 look-alike pairs, 56 share the same name, 55 the same sex, and 58 the same claimed origin. The label depends on hidden person ids that a caseworker cannot see, so it cannot be checked from the records. Every other stratum agreed well (same person 99%, relatives 98%, request vs record 100%).
+
+We tried a fix that would make look-alikes differ on a visible field. It changes the whole benchmark sample, so it would need the 300 pairs answered again. We have not done that.
+
+**Decided by the user (23 Nov), for your confirmation:** report look-alikes as a separate stratum marked "not verifiable from the record". They are not counted as correct or wrong in the headline metrics. Every other stratum is reported as before.
+
+> **For the professor: do you accept this reporting rule for the v0.1 benchmark report, or do you want the look-alike pairs rebuilt with a visible difference (which means a new sample and a new human check)?**
+
+*Also for information:* the frozen sets (commit 63a40e9) passed all nine realism checks under the original rule. A change to the look-alike generator was prepared and set aside, because it would need the new human check.
 
 ---
 
