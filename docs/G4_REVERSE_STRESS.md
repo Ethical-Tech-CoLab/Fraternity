@@ -142,6 +142,12 @@ So the U5 limit is a **pool-size limit**, not a fixed threshold: the same matche
 
 **Both full reads (23 Nov 2026) confirm the procedural reading.** The ICRC guide makes a family-relationship check mandatory before reunification and lists the checks; the Better Care Network handbook calls verification the quality control that prevents reunifying a child with the wrong family. Neither gives a numeric error rate. **Reads on 23 Nov 2026:** the NCES report (extract) confirms the 1% statistical norm and the "arbitrary, but chosen with care" cut-off. The CPIMS+ review (full PDF) has no threshold and no error measure for its matching score. **For the professor:** is the CPSS procedure, with the ICRC checks, the reference for the verification step?
 
+**What the atlas says about acceptable levels (checked in `data.js` of the repository, 23 Nov 2026):**
+- The atlas defines no acceptable level. It says that "without an operational threshold, RST has no meaningful target" and that "pilot acceptance thresholds and recovery metrics must be agreed with the owner".
+- Its method is to "define a pilot threshold in delivery or shortage terms with the operational owner, then test several tolerances". That is the strict / middle / loose structure used in §5.
+- Its only numbers (5%, 25%, 50%; a 20% explainer value superseded by 25%) are copper-supply losses, not people. Its glossary also says that "a 25% loss threshold" is **not** a 25% probability.
+- Conclusion: acceptability is set by the owner, and the atlas gives the method for testing it. The levels in §5 are proposals for that owner to adopt or change.
+
 ## 6. How the benchmark becomes a reverse stress test (week 6 onward)
 
 1. **Fix the outcome** (e.g. U1: a false "strong evidence" pair with a minor).
